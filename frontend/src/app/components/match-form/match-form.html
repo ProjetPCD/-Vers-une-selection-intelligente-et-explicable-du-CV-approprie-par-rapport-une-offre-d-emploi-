@@ -1,0 +1,358 @@
+<!-- ═══ FORM ═══ -->
+<div class="form-card" *ngIf="state === 'idle' || state === 'uploading'">
+  <h2>📋 Nouvelle analyse</h2>
+
+  <label class="field-label">Description du poste (Job Description)</label>
+  <textarea rows="8" placeholder="Collez ici la description complète du poste..." class="jd-textarea"
+    [(ngModel)]="jdText" (ngModelChange)="charCount = $event.trim().length">
+  </textarea>
+  <span class="char-count">{{ charCount }} caractères</span>
+
+  <label class="field-label mt">CVs (PDF uniquement)</label>
+  <div class="drop-zone" (click)="openFilePicker()">
+    <span *ngIf="selectedFiles.length === 0">📂 Cliquer pour sélectionner des PDFs</span>
+    <span *ngIf="selectedFiles.length > 0">
+      ✅ {{ selectedFiles.length }} fichier(s) — cliquer pour en ajouter
+    </span>
+  </div>
+
+  <input #fileInput type="file" multiple accept="application/pdf,.pdf" (change)="onFilesChange($event)"
+    style="display:none">
+
+  <div class="file-list" *ngIf="selectedFiles.length > 0">
+    <div class="file-chip" *ngFor="let f of selectedFiles; let i = index">
+      <span>📄 {{ f.name }}</span>
+      <button type="button" (click)="removeFile(i); $event.stopPropagation()">✕</button>
+    </div>
+  </div>
+
+  <button class="btn-submit" type="button" [disabled]="!canSubmit() || state === 'uploading'" (click)="submit()">
+    <span *ngIf="state === 'idle'">🚀 Lancer l'analyse</span>
+    <span *ngIf="state === 'uploading'">⏳ Envoi en cours…</span>
+  </button>
+
+  <p class="hint" *ngIf="!canSubmit()">
+    ⚠️ {{ charCount }}/20 caractères
+    {{ selectedFiles.length === 0 ? '+ au moins 1 PDF requis' : '' }}
+  </p>
+</div>
+
+<!-- ═══ PROCESSING STATUS BAR ═══ -->
+<div class="status-card" *ngIf="state === 'processing'">
+  <div class="status-row">
+    <div class="spinner"></div>
+    <div class="status-text">
+      <p class="status-main">{{ statusMsg }}</p>
+      <p class="status-phase" *ngIf="currentPhase">📍 {{ currentPhase }}</p>
+      <p class="status-detail" *ngIf="progressMsg">{{ progressMsg }}</p>
+    </div>
+  </div>
+  <div class="status-meta">
+    <small>Job ID : <code>{{ jobId }}</code></small>
+    <div class="live-cv-progress" *ngIf="liveCvs.length > 0">
+      <span class="cv-progress-item" *ngFor="let cv of liveCvs" [class.completed]="cv.has_report"
+        [class.in-progress]="!cv.has_report">
+        CV {{ cv.cv_index + 1 }}
+        <span *ngIf="cv.has_report">✅</span>
+        <span *ngIf="!cv.has_report && cv.has_phase3">📈</span>
+        <span *ngIf="!cv.has_report && !cv.has_phase3 && cv.has_phase2">🔍</span>
+      </span>
+    </div>
+    <!-- ✅ BOUTON MANUEL : si le pipeline est fini mais l'UI ne l'a pas détecté -->
+    <button class="btn-force-refresh" type="button" (click)="forceLoadResults()"
+      style="margin-top:12px;padding:6px 14px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.25);border-radius:8px;color:#fff;cursor:pointer;font-size:13px;">
+      🔄 Vérifier si terminé
+    </button>
+  </div>
+</div>
+
+<!-- ═══ ERROR ═══ -->
+<div class="error-card" *ngIf="state === 'error'">
+  <p>❌ {{ errorMsg }}</p>
+  <button class="btn-reset" type="button" (click)="reset()">↩ Réessayer</button>
+</div>
+
+<!-- ═══ LIVE RESULTS DURING PROCESSING + FINAL RESULTS ═══ -->
+<div *ngIf="showResultsTabs" class="results-section">
+
+  <div class="done-header" *ngIf="state === 'done'">
+    <h2>✅ Résultats — {{ rankings.length }} CV analysés</h2>
+    <button class="btn-reset" type="button" (click)="reset()">↩ Nouvelle analyse</button>
+  </div>
+
+  <div class="live-header" *ngIf="state === 'processing'">
+    <h2>📡 Résultats en direct</h2>
+    <span class="live-badge">LIVE</span>
+  </div>
+
+  <!-- Tab navigation -->
+  <div class="tabs">
+    <button [class.active]="activeTab === 'overview'" (click)="setTab('overview')" *ngIf="state === 'done'">📊 Vue
+      d'ensemble</button>
+    <button [class.active]="activeTab === 'graph'" (click)="setTab('graph')">🕸️ Graphe JD</button>
+    <button [class.active]="activeTab === 'phase2'" (click)="setTab('phase2')"
+      *ngIf="state === 'done' || (phase2Data)">🔍 Audit CV</button>
+    <button [class.active]="activeTab === 'report'" (click)="setTab('report')"
+      *ngIf="state === 'done' || getLiveReportKeys().length > 0">📋 Rapport</button>
+    <button [class.active]="activeTab === 'outputs'" (click)="setTab('outputs')" *ngIf="state === 'done'">📁
+      Fichiers</button>
+  </div>
+
+  <!-- CV selector (for Phase 2, 3, Report tabs) -->
+  <div class="cv-selector" *ngIf="activeTab !== 'overview' && activeTab !== 'graph' && activeTab !== 'outputs'
+              && ((state === 'done' && rankings.length > 1)
+                  || (state === 'processing' && liveCvsWithReport.length > 1))">
+    <label>Sélectionner un CV :</label>
+    <select (change)="loadCvPhaseData(+$any($event.target).value)">
+      <ng-container *ngIf="state === 'done'">
+        <option *ngFor="let r of rankings; let i = index" [value]="r.cv_index"
+          [selected]="r.cv_index === selectedCvIndex">
+          CV {{ r.cv_index + 1 }} — {{ r.verdict || '—' }} ({{ r.match_pct?.toFixed(1) || '?' }}%)
+        </option>
+      </ng-container>
+      <ng-container *ngIf="state === 'processing'">
+        <option *ngFor="let cv of liveCvsWithReport" [value]="cv.cv_index" [selected]="cv.cv_index === selectedCvIndex">
+          CV {{ cv.cv_index + 1 }} ✅
+        </option>
+      </ng-container>
+    </select>
+  </div>
+
+  <!-- ═══ TAB: OVERVIEW ═══ -->
+  <div class="tab-content" *ngIf="activeTab === 'overview' && state === 'done'">
+    <div class="phase-card summary-card" *ngIf="summaryMsg">
+      <h3>📝 Résumé du Pipeline</h3>
+      <div class="markdown-summary">
+        <pre>{{ summaryMsg }}</pre>
+      </div>
+    </div>
+    <app-results-table [rankings]="rankings"></app-results-table>
+  </div>
+
+  <!-- ═══ TAB: GRAPH (Phase 1) — D3 INTERACTIVE ═══ -->
+  <div class="tab-content" *ngIf="activeTab === 'graph'">
+    <app-graph-viewer [graphData]="graphData" [title]="'Graphe des compétences — Job Description'">
+    </app-graph-viewer>
+
+    <!-- Node detail cards below graph -->
+    <div class="phase-card node-details-card" *ngIf="graphData?.nodes?.length">
+      <h4 class="section-title">📋 Détail des nœuds ({{ graphData.nodes.length }})</h4>
+      <div class="nodes-grid">
+        <div class="node-card" *ngFor="let node of graphData.nodes" [style.borderLeftColor]="getTypeColor(node.type)">
+          <div class="node-header">
+            <span class="node-label">{{ node.label || node.id }}</span>
+            <span class="node-weight">w₀ = {{ (node.w_0 || 0).toFixed(2) }}</span>
+          </div>
+          <div class="node-meta">
+            <span class="node-type-badge" [style.background]="getTypeColor(node.type)">{{ node.type }}</span>
+            <span class="node-seniority" *ngIf="node.seniority_required && node.seniority_required !== 'N/A'">
+              {{ node.seniority_required }}
+            </span>
+            <span class="node-inferred" *ngIf="node.inferred">🔮 inféré</span>
+          </div>
+          <p class="node-context" *ngIf="node.context">{{ node.context }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══ TAB: PHASE 2 ═══ -->
+  <div class="tab-content" *ngIf="activeTab === 'phase2'">
+    <div class="phase-card" *ngIf="phase2Data; else noPhase2">
+      <h3>🔍 Audit du CV {{ selectedCvIndex + 1 }} (Phase 2)</h3>
+      <p class="phase-subtitle">Graphe des compétences détectées et instructions d'audit</p>
+
+      <div class="phase2-graph-container"
+        style="height: 400px; margin-bottom: 2rem; border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; overflow: hidden;">
+        <app-graph-viewer [graphData]="phase2Graph" [title]="'Graphe de compétences — Candidat'">
+        </app-graph-viewer>
+      </div>
+
+      <div class="audit-grid" *ngIf="phase2Data.skill_instructions">
+        <div class="audit-card" *ngFor="let key of objectKeys(phase2Data.skill_instructions)">
+          <div class="audit-header">
+            <span class="audit-skill">{{ key }}</span>
+            <span class="audit-verdict"
+              [style.color]="getEvidenceColor(phase2Data.skill_instructions[key].evidence_verdict)">
+              {{ phase2Data.skill_instructions[key].evidence_verdict || '—' }}
+            </span>
+          </div>
+          <div class="audit-details">
+            <div class="audit-detail" *ngIf="phase2Data.skill_instructions[key].skill_type">
+              <span class="detail-label">Type</span>
+              <span>{{ phase2Data.skill_instructions[key].skill_type }}</span>
+            </div>
+            <div class="audit-detail" *ngIf="phase2Data.skill_instructions[key].project_complexity">
+              <span class="detail-label">Complexité projet</span>
+              <span>{{ phase2Data.skill_instructions[key].project_complexity }}</span>
+            </div>
+            <div class="audit-detail" *ngIf="phase2Data.skill_instructions[key].experience_years_detected">
+              <span class="detail-label">Années exp.</span>
+              <span>{{ phase2Data.skill_instructions[key].experience_years_detected }}</span>
+            </div>
+            <div class="audit-detail" *ngIf="phase2Data.skill_instructions[key].intensity">
+              <span class="detail-label">Intensité</span>
+              <span>{{ phase2Data.skill_instructions[key].intensity }}</span>
+            </div>
+            <div class="audit-detail" *ngIf="phase2Data.skill_instructions[key].seniority_signal">
+              <span class="detail-label">Séniorité</span>
+              <span>{{ phase2Data.skill_instructions[key].seniority_signal }}</span>
+            </div>
+          </div>
+          <p class="audit-anchor" *ngIf="phase2Data.skill_instructions[key].evidence_anchor">
+            📎 {{ phase2Data.skill_instructions[key].evidence_anchor }}
+          </p>
+          <div class="audit-flags" *ngIf="phase2Data.skill_instructions[key].red_flags?.length">
+            <span class="flag" *ngFor="let flag of phase2Data.skill_instructions[key].red_flags">⚠️ {{ flag }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ng-template #noPhase2>
+      <div class="empty-state">
+        <p>🔄 Données Phase 2 non disponibles</p>
+      </div>
+    </ng-template>
+  </div>
+
+  <!-- Phase 3 tab removed -->
+
+  <!-- ═══ TAB: REPORT ═══ -->
+  <div class="tab-content" *ngIf="activeTab === 'report'">
+    <!-- Use reportData when done, liveReports when processing -->
+    <ng-container *ngIf="state === 'done'">
+      <ng-container *ngTemplateOutlet="reportTemplate; context: { $implicit: reportData }"></ng-container>
+    </ng-container>
+    <ng-container *ngIf="state === 'processing'">
+      <ng-container
+        *ngTemplateOutlet="reportTemplate; context: { $implicit: liveReports[selectedCvIndex] || liveReports[getLiveReportKeys()[0]] }"></ng-container>
+    </ng-container>
+  </div>
+
+  <!-- ═══ TAB: OUTPUT FILES ═══ -->
+  <div class="tab-content" *ngIf="activeTab === 'outputs' && state === 'done'">
+    <div class="phase-card">
+      <h3>📁 Fichiers de sortie</h3>
+      <p class="phase-subtitle">Tous les fichiers générés par le pipeline</p>
+
+      <div class="output-files-list" *ngIf="outputFiles.length > 0; else noOutputs">
+        <div class="output-file" *ngFor="let file of outputFiles" (click)="downloadFile(file)">
+          <div class="file-icon">
+            <span *ngIf="file.category === 'graphs'">🕸️</span>
+            <span *ngIf="file.category === 'phase2'">🔍</span>
+            <span *ngIf="file.category === 'phase3'">📈</span>
+            <span *ngIf="file.category === 'reports'">📋</span>
+            <span *ngIf="file.category === 'bias'">⚖️</span>
+            <span *ngIf="file.category === 'results'">📊</span>
+          </div>
+          <div class="file-info">
+            <span class="file-name">{{ file.name }}</span>
+            <span class="file-category">{{ file.category }}</span>
+          </div>
+          <span class="file-size">{{ formatFileSize(file.size) }}</span>
+          <span class="file-download">⬇️</span>
+        </div>
+      </div>
+      <ng-template #noOutputs>
+        <div class="empty-state">
+          <p>Aucun fichier de sortie disponible</p>
+        </div>
+      </ng-template>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ REPORT TEMPLATE (shared between live and final) ═══ -->
+<ng-template #reportTemplate let-report>
+  <div class="phase-card" *ngIf="report; else noReport">
+    <h3>📋 Rapport complet — CV {{ selectedCvIndex + 1 }}</h3>
+
+    <!-- Overall Assessment -->
+    <div class="report-section" *ngIf="report.overall_assessment">
+      <h4>🎯 Évaluation globale</h4>
+      <div class="assessment-grid">
+        <div class="assessment-item verdict">
+          <span class="assessment-label">Verdict</span>
+          <span class="assessment-value">{{ report.overall_assessment.verdict }}</span>
+        </div>
+        <div class="assessment-item">
+          <span class="assessment-label">Match</span>
+          <span class="assessment-value highlight">{{ report.overall_assessment.match_pct }}%</span>
+        </div>
+        <div class="assessment-item" *ngIf="report.overall_assessment.confidence">
+          <span class="assessment-label">Confiance</span>
+          <span class="assessment-value">{{ report.overall_assessment.confidence.confidence_label }}
+            ({{ report.overall_assessment.confidence.confidence_score }})</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Combo Scores V6 -->
+    <div class="report-section" *ngIf="report.combo_scores_v6">
+      <h4>🧮 Scores combinés V6</h4>
+      <div class="combo-grid">
+        <div class="combo-item" *ngFor="let key of objectKeys(report.combo_scores_v6)">
+          <span class="combo-name">{{ key }}</span>
+          <span class="combo-value">
+            {{ report.combo_scores_v6[key]?.value != null ? report.combo_scores_v6[key].value :
+            report.combo_scores_v6[key] }}
+          </span>
+          <p class="combo-desc" *ngIf="report.combo_scores_v6[key]?.description">
+            {{ report.combo_scores_v6[key].description }}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cluster Analysis -->
+    <div class="report-section" *ngIf="report.cluster_analysis">
+      <h4>📊 Analyse par cluster</h4>
+      <div class="cluster-grid">
+        <div class="cluster-item" *ngFor="let key of objectKeys(report.cluster_analysis)">
+          <span class="cluster-type" [style.color]="getTypeColor(key)">{{ key }}</span>
+          <span class="cluster-match">{{ report.cluster_analysis[key].match_pct }}%</span>
+          <span class="cluster-count">{{ report.cluster_analysis[key].count }} compétences</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Profile Summary -->
+    <!-- Profile Summary removed -->
+
+    <!-- Decision Rationale -->
+    <div class="report-section" *ngIf="report.decision_rationale">
+      <h4>🧠 Justification de la décision</h4>
+      <div class="rationale-content">
+        <p *ngIf="report.decision_rationale.why_this_verdict">
+          <strong>Pourquoi ce verdict :</strong> {{ report.decision_rationale.why_this_verdict }}
+        </p>
+        <p *ngIf="report.decision_rationale.key_strengths">
+          <strong>Forces :</strong> {{ report.decision_rationale.key_strengths }}
+        </p>
+        <p *ngIf="report.decision_rationale.key_gaps">
+          <strong>Gaps :</strong> {{ report.decision_rationale.key_gaps }}
+        </p>
+        <p *ngIf="report.decision_rationale.scoring_reliability">
+          <strong>Fiabilité :</strong> {{ report.decision_rationale.scoring_reliability }}
+        </p>
+      </div>
+    </div>
+
+    <!-- Pool Ranking -->
+    <div class="report-section" *ngIf="report.pool_ranking">
+      <h4>🏆 Classement</h4>
+      <div class="ranking-info">
+        <span class="rank-badge">
+          #{{ report.pool_ranking.rank }} / {{ report.pool_ranking.pool_size }}
+        </span>
+        <span class="tier-info">{{ report.pool_ranking.tier }}</span>
+        <span class="reliability">{{ report.pool_ranking.ranking_reliability }}</span>
+      </div>
+    </div>
+  </div>
+  <ng-template #noReport>
+    <div class="empty-state">
+      <p>🔄 Rapport non disponible</p>
+    </div>
+  </ng-template>
+</ng-template>
