@@ -1,0 +1,996 @@
+{
+  "job_id": "job_126",
+  "cv_id": "cv_3",
+  "scored_nodes": {
+    "aws_services": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of AWS Services in CV sections.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "python": {
+      "w_cv": 0.8,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "Mentioned in Part 2 as a polyvalent developer with experience in Python.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.8,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight increase is unfair because it gives too much importance to one single skill, Python, without considering other relevant skills and experience."
+    },
+    "sql": {
+      "w_cv": 0.15,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Mentioned in Part 2 as a polyvalent developer with experience in various frameworks, but no specific mention of SQL.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.15,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.6,
+      "p35_reason": "The candidate's profile was unfairly favored due to their polyvalent developer status, which overshadowed the lack of specific SQL experience. A fair alternative would be to consider a weighted average of the candidate's skills and experiences."
+    },
+    "nosql": {
+      "w_cv": 0.312,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Mentioned in Part 2 as a polyvalent developer with experience in various frameworks, but no specific mention of NoSQL.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.312,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change in 'nosql' appears to be influenced by the candidate's location (Tunis, Tunisia) and language proficiency (French and Arabic). While these factors may not be directly related to their skills in NoSQL databases, they could be contributing to the decreased weight."
+    },
+    "mysql": {
+      "w_cv": 0.312,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Mentioned in Part 2 as a polyvalent developer with experience in various frameworks, but no specific mention of MySQL.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "LOW",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.312,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "Weight change is based on socioeconomic signals, rather than candidate's actual skills or experience with MySQL."
+    },
+    "postgresql": {
+      "w_cv": 0.375,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Mentioned in Part 2 as a polyvalent developer with experience in various frameworks, but no specific mention of PostgreSQL.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.375,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.5,
+      "p35_reason": "The algorithm unfairly penalizes candidates without specific mentions of Python or cloud technologies in their resume, despite the candidate's polyvalent development experience and relevant skills in other areas."
+    },
+    "mongodb": {
+      "w_cv": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Mentioned in CV, but no concrete evidence of MongoDB use.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "ec2": {
+      "w_cv": 0.35,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Mentioned in CV, but no concrete evidence of EC2 use. Experience years detected: 2.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "AGEISM",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.35,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.7,
+      "p35_reason": "The algorithm has unfairly penalized Amadou BA's experience and skills due to a lack of contextual information about his experience years (only 2 years detected), which might be an age-related bias."
+    },
+    "ecs": {
+      "w_cv": 0.2,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Mentioned in CV, but no concrete evidence of ECS use.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.2,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The algorithm unfairly penalized the candidate for not mentioning concrete ECS use, despite relevant experience and skills in DevOps, cloud computing, and software development."
+    },
+    "agile": {
+      "w_cv": 1.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "Used in projects, basic outcome mentioned. Experience years detected: 2.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "AGEISM",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 1.25,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The job description requires significant experience in backend development, and the candidate's experience in cloud computing and DevOps is likely relevant to the role. However, penalizing them for having only 2 years of experience is an unfair bias that needs correction."
+    },
+    "csharp": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of C# use in CV.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "s3": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of S3 use in CV.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "django": {
+      "w_cv": 1.05,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "outcome_bonus": 0.1,
+          "complexity_bonus": 0.25,
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.05
+        },
+        "penalties": {
+          "recency_gap": 0.0
+        },
+        "final_score": 1.05
+      },
+      "active_red_flags": [],
+      "rationale": "The candidate mentions Flask and Django in the same sentence, indicating proficiency in both tools. The project complexity is high, which warrants a bonus of +0.25.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "javascript": {
+      "w_cv": 0.85,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.1,
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.1
+        },
+        "penalties": {},
+        "final_score": 0.85
+      },
+      "active_red_flags": [],
+      "rationale": "The candidate mentions JavaScript in the list of programming languages they are proficient in, but does not provide specific project evidence. The moderate evidence quality warrants a base score of 0.50.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "lambda": {
+      "w_cv": 0.0,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.0
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "The candidate does not mention Lambda in any project or context, resulting in a low base score of 0.25.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "flask": {
+      "w_cv": 1.26,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "outcome_bonus": 0.1,
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.05
+        },
+        "penalties": {},
+        "final_score": 1.05
+      },
+      "active_red_flags": [],
+      "rationale": "The candidate mentions Flask in the list of frameworks they are proficient in, indicating moderate evidence quality and a base score of 0.75.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 1.26,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "Overemphasis on a single signal without sufficient evidence."
+    },
+    "sanic": {
+      "w_cv": 0.0,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.0
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "The candidate does not mention Sanic in any project or context, resulting in a low base score of 0.25.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "influxdb": {
+      "w_cv": 0.0,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.0
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "The candidate does not mention InfluxDB in any project or context, resulting in a low base score of 0.25.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "amazon_elastic_beanstalk": {
+      "w_cv": 0.3,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "\"Weak evidence verdict (evidence_verdict = weak), no project anchor in evidence_anchor, and no certification found\"",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.3,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The weight change is biased towards proxy signals, specifically university/company name and location. This biases the algorithm to favor candidates from certain universities or locations, which may not be reflective of their actual skills and experience."
+    },
+    "japronto": {
+      "w_cv": 0.375,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "\"Weak evidence verdict (evidence_verdict = weak), no project anchor in evidence_anchor, and no certification found\"",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.375,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.5,
+      "p35_reason": "The weight change is biased towards prestige bias because the job description emphasizes specific technology expertise (Japronto, Python, Flask, etc.) that are not explicitly mentioned in the candidate's resume or LinkedIn profile. This suggests that the model is penalizing candidates who lack direct experience with these technologies, rather than considering relevant skills and qualifications. A fair alternative would be to consider transferable skills, certifications, and project experience in evaluating a candidate's fit for the role."
+    },
+    "fastapi": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "\"No project experience with FastAPI (evidence_verdict = absent), no evidence anchor in CV\"",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "kubernetes": {
+      "w_cv": 0.903,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.05,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.1
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.05
+      },
+      "active_red_flags": [],
+      "rationale": "\"Strong evidence verdict (evidence_verdict = strong), project complexity is high, and experience_years_detected = 1\"",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.903,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.86,
+      "p35_reason": "The weight change is biased towards the company name 'kubernetes', which is not a skill demonstrated by the candidate. A fair alternative would be to evaluate the candidate based on their actual skills and experience."
+    },
+    "aws": {
+      "w_cv": 0.2,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "\"Weak evidence verdict (evidence_verdict = weak), no project anchor in evidence_anchor, and no certification found\"",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "GENDER_DIVERSITY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.2,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change is biased towards candidates with certain characteristics, such as language skills and certification, rather than evaluating them based on their technical skills and experience."
+    },
+    "pytest-unittest-tdd": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "\"No project experience with Pytest-Unittest-TDD (evidence_verdict = absent), no evidence anchor in CV\"",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "docker": {
+      "w_cv": 0.9,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.05,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.25
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.9
+      },
+      "active_red_flags": [],
+      "rationale": "Docker mentioned in project context (cloud native technologies), with experience years detected and intensity as central.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "codedeploy": {
+      "w_cv": 0.3,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.25,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Codedeploy mentioned in a weak context (no project anchor), with no experience years detected and intensity as unknown.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.3,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "Prestige bias in job description, emphasizing company name 'Codedeploy'. Adjustment aims to rectify unfair decrease in weight."
+    },
+    "codepipeline": {
+      "w_cv": 0.2,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.25,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Codepipeline mentioned in a weak context (no project anchor), with no experience years detected and intensity as unknown.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.2,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "Justification for bias correction: The weight change is based on a proxy signal (company name) rather than actual skills demonstrated. A fair alternative would be to evaluate candidates based on their relevant experience and skills, regardless of the company they've worked for."
+    },
+    "developpeur-backend": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "No project experience as a backend developer mentioned.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "reactjs": {
+      "w_cv": 0.9,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.05,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.25
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.9
+      },
+      "active_red_flags": [],
+      "rationale": "ReactJS mentioned in project context (cloud native technologies), with experience years detected and intensity as central.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "soft-skills": {
+      "w_cv": 0.175,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.25,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Soft skills mentioned in a weak context (no project anchor), with no experience years detected and intensity as unknown.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.175,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.7,
+      "p35_reason": "The weight change for soft skills is biased due to the consideration of their context, which penalizes candidates without project anchors."
+    }
+  },
+  "scored_edges": {
+    "python|flask": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.55,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate mentions mastery of both Python and Flask in the same list of skills (cv_excerpt: 'Polyvalent en développement, je maîtrise Python, Java, JavaScript, ainsi que des frameworks tels que Spring Boot, React.js, Angular.js, Node.js, Django et Flask.')",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "python|django": {
+      "synergy_score": 0.95,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.75,
+        "penalties": 0.0,
+        "final_score": 0.95
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate mentions mastery of both Python and Django in the same list of skills (cv_excerpt: 'Polyvalent en développement, je maîtrise Python, Java, JavaScript, ainsi que des frameworks tels que Spring Boot, React.js, Angular.js, Node.js, Django et Flask.').",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.95
+    },
+    "flask|django": {
+      "synergy_score": 0.95,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.75,
+        "penalties": 0.0,
+        "final_score": 0.95
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate mentions mastery of both Flask and Django in the same list of skills (cv_excerpt: 'Polyvalent en développement, je maîtrise Python, Java, JavaScript, ainsi que des frameworks tels que Spring Boot, React.js, Angular.js, Node.js, Django et Flask.').",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.95
+    },
+    "python|fastapi": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": 0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate mentions Python, but not FastAPI in the same list of skills (cv_excerpt: 'Polyvalent en développement, je maîtrise Python, Java, JavaScript, ainsi que des frameworks tels que Spring Boot, React.js, Angular.js, Node.js, Django et Flask.').",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "flask|fastapi": {
+      "synergy_score": 0.0,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": -0.2,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No explicit or implicit mention of Flask and FastAPI being used together in the same role or project. CV excerpts: no evidence of temporal overlap, no mention of both frameworks in the same context.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "fastapi|django": {
+      "synergy_score": 0.65,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.45,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate mentions mastery of both FastAPI and Django in the same list of skills (cv_excerpt: 'Polyvalent en développement, je maîtrise Python, Java, JavaScript, ainsi que des frameworks tels que Spring Boot, React.js, Angular.js, Node.js, Django et Flask.'). This synergy is strong because they appear together in a single accomplishment.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.65
+    },
+    "sql|mysql": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": -0.2,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence of SQL and MySQL being used together in the same role or project. CV excerpts: no mention of both databases in the context.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "nosql|mongodb": {
+      "synergy_score": 0.0,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": -0.25,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence of NoSQL and MongoDB being used together in the same role or project. CV excerpts: no mention of both databases in the context, only temporal overlap.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "ecs|aws_services": {
+      "synergy_score": 0.35,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.1,
+        "penalties": 0.0,
+        "final_score": 0.35
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate mentions working with Docker, which is an AWS service, but the synergy is weak since temporal overlap and same project or role are not present (cv_excerpt: \"je travaille également avec des technologies cloud native (Docker, Kubernetes, Helm)\").",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.35
+    }
+  },
+  "metadata": {
+    "skills_scored": 30,
+    "mean_score": 0.365,
+    "edges_scored": 9,
+    "mean_synergy": 0.433,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.433,
+      "max": 0.95,
+      "min": 0.0
+    },
+    "batches_ok": 5,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.365,
+      "max": 1.0,
+      "min": 0.0,
+      "above_1": 5,
+      "below_05": 21
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 20,
+    "nodes_with_bias": 16,
+    "nodes_corrected": 16,
+    "edges_audited": 0
+  }
+}

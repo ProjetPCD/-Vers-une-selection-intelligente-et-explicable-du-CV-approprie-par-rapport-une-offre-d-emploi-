@@ -1,0 +1,425 @@
+{
+  "job_id": "job_1",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-05T07:29:36.899276",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 35.4,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.667,
+        "coverage_rate": 0.19,
+        "nodes_audited": 3,
+        "nodes_biased": 3
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.1183,
+    "edge_score": 0.0,
+    "combined": 0.071
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1548,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6827,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.646,
+    "matched_nodes": "4/21",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.155,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.0526,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.0973,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1905,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.2479,
+    "weighted_recall": 0.155,
+    "weighted_f1": {
+      "value": 0.2758,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6114,
+    "missing_critical_penalty": {
+      "value": 0.2,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.8614,
+    "ndcg_10": 0.927,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9243,
+    "top_skill_alignment": 0.4792,
+    "semantic_fit_score": 0.2346,
+    "experience_density": 0.0885
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 22.19,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 12.8,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 16.87,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 94.46,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 44.95,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 31.41,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 44.07,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 4,
+      "match_pct": 16.1,
+      "weight_sum": 3.029
+    },
+    "Tool": {
+      "count": 8,
+      "match_pct": 0.0,
+      "weight_sum": 5.867
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 62.5,
+      "weight_sum": 0.9
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 0.9
+    },
+    "Responsibility": {
+      "count": 3,
+      "match_pct": 0.0,
+      "weight_sum": 2.4
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 30.9,
+      "weight_sum": 2.62
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "total_edges": 19,
+    "top_synergies": [
+      {
+        "edge_key": "python|machine_learning_engineer",
+        "source": "python",
+        "target": "machine_learning_engineer",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "tensorflow|machine_learning_engineer",
+        "source": "tensorflow",
+        "target": "machine_learning_engineer",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "pytorch|machine_learning_engineer",
+        "source": "pytorch",
+        "target": "machine_learning_engineer",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "pandas|python",
+        "source": "pandas",
+        "target": "python",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "numpy|python",
+        "source": "numpy",
+        "target": "python",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Machine Learning Engineer",
+      "type": "Domain",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.859,
+      "severity": "critical",
+      "importance": 0.859
+    },
+    {
+      "skill": "PyTorch",
+      "type": "Tool",
+      "gap": 0.859,
+      "severity": "critical",
+      "importance": 0.859
+    },
+    {
+      "skill": "Deep Learning",
+      "type": "Hard Skill",
+      "gap": 0.8,
+      "severity": "critical",
+      "importance": 0.8
+    },
+    {
+      "skill": "Data Pipelines",
+      "type": "Responsibility",
+      "gap": 0.8,
+      "severity": "critical",
+      "importance": 0.8
+    },
+    {
+      "skill": "Model Integration",
+      "type": "Responsibility",
+      "gap": 0.8,
+      "severity": "critical",
+      "importance": 0.8
+    },
+    {
+      "skill": "Model Monitoring",
+      "type": "Responsibility",
+      "gap": 0.8,
+      "severity": "critical",
+      "importance": 0.8
+    },
+    {
+      "skill": "Pandas",
+      "type": "Tool",
+      "gap": 0.774,
+      "severity": "critical",
+      "importance": 0.774
+    },
+    {
+      "skill": "NumPy",
+      "type": "Tool",
+      "gap": 0.774,
+      "severity": "critical",
+      "importance": 0.774
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.9
+      },
+      {
+        "label": "Machine Learning Engineer",
+        "type": "Domain",
+        "gap": 0.9
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.859
+      },
+      {
+        "label": "PyTorch",
+        "type": "Tool",
+        "gap": 0.859
+      },
+      {
+        "label": "Deep Learning",
+        "type": "Hard Skill",
+        "gap": 0.8
+      },
+      {
+        "label": "Data Pipelines",
+        "type": "Responsibility",
+        "gap": 0.8
+      },
+      {
+        "label": "Model Integration",
+        "type": "Responsibility",
+        "gap": 0.8
+      },
+      {
+        "label": "Model Monitoring",
+        "type": "Responsibility",
+        "gap": 0.8
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 3,
+    "nodes_with_bias": 3,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 3
+    },
+    "biased_nodes": [
+      {
+        "id": "engineering_degree",
+        "label": "Engineering Degree",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 1.25,
+        "w_cv_corrected": 1.25,
+        "reason": "The weight change from 0.9 to 0.5 is likely due to the mention of Jawaharlal Nehru Technological University, which may be perceived as a less prestigious institution. This is an example of prestige bias, where the candidate's university name is unfairly penalizing their engineering degree. A fairer assessment would consider the skills and qualifications demonstrated, rather than the institution's reputation. To correct for this bias, a correction factor of 1.25 is applied to increase the weight of the engineering degree."
+      },
+      {
+        "id": "methodology",
+        "label": "Methodology",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.26,
+        "w_cv_corrected": 1.26,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience in agile process Jira and Sprint Planning is overvalued, and the bonus for 9 years of experience is not justified by the job description. A fairer evaluation would focus on the candidate's skills in machine learning, Python, and relevant technologies, rather than their experience in unrelated fields like mobile development."
+      },
+      {
+        "id": "good_communication",
+        "label": "Good Communication",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 1.312,
+        "w_cv_corrected": 1.312,
+        "reason": "The weight change for 'good_communication' is biased due to prestige bias, as the candidate's experience in web development and mobile applications is not directly relevant to the machine learning engineer position. The bonus for 9 years of experience and intensity may have unfairly favored the candidate, leading to a decreased weight for good communication. A fair alternative would be to focus on the candidate's ability to communicate complex technical concepts, which is essential for the machine learning engineer role."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1548 (sous-qualifié), CTM=0.6827 (écart structurel élevé), match_pct=35.4% → Poor Match",
+    "v6_summary": "weighted_f1=0.2758, gap_score=0.0973, ndcg_5=0.8614, missing_critical_penalty=0.2, combo_v6_final=22.19",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "14 gaps critiques identifiés",
+    "bias_note": "3 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 7,
+    "pool_size": 15,
+    "percentile": 0.5714,
+    "composite_z_score": 0.2737,
+    "tier": "Top 50%",
+    "z_scores": {
+      "combo_v6": 0.181,
+      "wf1": 0.888,
+      "gap_score": 0.041,
+      "ntcw": 0.25,
+      "match_pct": 0.411,
+      "ndcg_5": -0.344
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 20.4687,
+        "std": 9.5083
+      },
+      "wf1": {
+        "mean": 0.1736,
+        "std": 0.1151
+      },
+      "gap_score": {
+        "mean": 0.095,
+        "std": 0.0561
+      },
+      "ntcw": {
+        "mean": 0.135,
+        "std": 0.0793
+      },
+      "match_pct": {
+        "mean": 32.6573,
+        "std": 6.6713
+      },
+      "ndcg_5": {
+        "mean": 0.8781,
+        "std": 0.0484
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

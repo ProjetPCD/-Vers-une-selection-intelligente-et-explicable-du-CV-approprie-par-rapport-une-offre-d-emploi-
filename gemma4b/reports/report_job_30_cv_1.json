@@ -1,0 +1,440 @@
+{
+  "job_id": "job_30",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-07T00:35:40.576671",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 35.07,
+    "confidence": {
+      "confidence_score": 0.56,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.5,
+        "coverage_rate": 0.643,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.3972,
+    "edge_score": 0.5457,
+    "combined": 0.4566
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2343,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6392,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6493,
+    "matched_nodes": "0/14",
+    "edge_match_pct": 27.28
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2364,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.5457,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.2198,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0909,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 2.0,
+    "weighted_recall": 0.0515,
+    "weighted_f1": {
+      "value": 0.1004,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5,
+    "missing_critical_penalty": {
+      "value": 0.1,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9466,
+    "ndcg_10": 0.9031,
+    "map_score": 0.9267,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.3542,
+    "semantic_fit_score": 0.5248,
+    "experience_density": 0.1572
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 28.45,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 30.83,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 29.43,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 95.3,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 40.05,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 31.59,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 35.85,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 5,
+      "match_pct": 18.7,
+      "weight_sum": 4.627
+    },
+    "Hard Skill": {
+      "count": 4,
+      "match_pct": 26.8,
+      "weight_sum": 3.415
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 13.6,
+      "weight_sum": 1.203
+    },
+    "Soft Skill": {
+      "count": 3,
+      "match_pct": 13.9,
+      "weight_sum": 1.836
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 27.28,
+    "total_edges": 6,
+    "top_synergies": [
+      {
+        "edge_key": "devops_java|devops_communication_skills",
+        "source": "devops_java",
+        "target": "devops_communication_skills",
+        "w_0": 0.65,
+        "w_cv": 0.662,
+        "w_cv_norm": 0.331,
+        "match_pct": 51.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devops_jenkins|devops_java",
+        "source": "devops_jenkins",
+        "target": "devops_java",
+        "w_0": 0.793,
+        "w_cv": 0.582,
+        "w_cv_norm": 0.291,
+        "match_pct": 36.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devops_docker|devops_kubernetes",
+        "source": "devops_docker",
+        "target": "devops_kubernetes",
+        "w_0": 0.917,
+        "w_cv": 0.544,
+        "w_cv_norm": 0.272,
+        "match_pct": 29.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devops_python|devops_data_science",
+        "source": "devops_python",
+        "target": "devops_data_science",
+        "w_0": 0.745,
+        "w_cv": 0.537,
+        "w_cv_norm": 0.269,
+        "match_pct": 36.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devops_linux|devops_kubernetes",
+        "source": "devops_linux",
+        "target": "devops_kubernetes",
+        "w_0": 0.793,
+        "w_cv": 0.506,
+        "w_cv_norm": 0.253,
+        "match_pct": 31.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "AWS",
+      "type": "Tool",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Jenkins",
+      "type": "Tool",
+      "gap": 0.918,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.625,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Go",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.636,
+      "severity": "critical",
+      "importance": 0.917
+    },
+    {
+      "skill": "Kubernetes",
+      "type": "Tool",
+      "gap": 0.655,
+      "severity": "critical",
+      "importance": 0.917
+    },
+    {
+      "skill": "communication",
+      "type": "Soft Skill",
+      "gap": 0.638,
+      "severity": "critical",
+      "importance": 0.72
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "AWS",
+        "type": "Tool",
+        "gap": 0.906
+      },
+      {
+        "label": "Jenkins",
+        "type": "Tool",
+        "gap": 0.918
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.625
+      },
+      {
+        "label": "Go",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Docker",
+        "type": "Tool",
+        "gap": 0.636
+      },
+      {
+        "label": "Kubernetes",
+        "type": "Tool",
+        "gap": 0.655
+      },
+      {
+        "label": "communication",
+        "type": "Soft Skill",
+        "gap": 0.638
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 13,
+    "nodes_with_bias": 12,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "C": 7,
+      "PROXY": 3,
+      "PRESTIGE": 1,
+      "B": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "devops_aws",
+        "label": "AWS",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease in weight (0.75) is likely due to the absence of explicitly stated AWS experience, a key requirement outlined in the job description. This indicates a proxy bias favoring candidates who demonstrate familiarity with AWS, likely due to the JD's emphasis on extensive AWS usage and deployment pipelines. The candidate's background primarily focuses on full-stack development and nascent cloud skills rather than specialized DevOps/MLOps experience with AWS, creating a discrepancy in the assessment."
+      },
+      {
+        "id": "devops_jenkins",
+        "label": "Jenkins",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.163,
+        "reason": "The significant decrease in weight (w_cv from 1.0 to 0.25) is likely due to ageism (Category C) stemming from the applicant’s status as a student. The CV explicitly states ‘Software engineering student’ and a projected graduation year of 2026, lacking the experience expected for a DevOps role.  While the candidate possesses some relevant skills, the JD explicitly requires experience, and the CV's focus on academic learning rather than professional DevOps practice is a key factor.  A lower weight reflects the disparity in experience, and the requirement for a candidate with significant practical DevOps experience."
+      },
+      {
+        "id": "devops_python",
+        "label": "Python",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.75,
+        "reason": "This weight change (decrease of 0.000) is likely due to AGEISM. The candidate is a student in their final year of engineering, and the CV explicitly states a desired start date of January 2026. The JD emphasizes experience in 'advanced data architectures' and 'large-scale systems' which typically require significant professional experience, creating a potential mismatch. While the candidate possesses relevant skills (Python, Docker, Gitlab CI/CD), the lack of extensive professional experience lowers the overall impact of the showcased skills, resulting in a reduced weight. A fair alternative would be to evaluate the candidate's potential based on demonstrable skills and project outcomes, not solely on their academic standing at this stage."
+      },
+      {
+        "id": "devops_docker",
+        "label": "Docker",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The significant weight decrease (Delta = -0.167) is likely due to AGEISM. The candidate is a student in their final year of engineering, suggesting limited professional experience compared to the requirements outlined in the JD. While the CV demonstrates skills in relevant technologies like Docker, the candidate’s academic focus and limited work experience may be unfairly penalized. A fair alternative would be a weighting that better reflects the candidate's enthusiasm and foundational knowledge gained through their studies, especially considering the intensity bonus."
+      },
+      {
+        "id": "devops_kubernetes",
+        "label": "Kubernetes",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.525,
+        "reason": "This weight decrease (Delta = -0.167) is likely ageism. The candidate is a student nearing graduation (ENSA Khouribga, 2021-2026) with limited professional experience through internships. While the CV showcases relevant skills like Docker, Kubernetes, and Java/Spring Boot, the JD explicitly seeks a ‘leader’ with ‘significant experience’ in large-scale data systems, indicating a disparity in the candidate's experience level compared to the desired skillset. A correction factor of 0.7 reflects the reduced weight due to this mismatch, acknowledging the student’s potential but highlighting the lack of substantial professional application of these technologies."
+      },
+      {
+        "id": "devops_linux",
+        "label": "Linux",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.488,
+        "reason": "This weight change (DECREASED) represents a potential ageism bias. The candidate is a student (ENSA Khouribga, 2021-2026) with limited professional experience (internships). While the CV highlights relevant skills like Docker, Linux, and Agile, the JD specifically requests an *expert* in DevOps and MLOps, indicating a need for significant experience.  The CV’s focus on academic projects and certifications doesn’t fully align with the advanced requirements of the role, suggesting a reliance on prestige and a lack of real-world application of skills.  A correction factor of 0.65 reflects the need to de-emphasize the candidate’s current student status to account for the mismatch in experience levels."
+      },
+      {
+        "id": "devops_data_science",
+        "label": "science des données",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.3,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.325,
+        "reason": "This application demonstrates a strong foundational understanding of software engineering principles (Java, Spring Boot, React, Docker, GitLab CI/CD) and a growing interest in DevOps through coursework and internship experiences. However, the applicant is a student (last year of their degree) and the internship roles were short and focused on full-stack development rather than the specific MLOps or DevOps expertise sought in the JD. The significant decrease in weight (0.745 to 0.25) appears to reflect a failure to adequately assess the applicant’s potential given the limited, but relevant, skills and a focus on student status, indicating ageism and potentially a lack of understanding of the evolving skills landscape."
+      },
+      {
+        "id": "devops_communication",
+        "label": "communication",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.163,
+        "reason": "The audit indicates a lack of evidence for communication skills, despite the job description explicitly stating they are a ‘key requirement’.  The candidate's CV primarily focuses on technical skills (Java, Spring Boot, Docker, GitLab CI/CD) relevant to DevOps, and student status in a technical field which suggests a lack of experience in communication skills. This represents a proxy bias, where the system is relying on a signal (student status and technology stack) rather than actual demonstrated communication ability, unfairly penalizing the candidate."
+      },
+      {
+        "id": "devops_teamwork",
+        "label": "Teamwork",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The candidate is a student at an engineering school (ENSA Khouribga), which, while not inherently a bias, carries a prestige signal. The JD emphasizes experience with large-scale data systems and requires significant expertise, potentially favoring candidates from established companies and with longer careers.  Despite the candidate's stated interest in DevOps and demonstrated knowledge of relevant tools (Docker, GitLab CI/CD), the student status significantly reduces the perceived value compared to a candidate with equivalent demonstrable experience.  This shift downwards in weighting reflects a bias towards established professional experience. A correction factor of 1.5 is too high, as the candidate's enthusiasm and relevant skills aren't completely absent.  An increase of 0.75 acknowledges their potential while recognizing the weighting reduction."
+      },
+      {
+        "id": "devops_communication_skills",
+        "label": "Communication Skills",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.325,
+        "reason": "This analysis identifies a potential bias related to Gender/Diversity. The CV explicitly states a passion for Cloud and DevOps, aligning with the JD’s requirements for a DevOps and MLOps expert. While the candidate’s academic background (ENSA Khouribga) is relevant, the enthusiastic description of technical interests (Docker, GitLab CI/CD, Linux, Agile) combined with the explicit mention of communication skills within the CV demonstrates a relevant skillset for the role.  The slight increase in weight (0.001) is warranted to reflect this strong alignment, and a correction factor of 0.65 is applied to account for the fact that the applicant's focus on DevOps – a field often underrepresented by women – could be inadvertently amplified by the system. Further investigation is needed to confirm this assessment."
+      },
+      {
+        "id": "devops_expert_knowledge",
+        "label": "Expert",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The weight change from 0.458 to 0.25 reflects a significant decrease, primarily due to the evidence anchor being a ‘Bootcamp’ certification rather than demonstrable DevOps experience. This strongly suggests a prestige bias – prioritizing a specific, relatively recent, and arguably less rigorous training program (The Complete 2024 Web Development Bootcamp) over proven practical experience with DevOps tools and technologies. The candidate's CV emphasizes academic background and a limited internship, lacking the depth of experience expected for a ‘DevOps expert’ role, thus the correction factor is lowered."
+      },
+      {
+        "id": "devops_ml_model",
+        "label": "Models of Machine Learning",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The weight change indicates a penalty (-0.165) due to a 'recency gap penalty' applied to the candidate's listed training – \"Supervised Machine Learning: Regression and Classification Machine Learning A-Z: AI, Python & R Data Analyst The Complete 2024 Web Development Bootcamp.\" This suggests the model is prioritizing more recent, practical experience over theoretical knowledge acquired through a bootcamp. Proxy bias is demonstrated as the candidate's student status and relatively short internship experience are heavily weighted against their declared ML skills, reflecting a focus on current industry trends and institutional reputation rather than demonstrated competency. A correction factor of 0.75 reflects a significant bias towards more established experience, but acknowledges the candidate's basic skill set."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2343 (sous-qualifié), CTM=0.6392 (écart structurel élevé), match_pct=35.07% → Poor Match",
+    "v6_summary": "weighted_f1=0.1004, gap_score=0.2198, ndcg_5=0.9466, missing_critical_penalty=0.1, combo_v6_final=28.45",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "7 gaps critiques identifiés",
+    "bias_note": "12 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.56)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

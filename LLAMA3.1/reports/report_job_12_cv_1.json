@@ -1,0 +1,524 @@
+{
+  "job_id": "job_12",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-03T22:12:39.640674",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 49.8,
+    "confidence": {
+      "confidence_score": 0.81,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.281,
+        "coverage_rate": 0.875,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.5975,
+    "edge_score": 0.0,
+    "combined": 0.3585
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3745,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5171,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.502,
+    "matched_nodes": "10/32",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3885,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.125,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.3266,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1379,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.0087,
+    "weighted_recall": 0.1112,
+    "weighted_f1": {
+      "value": 0.2003,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6255,
+    "missing_critical_penalty": {
+      "value": 0.0588,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.677,
+    "ndcg_10": 0.7509,
+    "map_score": 0.9489,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8871,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.3061,
+    "experience_density": 0.2208
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 26.91,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 23.36,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 27.22,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 85.29,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 39.09,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 30.48,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 23.18,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Responsibility": {
+      "count": 3,
+      "match_pct": 38.5,
+      "weight_sum": 2.928
+    },
+    "Hard Skill": {
+      "count": 8,
+      "match_pct": 38.8,
+      "weight_sum": 6.641
+    },
+    "Tool": {
+      "count": 13,
+      "match_pct": 22.4,
+      "weight_sum": 9.454
+    },
+    "Domain": {
+      "count": 6,
+      "match_pct": 13.8,
+      "weight_sum": 3.455
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 65.9,
+      "weight_sum": 1.177
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "top_synergies": [],
+    "total_edges": 0
+  },
+  "critical_gaps": [
+    {
+      "skill": "Edge AI Solutions Development",
+      "type": "Responsibility",
+      "gap": 0.688,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Compilers Knowledge",
+      "type": "Hard Skill",
+      "gap": 0.688,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Debugging and Optimization Tools",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PyTorch",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Rust Programming",
+      "type": "Hard Skill",
+      "gap": 0.688,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.615,
+      "severity": "critical",
+      "importance": 0.977
+    },
+    {
+      "skill": "Communication Protocols",
+      "type": "Hard Skill",
+      "gap": 0.625,
+      "severity": "critical",
+      "importance": 0.938
+    },
+    {
+      "skill": "TVM",
+      "type": "Tool",
+      "gap": 0.611,
+      "severity": "critical",
+      "importance": 0.736
+    },
+    {
+      "skill": "Professional Domain Expertise",
+      "type": "Domain",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 0.7
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "Leadership Skills",
+        "type": "Soft Skill",
+        "w_cv": 1.5
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "Edge AI Solutions Development",
+        "type": "Responsibility",
+        "gap": 0.688
+      },
+      {
+        "label": "Compilers Knowledge",
+        "type": "Hard Skill",
+        "gap": 0.688
+      },
+      {
+        "label": "Debugging and Optimization Tools",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "PyTorch",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Rust Programming",
+        "type": "Hard Skill",
+        "gap": 0.688
+      },
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.615
+      },
+      {
+        "label": "Communication Protocols",
+        "type": "Hard Skill",
+        "gap": 0.625
+      },
+      {
+        "label": "TVM",
+        "type": "Tool",
+        "gap": 0.611
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 24,
+    "nodes_with_bias": 23,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 18,
+      "PROXY": 3,
+      "GENDER_DIVERSITY": 1,
+      "PROXY|HALO": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "edge-ai-solutions",
+        "label": "Edge AI Solutions Development",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.625,
+        "reason": "Potential proxy bias in weight decrease for 'edge-ai-solutions' due to lack of explicit Edge AI experience in CV, despite potential relevant skills and expertise."
+      },
+      {
+        "id": "system-architecture-design",
+        "label": "System Architecture Design",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.12,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.84,
+        "reason": "Proxy bias due to lack of explicit technical skills mentioned in CV. Correction factor increased by 0.12 to bring weight closer to ideal value."
+      },
+      {
+        "id": "firmware-development",
+        "label": "Firmware Development",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.85,
+        "reason": "The weight change of +0.072 is likely due to prestige bias, as the job description and requirements suggest a strong emphasis on prestigious skills and experiences, such as working at EY and having certifications like Hashgraph Developer. The CV does not demonstrate a similar level of experience or credentials in firmware development, which is the key requirement for this position. A fair alternative would be to use a more comprehensive evaluation process that considers multiple factors beyond just prestige."
+      },
+      {
+        "id": "compilers-knowledge",
+        "label": "Compilers Knowledge",
+        "bias_category": "PRESTIGE",
+        "severity": "HIGH",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.625,
+        "reason": "The weight change is due to a lack of expertise in compilers knowledge, which may not be entirely merit-based. A fair alternative would be to consider other relevant skills and experience."
+      },
+      {
+        "id": "embedded-systems-design",
+        "label": "Embedded Systems Design",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.85,
+        "reason": "The job description highlights specific skills and technologies in embedded systems design, which may create an implicit bias towards candidates with certain backgrounds or experiences."
+      },
+      {
+        "id": "communication-protocols",
+        "label": "Communication Protocols",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.625,
+        "reason": "The weight change was influenced by the candidate's name and company, rather than their actual skills demonstrated in the job description."
+      },
+      {
+        "id": "azure-devops",
+        "label": "Azure DevOps",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.75,
+        "reason": "The weight change is biased towards prestige because the job description mentions 'stratégique en Edge AI et systèmes embarqués', a prestigious field, and the candidate's name is Hanini Mehdi, which may give an unfair advantage. A fair alternative would be to use skills demonstrated in the CV, such as experience with RAG and Elasticsearch."
+      },
+      {
+        "id": "python-programming",
+        "label": "Python Programming",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.75,
+        "reason": "The weight change of +0.062 is attributed to the candidate's prestigious company name (EY Generative AI Engineer) and position title, rather than their demonstrated skills in Python programming."
+      },
+      {
+        "id": "rust-programming",
+        "label": "Rust Programming",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.625,
+        "reason": "The weight change is biased towards prestige bias because the node 'rust-programming' was adapted to a lower weight (-0.5) despite the candidate's CV showing no explicit experience with Rust programming. The mention of ESPRIT university, which likely includes Rust programming in its curriculum, suggests that the weight change is influenced by the candidate's educational background rather than their skills or experience."
+      },
+      {
+        "id": "tensorflow",
+        "label": "TensorFlow",
+        "bias_category": "PRESTIGE",
+        "severity": "HIGH",
+        "correction_factor": 1.45,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.725,
+        "reason": "The weight change is biased towards prestige bias because the model has unfairly penalized the candidate's skills and experience, instead giving too much importance to their education at ESPRIT and likely association with TensorFlow. A fair alternative would be to evaluate the candidate based on their actual skills, experience, and achievements."
+      },
+      {
+        "id": "git",
+        "label": "Git",
+        "bias_category": "PRESTIGE",
+        "severity": "HIGH",
+        "correction_factor": 1.5,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.75,
+        "reason": "The weight change is biased towards prestige, as the algorithm unfairly penalized the 'git' ID without considering relevant skills or project evidence."
+      },
+      {
+        "id": "system-architecture-methodology",
+        "label": "System Architecture Methodology",
+        "bias_category": "PRESTIGE",
+        "severity": "LOW",
+        "correction_factor": 1.23,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.23,
+        "reason": "Prestige bias due to mention of EY and specific methodology; corrected weight change should reflect actual skills demonstrated."
+      },
+      {
+        "id": "machine_learning",
+        "label": "Machine Learning",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The job description's mention of 'Generative AI Engineer' implies expertise in machine learning, but lacks specific project evidence to support this claim. To ensure a fair evaluation process, the weight change should be adjusted to prioritize actual skills demonstrated over prestige or reputation."
+      },
+      {
+        "id": "github",
+        "label": "GitHub",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.4,
+        "reason": "The job description emphasizes concrete project evidence for Edge AI and system development experience, which is not demonstrated by the candidate's CV. A fair alternative would be to require candidates to provide specific examples or links to their GitHub projects that demonstrate their skills."
+      },
+      {
+        "id": "onnx",
+        "label": "ONNX (Open Neural Network Exchange)",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.84,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.42,
+        "reason": "The model is penalizing the candidate for not having explicit project experience with ONNX, despite mentioning it as a skill in their CV. This bias category falls under GENDER/DIVERSITY, as it disproportionately affects individuals who may have non-traditional work experiences or skills that are not reflected in their formal education."
+      },
+      {
+        "id": "llvm",
+        "label": "LLVM (Low-Level Virtual Machine)",
+        "bias_category": "PROXY|HALO",
+        "severity": "HIGH",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.4,
+        "reason": "The weight change is biased as it takes into account the name of the university (llvm) rather than the candidate's skills and experience demonstrated in the CV. The mention of 'llvm' in the job description suggests that prestige or halo bias may be at play, where being associated with a prestigious technology like llvm gives an unfair advantage. This can be mitigated by adjusting the weight factor to 0.8, indicating a decrease in the emphasis on this signal."
+      },
+      {
+        "id": "mentorat",
+        "label": "Mentorat (Leadership)",
+        "bias_category": "PRESTIGE",
+        "severity": "HIGH",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.085,
+        "reason": "The weight change is biased in favor of the candidate due to prestige bias, as it gives undue importance to the company's name rather than the candidate's skills demonstrated."
+      },
+      {
+        "id": "edge_ai_systèmes_embarqués",
+        "label": "Edge AI and Systems Embedded",
+        "bias_category": "PRESTIGE",
+        "severity": "LOW",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.625,
+        "reason": "Prestige Bias: unfair penalty due to company name, fair alternative is to focus on candidate's skills and experience."
+      },
+      {
+        "id": "vscode",
+        "label": "Visual Studio Code (VSCode)",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.93,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.465,
+        "reason": "The weight change is biased towards prestige bias because the job description emphasizes the importance of 'mastering tools like VSCode', which suggests that having experience with this specific tool is highly valued, regardless of the candidate's actual skills or qualifications. This leads to unfair advantage for candidates who have worked with VSCode in the past, and disadvantages those who have not."
+      },
+      {
+        "id": "ide",
+        "label": "Integrated Development Environment (IDE)",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.1,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.55,
+        "reason": "The weight decrease for IDE skill is biased because it's based on the candidate's lack of direct experience with a specific IDE, rather than their overall programming skills or relevant projects."
+      },
+      {
+        "id": "docker",
+        "label": "Docker",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.1,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.55,
+        "reason": "The weight change for Docker skill is biased towards candidates from certain regions (e.g., Ariana, Tunisia). This may unfairly favor or penalize candidates based on their location. A fair alternative would be to use skills-specific signals, such as the candidate's experience with Docker containers, rather than relying on geographic information."
+      },
+      {
+        "id": "principes-de-conception-de-systèmes",
+        "label": "Principes de conception de systèmes",
+        "bias_category": "PRESTIGE",
+        "severity": "LOW",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.4,
+        "reason": "Weight increase due to university/company name mentioned in the job description, rather than skills demonstrated by the candidate."
+      },
+      {
+        "id": "poste-stratégique",
+        "label": "Poste stratégique",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.4,
+        "reason": "Prestige bias favoring candidates with experience in specific companies or technologies; applying correction factor of 0.80 to ensure fair consideration for diverse backgrounds."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3745 (sous-qualifié), CTM=0.5171 (écart structurel élevé), match_pct=49.8% → Poor Match",
+    "v6_summary": "weighted_f1=0.2003, gap_score=0.3266, ndcg_5=0.677, missing_critical_penalty=0.0588, combo_v6_final=26.91",
+    "key_strengths": "1 compétences clés validées",
+    "key_gaps": "9 gaps critiques identifiés",
+    "bias_note": "23 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.81)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

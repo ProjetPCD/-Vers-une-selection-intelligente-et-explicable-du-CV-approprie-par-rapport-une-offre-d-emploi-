@@ -1,0 +1,400 @@
+{
+  "job_id": "job_96",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-05T18:39:50.899451",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 15.93,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.815,
+        "coverage_rate": 0.037,
+        "nodes_audited": 1,
+        "nodes_biased": 1
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.0268,
+    "edge_score": 0.0,
+    "combined": 0.0161
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.0309,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.8298,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.8407,
+    "matched_nodes": "0/27",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.0268,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.0,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.0219,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0435,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.6667,
+    "weighted_recall": 0.0293,
+    "weighted_f1": {
+      "value": 0.0575,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6,
+    "missing_critical_penalty": {
+      "value": 0.0455,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 1.0,
+    "ndcg_10": 0.9984,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.4667,
+    "semantic_fit_score": 0.2051,
+    "experience_density": 0.0222
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 10.64,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 2.16,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 9.14,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 100.0,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 37.55,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 22.93,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 41.78,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Education": {
+      "count": 1,
+      "match_pct": 60.0,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 12,
+      "match_pct": 0.0,
+      "weight_sum": 10.117
+    },
+    "Tool": {
+      "count": 10,
+      "match_pct": 0.0,
+      "weight_sum": 8.723
+    },
+    "Soft Skill": {
+      "count": 3,
+      "match_pct": 0.0,
+      "weight_sum": 2.084
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 0.477
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "total_edges": 24,
+    "top_synergies": [
+      {
+        "edge_key": "python|security_principles",
+        "source": "python",
+        "target": "security_principles",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "rust|security_principles",
+        "source": "rust",
+        "target": "security_principles",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "docker|security_principles",
+        "source": "docker",
+        "target": "security_principles",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ansible|security_principles",
+        "source": "ansible",
+        "target": "security_principles",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "sql|security_principles",
+        "source": "sql",
+        "target": "security_principles",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Rust",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Bash",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Swift",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "OCaml",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Office 365",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Ansible",
+      "type": "Tool",
+      "gap": 0.99,
+      "severity": "critical",
+      "importance": 0.99
+    },
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 0.96,
+      "severity": "critical",
+      "importance": 0.96
+    },
+    {
+      "skill": "Terraform",
+      "type": "Tool",
+      "gap": 0.947,
+      "severity": "critical",
+      "importance": 0.947
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.924,
+      "severity": "critical",
+      "importance": 0.924
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Rust",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Bash",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Swift",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "OCaml",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Office 365",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Ansible",
+        "type": "Tool",
+        "gap": 0.99
+      },
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "gap": 0.96
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 1,
+    "nodes_with_bias": 1,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "ingenieur",
+        "label": "Ingénieur",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.2,
+        "w_cv_corrected": 1.2,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's Engineer's degree from a specific institution (INSAT) is being unfairly favored. The evidence anchor 'Engineer's degree, Computer Science, Networks and Telecommunications' is not a direct indicator of the candidate's skills or experience in security engineering, which is the primary requirement for the job. A fairer assessment would consider the candidate's relevant skills and experience, rather than their educational background."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.0309 (sous-qualifié), CTM=0.8298 (écart structurel élevé), match_pct=15.93% → Poor Match",
+    "v6_summary": "weighted_f1=0.0575, gap_score=0.0219, ndcg_5=1.0, missing_critical_penalty=0.0455, combo_v6_final=10.64",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "22 gaps critiques identifiés",
+    "bias_note": "1 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 12,
+    "pool_size": 15,
+    "percentile": 0.2143,
+    "composite_z_score": -0.5702,
+    "tier": "Bottom 50%",
+    "z_scores": {
+      "combo_v6": -0.571,
+      "wf1": -0.408,
+      "gap_score": -1.1,
+      "ntcw": -1.137,
+      "match_pct": -1.975,
+      "ndcg_5": 1.268
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 15.1213,
+        "std": 7.848
+      },
+      "wf1": {
+        "mean": 0.0848,
+        "std": 0.067
+      },
+      "gap_score": {
+        "mean": 0.0689,
+        "std": 0.0428
+      },
+      "ntcw": {
+        "mean": 0.0928,
+        "std": 0.0545
+      },
+      "match_pct": {
+        "mean": 28.0047,
+        "std": 6.1137
+      },
+      "ndcg_5": {
+        "mean": 0.8487,
+        "std": 0.1194
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

@@ -1,0 +1,412 @@
+{
+  "job_id": "job_13",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-03T15:39:07.522132",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 35.16,
+    "confidence": {
+      "confidence_score": 0.55,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.5,
+        "coverage_rate": 0.625,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.4889,
+    "edge_score": 0.7872,
+    "combined": 0.6082
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2746,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6753,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6484,
+    "matched_nodes": "1/16",
+    "edge_match_pct": 39.37
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2829,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.7388,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.2232,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.2,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.4224,
+    "weighted_recall": 0.1419,
+    "weighted_f1": {
+      "value": 0.258,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.59,
+    "missing_critical_penalty": {
+      "value": 0.2308,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8929,
+    "ndcg_10": 0.8477,
+    "map_score": 0.8822,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9471,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.3676,
+    "experience_density": 0.2075
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 37.3,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 42.17,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 26.79,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 91.59,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 45.08,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 37.18,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 21.85,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 5,
+      "match_pct": 16.5,
+      "weight_sum": 4.637
+    },
+    "Tool": {
+      "count": 6,
+      "match_pct": 29.8,
+      "weight_sum": 5.758
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 22.1,
+      "weight_sum": 2.746
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 52.5,
+      "weight_sum": 0.443
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 39.37,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "sql-database|web_developer_domain",
+        "source": "sql-database",
+        "target": "web_developer_domain",
+        "w_0": 0.9,
+        "w_cv": 1.125,
+        "w_cv_norm": 0.562,
+        "match_pct": 62.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "github-version-control|web_developer_domain",
+        "source": "github-version-control",
+        "target": "web_developer_domain",
+        "w_0": 0.65,
+        "w_cv": 1.125,
+        "w_cv_norm": 0.562,
+        "match_pct": 86.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "git-version-control|web_developer_domain",
+        "source": "git-version-control",
+        "target": "web_developer_domain",
+        "w_0": 0.6,
+        "w_cv": 1.125,
+        "w_cv_norm": 0.562,
+        "match_pct": 93.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "javascript-development|web_developer_domain",
+        "source": "javascript-development",
+        "target": "web_developer_domain",
+        "w_0": 0.9,
+        "w_cv": 0.994,
+        "w_cv_norm": 0.497,
+        "match_pct": 55.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "html5_skill|web_developer_domain",
+        "source": "html5_skill",
+        "target": "web_developer_domain",
+        "w_0": 0.8,
+        "w_cv": 0.806,
+        "w_cv_norm": 0.403,
+        "match_pct": 50.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "PHP",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "WordPress",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Agile",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Drupal",
+      "type": "Tool",
+      "gap": 0.979,
+      "severity": "critical",
+      "importance": 0.979
+    },
+    {
+      "skill": "Jira",
+      "type": "Tool",
+      "gap": 0.915,
+      "severity": "critical",
+      "importance": 0.915
+    },
+    {
+      "skill": "CSS3",
+      "type": "Hard Skill",
+      "gap": 0.79,
+      "severity": "critical",
+      "importance": 0.884
+    },
+    {
+      "skill": "bonne communication",
+      "type": "Soft Skill",
+      "gap": 0.62,
+      "severity": "critical",
+      "importance": 0.87
+    },
+    {
+      "skill": "capacity to work in a team",
+      "type": "Soft Skill",
+      "gap": 0.603,
+      "severity": "critical",
+      "importance": 0.853
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "PHP",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "WordPress",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Agile",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Drupal",
+        "type": "Tool",
+        "gap": 0.979
+      },
+      {
+        "label": "Jira",
+        "type": "Tool",
+        "gap": 0.915
+      },
+      {
+        "label": "CSS3",
+        "type": "Hard Skill",
+        "gap": 0.79
+      },
+      {
+        "label": "bonne communication",
+        "type": "Soft Skill",
+        "gap": 0.62
+      },
+      {
+        "label": "capacity to work in a team",
+        "type": "Soft Skill",
+        "gap": 0.603
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 10,
+    "nodes_with_bias": 8,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "C": 4,
+      "PRESTIGE": 2,
+      "PROXY": 1,
+      "PRESTIGE|CITE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "javascript-development",
+        "label": "JavaScript",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.938,
+        "reason": "This weight decrease (0.25) is likely due to halo bias—the system is overemphasizing the ‘Alzheimer’s Disease Classification’ project, a mid-complexity research internship, while potentially overlooking the broader experience gained as a Machine Learning Engineer at InstaDeep. The project's focus on Deep Learning and Geometric Deep Learning is relevant, but the CV highlights this project prominently, potentially overshadowing other valuable development skills, while the JD explicitly requires 'experienced web development'. A fairer alternative would be to prioritize the skills and experience directly relevant to web development (HTML5, CSS3, PHP, JavaScript, etc.) and the 'Machine Learning Engineer' role itself."
+      },
+      {
+        "id": "sql-database",
+        "label": "SQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.2,
+        "reason": "The increase in weight (w_cv from 0.984 to 1.0, +0.016) is driven by the explicit mention of 'SQL database' used for 'Dense vector fields extraction' and 'triple classification' within the CV. This strongly suggests the candidate's skillset directly aligns with the technology stack outlined in the job description (SQL, PHP), indicating a merit-based connection. However, the focus on a specialized academic project – 'Alzheimer's Disease Classification' – demonstrates a potentially narrower application of SQL database skills compared to a broader web development role, thus justifying an increased weighting to reflect the specific relevance. The intensity bonus reflects the crucial role of the databases in enabling the projects achievements, rather than just a general skillset requirement."
+      },
+      {
+        "id": "github-version-control",
+        "label": "GitHub",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.2,
+        "reason": "The increased weight assigned to GitHub usage (Delta = +0.042) appears to be prestige bias. The CV explicitly highlights a project – ‘Alzheimer’s Disease Classification’ – using GitHub, associating it with a prestigious research project (Hippocampal shape analysis, state-of-the-art methods) at a well-known institution (INSAT). This leverages the perceived value of using GitHub within a specific, complex research area, potentially overemphasizing the tool itself compared to broader development experience or skills. A fairer alternative would be to adjust the weight based solely on the demonstrated skills and contributions within the project, not the specific version control platform used."
+      },
+      {
+        "id": "git-version-control",
+        "label": "Git",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.2,
+        "reason": "The increased weight applied to the candidate's use of GitHub for the ‘Alzheimer’s Disease Classification’ project (a highly specialized research project) reflects a prestige bias. The project's name and the advanced deep learning techniques employed (Kendall’s definition, dense vector fields, triple classification) indicate a high level of technical expertise and research experience, aligning with a desirable skill set for a senior web developer role.  This elevated emphasis disproportionately values the specific research project over broader web development skills, suggesting a preference for academic and innovative project experience - a prestige bias. A fairer alternative would have considered the overall CV and its relevance to the specified tech stack, weighting the general experience more heavily. The candidate's work on Deep Graph CNNs contributes significantly to state-of-the-art methods, which should be given more weight than simply the use of GitHub for a particular project."
+      },
+      {
+        "id": "css3_skill",
+        "label": "CSS3",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CSS3 skill weight was dramatically reduced from 0.884 to 0.25, primarily due to the lack of explicit mention of CSS3 in the provided CV and JD. While CSS3 is listed as a required technology in the job description, the CV focuses heavily on deep learning and geometric deep learning projects, specifically highlighting research related to Alzheimer’s disease classification – a skill not directly relevant to web development. This suggests the algorithm is overemphasizing a specific research experience at the expense of core web development skills, exhibiting a halo bias where a complex research project overshadows more foundational capabilities. A fair alternative would be to consider the skills on the CV with a much lower weighting, or to completely exclude them from the scoring model."
+      },
+      {
+        "id": "html5_skill",
+        "label": "HTML5",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "This weight change represents a bias toward prestige signaling. The candidate's CV prominently features a graduation project focused on 'Hippocampus shape' and deep learning, specifically referencing a method related to a medical diagnosis and a highly specialized technical skill. While the JD mentions HTML5 as a required skill, the CV's detailed project description significantly elevates the perceived relevance of HTML5, suggesting the algorithm is overemphasizing the specific project context rather than general web development expertise. The increased weight given to this specific project, directly linked to a niche area of research, indicates a reliance on a proxy signal (the project itself) rather than demonstrated proficiency in core HTML5 skills, potentially penalizing candidates without similar, albeit advanced, experience."
+      },
+      {
+        "id": "motivation_skill",
+        "label": "strong motivation to learn and innovate",
+        "bias_category": "PRESTIGE|CITE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The significant weight decrease (Delta = -0.071) for 'motivation_skill' is likely prestige bias. The CV explicitly mentions Heni Loukil’s role at InstaDeep Sfax, a well-known and respected deep learning research organization, creating a potential bias towards candidates associated with such institutions. While her project using Deep Learning is relevant, the emphasis on InstaDeep's reputation may unfairly elevate the importance of this specific skill compared to other demonstrated skills, suggesting a preference for experience within a high-profile research environment. A fairer alternative would be to assess motivation based on demonstrable project outcomes and technical skills regardless of the employer’s reputation. "
+      },
+      {
+        "id": "soft_skills_skill",
+        "label": "soft skills",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The significant decrease in the weight assigned to 'soft_skills_skill' (from 0.452 to 0.25) is likely biased due to prestige bias (A) and potentially halo bias (E). The CV heavily emphasizes the student's advanced research project – ‘Alzheimer’s Disease Classification Using Hippocampal Shape Morphometric Analysis’ – showcasing deep learning and geometric deep learning expertise, which aligns strongly with the desired skills outlined in the JD. However, the CV’s focus on this highly specialized project overshadows the expected soft skills like communication and teamwork, resulting in a disproportionate weight reduction. A fairer alternative would be to consider the breadth of the candidate’s experience and skill set, acknowledging the project's relevance to the role while still appropriately weighting soft skills, leading to a revised weighting of 0.60-0.75."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2746 (sous-qualifié), CTM=0.6753 (écart structurel élevé), match_pct=35.16% → Poor Match",
+    "v6_summary": "weighted_f1=0.258, gap_score=0.2232, ndcg_5=0.8929, missing_critical_penalty=0.2308, combo_v6_final=37.3",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "8 gaps critiques identifiés",
+    "bias_note": "8 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.55)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

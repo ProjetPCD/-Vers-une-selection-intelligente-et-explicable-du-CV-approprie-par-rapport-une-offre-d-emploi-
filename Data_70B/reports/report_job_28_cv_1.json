@@ -1,0 +1,414 @@
+{
+  "job_id": "job_28",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-05T01:21:57.248951",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 15.33,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.867,
+        "coverage_rate": 0.2,
+        "nodes_audited": 2,
+        "nodes_biased": 2
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.0517,
+    "edge_score": 0.1644,
+    "combined": 0.0968
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.0577,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.8427,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.8467,
+    "matched_nodes": "1/15",
+    "edge_match_pct": 16.44
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.0708,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.4923,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.0399,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.814,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.7193,
+    "ndcg_10": 0.835,
+    "map_score": 0.8344,
+    "mrr_score": 0.5,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.0998,
+    "experience_density": 0.0445
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 15.14,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 20.06,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 5.09,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 70.48,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 23.14,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 21.2,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 15.89,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 5,
+      "match_pct": 0.0,
+      "weight_sum": 4.567
+    },
+    "Tool": {
+      "count": 8,
+      "match_pct": 3.9,
+      "weight_sum": 7.327
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 30.0,
+      "weight_sum": 0.605
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 50.0,
+      "weight_sum": 0.407
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 16.44,
+    "total_edges": 13,
+    "top_synergies": [
+      {
+        "edge_key": "full_stack_developer|react",
+        "source": "full_stack_developer",
+        "target": "react",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "full_stack_developer|javascript",
+        "source": "full_stack_developer",
+        "target": "javascript",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "react|javascript",
+        "source": "react",
+        "target": "javascript",
+        "w_0": 0.5,
+        "w_cv": 0.637,
+        "w_cv_norm": 0.637,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "full_stack_developer|node_js",
+        "source": "full_stack_developer",
+        "target": "node_js",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "full_stack_developer|php",
+        "source": "full_stack_developer",
+        "target": "php",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "PHP",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Laravel",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PostgreSQL",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Java",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Trello",
+      "type": "Tool",
+      "gap": 0.984,
+      "severity": "critical",
+      "importance": 0.984
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 0.968,
+      "severity": "critical",
+      "importance": 0.968
+    },
+    {
+      "skill": "React",
+      "type": "Tool",
+      "gap": 0.641,
+      "severity": "critical",
+      "importance": 0.941
+    },
+    {
+      "skill": "Asana",
+      "type": "Tool",
+      "gap": 0.922,
+      "severity": "critical",
+      "importance": 0.922
+    },
+    {
+      "skill": "Node.js",
+      "type": "Hard Skill",
+      "gap": 0.821,
+      "severity": "critical",
+      "importance": 0.821
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "PHP",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Laravel",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "PostgreSQL",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Java",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Docker",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Trello",
+        "type": "Tool",
+        "gap": 0.984
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 0.968
+      },
+      {
+        "label": "React",
+        "type": "Tool",
+        "gap": 0.641
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 2,
+    "nodes_with_bias": 2,
+    "edges_audited": 2,
+    "edges_with_bias": 1,
+    "bias_categories": {
+      "PRESTIGE": 3
+    },
+    "biased_nodes": [
+      {
+        "id": "react",
+        "label": "React",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (Institut supérieur d'informatique et multimédia sfax) and company names (3S, Zeta Engineering, EMIKETIC) may have unfairly influenced the adapted weight. The correction factor is set to 1.20 to increase the weight, as the candidate's skills and experience in React and other technologies are not fully reflected in the adapted weight."
+      },
+      {
+        "id": "autonomy",
+        "label": "Autonomy",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's CV mentions autonomy, but lacks concrete project evidence. The job description emphasizes autonomy as a soft skill, but the adapted weight decrease suggests that the algorithm is unfairly penalizing the candidate for not having a prestigious university or company name associated with their experience. A fairer approach would be to assess the candidate's autonomy based on their project experience and skills demonstrated, rather than relying on prestige signals."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "react|javascript",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_corrected": 0.637,
+        "reason": "The weight change is biased towards prestige, as it favors candidates with experience in specific technologies (React, Node.js, PHP, etc.) and frameworks (Laravel), which may not be the only relevant skills for the job. This may unfairly penalize candidates with equivalent skills but different technology stacks. A fairer approach would be to focus on the candidate's ability to learn and adapt to new technologies."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.0577 (sous-qualifié), CTM=0.8427 (écart structurel élevé), match_pct=15.33% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.0399, ndcg_5=0.7193, missing_critical_penalty=0.0, combo_v6_final=15.14",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "13 gaps critiques identifiés",
+    "bias_note": "2 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 22,
+    "pool_size": 30,
+    "percentile": 0.2759,
+    "composite_z_score": -0.4603,
+    "tier": "Bottom 50%",
+    "z_scores": {
+      "combo_v6": -0.083,
+      "wf1": -0.819,
+      "gap_score": -0.515,
+      "ntcw": -0.473,
+      "match_pct": -1.071,
+      "ndcg_5": -2.077
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 15.953,
+        "std": 9.7668
+      },
+      "wf1": {
+        "mean": 0.0984,
+        "std": 0.1202
+      },
+      "gap_score": {
+        "mean": 0.0702,
+        "std": 0.0588
+      },
+      "ntcw": {
+        "mean": 0.0972,
+        "std": 0.0834
+      },
+      "match_pct": {
+        "mean": 24.7647,
+        "std": 8.8085
+      },
+      "ndcg_5": {
+        "mean": 0.8864,
+        "std": 0.0804
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

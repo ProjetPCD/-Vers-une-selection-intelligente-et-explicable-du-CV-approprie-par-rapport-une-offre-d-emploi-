@@ -1,0 +1,455 @@
+{
+  "job_id": "job_105",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-05T16:24:46.552025",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 26.62,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.882,
+        "coverage_rate": 0.098,
+        "nodes_audited": 4,
+        "nodes_biased": 4
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.0659,
+    "edge_score": 0.1014,
+    "combined": 0.0801
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.0824,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7479,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7338,
+    "matched_nodes": "2/51",
+    "edge_match_pct": 10.14
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.077,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.054,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.098,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.4078,
+    "weighted_recall": 0.077,
+    "weighted_f1": {
+      "value": 0.1461,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6079,
+    "missing_critical_penalty": {
+      "value": 0.125,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.8277,
+    "ndcg_10": 0.9102,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9051,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.247,
+    "experience_density": 0.0515
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 16.06,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 9.03,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 13.26,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 93.11,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 39.7,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 25.97,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 19.27,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 21,
+      "match_pct": 9.2,
+      "weight_sum": 17.658
+    },
+    "Domain": {
+      "count": 10,
+      "match_pct": 6.2,
+      "weight_sum": 7.95
+    },
+    "Soft Skill": {
+      "count": 5,
+      "match_pct": 0.0,
+      "weight_sum": 3.261
+    },
+    "Hard Skill": {
+      "count": 12,
+      "match_pct": 5.7,
+      "weight_sum": 8.896
+    },
+    "Responsibility": {
+      "count": 3,
+      "match_pct": 0.0,
+      "weight_sum": 2.093
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 10.14,
+    "total_edges": 20,
+    "top_synergies": [
+      {
+        "edge_key": "mlops_practices|azure",
+        "source": "mlops_practices",
+        "target": "azure",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ai_systems_development|cloud_technologies",
+        "source": "ai_systems_development",
+        "target": "cloud_technologies",
+        "w_0": 0.5,
+        "w_cv": 0.637,
+        "w_cv_norm": 0.637,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "mlops_practices|aws",
+        "source": "mlops_practices",
+        "target": "aws",
+        "w_0": 0.5,
+        "w_cv": 0.32,
+        "w_cv_norm": 0.32,
+        "match_pct": 64.0,
+        "p3_confidence": "MEDIUM",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "aws|amazon_web_services",
+        "source": "aws",
+        "target": "amazon_web_services",
+        "w_0": 0.5,
+        "w_cv": 0.32,
+        "w_cv_norm": 0.32,
+        "match_pct": 64.0,
+        "p3_confidence": "MEDIUM",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "senior_machine_learning_engineer|ai_systems_development",
+        "source": "senior_machine_learning_engineer",
+        "target": "ai_systems_development",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Azure Data Factory",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Azure Pipelines",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Senior Machine Learning Engineer",
+      "type": "Domain",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Azure",
+      "type": "Tool",
+      "gap": 0.997,
+      "severity": "critical",
+      "importance": 0.997
+    },
+    {
+      "skill": "Delta Lake",
+      "type": "Tool",
+      "gap": 0.924,
+      "severity": "critical",
+      "importance": 0.924
+    },
+    {
+      "skill": "PyTorch",
+      "type": "Tool",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Autoencoders",
+      "type": "Domain",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Microsoft Azure",
+      "type": "Tool",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "GitHub Actions",
+      "type": "Tool",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Feature Engineering",
+      "type": "Hard Skill",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Azure Data Factory",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Azure Pipelines",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Senior Machine Learning Engineer",
+        "type": "Domain",
+        "gap": 1.0
+      },
+      {
+        "label": "Azure",
+        "type": "Tool",
+        "gap": 0.997
+      },
+      {
+        "label": "Delta Lake",
+        "type": "Tool",
+        "gap": 0.924
+      },
+      {
+        "label": "PyTorch",
+        "type": "Tool",
+        "gap": 0.9
+      },
+      {
+        "label": "Autoencoders",
+        "type": "Domain",
+        "gap": 0.9
+      },
+      {
+        "label": "Microsoft Azure",
+        "type": "Tool",
+        "gap": 0.9
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 4,
+    "nodes_with_bias": 4,
+    "edges_audited": 3,
+    "edges_with_bias": 3,
+    "bias_categories": {
+      "PRESTIGE": 7
+    },
+    "biased_nodes": [
+      {
+        "id": "aws",
+        "label": "AWS",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.2,
+        "w_cv_corrected": 1.2,
+        "reason": "The weight change is biased due to prestige bias, as the AWS Certified Cloud Practitioner certification mentioned in the CV unfairly increased the candidate's weight. The correction factor is set to 1.20 to counteract this bias, as the certification is not a direct indicator of the candidate's skills and experience in machine learning engineering."
+      },
+      {
+        "id": "amazon_web_services",
+        "label": "Amazon Web Services",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.2,
+        "w_cv_corrected": 1.2,
+        "reason": "The weight change is biased due to prestige bias, as the AWS Certified Cloud Practitioner certification mentioned in the CV led to a decreased weight. This is unfair, as the certification is not directly relevant to the job requirements. A fairer assessment would give more weight to the candidate's skills and experience in machine learning, cloud technologies, and MLOps, rather than relying on a prestigious certification."
+      },
+      {
+        "id": "sql",
+        "label": "SQL",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.02,
+        "w_cv_corrected": 1.02,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience in SQL administration is downplayed despite being a central task mentioned in the job description. The correction factor is set to 1.20 to increase the weight, as the candidate's skills in SQL administration are unfairly penalized."
+      },
+      {
+        "id": "cloud_technologies",
+        "label": "Cloud Technologies",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.32,
+        "w_cv_corrected": 1.32,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's certification from a well-known cloud provider (AWS) and experience in cloud technologies are not fully valued. The correction factor is set to 1.20 to increase the weight, as the candidate's skills and experience are more relevant to the job description than initially assessed."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "ai_systems_development|cloud_technologies",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_corrected": 0.637,
+        "reason": "The weight change is biased towards candidates with experience in prestigious companies like Linedata, rather than solely considering the skills and qualifications required for the Senior Machine Learning Engineer role. This prestige bias unfairly favors candidates with similar backgrounds, and a correction factor of 0.85 is applied to mitigate this bias."
+      },
+      {
+        "edge": "mlops_practices|aws",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.32,
+        "reason": "The weight change is biased towards the candidate due to the prestige associated with having an AWS certification, rather than solely evaluating their skills and experience in MLOps practices. The correction factor is set to 0.80 to reduce the unfair advantage."
+      },
+      {
+        "edge": "aws|amazon_web_services",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.32,
+        "reason": "The weight change is biased towards prestige, as the certification 'AWS Certified Cloud Practitioner' is given more importance due to the brand name 'AWS' rather than the skills demonstrated. A fairer approach would be to evaluate the skills and certifications based on their relevance to the job description, rather than the prestige associated with the brand."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.0824 (sous-qualifié), CTM=0.7479 (écart structurel élevé), match_pct=26.62% → Poor Match",
+    "v6_summary": "weighted_f1=0.1461, gap_score=0.054, ndcg_5=0.8277, missing_critical_penalty=0.125, combo_v6_final=16.06",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "45 gaps critiques identifiés",
+    "bias_note": "4 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 5,
+    "pool_size": 10,
+    "percentile": 0.5556,
+    "composite_z_score": -0.2397,
+    "tier": "Top 50%",
+    "z_scores": {
+      "combo_v6": -0.215,
+      "wf1": -0.0,
+      "gap_score": -0.63,
+      "ntcw": -0.548,
+      "match_pct": -0.678,
+      "ndcg_5": 0.161
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 18.575,
+        "std": 11.7066
+      },
+      "wf1": {
+        "mean": 0.1461,
+        "std": 0.1378
+      },
+      "gap_score": {
+        "mean": 0.0916,
+        "std": 0.0597
+      },
+      "ntcw": {
+        "mean": 0.1255,
+        "std": 0.0788
+      },
+      "match_pct": {
+        "mean": 31.604,
+        "std": 7.3518
+      },
+      "ndcg_5": {
+        "mean": 0.8161,
+        "std": 0.0721
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

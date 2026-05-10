@@ -1,0 +1,518 @@
+{
+  "job_id": "job_0",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-02T13:15:45.335383",
+  "overall_assessment": {
+    "verdict": "Weak Match",
+    "match_pct": 50.64,
+    "confidence": {
+      "confidence_score": 0.63,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.28,
+        "coverage_rate": 0.68,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.6882,
+    "edge_score": 0.0,
+    "combined": 0.4129
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.4107,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5133,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.4936,
+    "matched_nodes": "3/25",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3939,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.8147,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Excellent"
+    },
+    "gap_score": {
+      "value": 0.3748,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.3043,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.5309,
+    "weighted_recall": 0.2149,
+    "weighted_f1": {
+      "value": 0.3769,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5869,
+    "missing_critical_penalty": {
+      "value": 0.3684,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.8703,
+    "ndcg_10": 0.9117,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.96,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.58,
+    "experience_density": 0.2768
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 48.63,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 51.88,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 42.9,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 94.81,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 52.29,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 48.86,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 23.14,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 35.1,
+      "weight_sum": 2.701
+    },
+    "Tool": {
+      "count": 14,
+      "match_pct": 30.2,
+      "weight_sum": 11.3
+    },
+    "Domain": {
+      "count": 3,
+      "match_pct": 59.3,
+      "weight_sum": 2.488
+    },
+    "Soft Skill": {
+      "count": 5,
+      "match_pct": 29.8,
+      "weight_sum": 3.625
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "python_skill|data_science_unique_slug",
+        "source": "python_skill",
+        "target": "data_science_unique_slug",
+        "w_0": 0.98,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "pytorch_tool|data_scientist_domain",
+        "source": "pytorch_tool",
+        "target": "data_scientist_domain",
+        "w_0": 0.95,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "scikit_learn_tool|data_scientist_domain",
+        "source": "scikit_learn_tool",
+        "target": "data_scientist_domain",
+        "w_0": 0.95,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "postgresql_tool|data_scientist_domain",
+        "source": "postgresql_tool",
+        "target": "data_scientist_domain",
+        "w_0": 0.92,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "numpy_data_scientist_node_1|data_scientist_domain",
+        "source": "numpy_data_scientist_node_1",
+        "target": "data_scientist_domain",
+        "w_0": 0.92,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "PyTorch",
+      "type": "Tool",
+      "gap": 0.641,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Scikit-learn",
+      "type": "Tool",
+      "gap": 0.621,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PostgreSQL",
+      "type": "Tool",
+      "gap": 0.777,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "SQL",
+      "type": "Hard Skill",
+      "gap": 0.654,
+      "severity": "critical",
+      "importance": 0.975
+    },
+    {
+      "skill": "Grafana",
+      "type": "Tool",
+      "gap": 0.653,
+      "severity": "critical",
+      "importance": 0.872
+    },
+    {
+      "skill": "PL/SQL",
+      "type": "Hard Skill",
+      "gap": 0.676,
+      "severity": "critical",
+      "importance": 0.726
+    },
+    {
+      "skill": "Excel",
+      "type": "Tool",
+      "gap": 0.66,
+      "severity": "critical",
+      "importance": 0.66
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "PyTorch",
+        "type": "Tool",
+        "gap": 0.641
+      },
+      {
+        "label": "Scikit-learn",
+        "type": "Tool",
+        "gap": 0.621
+      },
+      {
+        "label": "PostgreSQL",
+        "type": "Tool",
+        "gap": 0.777
+      },
+      {
+        "label": "SQL",
+        "type": "Hard Skill",
+        "gap": 0.654
+      },
+      {
+        "label": "Grafana",
+        "type": "Tool",
+        "gap": 0.653
+      },
+      {
+        "label": "PL/SQL",
+        "type": "Hard Skill",
+        "gap": 0.676
+      },
+      {
+        "label": "Excel",
+        "type": "Tool",
+        "gap": 0.66
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 20,
+    "nodes_with_bias": 20,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 19,
+      "PRESTIGE BIAS": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python_skill",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.195,
+        "reason": "The evidence – specifically the detailed description of the 'Alzheimer's Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning' project – strongly indicates significant Python utilization.  The project's technical complexity, involving deep graph CNNs, non-rigid registration, and geodesic path analysis, aligns with a senior-level skillset. However, the use of 'Hippocampus' and 'Geometric Deep Learning' (keywords heavily associated with research-oriented, potentially prestige-driven projects) elevates the emphasis on this skill disproportionately, suggesting a potential preference for candidates involved in cutting-edge research rather than simply applying Python for data analysis. This skews the weighting downwards, penalizing for a technically advanced project that may not be representative of all Python skill applications within data science roles. A more appropriate weighting would consider the skill's actual application and level of experience rather than the project's inherent prestige."
+      },
+      {
+        "id": "pytorch_tool",
+        "label": "PyTorch",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.717,
+        "reason": "The CV prominently highlights a project using 'Deep Graph CNN for Non-rigid registration and matching' - explicitly mentioning PyTorch. However, the project description is heavily focused on the *technical* details of a very specific, complex Deep Learning research project, suggesting prestige associated with this particular research area and the institution (ICube) is disproportionately influencing the weighting. While expertise in PyTorch is relevant, the emphasis on this singular, advanced project – and the associated institution – appears to inflate the value of this skill relative to other potential candidates who might demonstrate competency without such a focused, highly specialized project. A fairer weighting would acknowledge the core skill (PyTorch) but reduce the impact of this one exceptional project, considering the potential for varying levels of proficiency across different projects."
+      },
+      {
+        "id": "scikit_learn_tool",
+        "label": "Scikit-learn",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.757,
+        "reason": "The CV prominently features a thesis project focused on 'Alzheimer’s Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning,' showcasing advanced deep learning and geometric modeling skills. However, the JD emphasizes a broader skillset including PyTorch and Scikit-learn without directly connecting to this specific, high-level expertise. This suggests the system is overweighting the presence of 'Scikit-learn' as a listed skill, rather than the demonstrated depth of knowledge associated with the candidate's academic work. A strong emphasis on the thesis project's results and methodology, which utilizes Scikit-learn, warrants a higher weight, implying a more significant skill level than the 0.606 assigned, unfairly penalizing the candidate for a specialized skill. "
+      },
+      {
+        "id": "postgresql_tool",
+        "label": "PostgreSQL",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.445,
+        "reason": "The CV lists 'Institut National des Sciences Appliquées et de Technologie' (INSAT) as the university, which is a relatively lesser-known institution compared to those typically associated with top-tier Data Science roles. This prestige bias likely contributed to the reduced weight assigned to the skill, as the CV’s evidence lacks a clear demonstration of advanced skills beyond the listed projects, and the university itself does not carry significant weight within the recruitment process. A stronger focus on skills demonstrated through project outputs would be needed to justify a higher weight."
+      },
+      {
+        "id": "data_scientist_domain",
+        "label": "Data Scientist",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.147,
+        "reason": "The candidate’s CV prominently features a research internship at ICube Strasbourg, a well-regarded institution specializing in geometric deep learning and affiliated with a top-tier university. This affiliation, coupled with the project description involving ‘Hippocampus shape morphometric analysis’ and exceeding state-of-the-art methods, heavily emphasizes prestige over demonstrable skills. The use of ‘Deep Graph CNN’ and ‘Kendall’s definition’ suggests a focus on academic research rather than immediate practical application of standard data science tools, impacting the score negatively. A more appropriate weighting would prioritize the candidate’s technical accomplishments and experience within InstaDeep."
+      },
+      {
+        "id": "sql_skill",
+        "label": "SQL",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.642,
+        "reason": "The audit identifies a decrease in the weight assigned to 'sql_skill' (0.975 to 0.856). While the justification highlights the complexity of projects and the candidate's experience, the JD lists ‘PL/SQL’ as a required skill alongside PostgreSQL, suggesting a level of proficiency beyond a basic understanding. Furthermore, the candidate's internship focused on a highly specialized area of deep learning involving graph neural networks and spatial analysis, which, while impressive, doesn’t inherently justify a significant reduction in the weight given to a fundamental skill like SQL. Therefore, this reduction appears prestige-driven, prioritizing a more specialized skillset at the expense of a core data science tool."
+      },
+      {
+        "id": "pandas_data_scientist_node_1",
+        "label": "Pandas",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.195,
+        "reason": "The candidate's project description – specifically, ‘determining most affected regions of Hippocampi by Alzheimer based on tangent vectors on geodesic distances’ and ‘exceeded all state of the art methods’ – highlights sophisticated use of Pandas for data manipulation and feature engineering, aligning with a complex project. This signals a higher skill level than implied by the standard experience weighting, indicating prestige associated with the specific achievements within the project rather than solely the duration of experience. The mention of 'state of the art methods' further elevates the project's significance, justifying an increased weighting."
+      },
+      {
+        "id": "numpy_data_scientist_node_1",
+        "label": "NumPy",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.195,
+        "reason": "The project description explicitly states ‘Projecting Hippocampus shape into the pre-shape space based on Kendall’s definition, and then into the shape space in order to ensure accurate geodesic paths between shapes and invariance in parametrization. We then extracted Dense vector fields features in order to perform triple classification and exceeded all state of the art methods.’, demonstrating high-level numerical computation skills utilizing NumPy. This aligns strongly with the project's complexity and the candidate's experience using NumPy for a sophisticated deep learning task. However, the candidate's work at InstaDeep is presented without context of recognized prestige (a well-known academic institution or research lab), potentially leading to an inflated weight. A slight decrease in weight is warranted to reflect this potential prestige bias."
+      },
+      {
+        "id": "jira_tool",
+        "label": "Jira",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.727,
+        "reason": "The CV highlights a thesis project focused on Deep Graph CNNs and Alzheimer's Disease classification using Hippocampal shape analysis at a French university (ICube Strasbourg). While this is a valuable skill, the JD focuses heavily on a broader range of data science tools and technologies, including those commonly found in a more established tech company (PyTorch, Scikit-learn, Kafka, etc.). The peripheral use of JIRA, indicated by the low weighting, likely reflects a bias toward candidates with experience in commonly used and highly rated tech stack tools, rather than specialized deep learning research, resulting in a prestige bias."
+      },
+      {
+        "id": "git_unique_slug",
+        "label": "Git",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.07,
+        "reason": "The system heavily weights the 'Alzheimer's Disease Classification' project from Heni Loukil's CV. While this project demonstrates advanced technical skills (Deep Learning, Geometric Deep Learning, Dense Vector Fields), it's a highly specialized research project, not a typical Data Science role. The inclusion of a university project name (INSAT) and its specific focus—a complex medical research—influences the assessment more than the broader skills listed in the JD. A more merit-based system would de-emphasize this research project to a degree, focusing more on demonstrable experience in industry-standard data science tools and techniques."
+      },
+      {
+        "id": "grafana_tool",
+        "label": "Grafana",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.438,
+        "reason": "The CV heavily emphasizes a graduation project focused on a very specific Deep Learning application (Alzheimer's Disease Classification using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning). While impressive, this highly specialized project with the associated terminology (Dense vector fields, Kendall’s definition, geodesic distances) is significantly more niche than the general requirements of a ‘Data Science’ role, potentially leading the algorithm to over-weight this one experience. The weighting reduction reflects the prioritization of broader data science skills over this very specialized project, indicating a Prestige Bias."
+      },
+      {
+        "id": "agile_unique_slug",
+        "label": "Agile",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.84,
+        "reason": "The CV heavily emphasizes a research internship at a prestigious university (INSAT) and a subsequent internship with InstaDeep, a well-regarded AI company, which elevates the perceived value of the candidate beyond simple technical skills. The JD explicitly mentions ‘InstaDeep’s work context’ as an implied focus on Agile methodologies, suggesting that the weight reduction is due to the candidate's affiliation with a high-profile organization rather than a lack of Agile proficiency. A fairer alternative would prioritize demonstrable Agile project experience or certifications, not the organization the candidate previously worked for. The candidate’s academic background and subsequent internships contribute to a prestige bias, reducing the weight given to the candidate."
+      },
+      {
+        "id": "communication_unique_slug",
+        "label": "Communication",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The CV highlights a highly specialized research project focusing on Deep Graph CNNs and Alzheimer's disease classification, showcasing sophisticated technical skills in geometric deep learning. However, the project description itself is complex and detailed, which is not explicitly highlighted in the project description (matching and feature extraction) used as the anchor.  This suggests the system is overemphasizing the academic setting and research project (INSAT) and its specific, technically dense project as a proxy for general communication skills, a PRESTIGE bias. A lower weighting reflects the potentially inflated importance attributed to this specific academic endeavor rather than demonstrating broader communication competencies required for the role. A reduction in weighting addresses this."
+      },
+      {
+        "id": "data_science_unique_slug",
+        "label": "Data Science",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.3,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.235,
+        "reason": "The CV highlights a specific, impactful project – ‘exceeded all state-of-the-art methods’ – within a challenging, high-complexity project at InstaDeep, a well-regarded AI company (implied by the job title and reference to ‘Intelligence Artificielle’).  The project’s focus on Deep Learning and geometric deep learning, combined with the ‘Alzheimer’s Disease Classification’ topic demonstrates a high level of technical expertise and research experience, heavily weighting the applicant’s contributions.  The prior internship at ICube (a renowned research institute) further validates the skills. This demonstrates a mastery level of data science skills within a significant project, significantly justifying the increased weight.  The prestige associated with InstaDeep and the cutting-edge nature of the research significantly boosted the applicant’s profile beyond typical metrics."
+      },
+      {
+        "id": "tableau_data_scientist_node_1",
+        "label": "Tableau",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.42,
+        "reason": "The CV prominently features a highly specialized, research-focused internship project ('Alzheimer's Disease Classification...') utilizing Geometric Deep Learning. The JD lists Tableau as a required skill, while the CV lacks any mention of Tableau experience. The candidate's focus on advanced deep learning techniques, specifically within a research context, is being penalized with a significant weight reduction, indicating a prestige bias favoring more established or commonly-held skills and certifications over specialized, cutting-edge research experience. A fair alternative would be to adjust the weight based on the candidate's demonstrated expertise in relevant AI and machine learning techniques."
+      },
+      {
+        "id": "docker_unique_slug",
+        "label": "Docker",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.42,
+        "reason": "The CV highlights a highly specialized academic project – ‘Alzheimer’s Disease Classification’ – involving Deep Graph CNNs and geometric deep learning, using Kendall’s definition and geodesic paths. While impressive in a research context, the JD doesn't explicitly mention these advanced techniques or the specific application within a business setting. The absence of any mention of Docker, coupled with a focus on highly specialized research projects, suggests a prestige bias favoring candidates with advanced academic qualifications and specific methodologies over those demonstrating broader practical skills (like Docker usage), despite the JD's requirements. This disproportionately penalizes candidates from research-focused backgrounds. A correction factor of 1.2 is applied to account for this disproportionate weighting of academic credentials over demonstrable skills."
+      },
+      {
+        "id": "autonomie_unique_slug",
+        "label": "Autonomie",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.438,
+        "reason": "The internship at ICube Strasbourg, specifically the ‘Alzheimer's Disease Classification’ project, is heavily weighted, implying significant technical depth and autonomy in applying Geometric Deep Learning. However, the label ‘Deep Learning’ is a relatively prestigious area within AI, and the CV emphasizes the project title over the demonstrable skills developed. The weighting reduction reflects the potential for undue emphasis on the academic institution (ICube) and the project’s perceived prestige rather than the candidate’s actual skills and accomplishments, which are demonstrated through the specific research."
+      },
+      {
+        "id": "ia_unique_slug",
+        "label": "IA",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.188,
+        "reason": "The candidate’s work at InstaDeep, specifically utilizing Deep Learning and Geometric Deep Learning on a significant project (Alzheimer's disease classification) is heavily weighted. However, the explicit mention of 'InstaDeep' – a relatively new and prestigious AI research company – appears to be driving this increased weight, suggesting prestige bias. While the project itself is impressive, the CV leverages this prestigious association unfairly, elevating it above demonstrated skills and experience, particularly given the internship timeframe. A fairer alternative would be to reduce the weight on the company affiliation and prioritize the demonstrable skills (Geometric Deep Learning, graph CNNs, Hippocampal shape analysis) and project outcomes."
+      },
+      {
+        "id": "resolution_de_problemes_node_1",
+        "label": "Résolution de problèmes",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.625,
+        "reason": "The CV's project description, 'Alzheimer's Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning', prominently features a complex, research-oriented project utilizing advanced techniques (Kendall's definition, Deep Graph CNNs, geodesic paths).  This is heavily weighted in the scoring process, reflecting a prestige signal related to academic research and specialized expertise in a niche area of AI (geometric deep learning for medical imaging). The JD, while requiring similar skills, doesn't explicitly emphasize this specific research focus, suggesting the algorithm is overemphasizing the university and specialization (INSAT) and the specific project title as a proxy for skill level, rather than the demonstrated skills within that project. A correction factor of 1.25 is applied to account for this prestige bias, recognizing the candidate’s strong technical abilities showcased through this advanced project, despite the context lacking direct outcome measurement."
+      },
+      {
+        "id": "collaboration_data_scientist_node_1",
+        "label": "Collaboration",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The candidate’s CV prominently features their thesis project, ‘Alzheimer’s Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning,’ a specialized project within a research institution (INSAT). Despite the candidate’s skills aligning with the job description, the project’s specific focus on a research-oriented topic and the institution where it was conducted (INSAT, often associated with academic research) appears to have inflated the weighting. This indicates a prestige bias where the university name is disproportionately influencing the score, overshadowing demonstrable skills in deep learning and machine learning demonstrated through their work at InstaDeep. A fairer alternative would be to prioritize the candidate’s role at InstaDeep and the quantifiable results of their work, reducing the weight given to the thesis project."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.4107 (sous-qualifié), CTM=0.5133 (écart structurel élevé), match_pct=50.64% → Weak Match",
+    "v6_summary": "weighted_f1=0.3769, gap_score=0.3748, ndcg_5=0.8703, missing_critical_penalty=0.3684, combo_v6_final=48.63",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "7 gaps critiques identifiés",
+    "bias_note": "20 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.63)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

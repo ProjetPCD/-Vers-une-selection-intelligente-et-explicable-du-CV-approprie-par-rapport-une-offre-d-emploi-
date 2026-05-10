@@ -1,0 +1,459 @@
+{
+  "job_id": "job_105",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-05T16:24:46.579819",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 24.8,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.863,
+        "coverage_rate": 0.118,
+        "nodes_audited": 6,
+        "nodes_biased": 6
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.0478,
+    "edge_score": 0.1069,
+    "combined": 0.0714
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.0597,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.757,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.752,
+    "matched_nodes": "3/51",
+    "edge_match_pct": 10.69
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.0614,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.075,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.0425,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0392,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.5179,
+    "weighted_recall": 0.0294,
+    "weighted_f1": {
+      "value": 0.0576,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5945,
+    "missing_critical_penalty": {
+      "value": 0.05,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.8037,
+    "ndcg_10": 0.8639,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8864,
+    "top_skill_alignment": 0.4967,
+    "semantic_fit_score": 0.1711,
+    "experience_density": 0.0373
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 11.43,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 6.06,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 8.67,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 92.15,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 35.91,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 21.5,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 43.42,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 21,
+      "match_pct": 0.0,
+      "weight_sum": 17.658
+    },
+    "Domain": {
+      "count": 10,
+      "match_pct": 20.1,
+      "weight_sum": 7.95
+    },
+    "Soft Skill": {
+      "count": 5,
+      "match_pct": 9.5,
+      "weight_sum": 3.261
+    },
+    "Hard Skill": {
+      "count": 12,
+      "match_pct": 0.0,
+      "weight_sum": 8.896
+    },
+    "Responsibility": {
+      "count": 3,
+      "match_pct": 0.0,
+      "weight_sum": 2.093
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 10.69,
+    "total_edges": 20,
+    "top_synergies": [
+      {
+        "edge_key": "computer_vision|cnn",
+        "source": "computer_vision",
+        "target": "cnn",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "computer_vision|medical_imaging",
+        "source": "computer_vision",
+        "target": "medical_imaging",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "senior_machine_learning_engineer|ai_systems_development",
+        "source": "senior_machine_learning_engineer",
+        "target": "ai_systems_development",
+        "w_0": 0.5,
+        "w_cv": 0.637,
+        "w_cv_norm": 0.637,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "ai_systems_development|mlops_practices",
+        "source": "ai_systems_development",
+        "target": "mlops_practices",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ai_systems_development|cloud_technologies",
+        "source": "ai_systems_development",
+        "target": "cloud_technologies",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Azure Data Factory",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Azure Pipelines",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Amazon Web Services",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Azure",
+      "type": "Tool",
+      "gap": 0.997,
+      "severity": "critical",
+      "importance": 0.997
+    },
+    {
+      "skill": "AWS",
+      "type": "Tool",
+      "gap": 0.933,
+      "severity": "critical",
+      "importance": 0.933
+    },
+    {
+      "skill": "Delta Lake",
+      "type": "Tool",
+      "gap": 0.924,
+      "severity": "critical",
+      "importance": 0.924
+    },
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 0.915,
+      "severity": "critical",
+      "importance": 0.915
+    },
+    {
+      "skill": "PyTorch",
+      "type": "Tool",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Autoencoders",
+      "type": "Domain",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Microsoft Azure",
+      "type": "Tool",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Azure Data Factory",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Azure Pipelines",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Amazon Web Services",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Azure",
+        "type": "Tool",
+        "gap": 0.997
+      },
+      {
+        "label": "AWS",
+        "type": "Tool",
+        "gap": 0.933
+      },
+      {
+        "label": "Delta Lake",
+        "type": "Tool",
+        "gap": 0.924
+      },
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "gap": 0.915
+      },
+      {
+        "label": "PyTorch",
+        "type": "Tool",
+        "gap": 0.9
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 6,
+    "edges_audited": 1,
+    "edges_with_bias": 1,
+    "bias_categories": {
+      "PRESTIGE": 7
+    },
+    "biased_nodes": [
+      {
+        "id": "senior_machine_learning_engineer",
+        "label": "Senior Machine Learning Engineer",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.32,
+        "w_cv_corrected": 1.32,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience at InstaDeep, a well-known company, is given more importance than their actual skills and qualifications. The correction factor is set to 1.20 to increase the weight and counteract the bias."
+      },
+      {
+        "id": "medical_imaging",
+        "label": "Medical Imaging",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.02,
+        "w_cv_corrected": 1.02,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (INSAT) and company (InstaDeep) names may have unfairly influenced the algorithm's assessment. The correction factor is set to 1.20 to counteract this bias and ensure a more merit-based evaluation."
+      },
+      {
+        "id": "experienced_professional",
+        "label": "Experienced Professional",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.938,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience at InstaDeep, a well-known company, is unfairly penalized. The correction factor is set to 1.25 to account for the candidate's relevant skills and experience, which are not fully reflected in the adapted weight."
+      },
+      {
+        "id": "statistical_analysis",
+        "label": "Statistical Analysis",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (INSAT) and company (InstaDeep) names may not be as well-known as others, leading to an unfair decrease in weight. The candidate's skills and experience in machine learning and deep learning are relevant to the job description, but the lack of concrete project evidence may have contributed to the bias. A fairer assessment would increase the weight to reflect the candidate's actual qualifications."
+      },
+      {
+        "id": "teamwork",
+        "label": "Teamwork",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.72,
+        "w_cv_corrected": 0.72,
+        "reason": "The weight change from 0.6 to 0.3 is likely due to prestige bias, as the candidate's experience at InstaDeep, a well-known AI company, is being undervalued. The candidate's skills and experience in machine learning and deep learning are not being fully recognized. A correction factor of 1.20 is applied to increase the weight to its original value, ensuring a fair evaluation of the candidate's qualifications."
+      },
+      {
+        "id": "communication",
+        "label": "Communication",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.3,
+        "w_cv_corrected": 0.3,
+        "reason": "The weight change is biased due to prestige bias, as the adaptation decreased the weight of the 'communication' skill solely based on the mention of it in the Graduation Internship title, without considering the candidate's actual skills demonstrated. A fair alternative would be to evaluate the candidate's communication skills based on their experience and achievements, rather than the title of their internship."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "senior_machine_learning_engineer|ai_systems_development",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_corrected": 0.637,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's current company (InstaDeep) is a well-known AI company, which may have unfairly influenced the weight. A fairer approach would be to focus on the skills and experiences demonstrated in the CV, rather than the company name."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.0597 (sous-qualifié), CTM=0.757 (écart structurel élevé), match_pct=24.8% → Poor Match",
+    "v6_summary": "weighted_f1=0.0576, gap_score=0.0425, ndcg_5=0.8037, missing_critical_penalty=0.05, combo_v6_final=11.43",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "44 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 8,
+    "pool_size": 10,
+    "percentile": 0.2222,
+    "composite_z_score": -0.5757,
+    "tier": "Bottom 50%",
+    "z_scores": {
+      "combo_v6": -0.61,
+      "wf1": -0.642,
+      "gap_score": -0.823,
+      "ntcw": -0.836,
+      "match_pct": -0.925,
+      "ndcg_5": -0.172
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 18.575,
+        "std": 11.7066
+      },
+      "wf1": {
+        "mean": 0.1461,
+        "std": 0.1378
+      },
+      "gap_score": {
+        "mean": 0.0916,
+        "std": 0.0597
+      },
+      "ntcw": {
+        "mean": 0.1255,
+        "std": 0.0788
+      },
+      "match_pct": {
+        "mean": 31.604,
+        "std": 7.3518
+      },
+      "ndcg_5": {
+        "mean": 0.8161,
+        "std": 0.0721
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

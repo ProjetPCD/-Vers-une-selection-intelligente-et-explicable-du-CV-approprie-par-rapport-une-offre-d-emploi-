@@ -1,0 +1,402 @@
+{
+  "job_id": "job_10",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-03T13:16:44.045180",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 35.19,
+    "confidence": {
+      "confidence_score": 0.59,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.615,
+        "coverage_rate": 0.692,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.5442,
+    "edge_score": 0.5263,
+    "combined": 0.537
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2957,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6971,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6481,
+    "matched_nodes": "3/13",
+    "edge_match_pct": 26.3
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3014,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.3839,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2367,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.3077,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.3949,
+    "weighted_recall": 0.2081,
+    "weighted_f1": {
+      "value": 0.3622,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.625,
+    "missing_critical_penalty": {
+      "value": 0.3077,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9056,
+    "ndcg_10": 0.9527,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8559,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.2363,
+    "experience_density": 0.2466
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 35.91,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 33.18,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 25.43,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 96.22,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 51.35,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 39.6,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 23.68,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 27.8,
+      "weight_sum": 1.797
+    },
+    "Tool": {
+      "count": 6,
+      "match_pct": 29.3,
+      "weight_sum": 5.942
+    },
+    "Responsibility": {
+      "count": 1,
+      "match_pct": 7.5,
+      "weight_sum": 1.0
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 6.0,
+      "weight_sum": 1.567
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 53.9,
+      "weight_sum": 1.479
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 26.3,
+    "total_edges": 9,
+    "top_synergies": [
+      {
+        "edge_key": "pandas_data_scientist|data_scientist_econometrics_stat",
+        "source": "pandas_data_scientist",
+        "target": "data_scientist_econometrics_stat",
+        "w_0": 0.9,
+        "w_cv": 0.856,
+        "w_cv_norm": 0.428,
+        "match_pct": 47.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "seaborn_data_scientist|data_scientist_econometrics_stat",
+        "source": "seaborn_data_scientist",
+        "target": "data_scientist_econometrics_stat",
+        "w_0": 0.65,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 57.7,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "sas_data_scientist|data_scientist_econometrics_stat",
+        "source": "sas_data_scientist",
+        "target": "data_scientist_econometrics_stat",
+        "w_0": 0.9,
+        "w_cv": 0.669,
+        "w_cv_norm": 0.334,
+        "match_pct": 37.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "communication_effective|data_scientist_econometrics_stat",
+        "source": "communication_effective",
+        "target": "data_scientist_econometrics_stat",
+        "w_0": 0.7,
+        "w_cv": 0.65,
+        "w_cv_norm": 0.325,
+        "match_pct": 46.4,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "teamwork|data_scientist_econometrics_stat",
+        "source": "teamwork",
+        "target": "data_scientist_econometrics_stat",
+        "w_0": 0.7,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.3,
+        "match_pct": 42.9,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "NumPy",
+      "type": "Tool",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Matplotlib",
+      "type": "Tool",
+      "gap": 0.95,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Scikit-learn",
+      "type": "Tool",
+      "gap": 0.975,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Seaborn",
+      "type": "Tool",
+      "gap": 0.975,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Data Scientist",
+      "type": "Responsibility",
+      "gap": 0.925,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "méthodologie",
+      "type": "Hard Skill",
+      "gap": 0.772,
+      "severity": "critical",
+      "importance": 0.797
+    },
+    {
+      "skill": "Machine Learning",
+      "type": "Domain",
+      "gap": 0.691,
+      "severity": "critical",
+      "importance": 0.785
+    },
+    {
+      "skill": "data science",
+      "type": "Domain",
+      "gap": 0.757,
+      "severity": "critical",
+      "importance": 0.782
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "Pandas",
+        "type": "Tool",
+        "w_cv": 1.562
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "NumPy",
+        "type": "Tool",
+        "gap": 0.7
+      },
+      {
+        "label": "Matplotlib",
+        "type": "Tool",
+        "gap": 0.95
+      },
+      {
+        "label": "Scikit-learn",
+        "type": "Tool",
+        "gap": 0.975
+      },
+      {
+        "label": "Seaborn",
+        "type": "Tool",
+        "gap": 0.975
+      },
+      {
+        "label": "Data Scientist",
+        "type": "Responsibility",
+        "gap": 0.925
+      },
+      {
+        "label": "méthodologie",
+        "type": "Hard Skill",
+        "gap": 0.772
+      },
+      {
+        "label": "Machine Learning",
+        "type": "Domain",
+        "gap": 0.691
+      },
+      {
+        "label": "data science",
+        "type": "Domain",
+        "gap": 0.757
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 7,
+    "nodes_with_bias": 6,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 2,
+      "HALO": 2,
+      "PRESTIGE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python_data_scientist",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.96,
+        "reason": "The significant increase in weight (w_cv from 1.2 to 1.4) is likely driven by the explicit mention of 'Python (Pandas)' within automated data pipelines at Timsoft Group, a detail present in the JD. While technically demonstrating relevant skills, the CV's focus on this specific technology and pipeline automation aligns strongly with the JD's stated tech stack (Python, R, SAS, Azure Data Factory, SQL Server). This suggests a Prestige Bias – the algorithm is overly emphasizing a specific tool and related pipeline experience, potentially overvaluing skills that are common within that particular environment, rather than a broader data science skillset."
+      },
+      {
+        "id": "numpy_data_scientist",
+        "label": "NumPy",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The decreased weight (Delta = -0.200) on the NumPy Data Scientist candidate is likely driven by the explicit mention of Python usage in the job description and the candidate's CV.  This represents a PROXY BIAS, where the system is favoring candidates who demonstrate proficiency in specific tools (Python, Azure Data Factory) used for data pipeline creation, rather than core data science skills like model building or statistical analysis, which are not explicitly mentioned in the JD but strongly implied by the role.  A fair alternative would be to evaluate the candidate’s modeling and statistical skills, but the JD focuses heavily on pipeline development.  This represents an over-emphasis on tool usage at the expense of fundamental data science competency."
+      },
+      {
+        "id": "pandas_data_scientist",
+        "label": "Pandas",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.562,
+        "reason": "The increased weight (Delta +0.25) on the candidate’s profile primarily due to the explicit mention of Pandas within the ‘automated data pipelines’ context at Timsoft Group represents a Halo Bias. The system is overemphasizing this one key skill (Pandas) despite the overall CV lacking detailed descriptions of broader analytical accomplishments or challenges solved. A fairer alternative would be to equally consider all listed skills and their application across the candidate's experience, rather than amplifying a single mention within a specific tool-related context."
+      },
+      {
+        "id": "sas_data_scientist",
+        "label": "SAS",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.188,
+        "reason": "The weight increase (w_0 to 0.95) appears to be driven primarily by the explicit mention of SAS within the job description and the candidate's CV.  While SAS is a valuable skill, the JD specifically lists it as part of the ‘technological stack,’ potentially inflating the significance of this particular tool relative to other skills like Python, SQL, and overall data pipeline experience. This is a classic Halo Bias – focusing disproportionately on one highlighted technology (SAS) when judging the candidate's overall suitability, neglecting the breadth of their skills and experience – particularly in Python and Azure which are arguably more critical for the described work."
+      },
+      {
+        "id": "communication_effective",
+        "label": "Communication Efficace",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.05,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.155,
+        "reason": "The weight change from 0.75 to 1.1 (a +0.35 increase) is merit-based, indicating the CV demonstrates strong communication skills. The justification highlights multiple projects where the candidate successfully translated business needs into actionable data solutions, collaborating effectively with cross-functional teams, and presenting insights to non-technical stakeholders.  This demonstrates an ability to articulate complex data concepts, a key requirement as detailed in the job description, therefore, a slight increase in weight is appropriate.  There’s no evidence of prestige bias, gender/diversity bias, ageism, proxy bias, or halo bias contributing to this adjustment."
+      },
+      {
+        "id": "machine_learning",
+        "label": "Machine Learning",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV's emphasis on Python (Pandas) is likely a proxy for machine learning skills given the job description's explicit mention of ‘machine learning’ and its required skills (Scikit-learn, Seaborn). While Anas demonstrates proficiency in Python, the lack of direct evidence of machine learning project experience is a significant omission, especially considering the JD’s strong focus on this area. This represents a bias favoring candidates who highlight relevant tools within the broader data analysis domain, rather than those with direct machine learning experience, reflecting a PROXY bias."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2957 (sous-qualifié), CTM=0.6971 (écart structurel élevé), match_pct=35.19% → Poor Match",
+    "v6_summary": "weighted_f1=0.3622, gap_score=0.2367, ndcg_5=0.9056, missing_critical_penalty=0.3077, combo_v6_final=35.91",
+    "key_strengths": "1 compétences clés validées",
+    "key_gaps": "8 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.59)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "nodes": [
+    {
+      "id": "aws",
+      "label": "AWS",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "conception et mise en œuvre des architectures de données avancées",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "jenkins",
+      "label": "Jenkins",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "conception et mise en œuvre des architectures de données avancées",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "java",
+      "label": "Java",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "conception et mise en œuvre des architectures de données avancées",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "python",
+      "label": "Python",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "conception et mise en œuvre des architectures de données avancées",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "go",
+      "label": "Go",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "conception et mise en œuvre des architectures de données avancées",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "docker",
+      "label": "Docker",
+      "type": "Tool",
+      "w_0": 0.902,
+      "seniority_required": "N/A",
+      "context": "conception et mise en œuvre des architectures de données avancées",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "kubernetes",
+      "label": "Kubernetes",
+      "type": "Tool",
+      "w_0": 0.902,
+      "seniority_required": "N/A",
+      "context": "conception et mise en œuvre des architectures de données avancées",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "linux",
+      "label": "Linux",
+      "type": "Tool",
+      "w_0": 0.757,
+      "seniority_required": "N/A",
+      "context": "conception et mise en œuvre des architectures de données avancées",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "data_science",
+      "label": "Data Science",
+      "type": "Domain",
+      "w_0": 0.7,
+      "seniority_required": "N/A",
+      "context": "conception et mise en œuvre des architectures de données avancées",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "communication",
+      "label": "Communication",
+      "type": "Soft Skill",
+      "w_0": 0.671,
+      "seniority_required": "N/A",
+      "context": "travail d'équipe et communication",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "teamwork",
+      "label": "Teamwork",
+      "type": "Soft Skill",
+      "w_0": 0.549,
+      "seniority_required": "N/A",
+      "context": "travail d'équipe et communication",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "competences",
+      "label": "Competences",
+      "type": "Soft Skill",
+      "w_0": 0.492,
+      "seniority_required": "N/A",
+      "context": "travail d'équipe et communication",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "expertise",
+      "label": "Expertise",
+      "type": "Domain",
+      "w_0": 0.441,
+      "seniority_required": "Expert",
+      "context": "mission passionnante pour un expert en DevOps et MLOps",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "machine_learning",
+      "label": "Machine Learning",
+      "type": "Hard Skill",
+      "w_0": 0.416,
+      "seniority_required": "N/A",
+      "context": "mise en œuvre de modèles d'apprentissage automatique",
+      "inferred": false,
+      "inferred_from": ", "
+    }
+  ],
+  "edges": [
+    {
+      "source": "docker",
+      "target": "kubernetes",
+      "relation": "supports",
+      "weight": 0.85,
+      "rationale": "Docker and Kubernetes are often used together for container orchestration"
+    },
+    {
+      "source": "jenkins",
+      "target": "docker",
+      "relation": "supports",
+      "weight": 0.85,
+      "rationale": "Jenkins is often used with Docker for CI/CD pipelines"
+    },
+    {
+      "source": "aws",
+      "target": "docker",
+      "relation": "supports",
+      "weight": 0.85,
+      "rationale": "AWS provides a Docker-compatible container service"
+    },
+    {
+      "source": "python",
+      "target": "machine_learning",
+      "relation": "requires",
+      "weight": 0.9,
+      "rationale": "Python is a popular language for machine learning"
+    },
+    {
+      "source": "java",
+      "target": "machine_learning",
+      "relation": "supports",
+      "weight": 0.65,
+      "rationale": "Java can be used for machine learning, but it's not as popular as Python"
+    },
+    {
+      "source": "go",
+      "target": "machine_learning",
+      "relation": "supports",
+      "weight": 0.4,
+      "rationale": "Go can be used for machine learning, but it's not as popular as Python or Java"
+    },
+    {
+      "source": "data_science",
+      "target": "machine_learning",
+      "relation": "part_of",
+      "weight": 0.9,
+      "rationale": "Machine learning is a part of data science"
+    },
+    {
+      "source": "data_science",
+      "target": "python",
+      "relation": "requires",
+      "weight": 0.9,
+      "rationale": "Python is a popular language for data science"
+    },
+    {
+      "source": "docker",
+      "target": "linux",
+      "relation": "requires",
+      "weight": 0.9,
+      "rationale": "Docker containers run on Linux"
+    },
+    {
+      "source": "kubernetes",
+      "target": "linux",
+      "relation": "requires",
+      "weight": 0.9,
+      "rationale": "Kubernetes clusters run on Linux"
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_30"
+}

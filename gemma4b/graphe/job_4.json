@@ -1,0 +1,140 @@
+{
+  "nodes": [
+    {
+      "id": "azure_cloud_engineer",
+      "label": "Azure",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "The job description explicitly lists Azure as a technology used.",
+      "inferred": true,
+      "inferred_from": "Vous utiliserez des technologies telles que Azure..."
+    },
+    {
+      "id": "microsoft_engineer",
+      "label": "Ingénieur",
+      "type": "Education",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "The job description mentions 'Ingénieur Cloud & DevOps' indicating an educational requirement.",
+      "inferred": true,
+      "inferred_from": "Mission passionnante pour un Ingénieur Cloud & DevOps..."
+    },
+    {
+      "id": "devsecops_implementation",
+      "label": "DevSecOps",
+      "type": "Tool",
+      "w_0": 0.889,
+      "seniority_required": "N/A",
+      "context": "The job description mentions 'DevSecOps' as a solution being implemented.",
+      "inferred": true,
+      "inferred_from": "vous aurez l'opportunité de mise en œuvre de solutions de sécurité et de DevOps."
+    },
+    {
+      "id": "devops_practices",
+      "label": "DevOps",
+      "type": "Hard Skill",
+      "w_0": 0.808,
+      "seniority_required": "N/A",
+      "context": "The job description mentions DevOps as part of the responsibilities.",
+      "inferred": true,
+      "inferred_from": "Vous travaillerez en étroite collaboration avec les équipes de développement pour concevoir et mettre en œuvre des solutions de CI/CD, ainsi que pour assurer la sécurité et la qualité des applications."
+    },
+    {
+      "id": "application_architecture",
+      "label": "Architecture Applicative",
+      "type": "Tool",
+      "w_0": 0.75,
+      "seniority_required": "N/A",
+      "context": "The job description lists 'Architecture Applicative' as a technology to be used.",
+      "inferred": true,
+      "inferred_from": "Vous travaillerez sur la conception et le déploiement d'infrastructures cloud natives, ainsi que sur l'architecture applicative."
+    },
+    {
+      "id": "ci_cd_pipeline",
+      "label": "CI/CD",
+      "type": "Tool",
+      "w_0": 0.499,
+      "seniority_required": "N/A",
+      "context": "The job description refers to 'CI/CD' as a solution to be implemented.",
+      "inferred": true,
+      "inferred_from": "Vous travaillerez en étroite collaboration avec les équipes de développement pour concevoir et mettre en œuvre des solutions de CI/CD..."
+    },
+    {
+      "id": "cloud_devops_role",
+      "label": "Ingénieur Cloud & DevOps",
+      "type": "Domain",
+      "w_0": 0.458,
+      "seniority_required": "N/A",
+      "context": "The job description explicitly states 'Ingénieur Cloud & DevOps'.",
+      "inferred": true,
+      "inferred_from": "Mission passionnante pour un Ingénieur Cloud & DevOps..."
+    },
+    {
+      "id": "cloud_native_solutions",
+      "label": "Développement de solution Cloud Native",
+      "type": "Domain",
+      "w_0": 0.43,
+      "seniority_required": "N/A",
+      "context": "The job description refers to 'Développement de solution Cloud Native'.",
+      "inferred": true,
+      "inferred_from": "vous aurez l'opportunité de travailler sur de projets de migration vers le cloud Azure, de conception et de déploiement d'infrastructures cloud natives..."
+    },
+    {
+      "id": "microsoft_ecosystem",
+      "label": "écosystème Microsoft",
+      "type": "Tool",
+      "w_0": 0.386,
+      "seniority_required": "N/A",
+      "context": "The job description lists 'écosystème Microsoft' as a technology to be used.",
+      "inferred": true,
+      "inferred_from": "Vous utiliserez des technologies telles que Azure, écosystème Microsoft..."
+    }
+  ],
+  "edges": [
+    {
+      "source": "cloud_devops_role",
+      "target": "azure_cloud_engineer",
+      "relation": "requires",
+      "weight": 0.95,
+      "rationale": "The JD explicitly states working with Azure technologies, indicating a core requirement for an Azure Cloud Engineer role."
+    },
+    {
+      "source": "cloud_devops_role",
+      "target": "devsecops_implementation",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "The JD mentions implementing DevSecOps solutions, highlighting a necessary component for this role's responsibilities."
+    },
+    {
+      "source": "cloud_devops_role",
+      "target": "ci_cd_pipeline",
+      "relation": "requires",
+      "weight": 0.7,
+      "rationale": "The JD explicitly mentions implementing CI/CD pipelines, directly linking to this tool's usage."
+    },
+    {
+      "source": "cloud_devops_role",
+      "target": "microsoft_engineer",
+      "relation": "requires",
+      "weight": 0.65,
+      "rationale": "The JD states working with the 'écosystème Microsoft', implying the need for a foundational understanding gained through education like that provided by Microsoft Engineer."
+    },
+    {
+      "source": "cloud_devops_role",
+      "target": "application_architecture",
+      "relation": "supports",
+      "weight": 0.55,
+      "rationale": "The JD refers to 'conception et déploiement d'infrastructures cloud natives', suggesting Architectural design is a supporting element – it makes native solutions easier to implement."
+    },
+    {
+      "source": "cloud_devops_role",
+      "target": "cloud_native_solutions",
+      "relation": "part_of",
+      "weight": 0.48,
+      "rationale": "Cloud Native Solutions are a specific subset/instance of the broader Domain of Cloud DevOps within this role."
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_4"
+}

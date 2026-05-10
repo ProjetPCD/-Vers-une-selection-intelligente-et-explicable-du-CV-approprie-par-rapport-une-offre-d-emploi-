@@ -1,0 +1,351 @@
+{
+  "job_id": "job_24",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-05T10:25:09.588083",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 38.34,
+    "confidence": {
+      "confidence_score": 0.61,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.5,
+        "coverage_rate": 0.7,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.5239,
+    "edge_score": 0.3785,
+    "combined": 0.4658
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2982,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6506,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6166,
+    "matched_nodes": "1/10",
+    "edge_match_pct": 18.92
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2887,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.2239,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2512,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.2,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.4253,
+    "weighted_recall": 0.1511,
+    "weighted_f1": {
+      "value": 0.2732,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6442,
+    "missing_critical_penalty": {
+      "value": 0.25,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9462,
+    "ndcg_10": 0.9731,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9167,
+    "top_skill_alignment": 0.4617,
+    "semantic_fit_score": 0.5802,
+    "experience_density": 0.2251
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 31.71,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 24.38,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 35.35,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 97.85,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 47.53,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 38.37,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 46.91,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Education": {
+      "count": 1,
+      "match_pct": 59.0,
+      "weight_sum": 1.0
+    },
+    "Tool": {
+      "count": 5,
+      "match_pct": 17.2,
+      "weight_sum": 4.651
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 70.8,
+      "weight_sum": 0.85
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 13.8,
+      "weight_sum": 1.519
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 9.0,
+      "weight_sum": 0.573
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 18.92,
+    "total_edges": 9,
+    "top_synergies": [
+      {
+        "edge_key": "python_programming|sklearn",
+        "source": "python_programming",
+        "target": "sklearn",
+        "w_0": 0.956,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 44.5,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "medical_datasets|sklearn",
+        "source": "medical_datasets",
+        "target": "sklearn",
+        "w_0": 0.868,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 43.2,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ia_ml_domain|python_programming",
+        "source": "ia_ml_domain",
+        "target": "python_programming",
+        "w_0": 0.82,
+        "w_cv": 0.65,
+        "w_cv_norm": 0.325,
+        "match_pct": 39.6,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "professional_domain|communication_collaboration",
+        "source": "professional_domain",
+        "target": "communication_collaboration",
+        "w_0": 0.699,
+        "w_cv": 0.65,
+        "w_cv_norm": 0.325,
+        "match_pct": 46.5,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "medical_datasets|tensorflow",
+        "source": "medical_datasets",
+        "target": "tensorflow",
+        "w_0": 0.868,
+        "w_cv": 0.489,
+        "w_cv_norm": 0.244,
+        "match_pct": 28.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.648,
+      "severity": "critical",
+      "importance": 0.997
+    },
+    {
+      "skill": "Scikit-Learn",
+      "type": "Tool",
+      "gap": 0.956,
+      "severity": "critical",
+      "importance": 0.956
+    },
+    {
+      "skill": "Hugging Face",
+      "type": "Tool",
+      "gap": 0.887,
+      "severity": "critical",
+      "importance": 0.887
+    },
+    {
+      "skill": "datasets médicaux et documentaires",
+      "type": "Tool",
+      "gap": 0.728,
+      "severity": "critical",
+      "importance": 0.868
+    },
+    {
+      "skill": "professionnel",
+      "type": "Domain",
+      "gap": 0.699,
+      "severity": "critical",
+      "importance": 0.699
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.648
+      },
+      {
+        "label": "Scikit-Learn",
+        "type": "Tool",
+        "gap": 0.956
+      },
+      {
+        "label": "Hugging Face",
+        "type": "Tool",
+        "gap": 0.887
+      },
+      {
+        "label": "datasets médicaux et documentaires",
+        "type": "Tool",
+        "gap": 0.728
+      },
+      {
+        "label": "professionnel",
+        "type": "Domain",
+        "gap": 0.699
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 5,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 2,
+      "AGEISM": 1,
+      "PRESTIGE": 1,
+      "C": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "tensorflow",
+        "label": "TensorFlow",
+        "bias_category": "AGEISM",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.698,
+        "reason": "The candidate’s extensive experience (10+ years) coupled with a PhD in Artificial Intelligence, while valuable, appears to have resulted in a slight penalty. The JD emphasizes ‘latest technologies’ which can implicitly favor more recent graduates.  This represents a potential age bias, unfairly penalizing an experienced candidate for not having the absolute newest skillset demanded – a proxy for perceived ‘adaptability’ based on age. A correction factor reflects this while acknowledging the candidate’s demonstrated expertise with TensorFlow and InstaDeep."
+      },
+      {
+        "id": "keras",
+        "label": "Keras",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.698,
+        "reason": "The reduction in weight for 'keras' is likely driven by the weak evidence provided - a peripheral mention of 'datasets médicaux et documentaires'. While Keras is a valid skill, the context of the JD focuses heavily on medical and documentary datasets, suggesting the candidate's expertise is primarily aligned with this specific domain rather than a broader understanding of Keras applications. Additionally, the CV highlights experience with InstaDeep and BionTech, which might be perceived as prestige, further diminishing the weight of a skill listed in a more general setting. Therefore, the decrease in weight reflects an overemphasis on the specific context of the job description."
+      },
+      {
+        "id": "medical_datasets",
+        "label": "datasets médicaux et documentaires",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.28,
+        "reason": "The significant decrease in weight (w_0 from 0.868 to 0.43) for the skill 'datasets médicaux et documentaires' is likely a proxy bias.  The JD explicitly mentions this skill as a requirement, but the CV provides only peripheral context – a brief mention and long experience in seemingly unrelated roles (CDO, Project Management, Quality Assurance). The lack of strong evidence – no dedicated projects or experience explicitly demonstrating expertise in medical data analysis – coupled with the long career history, suggests the algorithm is placing undue emphasis on the phrasing of the skill rather than the candidate’s actual capability. A more fair alternative would involve weighting the skill based on direct experience and demonstrated proficiency, not just a keyword match."
+      },
+      {
+        "id": "python_programming",
+        "label": "Programmation Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.416,
+        "reason": "The significant increase in weight (from 0.85 to 1.18) for 'python_programming' is likely driven by the candidate's role at InstaDeep, a well-regarded AI company. This reflects prestige bias, where the company's reputation is unfairly influencing the score, prioritizing Python skills over perhaps other equally valid skills the candidate might possess.  The CV highlights experience at InstaDeep and a Master's degree, boosting the score disproportionately to the importance of the skills listed.  A fairer alternative would be to weigh the skills demonstrated within the InstaDeep role more heavily, while mitigating the impact of prestige. A correction factor of 1.20 reflects the amplified influence of the company's status."
+      },
+      {
+        "id": "ia_ml_domain",
+        "label": "IA/ML",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.51,
+        "reason": "The weight change (decrease of 0.14) is likely due to AGEISM. The CV highlights extensive experience (SOTIPAPIER - 10+ years), but the JD primarily focuses on skills expected of a 'Senior ML Engineer' suggesting a preference for more recent graduates or those with more current technologies. The candidate's PhD and extensive professional experience are peripheral mentions that are not prioritized in the JD's requirements, creating an unfair disadvantage based on career length and seniority. A more appropriate factor would be 0.85 to recognize the candidate’s seasoned experience and breadth of knowledge."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2982 (sous-qualifié), CTM=0.6506 (écart structurel élevé), match_pct=38.34% → Poor Match",
+    "v6_summary": "weighted_f1=0.2732, gap_score=0.2512, ndcg_5=0.9462, missing_critical_penalty=0.25, combo_v6_final=31.71",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "5 gaps critiques identifiés",
+    "bias_note": "5 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.61)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

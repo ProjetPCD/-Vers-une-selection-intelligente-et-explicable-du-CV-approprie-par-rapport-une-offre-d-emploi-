@@ -1,0 +1,453 @@
+{
+  "job_id": "job_86",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-05T15:09:12.369532",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 31.24,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.643,
+        "coverage_rate": 0.429,
+        "nodes_audited": 5,
+        "nodes_biased": 5
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.2058,
+    "edge_score": 0.1736,
+    "combined": 0.1929
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2303,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7414,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6876,
+    "matched_nodes": "2/14",
+    "edge_match_pct": 17.36
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2331,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.5273,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.1645,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.2857,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.3991,
+    "weighted_recall": 0.2088,
+    "weighted_f1": {
+      "value": 0.3633,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6437,
+    "missing_critical_penalty": {
+      "value": 0.2857,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.869,
+    "ndcg_10": 0.9449,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9786,
+    "top_skill_alignment": 0.4947,
+    "semantic_fit_score": 0.3296,
+    "experience_density": 0.1814
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 35.74,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 34.92,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 25.26,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 94.76,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 52.01,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 38.79,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 47.67,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 8,
+      "match_pct": 25.2,
+      "weight_sum": 7.165
+    },
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 0.0,
+      "weight_sum": 2.944
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 66.0,
+      "weight_sum": 0.779
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 15.1,
+      "weight_sum": 1.451
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 17.36,
+    "total_edges": 11,
+    "top_synergies": [
+      {
+        "edge_key": "communication|collaboration",
+        "source": "communication",
+        "target": "collaboration",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devops|kubernetes",
+        "source": "devops",
+        "target": "kubernetes",
+        "w_0": 0.5,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.6,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "aws|terraform",
+        "source": "aws",
+        "target": "terraform",
+        "w_0": 0.5,
+        "w_cv": 0.32,
+        "w_cv_norm": 0.32,
+        "match_pct": 64.0,
+        "p3_confidence": "MEDIUM",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "aws|kubernetes",
+        "source": "aws",
+        "target": "kubernetes",
+        "w_0": 0.5,
+        "w_cv": 0.24,
+        "w_cv_norm": 0.24,
+        "match_pct": 48.0,
+        "p3_confidence": "LOW",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "kubernetes|docker",
+        "source": "kubernetes",
+        "target": "docker",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Bash",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.991,
+      "severity": "critical",
+      "importance": 0.991
+    },
+    {
+      "skill": "Golang",
+      "type": "Hard Skill",
+      "gap": 0.944,
+      "severity": "critical",
+      "importance": 0.944
+    },
+    {
+      "skill": "Ansible",
+      "type": "Tool",
+      "gap": 0.936,
+      "severity": "critical",
+      "importance": 0.936
+    },
+    {
+      "skill": "Elasticsearch",
+      "type": "Tool",
+      "gap": 0.838,
+      "severity": "critical",
+      "importance": 0.838
+    },
+    {
+      "skill": "Prometheus",
+      "type": "Tool",
+      "gap": 0.826,
+      "severity": "critical",
+      "importance": 0.826
+    },
+    {
+      "skill": "Helm",
+      "type": "Tool",
+      "gap": 0.749,
+      "severity": "critical",
+      "importance": 0.749
+    },
+    {
+      "skill": "Collaboration",
+      "type": "Soft Skill",
+      "gap": 0.72,
+      "severity": "critical",
+      "importance": 0.72
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Bash",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Docker",
+        "type": "Tool",
+        "gap": 0.991
+      },
+      {
+        "label": "Golang",
+        "type": "Hard Skill",
+        "gap": 0.944
+      },
+      {
+        "label": "Ansible",
+        "type": "Tool",
+        "gap": 0.936
+      },
+      {
+        "label": "Elasticsearch",
+        "type": "Tool",
+        "gap": 0.838
+      },
+      {
+        "label": "Prometheus",
+        "type": "Tool",
+        "gap": 0.826
+      },
+      {
+        "label": "Helm",
+        "type": "Tool",
+        "gap": 0.749
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 5,
+    "nodes_with_bias": 5,
+    "edges_audited": 3,
+    "edges_with_bias": 3,
+    "bias_categories": {
+      "PRESTIGE": 8
+    },
+    "biased_nodes": [
+      {
+        "id": "aws",
+        "label": "AWS",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 1.312,
+        "w_cv_corrected": 1.312,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's certification from a well-known provider (AWS Certified Machine Learning Engineer) and experience in a specific technology (Kubernetes) are given more importance than other skills. The correction factor is set to 1.25 to increase the weight and counteract the bias."
+      },
+      {
+        "id": "terraform",
+        "label": "Terraform",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.26,
+        "w_cv_corrected": 1.26,
+        "reason": "The weight change is biased due to prestige bias, as the certification from a well-known institution (Terraform Certified) is given strong evidence, leading to an unfair decrease in weight. A fairer approach would be to consider the certification as one of the many relevant skills and experiences, rather than giving it disproportionate weight."
+      },
+      {
+        "id": "kubernetes",
+        "label": "Kubernetes",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.26,
+        "w_cv_corrected": 1.26,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's certifications (CKA, CKAD) and 6 years of experience are strong evidence of their skills, but the adapted weight is decreased. The correction factor is 1.20 to increase the weight to a more fair value, considering the candidate's merits."
+      },
+      {
+        "id": "devops",
+        "label": "Devops",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.32,
+        "w_cv_corrected": 1.32,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's certifications and experience are given more importance than their skills demonstrated. The correction factor is set to 1.20 to increase the weight, as the candidate's qualifications are unfairly penalized."
+      },
+      {
+        "id": "communication",
+        "label": "Communication",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university name (Université arabe des Sciences) may have influenced the weight decrease. The candidate's skills and experience in DevOps, cloud, and security are not reflected in the weight change. A fair alternative would be to focus on the candidate's relevant skills and certifications, such as Kubernetes and Terraform, rather than their university background."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "aws|kubernetes",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_corrected": 0.24,
+        "reason": "The edge weight change is biased due to prestige bias, as the candidate's experience with AWS and Kubernetes is not being fully valued because they didn't explicitly mention using them together. This is an unfair penalty, as the candidate has demonstrated individual skills in both areas. A fairer approach would be to recognize the candidate's relevant experience and give them credit for their individual skills, rather than requiring explicit synergy."
+      },
+      {
+        "edge": "aws|terraform",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.32,
+        "reason": "The weight change is biased towards the candidate due to the prestige associated with being certified in AWS and Terraform, rather than solely based on the skills demonstrated. The correction factor is set to 0.80 to reduce the unfair advantage given to the candidate."
+      },
+      {
+        "edge": "devops|kubernetes",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.6,
+        "reason": "The edge weight change is biased towards candidates from prestigious companies (OpsForAll and e-talent) without considering the actual skills demonstrated. The correction factor is set to 0.80 to reduce the unfair advantage given to candidates from these companies."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2303 (sous-qualifié), CTM=0.7414 (écart structurel élevé), match_pct=31.24% → Poor Match",
+    "v6_summary": "weighted_f1=0.3633, gap_score=0.1645, ndcg_5=0.869, missing_critical_penalty=0.2857, combo_v6_final=35.74",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "9 gaps critiques identifiés",
+    "bias_note": "5 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 2,
+    "pool_size": 50,
+    "percentile": 0.9796,
+    "composite_z_score": 1.6289,
+    "tier": "Top 10%",
+    "z_scores": {
+      "combo_v6": 2.336,
+      "wf1": 2.644,
+      "gap_score": 1.257,
+      "ntcw": 1.548,
+      "match_pct": 0.868,
+      "ndcg_5": -0.237
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 12.852,
+        "std": 9.7967
+      },
+      "wf1": {
+        "mean": 0.0674,
+        "std": 0.1119
+      },
+      "gap_score": {
+        "mean": 0.0674,
+        "std": 0.0772
+      },
+      "ntcw": {
+        "mean": 0.0865,
+        "std": 0.0929
+      },
+      "match_pct": {
+        "mean": 21.8864,
+        "std": 10.7767
+      },
+      "ndcg_5": {
+        "mean": 0.8904,
+        "std": 0.0899
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

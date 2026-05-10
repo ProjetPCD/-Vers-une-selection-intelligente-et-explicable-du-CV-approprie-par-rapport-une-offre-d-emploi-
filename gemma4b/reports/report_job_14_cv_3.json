@@ -1,0 +1,540 @@
+{
+  "job_id": "job_14",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-03T16:18:55.798769",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 33.23,
+    "confidence": {
+      "confidence_score": 0.61,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.607,
+        "coverage_rate": 0.714,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.4386,
+    "edge_score": 0.2113,
+    "combined": 0.3477
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2472,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6865,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6677,
+    "matched_nodes": "4/28",
+    "edge_match_pct": 10.57
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2612,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1946,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2134,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0741,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.4333,
+    "weighted_recall": 0.0556,
+    "weighted_f1": {
+      "value": 0.1071,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6635,
+    "missing_critical_penalty": {
+      "value": 0.0833,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8253,
+    "ndcg_10": 0.8136,
+    "map_score": 0.963,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8404,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.245,
+    "experience_density": 0.1883
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 21.69,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 19.11,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 18.96,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 91.72,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 39.63,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 27.38,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 23.67,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 3,
+      "match_pct": 4.7,
+      "weight_sum": 2.332
+    },
+    "Tool": {
+      "count": 14,
+      "match_pct": 16.7,
+      "weight_sum": 12.694
+    },
+    "Hard Skill": {
+      "count": 7,
+      "match_pct": 36.5,
+      "weight_sum": 6.277
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 27.4,
+      "weight_sum": 2.737
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 10.57,
+    "total_edges": 19,
+    "top_synergies": [
+      {
+        "edge_key": "senior-devops-engineer|python-programming",
+        "source": "senior-devops-engineer",
+        "target": "python-programming",
+        "w_0": 0.7,
+        "w_cv": 0.78,
+        "w_cv_norm": 0.39,
+        "match_pct": 55.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "senior-devops-engineer|ansible_tower_automation",
+        "source": "senior-devops-engineer",
+        "target": "ansible_tower_automation",
+        "w_0": 0.7,
+        "w_cv": 0.531,
+        "w_cv_norm": 0.266,
+        "match_pct": 37.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "senior-devops-engineer|powershell_automation",
+        "source": "senior-devops-engineer",
+        "target": "powershell_automation",
+        "w_0": 0.5,
+        "w_cv": 0.394,
+        "w_cv_norm": 0.197,
+        "match_pct": 39.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "senior-devops-engineer|jenkins-ci",
+        "source": "senior-devops-engineer",
+        "target": "jenkins-ci",
+        "w_0": 0.85,
+        "w_cv": 0.39,
+        "w_cv_norm": 0.195,
+        "match_pct": 22.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "senior-devops-engineer|bash_scripting",
+        "source": "senior-devops-engineer",
+        "target": "bash_scripting",
+        "w_0": 0.7,
+        "w_cv": 0.3,
+        "w_cv_norm": 0.15,
+        "match_pct": 21.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Senior DevOps Engineer",
+      "type": "Domain",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "AWS",
+      "type": "Tool",
+      "gap": 0.775,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Jenkins",
+      "type": "Tool",
+      "gap": 0.61,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Ansible",
+      "type": "Tool",
+      "gap": 0.74,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "GitLab",
+      "type": "Tool",
+      "gap": 0.793,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Ruby on Rails",
+      "type": "Tool",
+      "gap": 0.918,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Agile",
+      "type": "Hard Skill",
+      "gap": 0.719,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Scrum",
+      "type": "Hard Skill",
+      "gap": 0.812,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Azure",
+      "type": "Tool",
+      "gap": 0.984,
+      "severity": "critical",
+      "importance": 0.984
+    },
+    {
+      "skill": "Terraform",
+      "type": "Tool",
+      "gap": 0.952,
+      "severity": "critical",
+      "importance": 0.952
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "w_cv": 1.56
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "Senior DevOps Engineer",
+        "type": "Domain",
+        "gap": 1.0
+      },
+      {
+        "label": "AWS",
+        "type": "Tool",
+        "gap": 0.775
+      },
+      {
+        "label": "Jenkins",
+        "type": "Tool",
+        "gap": 0.61
+      },
+      {
+        "label": "Ansible",
+        "type": "Tool",
+        "gap": 0.74
+      },
+      {
+        "label": "GitLab",
+        "type": "Tool",
+        "gap": 0.793
+      },
+      {
+        "label": "Ruby on Rails",
+        "type": "Tool",
+        "gap": 0.918
+      },
+      {
+        "label": "Agile",
+        "type": "Hard Skill",
+        "gap": 0.719
+      },
+      {
+        "label": "Scrum",
+        "type": "Hard Skill",
+        "gap": 0.812
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 20,
+    "nodes_with_bias": 19,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 15,
+      "C": 3
+    },
+    "biased_nodes": [
+      {
+        "id": "aws-cloud",
+        "label": "AWS",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The decrease in weight (w_cv from 1.0 to 0.6) is likely due to the CV’s focus on NodeJS for API mock-up creation, which is a proxy for AWS experience. While the candidate demonstrates relevant skills, the explicit mention of NodeJS suggests a potential preference for frontend development, potentially overshadowing the desired AWS expertise. A fair alternative would be a CV that explicitly details AWS service utilization and aligns with the role’s requirements, mitigating the reliance on a soft skill proxy."
+      },
+      {
+        "id": "jenkins-ci",
+        "label": "Jenkins",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.78,
+        "reason": "The CV explicitly describes experience with Jenkins in the context of database and middleware upgrade testing within CI/CD pipelines, aligning with the JD’s requirements. However, the weight reduction (-0.35) suggests an overemphasis on the generic ‘upgrade testing’ experience, potentially neglecting the specific CI/CD skills demonstrated. A higher correction factor is applied to account for the relevant technical skills showcased through the CV, reflecting a more fair weighting of the candidate’s expertise given the context provided."
+      },
+      {
+        "id": "ansible-automation",
+        "label": "Ansible",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.3,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.52,
+        "reason": "The significant decrease in weight (0.4 to 0.6) is likely due to the CV referencing IBM UrbanCode Deploy. While Ansible is listed as a skill, the primary focus on UrbanCode Deploy, an automation tool heavily associated with IBM, introduces a proxy bias. The focus on the deployment tool overshadows the candidate's demonstrated expertise in Ansible, which is a core skill for a Senior DevOps Engineer. A higher correction factor reflects this misdirection, favoring the candidate’s skills in Ansible and correcting the bias toward the deployment tool."
+      },
+      {
+        "id": "gitlab-ci",
+        "label": "GitLab",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.413,
+        "reason": "The significant decrease (w_0: 1.0 to w_cv: 0.55) in the weight assigned to the candidate’s CV despite demonstrated skills (Cypress, testing-library) is indicative of Ageism. The CV’s extensive experience, particularly the focus on UI development with Node.js and a strong understanding of testing frameworks, should be heavily weighted.  The reduced weight seemingly prioritizes the mention of the 'Complete Node.js Developer Course' over demonstrable experience in modern front-end development, suggesting a preference for candidates with specific training certifications rather than practical skills. This constitutes an unfair penalty for experience and relevant skills, leading to a bias against a candidate who possesses the required expertise.  A fairer alternative would be to fully reflect the candidate's experience and skills within the scoring."
+      },
+      {
+        "id": "python-programming",
+        "label": "Python",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.56,
+        "reason": "The weight increase (Delta +0.300) is justified by a significant and demonstrable skill set. Hector Davis possesses 11 years of experience and explicitly lists Python as a skill alongside relevant projects (The Complete Node.js Developer Course). Furthermore, the CV details work with NodeJS, indicating familiarity with a language closely related to Python, and the experience in API mock-up creation aligns with potential DevOps responsibilities. While the JD focuses on a broader DevOps skillset, the presence and intensity of Python demonstrate a valuable asset, necessitating a slight weighting adjustment to reflect the candidate's capabilities beyond the explicitly listed technologies."
+      },
+      {
+        "id": "ruby-on-rails",
+        "label": "Ruby on Rails",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.163,
+        "reason": "The CV lists ‘Ruby on Rails’ as a skill, but the context demonstrates the candidate’s focus is primarily on front-end development with React/NodeJS and experience with modern front-end technologies like Tailwind CSS and Cypress. The JD explicitly lists Ruby on Rails as part of the tech stack, suggesting a potential mismatch between the candidate's actual skills and the job requirements, creating a proxy bias based on the listed skills.  The candidate's experience with NodeJS and API mockups further supports this, indicating a front-end skill set rather than a senior DevOps role requiring Ruby on Rails expertise.  Therefore, the weight reduction is merit-based, reflecting a difference in skill focus."
+      },
+      {
+        "id": "agile-methodology",
+        "label": "Agile",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The CV explicitly lists 'Agile Environment' as a skill, aligning with the JD’s requirements. However, the weight change (-0.25) is likely due to the presence of 'Agile' being a relatively common skill and not specifically tied to demonstrable experience or a deep understanding of Agile methodologies (Scrum). The CV highlights a 4-year experience, but without specific details on how that experience applied Agile principles, the system is penalizing the skill due to the broader market prevalence of the term, indicating a Proxy Bias – the location (Brazil) and language (Portuguese) on the CV act as proxies for experience levels. A correction factor of 0.75 is applied to reflect the legitimate skill listed, and to acknowledge the context of experience."
+      },
+      {
+        "id": "scrum-framework",
+        "label": "Scrum",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The CV references 'Scrum framework' as part of working within an Agile environment, aligning with the JD's requirement. However, the CV's emphasis on certifications (e.g., 'The Complete Node.js Developer Course') and specific technologies (React/NodeJS) overshadows the stated Agile methodology, potentially creating a proxy bias.  The CV focuses on technical skills rather than demonstrated Agile experience, and the specific certifications could be perceived as a preference for a particular development approach, unfairly weighting the candidate's profile. A higher weighting should be applied to demonstrate actual Agile experience, reflecting the JD's emphasis on Agile methodology."
+      },
+      {
+        "id": "powershell_automation",
+        "label": "Powershell",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.788,
+        "reason": "The CV explicitly lists 'Installation and configuration automation of upgrade scenarios using IBM UrbanCode Deploy, Jenkins and shell scripting' as a key project.  This demonstrates experience with scripting tools, a specific technical skill, and highlights a tool (UrbanCode Deploy) that is not commonly associated with traditional DevOps or general PowerShell skills.  This strongly suggests a proxy bias – the system is prioritizing the use of specific automation tools (UrbanCode Deploy, Jenkins, Shell scripting) rather than the candidate's broader PowerShell competency and potential for broader automation tasks. A lower factor acknowledges the relevance of the specific project while mitigating the over-emphasis on this particular tool set."
+      },
+      {
+        "id": "bash_scripting",
+        "label": "Bash",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The evidence strongly suggests a bias towards the use of shell scripting (Bash) due to the explicit mention of 'Coordination of software fix pack recertification tests,' which relies on shell scripting for automation.  The CV highlights experience with NodeJS and shell scripting, significantly weighting these skills. While bash scripting isn’t a core skill explicitly listed as ‘ideal,’ its inclusion in the job description’s technology stack and the candidate's demonstrable use within a complex testing scenario creates an artificial weighting.  A fair alternative would be to focus on the overall DevOps skills listed, rather than prioritizing a specific scripting language for a test automation task.  This results in a 0.147 decrease in the perceived value of bash scripting, indicating a proxy bias linked to the technology stack listed in the job description."
+      },
+      {
+        "id": "groovy_scripting",
+        "label": "Groovy",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.347,
+        "reason": "The significant decrease in weight (w_cv from 0.851 to 0.463) for Groovy scripting is likely driven by a proxy bias. The CV explicitly lists Groovy as a skill, but the JD focuses heavily on cloud technologies (AWS, Azure, Kubernetes, etc.) and doesn't explicitly prioritize it. The candidate's CV highlights a Node.js background, which may be receiving a greater weighting due to the job description’s emphasis on cloud development and associated technologies.  This suggests the algorithm is unfairly emphasizing the technologies mentioned in the job description over the listed skill, representing a proxy for broader DevOps experience."
+      },
+      {
+        "id": "devops_engineer_problem_analysis",
+        "label": "Analyse de problèmes",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.425,
+        "reason": "The significant decrease in weight (-0.281) is likely due to the candidate’s CV listing a Frontend Developer role at IBM and highlighting skills like Node.js, React, and Cypress. While these are valuable, the job description explicitly requires a Senior DevOps Engineer with expertise in cloud technologies and specific tools like Kubernetes, Ansible, and Terraform – skills not immediately apparent from the CV. This suggests the algorithm is overweighting the CV’s frontend experience, reflecting a proxy bias related to the candidate's prior employment, potentially penalizing them for not immediately demonstrating the exact DevOps skillset demanded."
+      },
+      {
+        "id": "devops_engineer_conflict_resolution",
+        "label": "Résolution de conflits",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The CV highlights 'Teamwork' and 'Agile Environment' as top skills, aligning with the JD's requirements for collaboration and methodology. However, the candidate's experience is primarily focused on frontend development and IBM, with a strong emphasis on UI development and testing, which are not explicitly central to a DevOps Engineer role. The location of São Paulo, Brazil, and the use of Portuguese in the skill set (labeled as ‘Languages’) introduce a proxy signal related to the candidate’s geographic location and potential language capabilities, creating an indirect association rather than directly assessing conflict resolution skills.  The delta of -0.027 is relatively small, indicating a minor adjustment is needed, rather than a strong bias, and is primarily due to the proxy signal. A more accurate assessment would require deeper probing into the candidate's specific conflict resolution experience, not relying on location-based keywords."
+      },
+      {
+        "id": "devops_engineer_devops_tools",
+        "label": "Outils de DevOps",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The CV highlights 'Node.js' as a core skill and experience, coupled with a certification in 'The Complete Node.js Developer Course,' indicating a strong focus on this technology. However, the JD emphasizes experience with a broad range of DevOps tools and technologies, suggesting a potential preference for candidates with deeper expertise in a specific area. The fact that Hector's CV predominantly focuses on Node.js development, evidenced by the certification and detailed experience, might be unfairly penalized by an algorithm prioritizing a more generalized DevOps skillset, thus creating a proxy bias based on the candidate’s explicitly stated skills and training. Correction factor adjusted to 0.85 to account for the weight of the CV's specialized skills."
+      },
+      {
+        "id": "devops_engineer_cloud_solutions",
+        "label": "Solutions cloud",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.163,
+        "reason": "The CV explicitly lists 'Node.js' as a skill, yet the adaptation weight (0.25) drastically reduces the importance of this skill. This suggests a proxy bias – the system is prioritizing a particular location (São Paulo, Brazil) and associated technology stack (Node.js) rather than demonstrated DevOps skills, particularly cloud solutions. The candidate’s experience includes NodeJS, but it's a secondary skill within a front-end role; the JD emphasizes cloud and DevOps expertise, indicating a mismatch in skills emphasized. A fair alternative would be to adjust the weight based on direct contributions to cloud infrastructure projects and DevOps tool usage, not merely a listed skill."
+      },
+      {
+        "id": "devops_engineer_quick_learning",
+        "label": "Capacité à apprendre rapidement",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The weight increase (+0.046) is primarily driven by the listed skill 'Capacité à apprendre rapidement' (Quick Learning Capacity) provided in the rationale. However, the CV lists ‘The Complete Node.js Developer Course’ as a certification, which while demonstrating some technical proficiency, introduces a proxy signal - the choice of this specific course.  Furthermore, the candidate’s experience as a Frontend Developer at IBM, coupled with their focus on Node.js, leans heavily into a specific tech stack that the JD highlights as desirable.  While the quick learning attribute is positive, the strong emphasis on Node.js development pulls the weight upward; this isn't purely merit-based but reflects a focus on the training received."
+      },
+      {
+        "id": "devops_engineer_cloud_technologies",
+        "label": "Technologies cloud",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.163,
+        "reason": "The CV predominantly focuses on front-end development experience (React/NodeJS) and a history as a Software QA Engineer, lacking explicit mention of DevOps or cloud technologies despite the JD's requirements. The location of 'Lowell, Massachusetts, United States' and the Brazilian experience act as socioeconomic proxies, suggesting a potentially different skillset and experience level than what the Senior DevOps Engineer role demands.  This discrepancy leads to a decrease in the candidate's weight, reflecting the misalignment with the JD's explicit technological focus; a correction factor is applied to account for this mismatch.  A more appropriate factor would be 0.75 if there were a more direct linkage between his existing experience and the required DevOps role."
+      },
+      {
+        "id": "devops_engineer_dynamic_environment",
+        "label": "Expérience de travail dans un environnement dynamique",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The increased weight for 'dynamic environment' is likely driven by the candidate's CV mentioning experience in a dynamic environment (São Paulo, Brazil) and specific technologies (NodeJS, Jenkins, shell scripting). While the JD emphasizes a dynamic environment, the CV provides concrete evidence related to this qualification, suggesting the weight adjustment reflects a genuine skill match rather than a bias. The candidate's experience with automation and integration tools further strengthens this merit-based increase.  This could be seen as favoring candidates with experience in diverse environments, particularly those utilizing modern DevOps practices."
+      },
+      {
+        "id": "devops_engineer_linux",
+        "label": "Linux",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.9,
+        "reason": "The CV highlights significant experience with Linux and automated deployment tools (UrbanCode Deploy, Jenkins, shell scripting) directly related to the senior DevOps role's requirements – specifically within a cloud environment. Despite the summary focusing on front-end development, the CV’s detailed experience installing, configuring, and upgrading Linux-based systems for a major software company strongly aligns with the JD’s focus on cloud solutions and automation.  The location of São Paulo, Brazil, is a socioeconomic proxy linked to the experience, thus introducing a bias.  A correction factor of 1.2 is applied to reflect this merit based experience increase."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2472 (sous-qualifié), CTM=0.6865 (écart structurel élevé), match_pct=33.23% → Poor Match",
+    "v6_summary": "weighted_f1=0.1071, gap_score=0.2134, ndcg_5=0.8253, missing_critical_penalty=0.0833, combo_v6_final=21.69",
+    "key_strengths": "1 compétences clés validées",
+    "key_gaps": "17 gaps critiques identifiés",
+    "bias_note": "19 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.61)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

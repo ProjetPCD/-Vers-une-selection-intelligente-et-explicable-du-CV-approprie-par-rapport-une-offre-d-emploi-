@@ -1,0 +1,484 @@
+{
+  "job_id": "job_26",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-05T01:21:57.122174",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 33.81,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.538,
+        "coverage_rate": 0.346,
+        "nodes_audited": 9,
+        "nodes_biased": 9
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.1339,
+    "edge_score": 0.1945,
+    "combined": 0.1581
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1688,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6736,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6619,
+    "matched_nodes": "2/26",
+    "edge_match_pct": 19.45
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.165,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.6062,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.1291,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.08,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.2827,
+    "weighted_recall": 0.0605,
+    "weighted_f1": {
+      "value": 0.1155,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5617,
+    "missing_critical_penalty": {
+      "value": 0.1333,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.8121,
+    "ndcg_10": 0.8135,
+    "map_score": 0.9004,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9522,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.2482,
+    "experience_density": 0.101
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 25.66,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 29.82,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 15.85,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 89.0,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 35.51,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 29.58,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 18.87,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 6,
+      "match_pct": 29.1,
+      "weight_sum": 3.998
+    },
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 0.0,
+      "weight_sum": 2.164
+    },
+    "Soft Skill": {
+      "count": 6,
+      "match_pct": 29.4,
+      "weight_sum": 4.979
+    },
+    "Tool": {
+      "count": 11,
+      "match_pct": 0.0,
+      "weight_sum": 8.473
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 19.45,
+    "total_edges": 16,
+    "top_synergies": [
+      {
+        "edge_key": "backend_engineer|backend_development",
+        "source": "backend_engineer",
+        "target": "backend_development",
+        "w_0": 0.5,
+        "w_cv": 0.862,
+        "w_cv_norm": 0.862,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "backend_engineer|leadership",
+        "source": "backend_engineer",
+        "target": "leadership",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "backend_development|software_solutions",
+        "source": "backend_development",
+        "target": "software_solutions",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "experienced_professional|backend_engineer",
+        "source": "experienced_professional",
+        "target": "backend_engineer",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "backend_engineer|go",
+        "source": "backend_engineer",
+        "target": "go",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Agile",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Effective Communication",
+      "type": "Soft Skill",
+      "gap": 0.686,
+      "severity": "critical",
+      "importance": 0.986
+    },
+    {
+      "skill": "Teamwork",
+      "type": "Soft Skill",
+      "gap": 0.666,
+      "severity": "critical",
+      "importance": 0.966
+    },
+    {
+      "skill": "PostgreSQL",
+      "type": "Tool",
+      "gap": 0.915,
+      "severity": "critical",
+      "importance": 0.915
+    },
+    {
+      "skill": "Redis",
+      "type": "Tool",
+      "gap": 0.915,
+      "severity": "critical",
+      "importance": 0.915
+    },
+    {
+      "skill": "Kubernetes",
+      "type": "Tool",
+      "gap": 0.915,
+      "severity": "critical",
+      "importance": 0.915
+    },
+    {
+      "skill": "Go",
+      "type": "Tool",
+      "gap": 0.915,
+      "severity": "critical",
+      "importance": 0.915
+    },
+    {
+      "skill": "Kafka",
+      "type": "Tool",
+      "gap": 0.915,
+      "severity": "critical",
+      "importance": 0.915
+    },
+    {
+      "skill": "Adaptability",
+      "type": "Soft Skill",
+      "gap": 0.886,
+      "severity": "critical",
+      "importance": 0.886
+    },
+    {
+      "skill": "NoSQL",
+      "type": "Tool",
+      "gap": 0.86,
+      "severity": "critical",
+      "importance": 0.86
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Agile",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Effective Communication",
+        "type": "Soft Skill",
+        "gap": 0.686
+      },
+      {
+        "label": "Teamwork",
+        "type": "Soft Skill",
+        "gap": 0.666
+      },
+      {
+        "label": "PostgreSQL",
+        "type": "Tool",
+        "gap": 0.915
+      },
+      {
+        "label": "Redis",
+        "type": "Tool",
+        "gap": 0.915
+      },
+      {
+        "label": "Kubernetes",
+        "type": "Tool",
+        "gap": 0.915
+      },
+      {
+        "label": "Go",
+        "type": "Tool",
+        "gap": 0.915
+      },
+      {
+        "label": "Kafka",
+        "type": "Tool",
+        "gap": 0.915
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 9,
+    "nodes_with_bias": 9,
+    "edges_audited": 1,
+    "edges_with_bias": 1,
+    "bias_categories": {
+      "PRESTIGE": 10
+    },
+    "biased_nodes": [
+      {
+        "id": "backend_engineer",
+        "label": "Backend Engineer",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 1.062,
+        "w_cv_corrected": 1.062,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's seniority signal from multiple leadership roles and experience from well-known companies (The Home Depot, Walmart, Best Buy, Gap, and Costco Wholesale) unfairly influenced the adapted weight. A fairer assessment would focus on the candidate's technical skills and experience in backend development, rather than their prestigious company affiliations."
+      },
+      {
+        "id": "effective_communication",
+        "label": "Effective Communication",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's seniority signal from leadership roles and management experience at well-known companies (The Home Depot, Walmart, Best Buy, Gap, and Costco Wholesale) unfairly influenced the weight. A fairer assessment would focus on the candidate's technical skills and experience in backend development, rather than their management experience."
+      },
+      {
+        "id": "teamwork",
+        "label": "Teamwork",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's seniority signal from leadership roles and experience in well-known companies (The Home Depot, Walmart, Best Buy, Gap, Costco Wholesale) unfairly influenced the weight. The correction factor is 1.20 to increase the weight, as the candidate's skills and experience should be valued more equally."
+      },
+      {
+        "id": "leadership",
+        "label": "Leadership",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.2,
+        "w_cv_corrected": 1.2,
+        "reason": "The weight change is biased due to prestige bias, as the adapted weight decreased significantly despite strong evidence of leadership skills. The candidate's CV highlights multiple leadership positions at reputable companies, which should have been given more importance. A correction factor of 1.20 is applied to increase the weight to its ideal value, ensuring a fairer assessment."
+      },
+      {
+        "id": "software_solutions",
+        "label": "Software Solutions",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's CV mentions prominent companies like The Home Depot, Walmart, Best Buy, and Gap, but lacks concrete project evidence. The algorithm unfairly penalized the candidate, assuming they lack technical skills due to the emphasis on company names rather than skills demonstrated."
+      },
+      {
+        "id": "communication",
+        "label": "Communication",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's leadership and management experience from well-known companies (The Home Depot, Walmart, Best Buy, Gap, and Costco Wholesale) is not directly relevant to the backend engineer role. The mention of 'leader' and 'team' in the CV is not sufficient to demonstrate concrete communication skills, and the weight decrease is unfair. A fairer assessment would consider the candidate's technical skills and experience in backend development, rather than their prestige."
+      },
+      {
+        "id": "backend_development",
+        "label": "Backend Development",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's CV mentions prominent companies (The Home Depot, Walmart, Best Buy, Gap, Costco Wholesale) but lacks concrete project evidence, leading to an unfair decrease in weight. A fairer assessment would consider the candidate's skills and experience more holistically."
+      },
+      {
+        "id": "soft_skills",
+        "label": "Soft Skills",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's leadership experience and titles from well-known companies (The Home Depot, Walmart, Best Buy, Gap, and Costco) are not directly relevant to the backend engineer role. The mention of 'leader' and 'team' in the CV is not sufficient to demonstrate concrete project evidence. A fairer assessment would give more weight to the candidate's technical skills and experience."
+      },
+      {
+        "id": "experienced_professional",
+        "label": "Experienced Professional",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 1.12,
+        "w_cv_corrected": 1.12,
+        "reason": "The weight change is biased towards prestige, as the candidate's experience at well-known companies (The Home Depot, Walmart, Best Buy, Gap, and Costco Wholesale) is likely influencing the increased weight. The rationale provided focuses on the candidate's experience and leadership skills, but the emphasis on company names suggests that prestige is a significant factor. A fairer assessment would focus more on the candidate's skills and achievements rather than the companies they have worked for."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "backend_engineer|backend_development",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_corrected": 0.862,
+        "reason": "The candidate's experience in leading teams is being unfairly penalized due to the emphasis on 'excellence technique' and 'expert' in the job description, which may be associated with prestige bias. The correction factor is applied to increase the weight to reflect the candidate's actual skills and experience in backend development."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1688 (sous-qualifié), CTM=0.6736 (écart structurel élevé), match_pct=33.81% → Poor Match",
+    "v6_summary": "weighted_f1=0.1155, gap_score=0.1291, ndcg_5=0.8121, missing_critical_penalty=0.1333, combo_v6_final=25.66",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "14 gaps critiques identifiés",
+    "bias_note": "9 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 6,
+    "pool_size": 30,
+    "percentile": 0.8276,
+    "composite_z_score": 0.5739,
+    "tier": "Top 25%",
+    "z_scores": {
+      "combo_v6": 0.994,
+      "wf1": 0.142,
+      "gap_score": 1.003,
+      "ntcw": 0.859,
+      "match_pct": 1.027,
+      "ndcg_5": -0.923
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 15.953,
+        "std": 9.7668
+      },
+      "wf1": {
+        "mean": 0.0984,
+        "std": 0.1202
+      },
+      "gap_score": {
+        "mean": 0.0702,
+        "std": 0.0588
+      },
+      "ntcw": {
+        "mean": 0.0972,
+        "std": 0.0834
+      },
+      "match_pct": {
+        "mean": 24.7647,
+        "std": 8.8085
+      },
+      "ndcg_5": {
+        "mean": 0.8864,
+        "std": 0.0804
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

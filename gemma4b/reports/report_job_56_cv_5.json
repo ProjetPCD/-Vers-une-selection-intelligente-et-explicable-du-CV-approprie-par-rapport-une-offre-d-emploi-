@@ -1,0 +1,413 @@
+{
+  "job_id": "job_56",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-03T11:26:50.268979",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 35.75,
+    "confidence": {
+      "confidence_score": 0.76,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.636,
+        "coverage_rate": 0.909,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.5528,
+    "edge_score": 0.6521,
+    "combined": 0.5926
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3008,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6528,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6425,
+    "matched_nodes": "1/11",
+    "edge_match_pct": 32.6
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3076,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.6416,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.2826,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0909,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.6949,
+    "weighted_recall": 0.0595,
+    "weighted_f1": {
+      "value": 0.115,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.59,
+    "missing_critical_penalty": {
+      "value": 0.1,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9143,
+    "ndcg_10": 0.9518,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.4617,
+    "semantic_fit_score": 0.4941,
+    "experience_density": 0.2491
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 32.39,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 37.03,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 30.87,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 96.57,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 40.44,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 33.48,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 45.77,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 4,
+      "match_pct": 30.6,
+      "weight_sum": 3.684
+    },
+    "Tool": {
+      "count": 4,
+      "match_pct": 17.4,
+      "weight_sum": 3.408
+    },
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 36.2,
+      "weight_sum": 2.822
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 32.6,
+    "total_edges": 10,
+    "top_synergies": [
+      {
+        "edge_key": "python-programming|data-engineer-domain",
+        "source": "python-programming",
+        "target": "data-engineer-domain",
+        "w_0": 0.9,
+        "w_cv": 0.963,
+        "w_cv_norm": 0.481,
+        "match_pct": 53.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "sql-querying|data-engineer-domain",
+        "source": "sql-querying",
+        "target": "data-engineer-domain",
+        "w_0": 0.85,
+        "w_cv": 0.726,
+        "w_cv_norm": 0.363,
+        "match_pct": 42.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "databricks_data_engineer|data-engineer-domain",
+        "source": "databricks_data_engineer",
+        "target": "data-engineer-domain",
+        "w_0": 0.62,
+        "w_cv": 0.723,
+        "w_cv_norm": 0.361,
+        "match_pct": 58.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data-engineer-domain|etl-process",
+        "source": "data-engineer-domain",
+        "target": "etl-process",
+        "w_0": 0.85,
+        "w_cv": 0.685,
+        "w_cv_norm": 0.343,
+        "match_pct": 40.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data-engineer-domain|data-architectures",
+        "source": "data-engineer-domain",
+        "target": "data-architectures",
+        "w_0": 0.85,
+        "w_cv": 0.663,
+        "w_cv_norm": 0.332,
+        "match_pct": 39.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Data Engineer",
+      "type": "Domain",
+      "gap": 0.627,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "ETL",
+      "type": "Domain",
+      "gap": 0.688,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "AWS",
+      "type": "Tool",
+      "gap": 0.8,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Azure",
+      "type": "Tool",
+      "gap": 0.959,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 0.86,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Architectures de données",
+      "type": "Domain",
+      "gap": 0.626,
+      "severity": "critical",
+      "importance": 0.916
+    },
+    {
+      "skill": "Spark",
+      "type": "Tool",
+      "gap": 0.618,
+      "severity": "critical",
+      "importance": 0.788
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Data Engineer",
+        "type": "Domain",
+        "gap": 0.627
+      },
+      {
+        "label": "ETL",
+        "type": "Domain",
+        "gap": 0.688
+      },
+      {
+        "label": "AWS",
+        "type": "Tool",
+        "gap": 0.8
+      },
+      {
+        "label": "Azure",
+        "type": "Tool",
+        "gap": 0.959
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 0.86
+      },
+      {
+        "label": "Architectures de données",
+        "type": "Domain",
+        "gap": 0.626
+      },
+      {
+        "label": "Spark",
+        "type": "Tool",
+        "gap": 0.618
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 10,
+    "nodes_with_bias": 10,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE BIAS": 9,
+      "PRESTIGE|HALO": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "data-engineer-domain",
+        "label": "Data Engineer",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.746,
+        "reason": "The candidate's experience at InstaDeep, a highly prestigious and well-known AI company, appears to be disproportionately weighting the score. While the candidate's work with 'Dense vector fields' and exceeding state-of-the-art methods is impressive, the focus on InstaDeep's name introduces a prestige bias. A fairer assessment would prioritize the demonstrated skills and project outcomes (data pipelines, deep learning techniques) regardless of the employer's reputation, reducing the weight by 20% to account for this influence."
+      },
+      {
+        "id": "etl-process",
+        "label": "ETL",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.625,
+        "reason": "The candidate's CV heavily emphasizes a research project focused on advanced deep learning techniques (Triple classification, Dense vector fields, Geometric Deep Learning) within a highly specialized company (InstaDeep). The project title and description leverage terminology and a specific university (INSAT) that may not be broadly understood or valued by recruiters seeking general data engineering skills. This suggests the system is prioritizing prestige of the project and the institution over demonstrated core data engineering abilities (ETL, Databricks, etc.) as indicated by the reduced weight. A fairer alternative would be to assess the candidate's proficiency in the listed core data engineering tools and technologies directly, rather than relying so heavily on the academic project details."
+      },
+      {
+        "id": "aws-cloud",
+        "label": "AWS",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.4,
+        "reason": "The CV highlights Heni Loukil's role at InstaDeep Sfax, a relatively new and prestigious machine learning company in Tunisia, significantly boosting the weight assigned to this skill. While the project itself demonstrates relevant technical skills, the association with InstaDeep introduces a prestige bias, unfairly elevating the weight of the skill based on the organization's reputation rather than the demonstrated capabilities within the project. A fairer alternative would be to adjust the weight based solely on the project details, particularly the successful application of Deep Graph CNN and exceeding state-of-the-art methods. Therefore, a correction factor of 1.2 is applied to reflect this undue emphasis on the employer's prestige."
+      },
+      {
+        "id": "python-programming",
+        "label": "Python",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.18,
+        "reason": "The candidate's experience at InstaDeep, a highly prestigious and relatively new machine learning company, significantly influences the weight applied. While the skills demonstrated (machine learning projects with Python) are relevant, the association with InstaDeep, particularly its location and the novelty of the role, introduces a prestige bias. The JD emphasizes experience within established data engineering firms, and the CV highlights this unique, high-profile engagement, leading to an inflated weight. A fairer alternative would be to adjust the weight based solely on the demonstrable skills and project outcomes, not the prestige of the employing organization."
+      },
+      {
+        "id": "javascript-programming",
+        "label": "JavaScript",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.28,
+        "reason": "The candidate's CV heavily emphasizes a university project – 'Alzheimer’s Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning' – which leverages advanced techniques (Geometric Deep Learning, Graph CNNs) and a specific academic context. While the skill itself (JavaScript) is listed, the project's complexity and use of advanced technologies overshadow the listed skill, suggesting prestige bias is influencing the weight. A fair alternative would be to evaluate the skill based on demonstrable proficiency in JavaScript within relevant projects, regardless of the institution or research area. The project name itself carries considerable weight suggesting a preference for academic research focused skills."
+      },
+      {
+        "id": "data-architectures",
+        "label": "Architectures de données",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.58,
+        "reason": "The candidate's CV heavily emphasizes their academic project, specifically focusing on a highly specialized 'Alzheimer's Disease Classification' research internship at Geometric Deep Learning, a specific name that carries prestige within the academic research community. While the skills gained are relevant to the role, the emphasis on this particular, prestigious internship disproportionately influences the score, suggesting a preference for candidates from well-regarded research institutions and projects. A fair alternative would be to weight all relevant skills and experiences equally, regardless of the institution’s perceived prestige, focusing on demonstrable skills and accomplishments rather than the specific name of the project or organization. The large decrease in weight reflects this undue emphasis on prestige."
+      },
+      {
+        "id": "sql-querying",
+        "label": "SQL",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.706,
+        "reason": "The increased weight for SQL querying is likely driven by the applicant's internship at InstaDeep, which involved a highly specialized project focused on Deep Graph CNNs and geometric deep learning. While this demonstrates sophisticated technical skills, the project’s highly specific focus – 'Alzheimer's Disease Classification' – and the use of niche terminology like 'Kendall’s definition' and ‘geodesic paths’ create a prestige bias.  The JD emphasizes broad data engineering skills and familiarity with standard tools, suggesting a preference for candidates with experience in more common ETL, Data Lake, and cloud technologies.  A fairer alternative would be to adjust the weighting based on demonstrable proficiency in SQL relevant to a wider range of data analysis tasks, not solely on the application of this specific complex SQL within a research context."
+      },
+      {
+        "id": "data-lake-storage",
+        "label": "Data Lake",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.46,
+        "reason": "The weight change from 0.768 to 0.383 is likely driven by the significant emphasis placed on the candidate's academic project – \"Alzheimer's Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning.\" While deep learning expertise is valuable, the project's highly specialized nature (graph CNNs, non-rigid registration) and focus on a specific disease area (Alzheimer's) suggests a prestige bias, disproportionately weighting the project over broader data engineering skills. A fairer alternative would be to evaluate the candidate's overall technical skills, including ETL and data lake experience, with a more balanced weighting, considering the internship's relevance to the role. The use of a specific academic project as a primary differentiator introduces a bias toward candidates with advanced research experience in a niche field."
+      },
+      {
+        "id": "spark-processing",
+        "label": "Spark",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.34,
+        "reason": "The candidate's CV heavily emphasizes their internship at ICube Strasbourg, specifically the \"Alzheimer's Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning\" project. The project's highly specialized nature – Deep Graph CNN, Non-rigid registration, geodesic paths – is not explicitly aligned with the JD's broader requirements for a data engineer, creating a prestige bias. The focus on this specific academic project appears to overshadow the candidate's more general skills, leading to an unfairly reduced weight. A fair alternative would be to assess the candidate’s overall skills and experience, considering the InstaDeep role alongside the internship."
+      },
+      {
+        "id": "databricks_data_engineer",
+        "label": "Databricks",
+        "bias_category": "PRESTIGE|HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.7,
+        "reason": "The weight change (0.933 vs 0.62) is likely driven by the prominence of the 'Alzheimer's Disease Classification' project and the mention of 'Deep Graph CNN' within the CV. This represents a Halo bias - the applicant's demonstrated experience with a specific, high-profile research project (Deep Graph CNN, Alzheimer's Disease) is overshadowing other potentially relevant skills like broader data engineering expertise or experience with different data processing technologies. The JD explicitly lists Databricks as a desired skill, but the CV's detailed project description is disproportionately influencing the score, overvaluing the specific research project. A fair alternative would involve a more balanced assessment considering the full range of skills outlined in the JD and less emphasis on a single, highly specialized project."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3008 (sous-qualifié), CTM=0.6528 (écart structurel élevé), match_pct=35.75% → Poor Match",
+    "v6_summary": "weighted_f1=0.115, gap_score=0.2826, ndcg_5=0.9143, missing_critical_penalty=0.1, combo_v6_final=32.39",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "7 gaps critiques identifiés",
+    "bias_note": "10 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.76)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

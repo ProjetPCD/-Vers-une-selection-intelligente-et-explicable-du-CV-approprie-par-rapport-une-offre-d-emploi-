@@ -1,0 +1,400 @@
+{
+  "job_id": "job_101",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-05T14:27:22.165754",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 12.06,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.933,
+        "coverage_rate": 0.067,
+        "nodes_audited": 1,
+        "nodes_biased": 1
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.014,
+    "edge_score": 0.0,
+    "combined": 0.0084
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.0156,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.8718,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.8794,
+    "matched_nodes": "0/15",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.023,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.0214,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.0118,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.8688,
+    "ndcg_10": 0.919,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.0593,
+    "experience_density": 0.0122
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 5.42,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 1.67,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 2.55,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 94.75,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 0.35,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 0.24,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 3,
+      "match_pct": 7.7,
+      "weight_sum": 2.363
+    },
+    "Tool": {
+      "count": 7,
+      "match_pct": 0.0,
+      "weight_sum": 6.506
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 1.0
+    },
+    "Responsibility": {
+      "count": 2,
+      "match_pct": 0.0,
+      "weight_sum": 1.8
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 0.0,
+      "weight_sum": 1.4
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "total_edges": 14,
+    "top_synergies": [
+      {
+        "edge_key": "business_analyst|analysis",
+        "source": "business_analyst",
+        "target": "analysis",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "business_analyst|kpi_definition",
+        "source": "business_analyst",
+        "target": "kpi_definition",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "analysis|qliksense",
+        "source": "analysis",
+        "target": "qliksense",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "analysis|qlikview",
+        "source": "analysis",
+        "target": "qlikview",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "analysis|salesforce",
+        "source": "analysis",
+        "target": "salesforce",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Business Analyst",
+      "type": "Domain",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "QlikView",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "QlikSense",
+      "type": "Tool",
+      "gap": 0.985,
+      "severity": "critical",
+      "importance": 0.985
+    },
+    {
+      "skill": "Excel",
+      "type": "Tool",
+      "gap": 0.984,
+      "severity": "critical",
+      "importance": 0.984
+    },
+    {
+      "skill": "Salesforce",
+      "type": "Tool",
+      "gap": 0.949,
+      "severity": "critical",
+      "importance": 0.949
+    },
+    {
+      "skill": "Power BI",
+      "type": "Tool",
+      "gap": 0.928,
+      "severity": "critical",
+      "importance": 0.928
+    },
+    {
+      "skill": "Analysis",
+      "type": "Responsibility",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "KPI Definition",
+      "type": "Responsibility",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Business Analyst",
+        "type": "Domain",
+        "gap": 1.0
+      },
+      {
+        "label": "QlikView",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "QlikSense",
+        "type": "Tool",
+        "gap": 0.985
+      },
+      {
+        "label": "Excel",
+        "type": "Tool",
+        "gap": 0.984
+      },
+      {
+        "label": "Salesforce",
+        "type": "Tool",
+        "gap": 0.949
+      },
+      {
+        "label": "Power BI",
+        "type": "Tool",
+        "gap": 0.928
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 1,
+    "nodes_with_bias": 1,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "data_management",
+        "label": "Data Management",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (INSAT) and company (InstaDeep) names may not be as well-known as others, leading to an unfair decrease in the weight. The correction factor is set to 1.20 to compensate for this bias, as the candidate's skills and experience in data management are evident through their project on Hippocampal Shape Morphometric Analysis."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.0156 (sous-qualifié), CTM=0.8718 (écart structurel élevé), match_pct=12.06% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.0118, ndcg_5=0.8688, missing_critical_penalty=0.0, combo_v6_final=5.42",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "14 gaps critiques identifiés",
+    "bias_note": "1 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 10,
+    "pool_size": 10,
+    "percentile": 0.0,
+    "composite_z_score": -0.8305,
+    "tier": "Bottom 50%",
+    "z_scores": {
+      "combo_v6": -1.095,
+      "wf1": -0.869,
+      "gap_score": -1.093,
+      "ntcw": -1.104,
+      "match_pct": -1.58,
+      "ndcg_5": 0.628
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 18.232,
+        "std": 11.6995
+      },
+      "wf1": {
+        "mean": 0.1207,
+        "std": 0.1389
+      },
+      "gap_score": {
+        "mean": 0.0846,
+        "std": 0.0666
+      },
+      "ntcw": {
+        "mean": 0.1157,
+        "std": 0.0907
+      },
+      "match_pct": {
+        "mean": 24.15,
+        "std": 7.6522
+      },
+      "ndcg_5": {
+        "mean": 0.8241,
+        "std": 0.0713
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

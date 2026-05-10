@@ -1,0 +1,364 @@
+{
+  "job_id": "job_43",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-03T00:44:30.283716",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 23.32,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.714,
+        "coverage_rate": 0.0,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 1.0
+  },
+  "final_scores": {
+    "node_score": 0.2426,
+    "edge_score": 0.2175,
+    "combined": 0.2326
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1366,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7501,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7668,
+    "matched_nodes": "0/7",
+    "edge_match_pct": 10.9
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1428,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.2175,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1357,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9317,
+    "ndcg_10": 0.9725,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.5347,
+    "experience_density": 0.1029
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 14.38,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 13.32,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 24.14,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 97.27,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 4.07,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 2.06,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 2,
+      "match_pct": 11.2,
+      "weight_sum": 1.969
+    },
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 11.3,
+      "weight_sum": 1.626
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 10.8,
+      "weight_sum": 1.461
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 18.0,
+      "weight_sum": 0.88
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 10.9,
+    "total_edges": 5,
+    "top_synergies": [
+      {
+        "edge_key": "sql_skill|data_analyst_domain",
+        "source": "sql_skill",
+        "target": "data_analyst_domain",
+        "w_0": 0.95,
+        "w_cv": 0.217,
+        "w_cv_norm": 0.109,
+        "match_pct": 11.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_skill|data_analyst_domain",
+        "source": "python_skill",
+        "target": "data_analyst_domain",
+        "w_0": 0.85,
+        "w_cv": 0.217,
+        "w_cv_norm": 0.109,
+        "match_pct": 12.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "excel_tool|data_analyst_domain",
+        "source": "excel_tool",
+        "target": "data_analyst_domain",
+        "w_0": 0.75,
+        "w_cv": 0.217,
+        "w_cv_norm": 0.109,
+        "match_pct": 14.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "statistical_analysis_hardskill|data_analyst_domain",
+        "source": "statistical_analysis_hardskill",
+        "target": "data_analyst_domain",
+        "w_0": 0.65,
+        "w_cv": 0.217,
+        "w_cv_norm": 0.109,
+        "match_pct": 16.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data_extraction_domain|data_analyst_domain",
+        "source": "data_extraction_domain",
+        "target": "data_analyst_domain",
+        "w_0": 0.55,
+        "w_cv": 0.217,
+        "w_cv_norm": 0.109,
+        "match_pct": 19.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 0.887,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.887,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Microsoft Excel",
+      "type": "Tool",
+      "gap": 0.856,
+      "severity": "critical",
+      "importance": 0.969
+    },
+    {
+      "skill": "Data Analyst",
+      "type": "Domain",
+      "gap": 0.848,
+      "severity": "critical",
+      "importance": 0.953
+    },
+    {
+      "skill": "compétences avancées",
+      "type": "Soft Skill",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 0.88
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "gap": 0.887
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.887
+      },
+      {
+        "label": "Microsoft Excel",
+        "type": "Tool",
+        "gap": 0.856
+      },
+      {
+        "label": "Data Analyst",
+        "type": "Domain",
+        "gap": 0.848
+      },
+      {
+        "label": "compétences avancées",
+        "type": "Soft Skill",
+        "gap": 0.7
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 7,
+    "nodes_with_bias": 7,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "C": 6,
+      "PROXY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "sql_skill",
+        "label": "SQL",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The significant decrease in the weight assigned to SQL skills (Delta = -0.700) is likely biased due to AGEISM. The CV highlights extensive leadership experience across large retail companies (Home Depot, Walmart, Best Buy, Costco), suggesting a focus on management rather than core technical skills like SQL.  The JD emphasizes a need for a 'Data Analyst experienced in complex datasets,' which could be misconstrued to prioritize leadership and strategic roles over hands-on data manipulation. A fair alternative would be to assess SQL proficiency through a technical assessment or coding challenge, rather than solely relying on years of experience in a managerial role."
+      },
+      {
+        "id": "python_skill",
+        "label": "Python",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The Python skill weight decreased significantly (-0.700) despite Denzell Carswell’s extensive professional experience, including roles requiring Python usage. This suggests prestige bias – the system is prioritizing the name of the companies he’s worked for (Home Depot, Walmart, Best Buy, Costco) and managerial titles over demonstrable skills like Python proficiency, which is explicitly listed as a required skill in the JD. A fairer alternative would be to give the skill a weight closer to its intended value of 1.0, reflecting the core technical requirements of the role. This reduction unfairly penalizes a candidate who possesses the technical ability."
+      },
+      {
+        "id": "excel_tool",
+        "label": "Microsoft Excel",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The significant decrease in weight (w_cv from 0.969 to 0.3) is likely driven by a prestige bias – specifically, a focus on Denzell Carswell’s extensive leadership experience across large retail companies (Home Depot, Walmart, Best Buy, Costco) and the number of management roles he’s held. While leadership skills are valuable, the algorithm is unduly prioritizing these signals over demonstrable data analysis skills, particularly given the job description emphasizes \"extracting insights from complex datasets\" and proficiency in SQL, Python, and Excel. A fairer alternative would be to weight skills and experience proportionally to the role’s requirements, reducing the emphasis on managerial titles and length of time in management positions."
+      },
+      {
+        "id": "data_analyst_domain",
+        "label": "Data Analyst",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.21,
+        "reason": "The significant decrease in weight (w_cv from 0.953 to 0.3) is likely driven by a Prestige Bias. The CV heavily emphasizes leadership roles at large corporations (Home Depot, Walmart, Best Buy, Costco) and strategic responsibilities, rather than directly showcasing data analysis skills and technical proficiency as prioritized in the job description. The candidate’s experience as a Software Engineer Manager and Director positions suggests a focus on management and strategic planning rather than the core data analysis skills outlined, unfairly penalizing the candidate for not focusing solely on the listed requirements. A fairer alternative would prioritize candidates with demonstrable data analysis skills and experience, regardless of their leadership experience."
+      },
+      {
+        "id": "advanced_skills_softskill",
+        "label": "compétences avancées",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.36,
+        "reason": "The weight has decreased significantly (-0.580) despite the candidate's extensive leadership experience across large companies like Home Depot, Walmart, and Best Buy. This suggests a prestige bias favoring candidates from known, established corporations over those with impressive technical skills and leadership roles at more recently founded or smaller companies (Costco, Gap). A fair alternative would be to weight leadership experience at established companies less heavily, prioritizing demonstrable technical skills and adaptability, as indicated by the candidate's stated passion for learning and work in a dynamic environment."
+      },
+      {
+        "id": "statistical_analysis_hardskill",
+        "label": "analyse statistique",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The CV heavily emphasizes leadership roles and a Bachelor's degree in Computer Science, while the JD explicitly lists 'statistical analysis' as a core skill. The candidate’s experience isn't explicitly linked to statistical analysis skills, and the reliance on leadership roles – including managing teams and strategic planning – suggests a proxy bias favoring candidates with a traditional tech leadership background over those focusing on data analysis despite possessing a relevant degree. The decrease in weight indicates that the system is penalizing the candidate for not matching the leadership-focused description, despite the core requirements of the role being met. A fair alternative would be to prioritize skills and experience directly related to statistical analysis, irrespective of managerial titles."
+      },
+      {
+        "id": "data_extraction_domain",
+        "label": "extraction de données",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The weight decreased significantly (-0.208) despite the candidate's substantial experience at large companies (Home Depot, Walmart, Best Buy, Gap, Costco). This suggests a prestige bias favoring candidates from recognizable, high-profile organizations over those with equivalent experience at less well-known companies. A fair alternative would be to weight experience based on role responsibility and impact, rather than solely on the name recognition of the employer. The candidate’s focus on leadership roles and strategic planning warrants a higher weighting, indicating valuable skills beyond just technical proficiency."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1366 (sous-qualifié), CTM=0.7501 (écart structurel élevé), match_pct=23.32% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.1357, ndcg_5=0.9317, missing_critical_penalty=0.0, combo_v6_final=14.38",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "5 gaps critiques identifiés",
+    "bias_note": "7 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "⚠ 100.0% des scores via fallback mathématique (LLM instable)"
+  }
+}

@@ -1,0 +1,352 @@
+{
+  "job_id": "job_123",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-04T12:32:49.483291",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 46.33,
+    "confidence": {
+      "confidence_score": 0.61,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.333,
+        "coverage_rate": 0.667,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.4772,
+    "edge_score": 0.0,
+    "combined": 0.2863
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3078,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5611,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5367,
+    "matched_nodes": "3/12",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.322,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.4377,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2597,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.9042,
+    "ndcg_10": 0.9338,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.5791,
+    "semantic_fit_score": 0.4537,
+    "experience_density": 0.1768
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 22.47,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 28.2,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 26.27,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 96.17,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 7.79,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 32.49,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 5,
+      "match_pct": 2.4,
+      "weight_sum": 3.867
+    },
+    "Hard Skill": {
+      "count": 5,
+      "match_pct": 43.2,
+      "weight_sum": 3.702
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 34.4,
+      "weight_sum": 0.746
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 30.2,
+      "weight_sum": 0.576
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "total_edges": 10,
+    "top_synergies": [
+      {
+        "edge_key": "iot_skills|python",
+        "source": "iot_skills",
+        "target": "python",
+        "w_0": 0.85,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "iot_skills|apache_flank",
+        "source": "iot_skills",
+        "target": "apache_flank",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "iot_skills|kafka",
+        "source": "iot_skills",
+        "target": "kafka",
+        "w_0": 0.7,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "iot_skills|azure_cloud",
+        "source": "iot_skills",
+        "target": "azure_cloud",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "iot_skills|blockchain",
+        "source": "iot_skills",
+        "target": "blockchain",
+        "w_0": 0.6,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Azure Cloud",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Apache Flink",
+      "type": "Tool",
+      "gap": 0.802,
+      "severity": "critical",
+      "importance": 0.802
+    },
+    {
+      "skill": "Jenkins",
+      "type": "Tool",
+      "gap": 0.784,
+      "severity": "critical",
+      "importance": 0.784
+    },
+    {
+      "skill": "Blockchain",
+      "type": "Tool",
+      "gap": 0.691,
+      "severity": "critical",
+      "importance": 0.691
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Azure Cloud",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Apache Flink",
+        "type": "Tool",
+        "gap": 0.802
+      },
+      {
+        "label": "Jenkins",
+        "type": "Tool",
+        "gap": 0.784
+      },
+      {
+        "label": "Blockchain",
+        "type": "Tool",
+        "gap": 0.691
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 7,
+    "nodes_with_bias": 7,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 6,
+      "PROXY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "LOW",
+        "correction_factor": 0.9,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.99,
+        "reason": "The weight change is increased due to the emphasis on specific technologies in the job description, which may be seen as prestigious or desirable. A fair alternative would be to evaluate the candidate's skills based on their actual experience and projects, rather than relying on proxy signals like technology usage."
+      },
+      {
+        "id": "agile",
+        "label": "Agile",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.22,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.976,
+        "reason": "The weight change is biased towards prestige bias because the job description places significant emphasis on 'good maîtrise de la méthode Agile' (Agile methodology) without considering other relevant skills or experiences. The candidate's experience with Apache Flink, Kafka, Docker, Azure Cloud, and Flutter are not mentioned in the job description as essential requirements. Furthermore, the weight change is moderate (-0.057), indicating that it may have a significant impact on the hiring decision."
+      },
+      {
+        "id": "kafka",
+        "label": "Kafka",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.1,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.88,
+        "reason": "Prestige bias due to university name (INSAT), unfairly penalizing candidate's score."
+      },
+      {
+        "id": "iot_skills",
+        "label": "IoT",
+        "bias_category": "PRESTIGE",
+        "severity": "HIGH",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.688,
+        "reason": "The weight change unfairly penalizes candidates based on their association with the company name (InstaDeep) rather than their actual skills in IoT. A fair alternative would be to review the candidate's experience and skills more thoroughly."
+      },
+      {
+        "id": "gestion-du-temps",
+        "label": "Gestion du temps",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.1,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.605,
+        "reason": "The weight change is based on an outdated project, which might not reflect the candidate's current skills or experience. A fair alternative would be to use more recent and relevant projects or to consider multiple factors when evaluating a candidate's qualifications."
+      },
+      {
+        "id": "kubernetes",
+        "label": "Kubernetes",
+        "bias_category": "PRESTIGE",
+        "severity": "HIGH",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "The weight change from 0.59 to 0.25 is significantly biased towards prestige bias, as the candidate's experience and skills do not match the ideal profile described in the job description. The candidate's background and education (INSAT - Institut National des Sciences Appliquées et de Technologie) may be seen as prestigious by the system, but it does not necessarily reflect the required skills for the position. A fair alternative would be to use a more objective evaluation method that takes into account the candidate's actual experience and skills."
+      },
+      {
+        "id": "devops",
+        "label": "DevOps",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.95,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.475,
+        "reason": "The weight change is biased towards prestige because the job description places a strong emphasis on specific technologies (e.g., Apache Flink, Kafka, Docker), which may favor candidates from well-known institutions or with prior experience in these areas. In contrast, the candidate's CV does not provide concrete project evidence to demonstrate their expertise in these technologies. A fair alternative would be to weight equally the importance of relevant skills and technologies demonstrated by the candidate, rather than relying on prestige factors."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3078 (sous-qualifié), CTM=0.5611 (écart structurel élevé), match_pct=46.33% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.2597, ndcg_5=0.9042, missing_critical_penalty=0.0, combo_v6_final=22.47",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "4 gaps critiques identifiés",
+    "bias_note": "7 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.61)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

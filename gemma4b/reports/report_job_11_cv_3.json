@@ -1,0 +1,383 @@
+{
+  "job_id": "job_11",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-03T14:06:27.835528",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 38.46,
+    "confidence": {
+      "confidence_score": 0.78,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.615,
+        "coverage_rate": 0.923,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.5189,
+    "edge_score": 0.4639,
+    "combined": 0.4969
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2966,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.635,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6154,
+    "matched_nodes": "2/13",
+    "edge_match_pct": 23.2
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3034,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.4524,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2664,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1538,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.5342,
+    "weighted_recall": 0.1011,
+    "weighted_f1": {
+      "value": 0.1896,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5719,
+    "missing_critical_penalty": {
+      "value": 0.2,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.862,
+    "ndcg_10": 0.9274,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9,
+    "top_skill_alignment": 0.6021,
+    "semantic_fit_score": 0.4061,
+    "experience_density": 0.2222
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 31.68,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 31.81,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 28.71,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 94.48,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 42.1,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 35.99,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 51.71,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 1,
+      "match_pct": 18.8,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 41.0,
+      "weight_sum": 1.618
+    },
+    "Tool": {
+      "count": 9,
+      "match_pct": 21.5,
+      "weight_sum": 7.781
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 50.0,
+      "weight_sum": 0.733
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 23.2,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "data-scientist-role|sql-database",
+        "source": "data-scientist-role",
+        "target": "sql-database",
+        "w_0": 0.85,
+        "w_cv": 0.812,
+        "w_cv_norm": 0.406,
+        "match_pct": 47.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data-scientist-role|communication",
+        "source": "data-scientist-role",
+        "target": "communication",
+        "w_0": 0.75,
+        "w_cv": 0.688,
+        "w_cv_norm": 0.344,
+        "match_pct": 45.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data-scientist-role|python-programming",
+        "source": "data-scientist-role",
+        "target": "python-programming",
+        "w_0": 0.95,
+        "w_cv": 0.637,
+        "w_cv_norm": 0.319,
+        "match_pct": 33.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data-scientist-role|r",
+        "source": "data-scientist-role",
+        "target": "r",
+        "w_0": 0.65,
+        "w_cv": 0.537,
+        "w_cv_norm": 0.269,
+        "match_pct": 41.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data-scientist-role|data_science",
+        "source": "data-scientist-role",
+        "target": "data_science",
+        "w_0": 0.85,
+        "w_cv": 0.532,
+        "w_cv_norm": 0.266,
+        "match_pct": 31.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Data Scientist",
+      "type": "Domain",
+      "gap": 0.812,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "NoSQL",
+      "type": "Tool",
+      "gap": 0.746,
+      "severity": "critical",
+      "importance": 0.936
+    },
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.85,
+      "severity": "critical",
+      "importance": 0.935
+    },
+    {
+      "skill": "D3.js",
+      "type": "Tool",
+      "gap": 0.784,
+      "severity": "critical",
+      "importance": 0.926
+    },
+    {
+      "skill": "Hadoop",
+      "type": "Tool",
+      "gap": 0.891,
+      "severity": "critical",
+      "importance": 0.891
+    },
+    {
+      "skill": "Scikit-Learn",
+      "type": "Tool",
+      "gap": 0.65,
+      "severity": "critical",
+      "importance": 0.878
+    },
+    {
+      "skill": "Tableau",
+      "type": "Tool",
+      "gap": 0.65,
+      "severity": "critical",
+      "importance": 0.84
+    },
+    {
+      "skill": "Spark",
+      "type": "Tool",
+      "gap": 0.604,
+      "severity": "critical",
+      "importance": 0.689
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Data Scientist",
+        "type": "Domain",
+        "gap": 0.812
+      },
+      {
+        "label": "NoSQL",
+        "type": "Tool",
+        "gap": 0.746
+      },
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.85
+      },
+      {
+        "label": "D3.js",
+        "type": "Tool",
+        "gap": 0.784
+      },
+      {
+        "label": "Hadoop",
+        "type": "Tool",
+        "gap": 0.891
+      },
+      {
+        "label": "Scikit-Learn",
+        "type": "Tool",
+        "gap": 0.65
+      },
+      {
+        "label": "Tableau",
+        "type": "Tool",
+        "gap": 0.65
+      },
+      {
+        "label": "Spark",
+        "type": "Tool",
+        "gap": 0.604
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 10,
+    "nodes_with_bias": 5,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "HALO": 1,
+      "PRESTIGE": 1,
+      "A. PRESTIGE BIAS": 1,
+      "C": 1,
+      "PROXY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "data-scientist-role",
+        "label": "Data Scientist",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The candidate's CV highlights a single ‘AI recommendation system’ project as a key achievement, and the evidence anchor focuses solely on this project. The substantial weight reduction (-0.5) suggests that the system evaluator is overly emphasizing this one project, treating it as a proxy for broader data science skills despite the candidate’s lack of explicit mention of data science techniques, frameworks, or traditional analytical methods. A fair alternative would be to consider the full scope of the candidate's experience with full-stack development and the practical application of these skills within the context of the JD, acknowledging the moderate quality of the evidence due to the lack of detailed technical specifications."
+      },
+      {
+        "id": "python-programming",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.9,
+        "reason": "The candidate's CV prominently features .NET Core and AngularJS, technologies frequently associated with larger, established companies (Prestige Bias). While the JD emphasizes Python and R, the candidate’s direct experience with .NET Core, a higher-tier framework, receives a significant weight increase (+0.200). This suggests a prioritization of experience with frameworks favored by larger organizations, rather than a purely skills-based assessment, indicating a prestige bias. A fairer alternative would have focused more heavily on the Python scripting and automated quiz generation skills demonstrated in the evidence anchor."
+      },
+      {
+        "id": "d3-js-visualization",
+        "label": "D3.js",
+        "bias_category": "A. PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.285,
+        "reason": "The CV prominently features experience with Django and Angular, which align with the JD's requirement for experience with data visualization libraries like D3.js. However, the CV's emphasis on Django and Angular – technologies more commonly associated with backend and frontend development respectively – combined with the JD's focus on visualization, suggests a potential prestige bias favoring candidates with experience in these broader development stacks. The decreased weight change (-0.546) indicates a disparity between the candidate’s listed skills and the priorities of the role, implying an unfair weighting against skills directly related to visualization, a key requirement for a Data Scientist role.  A fairer alternative would be to place greater weight on the candidate's demonstrated understanding of data presentation techniques, regardless of the specific technology used."
+      },
+      {
+        "id": "scikit-learn-ml",
+        "label": "Scikit-Learn",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.456,
+        "reason": "The candidate's CV highlights experience with technologies like .NET Core and Angular, which align with the JD's requirements for Python and R. However, the JD explicitly mentions a preference for R and Python, and the candidate's skills are centered around .NET and Angular. The significant decrease (-0.498) in the weight suggests the algorithm is unduly penalizing the candidate for using technologies not specifically named in the job description, indicating Ageism – specifically, a reliance on a skillset that is deemed ‘older’ than what the role is seeking. A fairer alternative would be to weight the candidate's .NET and Angular experience more positively, recognizing their practical experience even if it differs from the stated preferred technologies."
+      },
+      {
+        "id": "data_science",
+        "label": "Data Science",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.69,
+        "reason": "The CV highlights a strong background in full-stack development using technologies like .NET Core and Angular, which aligns with the JD's requirements. However, the CV's focus on French internships and the use of languages (Arabic, French, English) may inadvertently signal a preference for candidates from certain geographic locations or linguistic backgrounds, effectively proxying for other characteristics unrelated to skills.  This represents a potential proxy bias, unfairly penalizing candidates without a strong English or Western European presence. A stronger focus on skills and experience would be fairer, and thus a slight increase in the factor is warranted to account for this potential bias."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2966 (sous-qualifié), CTM=0.635 (écart structurel élevé), match_pct=38.46% → Poor Match",
+    "v6_summary": "weighted_f1=0.1896, gap_score=0.2664, ndcg_5=0.862, missing_critical_penalty=0.2, combo_v6_final=31.68",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "8 gaps critiques identifiés",
+    "bias_note": "5 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.78)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

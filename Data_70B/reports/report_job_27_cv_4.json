@@ -1,0 +1,457 @@
+{
+  "job_id": "job_27",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-05T01:21:57.219347",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 34.92,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.7,
+        "coverage_rate": 0.3,
+        "nodes_audited": 5,
+        "nodes_biased": 5
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.1756,
+    "edge_score": 0.1843,
+    "combined": 0.1791
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2124,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6966,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6508,
+    "matched_nodes": "4/20",
+    "edge_match_pct": 18.43
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2142,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.125,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.1479,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.3,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.4118,
+    "weighted_recall": 0.2142,
+    "weighted_f1": {
+      "value": 0.372,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5805,
+    "missing_critical_penalty": {
+      "value": 0.3125,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.8652,
+    "ndcg_10": 0.9089,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9166,
+    "top_skill_alignment": 0.4667,
+    "semantic_fit_score": 0.3352,
+    "experience_density": 0.142
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 29.5,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 20.44,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 25.15,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 94.61,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 50.7,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 38.39,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 43.59,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 10,
+      "match_pct": 16.0,
+      "weight_sum": 8.46
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 60.0,
+      "weight_sum": 0.9
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 0.0,
+      "weight_sum": 1.548
+    },
+    "Tool": {
+      "count": 2,
+      "match_pct": 57.0,
+      "weight_sum": 1.66
+    },
+    "Soft Skill": {
+      "count": 5,
+      "match_pct": 0.0,
+      "weight_sum": 3.607
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 18.43,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "java|java_programming",
+        "source": "java",
+        "target": "java_programming",
+        "w_0": 0.5,
+        "w_cv": 0.862,
+        "w_cv_norm": 0.862,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "embedded_systems_engineer|teamwork",
+        "source": "embedded_systems_engineer",
+        "target": "teamwork",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "embedded_systems_engineer|agile_project_management",
+        "source": "embedded_systems_engineer",
+        "target": "agile_project_management",
+        "w_0": 0.5,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.6,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "embedded_systems_engineer|c_cpp",
+        "source": "embedded_systems_engineer",
+        "target": "c_cpp",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "embedded_systems_engineer|java",
+        "source": "embedded_systems_engineer",
+        "target": "java",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Java",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "VHDL",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Embedded Systems Engineer",
+      "type": "Domain",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "VHDL Programming",
+      "type": "Hard Skill",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "C/C++",
+      "type": "Hard Skill",
+      "gap": 0.893,
+      "severity": "critical",
+      "importance": 0.893
+    },
+    {
+      "skill": "Java Programming",
+      "type": "Hard Skill",
+      "gap": 0.869,
+      "severity": "critical",
+      "importance": 0.869
+    },
+    {
+      "skill": "C Programming",
+      "type": "Hard Skill",
+      "gap": 0.819,
+      "severity": "critical",
+      "importance": 0.819
+    },
+    {
+      "skill": "Teamwork",
+      "type": "Soft Skill",
+      "gap": 0.745,
+      "severity": "critical",
+      "importance": 0.745
+    },
+    {
+      "skill": "Problem Solving",
+      "type": "Soft Skill",
+      "gap": 0.745,
+      "severity": "critical",
+      "importance": 0.745
+    },
+    {
+      "skill": "Autonomy",
+      "type": "Soft Skill",
+      "gap": 0.745,
+      "severity": "critical",
+      "importance": 0.745
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Java",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "VHDL",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Embedded Systems Engineer",
+        "type": "Domain",
+        "gap": 0.9
+      },
+      {
+        "label": "VHDL Programming",
+        "type": "Hard Skill",
+        "gap": 0.9
+      },
+      {
+        "label": "C/C++",
+        "type": "Hard Skill",
+        "gap": 0.893
+      },
+      {
+        "label": "Java Programming",
+        "type": "Hard Skill",
+        "gap": 0.869
+      },
+      {
+        "label": "C Programming",
+        "type": "Hard Skill",
+        "gap": 0.819
+      },
+      {
+        "label": "Teamwork",
+        "type": "Soft Skill",
+        "gap": 0.745
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 5,
+    "nodes_with_bias": 5,
+    "edges_audited": 2,
+    "edges_with_bias": 2,
+    "bias_categories": {
+      "PRESTIGE": 7
+    },
+    "biased_nodes": [
+      {
+        "id": "agile_methodologies",
+        "label": "Agile Methodologies",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.2,
+        "w_cv_corrected": 1.2,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience in agile methodologies is downplayed despite being relevant to the job description. The correction factor is set to 1.20 to increase the weight, as the candidate's experience in agile process Jira and Sprint Planning is excellent and aligns with the job requirements."
+      },
+      {
+        "id": "engineer_degree",
+        "label": "Engineer Degree",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.2,
+        "w_cv_corrected": 1.2,
+        "reason": "The weight change from 0.9 to 0.5 for the 'engineer_degree' node is likely due to prestige bias, as the candidate's degree from Jawaharlal Nehru Technological University may be perceived as less prestigious compared to other universities. This bias is evident in the significant decrease in weight despite the candidate's relevant skills and experience. A correction factor of 1.20 is applied to increase the weight and mitigate the bias."
+      },
+      {
+        "id": "svn",
+        "label": "SVN",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.26,
+        "w_cv_corrected": 1.26,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience with SVN is downplayed despite being relevant to the job description. The candidate's background in mobile development and lack of direct experience in embedded systems may have led to an unfair penalty. A fairer assessment would consider the candidate's transferable skills and experience with version control tools."
+      },
+      {
+        "id": "git",
+        "label": "Git",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.02,
+        "w_cv_corrected": 1.02,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience with Git is downplayed despite being mentioned in the job description. The candidate's background in mobile development and lack of direct experience in embedded systems may have led to an unfair penalty. A fairer assessment would give more weight to the candidate's relevant skills and experience with version control tools like Git."
+      },
+      {
+        "id": "agile_project_management",
+        "label": "Agile Project Management",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 1.25,
+        "w_cv_corrected": 1.25,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience in agile project management is downplayed despite strong evidence of relevant skills. The correction factor is 1.25 to increase the weight to its ideal value, ensuring fair evaluation."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "embedded_systems_engineer|agile_project_management",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased towards prestige, as the candidate's mention of 'agile process Jira and Sprint Planning' is overvalued due to the perceived prestige of working with agile methodologies, rather than a genuine demonstration of skills. A fairer assessment would focus on the candidate's technical skills and experience in embedded systems engineering, rather than their familiarity with trendy project management tools."
+      },
+      {
+        "edge": "java|java_programming",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_corrected": 0.862,
+        "reason": "The weight change from 0.9 to 0.75 may be due to prestige bias, as the candidate's previous role was a 'Java Developer' at a prestigious company (PNC), which may not be directly relevant to the current job description. The correction factor is set to 1.15 to account for the potential unfair penalization."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2124 (sous-qualifié), CTM=0.6966 (écart structurel élevé), match_pct=34.92% → Poor Match",
+    "v6_summary": "weighted_f1=0.372, gap_score=0.1479, ndcg_5=0.8652, missing_critical_penalty=0.3125, combo_v6_final=29.5",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "14 gaps critiques identifiés",
+    "bias_note": "5 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 3,
+    "pool_size": 30,
+    "percentile": 0.931,
+    "composite_z_score": 1.2767,
+    "tier": "Top 10%",
+    "z_scores": {
+      "combo_v6": 1.387,
+      "wf1": 2.277,
+      "gap_score": 1.323,
+      "ntcw": 1.382,
+      "match_pct": 1.153,
+      "ndcg_5": -0.263
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 15.953,
+        "std": 9.7668
+      },
+      "wf1": {
+        "mean": 0.0984,
+        "std": 0.1202
+      },
+      "gap_score": {
+        "mean": 0.0702,
+        "std": 0.0588
+      },
+      "ntcw": {
+        "mean": 0.0972,
+        "std": 0.0834
+      },
+      "match_pct": {
+        "mean": 24.7647,
+        "std": 8.8085
+      },
+      "ndcg_5": {
+        "mean": 0.8864,
+        "std": 0.0804
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

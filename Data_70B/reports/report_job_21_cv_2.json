@@ -1,0 +1,437 @@
+{
+  "job_id": "job_21",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-03T13:32:07.293754",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 19.76,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.5,
+        "critical_rate": 0.788,
+        "coverage_rate": 0.242,
+        "nodes_audited": 6,
+        "nodes_biased": 3
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.0739,
+    "edge_score": 0.1105,
+    "combined": 0.0886
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.0685,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.8141,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.8024,
+    "matched_nodes": "3/33",
+    "edge_match_pct": 11.05
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1031,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.0789,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.0582,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0606,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.1057,
+    "weighted_recall": 0.0498,
+    "weighted_f1": {
+      "value": 0.0952,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.7048,
+    "missing_critical_penalty": {
+      "value": 0.0769,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.7323,
+    "ndcg_10": 0.7623,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9333,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.1191,
+    "experience_density": 0.063
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 13.4,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 8.4,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 8.01,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 89.29,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 37.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 24.26,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 22.4,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 13,
+      "match_pct": 5.3,
+      "weight_sum": 12.0
+    },
+    "Hard Skill": {
+      "count": 8,
+      "match_pct": 0.0,
+      "weight_sum": 7.712
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 15.0,
+      "weight_sum": 0.915
+    },
+    "Domain": {
+      "count": 4,
+      "match_pct": 15.5,
+      "weight_sum": 2.932
+    },
+    "Soft Skill": {
+      "count": 7,
+      "match_pct": 18.6,
+      "weight_sum": 4.578
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 11.05,
+    "total_edges": 19,
+    "top_synergies": [
+      {
+        "edge_key": "ingenieur_de_confiance_de_site|programmation",
+        "source": "ingenieur_de_confiance_de_site",
+        "target": "programmation",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ingenieur_de_confiance_de_site|securite",
+        "source": "ingenieur_de_confiance_de_site",
+        "target": "securite",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "elastic_kubernetes_service|kubernetes",
+        "source": "elastic_kubernetes_service",
+        "target": "kubernetes",
+        "w_0": 0.5,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.6,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "aws_lambda|python",
+        "source": "aws_lambda",
+        "target": "python",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "elastic_container_service|docker",
+        "source": "elastic_container_service",
+        "target": "docker",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Go",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Bash",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Perl",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "EC2",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "AWS Lambda",
+      "type": "Tool",
+      "gap": 0.966,
+      "severity": "critical",
+      "importance": 0.966
+    },
+    {
+      "skill": "Elastic Container Service",
+      "type": "Tool",
+      "gap": 0.966,
+      "severity": "critical",
+      "importance": 0.966
+    },
+    {
+      "skill": "Méthodologies Agiles",
+      "type": "Hard Skill",
+      "gap": 0.966,
+      "severity": "critical",
+      "importance": 0.966
+    },
+    {
+      "skill": "VPC",
+      "type": "Tool",
+      "gap": 0.964,
+      "severity": "critical",
+      "importance": 0.964
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "Kubernetes",
+        "type": "Tool",
+        "gap": 0.0
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Go",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Bash",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Perl",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "EC2",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "AWS Lambda",
+        "type": "Tool",
+        "gap": 0.966
+      },
+      {
+        "label": "Elastic Container Service",
+        "type": "Tool",
+        "gap": 0.966
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 3,
+    "edges_audited": 1,
+    "edges_with_bias": 1,
+    "bias_categories": {
+      "PRESTIGE": 2,
+      "GENDER_DIVERSITY": 1,
+      "HALO": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "ingenieur",
+        "label": "Ingénieur",
+        "bias_category": "PRESTIGE",
+        "severity": "HIGH",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.3,
+        "w_cv_corrected": 0.3,
+        "reason": "The candidate is being unfairly penalized due to their education, despite having relevant skills and experience. A correction factor is needed to account for the bias and ensure a fairer assessment."
+      },
+      {
+        "id": "collaboration",
+        "label": "Collaboration",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The algorithm is undervaluing the candidate's soft skills, such as collaboration, which is an essential aspect of the job description."
+      },
+      {
+        "id": "analyse",
+        "label": "Analyse",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The candidate's analytical skills have been unfairly penalized due to halo bias, where their technical skills have overshadowed their analytical abilities. A correction factor of 1.20 is applied to increase their weight to 0.50, which is closer to their ideal weight."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "elastic_kubernetes_service|kubernetes",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change from 0.9 to 0.75 may be due to prestige bias, as the candidate's CV mentions certifications and experience with Kubernetes, but also mentions other cloud platforms like AWS and Azure. The job description emphasizes the use of Elastic Kubernetes Service and Kubernetes, but the candidate's experience with other platforms may be undervalued. A fairer approach would be to evaluate the candidate's skills and experience in Kubernetes and Elastic Kubernetes Service, rather than penalizing them for having a broader range of experience."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.0685 (sous-qualifié), CTM=0.8141 (écart structurel élevé), match_pct=19.76% → Poor Match",
+    "v6_summary": "weighted_f1=0.0952, gap_score=0.0582, ndcg_5=0.7323, missing_critical_penalty=0.0769, combo_v6_final=13.4",
+    "key_strengths": "1 compétences clés validées",
+    "key_gaps": "26 gaps critiques identifiés",
+    "bias_note": "3 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 1,
+    "pool_size": 5,
+    "percentile": 1.0,
+    "composite_z_score": 1.321,
+    "tier": "Top 10%",
+    "z_scores": {
+      "combo_v6": 1.703,
+      "wf1": 2.0,
+      "gap_score": 1.125,
+      "ntcw": 1.5,
+      "match_pct": 1.408,
+      "ndcg_5": 0.249
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 8.166,
+        "std": 3.0727
+      },
+      "wf1": {
+        "mean": 0.019,
+        "std": 0.0381
+      },
+      "gap_score": {
+        "mean": 0.0397,
+        "std": 0.0164
+      },
+      "ntcw": {
+        "mean": 0.041,
+        "std": 0.0183
+      },
+      "match_pct": {
+        "mean": 16.808,
+        "std": 2.0965
+      },
+      "ndcg_5": {
+        "mean": 0.7213,
+        "std": 0.0441
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

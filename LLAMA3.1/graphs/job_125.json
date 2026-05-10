@@ -1,0 +1,95 @@
+{
+  "nodes": [
+    {
+      "id": "php-expert",
+      "label": "PHP Expertise",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "Mid | Senior | Expert",
+      "context": "Requiert expertise en PHP pour la conception et le développement de solutions logicielles personnalisées.",
+      "inferred": false
+    },
+    {
+      "id": "full-stack-php-js-expert",
+      "label": "Expert en PHP/JS Full Stack",
+      "type": "Domain",
+      "w_0": 0.699,
+      "seniority_required": "Mid | Senior | Expert",
+      "context": "Requiert expertise en PHP et JS pour la conception et le développement de solutions logicielles personnalisées.",
+      "inferred": false
+    },
+    {
+      "id": "devops-developer",
+      "label": "DevOps & Développeur",
+      "type": "Domain",
+      "w_0": 0.656,
+      "seniority_required": "Mid | Senior | Expert",
+      "context": "Requiert connaissance du domaine de DevOps et développement.",
+      "inferred": false
+    },
+    {
+      "id": "js-expertise",
+      "label": "JS Expertise",
+      "type": "Hard Skill",
+      "w_0": 0.545,
+      "seniority_required": "Mid | Senior | Expert",
+      "context": "Requiert expertise en JS pour la conception et le développement de solutions logicielles personnalisées.",
+      "inferred": false
+    },
+    {
+      "id": "complex-projects-domain",
+      "label": "Expérience sur des Projets Complexes",
+      "type": "Domain",
+      "w_0": 0.439,
+      "seniority_required": "Mid | Senior | Expert",
+      "context": "Requiert expérience sur des projets complexes pour la conception et le développement de solutions logicielles personnalisées.",
+      "inferred": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "full-stack-php-js-expert",
+      "target": "js-expertise",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "The job description mentions 'JS' expertise in the full stack PHP/JS expert role, indicating that JS expertise is a required skill."
+    },
+    {
+      "source": "full-stack-php-js-expert",
+      "target": "php-expert",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "The job description mentions 'PHP' expertise in the full stack PHP/JS expert role, indicating that PHP expertise is a required skill."
+    },
+    {
+      "source": "full-stack-php-js-expert",
+      "target": "complex-projects-domain",
+      "relation": "part_of",
+      "weight": 0.65,
+      "rationale": "The job description mentions working on complex projects, indicating that the full stack PHP/JS expert role is part of this domain."
+    },
+    {
+      "source": "devops-developer",
+      "target": "complex-projects-domain",
+      "relation": "part_of",
+      "weight": 0.65,
+      "rationale": "The job description mentions working on complex projects, indicating that the DevOps developer role is part of this domain."
+    },
+    {
+      "source": "devops-developer",
+      "target": "full-stack-php-js-expert",
+      "relation": "supports",
+      "weight": 0.65,
+      "rationale": "The job description mentions working on complex projects and setting up innovative technical architectures, indicating that DevOps expertise supports the full stack PHP/JS expert role."
+    },
+    {
+      "source": "full-stack-php-js-expert",
+      "target": "devops-developer",
+      "relation": "supports",
+      "weight": 0.65,
+      "rationale": "The job description mentions working on complex projects and setting up innovative technical architectures, indicating that full stack PHP/JS expertise supports the DevOps developer role."
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_125"
+}

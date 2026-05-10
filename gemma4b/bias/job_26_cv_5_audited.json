@@ -1,0 +1,681 @@
+{
+  "job_id": "job_26",
+  "cv_id": "cv_5",
+  "scored_nodes": {
+    "backend_engineer": {
+      "w_cv": 0.63,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.09,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.84
+      },
+      "active_red_flags": [],
+      "rationale": "The audit notes state that Heni Loukil is a Machine Learning Engineer at InstaDeep, directly leveraging backend engineering skills within the context of developing Deep Learning solutions. Experience_years_detected indicates 1.8 years. Intensity is 'central' and the project complexity is 'mid'. The project focus on medical imaging uses machine learning. ",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.63,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The weight change (0.84 to 0.84, a decrease of 0.16) is likely driven by the relatively short experience (1 year 2 months) as indicated by 'Experience_years_detected'. While the candidate's work at InstaDeep and ICube is valuable, the JD explicitly prioritizes 'experienced professionals' and emphasizes 'robust and maintainable solutions.' The CV highlights an internship focused on Deep Graph CNNs, which while relevant to machine learning, doesn't directly align with the stated requirements of the backend engineer role, particularly in terms of Clean Architecture, SOLID principles, and experience with microservices refactoring - creating a disparity between the ideal and actual experience. Therefore, a correction factor of 0.75 reflects this mismatch, acknowledging the relevant skills but penalizing the lack of direct, substantial backend experience within a complex, scalable system as detailed in the job description."
+    },
+    "postgres_db": {
+      "w_cv": 0.312,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Mentioned as the primary database used at InstaDeep, but the audit lacks specifics on schema or usage.  This is a supporting tool with 'moderate' evidence but limited contextual information.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.312,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The significant decrease in weight (Delta = -0.75) for the PostgreSQL database is likely prestige bias. The JD heavily emphasizes Go, Redis, Kafka, gRPC, and Kubernetes, suggesting a preference for modern, rapidly evolving technologies. The CV showcases Heni’s work at InstaDeep, which heavily utilizes PostgreSQL, but the internship project focuses on a specific deep learning application with Hippocampus shape analysis – a niche area that doesn't directly demonstrate broader backend engineering expertise in the way the JD outlines. This project’s emphasis on Deep Graph CNNs and geodesic paths suggests a domain-specific skillset which is penalized despite being a valuable skill. Therefore, the system appears to be prioritizing a database frequently used in a highly specialized context over more broadly applicable backend technologies, creating an unfair disadvantage for candidates with PostgreSQL experience."
+    },
+    "redis_cache": {
+      "w_cv": 0.15,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.15,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.15
+      },
+      "active_red_flags": [],
+      "rationale": "The audit notes mention 'Redis' as a feature extracted from Hippocampus shapes, suggesting its use, but provides no detail on implementation or architecture. This is a peripheral tool with 'weak' evidence.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "kubernetes_orchestration": {
+      "w_cv": 0.1,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.1,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.1
+      },
+      "active_red_flags": [],
+      "rationale": "Kubernetes is mentioned as a supporting tool but there's no indication of deployment or operational usage. This is peripheral, with 'weak' evidence.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "agile_methodology": {
+      "w_cv": 0.375,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "The audit notes mention ‘Communication efficace’ as a part of ‘Capacité à travailler en équipe,’ implying Agile methodologies were used. It’s a supporting skill with ‘moderate’ evidence and has an intensity bonus of 10% due to the importance of collaboration in development.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.375,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The CV highlights a research project involving Deep Learning and Geometric Deep Learning, which are highly specialized skills relevant to the job description's emphasis on robust and maintainable software. However, the project's location – a university internship in France – combined with the candidate's educational background (INSAT, a specific French institution) introduces a proxy bias. The CV’s focus on a very specific, academically-oriented project subtly favors candidates from higher-ranked institutions, suggesting an unfair advantage. A more appropriate weight would reflect the demonstrable skills, reducing the influence of location and institution."
+    },
+    "teamwork_skills": {
+      "w_cv": 0.262,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.35,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.35
+      },
+      "active_red_flags": [],
+      "rationale": "The mention of ‘Communication efficace’ within the context of ‘Capacité à travailler en équipe’ points to a support role that requires teamwork skills. It is listed as a 'moderate' skill, supporting the overall project success.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "GENDER_DIVERSITY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.262,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The CV heavily emphasizes a research project focusing on Deep Learning and Alzheimer's Disease Classification, a highly specialized field. While ‘capacity to work in teams’ is listed as a moderate skill, the description of the project suggests a predominantly individual effort, potentially overshadowing the importance of collaborative skills within a broader engineering context.  Furthermore, the project description – focused on a specific academic problem – leans towards a strong technical focus, which may be unfairly penalized by the system, reflecting a bias toward ‘prestige’ skills associated with research institutions rather than practical team collaboration. A more appropriate weight would reflect a nuanced appreciation of both technical expertise and collaborative abilities."
+    },
+    "go_programming": {
+      "w_cv": 1.3,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.04,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.04
+      },
+      "active_red_flags": [],
+      "rationale": "The audit directly mentions Go programming as a key component within the InstaDeep project. The 0.8 year experience_bonus recognizes this, and this is a strong evidence.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 1.3,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The CV highlights a 1-year 2-month internship at InstaDeep, coupled with a prestigious university (INSAT) and a project focused on Geometric Deep Learning, aligning with the 'expertise' desired in the JD. While the experience is relatively short, the project's relevance to the technologies listed in the JD (Go, PostgreSQL, etc.) and the innovative nature of InstaDeep elevate the candidate's perceived value, leading to a significant increase in the weight assigned. This suggests a Prestige bias where the university and InstaDeep's reputation outweighed the duration of the experience."
+    },
+    "kafka_messaging": {
+      "w_cv": 0.1,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.1,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.1
+      },
+      "active_red_flags": [],
+      "rationale": "This is a peripheral skill with ‘weak’ evidence, indicating limited usage during the internships.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "gitlab_ci": {
+      "w_cv": 0.5,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.4,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.4
+      },
+      "active_red_flags": [],
+      "rationale": "The audit explicitly mentions GitLab CI/CD, and the ‘moderate’ evidence suggests that it was used for automated testing and deployment.  A small intensity bonus is applied. ",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.5,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The significant decrease in weight (w_cv from 0.946 to 0.4) is likely driven by the emphasis on the university (INSAT) and the specific research project – ‘Alzheimer’s Disease Classification’ – within the CV.  While relevant, the project's domain (Deep Learning, Geometric Deep Learning) is not explicitly aligned with the job description's focus on 'Clean Architecture' and 'SOLID' principles. This suggests a Prestige Bias, where the university's reputation and research area outweighed the applicant's demonstrable skills in the stated requirements, creating an unfair disadvantage."
+    },
+    "clean-architecture": {
+      "w_cv": 0.597,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.046,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.796
+      },
+      "active_red_flags": [],
+      "rationale": "The CV mentions ‘Clean Architecture’ within the context of a project focused on Alzheimer’s Disease Classification. The project description references ‘Geometric Deep Learning’ and the ‘Hippocampus shape Morphometric Analysis’ which aligns with the principles of Clean Architecture, providing moderate evidence. Experience_years_detected is present, and the skill is described as ‘supporting’ indicating a role in the architecture.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.597,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The CV highlights a project directly related to Clean Architecture – 'Alzheimer’s Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning' – demonstrating a specific and relevant application of the principle. While the experience is valuable, the project's niche focus (Alzheimer's disease classification with geometric deep learning) introduces a prestige bias, suggesting the candidate's expertise is particularly valued due to the specific and complex nature of the work rather than a broad application of Clean Architecture principles. This could lead to over-weighting this singular experience, and the weight change reflects this potential overemphasis."
+    },
+    "code-review": {
+      "w_cv": 0.485,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.6,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.046,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.646
+      },
+      "active_red_flags": [],
+      "rationale": "The CV notes ‘code-review’ as a responsibility. The description of the Alzheimer’s project outlines a collaborative effort using Geometric Deep Learning, strongly suggesting a role in code reviews.  The intensity is described as ‘supporting’ confirming a role in the code review process.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE|AGEISM|NONE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "NONE",
+      "w_cv_corrected": 0.485,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The CV highlights a project involving ‘code reviews’ as part of an Alzheimer’s disease classification project utilizing Geometric Deep Learning, demonstrating a relevant skill. However, the project description and academic background (INSAT - 2020-2024) suggest a relatively recent graduate, potentially creating a bias towards valuing experience over fresh perspectives.  The use of ‘Hippocampus shape morphometric analysis’ is a highly specialized area of deep learning, which may be unfairly weighted, leaning towards prestige bias.  A correction factor of 0.75 acknowledges the skills but mitigates the potential for over-emphasizing this specific project and a young professional’s experience."
+    },
+    "nosql-databases": {
+      "w_cv": 0.335,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.4,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.046,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.446
+      },
+      "active_red_flags": [],
+      "rationale": "The CV lists ‘NoSQL Databases’ as a skill, but provides no concrete project application. The evidence is weak and inferential.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.335,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The CV’s emphasis on the ‘Alzheimer’s Disease Classification’ project, specifically the Deep Graph CNN approach, coupled with the academic institution (INSAT) which is not a globally recognized top-tier university, suggests a prestige bias. While the project demonstrates relevant technical skills (Deep Learning, NoSQL databases implicitly through the application), the weight change (-0.389) indicates an unfair penalization for the project's focus, effectively devaluing a specialized research experience in favor of a more broadly recognized skillset. A fair alternative would have assigned a more neutral weight based on demonstrable skills and experience, not the project’s specific domain."
+    },
+    "solid-principles": {
+      "w_cv": 0.335,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.4,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.046,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.446
+      },
+      "active_red_flags": [],
+      "rationale": "The CV mentions ‘Solid Principles’ but the application is not specifically described within the context of a project. Evidence is weak.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.335,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The CV mentions a graduation project focused on a highly specialized area of Deep Learning - Hippocampus shape analysis using geometric deep learning - which doesn't directly align with the JD's emphasis on Clean Architecture and SOLID principles, nor the required technologies (Go, PostgreSQL, Kafka). This proxy bias penalizes the candidate for a specialized academic project, favoring candidates with experience in more broadly applicable backend development skills. A more merit-based approach would have considered the candidate's skills in machine learning, graph CNNs, and vector field analysis in addition to their education, recognizing the potential transferability of those skills to the backend role.  The reduction in weight reflects the strength of the weak connection to the job requirements."
+    },
+    "gRPC-communication": {
+      "w_cv": 0.259,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.3,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.046,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.346
+      },
+      "active_red_flags": [],
+      "rationale": "The skill is mentioned as ‘gRPC-communication’ but there's no contextual information about its use in a project.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.259,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The decreased weight for ‘gRPC-communication’ is likely due to a proxy bias. The CV highlights a university project focused on Deep Graph CNNs and Hippocampus shape analysis – a highly specialized research area, suggesting the candidate's skills are more aligned with academic research than with the typical backend engineering described in the job description (Go, PostgreSQL, etc.).  The mention of ‘Institut National des Sciences Appliquées et de Technologie’ (INSAT) – a specialized research institute – coupled with the project description raises concerns that the assessment is prioritizing research experience over practical gRPC skills relevant to a standard backend role. A fair alternative would be to evaluate the candidate’s familiarity with gRPC based on demonstrable experience within a commercially-oriented development environment."
+    },
+    "agile-methodology": {
+      "w_cv": 0.335,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.4,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.046,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.446
+      },
+      "active_red_flags": [],
+      "rationale": "The CV mentions ‘Agile Methodology’ as a skill, but there's no specific framework or implementation described.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.335,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The CV shows a strong emphasis on academic project details ('Alzheimer's Disease Classification') rather than practical Agile methodology experience. While mentioning Agile use with GitLab CI is present, the focus on a highly specialized research project (Deep Graph CNN) related to academic research overshadows any demonstrable Agile skills. This suggests a Prestige Bias, where the impressive academic project name is being prioritized over skills relevant to the job description, leading to a decreased weight. A fair alternative would be a CV explicitly detailing Agile project experience or training."
+    },
+    "communication-skills": {
+      "w_cv": 0.485,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.6,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.046,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.646
+      },
+      "active_red_flags": [],
+      "rationale": "The CV lists ‘communication skills’ as a skill and describes it as ‘supporting’, indicating a role in communication within the project.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "B",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.485,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The CV demonstrates a strong technical background with a deep learning focus and specific project experience, aligning with the JD's emphasis on ‘robust and maintainable solutions’ and ‘innovative backend development’. However, the CV’s emphasis on academic project details (specifically the thesis title - 'Alzheimer's Disease Classification') and the university name (INSAT) outweighs the listed communication skills. This suggests a prestige bias, prioritizing academic achievement over explicitly stated soft skills, resulting in a decreased weight. A fairer alternative would prioritize the stated communication skills related to collaboration within the project, rather than the academic project itself."
+    },
+    "backend-development-skills": {
+      "w_cv": 0.259,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.3,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.046,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.346
+      },
+      "active_red_flags": [],
+      "rationale": "The skill is mentioned – ‘backend development skills’ – but the specific technologies used are not detailed.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.259,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The significant decrease in weight (-0.285) for 'backend-development-skills' is likely due to the lack of specific technology details. While the CV mentions Go, PostgreSQL, Redis, Kafka, etc., it focuses heavily on a research project – ‘Alzheimer's Disease Classification’ – using Deep Graph CNNs and Hippocampus analysis. This emphasizes a research-oriented, academic background (INSAT degree) rather than practical backend development experience, indicating a potential halo bias where the impressive research project overshadows the core skill being assessed, and proxy bias due to the research context."
+    },
+    "prometheus-monitoring": {
+      "w_cv": 0.184,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.2,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.046,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.246
+      },
+      "active_red_flags": [],
+      "rationale": "The CV mentions ‘Prometheus monitoring’ as a skill, but the context of its application is absent.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.184,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The CV highlights ‘Prometheus monitoring’ as a skill, aligning with the job description's requirement. However, the context - a graduation internship project focused on deep learning and Alzheimer’s research - suggests the candidate’s Prometheus knowledge is likely acquired through academic study rather than practical application within a backend engineering role. This proxy signal (university project focus) unfairly elevates the importance of Prometheus, potentially overshadowing the candidate’s core backend development skills and experience. A more merit-based approach would consider the depth and relevance of the candidate's core technical competencies."
+    },
+    "opensearch-monitoring": {
+      "w_cv": 0.295,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.2,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.046,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.246
+      },
+      "active_red_flags": [],
+      "rationale": "The CV mentions ‘OpenSearch monitoring’ as a skill, but lacks specific information about its implementation.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.295,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The CV demonstrates significant expertise in Deep Learning and Geometric Deep Learning, specifically relating to Alzheimer's disease classification, which aligns with the JD's emphasis on robust and scalable solutions. However, the CV’s focus on the academic project – a research internship – rather than demonstrable experience with OpenSearch monitoring, contributes to a lower weighting. This represents a Proxy Bias, as the project’s technical details overshadow any direct experience with the monitoring tool mentioned in the job description. A higher correction factor reflects the valid technical skills showcased beyond just the listed keyword."
+    }
+  },
+  "scored_edges": {
+    "Deep Learning|NestJS": {
+      "synergy_score": 0.85,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.1,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The CV explicitly details an internship project titled \"Alzheimer's Disease Classification Using Geometric Deep Learning,\" utilizing Deep Graph CNNs (a key component of Deep Learning), alongside the context of InstaDeep Sfax, which falls under the category of Machine Learning Engineer. This exemplifies the simultaneous use of both skills within a specific project. The use of Deep Learning is critical to the success of the project. cv_excerpt: \"Graduation Internship entitled \"Alzheimer's Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning\"...",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.85
+    },
+    "Geometric Deep Learning|Hippocampus Shape Morphometric Analysis": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.25,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The CV details the use of Geometric Deep Learning (Hippocampus Shape Morphometric Analysis) alongside Deep Graph CNNs for Non-rigid registration and matching. This represents a focused skill set. cv_excerpt: \"We then extracted Dense vector fields features in order to perform triple classification...\", ",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "deep_learning|machine_learning": {
+      "synergy_score": 0.65,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The description of the ‘Alzheimer’s Disease Classification’ project explicitly details the combined use of Deep Graph CNNs (a form of Deep Learning) and Geometric Deep Learning techniques for Non-rigid registration, shape analysis, and classification. This describes a combined and applied skill set. cv_excerpt: \"Hippocampus shape into the pre-shape space based on Kendall’s definition...\", ",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "w_cv": 0.65
+    },
+    "machine_learning|deep_learning": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.25,
+        "evidence_bonus": 0.1,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The project relies on the 'backend_engineer' skill (implied through the use of dense vector fields extracted for classification) to perform the machine learning analysis and achieve state-of-the-art results. This represents a combined application of both skills within the context of the InstaDeep project. cv_excerpt: \"We then extracted Dense vector fields features in order to perform triple classification...\", ",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    }
+  },
+  "metadata": {
+    "skills_scored": 19,
+    "mean_score": 0.408,
+    "edges_scored": 4,
+    "mean_synergy": 0.75,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.75,
+      "max": 0.85,
+      "min": 0.65
+    },
+    "batches_ok": 2,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.408,
+      "max": 1.0,
+      "min": 0.1,
+      "above_1": 1,
+      "below_05": 13
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 16,
+    "nodes_with_bias": 16,
+    "nodes_corrected": 16,
+    "edges_audited": 0
+  }
+}

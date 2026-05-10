@@ -1,0 +1,277 @@
+{
+  "job_id": "job_2",
+  "cv_id": "cv_2",
+  "scored_nodes": {
+    "node_5": {
+      "w_cv": 0.825,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 0.95,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15,
+          "outcome_bonus": 0.2,
+          "intensity_bonus": 0.1
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.1
+      },
+      "active_red_flags": [],
+      "rationale": "The evidence anchor, 'Experience CraftSchoolship Software Engineer September 2025-Present (6 months) California, United States GoMyDesk Backend & DevOps Cloud-Native Developer (Golang / Kubernetes)', explicitly details Ahmed's work with Kubernetes, a key skill. The description mentions '99.9 Fibas’ availability and automation of transcoding, further validating the skill's application. The use of Docker also supports a solid understanding of deployment.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.825,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The weight increase (w_cv from 0.891 to 1.1) is likely driven by Ahmed's experience at GoMyDesk, a US-based company. Despite Ahmed's relevant skills like Kubernetes and Go, the location (California) and the nature of the 6-month contract introduce a prestige bias – suggesting the candidate was deemed more desirable simply due to their location and the name of the company, rather than the specific technical capabilities. A more merit-based assessment would prioritize skills and experience demonstrated, not geographic location or company prestige. Further investigation would be required to see if other candidates with similar skills were overlooked."
+    },
+    "node_7": {
+      "w_cv": 0.845,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "penalties": {
+          "intensity_bonus": 0.05
+        },
+        "final_score": 0.65,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15
+        }
+      },
+      "active_red_flags": [],
+      "rationale": "The discussion of MySQL vs. MongoDB is brief and lacks depth, suggesting a minimal understanding of database selection criteria.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.845,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.3,
+      "p35_reason": "The significant decrease in weight (0.816 to 0.65) is likely driven by the candidate’s CV highlighting skills in Flutter, Dart, and Arabic proficiency – technologies and languages not explicitly mentioned or required in the job description. This indicates a proxy bias favoring candidates with a specific socioeconomic background or geographical location (potentially reflecting a more diverse candidate pool) rather than evaluating the core technical competencies of a full-stack developer. A stronger focus on MySQL and MongoDB experience would better align with the stated requirements, suggesting the algorithm inappropriately weighted signals beyond the job description's technical skills."
+    },
+    "node_4": {
+      "w_cv": 1.125,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "outcome_bonus": 0.1,
+        "penalties": {
+          "intensity_bonus": 0.05
+        },
+        "final_score": 0.9,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15
+        }
+      },
+      "active_red_flags": [],
+      "rationale": "Ahmed's experience using Docker to resolve deployment issues showcases a practical understanding of containerization, a key component of modern software development.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 1.125,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The candidate's CV prominently features their native language (Arabic) and location (Sousse, Tunisia), which are socioeconomic signals. While language skills are valuable, the emphasis on location (a developing country) coupled with the specific technologies listed (Docker, Kubernetes, AWS – often associated with larger tech firms) creates a proxy bias, potentially elevating the candidate's perceived desirability due to signals beyond demonstrable skills. This increased weight reflects an overemphasis on geographic origin and associated technologies, unfairly boosting Ahmed’s profile. A fair alternative would be to focus solely on the technical skills and experience demonstrated in the JD, discounting the location and language skills."
+    },
+    "node_3": {
+      "w_cv": 1.062,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.65,
+        "outcome_bonus": 0.05,
+        "penalties": {
+          "intensity_bonus": 0.05
+        },
+        "final_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.2
+        }
+      },
+      "active_red_flags": [],
+      "rationale": "The use of Git for collaborative development demonstrates familiarity with version control best practices, a fundamental skill in software development teams.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 1.062,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The increase in weight (0.117) for the candidate's use of Git is likely a proxy bias. While proficiency in version control is valuable, the CV's emphasis on multilingual skills (Italian, French, Arabic) and geographic location (Sousse, Tunisia) alongside technical skills suggests an attempt to signal broader adaptability and a potentially wider talent pool, rather than solely demonstrating technical merit.  The JD specifically calls out Git, and the candidate’s explicit mention of it is being overweighted; this reflects a potential bias toward candidates from countries with a strong DevOps culture (implied by the Git emphasis) or those proficient in multiple languages, rather than purely assessing core technical capabilities.  A higher correction factor (1.25) is applied to account for this proxy signal inflating the candidate’s perceived value due to irrelevant attributes."
+    },
+    "node_6": {
+      "w_cv": 0.84,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.55,
+        "penalties": {
+          "intensity_bonus": 0.05
+        },
+        "final_score": 0.7,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15
+        }
+      },
+      "active_red_flags": [],
+      "rationale": "While the description mentions Prometheus, the explanation of its use is superficial, indicating a basic level of awareness rather than demonstrable expertise.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO BIAS",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.84,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The CV prominently mentions Prometheus and Grafana, likely due to the job description's emphasis on monitoring and logging tools. This indicates a Halo Bias – the candidate was favored primarily because they mentioned these technologies, even if their demonstrable expertise isn't clearly defined. The CV highlights certifications in DevOps and AI applications, possibly overshadowing the lack of specific details regarding full-stack development skills as outlined in the JD, leading to a preference for technical buzzwords over core competencies. A fairer approach would prioritize skills listed in the job description, with Prometheus and Grafana considered as a secondary, supportive skill."
+    },
+    "node_8": {
+      "w_cv": 0.72,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.45,
+        "penalties": {
+          "intensity_bonus": 0.05
+        },
+        "final_score": 0.6,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15
+        }
+      },
+      "active_red_flags": [],
+      "rationale": "The description offers a very basic explanation of MongoDB, without showcasing any practical considerations.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.72,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The candidate's CV emphasizes multiple languages (Italian, French, English, Arabic) alongside technical skills, which while relevant, introduces a proxy bias. The JD implicitly favors candidates with specific tech skills (PHP, Java, Spring, etc.) – the CV’s focus on diverse language capabilities suggests a candidate from a different cultural or educational background, potentially leading to unconscious bias in evaluation.  While the candidate possesses valuable skills, the prominence of language skills beyond those explicitly required in the job description introduces a proxy signal that may not directly correlate with the job's technical requirements, disproportionately penalizing the candidate for their linguistic abilities.  A fairer alternative would be to prioritize candidates based solely on the listed technical competencies, adjusting the weighting to compensate for the inclusion of non-essential language skills."
+    },
+    "node_9": {
+      "w_cv": 0.66,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.4,
+        "penalties": {
+          "intensity_bonus": 0.05
+        },
+        "final_score": 0.55,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15
+        }
+      },
+      "active_red_flags": [],
+      "rationale": "The discussion of MongoDB and MySQL is extremely basic, lacking any practical examples or comparisons.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.66,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The CV highlights skills like Flutter, Dart, and Mobile Application Development, which are not explicitly mentioned in the JD. The candidate’s focus on mobile development and diverse language skills (Italian, Arabic, French) while lacking detailed experience with core technologies like Spring, Symfony, and AWS suggests a preference for a specific skillset (mobile) over the explicit requirements of the role (full-stack web development). This proxy bias – relying on less critical signals (language skills, mobile development) instead of core technical competencies – likely contributed to the reduced weight assigned to the candidate."
+    }
+  },
+  "scored_edges": {
+    "node_3|node_1": {
+      "synergy_score": 0.95,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Ahmed utilizes Git for version control (node_3) and integrates Docker (containerization) to manage application deployments, aligning with the description of building microservices, requiring both a codebase management (Git) and deployment strategy (Docker). The evidence clearly shows deployment automation alongside service design and integration. cv_excerpt: 'Containerized 100% of services with Docker, ensuring consistent builds across development, staging, and production.'",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.95
+    },
+    "node_3|node_2": {
+      "synergy_score": 0.75,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Ahmed employs Docker to containerize services and implements NoSQL databases, indicating the practical application of containerization in a real-world development environment. The use of Docker is a key element for Ahmed's DevOps skillset. cv_excerpt: 'Containerized 100% of services with Docker, ensuring consistent builds across development, staging, and production.'",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "node_3|node_10": {
+      "synergy_score": 0.85,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.25,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The consistent use of Docker across all projects and services highlights a core DevOps skill set utilized in conjunction with Git. This showcases a robust deployment pipeline management. cv_excerpt: 'Containerized 100% of services with Docker, ensuring consistent builds across development, staging, and production.'",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.85
+    }
+  },
+  "metadata": {
+    "skills_scored": 7,
+    "mean_score": 0.607,
+    "edges_scored": 3,
+    "mean_synergy": 0.85,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.85,
+      "max": 0.95,
+      "min": 0.75
+    },
+    "batches_ok": 1,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.607,
+      "max": 0.95,
+      "min": 0.4,
+      "above_1": 0,
+      "below_05": 2
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 7,
+    "nodes_with_bias": 7,
+    "nodes_corrected": 7,
+    "edges_audited": 0
+  }
+}

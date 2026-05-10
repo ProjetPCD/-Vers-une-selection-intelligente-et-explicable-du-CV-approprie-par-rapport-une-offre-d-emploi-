@@ -1,0 +1,245 @@
+{
+  "job_id": "job_37",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-04T12:43:40.613645",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 46.09,
+    "confidence": {
+      "confidence_score": 0.88,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.5,
+        "coverage_rate": 1.0,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.7405,
+    "edge_score": 0.0,
+    "combined": 0.4443
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.4072,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5878,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5391,
+    "matched_nodes": "1/6",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3996,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1667,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.3495,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1667,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.0811,
+    "weighted_recall": 0.1717,
+    "weighted_f1": {
+      "value": 0.2963,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.925,
+    "missing_critical_penalty": {
+      "value": 0.1667,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.9591,
+    "ndcg_10": 0.9779,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.6292,
+    "semantic_fit_score": 0.6776,
+    "experience_density": 0.3324
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 34.87,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 25.99,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 41.86,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 98.36,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 53.85,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 38.82,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 65.86,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 1,
+      "match_pct": 25.0,
+      "weight_sum": 1.0
+    },
+    "Tool": {
+      "count": 4,
+      "match_pct": 41.7,
+      "weight_sum": 3.646
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 30.0,
+      "weight_sum": 0.741
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "top_synergies": [],
+    "total_edges": 0
+  },
+  "critical_gaps": [
+    {
+      "skill": "Data Analyst",
+      "type": "Domain",
+      "gap": 0.75,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Power Query",
+      "type": "Tool",
+      "gap": 0.735,
+      "severity": "critical",
+      "importance": 0.975
+    },
+    {
+      "skill": "Power BI",
+      "type": "Tool",
+      "gap": 0.685,
+      "severity": "critical",
+      "importance": 0.873
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "w_cv": 1.85
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "Data Analyst",
+        "type": "Domain",
+        "gap": 0.75
+      },
+      {
+        "label": "Power Query",
+        "type": "Tool",
+        "gap": 0.735
+      },
+      {
+        "label": "Power BI",
+        "type": "Tool",
+        "gap": 0.685
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 5,
+    "nodes_with_bias": 3,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 2,
+      "HALO": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "power-query-tool",
+        "label": "Power Query",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.48,
+        "reason": "The weight change unfairly favors candidates with a specific label (Machine Learning Engineer) rather than their actual skills for the job."
+      },
+      {
+        "id": "power-bi-tool",
+        "label": "Power BI",
+        "bias_category": "PRESTIGE",
+        "severity": "HIGH",
+        "correction_factor": 1.5,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The weight change is likely due to prestige bias, where the candidate's university/company name ('InstaDeep') influenced the score rather than their skills and experience. To correct for this, we should increase the weight to reflect their actual abilities."
+      },
+      {
+        "id": "communication-soft-skill",
+        "label": "Communication",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "Weight decrease appears biased against candidates without direct experience with Microsoft Power BI, despite other relevant skills being mentioned. A fair alternative would be to weigh all relevant skills equally."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.4072 (sous-qualifié), CTM=0.5878 (écart structurel élevé), match_pct=46.09% → Poor Match",
+    "v6_summary": "weighted_f1=0.2963, gap_score=0.3495, ndcg_5=0.9591, missing_critical_penalty=0.1667, combo_v6_final=34.87",
+    "key_strengths": "1 compétences clés validées",
+    "key_gaps": "3 gaps critiques identifiés",
+    "bias_note": "3 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.88)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

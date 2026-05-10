@@ -1,0 +1,431 @@
+{
+  "job_id": "job_25",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-05T11:05:27.269408",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 32.02,
+    "confidence": {
+      "confidence_score": 0.86,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.571,
+        "coverage_rate": 1.0,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.4177,
+    "edge_score": 0.2471,
+    "combined": 0.3495
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.235,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6783,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6798,
+    "matched_nodes": "1/14",
+    "edge_match_pct": 12.36
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2484,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.175,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2119,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0833,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.8182,
+    "weighted_recall": 0.0508,
+    "weighted_f1": {
+      "value": 0.0988,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.55,
+    "missing_critical_penalty": {
+      "value": 0.0909,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8767,
+    "ndcg_10": 0.8694,
+    "map_score": 0.8841,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.4417,
+    "semantic_fit_score": 0.4744,
+    "experience_density": 0.1741
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 22.27,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 18.14,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 27.16,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 91.01,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 39.65,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 30.9,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 42.07,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Education": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 42.0,
+      "weight_sum": 3.0
+    },
+    "Tool": {
+      "count": 8,
+      "match_pct": 14.7,
+      "weight_sum": 6.83
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 21.1,
+      "weight_sum": 0.84
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 12.36,
+    "total_edges": 7,
+    "top_synergies": [
+      {
+        "edge_key": "python-skill|ai_engineer_1",
+        "source": "python-skill",
+        "target": "ai_engineer_1",
+        "w_0": 0.95,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 44.7,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ai_application_development_1|ai_engineer_1",
+        "source": "ai_application_development_1",
+        "target": "ai_engineer_1",
+        "w_0": 0.8,
+        "w_cv": 0.419,
+        "w_cv_norm": 0.21,
+        "match_pct": 26.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "kubernetes-tool|ai_engineer_1",
+        "source": "kubernetes-tool",
+        "target": "ai_engineer_1",
+        "w_0": 0.7,
+        "w_cv": 0.186,
+        "w_cv_norm": 0.093,
+        "match_pct": 13.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "nosql-tool|ai_engineer_1",
+        "source": "nosql-tool",
+        "target": "ai_engineer_1",
+        "w_0": 0.6,
+        "w_cv": 0.185,
+        "w_cv_norm": 0.092,
+        "match_pct": 15.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "tensorflow-tool|ai_engineer_1",
+        "source": "tensorflow-tool",
+        "target": "ai_engineer_1",
+        "w_0": 0.9,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Education",
+      "type": "Education",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 0.76,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.85,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Scikit-learn",
+      "type": "Tool",
+      "gap": 0.883,
+      "severity": "critical",
+      "importance": 0.997
+    },
+    {
+      "skill": "PyTorch",
+      "type": "Tool",
+      "gap": 0.856,
+      "severity": "critical",
+      "importance": 0.978
+    },
+    {
+      "skill": "Kubernetes",
+      "type": "Tool",
+      "gap": 0.826,
+      "severity": "critical",
+      "importance": 0.918
+    },
+    {
+      "skill": "NoSQL",
+      "type": "Tool",
+      "gap": 0.773,
+      "severity": "critical",
+      "importance": 0.864
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.698,
+      "severity": "critical",
+      "importance": 0.787
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Education",
+        "type": "Education",
+        "gap": 1.0
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 0.76
+      },
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.85
+      },
+      {
+        "label": "Scikit-learn",
+        "type": "Tool",
+        "gap": 0.883
+      },
+      {
+        "label": "PyTorch",
+        "type": "Tool",
+        "gap": 0.856
+      },
+      {
+        "label": "Kubernetes",
+        "type": "Tool",
+        "gap": 0.826
+      },
+      {
+        "label": "NoSQL",
+        "type": "Tool",
+        "gap": 0.773
+      },
+      {
+        "label": "Docker",
+        "type": "Tool",
+        "gap": 0.698
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 13,
+    "nodes_with_bias": 10,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 7,
+      "PRESTIGE": 2,
+      "D": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "java-skill",
+        "label": "Java",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.938,
+        "reason": "The Java skill is being penalized (w_cv = 0.75, Delta = -0.25) despite demonstrable use within the candidate's experience at onepoint. The CV explicitly states ‘Implemented back-end solutions in Java…’, showcasing a direct application of the skill in a relevant project.  The JD prioritizes experience with FastAPI and Python, indicating a potential bias towards these technologies, even when a candidate possesses valuable Java skills.  This demonstrates prestige bias, favoring candidates with skills explicitly mentioned in the JD, regardless of demonstrable experience with Java. The candidate’s experience at onepoint utilizes Java which directly aligns with the requirement."
+      },
+      {
+        "id": "javascript-skill",
+        "label": "JavaScript",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.48,
+        "reason": "This weight decrease for Javascript is likely a proxy bias due to the CV explicitly stating 'Developed a mobile application available in Android and iOS using React Native'. The description of the mobile app development using React Native, while a valid skill, is presented as a single, isolated achievement with less context regarding the overall role's requirements.  The JD emphasizes broader AI skills (FastAPI, Python, Java), indicating a preference for core AI competencies.  The CV highlights Javascript’s role in a specific, somewhat peripheral, mobile application, leading to a reduced weighting compared to the candidate's broader experience and skills, unfairly penalizing a skill directly tied to the job's needs."
+      },
+      {
+        "id": "scikit-learn-tool",
+        "label": "Scikit-learn",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.227,
+        "reason": "The significant decrease in weight (w_cv from 0.997 to 0.35) for the ‘Scikit-learn’ tool is likely a proxy bias. The job description explicitly lists Python and Scikit-learn as desired skills, yet the CV primarily highlights experience with TensorFlow, PyTorch and data science skills, but lacks explicit detail about Scikit-learn usage. The emphasis on the tool itself, rather than demonstrated proficiency, suggests a preference for technologies listed in the JD, potentially masking a lack of relevant skills and leading to an unfairly low score for the candidate."
+      },
+      {
+        "id": "pytorch-tool",
+        "label": "PyTorch",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.244,
+        "reason": "The significant decrease in weight (w_cv from 0.978 to 0.349) is likely driven by the candidate’s location (Seattle, Washington, United States) and fluency in English. This proxy for socioeconomic advantage, coupled with the lack of specific project details and demonstrable skills within the job description, suggests the tool is unfairly penalizing the candidate for their geographic origin and language proficiency, rather than their technical abilities. A fair alternative would prioritize skills and experience outlined in the JD, irrespective of the candidate's location or language skills."
+      },
+      {
+        "id": "kubernetes-tool",
+        "label": "Kubernetes",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.184,
+        "reason": "The significant decrease in weight (from 0.918 to 0.246) is likely driven by the candidate’s location – Seattle, Washington. The job description explicitly mentions experience in an AI context, but the CV's focus on international internships (Montreal, Quebec, Vancouver, British Columbia) and language skills (French Native/Bilingual, English Native/Bilingual) introduces a proxy signal of socioeconomic status and potentially restricts the candidate pool geographically, unfairly penalizing a candidate based on where they gained experience, rather than demonstrated skills. A fair alternative would consider skills and experience irrespective of location."
+      },
+      {
+        "id": "nosql-tool",
+        "label": "NoSQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.182,
+        "reason": "The CV highlights Benjamin Boucher-Charest's time series analysis experience in a Microsoft role, directly responding to the JD's emphasis on performance and scalability. However, the CV's focus on the location (Seattle, Washington, United States; Montreal, Quebec, Canada) and the language of the CV (French - Native or Bilingual) introduces a proxy bias. Location and language can serve as proxies for socioeconomic status or education, potentially leading to unfair weighting of candidates based on factors outside of demonstrable skills and experience. A correction factor of 0.75 reflects this bias, acknowledging the relevant skills but penalizing the proxy signals."
+      },
+      {
+        "id": "docker-tool",
+        "label": "Docker",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.179,
+        "reason": "The significant decrease in weight (w_cv from 0.787 to 0.239) likely reflects a bias towards the candidate's location (Montreal, Canada) and language proficiency (French, English) over demonstrable skills. The JD explicitly lists Python, Java, JavaScript, TensorFlow, PyTorch, and Scikit-learn as preferred skills, yet the CV emphasizes location and language abilities, indicating a proxy bias based on geographic and linguistic fit rather than technical competency.  This penalizes the candidate for not being based in the US, despite possessing relevant experience, and for having a broader skillset due to language proficiency requirements. A fairer alternative would prioritize skills regardless of location or language."
+      },
+      {
+        "id": "robust_db_architectures_1",
+        "label": "Architectures de base de données robustes",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The candidate's CV highlights experience with 'analyzing time series data to decrease detection time for performance regressions,' directly aligning with the JD's requirements. However, the JD emphasizes robust database architecture as a key skill, and the candidate’s primary accomplishment, as highlighted in the task description, is data analysis. This suggests a proxy bias favoring candidates who can articulate quantifiable results in data-centric roles, potentially disadvantaging those whose skills are more broadly applicable but less easily quantified within the JD's specific performance regression context.  The change in weight (-0.017) leans toward a reduction in the importance placed on skills related to database architecture, given the explicit focus on time series analysis in the provided task. Correction factor of 0.75 indicates a slight, but present, bias."
+      },
+      {
+        "id": "ai_application_development_1",
+        "label": "Développement d'applications AI",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.3,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.65,
+        "reason": "The weight increase (Delta = +0.076) is likely driven by the candidate's experience at Microsoft Seattle, a prestigious tech company, which boosted their score. While the CV demonstrates relevant skills, the increased weighting seemingly prioritizes the employer's location and company name over a more granular assessment of technical proficiency. A fairer alternative would have focused solely on the candidate's accomplishments and skills, without the external prestige factor.  The candidate has a strong, relevant track record, but the weighting suggests a bias towards employers with a particular reputation."
+      },
+      {
+        "id": "ai_engineer_1",
+        "label": "Ingénieur en Intelligence Artificielle",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The weight change (0.416 to 0.25) is likely due to proxy bias stemming from the candidate's location (Montreal, Canada) and the JD’s focus on Western European companies and technologies (FastAPI, Kubernetes, etc.). The CV’s focus on Canadian internships and languages (French native) could be unfairly penalized, despite demonstrable skills in time series analysis and data science. A fairer alternative would be to assess the candidate based solely on their technical skills and experience within the specified technologies, rather than geographical or language-related signals."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.235 (sous-qualifié), CTM=0.6783 (écart structurel élevé), match_pct=32.02% → Poor Match",
+    "v6_summary": "weighted_f1=0.0988, gap_score=0.2119, ndcg_5=0.8767, missing_critical_penalty=0.0909, combo_v6_final=22.27",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "8 gaps critiques identifiés",
+    "bias_note": "10 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.86)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

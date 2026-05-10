@@ -1,0 +1,489 @@
+{
+  "job_id": "job_12",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-03T15:05:28.641633",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 38.66,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.483,
+        "coverage_rate": 0.276,
+        "nodes_audited": 7,
+        "nodes_biased": 7
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.0954,
+    "edge_score": 0.2182,
+    "combined": 0.1445
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1346,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6142,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6134,
+    "matched_nodes": "7/29",
+    "edge_match_pct": 21.82
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1416,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.2304,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.0994,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0385,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.5066,
+    "weighted_recall": 0.0296,
+    "weighted_f1": {
+      "value": 0.0581,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.531,
+    "missing_critical_penalty": {
+      "value": 0.0769,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.7632,
+    "ndcg_10": 0.8256,
+    "map_score": 0.9446,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.4012,
+    "semantic_fit_score": 0.2421,
+    "experience_density": 0.0626
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 16.62,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 14.69,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 13.41,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 88.59,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 33.91,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 26.83,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 37.24,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 6,
+      "match_pct": 9.3,
+      "weight_sum": 4.567
+    },
+    "Tool": {
+      "count": 12,
+      "match_pct": 9.0,
+      "weight_sum": 7.595
+    },
+    "Domain": {
+      "count": 5,
+      "match_pct": 6.0,
+      "weight_sum": 3.674
+    },
+    "Soft Skill": {
+      "count": 6,
+      "match_pct": 15.2,
+      "weight_sum": 3.196
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 21.82,
+    "total_edges": 13,
+    "top_synergies": [
+      {
+        "edge_key": "teamwork|communication",
+        "source": "teamwork",
+        "target": "communication",
+        "w_0": 0.5,
+        "w_cv": 1.0,
+        "w_cv_norm": 1.0,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "edge_ai|machine_learning",
+        "source": "edge_ai",
+        "target": "machine_learning",
+        "w_0": 0.5,
+        "w_cv": 0.637,
+        "w_cv_norm": 0.637,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "tvm|edge_ai",
+        "source": "tvm",
+        "target": "edge_ai",
+        "w_0": 0.5,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.6,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "leadership|communication",
+        "source": "leadership",
+        "target": "communication",
+        "w_0": 0.5,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.6,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "embedded_systems|system_design_principles",
+        "source": "embedded_systems",
+        "target": "system_design_principles",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Rust",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.954,
+      "severity": "critical",
+      "importance": 0.954
+    },
+    {
+      "skill": "Git",
+      "type": "Tool",
+      "gap": 0.915,
+      "severity": "critical",
+      "importance": 0.915
+    },
+    {
+      "skill": "Edge AI",
+      "type": "Domain",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Embedded Systems",
+      "type": "Domain",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "TVM",
+      "type": "Tool",
+      "gap": 0.774,
+      "severity": "critical",
+      "importance": 0.774
+    },
+    {
+      "skill": "Methodology",
+      "type": "Hard Skill",
+      "gap": 0.713,
+      "severity": "critical",
+      "importance": 0.713
+    },
+    {
+      "skill": "Professional",
+      "type": "Domain",
+      "gap": 0.706,
+      "severity": "critical",
+      "importance": 0.706
+    },
+    {
+      "skill": "VSCode",
+      "type": "Tool",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 0.7
+    },
+    {
+      "skill": "IDE",
+      "type": "Tool",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 0.7
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Rust",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.954
+      },
+      {
+        "label": "Git",
+        "type": "Tool",
+        "gap": 0.915
+      },
+      {
+        "label": "Edge AI",
+        "type": "Domain",
+        "gap": 0.9
+      },
+      {
+        "label": "Embedded Systems",
+        "type": "Domain",
+        "gap": 0.9
+      },
+      {
+        "label": "TVM",
+        "type": "Tool",
+        "gap": 0.774
+      },
+      {
+        "label": "Methodology",
+        "type": "Hard Skill",
+        "gap": 0.713
+      },
+      {
+        "label": "Professional",
+        "type": "Domain",
+        "gap": 0.706
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 7,
+    "nodes_with_bias": 7,
+    "edges_audited": 4,
+    "edges_with_bias": 4,
+    "bias_categories": {
+      "PRESTIGE": 8,
+      "GENDER_DIVERSITY": 3
+    },
+    "biased_nodes": [
+      {
+        "id": "azure_devops",
+        "label": "Azure DevOps",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.938,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience with Azure DevOps is mentioned in the context of a project with central intensity and mid complexity, but the adapted weight is decreased. This suggests that the algorithm is unfairly penalizing the candidate for not having a more prestigious or well-known experience with Azure DevOps. A fairer assessment would recognize the relevance of the candidate's experience and increase the weight accordingly."
+      },
+      {
+        "id": "c_plus_plus",
+        "label": "C++",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 1.062,
+        "w_cv_corrected": 1.062,
+        "reason": "The weight change is biased due to prestige bias, as the certification in CS107: C++ Programming from a reputable institution is being overvalued. The candidate's experience and skills in C++ programming are not being fully considered, and the certification is being used as a proxy for their abilities. A fairer assessment would give more weight to their actual experience and skills, rather than the prestige of their certification."
+      },
+      {
+        "id": "machine_learning",
+        "label": "Machine Learning",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.72,
+        "w_cv_corrected": 0.72,
+        "reason": "The weight change is biased due to prestige bias, as the adapted weight (0.3) is significantly lower than the ideal weight (0.609) for the 'machine_learning' skill. The candidate's experience and skills in machine learning, as mentioned in their CV, are not fully reflected in the adapted weight. The correction factor is set to 1.20 to increase the weight and mitigate the bias."
+      },
+      {
+        "id": "docker",
+        "label": "Docker",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.72,
+        "w_cv_corrected": 0.72,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's mention of Docker in a project is penalized despite demonstrating central intensity and mid-level complexity. The correction factor is set to 1.20 to increase the weight, as the candidate's skills and experience are undervalued."
+      },
+      {
+        "id": "problem_solving",
+        "label": "Problem Solving",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.75,
+        "w_cv_corrected": 0.75,
+        "reason": "The weight change for problem-solving skills is biased due to prestige bias, as the candidate's experience in consulting projects from reputable companies (EY) is given more importance than the actual skills demonstrated. The correction factor is set to 1.25 to increase the weight of problem-solving skills, as the candidate's experience in developing solutions and collaborating with teams is undervalued."
+      },
+      {
+        "id": "communication",
+        "label": "Communication",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change for the 'communication' skill is biased due to gender/diversity bias. The candidate's CV highlights their experience in collaboration and teamwork, which is a key requirement in the job description. However, the adapted weight is decreased, indicating that the algorithm is unfairly penalizing the candidate for their soft skills. A correction factor of 1.20 is applied to increase the weight and ensure fairness."
+      },
+      {
+        "id": "teamwork",
+        "label": "Teamwork",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change for 'teamwork' skill is biased as it unfairly penalizes the candidate for citing collaboration and teamwork skills in their CV, which is a valuable asset for the job description. The correction factor is set to 1.20 to increase the weight of this skill, as it is essential for the role."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "edge_ai|machine_learning",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_corrected": 0.637,
+        "reason": "The candidate's experience at EY, a prestigious company, is likely influencing the weight change, rather than solely their demonstrated skills in Edge AI and Machine Learning. This prestige bias may unfairly favor candidates from well-known companies, and a correction factor is applied to mitigate this effect."
+      },
+      {
+        "edge": "tvm|edge_ai",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased towards the candidate's experience at EY, a prestigious company, rather than solely focusing on the skills demonstrated. The correction factor is set to 0.80 to reduce the unfair advantage given to the candidate due to their affiliation with a well-known company."
+      },
+      {
+        "edge": "leadership|communication",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change from 0.5 to 0.75 is likely due to the prestige bias, as the candidate's experience at SoftSquareIT is given more importance than the actual skills demonstrated. A fairer assessment would focus on the candidate's communication skills rather than the company name. To correct for this bias, a decrease in the weight is necessary."
+      },
+      {
+        "edge": "teamwork|communication",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_corrected": 1.0,
+        "reason": "The weight change from 0.5 to 0.9 unfairly penalizes the candidate's soft skills, such as teamwork and communication, which are essential for the role. The job description emphasizes collaboration and working effectively in a multidisciplinary team. The candidate's experience and skills in this area should be valued more. A correction factor of 1.20 is applied to increase the weight of teamwork and communication in the evaluation."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1346 (sous-qualifié), CTM=0.6142 (écart structurel élevé), match_pct=38.66% → Poor Match",
+    "v6_summary": "weighted_f1=0.0581, gap_score=0.0994, ndcg_5=0.7632, missing_critical_penalty=0.0769, combo_v6_final=16.62",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "14 gaps critiques identifiés",
+    "bias_note": "7 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 3,
+    "pool_size": 3,
+    "percentile": 0.0,
+    "composite_z_score": -0.7174,
+    "tier": "3ème candidat",
+    "z_scores": {
+      "combo_v6": -0.858,
+      "wf1": -0.461,
+      "gap_score": -1.142,
+      "ntcw": -1.16,
+      "match_pct": -0.37,
+      "ndcg_5": -1.31
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 22.9767,
+        "std": 7.41
+      },
+      "wf1": {
+        "mean": 0.1157,
+        "std": 0.1248
+      },
+      "gap_score": {
+        "mean": 0.1514,
+        "std": 0.0455
+      },
+      "ntcw": {
+        "mean": 0.1973,
+        "std": 0.0541
+      },
+      "match_pct": {
+        "mean": 39.7133,
+        "std": 2.8506
+      },
+      "ndcg_5": {
+        "mean": 0.8692,
+        "std": 0.0809
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

@@ -1,0 +1,349 @@
+{
+  "job_id": "job_50",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-03T05:09:06.858189",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 45.58,
+    "confidence": {
+      "confidence_score": 0.67,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.417,
+        "coverage_rate": 0.75,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.5134,
+    "edge_score": 0.7653,
+    "combined": 0.6141
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3255,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5646,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5442,
+    "matched_nodes": "1/12",
+    "edge_match_pct": 38.28
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2827,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.7264,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.2654,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1667,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.1828,
+    "weighted_recall": 0.1412,
+    "weighted_f1": {
+      "value": 0.2522,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6032,
+    "missing_critical_penalty": {
+      "value": 0.1429,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8511,
+    "ndcg_10": 0.8984,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.846,
+    "top_skill_alignment": 0.4262,
+    "semantic_fit_score": 0.5857,
+    "experience_density": 0.1923
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 37.14,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 40.9,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 35.28,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 94.04,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 42.84,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 32.03,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 43.25,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 24.0,
+      "weight_sum": 2.104
+    },
+    "Tool": {
+      "count": 7,
+      "match_pct": 16.7,
+      "weight_sum": 5.384
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 60.3,
+      "weight_sum": 1.501
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 38.28,
+    "total_edges": 9,
+    "top_synergies": [
+      {
+        "edge_key": "machine_learning_domain|software-machine-learning-engineer",
+        "source": "machine_learning_domain",
+        "target": "software-machine-learning-engineer",
+        "w_0": 0.547,
+        "w_cv": 1.269,
+        "w_cv_norm": 0.635,
+        "match_pct": 100.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "git-tool|software-machine-learning-engineer",
+        "source": "git-tool",
+        "target": "software-machine-learning-engineer",
+        "w_0": 0.832,
+        "w_cv": 0.974,
+        "w_cv_norm": 0.487,
+        "match_pct": 58.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python-skill|software-machine-learning-engineer",
+        "source": "python-skill",
+        "target": "software-machine-learning-engineer",
+        "w_0": 0.954,
+        "w_cv": 0.926,
+        "w_cv_norm": 0.463,
+        "match_pct": 48.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "django-tool|software-machine-learning-engineer",
+        "source": "django-tool",
+        "target": "software-machine-learning-engineer",
+        "w_0": 0.978,
+        "w_cv": 0.768,
+        "w_cv_norm": 0.384,
+        "match_pct": 39.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "redis-tool|software-machine-learning-engineer",
+        "source": "redis-tool",
+        "target": "software-machine-learning-engineer",
+        "w_0": 0.867,
+        "w_cv": 0.673,
+        "w_cv_norm": 0.337,
+        "match_pct": 38.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Django",
+      "type": "Tool",
+      "gap": 0.73,
+      "severity": "critical",
+      "importance": 0.978
+    },
+    {
+      "skill": "Redis",
+      "type": "Tool",
+      "gap": 0.713,
+      "severity": "critical",
+      "importance": 0.867
+    },
+    {
+      "skill": "Ansible",
+      "type": "Tool",
+      "gap": 0.67,
+      "severity": "critical",
+      "importance": 0.764
+    },
+    {
+      "skill": "Jenkins",
+      "type": "Tool",
+      "gap": 0.751,
+      "severity": "critical",
+      "importance": 0.751
+    },
+    {
+      "skill": "Celery",
+      "type": "Tool",
+      "gap": 0.664,
+      "severity": "critical",
+      "importance": 0.664
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Django",
+        "type": "Tool",
+        "gap": 0.73
+      },
+      {
+        "label": "Redis",
+        "type": "Tool",
+        "gap": 0.713
+      },
+      {
+        "label": "Ansible",
+        "type": "Tool",
+        "gap": 0.67
+      },
+      {
+        "label": "Jenkins",
+        "type": "Tool",
+        "gap": 0.751
+      },
+      {
+        "label": "Celery",
+        "type": "Tool",
+        "gap": 0.664
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 8,
+    "nodes_with_bias": 6,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 4,
+      "PRESTIGE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python-skill",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.815,
+        "reason": "The significant increase in weight assigned to 'python-skill' (from 1.0 to 1.087) appears to be driven by the presence of 'Python' in the candidate's explicitly listed skills and a job description heavily reliant on Python. While Python is a valuable skill, the boost seems disproportionate considering the broader experience demonstrated – 5+ years of quantitative research and development – primarily using Python as a tool. The JD emphasizes broader engineering expertise, while the CV leans heavily on showcasing Python-related achievements, potentially signaling a prestige bias towards candidates listed with this specific technology, regardless of the depth of other relevant skills. A fairer alternative would be to reflect the combined value of all skills and experience, not to overemphasize a single technology."
+      },
+      {
+        "id": "django-tool",
+        "label": "Django",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.497,
+        "reason": "The candidate's CV explicitly states their location as Tunis, Tunisia, a potentially lower-cost area compared to locations favored in the job description's implied criteria (likely Western Europe or North America). This geographic signal is acting as a proxy for socioeconomic status, unfairly penalizing the candidate despite their demonstrable skills and experience. The JD’s emphasis on ‘entreprise innovante’ could be interpreted as favoring candidates from higher-income countries, thereby amplifying this proxy bias. A fairer alternative would be to focus solely on the candidate's technical qualifications and experience within the listed technologies, removing location as a factor."
+      },
+      {
+        "id": "redis-tool",
+        "label": "Redis",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.309,
+        "reason": "The candidate's CV heavily emphasizes experience in Tunis, Tunisia, and utilizes the Portuguese language. While not inherently negative, the JD explicitly states a preference for candidates with strong English and Portuguese skills, suggesting a potential proxy bias favoring applicants from locations where those languages are prevalent. The reduced weight reflects this potentially irrelevant factor impacting the assessment, prioritizing skills and experience over location-based signals.  A fair alternative would be to focus exclusively on the candidate's technical skills and accomplishments regardless of geographic origin or language proficiency."
+      },
+      {
+        "id": "git-tool",
+        "label": "Git",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.91,
+        "reason": "The weight increase (Delta: +0.305) is justified by the rationale: ‘Strong evidence in ‘Senior Data Scientist’ role, key skill used in championing new initiatives.’ The CV explicitly highlights Mohamed’s experience as a ‘Senior Data Scientist’ and demonstrates his impact through driving end-to-end delivery of AI pricing solutions, a key responsibility outlined in the JD. However, the increase suggests an overemphasis on this single role and its associated skills, potentially overlooking other valuable skills present in the CV (e.g., quantitative research, market microstructure). Therefore, while the increase reflects merit, it is arguably amplified, indicating a potential bias towards prioritizing the specific Senior Data Scientist role described in the JD. A correction factor of 0.8 reflects this amplified emphasis, and suggests that other aspects of his skillset should be re-weighted to align more closely with the broader requirements of the role."
+      },
+      {
+        "id": "inglais-skill",
+        "label": "anglais",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The CV prominently features ‘Tunisia’ as Mohamed’s location, while the JD doesn’t explicitly restrict candidates to a specific geographic region. This suggests a proxy bias where location signals (specifically nationality) are unfairly influencing the assessment, potentially due to assumptions about talent availability or cost. The decrease in weight (0.023) indicates a reduction in the value attributed to this skill, likely reflecting an overemphasis on candidates from certain locales. A fair alternative would be to evaluate English proficiency independently of geographic origin, focusing solely on demonstrated skills and experience."
+      },
+      {
+        "id": "docker_tool",
+        "label": "Docker",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The weight reduction is likely driven by PROXY BIAS related to the candidate's location (Tunis, Tunisia) and the use of ‘internal tools.’ The JD emphasizes experience with established technologies and systems, while the CV details using Docker for ‘internal tools’ without quantifying the scale or complexity of these projects. The lack of demonstrable skills and experience is penalized, despite the candidate's strong theoretical knowledge and stated accomplishments. A fair alternative would be to focus solely on the candidate’s demonstrated skills and quantifiable achievements in building and deploying ML systems, rather than the specific tools used – a more merit-based assessment would have valued the delivered outcomes."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3255 (sous-qualifié), CTM=0.5646 (écart structurel élevé), match_pct=45.58% → Poor Match",
+    "v6_summary": "weighted_f1=0.2522, gap_score=0.2654, ndcg_5=0.8511, missing_critical_penalty=0.1429, combo_v6_final=37.14",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "5 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.67)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

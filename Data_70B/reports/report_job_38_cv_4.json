@@ -1,0 +1,430 @@
+{
+  "job_id": "job_38",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-04T02:28:45.822777",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 22.54,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.875,
+        "coverage_rate": 0.125,
+        "nodes_audited": 3,
+        "nodes_biased": 3
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.0392,
+    "edge_score": 0.03,
+    "combined": 0.0355
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.0482,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.776,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7746,
+    "matched_nodes": "1/24",
+    "edge_match_pct": 3.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.0561,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.046,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.0344,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.7645,
+    "ndcg_10": 0.8751,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.0947,
+    "experience_density": 0.0311
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 6.33,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 3.85,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 4.69,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 90.58,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 1.03,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 0.62,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 7,
+      "match_pct": 6.6,
+      "weight_sum": 5.628
+    },
+    "Tool": {
+      "count": 10,
+      "match_pct": 0.0,
+      "weight_sum": 8.022
+    },
+    "Certification": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 0.963
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 0.9
+    },
+    "Soft Skill": {
+      "count": 5,
+      "match_pct": 10.5,
+      "weight_sum": 3.535
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 3.0,
+    "total_edges": 20,
+    "top_synergies": [
+      {
+        "edge_key": "agile_methods|full_stack_developer",
+        "source": "agile_methods",
+        "target": "full_stack_developer",
+        "w_0": 0.5,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.6,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "full_stack_developer|python",
+        "source": "full_stack_developer",
+        "target": "python",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "full_stack_developer|flask",
+        "source": "full_stack_developer",
+        "target": "flask",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "full_stack_developer|javascript",
+        "source": "full_stack_developer",
+        "target": "javascript",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "full_stack_developer|react",
+        "source": "full_stack_developer",
+        "target": "react",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Javascript",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Elasticsearch",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Redis",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Permis B",
+      "type": "Certification",
+      "gap": 0.963,
+      "severity": "critical",
+      "importance": 0.963
+    },
+    {
+      "skill": "PostgreSQL",
+      "type": "Tool",
+      "gap": 0.954,
+      "severity": "critical",
+      "importance": 0.954
+    },
+    {
+      "skill": "Full Stack Developer",
+      "type": "Domain",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Autonomie",
+      "type": "Soft Skill",
+      "gap": 0.896,
+      "severity": "critical",
+      "importance": 0.896
+    },
+    {
+      "skill": "Kafka",
+      "type": "Tool",
+      "gap": 0.836,
+      "severity": "critical",
+      "importance": 0.836
+    },
+    {
+      "skill": "Autoformation",
+      "type": "Soft Skill",
+      "gap": 0.829,
+      "severity": "critical",
+      "importance": 0.829
+    },
+    {
+      "skill": "Backend Development",
+      "type": "Hard Skill",
+      "gap": 0.8,
+      "severity": "critical",
+      "importance": 0.8
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Javascript",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Elasticsearch",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Redis",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Permis B",
+        "type": "Certification",
+        "gap": 0.963
+      },
+      {
+        "label": "PostgreSQL",
+        "type": "Tool",
+        "gap": 0.954
+      },
+      {
+        "label": "Full Stack Developer",
+        "type": "Domain",
+        "gap": 0.9
+      },
+      {
+        "label": "Autonomie",
+        "type": "Soft Skill",
+        "gap": 0.896
+      },
+      {
+        "label": "Kafka",
+        "type": "Tool",
+        "gap": 0.836
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 3,
+    "nodes_with_bias": 3,
+    "edges_audited": 1,
+    "edges_with_bias": 1,
+    "bias_categories": {
+      "PRESTIGE": 3,
+      "GENDER_DIVERSITY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.9,
+        "w_cv_corrected": 0.9,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's certification in Python for Data Science is unfairly penalized. The correction factor is set to 1.20 to account for the unfair decrease in weight. A fairer assessment would consider the candidate's skills and certifications without being influenced by the prestige of the certification provider."
+      },
+      {
+        "id": "agile_methods",
+        "label": "Agile Methods",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.938,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change is biased due to prestige bias, as the certification bonus (0.25) is unfairly favoring the candidate based on the certification in Agile methodologies, rather than the skills demonstrated. The correction factor is set to 1.25 to increase the weight, as the candidate's skills and experience in Agile methodologies are being unfairly penalized."
+      },
+      {
+        "id": "autonomy",
+        "label": "Autonomy",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.3,
+        "w_cv_corrected": 0.3,
+        "reason": "The candidate's CV mentions autonomy as a soft skill, but it is not explicitly demonstrated through specific examples or experiences. The algorithm has unfairly penalized the candidate for not showcasing autonomy in a more explicit manner, which is a common bias against candidates from diverse backgrounds who may not have had the same opportunities to develop certain skills. A fairer approach would be to consider the candidate's overall profile and experiences, rather than relying on a single mention of autonomy."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "agile_methods|full_stack_developer",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased towards candidates with prestigious certifications and skills, such as Scrum and Agile methodologies, which may not be directly relevant to the Full Stack Developer role. The ideal candidate description emphasizes the importance of Agile methodologies, which may unfairly favor candidates with similar backgrounds. A fairer approach would be to focus on the technical skills required for the role, such as Python, Flask, and React."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.0482 (sous-qualifié), CTM=0.776 (écart structurel élevé), match_pct=22.54% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.0344, ndcg_5=0.7645, missing_critical_penalty=0.0, combo_v6_final=6.33",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "21 gaps critiques identifiés",
+    "bias_note": "3 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 45,
+    "pool_size": 45,
+    "percentile": 0.0,
+    "composite_z_score": -0.8136,
+    "tier": "Bottom 50%",
+    "z_scores": {
+      "combo_v6": -1.032,
+      "wf1": -0.868,
+      "gap_score": -0.794,
+      "ntcw": -0.811,
+      "match_pct": -0.624,
+      "ndcg_5": -2.157
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 22.4153,
+        "std": 15.5835
+      },
+      "wf1": {
+        "mean": 0.1472,
+        "std": 0.1697
+      },
+      "gap_score": {
+        "mean": 0.1336,
+        "std": 0.125
+      },
+      "ntcw": {
+        "mean": 0.1689,
+        "std": 0.1488
+      },
+      "match_pct": {
+        "mean": 31.3518,
+        "std": 14.1146
+      },
+      "ndcg_5": {
+        "mean": 0.91,
+        "std": 0.0674
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

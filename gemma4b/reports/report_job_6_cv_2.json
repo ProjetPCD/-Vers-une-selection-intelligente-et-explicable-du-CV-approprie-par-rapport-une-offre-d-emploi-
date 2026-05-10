@@ -1,0 +1,395 @@
+{
+  "job_id": "job_6",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-02T17:39:44.711360",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 27.79,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.556,
+        "coverage_rate": 0.444,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.2525,
+    "edge_score": 0.1067,
+    "combined": 0.1942
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1489,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7524,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7221,
+    "matched_nodes": "3/18",
+    "edge_match_pct": 5.34
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1689,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.0706,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.0932,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1765,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.1043,
+    "weighted_recall": 0.1438,
+    "weighted_f1": {
+      "value": 0.2545,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6939,
+    "missing_critical_penalty": {
+      "value": 0.1667,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.7488,
+    "ndcg_10": 0.7591,
+    "map_score": 0.9543,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8377,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.1433,
+    "experience_density": 0.1025
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 20.61,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 13.64,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 13.16,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 88.35,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 44.92,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 27.89,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 22.87,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 0.0,
+      "weight_sum": 1.91
+    },
+    "Tool": {
+      "count": 5,
+      "match_pct": 7.0,
+      "weight_sum": 4.473
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 3.4,
+      "weight_sum": 2.988
+    },
+    "Domain": {
+      "count": 6,
+      "match_pct": 32.8,
+      "weight_sum": 4.365
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 0.881
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 5.34,
+    "total_edges": 8,
+    "top_synergies": [
+      {
+        "edge_key": "scikit_learn_tool|machine-learning-domain",
+        "source": "scikit_learn_tool",
+        "target": "machine-learning-domain",
+        "w_0": 0.803,
+        "w_cv": 0.812,
+        "w_cv_norm": 0.406,
+        "match_pct": 50.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "technological-watch|data_scientist_domain",
+        "source": "technological-watch",
+        "target": "data_scientist_domain",
+        "w_0": 0.685,
+        "w_cv": 0.131,
+        "w_cv_norm": 0.066,
+        "match_pct": 9.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_data_scientist_skill|data_scientist_domain",
+        "source": "python_data_scientist_skill",
+        "target": "data_scientist_domain",
+        "w_0": 0.942,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "sql_data_scientist_tool|data_scientist_domain",
+        "source": "sql_data_scientist_tool",
+        "target": "data_scientist_domain",
+        "w_0": 0.926,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "github_data_scientist_tool|data_scientist_domain",
+        "source": "github_data_scientist_tool",
+        "target": "data_scientist_domain",
+        "w_0": 0.924,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "GitHub",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "capacité de travailler en équipe",
+      "type": "Soft Skill",
+      "gap": 0.969,
+      "severity": "critical",
+      "importance": 0.969
+    },
+    {
+      "skill": "Data Scientist",
+      "type": "Domain",
+      "gap": 0.942,
+      "severity": "critical",
+      "importance": 0.942
+    },
+    {
+      "skill": "Pandas",
+      "type": "Tool",
+      "gap": 0.926,
+      "severity": "critical",
+      "importance": 0.926
+    },
+    {
+      "skill": "Scikit-learn",
+      "type": "Tool",
+      "gap": 0.924,
+      "severity": "critical",
+      "importance": 0.924
+    },
+    {
+      "skill": "Data Manipulation",
+      "type": "Hard Skill",
+      "gap": 0.91,
+      "severity": "critical",
+      "importance": 0.91
+    },
+    {
+      "skill": "capacité de présenter des résultats de manière claire",
+      "type": "Soft Skill",
+      "gap": 0.883,
+      "severity": "critical",
+      "importance": 0.883
+    },
+    {
+      "skill": "formation",
+      "type": "Education",
+      "gap": 0.881,
+      "severity": "critical",
+      "importance": 0.881
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "Machine Learning",
+        "type": "Domain",
+        "w_cv": 1.625
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "GitHub",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "capacité de travailler en équipe",
+        "type": "Soft Skill",
+        "gap": 0.969
+      },
+      {
+        "label": "Data Scientist",
+        "type": "Domain",
+        "gap": 0.942
+      },
+      {
+        "label": "Pandas",
+        "type": "Tool",
+        "gap": 0.926
+      },
+      {
+        "label": "Scikit-learn",
+        "type": "Tool",
+        "gap": 0.924
+      },
+      {
+        "label": "Data Manipulation",
+        "type": "Hard Skill",
+        "gap": 0.91
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 4,
+    "nodes_with_bias": 4,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 3,
+      "A. PRESTIGE BIAS": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "machine-learning-domain",
+        "label": "Machine Learning",
+        "bias_category": "A. PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.625,
+        "reason": "The candidate's resume heavily emphasizes their Master's thesis in machine learning from HEC Paris, a prestigious university, while providing limited evidence of practical application of those skills. This suggests the algorithm is over-weighting the institution's reputation over demonstrable experience, reflecting a prestige bias. The increased weight indicates a focus on the name of the university rather than concrete project outcomes, unfairly penalizing Hadrien Blanc despite his demonstrated experience and skills within the AI field. A fairer alternative would prioritize project experience and technical skills, recognizing the value of a strong academic background alongside relevant practical abilities."
+      },
+      {
+        "id": "technological-watch",
+        "label": "Veille Technologique",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The significant decrease in weight (w_cv from 0.685 to 0.35) is likely driven by the CV's mention of language skills – Portuguese and Chinese – alongside its location in Provence-Alpes-Côte d’Azur, France. This represents a proxy bias, where socioeconomic signals (location, language proficiency) are unfairly influencing the assessment instead of demonstrated skills. While the candidate possesses valuable technical expertise, the inclusion of these non-technical factors indicates an unwarranted penalty, suggesting a preference for candidates from the candidate's location or those with multilingual skills. A fair alternative would prioritize only skills related to the job requirements."
+      },
+      {
+        "id": "data-visualization-domain",
+        "label": "Data Visualization",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The candidate's CV heavily emphasizes software engineering experience (18+ years) and technical skills like RAG architecture, LLM integrations, and backend development with Python, primarily within a specific startup (SafeBrain.AI). While the JD explicitly lists Data Visualization as a required skill, the CV lacks any direct evidence of proficiency or projects utilizing data visualization tools or techniques. The focus on backend development and AI integration, particularly with Python, proxies a skillset less aligned with the stated data visualization responsibilities, suggesting a bias towards experience in related but distinct areas. Furthermore, the location of Nice, France, while not overtly negative, may represent a non-ideal location for a data science role within the company's core operations, potentially contributing to a proxy bias."
+      },
+      {
+        "id": "web-scraping-domain",
+        "label": "Web Scraping",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate’s CV prominently includes their LinkedIn profile URL (www.linkedin.com/in/hadrienblanc), which inherently associates them with a specific geographic location (France - Provence-Alpes-Côte d’Azur). This reliance on location as a signal, particularly in a context where the JD emphasizes global strategic decision-making, suggests a proxy bias related to geographic origin. While technical skills are present, the prominence of location information introduces an unfair weighting, penalizing the candidate for their location rather than their demonstrable abilities in web scraping or data collection, as the JD explicitly requests."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1489 (sous-qualifié), CTM=0.7524 (écart structurel élevé), match_pct=27.79% → Poor Match",
+    "v6_summary": "weighted_f1=0.2545, gap_score=0.0932, ndcg_5=0.7488, missing_critical_penalty=0.1667, combo_v6_final=20.61",
+    "key_strengths": "1 compétences clés validées",
+    "key_gaps": "10 gaps critiques identifiés",
+    "bias_note": "4 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

@@ -1,0 +1,289 @@
+{
+  "job_id": "job_22",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-05T09:16:29.803678",
+  "overall_assessment": {
+    "verdict": "Weak Match",
+    "match_pct": 50.95,
+    "confidence": {
+      "confidence_score": 0.53,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.286,
+        "coverage_rate": 0.571,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.5431,
+    "edge_score": 0.318,
+    "combined": 0.4531
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3563,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5452,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.4905,
+    "matched_nodes": "5/7",
+    "edge_match_pct": 15.89
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.4382,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.2821,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2438,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.4,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.1707,
+    "weighted_recall": 0.3083,
+    "weighted_f1": {
+      "value": 0.4881,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6158,
+    "missing_critical_penalty": {
+      "value": 0.3333,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.7123,
+    "ndcg_10": 0.889,
+    "map_score": 0.8762,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9762,
+    "top_skill_alignment": 0.4817,
+    "semantic_fit_score": 0.4227,
+    "experience_density": 0.1852
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 40.44,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 37.4,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 34.55,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 84.16,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 55.87,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 43.5,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 46.26,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 4,
+      "match_pct": 18.3,
+      "weight_sum": 3.125
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 60.0,
+      "weight_sum": 0.682
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 42.5,
+      "weight_sum": 0.562
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 18.7,
+      "weight_sum": 0.406
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 15.89,
+    "total_edges": 7,
+    "top_synergies": [
+      {
+        "edge_key": "azure-cloud-architect|terraform-infrastructure",
+        "source": "azure-cloud-architect",
+        "target": "terraform-infrastructure",
+        "w_0": 0.75,
+        "w_cv": 0.63,
+        "w_cv_norm": 0.315,
+        "match_pct": 42.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "terraform-infrastructure|azure-cloud-architect",
+        "source": "terraform-infrastructure",
+        "target": "azure-cloud-architect",
+        "w_0": 0.7,
+        "w_cv": 0.63,
+        "w_cv_norm": 0.315,
+        "match_pct": 45.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "azure-cloud-architect|net-cloud-development",
+        "source": "azure-cloud-architect",
+        "target": "net-cloud-development",
+        "w_0": 0.65,
+        "w_cv": 0.425,
+        "w_cv_norm": 0.212,
+        "match_pct": 32.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "net-cloud-development|azure-cloud-architect",
+        "source": "net-cloud-development",
+        "target": "azure-cloud-architect",
+        "w_0": 0.6,
+        "w_cv": 0.425,
+        "w_cv_norm": 0.212,
+        "match_pct": 35.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "azure-cloud-architect|microsoft-ecosystem",
+        "source": "azure-cloud-architect",
+        "target": "microsoft-ecosystem",
+        "w_0": 0.9,
+        "w_cv": 0.25,
+        "w_cv_norm": 0.125,
+        "match_pct": 13.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Azure",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "DevSecOps",
+      "type": "Tool",
+      "gap": 0.987,
+      "severity": "critical",
+      "importance": 0.987
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Azure",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "DevSecOps",
+        "type": "Tool",
+        "gap": 0.987
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 3,
+    "nodes_with_bias": 3,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 1,
+      "HALO": 1,
+      "D": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "terraform-infrastructure",
+        "label": "Terraform",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.26,
+        "reason": "The candidate's CV explicitly states a desire to work in Germany/Italy, indicating a preference for a location outside of Tunisia. This signals a proxy bias related to socioeconomic factors – an expectation of a candidate’s willingness to relocate to a specific European country could unfairly favor applicants with international experience or those seeking relocation opportunities, potentially overlooking equally qualified candidates without those desires. While the candidate possesses valuable skills, the expressed international aspiration introduces an external factor not directly related to their core competencies, leading to an increase in the correction factor to account for this bias."
+      },
+      {
+        "id": "architecture-applicative",
+        "label": "Architecture Applicative",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.2,
+        "reason": "The candidate’s CV explicitly states ‘I specialize in building robust architectures that perform at scale’ and highlights experience with MERN stack and TypeScript, aligning with the JD's emphasis on 'Architecture Applicative.' This strong signal regarding architectural focus is being heavily weighted (Delta +0.318), potentially overshadowing other potentially valuable skills like full-stack development experience across various technologies. A higher factor is warranted to account for this halo effect, recognizing the candidate is being overly favored for a single skill area, and to ensure a more balanced evaluation."
+      },
+      {
+        "id": "cloud-architect-role",
+        "label": "architecte cloud expérimenté",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "This CV demonstrates significant experience with modern web development technologies (React, Node.js, TypeScript) and scalable architecture design, particularly within the MERN stack. However, the job description explicitly requires 'cloud architect' experience with Azure and specifically Microsoft technologies. The CV lacks direct experience in cloud infrastructure, deployment, or security best practices, leading to an over-emphasis on the applicant's frontend skills – a proxy for the desired architectural expertise.  The increased weight reflects a misplaced focus on the candidate's full-stack capabilities rather than their suitability for a specialized cloud architect role, resulting in a bias favoring experience in a different domain."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3563 (sous-qualifié), CTM=0.5452 (écart structurel élevé), match_pct=50.95% → Weak Match",
+    "v6_summary": "weighted_f1=0.4881, gap_score=0.2438, ndcg_5=0.7123, missing_critical_penalty=0.3333, combo_v6_final=40.44",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "2 gaps critiques identifiés",
+    "bias_note": "3 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.53)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

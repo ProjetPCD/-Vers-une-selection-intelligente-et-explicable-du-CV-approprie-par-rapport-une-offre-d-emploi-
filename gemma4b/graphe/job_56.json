@@ -1,0 +1,188 @@
+{
+  "nodes": [
+    {
+      "id": "data-engineer-domain",
+      "label": "Data Engineer",
+      "type": "Domain",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "The role explicitly states 'expérience en tant que data engineer'.",
+      "inferred": false,
+      "inferred_from": "Pour réussir dans ce rôle, vous devez avoir une solide expérience en tant que data engineer"
+    },
+    {
+      "id": "etl-process",
+      "label": "ETL",
+      "type": "Domain",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "The JD mentions 'ETL' as an expertise area.",
+      "inferred": false,
+      "inferred_from": "expertise dans les domaines tels que l'ETL"
+    },
+    {
+      "id": "aws-cloud",
+      "label": "AWS",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "The JD lists AWS as a technology used.",
+      "inferred": true,
+      "inferred_from": "outils et des technologies que nous utilisons, tels que Databricks, Spark, AWS, et Azure"
+    },
+    {
+      "id": "azure-cloud",
+      "label": "Azure",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "The JD lists Azure as a technology used.",
+      "inferred": true,
+      "inferred_from": "outils et des technologies que nous utilisons, tels que Databricks, Spark, AWS, et Azure"
+    },
+    {
+      "id": "python-programming",
+      "label": "Python",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "The JD explicitly states 'compétences en programmation, notamment en Python'.",
+      "inferred": true,
+      "inferred_from": "compétences en programmation, notamment en Python, SQL, et JavaScript"
+    },
+    {
+      "id": "javascript-programming",
+      "label": "JavaScript",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "The JD explicitly states 'compétences en programmation, notamment en Python, SQL, et JavaScript'.",
+      "inferred": true,
+      "inferred_from": "compétences en programmation, notamment en Python, SQL, et JavaScript"
+    },
+    {
+      "id": "data-architectures",
+      "label": "Architectures de données",
+      "type": "Domain",
+      "w_0": 0.916,
+      "seniority_required": "Senior",
+      "context": "The JD mentions 'architectures de données' as an expertise area.",
+      "inferred": true,
+      "inferred_from": "les domaines tels que l'ETL, les Data Lake, et les architectures de données"
+    },
+    {
+      "id": "sql-querying",
+      "label": "SQL",
+      "type": "Hard Skill",
+      "w_0": 0.822,
+      "seniority_required": "Senior",
+      "context": "The JD explicitly states 'compétences en programmation, notamment en Python, SQL, et JavaScript'.",
+      "inferred": true,
+      "inferred_from": "compétences en programmation, notamment en Python, SQL, et JavaScript"
+    },
+    {
+      "id": "data-lake-storage",
+      "label": "Data Lake",
+      "type": "Domain",
+      "w_0": 0.768,
+      "seniority_required": "Senior",
+      "context": "The JD mentions 'Data Lake' as an expertise area.",
+      "inferred": true,
+      "inferred_from": "les domaines tels que l'ETL, les Data Lake, et les architectures de données"
+    },
+    {
+      "id": "spark-processing",
+      "label": "Spark",
+      "type": "Tool",
+      "w_0": 0.788,
+      "seniority_required": "Senior",
+      "context": "The JD lists Spark as a technology used.",
+      "inferred": true,
+      "inferred_from": "outils et des technologies que nous utilisons, tels que Databricks, Spark, AWS, et Azure"
+    },
+    {
+      "id": "databricks_data_engineer",
+      "label": "Databricks",
+      "type": "Tool",
+      "w_0": 0.62,
+      "seniority_required": "N/A",
+      "context": "The JD explicitly lists Databricks as an important technology used.",
+      "inferred": true,
+      "inferred_from": "tels que Databricks, Spark, AWS, et Azure"
+    }
+  ],
+  "edges": [
+    {
+      "source": "data-engineer-domain",
+      "target": "etl-process",
+      "relation": "part_of",
+      "weight": 0.85,
+      "rationale": "The job context explicitly states a need for experience in ETL processes within the role of a data engineer."
+    },
+    {
+      "source": "data-engineer-domain",
+      "target": "data-lake-storage",
+      "relation": "part_of",
+      "weight": 0.85,
+      "rationale": "The job context explicitly states a need for experience in Data Lake within the role of a data engineer."
+    },
+    {
+      "source": "data-engineer-domain",
+      "target": "data-architectures",
+      "relation": "part_of",
+      "weight": 0.85,
+      "rationale": "The job context explicitly states a need for experience in Data Architectures within the role of a data engineer."
+    },
+    {
+      "source": "python-programming",
+      "target": "data-engineer-domain",
+      "relation": "requires",
+      "weight": 0.9,
+      "rationale": "The job context mentions ‘solides compétences en programmation, notamment en Python’—Python is essential for data engineering tasks."
+    },
+    {
+      "source": "sql-querying",
+      "target": "data-engineer-domain",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "The job context mentions ‘bonnes compétences en SQL’—SQL is essential for data engineering tasks."
+    },
+    {
+      "source": "javascript-programming",
+      "target": "data-engineer-domain",
+      "relation": "requires",
+      "weight": 0.65,
+      "rationale": "While less emphasized, JavaScript is a common skill in modern data engineering roles, particularly for scripting and automation."
+    },
+    {
+      "source": "spark-processing",
+      "target": "data-engineer-domain",
+      "relation": "requires",
+      "weight": 0.788,
+      "rationale": "The job context mentions ‘Spark’—Spark is a key tool for data engineers, especially for large-scale data processing."
+    },
+    {
+      "source": "aws-cloud",
+      "target": "data-engineer-domain",
+      "relation": "supports",
+      "weight": 0.65,
+      "rationale": "AWS is a common cloud platform utilized by data engineers; this provides support for various tasks."
+    },
+    {
+      "source": "azure-cloud",
+      "target": "data-engineer-domain",
+      "relation": "supports",
+      "weight": 0.65,
+      "rationale": "Azure is a common cloud platform utilized by data engineers; this provides support for various tasks."
+    },
+    {
+      "source": "databricks_data_engineer",
+      "target": "data-engineer-domain",
+      "relation": "supports",
+      "weight": 0.62,
+      "rationale": "Databricks is a key tool for data engineers, providing support for processing and analytics."
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_56"
+}

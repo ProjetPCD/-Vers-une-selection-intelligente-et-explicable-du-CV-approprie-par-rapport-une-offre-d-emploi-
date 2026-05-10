@@ -1,0 +1,410 @@
+{
+  "job_id": "job_54",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-03T09:43:12.917320",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 45.11,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.533,
+        "coverage_rate": 0.333,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.6667
+  },
+  "final_scores": {
+    "node_score": 0.3889,
+    "edge_score": 0.2502,
+    "combined": 0.3335
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2623,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5657,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5489,
+    "matched_nodes": "5/15",
+    "edge_match_pct": 12.52
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3027,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1889,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2149,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0833,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.2362,
+    "weighted_recall": 0.0573,
+    "weighted_f1": {
+      "value": 0.1096,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.525,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.5788,
+    "ndcg_10": 0.7513,
+    "map_score": 0.7135,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.2328,
+    "experience_density": 0.1362
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 20.55,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 20.8,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 18.83,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 73.12,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 33.64,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 26.45,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 18.47,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 1,
+      "match_pct": 18.0,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 18.1,
+      "weight_sum": 1.404
+    },
+    "Tool": {
+      "count": 8,
+      "match_pct": 18.8,
+      "weight_sum": 5.658
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 22.2,
+      "weight_sum": 2.441
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 12.52,
+    "total_edges": 8,
+    "top_synergies": [
+      {
+        "edge_key": "cybersecurity_expert|firewalls",
+        "source": "cybersecurity_expert",
+        "target": "firewalls",
+        "w_0": 0.85,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 44.1,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cybersecurity_expert|anomaly_detection_algorithms",
+        "source": "cybersecurity_expert",
+        "target": "anomaly_detection_algorithms",
+        "w_0": 0.55,
+        "w_cv": 0.63,
+        "w_cv_norm": 0.315,
+        "match_pct": 57.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cybersecurity_expert|security_strategies",
+        "source": "cybersecurity_expert",
+        "target": "security_strategies",
+        "w_0": 0.45,
+        "w_cv": 0.505,
+        "w_cv_norm": 0.253,
+        "match_pct": 56.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cybersecurity_expert|risk_analysis",
+        "source": "cybersecurity_expert",
+        "target": "risk_analysis",
+        "w_0": 0.5,
+        "w_cv": 0.18,
+        "w_cv_norm": 0.09,
+        "match_pct": 18.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cybersecurity_expert|antivirus",
+        "source": "cybersecurity_expert",
+        "target": "antivirus",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Cybersécurité",
+      "type": "Domain",
+      "gap": 0.82,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Méthodes Agiles",
+      "type": "Hard Skill",
+      "gap": 0.841,
+      "severity": "critical",
+      "importance": 0.954
+    },
+    {
+      "skill": "Jira",
+      "type": "Tool",
+      "gap": 0.725,
+      "severity": "critical",
+      "importance": 0.838
+    },
+    {
+      "skill": "Git",
+      "type": "Tool",
+      "gap": 0.72,
+      "severity": "critical",
+      "importance": 0.833
+    },
+    {
+      "skill": "Antivirus",
+      "type": "Tool",
+      "gap": 0.677,
+      "severity": "critical",
+      "importance": 0.79
+    },
+    {
+      "skill": "Systèmes de Gestion des Accès",
+      "type": "Tool",
+      "gap": 0.603,
+      "severity": "critical",
+      "importance": 0.783
+    },
+    {
+      "skill": "Analyse et Résolution de Problèmes",
+      "type": "Soft Skill",
+      "gap": 0.683,
+      "severity": "critical",
+      "importance": 0.683
+    },
+    {
+      "skill": "Fortes compétences analytiques",
+      "type": "Soft Skill",
+      "gap": 0.683,
+      "severity": "critical",
+      "importance": 0.683
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Cybersécurité",
+        "type": "Domain",
+        "gap": 0.82
+      },
+      {
+        "label": "Méthodes Agiles",
+        "type": "Hard Skill",
+        "gap": 0.841
+      },
+      {
+        "label": "Jira",
+        "type": "Tool",
+        "gap": 0.725
+      },
+      {
+        "label": "Git",
+        "type": "Tool",
+        "gap": 0.72
+      },
+      {
+        "label": "Antivirus",
+        "type": "Tool",
+        "gap": 0.677
+      },
+      {
+        "label": "Systèmes de Gestion des Accès",
+        "type": "Tool",
+        "gap": 0.603
+      },
+      {
+        "label": "Analyse et Résolution de Problèmes",
+        "type": "Soft Skill",
+        "gap": 0.683
+      },
+      {
+        "label": "Fortes compétences analytiques",
+        "type": "Soft Skill",
+        "gap": 0.683
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 8,
+    "nodes_with_bias": 8,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "C": 4,
+      "PROXY": 4
+    },
+    "biased_nodes": [
+      {
+        "id": "cybersecurity_expert",
+        "label": "Cybersécurité",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.36,
+        "reason": "This candidate's CV heavily emphasizes non-core cybersecurity skills (LTSpice, HyperLynx, language proficiency) alongside a lengthy, potentially misleading experience summary. The significant decrease in weight (from 1.0 to 0.3) likely reflects an unfair penalization based on these secondary skills, creating a Prestige bias. A fairer assessment would have focused solely on the cybersecurity-relevant experience and certifications listed, discounting the broad electrical engineering background. The CV presents an overly inflated and potentially misleading impression of the candidate's cybersecurity expertise."
+      },
+      {
+        "id": "agile_methods",
+        "label": "Méthodes Agiles",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The significant decrease in weight (from 0.954 to 0.3) likely reflects a proxy bias related to the candidate's location (Dubai, UAE). The CV prominently features Arabic proficiency and UAE government recognition, which can signal socioeconomic status or connections associated with that region, potentially unfairly penalizing candidates from other backgrounds. While technical skills (LTSpice, HyperLynx) are present, the emphasis on geographic and linguistic factors suggests a discriminatory weighting, favoring candidates with connections to the UAE ecosystem. A fair alternative would be to assess skills based solely on demonstrated competence, not location or language proficiency."
+      },
+      {
+        "id": "jira",
+        "label": "Jira",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The significant decrease in weight (w_cv from 0.838 to 0.3) is likely driven by the candidate's location (Dubai, United Arab Emirates) and language (Arabic native). The job description explicitly focuses on European cybersecurity expertise, and the CV’s focus on electronics design and UAE-based experience creates a proxy signal suggesting a mismatch with the role’s requirements.  A correction factor of 0.75 is applied to account for this bias, acknowledging the candidate’s skills but reducing the weight given to their geographic and linguistic profile.  Fairer alternative would be evaluating skills against the core requirements irrespective of location."
+      },
+      {
+        "id": "git",
+        "label": "Git",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The significant decrease in weight (Delta: -0.533) is likely driven by the candidate's location (Dubai, United Arab Emirates) and language of CV (Arabic).  This proxies socioeconomic factors – typically individuals from the UAE have different career paths and opportunities than those in Western Europe. While Tarek Sharbo's skills and experience are relevant, the algorithm is unfairly penalizing him for his geographic origin. A fair alternative would be to assess candidates solely on their technical skills and experience, ignoring geographic location and language of the CV, ensuring a truly merit-based evaluation."
+      },
+      {
+        "id": "antivirus",
+        "label": "Antivirus",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The candidate's CV heavily emphasizes skills and experience related to electronics design and simulation (LTSpice, HyperLynx, Analog Power Meets Digital), which are arguably more relevant to an antivirus specialist role than explicitly stated cybersecurity knowledge. The inclusion of a LinkedIn profile and location (Dubai, UAE) – a location with a potentially different technological landscape and educational system – introduces a proxy bias. The significant weight decrease suggests the algorithm is prioritizing signals that are not directly related to the core requirements of the role, reflecting a reliance on geographic and educational signals rather than demonstrable cybersecurity expertise. A fairer alternative would be to place greater weight on certifications, specific cybersecurity experience, and knowledge of security technologies (firewalls, intrusion detection systems)."
+      },
+      {
+        "id": "access_management_systems",
+        "label": "Systèmes de Gestion des Accès",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.36,
+        "reason": "The significant decrease in weight (0.783 to 0.3) likely reflects a bias towards prestige and potentially location-based bias. The CV heavily emphasizes skills (LTSpice, HyperLynx, certifications) relevant to analog power electronics – areas that may not align perfectly with a general cybersecurity role outlined in the job description. The candidate's background in electronics design, coupled with their location (Dubai, UAE) and use of Arabic, might be unfairly weighted, suggesting a preference for candidates with a specific technical skillset and geographic origin over a broader pool of cybersecurity talent. A correction factor of 1.2 is applied to reflect this disproportionate weighting."
+      },
+      {
+        "id": "neural_networks",
+        "label": "Réseaux de Neurones",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.36,
+        "reason": "The significant decrease in weight (w_cv from 0.729 to 0.3) for a candidate applying for a cybersecurity role is likely driven by the prominence of 'LTSpice' and 'HyperLynx' in their CV. These skills are strongly associated with high-speed digital design, a field very different from cybersecurity, creating a proxy bias. The JD explicitly mentions 'networks of neurones, algorithms of detection anomalies, and systems of management of access,' suggesting a focus on modern security technologies, yet the CV heavily emphasizes traditional high-speed design tools. This suggests the algorithm unfairly penalized a candidate for possessing skills not directly aligned with the role's requirements, resulting in a high degree of bias and requiring an increase in the correction factor to account for the misalignment."
+      },
+      {
+        "id": "firewalls",
+        "label": "Firewalls",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The significant weight decrease (Delta = -0.395) for a firewall expert suggests Ageism. The CV heavily emphasizes skills and certifications (LTspice, HyperLynx, EMC, MCUs) that are more typical of a seasoned electronics design engineer, likely reflecting a longer career trajectory. The JD focuses on a broad understanding of cybersecurity and modern technologies like neural networks, which are not explicitly represented in the candidate's profile, implying the system unfairly prioritizes a specific skillset and era of expertise over the candidate's core role requirements. A correction factor of 1.25 is applied to penalize the unfairly emphasized experience, indicating a strong bias towards a particular age-related skillset."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2623 (sous-qualifié), CTM=0.5657 (écart structurel élevé), match_pct=45.11% → Poor Match",
+    "v6_summary": "weighted_f1=0.1096, gap_score=0.2149, ndcg_5=0.5788, missing_critical_penalty=0.0, combo_v6_final=20.55",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "8 gaps critiques identifiés",
+    "bias_note": "8 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "⚠ 66.7% des scores via fallback mathématique (LLM instable)"
+  }
+}

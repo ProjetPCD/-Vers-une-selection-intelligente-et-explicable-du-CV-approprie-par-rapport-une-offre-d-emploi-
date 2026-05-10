@@ -1,0 +1,436 @@
+{
+  "job_id": "job_5",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-02T17:30:09.144110",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 27.98,
+    "confidence": {
+      "confidence_score": 0.64,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.722,
+        "coverage_rate": 0.778,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.3165,
+    "edge_score": 0.3542,
+    "combined": 0.3316
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1801,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7285,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7202,
+    "matched_nodes": "1/18",
+    "edge_match_pct": 17.71
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1848,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.3514,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1555,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1176,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.6573,
+    "weighted_recall": 0.0695,
+    "weighted_f1": {
+      "value": 0.1334,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5155,
+    "missing_critical_penalty": {
+      "value": 0.1429,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9023,
+    "ndcg_10": 0.8841,
+    "map_score": 0.9857,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9781,
+    "top_skill_alignment": 0.4292,
+    "semantic_fit_score": 0.3719,
+    "experience_density": 0.1341
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 24.17,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 22.63,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 22.18,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 95.59,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 38.76,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 31.37,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 39.61,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Education": {
+      "count": 2,
+      "match_pct": 28.1,
+      "weight_sum": 2.0
+    },
+    "Tool": {
+      "count": 8,
+      "match_pct": 8.7,
+      "weight_sum": 7.246
+    },
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 49.8,
+      "weight_sum": 1.8
+    },
+    "Soft Skill": {
+      "count": 3,
+      "match_pct": 8.3,
+      "weight_sum": 2.306
+    },
+    "Responsibility": {
+      "count": 1,
+      "match_pct": 9.4,
+      "weight_sum": 0.762
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 5.0,
+      "weight_sum": 1.135
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 17.71,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "python_1|data_analysis_experience",
+        "source": "python_1",
+        "target": "data_analysis_experience",
+        "w_0": 0.95,
+        "w_cv": 0.99,
+        "w_cv_norm": 0.495,
+        "match_pct": 52.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data_analysis_experience|data_responsibility_1",
+        "source": "data_analysis_experience",
+        "target": "data_responsibility_1",
+        "w_0": 0.75,
+        "w_cv": 0.559,
+        "w_cv_norm": 0.28,
+        "match_pct": 37.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "sql_1|data_analysis_experience",
+        "source": "sql_1",
+        "target": "data_analysis_experience",
+        "w_0": 0.85,
+        "w_cv": 0.54,
+        "w_cv_norm": 0.27,
+        "match_pct": 31.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "git_version_control|confluence",
+        "source": "git_version_control",
+        "target": "confluence",
+        "w_0": 0.5,
+        "w_cv": 0.502,
+        "w_cv_norm": 0.251,
+        "match_pct": 50.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "master_degree_1|big_data_high_performance_computing",
+        "source": "master_degree_1",
+        "target": "big_data_high_performance_computing",
+        "w_0": 0.65,
+        "w_cv": 0.35,
+        "w_cv_norm": 0.175,
+        "match_pct": 26.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Double Diplôme Ingénieur en Big Data et Calculs Hautes Performances",
+      "type": "Education",
+      "gap": 0.738,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Master en Scientific Computing",
+      "type": "Education",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Power BI",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 0.925,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Microsoft 365",
+      "type": "Tool",
+      "gap": 0.95,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Looker",
+      "type": "Tool",
+      "gap": 0.972,
+      "severity": "critical",
+      "importance": 0.972
+    },
+    {
+      "skill": "Qlik Sense",
+      "type": "Tool",
+      "gap": 0.918,
+      "severity": "critical",
+      "importance": 0.968
+    },
+    {
+      "skill": "Power BI, Qlik Sense, Looker",
+      "type": "Tool",
+      "gap": 0.837,
+      "severity": "critical",
+      "importance": 0.95
+    },
+    {
+      "skill": "Excellentes compétences de communication et de présentation",
+      "type": "Soft Skill",
+      "gap": 0.909,
+      "severity": "critical",
+      "importance": 0.909
+    },
+    {
+      "skill": "Responsable des processus décisionnels",
+      "type": "Responsibility",
+      "gap": 0.668,
+      "severity": "critical",
+      "importance": 0.762
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Double Diplôme Ingénieur en Big Data et Calculs Hautes Performances",
+        "type": "Education",
+        "gap": 0.738
+      },
+      {
+        "label": "Master en Scientific Computing",
+        "type": "Education",
+        "gap": 0.7
+      },
+      {
+        "label": "Power BI",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "gap": 0.925
+      },
+      {
+        "label": "Microsoft 365",
+        "type": "Tool",
+        "gap": 0.95
+      },
+      {
+        "label": "Looker",
+        "type": "Tool",
+        "gap": 0.972
+      },
+      {
+        "label": "Qlik Sense",
+        "type": "Tool",
+        "gap": 0.918
+      },
+      {
+        "label": "Power BI, Qlik Sense, Looker",
+        "type": "Tool",
+        "gap": 0.837
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 10,
+    "nodes_with_bias": 8,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 3,
+      "PRESTIGE|PROXY": 2,
+      "PRESTIGE|C_PROXIES": 1,
+      "PRESTIGE|CAGEISM|HALO": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "engineer_degree_1",
+        "label": "Double Diplôme Ingénieur en Big Data et Calculs Hautes Performances",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.525,
+        "reason": "The candidate's CV highlights a prestigious academic background (Double degree in Big Data and HPC, Master in Scientific Computing from INSAT - a highly-regarded institution), which is explicitly weighted higher than demonstrable skills. The JD emphasizes this degree as a core requirement, suggesting a preference for candidates from these specific institutions. While the project description showcases relevant deep learning experience, the emphasis on the degree itself indicates a prestige bias, unfairly penalizing candidates from less well-known universities and favoring those with a specific academic pedigree. A fair alternative would reduce the weighting to reflect skill demonstration alone."
+      },
+      {
+        "id": "master_degree_1",
+        "label": "Master en Scientific Computing",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The candidate's Master's thesis topic (Alzheimer's Disease Classification) heavily emphasizes a specific field – Scientific Computing – which is explicitly listed as a desired qualification in the job description (Master en Scientific Computing). Despite the strong, relevant thesis, the weight is reduced (-0.50) likely due to the job requiring a 'Double diplôme Ingénieur en Big Data et Calculs Hautes Performances', suggesting a broader skillset than solely the listed thesis area. This represents prestige bias, where the name of the Master's degree overshadows the demonstrated skills, even though the skills are relevant. A higher factor (1.2) is warranted to reflect the explicit weighting in the JD and the significant project experience."
+      },
+      {
+        "id": "sql_1",
+        "label": "SQL",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.15,
+        "reason": "The weight change (Delta = -0.8) reflects an undue emphasis on the candidate's academic project – specifically, a Master's thesis on Alzheimer's Disease Classification – rather than demonstrable skills in data analysis, visualization, or programming. While the project title mentions relevant technologies like Deep Graph CNN and Hippocampal shape analysis, the JD prioritizes a broad range of data analysis experience including ‘excellentes compétences de communication et de présentation’ without related project details. This unfairly penalizes the candidate for pursuing a research-focused Master's, suggesting prestige of the university/thesis topic outweighs demonstrable practical abilities, creating a bias against candidates with strong research backgrounds."
+      },
+      {
+        "id": "power_bi_qlik_sense_looker",
+        "label": "Power BI, Qlik Sense, Looker",
+        "bias_category": "PRESTIGE|PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The significant weight decrease (Delta: -0.65) is likely driven by prestige bias related to the candidate's academic background and the context of the job description. The JD explicitly lists a 'Double degree in Big Data and HPC' as a requirement, suggesting a preference for candidates from prestigious universities. Coupled with the CV's focus on a highly specialized Deep Learning internship at InstaDeep (a well-regarded AI company) within Tunisia, the candidate's profile may be overqualified for a role described as needing an 'experienced Data Analyst' within a major aerospace industry player, indicating a proxy bias through academic background."
+      },
+      {
+        "id": "data_responsibility_1",
+        "label": "Responsable des processus décisionnels",
+        "bias_category": "PRESTIGE|C_PROXIES",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant weight change (DECREASED) favoring the university (INSAT) and specific research project (Alzheimer's Disease Classification) suggests prestige bias. The candidate's academic background and the highly specialized nature of their research experience (Deep Graph CNN, Hippocampal Shape Morphometric Analysis) are being overweighted compared to demonstrable skills like SQL, Python, and experience with visualization tools. A fairer alternative would consider a broader range of data analysis experience and skills regardless of the university or specific research focus, reducing the impact of this prestige signal."
+      },
+      {
+        "id": "autonomy_teamwork",
+        "label": "Ability to work autonomously and in a team",
+        "bias_category": "PRESTIGE|CAGEISM|HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The algorithm significantly devalued the candidate's weighting (from 0.744 to 0.25) primarily due to the candidate's academic background – a Computer Science degree from INSAT, a less prestigious institution compared to the ideal ‘Double diplôme Ingénieur en Big Data et Calculs Hautes Performances / Master en Scientific Computing’ requirement. Additionally, the candidate's CV heavily emphasizes research projects utilizing Deep Learning and Geometric Deep Learning, a highly specialized skillset not explicitly mentioned in the JD, suggesting a Halo bias – the candidate was judged favorably due to this particular skill set. A fairer alternative would be to assess the candidate's skills based on the specific requirements of the job, giving appropriate weight to relevant experience regardless of the university."
+      },
+      {
+        "id": "communication_skills",
+        "label": "Excellent Communication Skills",
+        "bias_category": "PRESTIGE|PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The communication skills weight decreased significantly (Delta = -0.153) despite the candidate possessing a strong academic background (Double degree in Big Data & HPC, research internship at a prestigious institution) and demonstrable skills in Deep Learning. The CV’s emphasis on a geographically specific institution (InstaDeep in Tunisia) and a research project focused on a niche area of Deep Learning (Hippocampus shape analysis) suggests a prestige bias, prioritizing the university and research context over the explicit communication skills explicitly listed in the JD. A fair alternative would be to maintain the ideal weight of 0.653, acknowledging the candidate's technical expertise."
+      },
+      {
+        "id": "git_version_control",
+        "label": "Git",
+        "bias_category": "NONE",
+        "severity": "LOW",
+        "correction_factor": 1.08,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.004,
+        "reason": "This weight increase for Git experience is merit-based. The candidate's CV explicitly details a relevant project – ‘Alzheimer’s Disease’ Classification – where they utilized Git for version control and applied Geometric Deep Learning techniques. The project description demonstrates a sophisticated understanding of data analysis, deep learning, and relevant tools, aligning directly with the job description's requirements for data pipeline management and collaboration. The strong evidence supports the increased weighting, indicating a valuable skill, and no bias is present."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1801 (sous-qualifié), CTM=0.7285 (écart structurel élevé), match_pct=27.98% → Poor Match",
+    "v6_summary": "weighted_f1=0.1334, gap_score=0.1555, ndcg_5=0.9023, missing_critical_penalty=0.1429, combo_v6_final=24.17",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "13 gaps critiques identifiés",
+    "bias_note": "8 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.64)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

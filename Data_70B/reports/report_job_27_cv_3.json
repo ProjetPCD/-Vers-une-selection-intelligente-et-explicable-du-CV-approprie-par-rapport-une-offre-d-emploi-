@@ -1,0 +1,419 @@
+{
+  "job_id": "job_27",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-05T01:21:57.185298",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 23.11,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.9,
+        "coverage_rate": 0.1,
+        "nodes_audited": 2,
+        "nodes_biased": 2
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.0575,
+    "edge_score": 0.04,
+    "combined": 0.0505
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.0695,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7774,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7689,
+    "matched_nodes": "1/20",
+    "edge_match_pct": 4.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.0661,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.0391,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.049,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.05,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.5,
+    "weighted_recall": 0.0371,
+    "weighted_f1": {
+      "value": 0.0724,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6,
+    "missing_critical_penalty": {
+      "value": 0.0625,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.9562,
+    "ndcg_10": 0.9739,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.2338,
+    "experience_density": 0.0465
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 12.84,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 5.26,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 11.39,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 98.25,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 36.64,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 24.59,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 18.93,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 10,
+      "match_pct": 0.0,
+      "weight_sum": 8.46
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 60.0,
+      "weight_sum": 0.9
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 0.0,
+      "weight_sum": 1.548
+    },
+    "Tool": {
+      "count": 2,
+      "match_pct": 23.4,
+      "weight_sum": 1.66
+    },
+    "Soft Skill": {
+      "count": 5,
+      "match_pct": 0.0,
+      "weight_sum": 3.607
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 4.0,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "embedded_systems_engineer|git",
+        "source": "embedded_systems_engineer",
+        "target": "git",
+        "w_0": 0.5,
+        "w_cv": 0.48,
+        "w_cv_norm": 0.48,
+        "match_pct": 96.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "embedded_systems_engineer|c_cpp",
+        "source": "embedded_systems_engineer",
+        "target": "c_cpp",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "embedded_systems_engineer|java",
+        "source": "embedded_systems_engineer",
+        "target": "java",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "embedded_systems_engineer|vhdl",
+        "source": "embedded_systems_engineer",
+        "target": "vhdl",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "embedded_systems_engineer|svn",
+        "source": "embedded_systems_engineer",
+        "target": "svn",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Java",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "VHDL",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Agile Methodologies",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Embedded Systems Engineer",
+      "type": "Domain",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "VHDL Programming",
+      "type": "Hard Skill",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "C/C++",
+      "type": "Hard Skill",
+      "gap": 0.893,
+      "severity": "critical",
+      "importance": 0.893
+    },
+    {
+      "skill": "Java Programming",
+      "type": "Hard Skill",
+      "gap": 0.869,
+      "severity": "critical",
+      "importance": 0.869
+    },
+    {
+      "skill": "SVN",
+      "type": "Tool",
+      "gap": 0.83,
+      "severity": "critical",
+      "importance": 0.83
+    },
+    {
+      "skill": "C Programming",
+      "type": "Hard Skill",
+      "gap": 0.819,
+      "severity": "critical",
+      "importance": 0.819
+    },
+    {
+      "skill": "Teamwork",
+      "type": "Soft Skill",
+      "gap": 0.745,
+      "severity": "critical",
+      "importance": 0.745
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Java",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "VHDL",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Agile Methodologies",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Embedded Systems Engineer",
+        "type": "Domain",
+        "gap": 0.9
+      },
+      {
+        "label": "VHDL Programming",
+        "type": "Hard Skill",
+        "gap": 0.9
+      },
+      {
+        "label": "C/C++",
+        "type": "Hard Skill",
+        "gap": 0.893
+      },
+      {
+        "label": "Java Programming",
+        "type": "Hard Skill",
+        "gap": 0.869
+      },
+      {
+        "label": "SVN",
+        "type": "Tool",
+        "gap": 0.83
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 2,
+    "nodes_with_bias": 2,
+    "edges_audited": 1,
+    "edges_with_bias": 1,
+    "bias_categories": {
+      "PRESTIGE": 3
+    },
+    "biased_nodes": [
+      {
+        "id": "engineer_degree",
+        "label": "Engineer Degree",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.2,
+        "w_cv_corrected": 1.2,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's Bachelor of Engineering degree from Visvesvaraya Technological University is not explicitly mentioned as a requirement in the job description. The ideal weight of 0.9 was decreased to 0.5, unfairly penalizing the candidate. A correction factor of 1.20 is applied to increase the weight to its original value, ensuring a fair evaluation."
+      },
+      {
+        "id": "git",
+        "label": "Git",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.938,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's skills in Git are downplayed despite being mentioned in the skills section, likely because the candidate's university (Visvesvaraya Technological University) is not considered prestigious. A fairer assessment would give more weight to the candidate's demonstrated skills, rather than their educational background."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "embedded_systems_engineer|git",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.48,
+        "reason": "The weight change is biased towards candidates with experience at Tata Consultancy Services, a prestigious company. This is prestige bias, as the weight is increased due to the company name rather than the skills demonstrated. A fair alternative would be to focus on the skills and experience mentioned in the job description, such as proficiency in C/C++, Java, VHDL, and Git."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.0695 (sous-qualifié), CTM=0.7774 (écart structurel élevé), match_pct=23.11% → Poor Match",
+    "v6_summary": "weighted_f1=0.0724, gap_score=0.049, ndcg_5=0.9562, missing_critical_penalty=0.0625, combo_v6_final=12.84",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "18 gaps critiques identifiés",
+    "bias_note": "2 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 15,
+    "pool_size": 30,
+    "percentile": 0.5172,
+    "composite_z_score": -0.2013,
+    "tier": "Top 50%",
+    "z_scores": {
+      "combo_v6": -0.319,
+      "wf1": -0.216,
+      "gap_score": -0.36,
+      "ntcw": -0.332,
+      "match_pct": -0.188,
+      "ndcg_5": 0.868
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 15.953,
+        "std": 9.7668
+      },
+      "wf1": {
+        "mean": 0.0984,
+        "std": 0.1202
+      },
+      "gap_score": {
+        "mean": 0.0702,
+        "std": 0.0588
+      },
+      "ntcw": {
+        "mean": 0.0972,
+        "std": 0.0834
+      },
+      "match_pct": {
+        "mean": 24.7647,
+        "std": 8.8085
+      },
+      "ndcg_5": {
+        "mean": 0.8864,
+        "std": 0.0804
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

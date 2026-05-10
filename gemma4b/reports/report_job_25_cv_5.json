@@ -1,0 +1,418 @@
+{
+  "job_id": "job_25",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-05T11:25:13.111879",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 31.37,
+    "confidence": {
+      "confidence_score": 0.66,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.643,
+        "coverage_rate": 0.786,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.4133,
+    "edge_score": 0.6709,
+    "combined": 0.5163
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2325,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.706,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6863,
+    "matched_nodes": "4/14",
+    "edge_match_pct": 33.52
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2581,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.5162,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.1797,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1538,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.2761,
+    "weighted_recall": 0.1087,
+    "weighted_f1": {
+      "value": 0.2003,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.58,
+    "missing_critical_penalty": {
+      "value": 0.1818,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.7676,
+    "ndcg_10": 0.8348,
+    "map_score": 0.8053,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.962,
+    "top_skill_alignment": 0.4637,
+    "semantic_fit_score": 0.342,
+    "experience_density": 0.1723
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 29.82,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 32.24,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 23.0,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 83.89,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 40.35,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 33.72,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 44.03,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Education": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 26.1,
+      "weight_sum": 3.0
+    },
+    "Tool": {
+      "count": 8,
+      "match_pct": 18.0,
+      "weight_sum": 6.83
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 48.0,
+      "weight_sum": 0.84
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 33.52,
+    "total_edges": 7,
+    "top_synergies": [
+      {
+        "edge_key": "python-skill|ai_engineer_1",
+        "source": "python-skill",
+        "target": "ai_engineer_1",
+        "w_0": 0.95,
+        "w_cv": 1.011,
+        "w_cv_norm": 0.505,
+        "match_pct": 53.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ai_application_development_1|ai_engineer_1",
+        "source": "ai_application_development_1",
+        "target": "ai_engineer_1",
+        "w_0": 0.8,
+        "w_cv": 0.958,
+        "w_cv_norm": 0.479,
+        "match_pct": 59.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "tensorflow-tool|ai_engineer_1",
+        "source": "tensorflow-tool",
+        "target": "ai_engineer_1",
+        "w_0": 0.9,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 47.2,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "pytorch-tool|ai_engineer_1",
+        "source": "pytorch-tool",
+        "target": "ai_engineer_1",
+        "w_0": 0.85,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 50.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "kubernetes-tool|ai_engineer_1",
+        "source": "kubernetes-tool",
+        "target": "ai_engineer_1",
+        "w_0": 0.7,
+        "w_cv": 0.417,
+        "w_cv_norm": 0.208,
+        "match_pct": 29.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Education",
+      "type": "Education",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Java",
+      "type": "Hard Skill",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.662,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Scikit-learn",
+      "type": "Tool",
+      "gap": 0.79,
+      "severity": "critical",
+      "importance": 0.997
+    },
+    {
+      "skill": "PyTorch",
+      "type": "Tool",
+      "gap": 0.896,
+      "severity": "critical",
+      "importance": 0.978
+    },
+    {
+      "skill": "Kubernetes",
+      "type": "Tool",
+      "gap": 0.918,
+      "severity": "critical",
+      "importance": 0.918
+    },
+    {
+      "skill": "NoSQL",
+      "type": "Tool",
+      "gap": 0.864,
+      "severity": "critical",
+      "importance": 0.864
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.787,
+      "severity": "critical",
+      "importance": 0.787
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Education",
+        "type": "Education",
+        "gap": 1.0
+      },
+      {
+        "label": "Java",
+        "type": "Hard Skill",
+        "gap": 0.906
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 0.906
+      },
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.662
+      },
+      {
+        "label": "Scikit-learn",
+        "type": "Tool",
+        "gap": 0.79
+      },
+      {
+        "label": "PyTorch",
+        "type": "Tool",
+        "gap": 0.896
+      },
+      {
+        "label": "Kubernetes",
+        "type": "Tool",
+        "gap": 0.918
+      },
+      {
+        "label": "NoSQL",
+        "type": "Tool",
+        "gap": 0.864
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 8,
+    "nodes_with_bias": 8,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "C": 4,
+      "PRESTIGE": 2,
+      "PROXY": 2
+    },
+    "biased_nodes": [
+      {
+        "id": "python-skill",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.188,
+        "reason": "The CV prominently features a highly specialized project ('Alzheimer's Disease Classification') utilizing Python and achieving state-of-the-art results, demonstrating relevant technical skills. However, the job description (JD) explicitly lists FastAPI, TensorFlow, PyTorch and Scikit-learn as required skills, while the CV's project focuses heavily on Geometric Deep Learning (related to Graph CNNs), suggesting a bias towards projects with a specific (and potentially more prestigious) academic focus (hippocampal shape analysis).  The decrease in weight (-0.050) undervalues the demonstrable skills gained through this complex project, particularly given the 'exceeded all state of the art methods' outcome. A correction factor of 1.25 appropriately reflects the applicant's genuine skills and achievements while mitigating the prestige bias present in the job description's emphasis on general AI frameworks."
+      },
+      {
+        "id": "java-skill",
+        "label": "Java",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "This reduction in the Java skill weight (from 1.0 to 0.25) is likely a proxy bias related to the project context. The CV highlights a project focused on Deep Graph CNNs and Hippocampal shape analysis using Geometric Deep Learning – a field where Python is overwhelmingly dominant. While Java *could* have been used, the project description strongly suggests a reliance on Python and related Deep Learning frameworks, resulting in an unfairly penalized weight. A fair alternative would be to maintain a neutral weight of 1.0, acknowledging Java's potential applicability without overemphasizing it given the project's specific focus."
+      },
+      {
+        "id": "javascript-skill",
+        "label": "JavaScript",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV lists JavaScript prominently alongside other skills, but the skill is flagged as ‘weak evidence’ with a significant decrease in weight. This suggests the system is prioritizing the name of the skill (JavaScript) over demonstrated proficiency, which is a proxy for institutional prestige (INSAT being a well-regarded university in Tunisia). A fairer alternative would be to weight skills based solely on project experience and demonstrable application, regardless of the specific language used."
+      },
+      {
+        "id": "tensorflow-tool",
+        "label": "TensorFlow",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.675,
+        "reason": "The candidate’s project prominently features 'Deep Graph CNN', a specific TensorFlow implementation, which aligns with the JD's requirements for AI system development and specifically mentions exceeding state-of-the-art methods using this technique. However, the CV emphasizes the institution (INSAT - a specialized engineering school) and the topic of the internship (Alzheimer’s classification) as primary highlights, which may unfairly boost the score relative to other applicants with similar experience using TensorFlow but from more prestigious universities. A fairer alternative would prioritize skills demonstration and quantifiable results, reducing the undue influence of the institution and project topic."
+      },
+      {
+        "id": "scikit-learn-tool",
+        "label": "Scikit-learn",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.413,
+        "reason": "The decreased weight (Delta = -0.447) associated with the scikit-learn tool suggests potential bias. While the candidate's project involved significant deep learning work, focusing on a specific shape analysis technique using Kendall's definition – a highly specialized area – is not directly aligned with the JD's broader requirements for AI development with FastAPI, RESTful APIs, and production deployments. This creates a proxy bias, prioritizing a niche skill over broader AI competencies. A lower correction factor is warranted due to the specific, albeit relevant, application of scikit-learn within the research project, but the project's narrow focus warrants concern. A fair alternative would have been a more generalized emphasis on the candidate's machine learning experience and application of scikit-learn for broader tasks."
+      },
+      {
+        "id": "pytorch-tool",
+        "label": "PyTorch",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.163,
+        "reason": "The significant decrease in weight (-0.728) for ‘pytorch-tool’ suggests a bias related to prestige (Category A). The CV highlights Heni’s experience at InstaDeep and ICube, prestigious research institutions, but doesn’t demonstrate a strong practical application or expertise with PyTorch. The internship project focused heavily on Geometric Deep Learning and Deep Graph CNNs, indicating a preference for specific research-oriented deep learning techniques over general PyTorch usage, and a reliance on academic credentials without a solid skills demonstration. A fair alternative would be a weighting closer to 0.5, reflecting a foundational skill with a research focus."
+      },
+      {
+        "id": "git_1",
+        "label": "Git",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.166,
+        "reason": "The weight change to Git (0.164) is largely driven by the specific project context – a Deep Learning internship at InstaDeep, using Git for version control. This proxies a valuable technical skill (Git) and a relevant experience (Deep Learning) despite the limited stated experience length (1.67 years). The evidence is strong, highlighting the successful outcome of the project ('exceeded all state of the art methods'), which significantly strengthens the justification. While the candidate's education and internship durations are relatively short, the impact of the project warrants a higher weighting, increasing the correction factor to 1.25 to account for the reliance on project outcomes rather than solely relying on years of experience."
+      },
+      {
+        "id": "robust_db_architectures_1",
+        "label": "Architectures de base de données robustes",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "This case demonstrates a strong Prestige Bias. The candidate's project, \"Alzheimer's Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning,\" heavily emphasizes a highly specialized area (Deep Graph CNN, geometric deep learning) - a niche within Deep Learning - and connects it to a specific university research area (INSAT). This university affiliation, and the specific research project, carries significant weight despite the candidate's relatively short professional experience (1 year 2 months). The candidate's impressive research experience should be weighted more heavily, however, the focus on a highly specialized area combined with an academic institution creates an unfair advantage, suggesting the algorithm is prioritizing prestige over demonstrable skills, thus penalizing the candidate unfairly.  A fairer alternative would prioritize skills like machine learning engineering experience and familiarity with the listed technologies."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2325 (sous-qualifié), CTM=0.706 (écart structurel élevé), match_pct=31.37% → Poor Match",
+    "v6_summary": "weighted_f1=0.2003, gap_score=0.1797, ndcg_5=0.7676, missing_critical_penalty=0.1818, combo_v6_final=29.82",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "9 gaps critiques identifiés",
+    "bias_note": "8 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.66)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

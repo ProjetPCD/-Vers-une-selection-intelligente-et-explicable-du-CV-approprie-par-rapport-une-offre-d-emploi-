@@ -1,0 +1,364 @@
+{
+  "job_id": "job_11",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-03T21:18:54.430475",
+  "overall_assessment": {
+    "verdict": "Weak Match",
+    "match_pct": 53.66,
+    "confidence": {
+      "confidence_score": 0.9,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.211,
+        "coverage_rate": 0.947,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.6733,
+    "edge_score": 0.0,
+    "combined": 0.404
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.4208,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.4963,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Écart modéré"
+    },
+    "weighted_gap": 0.4634,
+    "matched_nodes": "4/19",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3982,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.8123,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Excellent"
+    },
+    "gap_score": {
+      "value": 0.3591,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.375,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.343,
+    "weighted_recall": 0.2798,
+    "weighted_f1": {
+      "value": 0.4631,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6134,
+    "missing_critical_penalty": {
+      "value": 0.2727,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.8445,
+    "ndcg_10": 0.9179,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8465,
+    "top_skill_alignment": 0.6877,
+    "semantic_fit_score": 0.6092,
+    "experience_density": 0.2524
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 49.7,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 53.73,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 45.06,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 93.78,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 55.95,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 41.34,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 57.83,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 2,
+      "match_pct": 33.9,
+      "weight_sum": 1.593
+    },
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 56.9,
+      "weight_sum": 2.081
+    },
+    "Tool": {
+      "count": 9,
+      "match_pct": 35.2,
+      "weight_sum": 7.794
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 14.1,
+      "weight_sum": 2.323
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 0.453
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "total_edges": 7,
+    "top_synergies": [
+      {
+        "edge_key": "data-scientist|python",
+        "source": "data-scientist",
+        "target": "python",
+        "w_0": 0.9,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data-scientist|sql",
+        "source": "data-scientist",
+        "target": "sql",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data-scientist|hadoop",
+        "source": "data-scientist",
+        "target": "hadoop",
+        "w_0": 0.7,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data-scientist|spark",
+        "source": "data-scientist",
+        "target": "spark",
+        "w_0": 0.7,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data-scientist|tableau",
+        "source": "data-scientist",
+        "target": "tableau",
+        "w_0": 0.6,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.605,
+      "severity": "critical",
+      "importance": 0.935
+    },
+    {
+      "skill": "Hadoop",
+      "type": "Tool",
+      "gap": 0.711,
+      "severity": "critical",
+      "importance": 0.931
+    },
+    {
+      "skill": "Scikit-Learn",
+      "type": "Tool",
+      "gap": 0.658,
+      "severity": "critical",
+      "importance": 0.878
+    },
+    {
+      "skill": "Communication",
+      "type": "Soft Skill",
+      "gap": 0.733,
+      "severity": "critical",
+      "importance": 0.733
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "w_cv": 1.688
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.605
+      },
+      {
+        "label": "Hadoop",
+        "type": "Tool",
+        "gap": 0.711
+      },
+      {
+        "label": "Scikit-Learn",
+        "type": "Tool",
+        "gap": 0.658
+      },
+      {
+        "label": "Communication",
+        "type": "Soft Skill",
+        "gap": 0.733
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 10,
+    "nodes_with_bias": 7,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 5,
+      "PROXY": 1,
+      "HALO": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "data-scientist",
+        "label": "Data Scientist",
+        "bias_category": "PRESTIGE",
+        "severity": "LOW",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.08,
+        "reason": "The weight increase is likely due to the candidate's employer name (EY) rather than their demonstrated skills, leading to a prestige bias."
+      },
+      {
+        "id": "python",
+        "label": "Python",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.688,
+        "reason": "The algorithm has unfairly favored candidates with similar socioeconomic backgrounds or education systems, and a fair alternative would be to evaluate candidates based on their skills in R, Python, SQL, Hadoop, Spark, Tableau, D3.js, etc., without considering socioeconomic signals."
+      },
+      {
+        "id": "sql",
+        "label": "SQL",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.147,
+        "reason": "The weight change unfairly favors candidates with a strong profile from reputable institutions, which may lead to prestige bias. A fair alternative would be to weight the candidate's skills and experience demonstrated in their projects and CV equally."
+      },
+      {
+        "id": "nosql",
+        "label": "NoSQL",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.688,
+        "reason": "The original weight change unfairly penalized candidates who do not have specific NoSQL database management experience, but have demonstrated transferable skills in data analysis and pipeline development."
+      },
+      {
+        "id": "tensorflow",
+        "label": "TensorFlow",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.66,
+        "reason": "The candidate is unfairly penalized for lacking specific TensorFlow project evidence, while their overall experience and skills in data analysis, visualization, and programming languages relevant to the role are not adequately considered."
+      },
+      {
+        "id": "hadoop",
+        "label": "Hadoop",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.44,
+        "reason": "The weight change is biased due to the candidate's strong signal of using Azure Data Factory, SQL Server, and Python (Pandas), which unfairly favors them over other candidates with similar skills and experience."
+      },
+      {
+        "id": "scikit-learn",
+        "label": "Scikit-Learn",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.44,
+        "reason": "The weight change unfairly favors candidates with Scikit-learn experience, which is not directly relevant to the job description's general data science requirements."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.4208 (sous-qualifié), CTM=0.4963 (écart structurel modéré), match_pct=53.66% → Weak Match",
+    "v6_summary": "weighted_f1=0.4631, gap_score=0.3591, ndcg_5=0.8445, missing_critical_penalty=0.2727, combo_v6_final=49.7",
+    "key_strengths": "1 compétences clés validées",
+    "key_gaps": "4 gaps critiques identifiés",
+    "bias_note": "7 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.9)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "job_id": "job_50",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-03T05:20:11.853350",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 48.78,
+    "confidence": {
+      "confidence_score": 0.84,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.333,
+        "coverage_rate": 0.917,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.5651,
+    "edge_score": 0.8475,
+    "combined": 0.6781
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3584,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5374,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5122,
+    "matched_nodes": "1/12",
+    "edge_match_pct": 42.36
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3199,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.6871,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.3007,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.25,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.3894,
+    "weighted_recall": 0.2002,
+    "weighted_f1": {
+      "value": 0.35,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5909,
+    "missing_critical_penalty": {
+      "value": 0.2857,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8553,
+    "ndcg_10": 0.9157,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9363,
+    "top_skill_alignment": 0.6208,
+    "semantic_fit_score": 0.6889,
+    "experience_density": 0.2117
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 42.69,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 43.09,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 42.39,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 94.21,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 49.62,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 42.03,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 53.0,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 26.1,
+      "weight_sum": 2.104
+    },
+    "Tool": {
+      "count": 7,
+      "match_pct": 19.7,
+      "weight_sum": 5.384
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 61.8,
+      "weight_sum": 1.501
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 42.36,
+    "total_edges": 9,
+    "top_synergies": [
+      {
+        "edge_key": "machine_learning_domain|software-machine-learning-engineer",
+        "source": "machine_learning_domain",
+        "target": "software-machine-learning-engineer",
+        "w_0": 0.547,
+        "w_cv": 1.25,
+        "w_cv_norm": 0.625,
+        "match_pct": 100.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "git-tool|software-machine-learning-engineer",
+        "source": "git-tool",
+        "target": "software-machine-learning-engineer",
+        "w_0": 0.832,
+        "w_cv": 1.075,
+        "w_cv_norm": 0.537,
+        "match_pct": 64.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python-skill|software-machine-learning-engineer",
+        "source": "python-skill",
+        "target": "software-machine-learning-engineer",
+        "w_0": 0.954,
+        "w_cv": 0.9,
+        "w_cv_norm": 0.45,
+        "match_pct": 47.2,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "django-tool|software-machine-learning-engineer",
+        "source": "django-tool",
+        "target": "software-machine-learning-engineer",
+        "w_0": 0.978,
+        "w_cv": 0.881,
+        "w_cv_norm": 0.441,
+        "match_pct": 45.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "redis-tool|software-machine-learning-engineer",
+        "source": "redis-tool",
+        "target": "software-machine-learning-engineer",
+        "w_0": 0.867,
+        "w_cv": 0.806,
+        "w_cv_norm": 0.403,
+        "match_pct": 46.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Django",
+      "type": "Tool",
+      "gap": 0.697,
+      "severity": "critical",
+      "importance": 0.978
+    },
+    {
+      "skill": "Redis",
+      "type": "Tool",
+      "gap": 0.66,
+      "severity": "critical",
+      "importance": 0.867
+    },
+    {
+      "skill": "Ansible",
+      "type": "Tool",
+      "gap": 0.689,
+      "severity": "critical",
+      "importance": 0.764
+    },
+    {
+      "skill": "Jenkins",
+      "type": "Tool",
+      "gap": 0.676,
+      "severity": "critical",
+      "importance": 0.751
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Django",
+        "type": "Tool",
+        "gap": 0.697
+      },
+      {
+        "label": "Redis",
+        "type": "Tool",
+        "gap": 0.66
+      },
+      {
+        "label": "Ansible",
+        "type": "Tool",
+        "gap": 0.689
+      },
+      {
+        "label": "Jenkins",
+        "type": "Tool",
+        "gap": 0.676
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 3,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 2,
+      "PRESTIGE BIAS": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "django-tool",
+        "label": "Django",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The CV heavily emphasizes the candidate's location (Tunis, Tunisia) and uses it to frame their experience, which aligns with the job description’s focus on enterprise AI solutions and potentially suggests a preference for candidates in regions with strong tech ecosystems. While experience is valuable, the prominence of location as a key aspect of the candidate's profile introduces a proxy bias. A fair alternative would be to assess skills and project experience irrespective of the candidate’s geographical origin. This bias unfairly penalizes a qualified candidate due to their location, favoring candidates from locations more closely aligned with the company’s existing expertise."
+      },
+      {
+        "id": "redis-tool",
+        "label": "Redis",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.413,
+        "reason": "The CV’s mention of Redis as a ‘supporting tool’ and lack of project details, coupled with the candidate’s experience in Tunis, Tunisia, suggests a proxy bias. The JD’s emphasis on system design and scalability, which Redis supports, is not directly reflected in the CV's presentation of Redis usage. Furthermore, the candidate's location in Tunisia may be unfairly penalized due to potential concerns about geographic limitations or access to specific technologies, despite the candidate’s demonstrated skills and accomplishments. A fair alternative would be to value the candidate's expertise in scaling ML systems and his experience with quantitative research, regardless of the specific tools used."
+      },
+      {
+        "id": "docker_tool",
+        "label": "Docker",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV prominently highlights 'Built internal tools and libraries that streamlined research and accelerated alpha generation' using Docker, but this is presented as a general experience rather than a core skill. The JD focuses heavily on broader AI engineering competencies and impact, implying that a specific tool like Docker, while valuable, isn't a central differentiator. The evidence anchor is weak, suggesting the focus is on the outcome (alpha generation) rather than the technology used. This prioritizes the *impact* of internal tools over demonstrable Docker expertise, reflecting a prestige bias towards broader AI leadership experience."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3584 (sous-qualifié), CTM=0.5374 (écart structurel élevé), match_pct=48.78% → Poor Match",
+    "v6_summary": "weighted_f1=0.35, gap_score=0.3007, ndcg_5=0.8553, missing_critical_penalty=0.2857, combo_v6_final=42.69",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "4 gaps critiques identifiés",
+    "bias_note": "3 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.84)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

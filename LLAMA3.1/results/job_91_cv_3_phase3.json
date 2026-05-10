@@ -1,0 +1,252 @@
+{
+  "job_id": "job_91",
+  "cv_id": "cv_3",
+  "scored_nodes": {
+    "azure-devops": {
+      "w_cv": 0.5,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Skill is mentioned in the CV as one of the candidate's Top Skills, but there is no concrete project evidence to support its use.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "devops-engineer-domain": {
+      "w_cv": 1.0,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "The candidate mentions being a Technical Business & QA Analyst at BIAT, which implies expertise in DevOps Engineering.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "terraform": {
+      "w_cv": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Terraform is mentioned as one of the tools used in the project, but there is no concrete evidence to support its use.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "jenkins": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "There is no mention of Jenkins in the CV.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "azure": {
+      "w_cv": 1.25,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.25
+      },
+      "active_red_flags": [],
+      "rationale": "The candidate mentions working on Temenos Transact (T24) API development, which implies use of Azure.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "kubernetes": {
+      "w_cv": 1.0,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "The candidate mentions working on Temenos Transact (T24) API development, which implies use of Kubernetes.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "azure-management": {
+      "w_cv": 0.5,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "The candidate mentions being a Technical Business & QA Analyst at BIAT, which implies expertise in Azure Management.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    }
+  },
+  "scored_edges": {
+    "azure-management|kubernetes": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": -0.2,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence found of both skills used together in the same role or project.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "azure-management|azure-devops": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": -0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No temporal overlap between Azure Management and Azure DevOps, but they are mentioned in the same role/project description for Temenos Transact (T24) Technical Business & QA Analyst at BIAT Innovation & Technology.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "kubernetes|azure-devops": {
+      "synergy_score": 0.95,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.75,
+        "penalties": -0.0,
+        "final_score": 0.95
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Both Kubernetes and Azure DevOps are mentioned in the same role/project description for Temenos Transact (T24) Technical Business & QA Analyst at BIAT Innovation & Technology.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.95
+    },
+    "jenkins|devops-engineer-domain": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": -0.2,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence found of both skills used together in the same role or project.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "azure-devops|terraform": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No synergy found between azure-devops and terraform as there is no temporal overlap or collaboration in the same project/role, and no evidence of mutual reinforcement.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    }
+  },
+  "metadata": {
+    "skills_scored": 7,
+    "mean_score": 0.643,
+    "edges_scored": 5,
+    "mean_synergy": 0.24,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.24,
+      "max": 0.95,
+      "min": 0.0
+    },
+    "batches_ok": 1,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.643,
+      "max": 1.25,
+      "min": 0.0,
+      "above_1": 3,
+      "below_05": 2
+    }
+  }
+}

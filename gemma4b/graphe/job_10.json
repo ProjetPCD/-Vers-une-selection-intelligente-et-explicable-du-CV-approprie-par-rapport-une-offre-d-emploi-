@@ -1,0 +1,201 @@
+{
+  "nodes": [
+    {
+      "id": "python_data_scientist",
+      "label": "Python",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "Le stack technologique utilisé comprendra des outils tels que Python...",
+      "inferred": true,
+      "inferred_from": "Python"
+    },
+    {
+      "id": "numpy_data_scientist",
+      "label": "NumPy",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "Les bibliothèques comme NumPy...",
+      "inferred": true,
+      "inferred_from": "NumPy"
+    },
+    {
+      "id": "pandas_data_scientist",
+      "label": "Pandas",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "Les bibliothèques comme Pandas...",
+      "inferred": true,
+      "inferred_from": "Pandas"
+    },
+    {
+      "id": "matplotlib_data_scientist",
+      "label": "Matplotlib",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "Les bibliothèques comme Matplotlib...",
+      "inferred": true,
+      "inferred_from": "Matplotlib"
+    },
+    {
+      "id": "scikit_learn_data_scientist",
+      "label": "Scikit-learn",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "Les bibliothèques comme Scikit-learn...",
+      "inferred": true,
+      "inferred_from": "Scikit-learn"
+    },
+    {
+      "id": "seaborn_data_scientist",
+      "label": "Seaborn",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "Les bibliothèques comme Seaborn...",
+      "inferred": true,
+      "inferred_from": "Seaborn"
+    },
+    {
+      "id": "data_scientist_econometrics_stat",
+      "label": "Data Scientist",
+      "type": "Responsibility",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "Job title and core responsibility - \"Data Scientist en économétrie et statistique appliquée\"",
+      "inferred": false,
+      "inferred_from": null
+    },
+    {
+      "id": "sas_data_scientist",
+      "label": "SAS",
+      "type": "Tool",
+      "w_0": 0.942,
+      "seniority_required": "Senior",
+      "context": "Les outils tels que SAS...",
+      "inferred": true,
+      "inferred_from": "SAS"
+    },
+    {
+      "id": "data_science_methodology",
+      "label": "méthodologie",
+      "type": "Hard Skill",
+      "w_0": 0.797,
+      "seniority_required": "Senior",
+      "context": "La méthodologie et les outils utilisés seront basés sur des principes de data science...",
+      "inferred": true,
+      "inferred_from": "La méthodologie et les outils utilisés seront basés sur des principes de data science..."
+    },
+    {
+      "id": "data_science_domain",
+      "label": "data science",
+      "type": "Domain",
+      "w_0": 0.782,
+      "seniority_required": "Senior",
+      "context": "avec un focus sur l'interprétation des résultats et la prise de décision éclairée.",
+      "inferred": true,
+      "inferred_from": "data science"
+    },
+    {
+      "id": "communication_effective",
+      "label": "Communication Efficace",
+      "type": "Soft Skill",
+      "w_0": 0.75,
+      "seniority_required": "N/A",
+      "context": "JD sentence: \"La communication efficace et les soft skills tels que... sont également essentielles.\"",
+      "inferred": true,
+      "inferred_from": "La communication efficace et les soft skills tels que... sont également essentielles."
+    },
+    {
+      "id": "machine_learning",
+      "label": "Machine Learning",
+      "type": "Domain",
+      "w_0": 0.785,
+      "seniority_required": "N/A",
+      "context": "JD sentence: \"Le profil recherché est celui d'un candidat ayant une solide formation en machine learning\"",
+      "inferred": true,
+      "inferred_from": "Le profil recherché est celui d'un candidat ayant une solide formation en machine learning"
+    },
+    {
+      "id": "teamwork",
+      "label": "Capacité de Travailler en Équipe",
+      "type": "Soft Skill",
+      "w_0": 0.729,
+      "seniority_required": "N/A",
+      "context": "JD sentence: \"Des soft skills tels que la capacité de travailler en équipe... sont également essentielles.\"",
+      "inferred": true,
+      "inferred_from": "Des soft skills tels que la capacité de travailler en équipe... sont également essentielles."
+    }
+  ],
+  "edges": [
+    {
+      "source": "python_data_scientist",
+      "target": "data_scientist_econometrics_stat",
+      "relation": "requires",
+      "weight": 0.95,
+      "rationale": "The job context explicitly states 'Python' is used in the data science stack alongside SAS and R."
+    },
+    {
+      "source": "numpy_data_scientist",
+      "target": "data_scientist_econometrics_stat",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "NumPy is a core library for numerical computation, essential in data analysis and statistical modeling, as highlighted in the job description."
+    },
+    {
+      "source": "pandas_data_scientist",
+      "target": "data_scientist_econometrics_stat",
+      "relation": "requires",
+      "weight": 0.9,
+      "rationale": "Pandas is fundamental for data manipulation and analysis, a core component of the described data science workflow."
+    },
+    {
+      "source": "matplotlib_data_scientist",
+      "target": "data_scientist_econometrics_stat",
+      "relation": "supports",
+      "weight": 0.65,
+      "rationale": "Matplotlib is a common tool for visualizing data, enhancing the analytical process, while Pandas, NumPy and Python are fundamental."
+    },
+    {
+      "source": "scikit_learn_data_scientist",
+      "target": "machine_learning",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "Scikit-learn is a key tool for implementing machine learning algorithms as stated within the job description."
+    },
+    {
+      "source": "seaborn_data_scientist",
+      "target": "data_scientist_econometrics_stat",
+      "relation": "supports",
+      "weight": 0.65,
+      "rationale": "Seaborn builds on Matplotlib and provides advanced statistical visualization capabilities, enhancing data exploration."
+    },
+    {
+      "source": "sas_data_scientist",
+      "target": "data_scientist_econometrics_stat",
+      "relation": "requires",
+      "weight": 0.9,
+      "rationale": "The job description mentions SAS as a key tool within the technology stack for data analysis."
+    },
+    {
+      "source": "communication_effective",
+      "target": "data_scientist_econometrics_stat",
+      "relation": "complements",
+      "weight": 0.7,
+      "rationale": "Effective communication is essential for presenting analytical results to non-technical stakeholders."
+    },
+    {
+      "source": "teamwork",
+      "target": "data_scientist_econometrics_stat",
+      "relation": "complements",
+      "weight": 0.7,
+      "rationale": "Teamwork is crucial when working on complex data science projects"
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_10"
+}

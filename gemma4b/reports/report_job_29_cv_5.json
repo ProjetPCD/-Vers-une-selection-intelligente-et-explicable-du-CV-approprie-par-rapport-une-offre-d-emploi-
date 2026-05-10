@@ -1,0 +1,572 @@
+{
+  "job_id": "job_29",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-07T00:13:35.129198",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 26.44,
+    "confidence": {
+      "confidence_score": 0.48,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.75,
+        "coverage_rate": 0.594,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.1935
+  },
+  "final_scores": {
+    "node_score": 0.3708,
+    "edge_score": 0.1976,
+    "combined": 0.3015
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2013,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7492,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7356,
+    "matched_nodes": "2/32",
+    "edge_match_pct": 9.89
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2077,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1976,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1796,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0625,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.1542,
+    "weighted_recall": 0.0419,
+    "weighted_f1": {
+      "value": 0.0808,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6065,
+    "missing_critical_penalty": {
+      "value": 0.0625,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8341,
+    "ndcg_10": 0.8724,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9627,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.244,
+    "experience_density": 0.1679
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 19.55,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 16.79,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 17.29,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 93.36,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 33.81,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 27.77,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 21.55,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 10,
+      "match_pct": 16.9,
+      "weight_sum": 9.966
+    },
+    "Tool": {
+      "count": 17,
+      "match_pct": 15.4,
+      "weight_sum": 15.419
+    },
+    "Soft Skill": {
+      "count": 5,
+      "match_pct": 36.7,
+      "weight_sum": 3.59
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 9.89,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "symfony_backend_developer|elastic_cloud_monitoring",
+        "source": "symfony_backend_developer",
+        "target": "elastic_cloud_monitoring",
+        "w_0": 0.6,
+        "w_cv": 0.469,
+        "w_cv_norm": 0.234,
+        "match_pct": 39.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "symfony_backend_developer|doctrine_orm_backend_developer",
+        "source": "symfony_backend_developer",
+        "target": "doctrine_orm_backend_developer",
+        "w_0": 0.95,
+        "w_cv": 0.319,
+        "w_cv_norm": 0.159,
+        "match_pct": 16.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "symfony_backend_developer|jenkins_ci_cd",
+        "source": "symfony_backend_developer",
+        "target": "jenkins_ci_cd",
+        "w_0": 0.75,
+        "w_cv": 0.281,
+        "w_cv_norm": 0.141,
+        "match_pct": 18.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "symfony_backend_developer|new_relic_monitoring",
+        "source": "symfony_backend_developer",
+        "target": "new_relic_monitoring",
+        "w_0": 0.55,
+        "w_cv": 0.281,
+        "w_cv_norm": 0.141,
+        "match_pct": 25.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "symfony_backend_developer|agile_scrum_methodology",
+        "source": "symfony_backend_developer",
+        "target": "agile_scrum_methodology",
+        "w_0": 0.8,
+        "w_cv": 0.281,
+        "w_cv_norm": 0.141,
+        "match_pct": 17.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Symfony",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Doctrine",
+      "type": "Hard Skill",
+      "gap": 0.681,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.812,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Kubernetes",
+      "type": "Tool",
+      "gap": 0.812,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Jenkins",
+      "type": "Tool",
+      "gap": 0.719,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "AWS",
+      "type": "Tool",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Linux (RHEL, CentOS, Debian, Ubuntu, Archlinux)",
+      "type": "Tool",
+      "gap": 0.812,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "New Relic",
+      "type": "Tool",
+      "gap": 0.719,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Terraform",
+      "type": "Tool",
+      "gap": 0.844,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Agile",
+      "type": "Hard Skill",
+      "gap": 0.719,
+      "severity": "critical",
+      "importance": 1.0
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Symfony",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Doctrine",
+        "type": "Hard Skill",
+        "gap": 0.681
+      },
+      {
+        "label": "Docker",
+        "type": "Tool",
+        "gap": 0.812
+      },
+      {
+        "label": "Kubernetes",
+        "type": "Tool",
+        "gap": 0.812
+      },
+      {
+        "label": "Jenkins",
+        "type": "Tool",
+        "gap": 0.719
+      },
+      {
+        "label": "AWS",
+        "type": "Tool",
+        "gap": 0.906
+      },
+      {
+        "label": "Linux (RHEL, CentOS, Debian, Ubuntu, Archlinux)",
+        "type": "Tool",
+        "gap": 0.812
+      },
+      {
+        "label": "New Relic",
+        "type": "Tool",
+        "gap": 0.719
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 24,
+    "nodes_with_bias": 23,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 8,
+      "PRESTIGE": 5,
+      "C": 4,
+      "HALO": 3,
+      "PRESTIGE|PROXY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "doctrine_orm_backend_developer",
+        "label": "Doctrine",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The weight decrease is likely driven by the specific project focus – ‘Alzheimer’s Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning.’ This is a highly specialized area of machine learning, particularly reliant on complex deep learning techniques (Graph CNNs) and niche datasets (Hippocampus shape morphometrics).  The JD emphasizes experience with a broader range of backend technologies, and the CV’s project heavily weights a single, advanced research experience. This creates a proxy bias; the system is penalizing the candidate for focusing on a highly specialized skill set that may not align directly with the stated requirements, implying a preference for generalist backend developers."
+      },
+      {
+        "id": "docker_containerization",
+        "label": "Docker",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The candidate's project at InstaDeep, while involving Docker containerization (a desirable skill given the JD's focus on modern backend technologies), is primarily described with a theoretical focus – ‘Alzheimer’s Disease Classification Using Geometric Deep Learning.’ The project description emphasizes the methodology and technical depth of the work (Kendall's definition, geodesic distances) rather than the practical application of Docker within the project. The JD strongly prioritizes Docker and Kubernetes, suggesting a preference for experience using these tools, and the CV’s description focuses on the intellectual aspects of the Deep Learning work. Therefore, the decrease in weighting reflects a potential prestige bias – favoring theoretical depth over demonstrable practical application within a commonly used tool like Docker within an ML project."
+      },
+      {
+        "id": "kubernetes_orchestration",
+        "label": "Kubernetes",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The CV heavily emphasizes a research internship focused on a highly specialized area (Geometric Deep Learning for Alzheimer's Disease classification) within the context of a university project, 'Alzheimer's Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning'. While valuable, the JD focuses on a broader range of technologies (PHP, Symfony, Kubernetes) and lacks specific weighting on such advanced research experience. This suggests a prestige bias, where the university and project name significantly boosted the score despite a lack of direct relevance to the core requirements of the role, which is backend development with standard tech stack.  A fair alternative would be to give a lower weight to this advanced research project due to its specific focus, acknowledging the skills acquired but not prioritizing them over demonstrated proficiency in the listed core technologies."
+      },
+      {
+        "id": "jenkins_ci_cd",
+        "label": "Jenkins",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The CV highlights a PhD project focused on Deep Graph CNN and geometric deep learning within a specific academic context (INSAT - Institut National des Sciences Appliquées et de Technologie). While impressive, the project's description – 'Alzheimer's Disease Classification...' – leans heavily into research and academic application rather than directly aligning with the practical CI/CD skills explicitly listed in the job description (Jenkins, Travis CI, Circle CI, Ansible, etc.). The JD prioritizes ‘expert’ backend development, suggesting a need for hands-on experience with DevOps tools, and this candidate's experience is framed in a distinctly research-oriented role, thus diminishing its relevance for the given role's requirements. Therefore, a decrease in the weighting is warranted."
+      },
+      {
+        "id": "puppet_automation",
+        "label": "Puppet",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV highlights Heni Loukil's work on Deep Learning and Geometric Deep Learning projects, specifically using Puppet as part of a DevOps environment within the InstaDeep project. However, the JD emphasizes broader backend experience and a wider range of technologies, without specifically requiring deep expertise in Puppet. This suggests the algorithm is overemphasizing a peripheral skill (Puppet) that isn't critical to the core requirements, making it a proxy for a broader set of DevOps skills. Correction factor decreased to 0.75 to acknowledge the irrelevant emphasis on Puppet automation."
+      },
+      {
+        "id": "aws_cloud_computing",
+        "label": "AWS",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV focuses exclusively on Heni Loukil's academic research and her role at InstaDeep, demonstrating expertise in deep learning and geometric deep learning – skills not explicitly listed in the JD. The absence of any mention of AWS cloud computing, despite being a required skill, indicates a proxy bias based on the candidate’s academic background and specific research area.  A correction factor of 0.75 is applied to reflect this, acknowledging the candidate’s relevant skills but penalizing the lack of direct AWS experience.  This suggests the system is prioritizing a niche skillset over the explicit requirements outlined in the job description."
+      },
+      {
+        "id": "linux_rhel_centos_debian_ubuntu_arch",
+        "label": "Linux (RHEL, CentOS, Debian, Ubuntu, Archlinux)",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "This audit identifies a potential ageism bias. The CV emphasizes a research internship focused on a highly specialized area of Deep Learning – Alzheimer’s Disease Classification – using Hippocampal shape analysis and Geometric Deep Learning (2024-2024). While relevant to the JD's technical requirements, the project's specific focus and the relatively short timeframe (7 months) may unfairly penalize the candidate compared to those with more general experience in machine learning or DevOps. The decreased weight (0.5) suggests the algorithm may be prioritizing more broadly applicable skills, potentially overlooking the nuanced expertise gained through this specific research, creating a disproportionate negative impact due to the project's advanced nature and time commitment."
+      },
+      {
+        "id": "elastic_cloud_monitoring",
+        "label": "Elastic Cloud",
+        "bias_category": "PRESTIGE|PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.938,
+        "reason": "The CV highlights a project focusing on 'Dense vector fields' within a Deep Learning context, specifically for Alzheimer's disease classification. This aligns with the JD's requirement for Elastic Cloud Monitoring, suggesting the candidate possesses relevant skills. However, the project's emphasis on research and a specific academic institution (INSAT) might be unfairly weighted compared to demonstrable experience with Elastic Cloud Monitoring, indicating a prestige bias. Further, the location of the internship in France (Grand Est) and the focus on a specialized research institution introduces a proxy bias, potentially diminishing the perceived value of the candidate's skills due to geographic and institutional factors. A higher factor is applied to account for this potential over-emphasis on research-oriented skills."
+      },
+      {
+        "id": "new_relic_monitoring",
+        "label": "New Relic",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The candidate's CV highlights a thesis project focusing on Deep Graph CNNs and Hippocampal shape analysis, specifically 'Alzheimer's Disease Classification.' While technically relevant to machine learning, the highly specialized and academically-oriented nature of the project – described as a research-focused internship – appears to be overweighted relative to the broader skill set desired by the JD. The JD lists a range of DevOps tools and technologies, and the New Relic skill is a component of a wider tech stack; emphasizing this specific research project creates a prestige bias, giving undue emphasis to a highly specialized academic pursuit rather than broader engineering capabilities. A fairer alternative would be to prioritize skills directly related to the core development and infrastructure responsibilities outlined in the JD."
+      },
+      {
+        "id": "terraform_infrastructure_as_code",
+        "label": "Terraform",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "The candidate's CV explicitly lists 'Terraform' as a key skill within the required technologies, aligning directly with the job description's specifications. The significant weight decrease (-0.75) indicates a failure to recognize this crucial skill, suggesting a Halo bias where the presence of other impressive skills (Deep Learning, InstaDeep) overshadowed the explicit requirement of Terraform expertise. A fair alternative would be to adjust the score upwards, acknowledging the candidate's Terraform proficiency alongside their other qualifications, recognizing that the JD explicitly mentions Terraform. "
+      },
+      {
+        "id": "kustomize_yaml_management",
+        "label": "Kustomize",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The CV explicitly lists 'Kustomize' alongside 'Deep Learning' in a project description focused on geometric deep learning and Hippocampal shape analysis. This highlights a specific technical skill (Kustomize for YAML management) that aligns with the JD's requirements, indicating the weight decrease may be due to the system overemphasizing this one strong signal (Kustomize) rather than a holistic assessment of the candidate’s skills and experience. The candidate’s deep learning experience is arguably more central to the role, and the emphasis on Kustomize suggests a halo effect - the candidate is favorably judged primarily due to one specific technology mentioned in the project description. A correction factor of 0.75 acknowledges the skill's relevance while minimizing the undue influence of this single technology."
+      },
+      {
+        "id": "agile_scrum_methodology",
+        "label": "Agile",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "This weight change represents a significant decrease (0.25) in the value assigned to experience with Agile/Scrum methodologies, despite the candidate's explicit mention and positive outcomes related to these practices. The rationale emphasizes the 'Agile' and 'Scrum' frameworks alongside a 1-year 2-month experience, suggesting a strong connection between the candidate's skills and the role's requirements. However, the CV focuses heavily on deep learning and a specific academic project, potentially overshadowing the importance of Agile/Scrum experience for a backend developer role, leading to an unfair devaluation of the relevant skills."
+      },
+      {
+        "id": "scrum_framework",
+        "label": "Scrum",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.938,
+        "reason": "The applicant’s CV heavily emphasizes experience with the ‘Scrum’ framework and specifically the ‘Alzheimer’s Disease Classification’ project using Deep Graph CNN, aligning with the JD's requirement for a ‘développeur backend expérimenté’ utilizing modern technologies. The project’s focus on geometric deep learning, although seemingly outside the immediate skillset listed in the JD, demonstrated a proactive application of advanced techniques – a key element the JD values. While the explicit mention of ‘Scrum’ and the innovative project contribute positively, the decreased weight suggests an overemphasis on this single, complex project, potentially overshadowing broader backend development experience; therefore, a factor of 1.25 is applied to increase the weight."
+      },
+      {
+        "id": "kanban_methodology",
+        "label": "Kanban",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The CV prominently lists a highly specific skillset (Deep Learning, Geometric Deep Learning, specific frameworks) mirroring the JD's technical requirements. While Heni Loukil demonstrates relevant expertise, the emphasis on these exact technologies, particularly the PhD project details, suggests a Halo bias – over-weighting a single strong signal (the project's specific Deep Learning focus) to the detriment of other potentially valuable skills not explicitly highlighted.  The weight decrease reflects the JD's detailed requirements, and the candidate's CV focuses heavily on those specific areas. A fairer alternative would recognize broader machine learning skills alongside the specialized project experience."
+      },
+      {
+        "id": "continuous_deployment_cd",
+        "label": "Continuous Deployment",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The CV heavily emphasizes a project focused on Deep Learning and Geometric Deep Learning, specifically at InstaDeep, a company in Tunisia. While relevant skills are listed, the project description and the company location (InstaDeep Sfax, Tunisia) introduce a proxy bias – the system may be unfairly favoring candidates from companies or locations associated with cutting-edge AI research, potentially overlooking equally qualified candidates from more established or geographically diverse backgrounds.  The 'Deep Learning' skill is heavily weighted given the project, and the location significantly impacts the perceived 'innovation' score. A correction factor is applied to reduce the weight based on this indirect signal."
+      },
+      {
+        "id": "circle_ci_ci",
+        "label": "Circle CI",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease in the weight assigned to the candidate's experience (w_cv from 0.75 to 0.25) is likely driven by the inclusion of 'Circle CI' in the JD, triggering a proxy bias. The JD lists Circle CI as a required tool, and the CV demonstrates experience with it, but the algorithm is penalizing the candidate for using a specific CI/CD tool, rather than evaluating the candidate’s skills and experience based on their core competencies. A fairer alternative would involve evaluating the candidate's overall DevOps experience and skills irrespective of the specific CI/CD tool used, focusing on demonstrable skills such as Docker, Kubernetes and Terraform – skills the candidate does have documented."
+      },
+      {
+        "id": "azure_aks",
+        "label": "Azure AKS",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "The CV demonstrates expertise in Deep Learning and Machine Learning, specifically through projects like \"Alzheimer's Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning\", which aligns with the JD's emphasis on advanced technologies and complex solutions. However, the JD explicitly lists a wide range of technologies including AKS, and the candidate’s primary experience is not focused on Kubernetes or containerization, resulting in a significant negative weight change. This suggests a prestige bias favoring academic accomplishments and specific research projects over broader DevOps skills, unfairly penalizing the candidate for not directly aligning with the JD's listed technologies. A higher factor reflects the candidate’s relevant skills and reduces the penalty for lacking specific JD-mentioned technologies."
+      },
+      {
+        "id": "contentful_cms",
+        "label": "Contentful",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV prominently lists 'Contentful' as a skill, yet the job description explicitly mentions it as a technology used within the role. This suggests the system is giving undue weight to the presence of 'Contentful' on the CV, potentially prioritizing candidates familiar with this specific CMS over those with a broader DevOps skillset, indicating a proxy bias based on familiarity with a particular technology. A fairer alternative would be to assess skills based solely on the listed technologies and soft skills, irrespective of specific tool names."
+      },
+      {
+        "id": "teamwork_collaboration",
+        "label": "Teamwork",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.35,
+        "reason": "The CV highlights Heni's work at InstaDeep and ICube, which are prominent research institutions.  The location of InstaDeep (Tunisia) and Heni's education at INSAT (Tunisia) are proxies for socioeconomic status and geographical location, potentially unfairly penalizing candidates from less represented regions. While her technical skills are evident, the focus on these specific institutions suggests a bias favoring candidates from well-known research environments, despite the stated requirements of proficiency in a broad range of technologies. A reduced factor reflects this potential bias."
+      },
+      {
+        "id": "communication_skills",
+        "label": "Communication",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The decrease in communication skills weight is likely driven by the CV’s emphasis on the candidate’s academic project – ‘Alzheimer’s Disease Classification’ – which is highly specialized.  Using the university name (INSAT) and the detailed description of the project, the algorithm may be unfairly prioritizing a niche skill set over the more general communication skills described in the job description, representing a proxy bias for academic prestige. This is a medium severity as the evidence is circumstantial but suggestive of a disproportionate weighting of a specific, advanced project, rather than demonstrating core communication abilities relevant to a broader development role. A fairer alternative would be to evaluate communication skills based on practical experience and the breadth of skills presented, not solely on the prestige of a particular research project."
+      },
+      {
+        "id": "problem_solving",
+        "label": "Problem Solving",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The candidate’s project description – focused on a highly specialized deep learning project for Alzheimer's disease classification – is significantly more complex and technically demanding than the typical 'problem-solving' skill described in the job description. The mention of 'Hippocampus shape morphometric analysis' and 'Deep Graph CNN' suggests a deep understanding of advanced algorithms and research, which is not the expected focus for a generic problem-solving skill. This elevates the candidate's profile beyond the stated requirements, potentially leading to a bias favoring candidates with specialized academic experience (INSAT), rather than a focus on demonstrable problem-solving skills applicable to a broader range of backend development tasks. A correction factor of 0.75 reflects the increased weight given to this prestige signal."
+      },
+      {
+        "id": "time_management",
+        "label": "Time Management",
+        "bias_category": "NONE",
+        "severity": "HIGH",
+        "correction_factor": 1.35,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.26,
+        "reason": "This weight increase for 'time_management' is merit-based and reflects the exceptional nature of the candidate’s experience and project. The evidence – specifically the complex ‘Hippocampus shape’ project and the resulting ‘exceeded all state-of-the-art methods’ outcome – clearly demonstrates a need for sophisticated time and resource management skills. The CV explicitly details this demanding project, highlighting a significant contribution, justifying a substantial increase in this metric beyond the ideal weight. Furthermore, the presence of intensity (central) and experience_years_detected (1.67) confirm the project's high demands."
+      },
+      {
+        "id": "adaptation_tech",
+        "label": "Adaptation to new technologies",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.166,
+        "reason": "This weight change represents a merit-based increase driven by significant project experience and quantifiable achievements. The candidate's project, 'Alzheimer's Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning,' directly aligns with the JD's technological requirements – specifically Deep Learning, Graph CNNs, and related tools like Docker, Kubernetes, and Google Cloud. The candidate's use of these technologies and the 'exceeded all state of the art methods' outcome demonstrate a valuable skillset and technical depth, justifying the +0.233 increase.  Furthermore, the CV explicitly details relevant experience at InstaDeep, a company focused on machine learning, strengthening the evidence for adaptability and expertise.  A slight increase in the score (1.25) is warranted to reflect the project's impressive results and the candidate's demonstrated skillset, which exceeds the baseline expectations described in the job description."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2013 (sous-qualifié), CTM=0.7492 (écart structurel élevé), match_pct=26.44% → Poor Match",
+    "v6_summary": "weighted_f1=0.0808, gap_score=0.1796, ndcg_5=0.8341, missing_critical_penalty=0.0625, combo_v6_final=19.55",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "24 gaps critiques identifiés",
+    "bias_note": "23 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.48)",
+    "scoring_reliability": "✅ 80.7% des scores via LLM (fiable)"
+  }
+}

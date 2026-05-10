@@ -1,0 +1,373 @@
+{
+  "job_id": "job_42",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-03T00:19:10.234100",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 30.73,
+    "confidence": {
+      "confidence_score": 1.0,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.583,
+        "coverage_rate": 1.25,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.3022,
+    "edge_score": 0.4313,
+    "combined": 0.3539
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1794,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7043,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6927,
+    "matched_nodes": "2/12",
+    "edge_match_pct": 21.59
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2084,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.422,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1419,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0833,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.9513,
+    "weighted_recall": 0.0599,
+    "weighted_f1": {
+      "value": 0.1127,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.575,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.7006,
+    "ndcg_10": 0.8716,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.2604,
+    "experience_density": 0.1209
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 21.96,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 25.19,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 16.87,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 88.02,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 32.47,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 24.26,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 19.67,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 4,
+      "match_pct": 11.6,
+      "weight_sum": 3.725
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 1.0
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 34.6,
+      "weight_sum": 1.494
+    },
+    "Domain": {
+      "count": 4,
+      "match_pct": 21.1,
+      "weight_sum": 2.38
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 21.59,
+    "total_edges": 8,
+    "top_synergies": [
+      {
+        "edge_key": "data-scientist-experience|data_scientist_domain",
+        "source": "data-scientist-experience",
+        "target": "data_scientist_domain",
+        "w_0": 0.75,
+        "w_cv": 0.856,
+        "w_cv_norm": 0.428,
+        "match_pct": 57.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "communication_skills|data_scientist_domain",
+        "source": "communication_skills",
+        "target": "data_scientist_domain",
+        "w_0": 0.6,
+        "w_cv": 0.562,
+        "w_cv_norm": 0.281,
+        "match_pct": 46.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "mysql_database|data_scientist_domain",
+        "source": "mysql_database",
+        "target": "data_scientist_domain",
+        "w_0": 0.7,
+        "w_cv": 0.469,
+        "w_cv_norm": 0.234,
+        "match_pct": 33.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "docker_containerization|data_scientist_domain",
+        "source": "docker_containerization",
+        "target": "data_scientist_domain",
+        "w_0": 0.5,
+        "w_cv": 0.469,
+        "w_cv_norm": 0.234,
+        "match_pct": 46.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "pytorch_deep_learning|data_scientist_domain",
+        "source": "pytorch_deep_learning",
+        "target": "data_scientist_domain",
+        "w_0": 0.9,
+        "w_cv": 0.375,
+        "w_cv_norm": 0.188,
+        "match_pct": 20.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Azure Machine Learning",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PhD",
+      "type": "Education",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "MySQL",
+      "type": "Tool",
+      "gap": 0.812,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Communication",
+      "type": "Soft Skill",
+      "gap": 0.634,
+      "severity": "critical",
+      "importance": 0.915
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.692,
+      "severity": "critical",
+      "importance": 0.879
+    },
+    {
+      "skill": "PyTorch",
+      "type": "Tool",
+      "gap": 0.752,
+      "severity": "critical",
+      "importance": 0.846
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Azure Machine Learning",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "PhD",
+        "type": "Education",
+        "gap": 1.0
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "MySQL",
+        "type": "Tool",
+        "gap": 0.812
+      },
+      {
+        "label": "Communication",
+        "type": "Soft Skill",
+        "gap": 0.634
+      },
+      {
+        "label": "Docker",
+        "type": "Tool",
+        "gap": 0.692
+      },
+      {
+        "label": "PyTorch",
+        "type": "Tool",
+        "gap": 0.752
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 5,
+    "nodes_with_bias": 5,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 4,
+      "PRESTIGE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "mysql_database",
+        "label": "MySQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The CV prominently lists Transact-SQL (T-SQL), a database-specific skill, alongside Java Spring. The job description explicitly mentions MySQL as a core technology stack component. The significant decrease in weight (Delta: -0.500) suggests a proxy bias favoring candidates with experience in T-SQL, potentially reflecting a preference for candidates who historically worked with Microsoft SQL Server, despite the JD's focus on MySQL. A fairer alternative would be to prioritize skills directly related to MySQL, such as SQL queries, database design, or schema optimization."
+      },
+      {
+        "id": "communication_skills",
+        "label": "Communication",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The CV heavily emphasizes technical skills (SMTP, T-SQL, Java, Spring) and project details (Linedata), which are favored in a data science role. The focus on specific technologies (Angular, React, Talend) alongside a finance specialization suggests a proxy bias - the system is prioritizing skills reflective of the current role at Linedata and the recruiter's preferences, rather than objectively assessing communication skills demonstrated in the JD or Mohamed's overall capabilities. The decrease in weight reflects the overemphasis on tools and technologies at the expense of explicitly stated communication requirements. A fairer alternative would prioritize the collaborative Agile workflows and demonstrable communication skills within the context of the project descriptions."
+      },
+      {
+        "id": "docker_containerization",
+        "label": "Docker",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The candidate's CV explicitly states they are 'actively exploring DevOps tools like Docker and CI/CD.' However, the adaptation of the CV weight (w_cv from 0.879 to 0.5) suggests a disproportionate penalty for this exploration. This indicates a proxy bias – the system is penalizing the candidate for not having deep expertise in DevOps tools, which are mentioned in the JD, when those tools are part of a learning process rather than core competency. A fairer alternative would be to weight the exploration of Docker as a positive demonstration of adaptability and a willingness to learn, reflecting the candidate's stated intention, rather than a deficit. The focus on core Java/Spring skills should be prioritized, with the exploration of DevOps being considered a secondary, positive attribute."
+      },
+      {
+        "id": "pytorch_deep_learning",
+        "label": "PyTorch",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV heavily emphasizes skills like Java, Spring, and T-SQL, aligning with the JD's focus on a \"modern web platform using Java and Spring.\" However, the candidate's explicit mention of these technologies, combined with the lack of details about PyTorch experience, suggests a proxy bias favoring candidates with a backend skillset relevant to the stated tech stack, despite the JD's open-ended request for deep learning expertise. The adaptation weight reflects a significant decrease in value due to this mismatch, prioritizing a different skillset over the ideal technical proficiency for the role. A fair alternative would involve a more balanced assessment based on demonstrated deep learning skills and project experience, irrespective of specific language preferences."
+      },
+      {
+        "id": "data_scientist_domain",
+        "label": "Data Scientist",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The candidate’s CV prominently features skills like SMTP, Angular Material, and T-SQL, which are not directly relevant to a Data Scientist role focused on machine learning and AI. The emphasis on these technologies, combined with the candidate’s experience at Linedata (a data management company), suggests a Prestige bias – the algorithm is overly weighting the familiarity with a specific industry and technology stack, rather than assessing the candidate's core data science skills as highlighted in the JD. A fairer alternative would be to assess the candidate based on their portfolio management, risk analysis, and forecasting coursework, as demonstrated in the provided rationale."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1794 (sous-qualifié), CTM=0.7043 (écart structurel élevé), match_pct=30.73% → Poor Match",
+    "v6_summary": "weighted_f1=0.1127, gap_score=0.1419, ndcg_5=0.7006, missing_critical_penalty=0.0, combo_v6_final=21.96",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "7 gaps critiques identifiés",
+    "bias_note": "5 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (1.0)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

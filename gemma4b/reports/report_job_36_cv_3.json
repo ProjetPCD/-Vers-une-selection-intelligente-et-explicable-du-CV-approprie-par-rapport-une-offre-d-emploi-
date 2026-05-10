@@ -1,0 +1,389 @@
+{
+  "job_id": "job_36",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-02T19:39:53.853798",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 39.35,
+    "confidence": {
+      "confidence_score": 0.68,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.6,
+        "coverage_rate": 0.8,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.3513,
+    "edge_score": 0.2078,
+    "combined": 0.2939
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2246,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6487,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6065,
+    "matched_nodes": "4/15",
+    "edge_match_pct": 10.39
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.239,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1999,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1574,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1429,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.1162,
+    "weighted_recall": 0.1234,
+    "weighted_f1": {
+      "value": 0.2222,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.7035,
+    "missing_critical_penalty": {
+      "value": 0.1,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8302,
+    "ndcg_10": 0.8669,
+    "map_score": 0.9482,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8472,
+    "top_skill_alignment": 0.5627,
+    "semantic_fit_score": 0.321,
+    "experience_density": 0.1331
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 24.21,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 20.13,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 21.1,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 91.4,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 43.62,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 26.67,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 51.9,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 6,
+      "match_pct": 22.0,
+      "weight_sum": 4.793
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 31.6,
+      "weight_sum": 0.933
+    },
+    "Certification": {
+      "count": 4,
+      "match_pct": 0.0,
+      "weight_sum": 3.245
+    },
+    "Soft Skill": {
+      "count": 3,
+      "match_pct": 31.6,
+      "weight_sum": 1.905
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 9.4,
+      "weight_sum": 0.492
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 10.39,
+    "total_edges": 7,
+    "top_synergies": [
+      {
+        "edge_key": "communication-skill|node_1",
+        "source": "communication-skill",
+        "target": "node_1",
+        "w_0": 0.6,
+        "w_cv": 0.594,
+        "w_cv_norm": 0.297,
+        "match_pct": 49.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "security-tools|node_2",
+        "source": "security-tools",
+        "target": "node_2",
+        "w_0": 0.8,
+        "w_cv": 0.55,
+        "w_cv_norm": 0.275,
+        "match_pct": 34.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "iso-27001-certification|node_4",
+        "source": "iso-27001-certification",
+        "target": "node_4",
+        "w_0": 0.7,
+        "w_cv": 0.094,
+        "w_cv_norm": 0.047,
+        "match_pct": 6.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "pci-dss-certification|node_4",
+        "source": "pci-dss-certification",
+        "target": "node_4",
+        "w_0": 0.7,
+        "w_cv": 0.094,
+        "w_cv_norm": 0.047,
+        "match_pct": 6.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "nist-certification|node_4",
+        "source": "nist-certification",
+        "target": "node_4",
+        "w_0": 0.7,
+        "w_cv": 0.094,
+        "w_cv_norm": 0.047,
+        "match_pct": 6.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "approches agiles",
+      "type": "Hard Skill",
+      "gap": 0.618,
+      "severity": "critical",
+      "importance": 0.933
+    },
+    {
+      "skill": "Firewalls",
+      "type": "Tool",
+      "gap": 0.891,
+      "severity": "critical",
+      "importance": 0.891
+    },
+    {
+      "skill": "Security Tools",
+      "type": "Tool",
+      "gap": 0.875,
+      "severity": "critical",
+      "importance": 0.875
+    },
+    {
+      "skill": "ISO 27001",
+      "type": "Certification",
+      "gap": 0.836,
+      "severity": "critical",
+      "importance": 0.836
+    },
+    {
+      "skill": "PCI-DSS",
+      "type": "Certification",
+      "gap": 0.819,
+      "severity": "critical",
+      "importance": 0.819
+    },
+    {
+      "skill": "NIST",
+      "type": "Certification",
+      "gap": 0.809,
+      "severity": "critical",
+      "importance": 0.809
+    },
+    {
+      "skill": "GDPR",
+      "type": "Certification",
+      "gap": 0.781,
+      "severity": "critical",
+      "importance": 0.781
+    },
+    {
+      "skill": "Cloud Computing Technologies",
+      "type": "Tool",
+      "gap": 0.775,
+      "severity": "critical",
+      "importance": 0.775
+    },
+    {
+      "skill": "VPN",
+      "type": "Tool",
+      "gap": 0.754,
+      "severity": "critical",
+      "importance": 0.754
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "AWS et Azure",
+        "type": "Tool",
+        "w_cv": 1.584
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "approches agiles",
+        "type": "Hard Skill",
+        "gap": 0.618
+      },
+      {
+        "label": "Firewalls",
+        "type": "Tool",
+        "gap": 0.891
+      },
+      {
+        "label": "Security Tools",
+        "type": "Tool",
+        "gap": 0.875
+      },
+      {
+        "label": "ISO 27001",
+        "type": "Certification",
+        "gap": 0.836
+      },
+      {
+        "label": "PCI-DSS",
+        "type": "Certification",
+        "gap": 0.819
+      },
+      {
+        "label": "NIST",
+        "type": "Certification",
+        "gap": 0.809
+      },
+      {
+        "label": "GDPR",
+        "type": "Certification",
+        "gap": 0.781
+      },
+      {
+        "label": "Cloud Computing Technologies",
+        "type": "Tool",
+        "gap": 0.775
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 4,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 2,
+      "HALO BIAS": 1,
+      "PRESTIGE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "node_9",
+        "label": "AWS et Azure",
+        "bias_category": "HALO BIAS",
+        "severity": "HIGH",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.584,
+        "reason": "The system is heavily weighting the single, impactful achievement – the Kubernetes deployment project – resulting in a disproportionate emphasis on this one experience over Azza’s broader skillset and certifications.  While the project is impressive, the narrative focuses almost exclusively on it, creating a ‘halo’ effect that elevates her overall score beyond what a reasonable assessment of her qualifications would suggest.  This ignores the significant value of her Red Hat certifications, ISO 27001/PCI-DSS expertise, and prior experience in bare-metal provisioning, which are crucial for a Senior Cybersecurity Engineer.  A fairer assessment would consider the totality of her experience, not just a single successful project, and adjust accordingly to reflect the potential exaggeration of her capabilities due to this halo effect."
+      },
+      {
+        "id": "node_10",
+        "label": "approches agiles",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.631,
+        "reason": "The audit’s justification centers on a lack of explicitly defined Agile tools and a 'relatively basic' understanding of Agile methodologies, stemming from the applicant’s CV. This focuses heavily on language skills (German, Arabic, French) and geographical context (Tunisia) which are not directly related to the core cybersecurity responsibilities outlined in the job description. The applicant’s experience with Kubernetes and OpenShift, while valuable, is framed within a context of a specific implementation, arguably penalizing for a breadth of skills rather than deep expertise in the technology itself. This proxy bias unfairly reduces the score based on factors outside of the required skillset, reflecting a judgment of fit based on location and secondary skills."
+      },
+      {
+        "id": "node_1",
+        "label": "Soft Skill",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.938,
+        "reason": "The increased weight assigned to this candidate’s application is likely due to the mention of specific technologies – Terraform, Kubespray – which are highly sought after in the cloud infrastructure space, reflecting a prestige bias. While the candidate demonstrably possesses these skills through their CV experiences, the JD doesn’t explicitly require them; instead, it focuses on broader cybersecurity expertise and frameworks.  This weighting emphasizes the applicant’s familiarity with current, potentially expensive, tooling – a focus on prestige rather than demonstrated skills within a robust security posture. A fairer alternative would be to give a weight of 0.75, recognizing the demonstrated skills without prioritizing specific technologies. The candidate’s accomplishments regarding provisioning and deployment, while valuable, should not carry a premium weight in the evaluation."
+      },
+      {
+        "id": "node_4",
+        "label": "Domain",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The weight change indicates a significant decrease (0.242) in the adapted CV score due to the mention of Infrastructure as Code (IaC) tools (Terraform, Kubespray). This leans heavily into a Proxy Bias – the system is prioritizing specific technical tool usage (IaC) over demonstrable project outcomes and impact. While IaC skills are valuable, the JD’s focus is on overall security strategy and execution, and the CV focuses on implementation details.  The lack of concrete project context, such as the business value or challenges addressed, reduces the CV's relevance to the stated role, leading to an unfair penalty. A fairer alternative would be to assess the candidate’s ability to translate technical skills into business results, as demonstrated by project metrics or problem-solving examples."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2246 (sous-qualifié), CTM=0.6487 (écart structurel élevé), match_pct=39.35% → Poor Match",
+    "v6_summary": "weighted_f1=0.2222, gap_score=0.1574, ndcg_5=0.8302, missing_critical_penalty=0.1, combo_v6_final=24.21",
+    "key_strengths": "1 compétences clés validées",
+    "key_gaps": "9 gaps critiques identifiés",
+    "bias_note": "4 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.68)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

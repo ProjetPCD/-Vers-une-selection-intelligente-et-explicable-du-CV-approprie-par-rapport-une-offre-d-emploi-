@@ -1,0 +1,383 @@
+{
+  "job_id": "job_22",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-05T01:21:56.879468",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 46.69,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.556,
+        "coverage_rate": 0.333,
+        "nodes_audited": 2,
+        "nodes_biased": 2
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.2235,
+    "edge_score": 0.2958,
+    "combined": 0.2524
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.298,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5985,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5331,
+    "matched_nodes": "3/9",
+    "edge_match_pct": 29.58
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2678,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.4444,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.1893,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.2222,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.1616,
+    "weighted_recall": 0.2231,
+    "weighted_f1": {
+      "value": 0.3743,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6537,
+    "missing_critical_penalty": {
+      "value": 0.3333,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.9431,
+    "ndcg_10": 0.9817,
+    "map_score": 0.8755,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9295,
+    "top_skill_alignment": 0.6708,
+    "semantic_fit_score": 0.3895,
+    "experience_density": 0.1624
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 36.77,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 31.82,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 26.76,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 93.37,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 50.66,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 40.93,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 56.4,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 5,
+      "match_pct": 26.0,
+      "weight_sum": 3.51
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 66.0,
+      "weight_sum": 0.833
+    },
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 0.0,
+      "weight_sum": 2.196
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 29.58,
+    "total_edges": 9,
+    "top_synergies": [
+      {
+        "edge_key": "azure|cloud_computing",
+        "source": "azure",
+        "target": "cloud_computing",
+        "w_0": 0.5,
+        "w_cv": 0.862,
+        "w_cv_norm": 0.862,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "cloud_native_development|azure",
+        "source": "cloud_native_development",
+        "target": "azure",
+        "w_0": 0.5,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.6,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "ecosysteme_microsoft|azure",
+        "source": "ecosysteme_microsoft",
+        "target": "azure",
+        "w_0": 0.5,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.6,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "net|ecosysteme_microsoft",
+        "source": "net",
+        "target": "ecosysteme_microsoft",
+        "w_0": 0.5,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.6,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "devsecops|security",
+        "source": "devsecops",
+        "target": "security",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "DevSecOps",
+      "type": "Tool",
+      "gap": 0.872,
+      "severity": "critical",
+      "importance": 0.872
+    },
+    {
+      "skill": "Sécurité",
+      "type": "Hard Skill",
+      "gap": 0.753,
+      "severity": "critical",
+      "importance": 0.753
+    },
+    {
+      "skill": "Architecture Applicative",
+      "type": "Hard Skill",
+      "gap": 0.743,
+      "severity": "critical",
+      "importance": 0.743
+    },
+    {
+      "skill": "Développement de solutions Cloud Native",
+      "type": "Hard Skill",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 0.7
+    },
+    {
+      "skill": "Terraform",
+      "type": "Tool",
+      "gap": 0.66,
+      "severity": "critical",
+      "importance": 0.66
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "DevSecOps",
+        "type": "Tool",
+        "gap": 0.872
+      },
+      {
+        "label": "Sécurité",
+        "type": "Hard Skill",
+        "gap": 0.753
+      },
+      {
+        "label": "Architecture Applicative",
+        "type": "Hard Skill",
+        "gap": 0.743
+      },
+      {
+        "label": "Développement de solutions Cloud Native",
+        "type": "Hard Skill",
+        "gap": 0.7
+      },
+      {
+        "label": "Terraform",
+        "type": "Tool",
+        "gap": 0.66
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 2,
+    "nodes_with_bias": 2,
+    "edges_audited": 4,
+    "edges_with_bias": 4,
+    "bias_categories": {
+      "PRESTIGE": 6
+    },
+    "biased_nodes": [
+      {
+        "id": "azure",
+        "label": "Azure",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.38,
+        "w_cv_corrected": 1.38,
+        "reason": "The weight change is biased towards Azure due to the prestige associated with Microsoft Certified: Azure AI Fundamentals certification. The candidate's skills and experience are not the primary reason for the weight change, but rather the brand name of the certification. A fairer assessment would consider the candidate's skills and experience in cloud computing, DevOps, and architecture, rather than the specific certification."
+      },
+      {
+        "id": "cloud_computing",
+        "label": "Cloud Computing",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.32,
+        "w_cv_corrected": 1.32,
+        "reason": "The weight change is biased due to prestige bias, as the adapted weight decreased despite the candidate having relevant experience and skills in cloud computing, including certifications and a strong foundation in both development and operations. The correction factor is 1.20 to account for the unfair penalization."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "azure|cloud_computing",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_corrected": 0.862,
+        "reason": "The weight change from 0.9 to 0.75 is biased towards prestige, as the candidate's experience as a Cloud Computing Lead is being undervalued due to the university or company name not being prestigious. The correction factor is set to 1.15 to increase the weight, as the candidate's skills and experience are highly relevant to the job description."
+      },
+      {
+        "edge": "cloud_native_development|azure",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased towards the candidate's experience with Microsoft Azure, which is a prestigious company, rather than solely focusing on the skills demonstrated. The correction factor is set to 0.80 to reduce the unfair advantage given to the candidate due to the prestige bias."
+      },
+      {
+        "edge": "ecosysteme_microsoft|azure",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.6,
+        "reason": "The edge weight change is biased due to prestige bias, as the candidate's certification in Azure AI Fundamentals is given more weight solely because of its association with Microsoft, rather than the skills demonstrated. A fairer approach would be to evaluate the candidate's skills and experience in cloud infrastructure and security, rather than relying on the prestige of the certification."
+      },
+      {
+        "edge": "net|ecosysteme_microsoft",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.6,
+        "reason": "The edge weight change is biased due to prestige bias, as the candidate's mention of ASP .NET in the context of their Microsoft Cloud Intern role is overvalued, likely because of the association with Microsoft. This is not a merit-based evaluation, as the candidate's skills and experience are not directly assessed. A fairer evaluation would consider the candidate's skills and experience in cloud infrastructure, security, and development, rather than their association with a prestigious company."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.298 (sous-qualifié), CTM=0.5985 (écart structurel élevé), match_pct=46.69% → Poor Match",
+    "v6_summary": "weighted_f1=0.3743, gap_score=0.1893, ndcg_5=0.9431, missing_critical_penalty=0.3333, combo_v6_final=36.77",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "5 gaps critiques identifiés",
+    "bias_note": "2 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 2,
+    "pool_size": 30,
+    "percentile": 0.9655,
+    "composite_z_score": 1.8072,
+    "tier": "Top 10%",
+    "z_scores": {
+      "combo_v6": 2.131,
+      "wf1": 2.296,
+      "gap_score": 2.028,
+      "ntcw": 2.409,
+      "match_pct": 2.489,
+      "ndcg_5": 0.705
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 15.953,
+        "std": 9.7668
+      },
+      "wf1": {
+        "mean": 0.0984,
+        "std": 0.1202
+      },
+      "gap_score": {
+        "mean": 0.0702,
+        "std": 0.0588
+      },
+      "ntcw": {
+        "mean": 0.0972,
+        "std": 0.0834
+      },
+      "match_pct": {
+        "mean": 24.7647,
+        "std": 8.8085
+      },
+      "ndcg_5": {
+        "mean": 0.8864,
+        "std": 0.0804
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

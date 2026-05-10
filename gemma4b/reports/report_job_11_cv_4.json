@@ -1,0 +1,378 @@
+{
+  "job_id": "job_11",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-03T14:11:22.964640",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 49.96,
+    "confidence": {
+      "confidence_score": 0.68,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.462,
+        "coverage_rate": 0.769,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.753,
+    "edge_score": 0.9153,
+    "combined": 0.8179
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.4304,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5627,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5004,
+    "matched_nodes": "3/13",
+    "edge_match_pct": 45.76
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.4315,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.6797,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.3498,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.4615,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.3366,
+    "weighted_recall": 0.3444,
+    "weighted_f1": {
+      "value": 0.5476,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.637,
+    "missing_critical_penalty": {
+      "value": 0.4,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8777,
+    "ndcg_10": 0.9277,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9255,
+    "top_skill_alignment": 0.5267,
+    "semantic_fit_score": 0.4792,
+    "experience_density": 0.3224
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 51.77,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 52.59,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 42.3,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 95.11,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 61.27,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 49.0,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 51.89,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 1,
+      "match_pct": 60.0,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 69.6,
+      "weight_sum": 1.618
+    },
+    "Tool": {
+      "count": 9,
+      "match_pct": 28.7,
+      "weight_sum": 7.781
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 31.9,
+      "weight_sum": 0.733
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 45.76,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "data-scientist-role|python-programming",
+        "source": "data-scientist-role",
+        "target": "python-programming",
+        "w_0": 0.95,
+        "w_cv": 1.32,
+        "w_cv_norm": 0.66,
+        "match_pct": 69.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data-scientist-role|r",
+        "source": "data-scientist-role",
+        "target": "r",
+        "w_0": 0.65,
+        "w_cv": 1.282,
+        "w_cv_norm": 0.641,
+        "match_pct": 98.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data-scientist-role|data_science",
+        "source": "data-scientist-role",
+        "target": "data_science",
+        "w_0": 0.85,
+        "w_cv": 1.256,
+        "w_cv_norm": 0.628,
+        "match_pct": 73.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data-scientist-role|tensorflow-ml",
+        "source": "data-scientist-role",
+        "target": "tensorflow-ml",
+        "w_0": 0.75,
+        "w_cv": 1.2,
+        "w_cv_norm": 0.6,
+        "match_pct": 80.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data-scientist-role|sql-database",
+        "source": "data-scientist-role",
+        "target": "sql-database",
+        "w_0": 0.85,
+        "w_cv": 0.938,
+        "w_cv_norm": 0.469,
+        "match_pct": 55.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 0.655,
+      "severity": "critical",
+      "importance": 0.993
+    },
+    {
+      "skill": "NoSQL",
+      "type": "Tool",
+      "gap": 0.696,
+      "severity": "critical",
+      "importance": 0.936
+    },
+    {
+      "skill": "D3.js",
+      "type": "Tool",
+      "gap": 0.926,
+      "severity": "critical",
+      "importance": 0.926
+    },
+    {
+      "skill": "Hadoop",
+      "type": "Tool",
+      "gap": 0.741,
+      "severity": "critical",
+      "importance": 0.891
+    },
+    {
+      "skill": "Tableau",
+      "type": "Tool",
+      "gap": 0.84,
+      "severity": "critical",
+      "importance": 0.84
+    },
+    {
+      "skill": "Spark",
+      "type": "Tool",
+      "gap": 0.689,
+      "severity": "critical",
+      "importance": 0.689
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "gap": 0.655
+      },
+      {
+        "label": "NoSQL",
+        "type": "Tool",
+        "gap": 0.696
+      },
+      {
+        "label": "D3.js",
+        "type": "Tool",
+        "gap": 0.926
+      },
+      {
+        "label": "Hadoop",
+        "type": "Tool",
+        "gap": 0.741
+      },
+      {
+        "label": "Tableau",
+        "type": "Tool",
+        "gap": 0.84
+      },
+      {
+        "label": "Spark",
+        "type": "Tool",
+        "gap": 0.689
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 10,
+    "nodes_with_bias": 7,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 3,
+      "PROXY": 2,
+      "HALO BIAS": 1,
+      "HALO": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python-programming",
+        "label": "Python",
+        "bias_category": "HALO BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.44,
+        "reason": "The assessment appears to be dominated by the exceptional outcome of the image translation model project (95% accuracy, 40% increase in model accuracy) – specifically, the 'outstanding' 95% accuracy. This single achievement, while impressive, heavily influences the weighting applied to the candidate's Python skills, potentially overshadowing other relevant skills and experience like their work with Django and Kafka. The JD emphasizes a broad range of data science skills (R, SQL, Hadoop, Spark), indicating a more holistic evaluation should have been performed, rather than focusing solely on this one impressive outcome. The CV highlights multiple significant contributions across different projects, further suggesting a HALO bias is at play."
+      },
+      {
+        "id": "sql-database",
+        "label": "SQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.675,
+        "reason": "The significant weight decrease (-0.093) is likely due to the CV’s focus on specific, highly technical projects (image segmentation, tensor transformations, mammogram analysis) using proprietary tools and methodologies. While SQL proficiency is mentioned, the CV heavily emphasizes the impact of these projects using advanced techniques, which are not traditionally prioritized in recruitment, potentially leading the algorithm to undervalue the fundamental SQL skills required for querying and data retrieval as described in the job description. A fair alternative would be to weight the SQL experience alongside the demonstrable technical skills, especially the quantifiable achievements within the projects. This proxy bias incorrectly penalizes the candidate for using a different skillset than what is implicitly considered ‘standard’ for a data scientist role."
+      },
+      {
+        "id": "nosql-database",
+        "label": "NoSQL",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.48,
+        "reason": "The significant decrease in weight (w_0 from 0.936 to 0.4) is likely driven by the CV’s emphasis on highly specialized and arguably niche projects – image segmentation, deep learning model training, and AI model improvements with quantifiable results (40% accuracy increase, 95% accuracy – benchmark surpassing). This focus leans heavily into areas within data science & machine learning, which may be unfairly weighted over more broadly applicable skills outlined in the JD (R, Python, SQL, Big Data tools). The candidate's experience is geared towards a specialist role, and the system is penalizing this specialization, demonstrating prestige bias."
+      },
+      {
+        "id": "hadoop-big-data",
+        "label": "Hadoop",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The significant decrease in weight for 'hadoop-big-data' (Delta: -0.491) is likely driven by a proxy bias related to the candidate’s geographical location (Tunisia) and CV presentation. The JD explicitly mentions Hadoop and Spark as desired technologies, yet the candidate’s CV doesn’t heavily emphasize these, focusing instead on image segmentation and mapping applications.  The candidate’s experience in Tunisia may be perceived negatively, as companies in certain locations might be seen as less desirable or requiring more handholding; however, this is an assumption.  The system unfairly penalizes the candidate for their location, ignoring the demonstrable skills listed in the CV. A fair alternative would be to assess the candidate’s skills on their merits regardless of geographical location."
+      },
+      {
+        "id": "communication",
+        "label": "Communication",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The evidence anchor highlighting 'Engaged in collaborative efforts with cross-functional teams composed of professionals from diverse backgrounds and expertise to develop a cutting-edge medical application' suggests a Halo bias. The JD explicitly states 'strong communication and collaboration' as a requirement, and the candidate's CV reflects a similar description of their work on the StraTiFY project. However, the CV's specific quantifiable results (40% increase in model accuracy, 95% accuracy) are significantly emphasized, potentially overshadowing the general collaborative effort mentioned in the JD.  This disproportionate focus on the successful project outcome, a strong signal, indicates a Halo bias where the overall positive impression leads to an inflated assessment of the candidate's communication skills. A fairer alternative would be to weight the JD requirement more heavily and allow for a more balanced assessment of the candidate's communication abilities."
+      },
+      {
+        "id": "r",
+        "label": "R",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.3,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.365,
+        "reason": "The candidate's CV prominently highlights a complex, quantitative achievement - a 40% increase in model accuracy and a 50% reduction in training time achieved through advanced image segmentation and tensor transformation techniques.  This demonstrates technical expertise aligned with the JD's requirement for a Data Scientist using R, while the JD's focus on 'data-driven growth' and 'innovative projects' appears to be unduly emphasized, leading to an inflated weighting. The applicant's experience with generative modeling and deep learning, exceeding typical requirements for a Data Scientist role, is being disproportionately rewarded, suggesting prestige bias."
+      },
+      {
+        "id": "data_science",
+        "label": "Data Science",
+        "bias_category": "PRESTIGE",
+        "severity": "HIGH",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.312,
+        "reason": "The applicant's CV overwhelmingly emphasizes quantifiable achievements from complex projects – image segmentation, tensor transformation, model accuracy improvements – showcasing a high degree of technical skill and impact. This is amplified by the JD’s focus on achieving growth and quantifiable results. The weight change of 1.132, increased significantly from the ideal of 0.618, suggests an over-emphasis on demonstrable outcomes (specifically, the 40% accuracy and model training time reduction) rather than the underlying theoretical knowledge or breadth of experience. This demonstrates prestige bias, favoring outcomes and impressive technical feats, rather than the applicant’s foundational data science capabilities, and significantly inflates the candidate’s perceived worth relative to other candidates who may have less obviously quantifiable accomplishments."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.4304 (sous-qualifié), CTM=0.5627 (écart structurel élevé), match_pct=49.96% → Poor Match",
+    "v6_summary": "weighted_f1=0.5476, gap_score=0.3498, ndcg_5=0.8777, missing_critical_penalty=0.4, combo_v6_final=51.77",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "6 gaps critiques identifiés",
+    "bias_note": "7 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.68)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

@@ -1,0 +1,443 @@
+{
+  "job_id": "job_1",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-02T13:25:09.828239",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 46.04,
+    "confidence": {
+      "confidence_score": 0.78,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.471,
+        "coverage_rate": 0.882,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.6491,
+    "edge_score": 0.0,
+    "combined": 0.3895
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3756,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5697,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5396,
+    "matched_nodes": "6/17",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.4052,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.7833,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Excellent"
+    },
+    "gap_score": {
+      "value": 0.3207,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.2667,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.2794,
+    "weighted_recall": 0.1871,
+    "weighted_f1": {
+      "value": 0.3265,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6103,
+    "missing_critical_penalty": {
+      "value": 0.1818,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.7539,
+    "ndcg_10": 0.811,
+    "map_score": 0.9914,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8923,
+    "top_skill_alignment": 0.4887,
+    "semantic_fit_score": 0.3382,
+    "experience_density": 0.2642
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 42.42,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 50.29,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 31.33,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 89.85,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 47.91,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 36.56,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 48.03,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 58.1,
+      "weight_sum": 2.316
+    },
+    "Tool": {
+      "count": 9,
+      "match_pct": 24.7,
+      "weight_sum": 8.139
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 35.4,
+      "weight_sum": 2.893
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 22.5,
+      "weight_sum": 0.491
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "total_edges": 13,
+    "top_synergies": [
+      {
+        "edge_key": "python_ml_engineer|tensorflow_framework",
+        "source": "python_ml_engineer",
+        "target": "tensorflow_framework",
+        "w_0": 0.95,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_ml_engineer|pytorch_framework",
+        "source": "python_ml_engineer",
+        "target": "pytorch_framework",
+        "w_0": 0.9,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_ml_engineer|pandas_library",
+        "source": "python_ml_engineer",
+        "target": "pandas_library",
+        "w_0": 0.85,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_ml_engineer|numpy_library",
+        "source": "python_ml_engineer",
+        "target": "numpy_library",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_ml_engineer|scikit_learn_library",
+        "source": "python_ml_engineer",
+        "target": "scikit_learn_library",
+        "w_0": 0.75,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.633,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PyTorch",
+      "type": "Tool",
+      "gap": 0.67,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Pandas",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "NumPy",
+      "type": "Tool",
+      "gap": 0.689,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Scikit-learn",
+      "type": "Tool",
+      "gap": 0.745,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Kubernetes",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "capacité à travailler en équipe",
+      "type": "Soft Skill",
+      "gap": 0.627,
+      "severity": "critical",
+      "importance": 0.919
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.661,
+      "severity": "critical",
+      "importance": 0.898
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.633
+      },
+      {
+        "label": "PyTorch",
+        "type": "Tool",
+        "gap": 0.67
+      },
+      {
+        "label": "Pandas",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "NumPy",
+        "type": "Tool",
+        "gap": 0.689
+      },
+      {
+        "label": "Scikit-learn",
+        "type": "Tool",
+        "gap": 0.745
+      },
+      {
+        "label": "Kubernetes",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "capacité à travailler en équipe",
+        "type": "Soft Skill",
+        "gap": 0.627
+      },
+      {
+        "label": "Docker",
+        "type": "Tool",
+        "gap": 0.661
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 11,
+    "nodes_with_bias": 11,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 4,
+      "PROXY": 3,
+      "PRESTIGE BIAS": 1,
+      "HALO BIAS": 1,
+      "B": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python_ml_engineer",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.288,
+        "reason": "The CV highlights an impressive 40% accuracy increase and a translated model benchmark, coupled with strong performance metrics. However, the focus on ‘advanced image translation model’ and specific results (95% accuracy, time reduction) alongside the mention of a ‘generative modeling’ creates a prestige signal tied to the specific project. The CV emphasizes ambitious results that could be inflated or focused on a particularly successful project, indicating a potential bias favoring candidates with demonstrably 'outstanding' achievements rather than a broader evaluation of skill and experience. Correcting the factor to 1.25 accounts for the prominence of this one project in driving the increase. The emphasis on specific outcomes suggests an over-weighting of a single project's success."
+      },
+      {
+        "id": "tensorflow_framework",
+        "label": "TensorFlow",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.735,
+        "reason": "The CV highlights a significant achievement - a deep learning image translation model with 95% accuracy - using TensorFlow. However, the JD specifically emphasizes 'experienced' Machine Learning Engineers with a 'solid knowledge' of the framework. The CV’s specific accomplishment, while impressive, leverages a specialized task (image translation) that isn’t broadly applicable to the typical ML engineer role, potentially inflating the perceived value of TensorFlow expertise in this context.  A reduction in the weight reflects the specific, highly targeted nature of the achievement, and the JD’s broader expectations.  The focus on the precision of the model is more important than the breadth of the framework used, indicating prestige bias."
+      },
+      {
+        "id": "pytorch_framework",
+        "label": "PyTorch",
+        "bias_category": "HALO BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.66,
+        "reason": "The CV heavily emphasizes the 95% accuracy achieved in a specific project (image segmentation), which is disproportionately weighted compared to the overall experience and skills presented. While impressive, this single achievement is driving the score, indicating a halo effect - the strong signal of high accuracy is overshadowing other potentially valuable aspects of Ines's experience. A fairer assessment would consider the breadth of her contributions across different projects and roles, not just this single performance metric. Furthermore, the detailed description of her work suggests a higher level of technical skill than the slight decrease in the PyTorch weight implies."
+      },
+      {
+        "id": "numpy_library",
+        "label": "NumPy",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.622,
+        "reason": "The CV highlights a 95% accuracy achievement using NumPy, which is presented as a key differentiator. However, the JD emphasizes a broader skillset including deep learning architectures and model deployment, suggesting a focus on demonstrable model performance rather than the specific library used to achieve it. The 'precise separation of each image into distinct satellite and map elements' and 'tensor transformation techniques' demonstrate a deeper understanding of the underlying methods, making the NumPy achievement potentially overstated and reflecting a Prestige bias - prioritizing the name of the library over the actual practical application. A lower confidence factor is warranted, given the lack of explicit detail on the modeling process."
+      },
+      {
+        "id": "scikit_learn_library",
+        "label": "Scikit-learn",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.51,
+        "reason": "The CV heavily emphasizes projects utilizing Scikit-learn, particularly in image segmentation and mammogram analysis, while neglecting to mention the depth of experience with other more advanced deep learning frameworks (TensorFlow, PyTorch) explicitly required in the JD. This suggests an over-reliance on Scikit-learn as a signal of competence, potentially reflecting prestige bias associated with familiarity with a widely used, but less cutting-edge, library. A fairer assessment would consider the breadth of the candidate's experience with modern deep learning technologies, reducing the weight assigned to the Scikit-learn component."
+      },
+      {
+        "id": "teamwork_communication",
+        "label": "capacité à travailler en équipe",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.585,
+        "reason": "The CV heavily emphasizes Ines Souissi’s work in data science and image segmentation, particularly with impressive metrics (40% accuracy increase, 95% accuracy) and keywords associated with high-end technologies (TensorFlow, PyTorch, Kubernetes) and consulting firms (BCG). This demonstrates a skillset far exceeding the stated requirements of the JD, which focuses on broader machine learning principles and a standard tech stack.  The inclusion of certifications and experience with advanced image processing techniques strongly suggests a proxy bias – the algorithm is rewarding a candidate for their experience in a more specialized and potentially higher-paying role, rather than the specific team collaboration skills prioritized by the JD. The decrease in weight reflects this overemphasis on advanced technical skills outside the core requirements."
+      },
+      {
+        "id": "communication_skills",
+        "label": "bonne communication",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.663,
+        "reason": "The communication skills weight has decreased from 0.902 to 0.78, indicating a negative adjustment. This is likely due to the CV's emphasis on technical achievements (image segmentation, model optimization, data translation) and less explicit mention of communication skills described within the JD context. While the CV highlights impactful results and technical expertise – demonstrating value – the JD explicitly requests ‘good communication’ and ‘working in teams’, suggesting a potential overemphasis on technical capabilities at the expense of broader team collaboration expectations.  The evidence leans toward a GENDER/DIVERSITY bias where a focus on demonstrable technical prowess overshadows the importance of typical ‘soft’ collaborative skills. A correction factor of 0.85 reflects this imbalance and prompts a revision to better align the weight with the role's stated needs."
+      },
+      {
+        "id": "docker_engine",
+        "label": "Docker",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.473,
+        "reason": "The candidate's CV heavily emphasizes specific project outcomes and technical achievements using specialized tools (Tensorflow, PyTorch, Kafka, etc.) rather than broad technical skills. This focus on demonstrably high-impact projects, particularly those involving advanced image processing and model optimization, reflects a proficiency that isn't explicitly captured by the job description's focus on \"solid knowledge of machine learning and deep learning\" - suggesting a proxy bias based on the candidate's impressive project results being prioritized over the foundational skills listed."
+      },
+      {
+        "id": "deep_learning_architectures",
+        "label": "Deep Learning",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.08,
+        "reason": "The increased weight assigned to deep learning architectures (w_cv from 0.658 to 0.9) is likely driven by the specific results described in Ines Souissi’s CV – a 40% increase in model accuracy and 95% accuracy with image segmentation. This emphasizes a quantitative achievement ('precision separation' and 'translated maps') within a context that values demonstrable impact (increased accuracy) rather than the breadth of her technical skills. The CV focuses heavily on these highly measurable outcomes, potentially leading to Prestige bias where the CV is evaluated based on these impressive results, overshadowing the more generalized and potentially less valued skills like data pipeline development and content-based retrieval, which are also present."
+      },
+      {
+        "id": "motivation_innovation",
+        "label": "Motivation for learning and innovation",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.9,
+        "reason": "The increase in weight for 'motivation_innovation' is justified by the CV evidence. Ines Souissi's accomplishments – specifically, the 40% accuracy increase in a generative model, the translated map model reaching 95% accuracy, and the improved mammogram retrieval – clearly demonstrate innovative thinking and a proactive approach to problem-solving within complex data science challenges. The CV provides concrete results supporting a higher weight for this soft skill, suggesting a strong performance rather than simply stating a desire to innovate. The evidence demonstrates a tangible impact, therefore a slight increase is warranted."
+      },
+      {
+        "id": "machine_learning_engineer",
+        "label": "Machine Learning Engineer",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The increased weight assigned to the candidate's experience with ‘Machine Learning Gouvernorat Ariana, Tunisie’ suggests a proxy bias based on location. While domain familiarity is valuable, the specific location is not a relevant indicator of technical ability. The candidate’s accomplishments, particularly the quantifiable improvements in model accuracy and speed, are stronger evidence of their skills, yet the initial weighting disproportionately emphasizes their location of employment. A fairer alternative would be to prioritize the demonstrated skills and accomplishments, not the geographic origin."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3756 (sous-qualifié), CTM=0.5697 (écart structurel élevé), match_pct=46.04% → Poor Match",
+    "v6_summary": "weighted_f1=0.3265, gap_score=0.3207, ndcg_5=0.7539, missing_critical_penalty=0.1818, combo_v6_final=42.42",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "8 gaps critiques identifiés",
+    "bias_note": "11 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.78)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

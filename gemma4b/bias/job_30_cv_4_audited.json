@@ -1,0 +1,639 @@
+{
+  "job_id": "job_30",
+  "cv_id": "cv_4",
+  "scored_nodes": {
+    "devops_aws": {
+      "w_cv": 0.188,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "No evidence of AWS experience is mentioned in the CV. The audit signals indicate its absence.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.188,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The significant decrease in weight (-0.75) is likely due to the absence of explicit AWS experience mentioned in the CV. This reflects a proxy bias, where the system is penalizing candidates for lacking a specific technology (AWS) that is heavily emphasized in the JD, even though the candidate possesses valuable skills in other relevant areas like Java, Spring, and Linux which are also mentioned in the JD. A fair alternative would be to assess the candidate's ability to learn and adapt to AWS, rather than automatically discounting them for its absence."
+    },
+    "devops_jenkins": {
+      "w_cv": 0.637,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.85
+      },
+      "active_red_flags": [],
+      "rationale": "The CV explicitly states 'CICD : Jenkins' and describes its use in the 'Environments Techniques' section. This aligns with the project management described.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.637,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The CV explicitly lists Jenkins as a skill, aligning with the JD's requirements. However, the CV’s focus on React, Spring Boot, and specific projects within Tunisia indicates a potential proxy bias due to the candidate’s geographic location and potentially limited experience within the required DevOps/MLOps skillset described in the job description.  Weighting Jenkins significantly while downplaying other relevant DevOps skills reflects an overemphasis on a specific tool, driven by the candidate’s current role. A more fair alternative would be to weight skills based on demonstrated proficiency and relevance to the stated requirements, not simply the presence of a listed technology in their previous project."
+    },
+    "devops_java": {
+      "w_cv": 1.625,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.3,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.25,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.3
+      },
+      "active_red_flags": [],
+      "rationale": "Java is consistently described as the primary language across multiple projects, demonstrating deep proficiency.  The 7+ years of experience is significant.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "D",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 1.625,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The increased weight on this candidate (w_cv increased from 1.0 to 1.3) is likely driven by the strong Java skills explicitly listed in the JD and reflected on the CV.  However, the CV heavily focuses on the Tunisian context (Gouvernorat Ariana, Tunisie, Tunisia based projects) and technology stack, which are geographically-proxied signals.  While experience with Java and Spring Boot is valuable, the prolonged emphasis on these technologies without sufficient contextualization regarding scalability, distributed systems, or cloud architecture suggests a proxy bias related to location and potentially the type of projects typically found in Tunisia. A correction factor of 1.25 acknowledges the demonstrable skill set but flags the potentially undue weighting of these attributes due to the candidate's location and project history."
+    },
+    "devops_python": {
+      "w_cv": 1.125,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.9
+      },
+      "active_red_flags": [],
+      "rationale": "The CV indicates the use of Python in conjunction with Java, showing a broad skill set. However, the experience date of 2019 is older.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 1.125,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The audit identified a decreased weight (Delta: -0.100) on the candidate’s CV due to an older experience date (2019). This reflects AGEISM, as the JD emphasizes experience with modern DevOps and MLOps technologies (Docker, Kubernetes, AWS) which are not reflected in the CV's most recent project dates.  While the CV demonstrates skills in Java, Spring, and React, the significantly older experience date suggests the candidate may not be up-to-date with current industry best practices.  A correction factor of 1.25 is applied to mitigate the impact of this age-related bias, acknowledging the potential valuable skills alongside the dated experience.  The candidate’s overall skillset warrants a higher weighting, recognizing that experience, even if older, can be relevant if adequately demonstrated."
+    },
+    "devops_go": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of Go is found in the CV.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "devops_docker": {
+      "w_cv": 0.562,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.75
+      },
+      "active_red_flags": [],
+      "rationale": "The CV mentions using it 'in conjunction with other tools,' which indicates some familiarity. The experience is somewhat dated.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "D",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.562,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The CV primarily details experience with Java, Spring Boot, and React, which are not explicitly listed as required skills in the JD. The candidate's location in Tunisia, coupled with the dated experience (primarily 2020-present), coupled with the vague mention of Docker 'in conjunction with other tools' suggests a reliance on less prioritized technologies. This indicates a potential proxy bias related to location and a lack of direct experience with the core DevOps/MLOps tools demanded by the role. A correction factor of 0.75 is appropriate to account for this mismatch."
+    },
+    "devops_kubernetes": {
+      "w_cv": 0.9,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.75
+      },
+      "active_red_flags": [],
+      "rationale": "Similar to Docker, it's mentioned 'in conjunction with other tools', implying some usage experience.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.9,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The significant weight decrease (0.167) is likely due to Tarek Tabib's CV focusing heavily on Java, Spring, and React development within the Tunisian context – specifically in automotive and financial services. While these skills are relevant to DevOps/MLOps, the JD emphasizes broader data infrastructure experience (Kubernetes, Docker, AWS) and requires a more generalized skillset. The CV's focus on specific Tunisian projects and technologies (STM32, imx) creates a proxy bias, penalizing the candidate for lacking experience in the specific cloud-native technologies demanded by the role, thereby unfairly devaluing the skills most directly aligned with the job description's architectural requirements."
+    },
+    "devops_linux": {
+      "w_cv": 1.02,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.85
+      },
+      "active_red_flags": [],
+      "rationale": "The CV explicitly mentions required system administration skills.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "D",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 1.02,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The CV demonstrates a strong skillset directly aligned with the JD requirements – specifically, experience with Java, Spring Boot, React, and versioning tools like Git. While the JD emphasizes DevOps and MLOps, Tarek's experience reflects a strong backend development foundation, which is a valuable asset in a DevOps role, especially considering the technologies listed in the JD. The increased weight change (+0.057) suggests an overemphasis on the applicant’s backend skills, potentially overshadowing the relevance of their experience within a DevOps context.  A correction factor of 1.2 is warranted to acknowledge and amplify the demonstrable skills that are pertinent to the job description's demands, reducing the artificial disparity created by the CV’s focus."
+    },
+    "devops_data_science": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "The CV indicates 'science des données' but provides no specific application details.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "devops_communication": {
+      "w_cv": 1.25,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.25,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "The CV explicitly mentions stakeholder management, indicating strong communication skills.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "D",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 1.25,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The CV explicitly mentions stakeholder management, indicating strong communication skills and aligns with the JD requirements. However, the CV primarily focuses on full-stack development (Java, React, Spring) and a Tunisian context, which may not perfectly align with the explicit requirements for ‘excellent communication’ within a globally-facing ‘leader of an industry’ role.  This suggests a potential Proxy Bias—the location and skillset (React, Spring) might have been favored compared to other candidates whose communication strengths were more explicitly highlighted in their applications, resulting in an artificially inflated weight (increased from 0.72 to 1.0).  A correction factor of 1.25 reflects this discrepancy, recognizing the strong communication skills demonstrated within the context of the CV."
+    },
+    "devops_teamwork": {
+      "w_cv": 0.89,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.14,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.89
+      },
+      "active_red_flags": [],
+      "rationale": "Contextual mention of ‘Développer plusieurs modules métiers… Réorganiser et’l’améliorer la qualité du code existant.’ and ‘Planifier des points de suivi avec le chef du projet’ indicates collaboration within a team. The evidence_anchor describes a collaborative development environment. Project Complexity is considered mid.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "LOW",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "devops_communication_skills": {
+      "w_cv": 0.79,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.65,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.14,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.79
+      },
+      "active_red_flags": [],
+      "rationale": "Evidenced by ‘Planifier des points de suivi avec le chef du projet … Synchroniser les modifications avec l’équipe de test, l’équipes de développement …’ indicates strong communication skills. Project Complexity is considered mid.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm"
+    },
+    "devops_expert_knowledge": {
+      "w_cv": 0.45,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.45,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": -0.25,
+          "ghost_skill": -0.2,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.6
+      },
+      "active_red_flags": [
+        "recency_gap",
+        "ghost_skill"
+      ],
+      "rationale": "Evidence anchor details STM32CubeProgrammer tool development.  Lack of explicit architectural/design-level involvement.  Recency gap and Ghost skill flags are applied.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.45,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The significant increase in weighting (from 0.458 to 0.6) for ‘devops_expert_knowledge’ is driven by experience with STM32CubeProgrammer, a highly specialized tool used in embedded systems development. While technically a DevOps skillset, the lack of architectural/design-level involvement and the emphasis on this niche tool suggests the algorithm is overly prioritizing a specific technical skill set irrelevant to the core requirements of the role (MLOps, data pipelines, cloud infrastructure).  This proxy bias penalizes candidates with experience in more broadly applicable DevOps technologies, favoring a narrower, less transferable skill, particularly given the emphasis on a specific tool and relatively short duration of experience in a more standard environment.  A correction factor of 0.75 reflects the undue influence of a non-core skill, and the higher weight is unfairly penalizing experience."
+    },
+    "devops_ml_model": {
+      "w_cv": 0.188,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.25,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "No mention of ML models.  Evidence audit specifically identifies the absence of ML experience. Skill is inferred as a low priority based on the audit.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "D",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.188,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The significant decrease in weight (-0.165) for w_0 (ideal) is primarily driven by the lack of explicit mention of ML experience in the CV and the JD’s emphasis on MLOps. Despite demonstrating full-stack Java/Spring/React development skills, the context highlights a focus on traditional data pipelines and deployments rather than model deployment or ML operations. This indicates a proxy bias, where the absence of direct ML skills is being penalized, overshadowing relevant experience in data engineering and application development. A correction factor of 0.75 reflects the fact that while the candidate has valuable software development skills, the role's emphasis is shifting towards MLOps and ML, which the candidate's CV doesn't directly address, leading to an unfairly reduced weight."
+    }
+  },
+  "scored_edges": {
+    "react|spring|spring_boot": {
+      "synergy_score": 0.85,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.1,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate explicitly lists 'spring/react' as a skill set within their 'Développeur Full Stack' role at ACTIA, directly demonstrating the co-use of React and Spring technologies within a single project. This is evidenced by the description of the STM32CubeProgrammer project and the migration to the web cube2 version.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.85
+    },
+    "react|testing_library|java": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate utilized React testing library alongside Java to create unit tests, showcasing the integration of these skills for a specific testing process within the STM32CubeProgrammer project. The cv excerpt directly describes the creation of 'test unitaire' using the library.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "spring|java": {
+      "synergy_score": 0.65,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate utilizes Spring framework alongside Java to develop modules and operations on a database, highlighting a typical full-stack Java development task.  The excerpt details the development of database operations ('Views, Procédures, ...') using Spring technology.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.65
+    },
+    "react|angular": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.0,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "While both technologies are mentioned, there is no evidence of them being used together within a single role or project. They represent different frontend approaches.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "react|spring_boot": {
+      "synergy_score": 0.85,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.1,
+        "penalties": 0.0,
+        "final_score": 0.85
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate explicitly states 'Développeur Full Stack (spring/react)' indicating simultaneous use of React and Spring Boot within the same role at ACTIA. This demonstrates a core synergy. High confidence due to explicit statement and project context.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.85
+    },
+    "react|react_testing_library": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.25,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate utilizes React testing library, directly demonstrating the concurrent usage of React within the project context. The cv excerpt confirms this usage: 'Préparer le test unitaire pour chaque mdoul'.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "spring_security|java": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.35,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate utilizes Spring Security alongside Java, showcasing a combined approach to building a stateless authentication system. The cv excerpt confirms this usage: 'o Réalisation des opérations (Views, Procédures, ...) sur la base de données à la demande du client. o Réaliser un système d’authentification stateless suivant le standard de sécurité JWT avec le Framework Spring Security'.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "typescript|redux": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.0,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": true,
+      "rationale": "These skills are not explicitly mentioned in relation to each other or any projects within the CV. This is a ghost synergy.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "angular|react|angular|react": {
+      "synergy_score": 0.85,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.1,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate's work with 'Modules Affiliés, Produits, Labélisation' using Angular and React demonstrates a clear combined skillset for front-end development. The task of 'correction des bugs' reinforces this synergy as debugging often requires both front-end and back-end perspectives.  cv_excerpt: \"Développer plusieurs modules métiers : Modules Affiliés, Produits, Labélisation, …. o Réorganiser et’améliorer la qualité du code existant. o      Correction des bugs\", ",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.85
+    },
+    "java|spring_boot|java|spring_boot": {
+      "synergy_score": 0.9,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.25,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate utilizes Java and Spring Boot frameworks simultaneously, as evidenced by the development of a 'system d’authentification stateless suivant le standard de sécurité JWT' using Spring Security and the creation of various business modules. This directly demonstrates a core synergy in the back-end development, aligning with the overall project architecture. cv_excerpt: \"o Réaliser un système d’authentification stateless suivant le standard de sécurité JWT avec le  Framework Spring Security o Développer plusieurs modules métiers : Modules Affiliés, Produits, Produits, Labélisation, …. o Réorganiser et’améliorer la qualité du code existant. o      Correction des bugs\", ",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.9
+    },
+    "oracle|pl_sql|oracle|pl_sql": {
+      "synergy_score": 0.8,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate uses Oracle and PL/SQL together for database development and maintenance. The 'analyse et spécifications détaillées des besoins clients' coupled with 'mettre en place plusieurs tables sur la base de données Oracle' represents a standard combination for building and optimizing a relational database. cv_excerpt: \"• Analyse et spécifications détaillées des besoins clients  • Mettre en place plusieurs tables sur la base de données Oracle\", ",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.8
+    }
+  },
+  "metadata": {
+    "skills_scored": 14,
+    "mean_score": 0.593,
+    "edges_scored": 11,
+    "mean_synergy": 0.65,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.65,
+      "max": 0.9,
+      "min": 0.0
+    },
+    "batches_ok": 2,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.593,
+      "max": 1.0,
+      "min": 0.0,
+      "above_1": 2,
+      "below_05": 5
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 11,
+    "nodes_with_bias": 10,
+    "nodes_corrected": 10,
+    "edges_audited": 0
+  }
+}

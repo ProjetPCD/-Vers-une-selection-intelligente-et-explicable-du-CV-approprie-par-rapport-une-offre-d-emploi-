@@ -1,0 +1,164 @@
+{
+  "nodes": [
+    {
+      "id": "node_5",
+      "label": "Kubernetes",
+      "type": "Tool",
+      "w_0": 0.891,
+      "seniority_required": "Senior",
+      "context": "Listed as a deployment platform.",
+      "inferred": true,
+      "inferred_from": "Il devra également avoir une excellente maîtrise des compétences techniques suivantes : développement full-stack, HTML, CSS, PHP, Java, Python, Spring, Symfony, Angular, MySQL, MongoDB, Git, Docker, Kubernetes"
+    },
+    {
+      "id": "node_1",
+      "label": "HTML",
+      "type": "Hard Skill",
+      "w_0": 0.845,
+      "seniority_required": "Senior",
+      "context": "Mentioned as a key technology for full-stack development.",
+      "inferred": true,
+      "inferred_from": "Il devra également avoir une excellente maîtrise des compétences techniques suivantes : développement full-stack, HTML, CSS, PHP, Java, Python, Spring, Symfony, Angular"
+    },
+    {
+      "id": "node_2",
+      "label": "CSS",
+      "type": "Tool",
+      "w_0": 0.822,
+      "seniority_required": "Senior",
+      "context": "Listed as a technology for web development.",
+      "inferred": true,
+      "inferred_from": "Il devra également avoir une excellente maîtrise des compétences techniques suivantes : développement full-stack, HTML, CSS, PHP, Java, Python, Spring, Symfony, Angular"
+    },
+    {
+      "id": "node_7",
+      "label": "Grafana",
+      "type": "Tool",
+      "w_0": 0.816,
+      "seniority_required": "Senior",
+      "context": "Listed as a monitoring tool.",
+      "inferred": true,
+      "inferred_from": "Il devra également avoir une excellente maîtrise des compétences techniques suivantes : développement full-stack, HTML, CSS, PHP, Java, Python, Spring, Symfony, Angular, MySQL, MongoDB, Git, Docker, Kubernetes, Prometheus, Grafana"
+    },
+    {
+      "id": "node_4",
+      "label": "Docker",
+      "type": "Tool",
+      "w_0": 0.801,
+      "seniority_required": "Senior",
+      "context": "Listed as a platform for deployment.",
+      "inferred": true,
+      "inferred_from": "Il devra également avoir une excellente maîtrise des compétences techniques suivantes : développement full-stack, HTML, CSS, PHP, Java, Python, Spring, Symfony, Angular, MySQL, MongoDB, Docker"
+    },
+    {
+      "id": "node_3",
+      "label": "Git",
+      "type": "Tool",
+      "w_0": 0.733,
+      "seniority_required": "Senior",
+      "context": "Listed as a tool for versioning.",
+      "inferred": true,
+      "inferred_from": "Il devra également avoir une excellente maîtrise des compétences techniques suivantes : développement full-stack, HTML, CSS, PHP, Java, Python, Spring, Symfony, Angular, Git"
+    },
+    {
+      "id": "node_6",
+      "label": "Prometheus",
+      "type": "Tool",
+      "w_0": 0.668,
+      "seniority_required": "Senior",
+      "context": "Listed as a monitoring tool.",
+      "inferred": true,
+      "inferred_from": "Il devra également avoir une excellente maîtrise des compétences techniques suivantes : développement full-stack, HTML, CSS, PHP, Java, Python, Spring, Symfony, Angular, MySQL, MongoDB, Git, Docker, Kubernetes, Prometheus"
+    },
+    {
+      "id": "node_8",
+      "label": "MySQL",
+      "type": "Tool",
+      "w_0": 0.648,
+      "seniority_required": "Senior",
+      "context": "Listed as a relational database.",
+      "inferred": true,
+      "inferred_from": "Il devra également avoir une excellente maîtrise des compétences techniques suivantes : développement full-stack, HTML, CSS, PHP, Java, Python, Spring, Symfony, Angular, MySQL, MongoDB, Git, Docker, Kubernetes, Prometheus, Grafana"
+    },
+    {
+      "id": "node_9",
+      "label": "MongoDB",
+      "type": "Tool",
+      "w_0": 0.648,
+      "seniority_required": "Senior",
+      "context": "Listed as a NoSQL database.",
+      "inferred": true,
+      "inferred_from": "Il devra également avoir une excellente maîtrise des compétences techniques suivantes : développement full-stack, HTML, CSS, PHP, Java, Python, Spring, Symfony, Angular, MySQL, MongoDB, Git, Docker, Kubernetes, Prometheus, Grafana"
+    },
+    {
+      "id": "node_10",
+      "label": "NoSQL",
+      "type": "Domain",
+      "w_0": 0.585,
+      "seniority_required": "Senior",
+      "context": "Listed as a type of database.",
+      "inferred": true,
+      "inferred_from": "Il devra également avoir une excellente maîtrise des compétences techniques suivantes : développement full-stack, HTML, CSS, PHP, Java, Python, Spring, Symfony, Angular, MySQL, MongoDB, Git, Docker, Kubernetes, Prometheus, Grafana"
+    }
+  ],
+  "edges": [
+    {
+      "source": "node_4",
+      "target": "node_10",
+      "relation": "supports",
+      "weight": 0.801,
+      "rationale": "Docker is frequently used for deploying NoSQL databases like MongoDB, offering containerization and portability."
+    },
+    {
+      "source": "node_3",
+      "target": "node_10",
+      "relation": "supports",
+      "weight": 0.733,
+      "rationale": "Git is a standard version control system, crucial for managing development across NoSQL database projects."
+    },
+    {
+      "source": "node_7",
+      "target": "node_10",
+      "relation": "supports",
+      "weight": 0.816,
+      "rationale": "Grafana is commonly used for monitoring and visualizing data from NoSQL databases like MongoDB, providing insights into their performance."
+    },
+    {
+      "source": "node_9",
+      "target": "node_8",
+      "relation": "supports",
+      "weight": 0.648,
+      "rationale": "MongoDB is frequently used with MySQL for data synchronization and management, supporting data migration and querying."
+    },
+    {
+      "source": "node_4",
+      "target": "node_6",
+      "relation": "supports",
+      "weight": 0.801,
+      "rationale": "Kubernetes is commonly utilized to orchestrate Prometheus, providing a scalable and reliable monitoring solution."
+    },
+    {
+      "source": "node_3",
+      "target": "node_1",
+      "relation": "requires",
+      "weight": 0.733,
+      "rationale": "Git is used to version control HTML and CSS files in web development."
+    },
+    {
+      "source": "node_3",
+      "target": "node_2",
+      "relation": "requires",
+      "weight": 0.733,
+      "rationale": "Git is used to version control CSS files in web development."
+    },
+    {
+      "source": "node_3",
+      "target": "node_10",
+      "relation": "part_of",
+      "weight": 0.585,
+      "rationale": "NoSQL is a core domain area, and Git is essential for managing projects within that domain."
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_2"
+}

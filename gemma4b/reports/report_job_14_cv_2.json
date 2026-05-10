@@ -1,0 +1,498 @@
+{
+  "job_id": "job_14",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-03T16:06:46.605265",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 27.03,
+    "confidence": {
+      "confidence_score": 0.6,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.643,
+        "coverage_rate": 0.714,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.3147,
+    "edge_score": 0.117,
+    "combined": 0.2356
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1774,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7385,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7297,
+    "matched_nodes": "2/28",
+    "edge_match_pct": 5.85
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1927,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1026,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1538,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.037,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.295,
+    "weighted_recall": 0.0255,
+    "weighted_f1": {
+      "value": 0.0499,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6,
+    "missing_critical_penalty": {
+      "value": 0.0417,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8348,
+    "ndcg_10": 0.8229,
+    "map_score": 0.9695,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.2888,
+    "experience_density": 0.1351
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 16.46,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 12.22,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 17.18,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 92.32,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 33.46,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 26.7,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 20.7,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 3,
+      "match_pct": 11.7,
+      "weight_sum": 2.332
+    },
+    "Tool": {
+      "count": 14,
+      "match_pct": 7.3,
+      "weight_sum": 12.694
+    },
+    "Hard Skill": {
+      "count": 7,
+      "match_pct": 28.0,
+      "weight_sum": 6.277
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 30.1,
+      "weight_sum": 2.737
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 5.85,
+    "total_edges": 19,
+    "top_synergies": [
+      {
+        "edge_key": "senior-devops-engineer|devops_engineer_problem_analysis",
+        "source": "senior-devops-engineer",
+        "target": "devops_engineer_problem_analysis",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 75.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "senior-devops-engineer|python-programming",
+        "source": "senior-devops-engineer",
+        "target": "python-programming",
+        "w_0": 0.7,
+        "w_cv": 0.45,
+        "w_cv_norm": 0.225,
+        "match_pct": 32.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "senior-devops-engineer|agile-methodology",
+        "source": "senior-devops-engineer",
+        "target": "agile-methodology",
+        "w_0": 0.6,
+        "w_cv": 0.425,
+        "w_cv_norm": 0.212,
+        "match_pct": 35.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "senior-devops-engineer|scrum-framework",
+        "source": "senior-devops-engineer",
+        "target": "scrum-framework",
+        "w_0": 0.6,
+        "w_cv": 0.281,
+        "w_cv_norm": 0.141,
+        "match_pct": 23.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "senior-devops-engineer|bash_scripting",
+        "source": "senior-devops-engineer",
+        "target": "bash_scripting",
+        "w_0": 0.7,
+        "w_cv": 0.188,
+        "w_cv_norm": 0.094,
+        "match_pct": 13.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Senior DevOps Engineer",
+      "type": "Domain",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "AWS",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Jenkins",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Ansible",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "GitLab",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Ruby on Rails",
+      "type": "Tool",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Scrum",
+      "type": "Hard Skill",
+      "gap": 0.719,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Azure",
+      "type": "Tool",
+      "gap": 0.89,
+      "severity": "critical",
+      "importance": 0.984
+    },
+    {
+      "skill": "Terraform",
+      "type": "Tool",
+      "gap": 0.952,
+      "severity": "critical",
+      "importance": 0.952
+    },
+    {
+      "skill": "Bash",
+      "type": "Hard Skill",
+      "gap": 0.759,
+      "severity": "critical",
+      "importance": 0.947
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Senior DevOps Engineer",
+        "type": "Domain",
+        "gap": 1.0
+      },
+      {
+        "label": "AWS",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Jenkins",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Ansible",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "GitLab",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Ruby on Rails",
+        "type": "Tool",
+        "gap": 0.906
+      },
+      {
+        "label": "Scrum",
+        "type": "Hard Skill",
+        "gap": 0.719
+      },
+      {
+        "label": "Azure",
+        "type": "Tool",
+        "gap": 0.89
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 20,
+    "nodes_with_bias": 15,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 7,
+      "PRESTIGE": 2,
+      "C": 2,
+      "PRESTIGE|PROXY": 1,
+      "D PROXY": 1,
+      "D": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python-programming",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.9,
+        "reason": "The CV lists 'python-programming' as a skill used in the ‘WebRecovery’ project, which is a specific application. However, the JD emphasizes a broader DevOps Engineer skillset across multiple technologies (Terraform, Ansible, Kubernetes, etc.). The project's focus on a single application using Python as the backend, while not explicitly showcasing advanced Python skills, is likely being disproportionately weighted compared to the overall requirements of a Senior DevOps Engineer, suggesting prestige bias driven by the specific project name."
+      },
+      {
+        "id": "ruby-on-rails",
+        "label": "Ruby on Rails",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV lists ‘Ruby on Rails’ as a skill, but the candidate’s project details – a web application named ‘WebRecovery’ – are focused on database management (SQL to NoSQL migration), file handling (Excel, XML, Config, .ini files), and a relatively simple frontend development.  The lack of explicit mention of Ruby on Rails within the project context, coupled with the limited details provided about the project’s core functionality, suggests the skill is being undervalued.  The weighting reduction likely reflects an assumption that the candidate’s project doesn't leverage the skill adequately, driven by the job description's emphasis on cloud technologies and specific DevOps tools (Kubernetes, Jenkins) which are not mentioned in the CV's project description. This represents a proxy bias, where socioeconomic or technical context isn't fully considered."
+      },
+      {
+        "id": "scrum-framework",
+        "label": "Scrum",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The weight change (decrease of 0.25) is attributed to the mention of Scrum framework across multiple projects. However, the CV primarily details Hazem's full-stack development experience (MERN Stack, Angular, Spring Boot) and a PFE project focusing on database migration and application development, exhibiting skills outside the core requirements of a Senior DevOps Engineer.  The description emphasizes functional analysis and development rather than system architecture, infrastructure management, or DevOps practices – signaling a potential reliance on the project description rather than demonstrable skills.  A correction factor of 0.75 reflects the need to adjust the weight to better reflect the skills *actually* presented and to acknowledge the relative lack of explicit DevOps framework expertise, recognizing a potential halo effect where the project's description heavily influenced the initial assessment."
+      },
+      {
+        "id": "azure-cloud",
+        "label": "Azure",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease in weight (w_0 from 0.984 to 0.25) suggests a bias related to ageism and a lack of context. The CV primarily describes a full-stack development project ('WebRecovery') from 2022-2022 – extremely short duration – and lists technologies (MERN Stack, SQL, NOSQL) that are less directly aligned with the senior DevOps engineer role described in the JD focusing on cloud, CI/CD, and security. The CV’s limited scope and short duration likely led to a disproportionate weighting of these skills, creating a mismatch between the candidate’s experience and the job requirements; the evidence is weak given the limited description of the project's scope and relevance to the role. A correction factor of 0.75 indicates a need to increase the weight to better reflect the candidate's actual skills and experience."
+      },
+      {
+        "id": "bash_scripting",
+        "label": "Bash",
+        "bias_category": "PRESTIGE|PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The CV explicitly states ‘Mettre en place et la configuration de l’environnement technique de développement’ as a key task within a large project. This is a strong signal pointing towards scripting skills (Bash in this case) but lacks concrete details regarding the scale or complexity. The JD emphasizes the need for 'Kubernetes, Jenkins, Ansible and GitLab' - which heavily rely on scripting - yet the CV’s description of this task is quite vague, suggesting a potential Prestige Bias - favouring a general DevOps capability rather than demonstrable scripting expertise. Furthermore, the use of ‘configuration’ implies a level of technical setup, which can disproportionately reward experience with specific configuration management tools – a Proxy Bias where location or company (ACTIA) influences skill perception.  A fair alternative would be a task description showcasing Bash scripting used for automating tasks within a DevOps pipeline, specifically mentioning a project demonstrating scripting prowess."
+      },
+      {
+        "id": "docker_containerization",
+        "label": "Docker",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV demonstrates significant full-stack development experience with technologies like MERN Stack, Angular, and Spring Boot, and details a project involving database migration and application development – all relevant to a Senior DevOps Engineer role. However, the CV lacks any explicit mention of Docker, Kubernetes, or containerization techniques, despite them being explicitly listed as required skills in the job description. This absence of relevant skills significantly diminishes the candidate’s profile in the context of the JD, resulting in a substantial decrease in the weight assigned. A correction factor of 0.75 is appropriate to reflect the weight change and signal the need for the system to recognize the candidate’s relevant skills despite the lack of explicit mention."
+      },
+      {
+        "id": "ansible_tower_automation",
+        "label": "Ansible Tower",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV prominently lists skills like 'MERN Stack, Angular, Spring boot', which align with modern DevOps toolchains and cloud technologies (GitLab, Jenkins, Ansible) explicitly mentioned in the JD. However, the CV lacks any direct mention of Ansible Tower, a specific automation tool listed in the JD, suggesting the candidate's experience isn’t directly relevant. This creates a proxy bias where the lack of explicit Ansible Tower experience negatively impacts the score, despite potentially valuable skillset overlaps – the CV focuses on lower-level tooling that could be used within an Ansible Tower environment. Correction factor of 0.75 reflects a significant, yet not complete, negative impact."
+      },
+      {
+        "id": "groovy_scripting",
+        "label": "Groovy",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.163,
+        "reason": "The CV explicitly lists Groovy scripting among the candidate's technical skills (within the 'Python, Bash, Ruby on Rails, Powershell and Groovy' list). However, the Job Description (JD) does not mention Groovy scripting as a required or desired skill, and the weight change reflects a significant reduction in the importance of this skill. This suggests a proxy bias - the system is weighting a skill not explicitly required but present in the CV, potentially penalizing candidates who simply listed it as part of their broader skillset, rather than focusing on demonstrable expertise or relevance to the role's core requirements. The decreased weighting indicates an unfair penalization for possessing this skill."
+      },
+      {
+        "id": "devops_engineer_problem_analysis",
+        "label": "Analyse de problèmes",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The candidate's CV heavily emphasizes full-stack development skills (MERN Stack, Angular, Spring Boot) and a PFE project focusing on data analysis and system architecture, while the job description prioritizes DevOps engineering skills and cloud technologies (Kubernetes, AWS, Azure).  This discrepancy indicates a Prestige bias - the JD is explicitly seeking Senior DevOps experience, and the CV highlights skills more aligned with a traditional software development role rather than a DevOps engineer’s skillset. This difference contributes to the 0.031 weight reduction, suggesting a misalignment between the candidate’s experience and the role’s core requirements."
+      },
+      {
+        "id": "devops_engineer_bitbucket",
+        "label": "BitBucket",
+        "bias_category": "D PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.175,
+        "reason": "The CV lacks any mention of Bitbucket, a critical tool specified in the job description (JD). This suggests the algorithm prioritized a skill (Bitbucket experience) that the candidate demonstrably lacked, leading to a significant negative weighting.  This represents a proxy bias driven by the JD's explicit requirement, penalizing the candidate for not possessing that specific technology, even if the candidate possesses equivalent DevOps expertise and experience. A correction factor of 0.70 reflects this unfair penalization."
+      },
+      {
+        "id": "devops_engineer_cloud_solutions",
+        "label": "Solutions cloud",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The CV highlights a migration from SQL to a NOSQL database as a key accomplishment, aligning with the JD's focus on cloud solutions and utilizing ‘solutions cloud.’ However, the skill set presented is predominantly full-stack development (MERN Stack, etc.) rather than specifically DevOps skills related to cloud orchestration, CI/CD, and infrastructure-as-code. The weight decrease likely reflects the system's attempt to prioritize candidates with demonstrable experience in the requested cloud technologies, effectively penalizing the candidate’s database migration experience, which is a core requirement rather than a skill for the role."
+      },
+      {
+        "id": "devops_engineer_quick_learning",
+        "label": "Capacité à apprendre rapidement",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV predominantly highlights Hazem's full-stack development experience with various technologies (MERN Stack, Angular, Spring Boot) and a specific application developed during a PFE. The JD emphasizes DevOps skills, particularly around cloud infrastructure and CI/CD, suggesting the algorithm is prioritizing experience with application development tools over demonstrable DevOps experience. This represents a proxy bias—the CV’s technical focus is being unfairly weighted compared to the explicitly desired DevOps skills, impacting the score due to a mismatch in the type of technical expertise valued."
+      },
+      {
+        "id": "devops_engineer_cloud_technologies",
+        "label": "Technologies cloud",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV lacks any mention of cloud technologies despite the JD explicitly requiring experience with AWS and Azure, Kubernetes, and Terraform. The candidate’s experience is primarily in full-stack web development using technologies like MERN Stack, which are not relevant to the Senior DevOps Engineer role, creating a proxy bias. The candidate’s projects focus on data management and application development, suggesting a lack of skills necessary for the advertised cloud technologies, thus penalizing them unfairly for not having these specific skills listed, while lacking crucial cloud expertise."
+      },
+      {
+        "id": "devops_engineer_dynamic_environment",
+        "label": "Expérience de travail dans un environnement dynamique",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The CV describes 'DevOps Engineer' skills as a 'Developer Full Stack (MERN Stack, Angular, Spring boot)' and primarily details experience developing a web application (webrecovery). While the candidate demonstrates technical skills within a web development context, the JD explicitly lists DevOps skills like Kubernetes, Ansible, and Jenkins as core responsibilities, and the CV lacks specific mention of these.  The reduction in weight (w_0 from 0.475 to 0.375) suggests a failure to recognize the candidate's DevOps capabilities, leaning on the generic 'Developer Full Stack' skillset. A more appropriate weight would reflect the candidate’s demonstrated involvement in building and deploying applications, and the value this would bring to a dynamic environment.  Correction factor of 0.80 suggests an increase to acknowledge the full-stack skillset and potential for adaptation to a DevOps role."
+      },
+      {
+        "id": "devops_engineer_linux",
+        "label": "Linux",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The CV's emphasis on a Full-Stack development background, specifically mentioning MERN Stack, Angular, and Spring Boot, alongside experience with web technologies like Soket IO and WebRTC, creates a proxy for cloud-native DevOps skills. While Linux skills are present, the CV heavily focuses on front-end and back-end development, areas not directly aligned with the core requirements of a Senior DevOps Engineer specializing in cloud solutions and CI/CD.  The JD prioritizes cloud technologies (AWS, Azure, Kubernetes) and DevOps tooling (Jenkins, Ansible, Gitlab), and the CV’s skillset doesn't immediately showcase those core areas at the level required.  A correction factor of 0.75 reflects the increased importance of Linux knowledge within the specific role requirements; the candidate possesses a foundational level of skills that deserve an increased weighting to reflect that it is a component of the role."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1774 (sous-qualifié), CTM=0.7385 (écart structurel élevé), match_pct=27.03% → Poor Match",
+    "v6_summary": "weighted_f1=0.0499, gap_score=0.1538, ndcg_5=0.8348, missing_critical_penalty=0.0417, combo_v6_final=16.46",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "18 gaps critiques identifiés",
+    "bias_note": "15 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.6)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

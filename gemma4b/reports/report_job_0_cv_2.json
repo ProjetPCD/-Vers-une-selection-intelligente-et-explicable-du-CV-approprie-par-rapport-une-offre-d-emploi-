@@ -1,0 +1,536 @@
+{
+  "job_id": "job_0",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-02T12:30:55.282544",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 35.06,
+    "confidence": {
+      "confidence_score": 0.74,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.64,
+        "coverage_rate": 0.88,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.3765,
+    "edge_score": 0.0,
+    "combined": 0.2259
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2247,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6511,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6494,
+    "matched_nodes": "2/25",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2304,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.5115,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.207,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0435,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.0698,
+    "weighted_recall": 0.0281,
+    "weighted_f1": {
+      "value": 0.0547,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5375,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.776,
+    "ndcg_10": 0.8174,
+    "map_score": 0.9671,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.369,
+    "experience_density": 0.1515
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 23.9,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 28.21,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 22.28,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 89.89,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 29.57,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 26.21,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 19.15,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 22.5,
+      "weight_sum": 2.701
+    },
+    "Tool": {
+      "count": 14,
+      "match_pct": 19.8,
+      "weight_sum": 11.3
+    },
+    "Domain": {
+      "count": 3,
+      "match_pct": 16.8,
+      "weight_sum": 2.488
+    },
+    "Soft Skill": {
+      "count": 5,
+      "match_pct": 14.5,
+      "weight_sum": 3.625
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "python_skill|data_science_unique_slug",
+        "source": "python_skill",
+        "target": "data_science_unique_slug",
+        "w_0": 0.98,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "pytorch_tool|data_scientist_domain",
+        "source": "pytorch_tool",
+        "target": "data_scientist_domain",
+        "w_0": 0.95,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "scikit_learn_tool|data_scientist_domain",
+        "source": "scikit_learn_tool",
+        "target": "data_scientist_domain",
+        "w_0": 0.95,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "postgresql_tool|data_scientist_domain",
+        "source": "postgresql_tool",
+        "target": "data_scientist_domain",
+        "w_0": 0.92,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "numpy_data_scientist_node_1|data_scientist_domain",
+        "source": "numpy_data_scientist_node_1",
+        "target": "data_scientist_domain",
+        "w_0": 0.92,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.747,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PyTorch",
+      "type": "Tool",
+      "gap": 0.841,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Scikit-learn",
+      "type": "Tool",
+      "gap": 0.841,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PostgreSQL",
+      "type": "Tool",
+      "gap": 0.841,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Data Scientist",
+      "type": "Domain",
+      "gap": 0.653,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "SQL",
+      "type": "Hard Skill",
+      "gap": 0.722,
+      "severity": "critical",
+      "importance": 0.975
+    },
+    {
+      "skill": "Pandas",
+      "type": "Tool",
+      "gap": 0.705,
+      "severity": "critical",
+      "importance": 0.958
+    },
+    {
+      "skill": "Jira",
+      "type": "Tool",
+      "gap": 0.757,
+      "severity": "critical",
+      "importance": 0.916
+    },
+    {
+      "skill": "Git",
+      "type": "Tool",
+      "gap": 0.733,
+      "severity": "critical",
+      "importance": 0.892
+    },
+    {
+      "skill": "Grafana",
+      "type": "Tool",
+      "gap": 0.872,
+      "severity": "critical",
+      "importance": 0.872
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.747
+      },
+      {
+        "label": "PyTorch",
+        "type": "Tool",
+        "gap": 0.841
+      },
+      {
+        "label": "Scikit-learn",
+        "type": "Tool",
+        "gap": 0.841
+      },
+      {
+        "label": "PostgreSQL",
+        "type": "Tool",
+        "gap": 0.841
+      },
+      {
+        "label": "Data Scientist",
+        "type": "Domain",
+        "gap": 0.653
+      },
+      {
+        "label": "SQL",
+        "type": "Hard Skill",
+        "gap": 0.722
+      },
+      {
+        "label": "Pandas",
+        "type": "Tool",
+        "gap": 0.705
+      },
+      {
+        "label": "Jira",
+        "type": "Tool",
+        "gap": 0.757
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 20,
+    "nodes_with_bias": 19,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 11,
+      "PRESTIGE": 4,
+      "C": 2,
+      "D": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python_skill",
+        "label": "Python",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.506,
+        "reason": "This reduction in weight for 'python_skill' is likely a Proxy Bias. The CV highlights a range of technical skills, but the evidence anchor – 'Assister à des workshops...' – suggests a supportive role in data processing rather than independent Python development or project application. The JD emphasizes Python as a core requirement, yet the CV provides no demonstrable Python project experience.  Therefore, the system is over-weighting the presence of 'Python' as a listed skill compared to the evidence of actual application, reflecting a bias towards the listed skill rather than demonstrated capability. A correction factor of 0.75 reflects this discrepancy."
+      },
+      {
+        "id": "pytorch_tool",
+        "label": "PyTorch",
+        "bias_category": "PRESTIGE",
+        "severity": "LOW",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.319,
+        "reason": "The CV lists PyTorch as a skill used during workshops to identify data sources and models, but the context indicates this is tied to a specific activity ('Assister à des workshops...') rather than independent project experience. This suggests prestige over genuine skill application, as the JD lists multiple other relevant tools (Scikit-learn, Pandas, NumPy) and emphasizes overall data science capabilities.  A lower weight reflects a potential over-emphasis on the presence of a specific, arguably less fundamental, tool. Fair alternative would be to require demonstrable experience with PyTorch in a data science project."
+      },
+      {
+        "id": "scikit_learn_tool",
+        "label": "Scikit-learn",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.319,
+        "reason": "The audit reveals a significant decrease in the weight assigned to the 'scikit_learn_tool' skill (from 1.0 to 0.425) despite the candidate's involvement in a data workshop where they identified data sources and ETL processes. This suggests a proxy bias - the system is unduly penalizing the candidate for participating in a workshop, likely because it’s a less ‘prestigious’ activity than directly coding with the tool. A fairer alternative would be to evaluate the candidate’s practical application of Scikit-learn within the workshop context or assess their understanding of the tool's functionalities, rather than simply reducing the weight based on a passive workshop attendance. The CV evidence further supports this as it highlights the candidate's data workshop experience."
+      },
+      {
+        "id": "postgresql_tool",
+        "label": "PostgreSQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.319,
+        "reason": "The CV states the candidate 'Assister à des workshops pour identifier les sources de données ainsi que le modèle de données,' which aligns with the JD's requirement for database interaction. However, the weight change (-0.575) is disproportionate to this single skill, suggesting a proxy bias based on the candidate's experience with data workshops and potentially their geographic location (Tunisia) without directly evaluating the depth of their database skills. A lower correction factor reflects this overemphasis on a single, potentially less critical, activity. The justification leans towards a proxy bias due to the focus on the workshop experience rather than the demonstrable proficiency in SQL or PostgreSQL."
+      },
+      {
+        "id": "data_scientist_domain",
+        "label": "Data Scientist",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.694,
+        "reason": "The decrease in weight (-0.075) is likely driven by the CV’s description of assisting with workshops to identify data sources and models. This activity, while relevant to data science, is a soft skill and task delegated rather than a direct demonstration of technical expertise. The focus on the task highlights a collaborative role and reliance on others’ knowledge – a proxy for experience and skills. The JD emphasizes direct technical skills, implying a potential bias toward candidates who can immediately perform those tasks, unfairly penalizing candidates who demonstrate understanding through collaborative project involvement.  A fair alternative would be to weight the workshop participation at a lower level, reflecting its dependency on others' expertise."
+      },
+      {
+        "id": "sql_skill",
+        "label": "SQL",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.506,
+        "reason": "The audit reveals a decreased weight on SQL skill due to the candidate's attendance of workshops focused on data sources and models. This indicates a reliance on the workshop evidence signal rather than demonstrable SQL proficiency. The JD emphasizes a broad range of data science skills, and the CV highlights involvement in data visualization and ETL processes, suggesting the candidate's SQL skills might be less central to their role.  Therefore, the skill is unfairly penalized due to an overemphasis on the specific workshop context, reflecting a Halo bias. A correction factor of 0.75 reflects this imbalance, acknowledging the context but reducing the over-emphasis on a single, partially-derived skill indicator."
+      },
+      {
+        "id": "pandas_data_scientist_node_1",
+        "label": "Pandas",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.506,
+        "reason": "The CV mentions ‘Assister à des workshops pour identifier les sources de données ainsi que le modèle de données’ which utilizes Pandas, however, the evidence is weak – it’s a single, brief statement from a workshop. This suggests the score is influenced by the presence of Pandas in the candidate's experience, rather than demonstrated skill mastery.  Furthermore, the CV heavily emphasizes full-stack development experience with Angular, Git, and APIs, signaling a broader skillset that might not align directly with the core Data Science requirements of the role.  Therefore, a proxy bias is present, penalizing the candidate for simply mentioning Pandas within a less prominent context, while simultaneously failing to fully assess their actual data science aptitude based on the provided evidence. A correction factor of 0.75 reflects this uneven weighting."
+      },
+      {
+        "id": "numpy_data_scientist_node_1",
+        "label": "NumPy",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.81,
+        "reason": "The CV highlights attending data workshops and specifically mentions \"Assister à des workshops pour identifier les sources de données ainsi que le modèle de données.\" This use of NumPy is presented as a consequence of attending workshops, implying a prestige factor (attending a workshop to gain exposure to NumPy) rather than demonstrating a core competency. The CV’s strong focus on full-stack development and various technologies (Angular, ReactJS, PHP, etc.) further suggests that the candidate is leveraging their breadth of experience, rather than specializing in data science techniques like using NumPy. This suggests the weight reduction is driven by a perceived preference for a broader skillset, rather than a lack of NumPy proficiency."
+      },
+      {
+        "id": "jira_tool",
+        "label": "Jira",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.319,
+        "reason": "The CV mentions assisting with workshops to identify data sources and models, using Jira. However, this is presented solely within the context of attending workshops, lacking details about the actual use of Jira as a tool. This proxies for a desire for experience with data analysis tools (Jira) without demonstrating proficiency, representing a potential bias towards candidates with formal training or those who have attended workshops, rather than objective skills."
+      },
+      {
+        "id": "git_unique_slug",
+        "label": "Git",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.319,
+        "reason": "The evidence anchor, 'Assister à des workshops pour identifier les sources de données ainsi que le modèle de données,' coupled with the CV's mention of Git, strongly suggests a proxy bias. The task description focuses heavily on data-related skills, and the candidate's experience assisting with data workshops, while relevant, is a signal of engagement with a specific tool (Git) rather than demonstrated expertise in data science or AI. The change in weight from 0.892 to 0.425 indicates a significant downward adjustment, potentially reflecting an overemphasis on tool familiarity over core competencies. A fair alternative would be to prioritize skills like Python, SQL, and model building, rather than the utilization of Git alone. This is a medium severity bias because while the evidence is present, it's using a secondary indicator (Git) instead of the directly desired skills."
+      },
+      {
+        "id": "agile_unique_slug",
+        "label": "Agile",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The CV mentions 'Assister à des workshops pour identifier les sources de données ainsi que le modèle de données' which is directly related to the job description’s focus on data modeling and agile methodologies. This suggests an understanding of a specific, potentially complex technical process. However, the candidate’s broader experience is heavily focused on full-stack development (Angular, ReactJS, PHP) and e-commerce, with minimal explicit detail about their data science skills or experience beyond basic data visualization. This suggests the weight was boosted by an atypical, task-based signal (the workshop attendance) not genuinely reflecting the candidate's core competence. The candidate's experience is a strong full-stack developer, not necessarily a dedicated data scientist. The fact that the experience is centered in Tunisia and the context of ‘workshop attendance’ also points to a proxy bias for access to training and resources, potentially favoring candidates from certain institutions or geographical areas, rather than assessing true data science ability. A correction is warranted to reduce the undue emphasis on this single task-related detail."
+      },
+      {
+        "id": "communication_unique_slug",
+        "label": "Communication",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV explicitly states 'j’ai également la capacité de m’investir et d’être disponible', which leans heavily on a soft skill expectation (availability and engagement) rather than demonstrable technical skills. This statement, coupled with the JD’s requirement for collaboration and communication, suggests a proxy bias where the candidate's willingness to ‘invest’ and ‘be available’ is being valued, potentially overvalued compared to concrete technical abilities.  The decrease in weight (-0.535) reflects this prioritization of a non-quantifiable attribute. A fair alternative would focus on the candidate’s concrete achievements and contributions within the Decade role and the Bee Coders internship."
+      },
+      {
+        "id": "data_science_unique_slug",
+        "label": "Data Science",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV explicitly states 'Assister à des workshops pour identifier les sources de données ainsi que le modèle de données' – a direct mention of data science activities. This suggests a skill beyond the stated focus of the job description, which primarily highlights Python, SQL, and AI development. While the mention of workshops is relevant to data science, the significant weight change (down 0.513) indicates potential proxy bias related to socioeconomic background – the workshop experience potentially stemming from a particular educational institution or professional network. A correction factor of 0.75 aims to mitigate this over-emphasis on a single, potentially privileged, activity, reflecting a more holistic assessment of the candidate's potential."
+      },
+      {
+        "id": "tableau_data_scientist_node_1",
+        "label": "Tableau",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The CV highlights experience creating Power BI dashboards with filters, aligning with the job description’s request for dashboard creation using Tableau or Power BI. This indicates a focus on user experience and data visualization, which is a proxy for analytical skills rather than direct expertise in data science tools like Python or SQL.  The emphasis on filters suggests a prioritization of UX over deeper data manipulation capabilities, potentially influenced by the candidate's location (Tunisia) and reliance on readily available, user-friendly BI tools. A correction factor is applied to mitigate this proxy bias."
+      },
+      {
+        "id": "autonomie_unique_slug",
+        "label": "Autonomie",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV highlights the candidate's 'souci du travail bien fait' (attention to detail) and 'capacité de m'investir et d’être disponible' (willingness to invest and be available), which aligns with the job description's requirements for autonomy and dedication. However, the JD explicitly lists a comprehensive skillset – Python, SQL, IA, etc. – and emphasizes collaborative projects. The CV’s emphasis on personal qualities, rather than quantifiable achievements or technical expertise, likely resulted in a disproportionate weighting assigned by the algorithm. This is a classic Prestige bias, favoring candidate descriptions over objective skill assessment. A fairer alternative would involve evaluating the candidate’s technical proficiency through a skills assessment or portfolio review to ensure a more equitable comparison."
+      },
+      {
+        "id": "pl_sql_unique_slug",
+        "label": "PL/SQL",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The CV demonstrates exposure to PL/SQL through assisting with data science workshops, identifying data sources, and working with data models – tasks directly relevant to the JD's requirement of SQL proficiency. While the CV emphasizes full-stack development skills, the direct mention of assisting with PL/SQL during data science workshops indicates a relevant skill, suggesting this weight change (decrease) might be an overemphasis on broader development skills at the expense of database interaction expertise. A correction factor of 1.2 aims to reflect the value of this demonstrated skillset, acknowledging the explicit link to the job requirements."
+      },
+      {
+        "id": "excel_data_scientist_node_1",
+        "label": "Excel",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.9,
+        "reason": "The candidate's experience creating Power BI reports for TUNISAIR, specifically mentioning data visualization and KPI tracking, is a valuable asset. The increased weight reflects this relevant experience. However, the emphasis on a specific project and citing a company name (TUNISAIR) suggests a potential Prestige Bias, potentially elevating the candidate's score beyond what solely a tool proficiency would justify. A correction factor of 1.2 acknowledges the positive experience while mitigating the potential for Prestige Bias by slightly reducing the weight. It's important to ensure the weight reflects demonstrable skills and not simply name recognition within a specific industry context."
+      },
+      {
+        "id": "collaboration_data_scientist_node_1",
+        "label": "Collaboration",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV highlights extensive experience in full-stack development, particularly with technologies like Angular, ReactJS, and PHP, alongside data visualization tools. While communication skills are mentioned, the focus on these technically-oriented skills, coupled with the mention of an internship at TUNISAIR focusing on Power BI dashboard creation, suggests a proxy bias.  The job description emphasizes collaboration, but the candidate's demonstrated skills heavily lean towards software development and data visualization – signaling a potentially over-weighted emphasis on these aspects, diverting attention from the core data science competencies, especially given the absence of specific data science project context. A correction factor of 0.75 reflects this disproportionate weighting, acknowledging the value of the candidate’s broader technical expertise while reducing the impact of the reduced weight assigned."
+      },
+      {
+        "id": "oracle_data_scientist_node_1",
+        "label": "Oracle",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The CV heavily emphasizes experience creating Power BI dashboards and reports, demonstrating familiarity with visualization tools. Despite the candidate's technical skills (Python, SQL, etc.) being listed, the task described focuses on a tool (Power BI) that is often associated with lower-level data analysis and doesn't fully leverage the candidate's broader data science skillset.  This suggests a Prestige bias, where the candidate is valued more for their proficiency with a specific, potentially less complex, visualization tool rather than the core data science competencies outlined in the job description.  The 'mise en place' of a dashboard, while a valid task, leans toward a more operational role within a data visualization ecosystem, not a strategic data science function. A correction factor of 0.75 reflects this overemphasis on a specific tool and diminishes the value placed on the broader technical skills highlighted in the job description."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2247 (sous-qualifié), CTM=0.6511 (écart structurel élevé), match_pct=35.06% → Poor Match",
+    "v6_summary": "weighted_f1=0.0547, gap_score=0.207, ndcg_5=0.776, missing_critical_penalty=0.0, combo_v6_final=23.9",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "16 gaps critiques identifiés",
+    "bias_note": "19 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.74)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

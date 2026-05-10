@@ -1,0 +1,943 @@
+{
+  "job_id": "job_78",
+  "cv_id": "cv_1",
+  "scored_nodes": {
+    "aws": {
+      "w_cv": 0.312,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "preamble: AWS not mentioned as used in projects, only listed as skill.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.312,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change is biased towards candidates who have listed AWS specifically in their profile, even if it's not relevant to the job."
+    },
+    "data_scientist": {
+      "w_cv": 1.85,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.1
+        },
+        "penalties": {},
+        "final_score": 1.85
+      },
+      "active_red_flags": [],
+      "rationale": "preamble: Data Scientist role mentioned as current experience with high project complexity and external proof (LinkedIn profile).",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "python": {
+      "w_cv": 1.85,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.1
+        },
+        "penalties": {},
+        "final_score": 1.85
+      },
+      "active_red_flags": [],
+      "rationale": "preamble: Python mentioned as skill with high project complexity and external proof (LinkedIn profile).",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "tensorflow": {
+      "w_cv": 1.85,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.1
+        },
+        "penalties": {},
+        "final_score": 1.85
+      },
+      "active_red_flags": [],
+      "rationale": "preamble: TensorFlow mentioned as skill with high project complexity and external proof (LinkedIn profile).",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "azure": {
+      "w_cv": 0.3,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "preamble: Azure not mentioned as used in projects, only listed as skill.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.3,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The recruiter is unfairly penalizing the candidate for not using Azure, which is not a requirement mentioned in the job description. The importance assigned to CV signals should be increased by 20%."
+    },
+    "gcp": {
+      "w_cv": 0.312,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "preamble: GCP not mentioned as used in projects, only listed as skill.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.312,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change is biased towards proxy signals, specifically the mention of GCP in the candidate's CV. The ideal weight for this signal should be 1.0, but it has been decreased to 0.25. This is an unfair penalty based on socioeconomic signals (location, language of CV). A fair alternative would be to remove any reference to GCP from the model and assign a neutral weight."
+    },
+    "sql": {
+      "w_cv": 0.312,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Based on the preamble, where SQL is mentioned as one of Dhia's skills.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.312,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change is biased due to the use of a proxy signal (education/skill set) in the evaluation process, specifically the mention of SQL as one of Dhia's skills in the preamble. This is not a direct evaluation of Dhia's skills but rather an indirect inference based on their background. A more merit-based approach would be to evaluate Dhia's skills directly through their work experience and achievements."
+    },
+    "nosql": {
+      "w_cv": 0.2,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Based on the preamble, where NoSQL is mentioned as one of Dhia's skills.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.2,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change is biased towards prestige or halo effect, where a single mention of a prestigious skill (NoSQL) in the job description is given undue weight."
+    },
+    "azure_gcp": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "There is no mention of Azure or GCP in the CV.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "methodologies_agiles": {
+      "w_cv": 0.722,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.1
+        },
+        "penalties": {},
+        "final_score": 0.85
+      },
+      "active_red_flags": [],
+      "rationale": "Based on the preamble, where Agile methodologies are mentioned as one of Dhia's skills. However, there is no concrete project evidence.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.722,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.85,
+      "p35_reason": "The weight change is biased due to the adaptation of a socioeconomic signal (location, language of CV) which affects the ideal weight w_0 = 0.915. The adapted weight w_cv = 0.85 reflects a proxy bias as it takes into account the candidate's location and language, which may not be directly relevant to the job requirements."
+    },
+    "docker": {
+      "w_cv": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Based on the CV section, where 'docker' is mentioned in a project context.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "kubernetes": {
+      "w_cv": 0.375,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Based on the CV section, where 'kubernetes' is mentioned in a project context.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.375,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.5,
+      "p35_reason": "The weight change unfairly penalizes the candidate for not explicitly mentioning Kubernetes in their CV, given their extensive experience with related technologies."
+    },
+    "pytorch": {
+      "w_cv": 0.325,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Mentioned in the skills section only, no concrete project evidence (Evidence anchor: ', ').",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.325,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.3,
+      "p35_reason": "The weight change of -0.596 is an over-penalization for a job posting that requires PyTorch skills, yet the candidate has listed PyTorch as one of their primary skills and has experience with it in previous roles. This suggests that prestige bias is at play, where the university/company name 'pytorch' is being unfairly favored over other relevant qualifications."
+    },
+    "machine_learning": {
+      "w_cv": 0.8,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "Mentioned in the CV as 'machine learning', with a basic outcome mentioned (Evidence anchor: ', ').",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO_BIAS",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.8,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change is biased towards the candidate's mention of 'machine learning' in their CV, which is a strong signal but not a comprehensive evaluation of their skills. A fair alternative would be to evaluate their skills and experience more holistically, considering multiple factors such as their education, work experience, and projects, rather than relying on a single keyword."
+    },
+    "scikit-learn": {
+      "w_cv": 0.375,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Mentioned in the skills section only, no concrete project evidence (Evidence anchor: ', ').",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.375,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.5,
+      "p35_reason": "The weight change was biased towards prestige due to the candidate mentioning scikit-learn in their skills section without providing concrete project evidence."
+    },
+    "deep_learning": {
+      "w_cv": 1.0,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "Mentioned in the CV as 'deep learning', with a basic outcome mentioned (Evidence anchor: ', ').",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "résolution_de_problèmes": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of 'résolution de problèmes' in the CV (Evidence anchor: ', ').",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "spark": {
+      "w_cv": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Mentioned in the skills section only, no concrete project evidence (Evidence anchor: ', ').",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "communication": {
+      "w_cv": 0.3,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Weak mention of 'communication' in preamble, no project anchor or evidence.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.3,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The weight decrease is biased towards prestige and expertise, unfairly penalizing the candidate for a weak mention of 'communication' without any project anchors or evidence supporting their skills."
+    },
+    "data_science": {
+      "w_cv": 1.0,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "Strong evidence of 'data science' usage in project (Infor, Data Science Engineer) with basic outcome mentioned.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "travail_d_equipe": {
+      "w_cv": 0.425,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Weak mention of 'travail_d_equipe' in preamble, no project anchor or evidence.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.425,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.85,
+      "p35_reason": "The weight change from w_0 (ideal) to w_cv (adapted) indicates an unfair bias in favor of candidates with project anchors or evidence. A fair alternative would be to give a moderate penalty (correction_factor = 0.85) to candidates without project anchors or evidence, while ensuring that the weight change is merit-based."
+    },
+    "role": {
+      "w_cv": 0.4,
+      "evidence_quality": "inferred_standalone",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Inferred standalone mention of 'role' in preamble, no project anchor or evidence.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.4,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change appears to unfairly favor candidates who mention 'role' in their profile, which is not a merit-based criterion. A fair alternative would be to evaluate the candidate's skills and experience based on their actual work or projects."
+    },
+    "analyse_de_donnees": {
+      "w_cv": 0.75,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.75
+      },
+      "active_red_flags": [],
+      "rationale": "Weak evidence of 'analyse_de_donnees' usage in project (DATAMOTOR, Machine Learning Engineer) with basic outcome mentioned.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "data_scientist_expert": {
+      "w_cv": 0.375,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Weak mention of 'data_scientist_expert' in preamble, no project anchor or evidence.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.375,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.5,
+      "p35_reason": "Prestige bias: candidate's education and work experience do not explicitly match ideal requirements; fair alternative: increase weight to give more credit to relevant experience and skills demonstrated in the CV."
+    },
+    "soft_skills": {
+      "w_cv": 0.625,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "CV preamble mentions 'excellent problem solving abilities and process-thinking skill' as part of the candidate's profile.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.625,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "Prestige bias may lead to unfair outcomes for candidates from less prestigious universities. Increasing the weight of 'soft_skills' attribute by 25% ensures that skills demonstrated are given equal consideration regardless of university affiliation."
+    },
+    "jira": {
+      "w_cv": 0.375,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of Jira in the CV sections provided.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.375,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.5,
+      "p35_reason": "The weight change was based on a proxy signal (Jira) that is not relevant to the job requirements or the candidate's qualifications."
+    },
+    "excellents_communicants": {
+      "w_cv": 0.3,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "CV preamble mentions 'excellent communication skills' as part of the candidate's profile.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "LOW",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.3,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.6,
+      "p35_reason": "The hiring process relies too heavily on a single signal ('excellent communication skills') without considering other aspects of the candidate's qualifications or experience."
+    },
+    "competences_en_communication": {
+      "w_cv": 0.4,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "CV preamble mentions 'communication skills' as part of the candidate's profile.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.4,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight increase in 'competences_en_communication' appears to be driven by the mention of 'communication skills' in the CV preamble, which may be seen as a prestige factor rather than a relevant skill for the data scientist role."
+    },
+    "candidat_idéal": {
+      "w_cv": 0.6,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Inferred standalone score based on the candidate's profile title 'Multidisciplinary Engineer with excellent problem solving abilities and process-thinking skill'.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.6,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The weight change associated with the candidate's profile title may indicate a bias towards prestige-related signals, leading to unfair advantages for candidates with more prestigious job titles or educational backgrounds."
+    }
+  },
+  "scored_edges": {
+    "data_science|machine_learning": {
+      "synergy_score": 1.0,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.8,
+        "penalties": 0.0,
+        "final_score": 1.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "In the same project 'Text2task', Dhia used both Data Science and Machine Learning skills to build a Microsoft application that creates tasks and events from emails, and constructed an NLP model for extracting dates with relative events. (CV Excerpt: Contributed on a Microsoft application named Text2task capable of creating tasks and events automatically from emails.\n• Constructed an NLP model capable of extracting dates with relative events.)",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 1.0
+    },
+    "data_science|deep_learning": {
+      "synergy_score": 1.0,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.8,
+        "penalties": 0.0,
+        "final_score": 1.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "In the same project 'Text2task', Dhia used both Data Science and Deep Learning skills to implement a model that detects actions breakpoints, assignee, and urgency from emails. (CV Excerpt: Implemented a deep learning model to detect actions breakpoints (tasks), assignee, urgency from emails.)",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 1.0
+    },
+    "python|tensorflow": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.8,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "There is no evidence of collaboration between Python and TensorFlow skills in the CV excerpt.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "python|pytorch": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 1.0,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": true,
+      "rationale": "There is no evidence of collaboration between Python and PyTorch skills in the CV excerpt, even though it's a claimed synergy.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "python|scikit-learn": {
+      "synergy_score": 0.55,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.55
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Dhia used both Python and Scikit-Learn skills in different projects, but the evidence shows that he used Python for various tasks such as web scrapping, docker, and entity recognition. No temporal overlap or same project/role found.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.55
+    },
+    "data_science|communication": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence found showing both Data Science and Communication skills used together in the same role or project.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "docker|kubernetes": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.25,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Both Docker and Kubernetes skills are mentioned together in the 'docker, GCP.' line under the Target Energy Solutions - Data Scientist role.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "aws|azure_gcp": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence found showing both AWS and Azure/GCP skills used together in the same role or project.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "data_science|spark": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.8,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence found showing both Data Science and Spark skills used together in the same role or project. CV excerpt: 'machine learning' mentioned, but no mention of Spark.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    }
+  },
+  "metadata": {
+    "skills_scored": 29,
+    "mean_score": 0.552,
+    "edges_scored": 9,
+    "mean_synergy": 0.367,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.367,
+      "max": 1.0,
+      "min": 0.0
+    },
+    "batches_ok": 5,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.552,
+      "max": 1.75,
+      "min": 0.0,
+      "above_1": 6,
+      "below_05": 15
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 24,
+    "nodes_with_bias": 19,
+    "nodes_corrected": 19,
+    "edges_audited": 0
+  }
+}

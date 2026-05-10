@@ -1,0 +1,456 @@
+{
+  "job_id": "job_3",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-02T16:11:37.343281",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 42.37,
+    "confidence": {
+      "confidence_score": 0.53,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.5,
+        "coverage_rate": 0.611,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.6546,
+    "edge_score": 0.656,
+    "combined": 0.6551
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3622,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.628,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5763,
+    "matched_nodes": "5/18",
+    "edge_match_pct": 32.8
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3659,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.5375,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.292,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.3529,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.3687,
+    "weighted_recall": 0.255,
+    "weighted_f1": {
+      "value": 0.4299,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6591,
+    "missing_critical_penalty": {
+      "value": 0.375,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9303,
+    "ndcg_10": 0.9085,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8491,
+    "top_skill_alignment": 0.5567,
+    "semantic_fit_score": 0.3745,
+    "experience_density": 0.285
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 43.51,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 42.27,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 33.61,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 97.21,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 55.76,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 44.49,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 53.31,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 6,
+      "match_pct": 35.5,
+      "weight_sum": 5.95
+    },
+    "Tool": {
+      "count": 10,
+      "match_pct": 29.0,
+      "weight_sum": 8.455
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 44.7,
+      "weight_sum": 1.271
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 32.8,
+    "total_edges": 14,
+    "top_synergies": [
+      {
+        "edge_key": "ai-engineer-sql|ai-engineer-mysql",
+        "source": "ai-engineer-sql",
+        "target": "ai-engineer-mysql",
+        "w_0": 0.6,
+        "w_cv": 1.244,
+        "w_cv_norm": 0.622,
+        "match_pct": 100.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ai-engineer-mysql|ai-engineer-sql",
+        "source": "ai-engineer-mysql",
+        "target": "ai-engineer-sql",
+        "w_0": 0.85,
+        "w_cv": 1.244,
+        "w_cv_norm": 0.622,
+        "match_pct": 73.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ai-engineer-javascript|angular-ai-engineer",
+        "source": "ai-engineer-javascript",
+        "target": "angular-ai-engineer",
+        "w_0": 0.78,
+        "w_cv": 0.862,
+        "w_cv_norm": 0.431,
+        "match_pct": 55.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ai-engineer-python|communication-ai-engineer",
+        "source": "ai-engineer-python",
+        "target": "communication-ai-engineer",
+        "w_0": 0.7,
+        "w_cv": 0.844,
+        "w_cv_norm": 0.422,
+        "match_pct": 60.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ai-engineer-sql|ai-engineer-mongodb",
+        "source": "ai-engineer-sql",
+        "target": "ai-engineer-mongodb",
+        "w_0": 0.6,
+        "w_cv": 0.812,
+        "w_cv_norm": 0.406,
+        "match_pct": 67.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.656,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Java",
+      "type": "Hard Skill",
+      "gap": 0.918,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PHP",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "MongoDB",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "TypeScript",
+      "type": "Hard Skill",
+      "gap": 0.625,
+      "severity": "critical",
+      "importance": 0.969
+    },
+    {
+      "skill": "FastAPI",
+      "type": "Tool",
+      "gap": 0.822,
+      "severity": "critical",
+      "importance": 0.916
+    },
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.884,
+      "severity": "critical",
+      "importance": 0.884
+    },
+    {
+      "skill": "PyTorch",
+      "type": "Tool",
+      "gap": 0.757,
+      "severity": "critical",
+      "importance": 0.851
+    },
+    {
+      "skill": "Angular",
+      "type": "Tool",
+      "gap": 0.697,
+      "severity": "critical",
+      "importance": 0.778
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "w_cv": 1.625
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "w_cv": 1.56
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.656
+      },
+      {
+        "label": "Java",
+        "type": "Hard Skill",
+        "gap": 0.918
+      },
+      {
+        "label": "PHP",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "MongoDB",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "TypeScript",
+        "type": "Hard Skill",
+        "gap": 0.625
+      },
+      {
+        "label": "FastAPI",
+        "type": "Tool",
+        "gap": 0.822
+      },
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.884
+      },
+      {
+        "label": "PyTorch",
+        "type": "Tool",
+        "gap": 0.757
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 14,
+    "nodes_with_bias": 11,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 3,
+      "D": 3,
+      "PROXY": 3,
+      "A. PRESTIGE": 1,
+      "A. PRESTIGE BIAS": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "ai-engineer-python",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.688,
+        "reason": "The CV heavily emphasizes ‘Développement robuste d'applications web en React et Symfony’ – a specific project description – while the Job Description emphasizes ‘systèmes AI robustes et évolutifs.’ This suggests the algorithm is prioritizing the project name and context over demonstrated skills (Python, JavaScript, etc.) when assessing the candidate. A prestige bias is suspected, unfairly weighting experience based on the project name rather than technical proficiency. The candidate possesses relevant skills, but the weighting reflects an undue emphasis on the project description, decreasing the overall assessment."
+      },
+      {
+        "id": "ai-engineer-java",
+        "label": "Java",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.163,
+        "reason": "The CV primarily lists skills in React, Symfony, and Flutter, with no mention of Java. The job description explicitly requires Java experience.  This represents a Proxy Bias - socioeconomic signal (location of work/experience), as the candidate's skills are concentrated in technologies less frequently utilized by the specific company.  The decreased weight reflects the lack of a core requirement fulfillment, unfairly penalizing the candidate. A fair alternative would involve a closer examination of the candidate’s aptitude for learning Java, or a more targeted assessment of Java skills."
+      },
+      {
+        "id": "ai-engineer-javascript",
+        "label": "JavaScript",
+        "bias_category": "A. PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.56,
+        "reason": "The applicant’s CV prominently features projects utilizing React and Symfony, aligning perfectly with the JD’s requirement for experience in these frameworks. The significant emphasis on React and Symfony, combined with the outcome bonus and role-specific experience, strongly suggests a prestige bias—a disproportionate weighting is given to projects using these technologies, regardless of Farah’s demonstrable skills in other areas. A fair alternative would have considered a more balanced assessment, acknowledging the broader skillset displayed, and reducing the bias to a factor closer to 1.0.0"
+      },
+      {
+        "id": "ai-engineer-mysql",
+        "label": "MySQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.864,
+        "reason": "The significant weight increase (1.017 to 1.017, a difference of 0.017) is directly tied to the candidate's experience with the Odoo project, specifically using the framework in a \"développement d'un site web de commerce électronique\".  This represents a proxy for experience with a particular business application and framework, which can be valuable but shouldn’t be overweighted relative to broader skills like Python, React, and database knowledge.  The fact that the candidate used Odoo, a specific platform, suggests the algorithm is giving a disproportionate boost to experience with that system rather than a general AI engineering skillset.  A fair alternative would be to assess the candidate's underlying skills - Python, machine learning, and database proficiency - irrespective of the specific framework used."
+      },
+      {
+        "id": "ai-engineer-laravel",
+        "label": "Laravel",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.3,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.322,
+        "reason": "The applicant's CV highlights extensive experience ('DECADE') in full-stack development with React and Symfony, specifically within the 'Développement robuste d'applications web en React et Symfony' project. The JD emphasizes experience with AI development, but the CV’s focus on a long period of experience with these frameworks, coupled with the mention of a highly sought-after project, suggests a prestige bias.  The increased weight (4.1%) indicates an inflated valuation of these specific technologies over other potentially more relevant AI skills (FastAPI, TensorFlow, PyTorch).  A fair alternative would be to prioritize skills directly listed in the JD and de-emphasize the duration of experience with React and Symfony, recognizing that while valuable, they are not core to an AI Engineer role."
+      },
+      {
+        "id": "ai-engineer-typescript",
+        "label": "TypeScript",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.688,
+        "reason": "The weight change indicates a decrease from 0.969 to 0.917 (-0.052). The rationale states experience with 'Développement robuste d'applications web en React et Symfony', but the CV prominently highlights '3 ans 8 mois' (approximately 3 years and 8 months) of experience in that *specific* role. This overemphasis on a single, highly contextual project might be a proxy bias, unfairly inflating the candidate's perceived expertise due to the detailed description of their existing role. A fairer alternative would be to weight the candidate based on broader TypeScript skills or overall experience with React/Symfony, reducing the impact of this singular project."
+      },
+      {
+        "id": "ai-engineer-sql",
+        "label": "SQL",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.625,
+        "reason": "The candidate's experience prominently utilizing Odoo (a specific platform) in a commerce-oriented project, along with positive outcome bonuses, suggests a merit-based increase. However, the JD heavily emphasizes experience with frameworks like FastAPI, TensorFlow, and PyTorch, which are less directly tied to the Odoo project. This indicates a potential prestige bias favoring candidates with recognized AI/ML frameworks, leading to an over-weighted emphasis on the Odoo experience compared to the broader AI skillset. Correction factor increased to 1.25 due to a strong, relevant project and associated bonus but the overall skillset is a secondary consideration."
+      },
+      {
+        "id": "fastapi-ai-engineer",
+        "label": "FastAPI",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV lacks any explicit mention of FastAPI, despite the JD’s explicit requirement. The candidate's skillset focuses on React, Symfony, and Flutter, technologies not aligned with the role's specified frameworks. This proxy bias likely stems from the CV's failure to highlight relevant skills, resulting in an unfairly decreased weight given the JD's strong emphasis on FastAPI. A fair alternative would prioritize the candidate's demonstrable skills aligning with the technology stack within the job description."
+      },
+      {
+        "id": "pytorch-ai-engineer",
+        "label": "PyTorch",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The system penalized the candidate due to a lack of explicit PyTorch experience (Bias Category: PROXY). While the JD lists PyTorch as a desired skill, the CV does not demonstrate any usage or knowledge of this framework. The significant decrease in weight (-0.601) suggests a bias favoring candidates with demonstrable experience in the specified technologies, even if those technologies were not directly relevant to the core requirements. A fair alternative would have considered the candidate’s broader development skills and potential for learning, adjusting the weight based on transferable skills rather than a specific, missing technology."
+      },
+      {
+        "id": "angular-ai-engineer",
+        "label": "Angular",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.163,
+        "reason": "The significant weight decrease (0.528) is likely driven by the absence of Angular in the candidate's CV. The JD explicitly lists Angular as a required skill, and the candidate’s experience is primarily in React, Symfony, and Flutter. This proxy bias – relying on the candidate’s familiarity with popular technologies listed in the job description – unfairly penalizes the applicant, suggesting the algorithm prioritizes skills present in the CV over demonstrated expertise, which is a proxy for angular development proficiency."
+      },
+      {
+        "id": "react-ai-engineer",
+        "label": "React",
+        "bias_category": "A. PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.107,
+        "reason": "The CV prominently lists 'React' as a key skill, aligning with the job description's emphasis on React and React projects. Additionally, the candidate's experience in 'Développement robuste d'applications web en React et Symfony' directly addresses the JD's requirements. However, the CV’s extensive detailing of diverse technologies (Flutter, NestJs, Odoo) coupled with the ‘Développeur full-stack’ title, potentially elevates React above other skills, creating a prestige bias. The increased weight assigned to React, despite the candidate's broader skillset, suggests a preference for this specific framework over other relevant skills like JavaScript and TypeScript listed in the JD, indicating a potential Prestige Bias."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3622 (sous-qualifié), CTM=0.628 (écart structurel élevé), match_pct=42.37% → Poor Match",
+    "v6_summary": "weighted_f1=0.4299, gap_score=0.292, ndcg_5=0.9303, missing_critical_penalty=0.375, combo_v6_final=43.51",
+    "key_strengths": "2 compétences clés validées",
+    "key_gaps": "9 gaps critiques identifiés",
+    "bias_note": "11 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.53)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

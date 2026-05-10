@@ -1,0 +1,424 @@
+{
+  "job_id": "job_35",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-02T19:11:31.673952",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 34.77,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.556,
+        "coverage_rate": 0.444,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.5
+  },
+  "final_scores": {
+    "node_score": 0.3643,
+    "edge_score": 0.2748,
+    "combined": 0.3285
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2183,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6547,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6523,
+    "matched_nodes": "0/18",
+    "edge_match_pct": 13.73
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1923,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1994,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1922,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0588,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.8091,
+    "weighted_recall": 0.0402,
+    "weighted_f1": {
+      "value": 0.0786,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.55,
+    "missing_critical_penalty": {
+      "value": 0.0833,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9784,
+    "ndcg_10": 0.9926,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.5536,
+    "semantic_fit_score": 0.6656,
+    "experience_density": 0.1434
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 21.8,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 16.14,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 32.45,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 99.14,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 38.54,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 29.93,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 47.05,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 6,
+      "match_pct": 7.6,
+      "weight_sum": 4.969
+    },
+    "Hard Skill": {
+      "count": 4,
+      "match_pct": 35.0,
+      "weight_sum": 3.805
+    },
+    "Soft Skill": {
+      "count": 6,
+      "match_pct": 20.5,
+      "weight_sum": 4.251
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 0.0,
+      "weight_sum": 1.145
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 13.73,
+    "total_edges": 8,
+    "top_synergies": [
+      {
+        "edge_key": "project_management_methods|teamwork_collaboration",
+        "source": "project_management_methods",
+        "target": "teamwork_collaboration",
+        "w_0": 0.6,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 70.8,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "agile_methodology|teamwork_collaboration",
+        "source": "agile_methodology",
+        "target": "teamwork_collaboration",
+        "w_0": 0.55,
+        "w_cv": 0.712,
+        "w_cv_norm": 0.356,
+        "match_pct": 64.7,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "python_coding|data-analysis-skills",
+        "source": "python_coding",
+        "target": "data-analysis-skills",
+        "w_0": 0.95,
+        "w_cv": 0.431,
+        "w_cv_norm": 0.215,
+        "match_pct": 22.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "excel_spreadsheet|data-analysis-skills",
+        "source": "excel_spreadsheet",
+        "target": "data-analysis-skills",
+        "w_0": 0.75,
+        "w_cv": 0.263,
+        "w_cv_norm": 0.131,
+        "match_pct": 17.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "power_bi_visualization|data-visualization-skills",
+        "source": "power_bi_visualization",
+        "target": "data-visualization-skills",
+        "w_0": 0.8,
+        "w_cv": 0.169,
+        "w_cv_norm": 0.085,
+        "match_pct": 10.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "MySQL",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Scrum",
+      "type": "Hard Skill",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Excel",
+      "type": "Tool",
+      "gap": 0.617,
+      "severity": "critical",
+      "importance": 0.88
+    },
+    {
+      "skill": "Power BI",
+      "type": "Tool",
+      "gap": 0.701,
+      "severity": "critical",
+      "importance": 0.87
+    },
+    {
+      "skill": "Méthodes de gestion de projet",
+      "type": "Hard Skill",
+      "gap": 0.618,
+      "severity": "critical",
+      "importance": 0.805
+    },
+    {
+      "skill": "bases de données",
+      "type": "Tool",
+      "gap": 0.743,
+      "severity": "critical",
+      "importance": 0.743
+    },
+    {
+      "skill": "forte capacité d'analyse",
+      "type": "Soft Skill",
+      "gap": 0.735,
+      "severity": "critical",
+      "importance": 0.735
+    },
+    {
+      "skill": "capacité à communiquer efficacement avec les parties prenantes",
+      "type": "Soft Skill",
+      "gap": 0.651,
+      "severity": "critical",
+      "importance": 0.651
+    },
+    {
+      "skill": "systèmes de gestion de données",
+      "type": "Domain",
+      "gap": 0.617,
+      "severity": "critical",
+      "importance": 0.617
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "MySQL",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Scrum",
+        "type": "Hard Skill",
+        "gap": 0.7
+      },
+      {
+        "label": "Excel",
+        "type": "Tool",
+        "gap": 0.617
+      },
+      {
+        "label": "Power BI",
+        "type": "Tool",
+        "gap": 0.701
+      },
+      {
+        "label": "Méthodes de gestion de projet",
+        "type": "Hard Skill",
+        "gap": 0.618
+      },
+      {
+        "label": "bases de données",
+        "type": "Tool",
+        "gap": 0.743
+      },
+      {
+        "label": "forte capacité d'analyse",
+        "type": "Soft Skill",
+        "gap": 0.735
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 8,
+    "nodes_with_bias": 7,
+    "edges_audited": 1,
+    "edges_with_bias": 1,
+    "bias_categories": {
+      "PROXY": 7,
+      "D. PROXY BIAS": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python_coding",
+        "label": "Python",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.862,
+        "reason": "The weight increase for Python coding (1.15 vs. 1.0) is primarily driven by the applicant's extensive experience with robotics projects, specifically mentioning Otterbots and Dognosis, which utilize Python. However, the CV heavily emphasizes skills outside of data analysis (robotics, hardware development, 3D modelling), while the job description emphasizes data analysis, BI tools (Power BI, SQL), and R.  This suggests a proxy bias favoring candidates with demonstrable experience in engineering and hardware development, which is a common signal in technology recruitment, even if not directly relevant to the specific Data Analyst role. The increased weighting for Python, coupled with the applicant’s background, inappropriately elevates the candidate's perceived skill level for this particular role. A fair alternative would be to evaluate the candidate based solely on their explicitly stated Python proficiency and experience with data analysis tools within those projects, not the broader robotics context."
+      },
+      {
+        "id": "agile_methodology",
+        "label": "Agile",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.9,
+        "reason": "The CV highlights experience with 'Dognosis', a company based in Bengaluru, India. The JD specifically mentions a need for experience within the European market (France, implied by the language used). The location of Dognosis represents a proxy for socioeconomic status and geographic location, which the algorithm may be unfairly penalizing due to a lack of direct relevance to the job requirements. While agile methodology experience is valued, the location signal is introducing a bias, and the increase in weight is not justified by the skills demonstrated. A fair alternative would be to weight agile methodology based solely on demonstrable skills and experience, not geographic origin."
+      },
+      {
+        "id": "scrum_project",
+        "label": "Scrum",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The CV highlights a Scrum project at Dognosis, which is located in Bengaluru, India. The Job Description (JD) does not explicitly require experience with Scrum methodology or frameworks.  The weight decrease likely reflects a proxy bias based on the candidate's location and the company where they worked, as the JD emphasizes skills and experience within a Western context (Power BI, SQL, Excel).  A fair alternative would be to assess the candidate's demonstrable Scrum experience or adaptability to this methodology, rather than penalizing them for the location of their previous project. Reducing the weight is a reasonable adjustment for this proxy bias."
+      },
+      {
+        "id": "communication_skills",
+        "label": "Bonne communication",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.75,
+        "reason": "The increased weight on 'communication skills' is likely a proxy bias reflecting the candidate's background and experience.  The CV prominently features skills like 'Robotics Engineer/Designer' and 'Product Development' from a Bengaluru-based company (Dognosis) and Ottonomy, which may not align directly with the stated requirements of a Data Analyst role focusing on business intelligence.  The JD explicitly mentions collaboration with business teams, but the candidate's prior experience seems more focused on hardware and robotics, potentially creating an artificial emphasis on communication skills as a requirement not genuinely tied to the job's core analytical demands. A correction factor of 0.75 reflects this undue weighting and the potential for misinterpreting the candidate’s skills based on their past role."
+      },
+      {
+        "id": "excel_spreadsheet",
+        "label": "Excel",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.525,
+        "reason": "The CV highlights a strong background in robotics and hardware development, particularly with ‘3D Model Creation with Autodesk Fusion 360’ and ‘Ottobots’ which are not explicitly mentioned in the JD. This suggests the applicant is overemphasizing skills outside the core requirements for a Data Analyst role, leveraging a broader technical skillset to compensate for a lack of direct experience with Power BI and SQL as prominently displayed in the JD. The applicant’s language skills (English, German, Tamil) also carry no relevance to the role, creating an additional signal that is not related to job requirements. This constitutes a proxy bias, unfairly penalizing the candidate for skills not aligned with the desired role."
+      },
+      {
+        "id": "power_bi_visualization",
+        "label": "Power BI",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.338,
+        "reason": "The CV prominently lists skills like 'Product Design', 'Robotics', and '3D Model Creation' alongside Power BI, suggesting the candidate's core expertise lies outside of data analysis. This prioritization of non-relevant skills over the explicitly stated 'Data Analyst' experience in the job description indicates a proxy bias – the system is overweighting signals (design and robotics experience) that are not directly aligned with the requirements of the role, penalizing the candidate for not having a traditional data analysis background. The ideal weight of 0.87 is significantly lower than the adapted weight of 0.45, demonstrating a biased assessment."
+      },
+      {
+        "id": "project_management_methods",
+        "label": "Méthodes de gestion de projet",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The candidate's CV heavily emphasizes non-relevant skills (robotics, 3D printing, design) and a foreign location (Bengaluru, India) while lacking direct experience with the specified JD requirements – data analysis, Power BI, SQL, and business intelligence. The focus on hardware development and robotics likely reflects a bias towards candidates with a STEM engineering background rather than analytical skills. This signals an over-reliance on proxy signals (location, specific technical skills) to assess suitability, indicating a potential proxy bias."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "agile_methodology|teamwork_collaboration",
+        "bias_category": "D. PROXY BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.712,
+        "reason": "The CV excerpt highlights experience in a startup environment (IISc Bangalore) alongside technical skills. However, the JD heavily favors candidates with specific tool proficiency (Power BI, SQL) and emphasizes ‘communication and teamwork’ – potentially weighting the ‘startup’ background as a proxy for desired characteristics.  This suggests a bias towards candidates from established institutions like IISc, unfairly boosting the weight of the context. A fairer alternative would be to assess skills and experience based on the defined requirements of the role, regardless of the previous employment setting."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2183 (sous-qualifié), CTM=0.6547 (écart structurel élevé), match_pct=34.77% → Poor Match",
+    "v6_summary": "weighted_f1=0.0786, gap_score=0.1922, ndcg_5=0.9784, missing_critical_penalty=0.0833, combo_v6_final=21.8",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "10 gaps critiques identifiés",
+    "bias_note": "7 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "⚠ 50.0% des scores via fallback mathématique (LLM instable)"
+  }
+}

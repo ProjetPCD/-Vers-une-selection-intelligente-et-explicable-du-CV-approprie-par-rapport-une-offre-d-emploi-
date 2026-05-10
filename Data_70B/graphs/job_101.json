@@ -1,0 +1,256 @@
+{
+  "nodes": [
+    {
+      "id": "business_analyst",
+      "label": "Business Analyst",
+      "type": "Domain",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Votre prochain défi professionnel est de rejoindre notre équipe en tant que Business Analyst",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "qlikview",
+      "label": "QlikView",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Vous utiliserez des outils tels que QlikView",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "sql",
+      "label": "SQL",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Vous utiliserez des outils tels que SQL",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "python",
+      "label": "Python",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Vous utiliserez des outils tels que Python",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "qliksense",
+      "label": "QlikSense",
+      "type": "Tool",
+      "w_0": 0.985,
+      "seniority_required": "N/A",
+      "context": "Vous utiliserez des outils tels que QlikSense",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "excel",
+      "label": "Excel",
+      "type": "Tool",
+      "w_0": 0.984,
+      "seniority_required": "N/A",
+      "context": "Vous utiliserez des outils tels que Excel",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "salesforce",
+      "label": "Salesforce",
+      "type": "Tool",
+      "w_0": 0.949,
+      "seniority_required": "N/A",
+      "context": "Vous utiliserez des outils tels que Salesforce",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "power_bi",
+      "label": "Power BI",
+      "type": "Tool",
+      "w_0": 0.928,
+      "seniority_required": "N/A",
+      "context": "Vous utiliserez des outils tels que Power BI",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "analysis",
+      "label": "Analysis",
+      "type": "Responsibility",
+      "w_0": 0.9,
+      "seniority_required": "N/A",
+      "context": "l'analyse des besoins métiers",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "kpi_definition",
+      "label": "KPI Definition",
+      "type": "Responsibility",
+      "w_0": 0.9,
+      "seniority_required": "N/A",
+      "context": "de la définition des KPIs",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "business_intelligence",
+      "label": "Business Intelligence",
+      "type": "Domain",
+      "w_0": 0.755,
+      "seniority_required": "N/A",
+      "context": "piloter des projets de business intelligence",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "communication",
+      "label": "Communication",
+      "type": "Soft Skill",
+      "w_0": 0.7,
+      "seniority_required": "N/A",
+      "context": "de la rédaction des spécifications fonctionnelles et de la formation des utilisateurs",
+      "inferred": true,
+      "inferred_from": "need to write functional specifications and train users"
+    },
+    {
+      "id": "collaboration",
+      "label": "Collaboration",
+      "type": "Soft Skill",
+      "w_0": 0.7,
+      "seniority_required": "N/A",
+      "context": "travaillerez en étroite collaboration avec les équipes techniques et métiers",
+      "inferred": true,
+      "inferred_from": "need to work closely with technical and business teams"
+    },
+    {
+      "id": "sap",
+      "label": "SAP",
+      "type": "Tool",
+      "w_0": 0.66,
+      "seniority_required": "N/A",
+      "context": "Vous utiliserez des outils tels que SAP",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "data_management",
+      "label": "Data Management",
+      "type": "Domain",
+      "w_0": 0.608,
+      "seniority_required": "N/A",
+      "context": "piloter des projets de gestion de données",
+      "inferred": false,
+      "inferred_from": ", "
+    }
+  ],
+  "edges": [
+    {
+      "source": "business_analyst",
+      "target": "analysis",
+      "relation": "part_of",
+      "weight": 0.9,
+      "rationale": "Business Analyst is responsible for analysis"
+    },
+    {
+      "source": "business_analyst",
+      "target": "kpi_definition",
+      "relation": "part_of",
+      "weight": 0.9,
+      "rationale": "Business Analyst is responsible for KPI definition"
+    },
+    {
+      "source": "analysis",
+      "target": "qliksense",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "Analysis uses QlikSense"
+    },
+    {
+      "source": "analysis",
+      "target": "qlikview",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "Analysis uses QlikView"
+    },
+    {
+      "source": "analysis",
+      "target": "salesforce",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "Analysis uses Salesforce"
+    },
+    {
+      "source": "analysis",
+      "target": "sap",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "Analysis uses SAP"
+    },
+    {
+      "source": "analysis",
+      "target": "power_bi",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "Analysis uses Power BI"
+    },
+    {
+      "source": "analysis",
+      "target": "sql",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "Analysis uses SQL"
+    },
+    {
+      "source": "analysis",
+      "target": "python",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "Analysis uses Python"
+    },
+    {
+      "source": "analysis",
+      "target": "excel",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "Analysis uses Excel"
+    },
+    {
+      "source": "business_intelligence",
+      "target": "business_analyst",
+      "relation": "part_of",
+      "weight": 0.75,
+      "rationale": "Business Analyst works in Business Intelligence domain"
+    },
+    {
+      "source": "data_management",
+      "target": "business_analyst",
+      "relation": "part_of",
+      "weight": 0.6,
+      "rationale": "Business Analyst works in Data Management domain"
+    },
+    {
+      "source": "communication",
+      "target": "business_analyst",
+      "relation": "complements",
+      "weight": 0.7,
+      "rationale": "Business Analyst requires good communication skills"
+    },
+    {
+      "source": "collaboration",
+      "target": "business_analyst",
+      "relation": "complements",
+      "weight": 0.7,
+      "rationale": "Business Analyst requires good collaboration skills"
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_101"
+}

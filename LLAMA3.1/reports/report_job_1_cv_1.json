@@ -1,0 +1,331 @@
+{
+  "job_id": "job_1",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-03T21:26:56.743505",
+  "overall_assessment": {
+    "verdict": "Weak Match",
+    "match_pct": 54.88,
+    "confidence": {
+      "confidence_score": 0.91,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.158,
+        "coverage_rate": 0.947,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.7581,
+    "edge_score": 0.0,
+    "combined": 0.4549
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.4588,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.4624,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Écart modéré"
+    },
+    "weighted_gap": 0.4512,
+    "matched_nodes": "5/19",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.4544,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.2632,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.421,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.3333,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.4228,
+    "weighted_recall": 0.2199,
+    "weighted_f1": {
+      "value": 0.381,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5553,
+    "missing_critical_penalty": {
+      "value": 0.3077,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.779,
+    "ndcg_10": 0.867,
+    "map_score": 0.9815,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8851,
+    "top_skill_alignment": 0.4429,
+    "semantic_fit_score": 0.5635,
+    "experience_density": 0.2927
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 41.05,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 35.72,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 44.89,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 90.51,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 50.52,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 45.72,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 44.66,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 39.5,
+      "weight_sum": 1.726
+    },
+    "Tool": {
+      "count": 9,
+      "match_pct": 46.4,
+      "weight_sum": 7.889
+    },
+    "Soft Skill": {
+      "count": 3,
+      "match_pct": 38.9,
+      "weight_sum": 2.342
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 0.9
+    },
+    "Domain": {
+      "count": 4,
+      "match_pct": 16.9,
+      "weight_sum": 1.813
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "top_synergies": [],
+    "total_edges": 0
+  },
+  "critical_gaps": [
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.6,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Kubernetes",
+      "type": "Tool",
+      "gap": 0.6,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Ingénieur",
+      "type": "Education",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.6
+      },
+      {
+        "label": "Kubernetes",
+        "type": "Tool",
+        "gap": 0.6
+      },
+      {
+        "label": "Ingénieur",
+        "type": "Education",
+        "gap": 0.9
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 16,
+    "nodes_with_bias": 11,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 6,
+      "AGEISM": 3,
+      "PROXY": 1,
+      "HALO": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python",
+        "label": "Python",
+        "bias_category": "AGEISM",
+        "severity": "MEDIUM",
+        "correction_factor": 1.3,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.105,
+        "reason": "The weight change is biased because it unfairly penalizes the candidate based on their experience years (3), which may not be directly relevant to the position being applied for. A fair alternative would be to use more recent and relevant work experience or skills demonstrated in the candidate's profile."
+      },
+      {
+        "id": "tensorflow",
+        "label": "TensorFlow",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.8,
+        "reason": "The weight change is biased towards candidates from Tunisia or with a similar level of proficiency in French, which may not be representative of the skills required for the job."
+      },
+      {
+        "id": "pytorch",
+        "label": "PyTorch",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.938,
+        "reason": "Prestige bias likely due to high-profile company or industry connection; correction factor set to 1.25 to mitigate unfairness."
+      },
+      {
+        "id": "numpy",
+        "label": "NumPy",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.8,
+        "reason": "The weight change is biased towards candidates with prestigious education, as indicated by the mention of 'Master's degree' in the certs section. A fair alternative would be to consider relevant experience and skills, which are present in this candidate's profile."
+      },
+      {
+        "id": "scikit-learn",
+        "label": "Scikit-learn",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.722,
+        "reason": "Prestige bias: weight changed due to company and university name, not skills demonstrated."
+      },
+      {
+        "id": "kubernetes",
+        "label": "Kubernetes",
+        "bias_category": "AGEISM",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.8,
+        "reason": "Relying solely on experience years can lead to ageism in hiring decisions, as older candidates may have more experience but might not be the best fit for the role. A fair alternative would be to consider a combination of relevant factors such as skills, achievements, and adaptability."
+      },
+      {
+        "id": "bonne-communication",
+        "label": "Bonne communication",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.9,
+        "reason": "The weight change is biased towards prestige-based signals, rather than focusing on the candidate's actual skills and qualifications."
+      },
+      {
+        "id": "methedologie",
+        "label": "Méthodologie",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.4,
+        "reason": "Halo bias: Overemphasis on a single strong signal ('Machine Learning DevOps Engineer') may lead to an incomplete evaluation of the candidate's profile."
+      },
+      {
+        "id": "motivation-apprendre-innover",
+        "label": "Forte motivation pour apprendre et innover",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.625,
+        "reason": "The weight decrease may be biased due to Prestige Bias (A), as the candidate's experience and skills are not being accurately reflected in their weight. A fair alternative would be to review the candidate's profile more thoroughly, considering both their technical skills and soft skills."
+      },
+      {
+        "id": "industrie",
+        "label": "Industrie",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.2,
+        "reason": "The weight change is biased because it penalizes the candidate for working with a specific industry name 'instadeep Ltd', rather than evaluating their skills and experience. A fair alternative would be to focus on the candidate's technical skills, such as proficiency in machine learning algorithms, deep learning architectures, and relevant certifications."
+      },
+      {
+        "id": "softskills",
+        "label": "Soft Skills",
+        "bias_category": "AGEISM",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.4,
+        "reason": "The job description places significant emphasis on industry experience, which may unfairly penalize younger or less experienced candidates."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.4588 (sous-qualifié), CTM=0.4624 (écart structurel modéré), match_pct=54.88% → Weak Match",
+    "v6_summary": "weighted_f1=0.381, gap_score=0.421, ndcg_5=0.779, missing_critical_penalty=0.3077, combo_v6_final=41.05",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "3 gaps critiques identifiés",
+    "bias_note": "11 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.91)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

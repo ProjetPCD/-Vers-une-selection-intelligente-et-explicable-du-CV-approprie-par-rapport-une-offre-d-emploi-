@@ -1,0 +1,419 @@
+{
+  "job_id": "job_45",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-03T02:17:56.069442",
+  "overall_assessment": {
+    "verdict": "Weak Match",
+    "match_pct": 50.22,
+    "confidence": {
+      "confidence_score": 0.78,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.182,
+        "coverage_rate": 0.818,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.5084,
+    "edge_score": 0.4197,
+    "combined": 0.4729
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.338,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5031,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.4978,
+    "matched_nodes": "3/22",
+    "edge_match_pct": 20.97
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3407,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.4186,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.3128,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0476,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.4127,
+    "weighted_recall": 0.0336,
+    "weighted_f1": {
+      "value": 0.0657,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5125,
+    "missing_critical_penalty": {
+      "value": 0.0833,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.88,
+    "ndcg_10": 0.8648,
+    "map_score": 0.9537,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.3632,
+    "semantic_fit_score": 0.6056,
+    "experience_density": 0.1812
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 28.67,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 29.47,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 34.9,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 93.58,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 32.8,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 33.55,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 37.16,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Education": {
+      "count": 1,
+      "match_pct": 9.4,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 6,
+      "match_pct": 31.9,
+      "weight_sum": 4.811
+    },
+    "Tool": {
+      "count": 5,
+      "match_pct": 31.1,
+      "weight_sum": 3.196
+    },
+    "Soft Skill": {
+      "count": 5,
+      "match_pct": 26.7,
+      "weight_sum": 3.299
+    },
+    "Domain": {
+      "count": 5,
+      "match_pct": 14.4,
+      "weight_sum": 3.372
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 20.97,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "python_skill|libraries",
+        "source": "python_skill",
+        "target": "libraries",
+        "w_0": 0.75,
+        "w_cv": 0.629,
+        "w_cv_norm": 0.314,
+        "match_pct": 41.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_skill|frameworks",
+        "source": "python_skill",
+        "target": "frameworks",
+        "w_0": 0.7,
+        "w_cv": 0.61,
+        "w_cv_norm": 0.305,
+        "match_pct": 43.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_skill|ide",
+        "source": "python_skill",
+        "target": "ide",
+        "w_0": 0.65,
+        "w_cv": 0.61,
+        "w_cv_norm": 0.305,
+        "match_pct": 46.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "oop_methodologies|role",
+        "source": "oop_methodologies",
+        "target": "role",
+        "w_0": 0.8,
+        "w_cv": 0.606,
+        "w_cv_norm": 0.303,
+        "match_pct": 37.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_skill|role",
+        "source": "python_skill",
+        "target": "role",
+        "w_0": 0.95,
+        "w_cv": 0.479,
+        "w_cv_norm": 0.239,
+        "match_pct": 25.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Education",
+      "type": "Education",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.615,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Java",
+      "type": "Hard Skill",
+      "gap": 0.615,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "méthodologies de développement agiles",
+      "type": "Hard Skill",
+      "gap": 0.607,
+      "severity": "critical",
+      "importance": 1.0
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Education",
+        "type": "Education",
+        "gap": 0.906
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.615
+      },
+      {
+        "label": "Java",
+        "type": "Hard Skill",
+        "gap": 0.615
+      },
+      {
+        "label": "méthodologies de développement agiles",
+        "type": "Hard Skill",
+        "gap": 0.607
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 19,
+    "nodes_with_bias": 13,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 5,
+      "PRESTIGE": 4,
+      "HALO": 3,
+      "B": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "engineer",
+        "label": "Education",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV heavily emphasizes front-end development skills (Angular, React, etc.) and certifications, aligning with the JD's focus on digital system design and AI solutions. However, the JD explicitly lists C/C++, Python, and Java as core technical skills. The significant decrease in weight (-0.75) suggests the algorithm is prioritizing the candidate’s current skillset (front-end) over the skills directly requested in the job description, indicating a proxy bias based on current in-demand technologies rather than the core requirements for this engineer role."
+      },
+      {
+        "id": "python_skill",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.769,
+        "reason": "The CV explicitly lists experience with Spring Boot, Hibernate, and JPA, which are heavily referenced in the Job Description (JD).  The candidate's skills align directly with the requirements for the role, demonstrating a strong technical foundation in Python-centric technologies. However, the CV focuses heavily on frontend technologies (Angular, React Native) while the JD emphasizes backend skills and the utilization of Python libraries.  This weighting shift toward frontend skills, despite the core requirements of the role being rooted in Python, represents a Prestige bias favoring skills more commonly highlighted in candidate profiles rather than aligning with the specific needs of the role, leading to an unfair advantage."
+      },
+      {
+        "id": "java_skill",
+        "label": "Java",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.769,
+        "reason": "The CV explicitly lists experience with Spring Boot, Hibernate, and JPA - technologies directly aligned with the job description's requirements for Java development and back-end systems. The increased weight reflects a strong positive signal. However, the CV primarily focuses on full-stack experience (Angular, React Native) and less on core Java skills, implying a potential prestige bias where strong familiarity with newer JavaScript frameworks is prioritized over established Java expertise. A lower correction factor is warranted to account for this disproportionate weighting."
+      },
+      {
+        "id": "agile_methodologies",
+        "label": "méthodologies de développement agiles",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.786,
+        "reason": "The CV lists specific JavaScript frameworks (Angular, React, Node.js) and certifications, which are strongly associated with a technical role and favored within the job description. While skills alignment is important, the explicit demonstration of these technologies—particularly through specific frameworks—likely contributed to the increased weighting, representing a proxy for the candidate's capabilities and experience in modern web development. This is disproportionately emphasizing a skill set that's more easily verifiable through technology stack compared to general ‘agile’ practices which the JD requests, creating an unfair advantage for candidates with a strong modern frontend skillset."
+      },
+      {
+        "id": "communication_skill",
+        "label": "communication",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.506,
+        "reason": "The weight change for ‘communication skill’ from 0.81 to 0.675 is potentially biased due to the reliance on a single phrase – ‘respecting deadlines and quality requirements’ – as evidence. This interpretation conflates communication skill with project management and delivery, rather than explicitly assessing verbal or written communication abilities, which are more directly relevant to the job description's emphasis on ‘collaboration’. The CV highlights experience with RESTful APIs and UI development, but doesn’t heavily showcase communication skills beyond stating ‘collaborative projects’. A correction factor of 0.75 reduces the weight to account for this indirect assessment and the potential for prioritizing administrative/delivery aspects over demonstrable communication competence."
+      },
+      {
+        "id": "fast_learning_skill",
+        "label": "capacité d'apprendre rapidement de nouvelles technologies",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.394,
+        "reason": "The decrease in weight for ‘fast_learning_skill’ is likely a proxy bias reflecting the CV’s emphasis on specific technologies (Angular, Spring Boot, React Native) which align strongly with the job description’s requirements. The JD explicitly calls for a candidate who can ‘learn quickly new technologies,’ but the CV's heavy focus on these currently trending technologies is favored, thus unfairly penalizing the candidate for not having experience with them. A fair alternative would be to assess the candidate's ability to learn new technologies through demonstrated problem-solving skills and adaptability, rather than solely relying on listed technical skills."
+      },
+      {
+        "id": "image_processing_domain",
+        "label": "Image Processing",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.319,
+        "reason": "The weight change (w_cv from 0.73 to 0.425) is likely driven by the CV's mention of 'Implement real-time communication features, including video streaming and playback'.  This single, specific skill requirement from the JD is heavily weighted, indicating a Halo bias – the system is overemphasizing a single strong signal (video streaming) and neglecting other potentially valuable skills highlighted in the CV such as Spring Boot, Angular, and database management experience. A fairer alternative would be to assess the candidate based on a broader range of relevant competencies, not just this one isolated feature."
+      },
+      {
+        "id": "object-oriented-programming",
+        "label": "Object-Oriented Programming",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The JD explicitly highlights 'Object-Oriented Programming' as a key requirement and emphasizes understanding of its principles. However, the CV primarily focuses on the candidate's proficiency in Angular, Spring Boot, and React Native—modern frameworks which, while related, do not demonstrate deep understanding or practical application of core OOP concepts. The CV’s reliance on these specific technologies creates a halo effect, unfairly elevating the candidate’s score simply because of their listed skills, while neglecting the fundamental requirement of OOP knowledge, leading to a decreased weight."
+      },
+      {
+        "id": "role",
+        "label": "Role",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease (-0.387) in weight, coupled with the lack of role-specific information in the CV (absence of mentions of C/C++, Python, Java as explicitly stated in the JD), suggests proxy bias. The CV heavily emphasizes technologies (Angular, React, etc.) which are more commonly associated with front-end development, while the JD specifically calls for full-stack skills. This disparity implies that the system is prioritizing skills listed on the CV rather than directly assessing the candidate’s ability to fulfill the job's technical requirements, leading to an unfair disadvantage for candidates with a background more aligned with the desired skillset as presented in the job description. A fair alternative would be to weight skills based directly on their relevance to the job description, giving higher weight to C/C++, Python, and Java.  The candidate's experience with RESTful APIs and MySQL, while relevant, doesn't directly address the core requirements of the role."
+      },
+      {
+        "id": "ide",
+        "label": "IDE (Environnements de Développement Intégrés)",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The CV lists 'Les fondements de la programmation React Hooks Practical GitHub Actions' as a skill, which indicates familiarity with a specific IDE. However, the job description emphasizes broader skills such as C/C++, Python, and Java, and a strong understanding of Object-Oriented Programming and Image Processing. The weight decrease suggests the system is overly relying on this single signal (IDE usage) without considering the candidate’s overall technical skillset, exhibiting halo bias. A fairer alternative would be to prioritize skills directly related to the stated job requirements, weighting C/C++, Python and Java more heavily. The Delta of -0.06 indicates a significant deviation from the ideal weight."
+      },
+      {
+        "id": "libraries",
+        "label": "Bibliothèques",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.488,
+        "reason": "The CV explicitly highlights experience with Angular, React Native, and Spring Boot – libraries directly mentioned in the job description. This contextual connection, while demonstrating relevant skills, suggests a prestige bias where skills are elevated simply due to recognition of popular libraries rather than a demonstrated proficiency.  The increased weight reflects a preference for these technologies without necessarily assessing the candidate’s depth of knowledge or impact within those frameworks. A fairer approach would prioritize demonstrable skills and experience over simply listing popular libraries. Correction factor adjusted to 0.75 reflecting this prestige bias."
+      },
+      {
+        "id": "frameworks",
+        "label": "Frameworks",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The CV heavily emphasizes specific frameworks (Angular, Ionic, React Native) which are explicitly mentioned in the job description.  This suggests the algorithm is prioritizing these technologies above skills like C/C++, Python, and Java, which are also listed in the JD and arguably more fundamental to the role. While experience with these frameworks is valuable, the explicit weighting shift indicates a Prestige bias, rewarding specific framework mentions over a broader skillset that the job description values. A fairer alternative would be to assess skills demonstrated across all technologies, with a focus on core competencies required for the role, not simply the presence of listed frameworks."
+      },
+      {
+        "id": "digital-systems-design",
+        "label": "Systèmes Numériques",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV heavily emphasizes front-end technologies (Angular, React, etc.) and certifications, aligning with the JD's focus on web and mobile development. However, the JD explicitly lists C/C++, Python, and Java as key skills. The weight change indicates a decrease in the importance of the candidate's core technical skills, suggesting a proxy bias driven by the CV's emphasis on front-end technologies, which are not directly aligned with the required skill set for the role. A fairer alternative would prioritize experience with the languages and frameworks specified in the job description."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.338 (sous-qualifié), CTM=0.5031 (écart structurel élevé), match_pct=50.22% → Weak Match",
+    "v6_summary": "weighted_f1=0.0657, gap_score=0.3128, ndcg_5=0.88, missing_critical_penalty=0.0833, combo_v6_final=28.67",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "4 gaps critiques identifiés",
+    "bias_note": "13 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.78)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

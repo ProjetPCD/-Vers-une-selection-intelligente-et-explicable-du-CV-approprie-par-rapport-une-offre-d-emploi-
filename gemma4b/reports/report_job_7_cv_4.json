@@ -1,0 +1,512 @@
+{
+  "job_id": "job_7",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-02T19:00:41.875777",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 40.13,
+    "confidence": {
+      "confidence_score": 0.68,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.522,
+        "coverage_rate": 0.783,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.4796,
+    "edge_score": 0.4669,
+    "combined": 0.4745
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2864,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6159,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5987,
+    "matched_nodes": "5/23",
+    "edge_match_pct": 23.36
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3008,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.4308,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2455,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.3153,
+    "weighted_recall": 0.0759,
+    "weighted_f1": {
+      "value": 0.1436,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6596,
+    "missing_critical_penalty": {
+      "value": 0.1053,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.77,
+    "ndcg_10": 0.8048,
+    "map_score": 0.8121,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8999,
+    "top_skill_alignment": 0.5262,
+    "semantic_fit_score": 0.3866,
+    "experience_density": 0.1909
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 28.05,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 29.61,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 25.85,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 84.22,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 40.2,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 30.63,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 49.92,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 2,
+      "match_pct": 18.1,
+      "weight_sum": 1.528
+    },
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 48.3,
+      "weight_sum": 1.751
+    },
+    "Tool": {
+      "count": 13,
+      "match_pct": 17.3,
+      "weight_sum": 11.538
+    },
+    "Methodology": {
+      "count": 1,
+      "match_pct": 14.0,
+      "weight_sum": 0.797
+    },
+    "Soft Skill": {
+      "count": 5,
+      "match_pct": 43.3,
+      "weight_sum": 2.694
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 23.36,
+    "total_edges": 15,
+    "top_synergies": [
+      {
+        "edge_key": "python-job-hint-1|data-scientist-job-hint-1",
+        "source": "python-job-hint-1",
+        "target": "data-scientist-job-hint-1",
+        "w_0": 0.98,
+        "w_cv": 0.919,
+        "w_cv_norm": 0.46,
+        "match_pct": 46.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python-job-hint-1|machine_learning_hard_skill",
+        "source": "python-job-hint-1",
+        "target": "machine_learning_hard_skill",
+        "w_0": 0.95,
+        "w_cv": 0.888,
+        "w_cv_norm": 0.444,
+        "match_pct": 46.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "sql-job-hint-1|data-scientist-job-hint-1",
+        "source": "sql-job-hint-1",
+        "target": "data-scientist-job-hint-1",
+        "w_0": 0.8,
+        "w_cv": 0.631,
+        "w_cv_norm": 0.316,
+        "match_pct": 39.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "git-job-hint-1|data-scientist-job-hint-1",
+        "source": "git-job-hint-1",
+        "target": "data-scientist-job-hint-1",
+        "w_0": 0.78,
+        "w_cv": 0.538,
+        "w_cv_norm": 0.269,
+        "match_pct": 34.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "regex_tool|data-scientist-job-hint-1",
+        "source": "regex_tool",
+        "target": "data-scientist-job-hint-1",
+        "w_0": 0.65,
+        "w_cv": 0.518,
+        "w_cv_norm": 0.259,
+        "match_pct": 39.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "numpy",
+      "type": "Tool",
+      "gap": 0.85,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Git",
+      "type": "Tool",
+      "gap": 0.659,
+      "severity": "critical",
+      "importance": 0.997
+    },
+    {
+      "skill": "pandas",
+      "type": "Tool",
+      "gap": 0.654,
+      "severity": "critical",
+      "importance": 0.969
+    },
+    {
+      "skill": "scipy",
+      "type": "Tool",
+      "gap": 0.825,
+      "severity": "critical",
+      "importance": 0.955
+    },
+    {
+      "skill": "Data Scientist",
+      "type": "Domain",
+      "gap": 0.748,
+      "severity": "critical",
+      "importance": 0.948
+    },
+    {
+      "skill": "scikit-learn",
+      "type": "Tool",
+      "gap": 0.747,
+      "severity": "critical",
+      "importance": 0.877
+    },
+    {
+      "skill": "LATEX",
+      "type": "Tool",
+      "gap": 0.766,
+      "severity": "critical",
+      "importance": 0.86
+    },
+    {
+      "skill": "Stan",
+      "type": "Tool",
+      "gap": 0.858,
+      "severity": "critical",
+      "importance": 0.858
+    },
+    {
+      "skill": "ArviZ",
+      "type": "Tool",
+      "gap": 0.845,
+      "severity": "critical",
+      "importance": 0.845
+    },
+    {
+      "skill": "DeepLabCut",
+      "type": "Tool",
+      "gap": 0.823,
+      "severity": "critical",
+      "importance": 0.823
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "numpy",
+        "type": "Tool",
+        "gap": 0.85
+      },
+      {
+        "label": "Git",
+        "type": "Tool",
+        "gap": 0.659
+      },
+      {
+        "label": "pandas",
+        "type": "Tool",
+        "gap": 0.654
+      },
+      {
+        "label": "scipy",
+        "type": "Tool",
+        "gap": 0.825
+      },
+      {
+        "label": "Data Scientist",
+        "type": "Domain",
+        "gap": 0.748
+      },
+      {
+        "label": "scikit-learn",
+        "type": "Tool",
+        "gap": 0.747
+      },
+      {
+        "label": "LATEX",
+        "type": "Tool",
+        "gap": 0.766
+      },
+      {
+        "label": "Stan",
+        "type": "Tool",
+        "gap": 0.858
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 17,
+    "nodes_with_bias": 16,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 10,
+      "D": 3,
+      "A. PRESTIGE BIAS": 1,
+      "C": 1,
+      "B": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python-job-hint-1",
+        "label": "Python",
+        "bias_category": "A. PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.438,
+        "reason": "The candidate's experience is heavily focused on HPE Aruba ClearPass environments, a specific vendor and product. While relevant, the JD explicitly lists ClearPass as a key technical skill and the candidate's entire recent role was centered around it. This places a significant, possibly undue, emphasis on a particular product and company name (HPE Aruba), potentially penalizing candidates without that experience. The substantial increase in weight suggests that the system is prioritizing the presence of this specific technology over other potentially relevant skills or experience."
+      },
+      {
+        "id": "numpy-job-hint-1",
+        "label": "numpy",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The significant decrease in the weight (w_cv) of 0.60, coupled with the job description's emphasis on HPE Aruba ClearPass experience, strongly suggests a proxy bias. The CV heavily emphasizes experience with Aruba ClearPass, a niche skill, while the ideal (w_0) is 1.0, indicating a more balanced approach. This indicates the algorithm is prioritizing a specific technology skillset (ClearPass) rather than underlying data science fundamentals, unfairly penalizing candidates without that specialized knowledge.  A fair alternative would be a weight closer to 1.0, reflecting a broader assessment of data science capabilities."
+      },
+      {
+        "id": "sql-job-hint-1",
+        "label": "SQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.862,
+        "reason": "The significant increase in weight (w_cv from 1.0 to 1.15, a +0.150 Delta) appears to be driven by the mention of SQL within the JD’s technical requirements.  The candidate’s CV highlights their experience with SQL, and while SQL is a valuable skill, the JD’s emphasis on SQL and the specific 'SQL' skill listed within the CV likely triggered an automated weighting increase – a Proxy Bias. Fair alternatives would be to weight SQL based on the candidate’s demonstrated proficiency (e.g., through assessment or project examples) rather than simply presence in the job description."
+      },
+      {
+        "id": "git-job-hint-1",
+        "label": "Git",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.675,
+        "reason": "The significant decrease in weight (w_0 from 0.997 to 0.9) is likely driven by the presence of ‘Git’ in the job description’s technical stack, while the candidate’s CV prominently lists ‘Git’ as one of many tools, but does not demonstrate experience with it beyond stating knowledge. This proxies socioeconomic advantage (access to Git as a standard industry tool) rather than genuine skill demonstration, leaning towards a Proxy Bias. The candidate's profile heavily emphasizes breadth of knowledge across various networking technologies rather than depth in specific areas like the JD requests, further reinforcing the impression of reliance on readily available tools rather than deep expertise."
+      },
+      {
+        "id": "scipy-job-hint-1",
+        "label": "scipy",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.26,
+        "reason": "The significant decrease in weight (w_0 from 0.955 to 0.4) suggests a bias favoring a CV from a location (Tunisia) and with a company (HPE Aruba) not typically associated with the required skills and experience described in the job description. The JD explicitly lists 'Scipy' as a key technical requirement, and the candidate’s CV heavily features HPE Aruba and ClearPass – technologies not inherently tied to advanced scientific computing. This suggests a proxy bias related to geographic origin and company affiliation, disproportionately penalizing candidates from locations outside the immediate focus of the role and potentially overlooking valuable skills due to the specific name recognition of the employer."
+      },
+      {
+        "id": "pandas-job-hint-1",
+        "label": "pandas",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.63,
+        "reason": "The CV highlights 3+ years of experience and specific certifications (CCNA, Aruba ClearPass) which aligns with the job description's requirement for an ‘experienced Data Scientist’ with expertise in networking and security. However, the CV’s emphasis on network engineering roles and certifications, particularly outside the core data science stack (Pandas, Python), suggests a potential proxy bias driven by the location and the nature of Wassim’s previous experience. The substantial decrease in score (-0.069) is disproportionate to the relatively peripheral skills mentioned in the CV, indicating an over-reliance on the networking expertise and a lack of consideration for the core technical skills required for a Data Scientist role. A correction factor of 0.7 aims to mitigate this by acknowledging Wassim’s relevant experience while weighting the core data science skills more heavily."
+      },
+      {
+        "id": "scikit-learn-job-hint-1",
+        "label": "scikit-learn",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.26,
+        "reason": "The significant decrease in weight (from 0.877 to 0.4) for 'scikit-learn' is likely driven by the absence of explicit evidence of its use within the candidate's CV. While the JD lists it as a required tool, the CV lacks any mention of projects, code samples, or experience directly involving scikit-learn, indicating a Proxy Bias (D) where location (Tunisia) and a less-known technical skill are being overweighted in the absence of more relevant credentials.  A fair alternative would be to apply a lower weight unless demonstrable skills are showcased, reflecting the importance of practical application over simply listing a required technology."
+      },
+      {
+        "id": "latex-job-hint-1",
+        "label": "LATEX",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV mentions LaTeX, which is listed as a technical skill in the job description, however, the CV focuses primarily on networking experience (Aruba, ClearPass, CCNA) and quantifiable achievements (reducing authentication failures, etc.).  This indicates a preference for demonstrable practical experience in network security rather than academic or technical skills highlighted in the CV. This proxy bias (socioeconomic signal - CV highlights practical experience in a high-demand area) unfairly penalizes the candidate for lacking explicitly stated machine learning experience, favoring a profile aligned with the immediate job requirements. Correction factor adjusted to 0.75 to account for the undue weight given to the CV's skills based on location and experience."
+      },
+      {
+        "id": "regex_tool",
+        "label": "RegEx",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The increase in weight (w_cv from 0.84 to 0.85) due to 'Regex' usage is likely a proxy bias.  The job description explicitly lists 'RegEx' as a required skill, and the CV shows Wassim's experience with it. This suggests the candidate is being favored simply for possessing the tool mentioned in the JD, rather than for demonstrable skills in network analysis or pattern matching – an unfair emphasis on a specific technology listed in the requirements.  A fairer alternative would prioritize evidence of actual skills relevant to network analysis, such as experience with packet analysis tools or network design principles. The use of regex is a superficial connection to the desired skillset."
+      },
+      {
+        "id": "conda_tool",
+        "label": "Conda",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The candidate's CV prominently lists Conda as a tool used, aligning with the job description's specified tech stack. While proficiency with Conda isn't explicitly stated, the applicant’s focus on network monitoring and Prometheus, alongside the explicit mention of Conda in the JD, suggests a proxy for experience with modern data science toolchains and an environment conducive to complex data projects.  This leads to an unfairly emphasized skill, particularly given the lack of explicit validation of Conda’s use within the candidate's previous roles; correction_factor = 0.75."
+      },
+      {
+        "id": "best_practices_methodology",
+        "label": "Best Practices Methodology",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.28,
+        "reason": "The significant weight change (-0.397) based on the CV’s description of ‘configuring and optimizing 200+ HPE Aruba ClearPass environments’ is indicative of Proxy Bias. The evidence prioritizes a specific vendor certification (Aruba ClearPass) which is not necessarily indicative of overall data science skill, and therefore, unfairly weights this one achievement over a broader assessment. A fair alternative would prioritize skills directly related to machine learning, Python programming, and statistical modeling as specified in the job description, which is not reflected in the CV's listed accomplishments."
+      },
+      {
+        "id": "machine_learning_hard_skill",
+        "label": "Machine Learning",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.338,
+        "reason": "This weight change (decrease of -0.301) is likely driven by prestige bias. The candidate's experience is heavily centered around network security roles at HPE, specifically with Aruba ClearPass environments, which, while valuable, don't explicitly demonstrate a strong grasp of machine learning concepts as required by the JD. The evidence provided (configuring and optimizing HPE ClearPass) is a technical skill but doesn't translate to demonstrable ML expertise.  The JD emphasizes a need for expertise in 'modélisation bayésienne' and 'prévision de série temporelle,' areas the candidate's listed experience does not directly address, leading to a perceived lack of relevance and the resulting lowered weight. A fair alternative would be a more direct demonstration of ML skills and knowledge – the candidate's profile prioritizes infrastructure security instead of applied ML."
+      },
+      {
+        "id": "communication_soft_skill",
+        "label": "Excellent Communication",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.75,
+        "reason": "The increased weight (Delta: +0.272) for 'communication_soft_skill' is likely a proxy bias driven by the candidate's geographic origin (Tunisia) and the context of the job description. The CV explicitly highlights experience in global organizations and network access control, which are often associated with higher communication demands in international contexts.  While strong communication skills are desirable, the boost is unfairly influenced by the candidate's location, suggesting a potential bias towards candidates from specific regions or those with experience in multinational settings. A fair alternative would be to weight communication based solely on demonstrated skills and experience – which this CV does, but the weight adjustment is not justified. This is a MEDIUM severity bias as it relies on external signals rather than assessed performance."
+      },
+      {
+        "id": "teamwork_soft_skill",
+        "label": "Strong Teamwork",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.15,
+        "reason": "This weight increase for 'teamwork_soft_skill' suggests a bias towards prestige. The CV heavily emphasizes experience at HPE (a prestigious company), highlighting network design and problem-solving abilities - skills directly relevant to team-based projects in the JD.  The CV's description of thriving on network challenges aligns strongly with the JD’s mention of collaboration within multidisciplinary teams. While the candidate demonstrates teamwork skills, the explicit mention of HPE and impactful contributions is being disproportionately rewarded, indicating a potential preference for candidates from well-known organizations, thereby reflecting a prestige bias. A correction factor of 1.15 appropriately adjusts for this, acknowledging the increased value placed on teamwork stemming from the candidate’s employer."
+      },
+      {
+        "id": "energy_industry_domain",
+        "label": "Energy Industry",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The CV’s primary focus is on network infrastructure (Packet Tracer, Wireshark, Aruba ClearPass) and certifications within that domain, not the explicitly stated ‘energy industry domain’ detailed in the JD.  The candidate’s skillset aligns with network security and access control, a niche area of expertise rather than the broader scope of data science for energy prediction, creating a mismatch.  This proxy signal (specific network infrastructure experience) unduly influenced the weight change, suggesting a bias towards candidates with this particular skillset, regardless of their broader relevance to the advertised role."
+      },
+      {
+        "id": "skill_teamwork_1",
+        "label": "Forte Aptitude à Travailler en Équipe",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.54,
+        "reason": "The increased weight (Delta = +0.061) on 'teamwork' is likely influenced by the candidate's extensive experience with enterprise-level network design and maintenance, as detailed in the CV. This experience, particularly the successful reduction of authentication failures and support ticket resolution times, demonstrates a crucial aspect of teamwork – problem-solving within a collaborative setting, and achieving business outcomes through network engineering. While the JD mentions soft skills, the candidate’s tangible accomplishments and technical details strongly support the enhanced weight, representing a merit-based increase.  This suggests a proxy bias – the system is prioritizing details of impactful achievements (reduced downtime, optimized networks) which are inherently linked to effective teamwork rather than a generic statement of 'teamwork'."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2864 (sous-qualifié), CTM=0.6159 (écart structurel élevé), match_pct=40.13% → Poor Match",
+    "v6_summary": "weighted_f1=0.1436, gap_score=0.2455, ndcg_5=0.77, missing_critical_penalty=0.1053, combo_v6_final=28.05",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "12 gaps critiques identifiés",
+    "bias_note": "16 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.68)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

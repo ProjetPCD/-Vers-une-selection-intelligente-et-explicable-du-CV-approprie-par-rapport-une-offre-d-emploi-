@@ -1,0 +1,373 @@
+{
+  "job_id": "job_42",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-03T00:17:42.443969",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 30.46,
+    "confidence": {
+      "confidence_score": 0.71,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.583,
+        "coverage_rate": 0.833,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.2936,
+    "edge_score": 0.4325,
+    "combined": 0.3492
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1743,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6939,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6954,
+    "matched_nodes": "1/12",
+    "edge_match_pct": 21.63
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1775,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.4325,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1545,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8063,
+    "ndcg_10": 0.9119,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.5036,
+    "semantic_fit_score": 0.4775,
+    "experience_density": 0.1174
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 17.7,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 22.24,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 22.89,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 92.25,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 4.63,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 27.53,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 4,
+      "match_pct": 6.3,
+      "weight_sum": 3.725
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 40.0,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 28.1,
+      "weight_sum": 1.0
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 6.9,
+      "weight_sum": 1.494
+    },
+    "Domain": {
+      "count": 4,
+      "match_pct": 16.3,
+      "weight_sum": 2.38
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 21.63,
+    "total_edges": 8,
+    "top_synergies": [
+      {
+        "edge_key": "data-scientist-experience|data_scientist_domain",
+        "source": "data-scientist-experience",
+        "target": "data_scientist_domain",
+        "w_0": 0.75,
+        "w_cv": 0.66,
+        "w_cv_norm": 0.33,
+        "match_pct": 44.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "phd_degree|data_scientist_domain",
+        "source": "phd_degree",
+        "target": "data_scientist_domain",
+        "w_0": 0.85,
+        "w_cv": 0.64,
+        "w_cv_norm": 0.32,
+        "match_pct": 37.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_programming|data_scientist_domain",
+        "source": "python_programming",
+        "target": "data_scientist_domain",
+        "w_0": 0.95,
+        "w_cv": 0.521,
+        "w_cv_norm": 0.261,
+        "match_pct": 27.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "mysql_database|data_scientist_domain",
+        "source": "mysql_database",
+        "target": "data_scientist_domain",
+        "w_0": 0.7,
+        "w_cv": 0.39,
+        "w_cv_norm": 0.195,
+        "match_pct": 27.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "communication_skills|data_scientist_domain",
+        "source": "communication_skills",
+        "target": "data_scientist_domain",
+        "w_0": 0.6,
+        "w_cv": 0.352,
+        "w_cv_norm": 0.176,
+        "match_pct": 29.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Azure Machine Learning",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PhD",
+      "type": "Education",
+      "gap": 0.6,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.719,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "MySQL",
+      "type": "Tool",
+      "gap": 0.85,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Communication",
+      "type": "Soft Skill",
+      "gap": 0.802,
+      "severity": "critical",
+      "importance": 0.915
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.829,
+      "severity": "critical",
+      "importance": 0.879
+    },
+    {
+      "skill": "PyTorch",
+      "type": "Tool",
+      "gap": 0.796,
+      "severity": "critical",
+      "importance": 0.846
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Azure Machine Learning",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "PhD",
+        "type": "Education",
+        "gap": 0.6
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.719
+      },
+      {
+        "label": "MySQL",
+        "type": "Tool",
+        "gap": 0.85
+      },
+      {
+        "label": "Communication",
+        "type": "Soft Skill",
+        "gap": 0.802
+      },
+      {
+        "label": "Docker",
+        "type": "Tool",
+        "gap": 0.829
+      },
+      {
+        "label": "PyTorch",
+        "type": "Tool",
+        "gap": 0.796
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 5,
+    "nodes_with_bias": 5,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "HALO": 4,
+      "PROXY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "phd_degree",
+        "label": "PhD",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.8,
+        "reason": "The increased weight assigned to the PhD degree demonstrates a halo bias, where the presence of a PhD unduly elevates the candidate's score without considering other relevant skills and experiences detailed in the CV. While a PhD is valuable, the JD explicitly states a preference for experience and specific technical skills (Python, PyTorch, Azure Machine Learning), and the CV itself highlights significant contributions and certifications in AI and cloud technologies.  A fair alternative would be to equally weigh all presented evidence reflecting relevant expertise. The delta of +0.000 suggests the weight was artificially increased based solely on the PhD credential, amplifying its influence unfairly."
+      },
+      {
+        "id": "python_programming",
+        "label": "Python",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The candidate's strong score for 'python_programming' appears to be driven by their involvement in the 'Language Narrative' and 'Workbook Narrate' projects within Oracle. While these projects demonstrate skills utilizing Python, the JD explicitly lists Python as a core requirement, suggesting a halo effect where involvement in these specific projects inflated the Python skill weight disproportionately. A fairer assessment would focus on the depth and breadth of the candidate’s Python skills beyond the specific projects, considering their broader AI/ML background. The candidate's CV heavily emphasizes these two projects; therefore, the system may be overvaluing this particular skillset."
+      },
+      {
+        "id": "mysql_database",
+        "label": "MySQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The candidate's skills and experience align with the JD’s requirements, particularly their involvement in ‘Language Narrative’ and ‘Workbook Nar’ within Oracle Analytics Cloud, developing data-driven insights and narrative generation features. However, the significant weight reduction (-0.600) suggests a proxy bias based on the candidate’s location (Morocco) and the CV’s reliance on certifications from Oracle and AWS, rather than a direct assessment of their technical skills. Favoring companies and certifications over demonstrable skills creates an unfair disadvantage for candidates outside of those specific ecosystems. A fair alternative would be to evaluate the candidate solely on the provided evidence of their skills and contributions, disregarding the geographical origin or specific certifications."
+      },
+      {
+        "id": "communication_skills",
+        "label": "Communication",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The CV heavily emphasizes AI/ML skills (LLMs, NLP, AWS, Oracle certifications) and specific project experience (Language Narrative, Workbook Nar) – reflecting a halo effect where the candidate's strong credentials in these areas are overshadowing the more general requirement for ‘communication skills.’ While the JD explicitly states communication as a core skill, the CV’s focused weighting indicates the algorithm is prioritizing specific technological expertise, unfairly penalizing candidates who may possess strong communication skills but lack the highly specialized AI/ML credentials listed. A fairer alternative would be to equally weight all listed skills based on the core role requirements."
+      },
+      {
+        "id": "data_scientist_domain",
+        "label": "Data Scientist",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.48,
+        "reason": "The candidate's CV heavily emphasizes skills listed in the JD (AI, LLMs, NLP, Cloud Computing) as these are prioritized due to the explicit mention of these technologies in the JD's 'stack'. This suggests a halo effect, where the candidate is positively evaluated primarily due to aligning with the JD's listed technologies, rather than a holistic assessment of their data science expertise based on the provided evidence. The weight decrease (-0.064) indicates that the system is overly emphasizing the presence of specific technologies mentioned in the job description, neglecting potentially more relevant skills demonstrated in the candidate's experience with narrative generation and data-driven insights within Oracle Analytics Cloud, which aligns directly with the stated goals of the role."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1743 (sous-qualifié), CTM=0.6939 (écart structurel élevé), match_pct=30.46% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.1545, ndcg_5=0.8063, missing_critical_penalty=0.0, combo_v6_final=17.7",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "7 gaps critiques identifiés",
+    "bias_note": "5 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.71)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

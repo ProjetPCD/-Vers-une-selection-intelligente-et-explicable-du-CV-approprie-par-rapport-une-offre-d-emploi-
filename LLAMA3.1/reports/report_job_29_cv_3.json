@@ -1,0 +1,461 @@
+{
+  "job_id": "job_29",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-04T10:41:54.448507",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 44.74,
+    "confidence": {
+      "confidence_score": 0.81,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.4,
+        "coverage_rate": 0.9,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.4585,
+    "edge_score": 0.0,
+    "combined": 0.2751
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2932,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5614,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5526,
+    "matched_nodes": "1/20",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2943,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.4914,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2747,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.05,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.236,
+    "weighted_recall": 0.0326,
+    "weighted_f1": {
+      "value": 0.0636,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.8544,
+    "ndcg_10": 0.8896,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.5597,
+    "experience_density": 0.1757
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 27.14,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 30.22,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 31.83,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 94.18,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 30.56,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 28.24,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 18.51,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 33.5,
+      "weight_sum": 1.87
+    },
+    "Tool": {
+      "count": 14,
+      "match_pct": 22.1,
+      "weight_sum": 10.681
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 19.0,
+      "weight_sum": 2.773
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "total_edges": 8,
+    "top_synergies": [
+      {
+        "edge_key": "devops|kubernetes",
+        "source": "devops",
+        "target": "kubernetes",
+        "w_0": 0.95,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devops|docker",
+        "source": "devops",
+        "target": "docker",
+        "w_0": 0.85,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devops|jenkins",
+        "source": "devops",
+        "target": "jenkins",
+        "w_0": 0.92,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devops|travis_ci",
+        "source": "devops",
+        "target": "travis_ci",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "symfony|doctrine",
+        "source": "symfony",
+        "target": "doctrine",
+        "w_0": 0.9,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "DevOps",
+      "type": "Hard Skill",
+      "gap": 0.688,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Azure AKS",
+      "type": "Tool",
+      "gap": 0.637,
+      "severity": "critical",
+      "importance": 0.95
+    },
+    {
+      "skill": "GKE",
+      "type": "Tool",
+      "gap": 0.66,
+      "severity": "critical",
+      "importance": 0.91
+    },
+    {
+      "skill": "Ansible",
+      "type": "Tool",
+      "gap": 0.602,
+      "severity": "critical",
+      "importance": 0.802
+    },
+    {
+      "skill": "résolution de problèmes",
+      "type": "Soft Skill",
+      "gap": 0.725,
+      "severity": "critical",
+      "importance": 0.8
+    },
+    {
+      "skill": "Communication efficace",
+      "type": "Soft Skill",
+      "gap": 0.767,
+      "severity": "critical",
+      "importance": 0.767
+    },
+    {
+      "skill": "Terraform",
+      "type": "Tool",
+      "gap": 0.763,
+      "severity": "critical",
+      "importance": 0.763
+    },
+    {
+      "skill": "Doctrine",
+      "type": "Tool",
+      "gap": 0.606,
+      "severity": "critical",
+      "importance": 0.606
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "DevOps",
+        "type": "Hard Skill",
+        "gap": 0.688
+      },
+      {
+        "label": "Azure AKS",
+        "type": "Tool",
+        "gap": 0.637
+      },
+      {
+        "label": "GKE",
+        "type": "Tool",
+        "gap": 0.66
+      },
+      {
+        "label": "Ansible",
+        "type": "Tool",
+        "gap": 0.602
+      },
+      {
+        "label": "résolution de problèmes",
+        "type": "Soft Skill",
+        "gap": 0.725
+      },
+      {
+        "label": "Communication efficace",
+        "type": "Soft Skill",
+        "gap": 0.767
+      },
+      {
+        "label": "Terraform",
+        "type": "Tool",
+        "gap": 0.763
+      },
+      {
+        "label": "Doctrine",
+        "type": "Tool",
+        "gap": 0.606
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 16,
+    "nodes_with_bias": 13,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "HALO": 3,
+      "PROXY": 3,
+      "PRESTIGE": 2,
+      "GENDER_DIVERSITY": 1,
+      "HALO_BIAS": 1,
+      "HALO BIAS": 1,
+      "PROXY|HALO": 1,
+      "PRESTIGE BIAS": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "devops",
+        "label": "DevOps",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.625,
+        "reason": "The weight change is biased towards favoring candidates with relevant tool experience, as indicated by the significant decrease in weight (0.5) for w_cv despite the candidate having GitHub Copilot mentioned in their profile. This penalizes candidates without similar explicit mentions, even if they possess relevant skills and experience."
+      },
+      {
+        "id": "azure_aks",
+        "label": "Azure AKS",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.625,
+        "reason": "The weight change relies on a proxy signal (Azure AKS) that may not accurately reflect the candidate's skills or experience. A fairer approach would be to focus on relevant technical skills and experiences mentioned in the CV, such as Java, Spring Boot, and Angular."
+      },
+      {
+        "id": "php",
+        "label": "PHP",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.9,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.72,
+        "reason": "The weight change is biased towards prestige because the job description heavily emphasizes experience with specific technologies (e.g., PHP, Symfony, Doctrine), which are mentioned in the candidate's CV. However, this does not necessarily reflect the candidate's actual skills or abilities. A fairer approach would be to evaluate the candidate based on their relevant skills and experiences, rather than just their familiarity with high-profile technologies."
+      },
+      {
+        "id": "resolution_de_problemes",
+        "label": "résolution de problèmes",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.6,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.15,
+        "reason": "The weight change is biased because it disproportionately penalizes a candidate based on one strong signal (weak evidence of problem-solving skills mentioned in the summary section). This biases the evaluation towards candidates who highlight this skill prominently, rather than considering other relevant factors. A fair alternative would be to evaluate problem-solving skills through multiple channels and assign weights accordingly."
+      },
+      {
+        "id": "kubernetes",
+        "label": "Kubernetes",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.625,
+        "reason": "The weight change suggests unfair penalization for experience years detected as 1, which may not be directly relevant to skills or qualifications."
+      },
+      {
+        "id": "ansible",
+        "label": "Ansible",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.4,
+        "reason": "The weight change may be biased as it penalizes candidates without direct experience with Ansible, which may not be relevant to the candidate's overall skills and experience."
+      },
+      {
+        "id": "symfony",
+        "label": "Symfony",
+        "bias_category": "HALO_BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.88,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.66,
+        "reason": "The weight change is biased towards candidates with experience in specific technologies like Symfony, as evidenced by the job description's emphasis on proficiency in PHP, Symfony, and other related tools. The ideal weight (w_0) of 0.758 gives more importance to the adapted weight (w_cv) of 0.75 for candidates with direct evidence of Symfony use in their CV, such as the Project Risk Advisor experience. A fair alternative would be to adjust the weights to reflect a more balanced consideration of all relevant skills and experiences."
+      },
+      {
+        "id": "jenkins",
+        "label": "Jenkins",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.0,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.5,
+        "reason": "Weight change biased due to university/company name and location, not directly related to skills demonstrated."
+      },
+      {
+        "id": "opsgenie",
+        "label": "OpsGenie",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.625,
+        "reason": "The weight change was unfairly penalized due to socioeconomic signals (location), specifically the candidate's location in Ariana, Tunisia. A fair alternative would be to evaluate the candidate based on their skills and experience, rather than their geographical location."
+      },
+      {
+        "id": "kustomize",
+        "label": "Kustomize",
+        "bias_category": "HALO BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.9,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The weight change is biased because it relies heavily on a single strong signal (GitHub Copilot in Top Skills), without considering other important factors such as project anchors, concrete evidence, or certifications. A fair alternative would be to consider multiple signals and adjust the weights accordingly."
+      },
+      {
+        "id": "aks",
+        "label": "AKS",
+        "bias_category": "PROXY|HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.4,
+        "reason": "The weight change is biased because it penalizes the candidate's experience based on the number of years (1 year) and lack of certifications, which are proxy signals. The ideal weight for w_0 is 0.677, but the adapted weight w_cv is 0.5, indicating a decrease in weight due to these factors. A fair alternative would be to consider more direct skills or accomplishments mentioned in the CV."
+      },
+      {
+        "id": "travis_ci",
+        "label": "Travis CI",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.2,
+        "reason": "The weight change is biased towards candidates with experience in Java and Spring ecosystems, as indicated by the emphasis on these skills in the job description and the candidate's experience in delivering solutions for financial technology innovation. The correction factor should be decreased to 0.8 to counterbalance this bias."
+      },
+      {
+        "id": "time_management",
+        "label": "Gestion du temps",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.08,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.54,
+        "reason": "Contextual mention of time management as a soft skill in the job description. No concrete project evidence provided to support this weight change."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2932 (sous-qualifié), CTM=0.5614 (écart structurel élevé), match_pct=44.74% → Poor Match",
+    "v6_summary": "weighted_f1=0.0636, gap_score=0.2747, ndcg_5=0.8544, missing_critical_penalty=0.0, combo_v6_final=27.14",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "8 gaps critiques identifiés",
+    "bias_note": "13 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.81)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

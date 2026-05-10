@@ -1,0 +1,497 @@
+{
+  "job_id": "job_90",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-02T18:02:14.032883",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 37.56,
+    "confidence": {
+      "confidence_score": 0.67,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.621,
+        "coverage_rate": 0.793,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.5002,
+    "edge_score": 0.0,
+    "combined": 0.3001
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2868,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6541,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6244,
+    "matched_nodes": "5/29",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2901,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.5393,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.2355,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1786,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.2086,
+    "weighted_recall": 0.1404,
+    "weighted_f1": {
+      "value": 0.2515,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6615,
+    "missing_critical_penalty": {
+      "value": 0.2,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.7941,
+    "ndcg_10": 0.8122,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8579,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.2497,
+    "experience_density": 0.2099
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 33.13,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 34.94,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 22.62,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 91.76,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 44.8,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 34.22,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 24.04,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 7,
+      "match_pct": 9.3,
+      "weight_sum": 5.411
+    },
+    "Hard Skill": {
+      "count": 6,
+      "match_pct": 33.4,
+      "weight_sum": 5.217
+    },
+    "Tool": {
+      "count": 12,
+      "match_pct": 18.6,
+      "weight_sum": 10.941
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 65.4,
+      "weight_sum": 2.772
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "total_edges": 9,
+    "top_synergies": [
+      {
+        "edge_key": "python_programming|kubernetes",
+        "source": "python_programming",
+        "target": "kubernetes",
+        "w_0": 0.9,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "docker|kubernetes",
+        "source": "docker",
+        "target": "kubernetes",
+        "w_0": 0.85,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "wireshark|burpsuite",
+        "source": "wireshark",
+        "target": "burpsuite",
+        "w_0": 0.7,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "wireshark|metasploit",
+        "source": "wireshark",
+        "target": "metasploit",
+        "w_0": 0.7,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "burpsuite|metasploit",
+        "source": "burpsuite",
+        "target": "metasploit",
+        "w_0": 0.7,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Junior Cybersecurity Engineer",
+      "type": "Domain",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python Programming",
+      "type": "Hard Skill",
+      "gap": 0.6,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Wireshark",
+      "type": "Tool",
+      "gap": 0.812,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "BurpSuite",
+      "type": "Tool",
+      "gap": 0.844,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Metasploit",
+      "type": "Tool",
+      "gap": 0.875,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Nessus",
+      "type": "Tool",
+      "gap": 0.875,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Java Programming",
+      "type": "Hard Skill",
+      "gap": 0.6,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PHP",
+      "type": "Hard Skill",
+      "gap": 0.844,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Ffuf",
+      "type": "Tool",
+      "gap": 0.82,
+      "severity": "critical",
+      "importance": 0.972
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.756,
+      "severity": "critical",
+      "importance": 0.969
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "Collaboration",
+        "type": "Soft Skill",
+        "w_cv": 1.62
+      },
+      {
+        "label": "Communication",
+        "type": "Soft Skill",
+        "w_cv": 1.55
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "Junior Cybersecurity Engineer",
+        "type": "Domain",
+        "gap": 1.0
+      },
+      {
+        "label": "Python Programming",
+        "type": "Hard Skill",
+        "gap": 0.6
+      },
+      {
+        "label": "Wireshark",
+        "type": "Tool",
+        "gap": 0.812
+      },
+      {
+        "label": "BurpSuite",
+        "type": "Tool",
+        "gap": 0.844
+      },
+      {
+        "label": "Metasploit",
+        "type": "Tool",
+        "gap": 0.875
+      },
+      {
+        "label": "Nessus",
+        "type": "Tool",
+        "gap": 0.875
+      },
+      {
+        "label": "Java Programming",
+        "type": "Hard Skill",
+        "gap": 0.6
+      },
+      {
+        "label": "PHP",
+        "type": "Hard Skill",
+        "gap": 0.844
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 21,
+    "nodes_with_bias": 14,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 6,
+      "PROXY": 4,
+      "HALO": 3,
+      "GENDER_DIVERSITY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python_programming",
+        "label": "Python Programming",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.8,
+        "reason": "The weight change appears to be influenced by the prestige of the company (Oracle) rather than the candidate's actual skills or experience."
+      },
+      {
+        "id": "docker",
+        "label": "Docker",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.425,
+        "reason": "The weight change due to experience_years_detected being only 1 year is unfair as it penalizes candidates with less experience."
+      },
+      {
+        "id": "wireshark",
+        "label": "Wireshark",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.5,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The weight change is biased because the candidate's experience_years_detected is only 1 year, which may not accurately reflect their skills and abilities. A fair alternative would be to use a more comprehensive evaluation method that takes into account multiple factors, such as project experiences, skills, and achievements."
+      },
+      {
+        "id": "burpsuite",
+        "label": "BurpSuite",
+        "bias_category": "PROXY",
+        "severity": "LOW",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "Proxy bias based on socioeconomic signals; candidate has relevant experience with other security tools."
+      },
+      {
+        "id": "java_programming",
+        "label": "Java Programming",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.8,
+        "reason": "The system is relying too heavily on a single strong signal (using Java for the Novy project) to judge the candidate's entire profile, without considering other important factors such as education, experience, and soft skills."
+      },
+      {
+        "id": "javascript_programming",
+        "label": "JavaScript Programming",
+        "bias_category": "PRESTIGE",
+        "severity": "LOW",
+        "correction_factor": 1.0,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.0,
+        "reason": "The weight change is biased towards prestige bias due to the candidate mentioning a specific project (Novy) that shows their use of JavaScript, which doesn't provide unique value compared to other skills demonstrated in their CV. A fair alternative would be to assign equal weight to other programming languages or skills mentioned in the CV."
+      },
+      {
+        "id": "php",
+        "label": "PHP",
+        "bias_category": "HALO",
+        "severity": "LOW",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "Although PHP is listed as a skill in the CV, it is not demonstrated in any project or task. This weight change may unfairly penalize the candidate, especially considering other skills like Node.js and Full-Stack Development are also mentioned but not demonstrated."
+      },
+      {
+        "id": "ffuf",
+        "label": "Ffuf",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.22,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.305,
+        "reason": "The weight change is biased towards prestige, as the candidate's skills and experience are not explicitly mentioned in the job description. The mention of 'Ffuf' in the job description may be a red flag for bias, especially since the candidate's CV does not mention it anywhere. A correction factor of 1.22 suggests that the weight should be increased to account for this bias."
+      },
+      {
+        "id": "web_development",
+        "label": "Web Development",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.84,
+        "reason": "The weight change is biased towards prestige, as the adapted weight (1.05) is higher than the ideal weight (0.907), suggesting that the candidate's university name or company name is being given undue importance in the hiring process. The reason for this bias is likely due to the fact that the candidate's LinkedIn profile lists a prestigious company (Oracle) and a well-known university, which may be influencing the model's decision-making."
+      },
+      {
+        "id": "securite_informatique",
+        "label": "Sécurité Informatique",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "Weak evidence of concrete project experience in the CV, influenced by education background and location."
+      },
+      {
+        "id": "collaboration",
+        "label": "Collaboration",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.9,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.62,
+        "reason": "The weight increase for 'collaboration' may be biased because it gives too much importance to specific examples of collaboration, rather than other relevant skills or experiences that may not have been showcased as vividly in the CV."
+      },
+      {
+        "id": "méthodologies-agiles",
+        "label": "Méthodologies agiles",
+        "bias_category": "HALO",
+        "severity": "LOW",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.68,
+        "reason": "Weight increase based on a single specific technical skill, rather than considering other relevant qualifications or experiences."
+      },
+      {
+        "id": "soft-skills",
+        "label": "Soft Skills",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.625,
+        "reason": "The original weight change for soft skills was biased towards traditional or masculine-coded skills, and a fair alternative would be to increase the weight by 25%."
+      },
+      {
+        "id": "c-Sharp",
+        "label": "C#",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "Prestige bias due to lack of prominent programming languages in profile; corrected to 0.75 to reflect medium-level bias."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2868 (sous-qualifié), CTM=0.6541 (écart structurel élevé), match_pct=37.56% → Poor Match",
+    "v6_summary": "weighted_f1=0.2515, gap_score=0.2355, ndcg_5=0.7941, missing_critical_penalty=0.2, combo_v6_final=33.13",
+    "key_strengths": "2 compétences clés validées",
+    "key_gaps": "18 gaps critiques identifiés",
+    "bias_note": "14 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.67)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

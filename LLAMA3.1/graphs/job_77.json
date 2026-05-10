@@ -1,0 +1,182 @@
+{
+  "nodes": [
+    {
+      "id": "php_skill",
+      "label": "PHP",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "Nous recherchons un expert en développement backend pour rejoindre notre équipe de développement web.",
+      "inferred": false
+    },
+    {
+      "id": "laravel_tool",
+      "label": "Laravel",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "Nous recherchons un expert en développement backend pour rejoindre notre équipe de développement web.",
+      "inferred": false
+    },
+    {
+      "id": "mysql_tool",
+      "label": "MySQL",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "Nous recherchons un expert en développement backend pour rejoindre notre équipe de développement web.",
+      "inferred": false
+    },
+    {
+      "id": "agile_hardskill",
+      "label": "Agile",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "Notre équipe utilise une méthodologie Agile et des outils tels que Jira, GitHub, et Docker pour gérer nos projets.",
+      "inferred": false
+    },
+    {
+      "id": "jira_tool",
+      "label": "Jira",
+      "type": "Tool",
+      "w_0": 0.848,
+      "seniority_required": "Senior",
+      "context": "Notre équipe utilise une méthodologie Agile et des outils tels que Jira, GitHub, et Docker pour gérer nos projets.",
+      "inferred": false
+    },
+    {
+      "id": "github_tool",
+      "label": "GitHub",
+      "type": "Tool",
+      "w_0": 0.821,
+      "seniority_required": "Senior",
+      "context": "Notre équipe utilise une méthodologie Agile et des outils tels que Jira, GitHub, et Docker pour gérer nos projets.",
+      "inferred": false
+    },
+    {
+      "id": "docker_tool",
+      "label": "Docker",
+      "type": "Tool",
+      "w_0": 0.802,
+      "seniority_required": "Senior",
+      "context": "Notre équipe utilise une méthodologie Agile et des outils tels que Jira, GitHub, et Docker pour gérer nos projets.",
+      "inferred": false
+    },
+    {
+      "id": "javascript_hardskill",
+      "label": "JavaScript",
+      "type": "Hard Skill",
+      "w_0": 0.725,
+      "seniority_required": "Senior",
+      "context": "Vous utiliserez également vos compétences en HTML5, CSS3, Bootstrap, et JavaScript pour développer des interfaces utilisateur responsives et conviviales.",
+      "inferred": false
+    },
+    {
+      "id": "bootstrap_tool",
+      "label": "Bootstrap",
+      "type": "Tool",
+      "w_0": 0.693,
+      "seniority_required": "Senior",
+      "context": "Vous utiliserez également vos compétences en HTML5, CSS3, Bootstrap, et JavaScript pour développer des interfaces utilisateur responsives et conviviales.",
+      "inferred": false
+    },
+    {
+      "id": "conception_systèmes_hardskill",
+      "label": "principes de conception de systèmes",
+      "type": "Hard Skill",
+      "w_0": 0.612,
+      "seniority_required": "Senior",
+      "context": "Le candidat idéal aura une expérience significative dans le développement backend, une bonne compréhension des principes de conception de systèmes, et une expérience avec les frameworks de développement web tels que Laravel.",
+      "inferred": false
+    },
+    {
+      "id": "backend",
+      "label": "Backend Development",
+      "type": "Domain",
+      "w_0": 0.553,
+      "inferred_from": "Nous recherchons un expert en développement backend pour rejoindre notre équipe de développement web."
+    },
+    {
+      "id": "communication",
+      "label": "Good Communication Skills",
+      "type": "Soft Skill",
+      "w_0": 0.545,
+      "inferred_from": "Nous recherchons un candidat passionné, motivé, et doté d'excellentes compétences en communication pour rejoindre notre équipe."
+    },
+    {
+      "id": "problem_solving_skills",
+      "label": "Problem Solving Skills",
+      "type": "Soft Skill",
+      "w_0": 0.518,
+      "inferred_from": "Vous devrez également avoir une bonne compréhension des concepts de sécurité et de performance, ainsi que des compétences en résolution de problèmes et en débogage."
+    },
+    {
+      "id": "Git",
+      "label": "Git",
+      "type": "Tool",
+      "w_0": 0.478,
+      "inferred_from": "Vous serez responsable de la gestion de version avec Git et GitHub, et de la collaboration avec les membres de l'équipe pour atteindre les objectifs communs."
+    },
+    {
+      "id": "qualified_candidates",
+      "label": "Qualified Candidates",
+      "type": "Domain",
+      "w_0": 0.413,
+      "inferred_from": "Nous proposons un environnement de travail dynamique, des défis intéressants, et des opportunités de développement professionnel pour les candidats qualifiés."
+    }
+  ],
+  "edges": [
+    {
+      "source": "php_skill",
+      "target": "laravel_tool",
+      "relation": "requires",
+      "weight": 0.9,
+      "rationale": "The JD explicitly states that PHP will be used with Laravel"
+    },
+    {
+      "source": "laravel_tool",
+      "target": "mysql_tool",
+      "relation": "part_of",
+      "weight": 0.8,
+      "rationale": "Laravel is a web framework that typically uses MySQL as its database management system"
+    },
+    {
+      "source": "backend",
+      "target": "agile_hardskill",
+      "relation": "supports",
+      "weight": 0.7,
+      "rationale": "The JD implies that Agile development practices are commonly used in backend development"
+    },
+    {
+      "source": "jira_tool",
+      "target": "backend",
+      "relation": "implements",
+      "weight": 0.6,
+      "rationale": "Jira is a tool often used to implement Agile development methodologies"
+    },
+    {
+      "source": "docker_tool",
+      "target": "backend",
+      "relation": "supports",
+      "weight": 0.4,
+      "rationale": "The JD implies that Docker is used to support backend development"
+    },
+    {
+      "source": "javascript_hardskill",
+      "target": "bootstrap_tool",
+      "relation": "requires",
+      "weight": 0.3,
+      "rationale": "JavaScript is required for Bootstrap, which is a framework for building responsive user interfaces"
+    },
+    {
+      "source": "conception_systèmes_hardskill",
+      "target": "backend",
+      "relation": "supports",
+      "weight": 0.2,
+      "rationale": "The JD implies that understanding system design principles is important for backend development"
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_77"
+}

@@ -1,0 +1,389 @@
+{
+  "job_id": "job_32",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-04T02:28:45.330584",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 49.1,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.3,
+        "coverage_rate": 0.5,
+        "nodes_audited": 5,
+        "nodes_biased": 5
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.261,
+    "edge_score": 0.4313,
+    "combined": 0.3291
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.339,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.551,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.509,
+    "matched_nodes": "3/10",
+    "edge_match_pct": 43.12
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3359,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.6416,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.2658,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.5,
+    "weighted_recall": 0.082,
+    "weighted_f1": {
+      "value": 0.1556,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6,
+    "missing_critical_penalty": {
+      "value": 0.1667,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.8975,
+    "ndcg_10": 0.981,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.4012,
+    "semantic_fit_score": 0.5319,
+    "experience_density": 0.1909
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 34.4,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 38.39,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 31.75,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 95.9,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 40.86,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 36.31,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 41.88,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 0.0,
+      "weight_sum": 1.841
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 60.0,
+      "weight_sum": 0.9
+    },
+    "Responsibility": {
+      "count": 2,
+      "match_pct": 46.9,
+      "weight_sum": 1.7
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 27.2,
+      "weight_sum": 1.208
+    },
+    "Tool": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 0.609
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 23.1,
+      "weight_sum": 1.056
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 43.12,
+    "total_edges": 8,
+    "top_synergies": [
+      {
+        "edge_key": "software_engineer_degree|software_development_experience",
+        "source": "software_engineer_degree",
+        "target": "software_development_experience",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "software_development_experience|software_design_and_development",
+        "source": "software_development_experience",
+        "target": "software_design_and_development",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "teamwork_and_communication|collaboration_with_teams",
+        "source": "teamwork_and_communication",
+        "target": "collaboration_with_teams",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "adaptability_and_learning|software_development_experience",
+        "source": "adaptability_and_learning",
+        "target": "software_development_experience",
+        "w_0": 0.5,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.6,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "strategic_software_development|software_design_and_development",
+        "source": "strategic_software_development",
+        "target": "software_design_and_development",
+        "w_0": 0.5,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.6,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Agile Development Methods",
+      "type": "Hard Skill",
+      "gap": 0.926,
+      "severity": "critical",
+      "importance": 0.926
+    },
+    {
+      "skill": "Java",
+      "type": "Hard Skill",
+      "gap": 0.915,
+      "severity": "critical",
+      "importance": 0.915
+    },
+    {
+      "skill": "Monitoring and Logging Tools",
+      "type": "Tool",
+      "gap": 0.609,
+      "severity": "critical",
+      "importance": 0.609
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Agile Development Methods",
+        "type": "Hard Skill",
+        "gap": 0.926
+      },
+      {
+        "label": "Java",
+        "type": "Hard Skill",
+        "gap": 0.915
+      },
+      {
+        "label": "Monitoring and Logging Tools",
+        "type": "Tool",
+        "gap": 0.609
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 5,
+    "nodes_with_bias": 5,
+    "edges_audited": 2,
+    "edges_with_bias": 2,
+    "bias_categories": {
+      "PRESTIGE": 6,
+      "GENDER_DIVERSITY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "software_engineer_degree",
+        "label": "Software Engineer Degree",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.2,
+        "w_cv_corrected": 1.2,
+        "reason": "The weight change is biased due to prestige bias, as the adapted weight decreased significantly (-0.400) solely because the CV explicitly mentioned a software engineer degree, which is not a critical requirement in the job description. The ideal weight (0.9) was likely based on the relevance of the degree to the job, but the adapted weight was unfairly penalized due to the prestige associated with the degree. A correction factor of 1.20 is applied to increase the weight and mitigate the bias."
+      },
+      {
+        "id": "software_design_and_development",
+        "label": "Software Design and Development",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.938,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience in top-tier companies (ODDO BHF, Inetum) and certifications (Salesforce Certified Platform Developer I) may have unfairly influenced the algorithm's assessment. The correction factor is set to 1.25 to account for the candidate's actual skills and experience in software design and development, which are well-demonstrated in their CV."
+      },
+      {
+        "id": "collaboration_with_teams",
+        "label": "Collaboration with Teams",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.938,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change from 0.8 to 0.375 for 'collaboration_with_teams' is likely due to prestige bias, as the candidate's experience is from lesser-known companies (ODDO BHF, Inetum) and not from top-tier tech companies. The candidate's CV explicitly mentions collaboration with teams, and the job description also emphasizes teamwork. A fairer assessment would increase the weight to 1.25 to account for the candidate's actual experience and skills."
+      },
+      {
+        "id": "teamwork_and_communication",
+        "label": "Teamwork and Communication",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.938,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change for teamwork and communication skills is biased as it penalizes the candidate for having strong collaboration and caregiving experience, which is a common pattern of bias against certain demographics. The correction factor is set to 1.25 to compensate for this unfair penalty."
+      },
+      {
+        "id": "software_development_experience",
+        "label": "Software Development Experience",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.9,
+        "w_cv_corrected": 0.9,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience in top-tier companies (ODDO BHF, Inetum) and certifications (Salesforce Certified Platform Developer I) may have unfairly influenced the algorithm's assessment of their software development experience. The correction factor is set to 1.20 to increase the weight of this criterion, as the candidate's skills and experience are more relevant to the job description than the algorithm initially acknowledged."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "adaptability_and_learning|software_development_experience",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change from 0.6 to 0.75 is likely due to the prestige bias, as the candidate's experience at Inetum, a well-known company, is being unfairly favored. The correction factor is set to 0.80 to reduce the weight and ensure a more merit-based evaluation."
+      },
+      {
+        "edge": "strategic_software_development|software_design_and_development",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.6,
+        "reason": "The candidate's experience at ODDO BHF, a prestigious company, seems to have unfairly increased their edge weight. The rationale focuses on the company name rather than the skills demonstrated. A more merit-based approach would focus on the specific skills and experiences mentioned in the CV, such as React, Jest, and Scss, rather than the company name."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.339 (sous-qualifié), CTM=0.551 (écart structurel élevé), match_pct=49.1% → Poor Match",
+    "v6_summary": "weighted_f1=0.1556, gap_score=0.2658, ndcg_5=0.8975, missing_critical_penalty=0.1667, combo_v6_final=34.4",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "3 gaps critiques identifiés",
+    "bias_note": "5 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 11,
+    "pool_size": 45,
+    "percentile": 0.7727,
+    "composite_z_score": 0.5618,
+    "tier": "Top 25%",
+    "z_scores": {
+      "combo_v6": 0.769,
+      "wf1": 0.049,
+      "gap_score": 1.057,
+      "ntcw": 1.143,
+      "match_pct": 1.257,
+      "ndcg_5": -0.185
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 22.4153,
+        "std": 15.5835
+      },
+      "wf1": {
+        "mean": 0.1472,
+        "std": 0.1697
+      },
+      "gap_score": {
+        "mean": 0.1336,
+        "std": 0.125
+      },
+      "ntcw": {
+        "mean": 0.1689,
+        "std": 0.1488
+      },
+      "match_pct": {
+        "mean": 31.3518,
+        "std": 14.1146
+      },
+      "ndcg_5": {
+        "mean": 0.91,
+        "std": 0.0674
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

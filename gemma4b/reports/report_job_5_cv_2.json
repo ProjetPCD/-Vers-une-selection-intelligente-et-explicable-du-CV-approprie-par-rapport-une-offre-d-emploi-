@@ -1,0 +1,422 @@
+{
+  "job_id": "job_5",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-02T17:01:33.674076",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 28.96,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.833,
+        "coverage_rate": 0.389,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.5333
+  },
+  "final_scores": {
+    "node_score": 0.3361,
+    "edge_score": 0.2839,
+    "combined": 0.3152
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1913,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.73,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7104,
+    "matched_nodes": "1/18",
+    "edge_match_pct": 14.2
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1708,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.2406,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1538,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1176,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.3986,
+    "weighted_recall": 0.0968,
+    "weighted_f1": {
+      "value": 0.181,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.715,
+    "missing_critical_penalty": {
+      "value": 0.1429,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9834,
+    "ndcg_10": 0.9967,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9167,
+    "top_skill_alignment": 0.6908,
+    "semantic_fit_score": 0.5798,
+    "experience_density": 0.1424
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 24.6,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 18.19,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 29.38,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 99.34,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 44.61,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 30.09,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 58.84,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Education": {
+      "count": 2,
+      "match_pct": 0.0,
+      "weight_sum": 2.0
+    },
+    "Tool": {
+      "count": 8,
+      "match_pct": 23.9,
+      "weight_sum": 7.246
+    },
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 36.1,
+      "weight_sum": 1.8
+    },
+    "Soft Skill": {
+      "count": 3,
+      "match_pct": 7.9,
+      "weight_sum": 2.306
+    },
+    "Responsibility": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 0.762
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 0.0,
+      "weight_sum": 1.135
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 14.2,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "sql_1|data_analysis_experience",
+        "source": "sql_1",
+        "target": "data_analysis_experience",
+        "w_0": 0.85,
+        "w_cv": 0.78,
+        "w_cv_norm": 0.39,
+        "match_pct": 45.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_1|data_analysis_experience",
+        "source": "python_1",
+        "target": "data_analysis_experience",
+        "w_0": 0.95,
+        "w_cv": 0.65,
+        "w_cv_norm": 0.325,
+        "match_pct": 34.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "qlik_sense_1|power_bi_qlik_sense_looker",
+        "source": "qlik_sense_1",
+        "target": "power_bi_qlik_sense_looker",
+        "w_0": 0.8,
+        "w_cv": 0.487,
+        "w_cv_norm": 0.244,
+        "match_pct": 30.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "looker_1|power_bi_qlik_sense_looker",
+        "source": "looker_1",
+        "target": "power_bi_qlik_sense_looker",
+        "w_0": 0.85,
+        "w_cv": 0.375,
+        "w_cv_norm": 0.188,
+        "match_pct": 22.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "microsoft_365_1|confluence",
+        "source": "microsoft_365_1",
+        "target": "confluence",
+        "w_0": 0.6,
+        "w_cv": 0.3,
+        "w_cv_norm": 0.15,
+        "match_pct": 25.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Double Diplôme Ingénieur en Big Data et Calculs Hautes Performances",
+      "type": "Education",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Master en Scientific Computing",
+      "type": "Education",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Power BI",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Microsoft 365",
+      "type": "Tool",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Looker",
+      "type": "Tool",
+      "gap": 0.784,
+      "severity": "critical",
+      "importance": 0.972
+    },
+    {
+      "skill": "Qlik Sense",
+      "type": "Tool",
+      "gap": 0.668,
+      "severity": "critical",
+      "importance": 0.968
+    },
+    {
+      "skill": "Power BI, Qlik Sense, Looker",
+      "type": "Tool",
+      "gap": 0.762,
+      "severity": "critical",
+      "importance": 0.95
+    },
+    {
+      "skill": "Excellentes compétences de communication et de présentation",
+      "type": "Soft Skill",
+      "gap": 0.709,
+      "severity": "critical",
+      "importance": 0.909
+    },
+    {
+      "skill": "Experience in data analysis and visualization",
+      "type": "Hard Skill",
+      "gap": 0.8,
+      "severity": "critical",
+      "importance": 0.8
+    },
+    {
+      "skill": "Responsable des processus décisionnels",
+      "type": "Responsibility",
+      "gap": 0.762,
+      "severity": "critical",
+      "importance": 0.762
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "w_cv": 1.56
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "Double Diplôme Ingénieur en Big Data et Calculs Hautes Performances",
+        "type": "Education",
+        "gap": 1.0
+      },
+      {
+        "label": "Master en Scientific Computing",
+        "type": "Education",
+        "gap": 1.0
+      },
+      {
+        "label": "Power BI",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Microsoft 365",
+        "type": "Tool",
+        "gap": 0.7
+      },
+      {
+        "label": "Looker",
+        "type": "Tool",
+        "gap": 0.784
+      },
+      {
+        "label": "Qlik Sense",
+        "type": "Tool",
+        "gap": 0.668
+      },
+      {
+        "label": "Power BI, Qlik Sense, Looker",
+        "type": "Tool",
+        "gap": 0.762
+      },
+      {
+        "label": "Excellentes compétences de communication et de présentation",
+        "type": "Soft Skill",
+        "gap": 0.709
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 7,
+    "nodes_with_bias": 6,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "C": 2,
+      "HALO": 2,
+      "PRESTIGE": 1,
+      "PROXY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "looker_1",
+        "label": "Looker",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "This case exhibits AGEISM due to the emphasis on the candidate’s graduation year (Western Washington University, 2018) as a primary weighting factor, coupled with a lack of specific, quantifiable achievements. The system is heavily weighting the degree itself (a double degree), while neglecting demonstrated skills like the front-end development experience with VueJS and Razor, and the significant responsibilities held at SPIE, a high-profile organization. A fair alternative would prioritize project details and quantifiable outcomes like the published work upload tool, rather than simply valuing the degree itself. The delta of -0.472 signifies a significant decrease in weight, highlighting the system's over-reliance on prestige signals."
+      },
+      {
+        "id": "sql_1",
+        "label": "SQL",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.56,
+        "reason": "The increased score reflects a prestige bias towards the applicant’s university (Western Washington University) and the company they worked at (SPIE). While demonstrating SQL skills within OpenID Connect clients is valuable, the CV prominently highlights this experience within a specific, well-regarded organization, coupled with a prestigious university background. The JD emphasizes a ‘major aerospace industry player’ which often carries a premium, subtly favoring candidates from recognized names. The candidate's work architecting, implementing, and maintaining OpenID Connect clients for SPIE, a reputable entity within optics and photonics, adds to this perceived prestige, justifying the enhanced score.  A fair alternative would have been a score of 1.0, recognizing the skills demonstrated regardless of the employer."
+      },
+      {
+        "id": "microsoft_365_1",
+        "label": "Microsoft 365",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The CV explicitly highlights Brendan Baalke's role as an Authentication Lead for OpenID Connect clients at SPIE, demonstrating significant expertise within Microsoft 365. However, the initial weight given to 'Microsoft 365' is likely inflated due to the halo effect – the strong signal of this specific tool is overshadowing potentially stronger evidence of his skills in OpenID Connect and UI development. A correction factor of 0.80 acknowledges the valuable expertise demonstrated but reduces the overall score to reflect the potential bias, ensuring skill demonstration outweighs tool familiarity."
+      },
+      {
+        "id": "qlik_sense_1",
+        "label": "Qlik Sense",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "This application demonstrates a significant bias toward prestige. The candidate possesses a Bachelor's degree from Western Washington University, while the job description explicitly requires a ‘Double degree in Big Data and High Performance Computing’ or a ‘Master in Scientific Computing.’ Despite Brendan’s experience and skills, the mismatch in educational background significantly reduces the ideal score of 0.968 to 0.5.  The CV heavily emphasizes full-stack engineering experience and skills outside the core requirements of the role, implying a focus on broad software development rather than specialized data analysis.  A correction factor of 1.2 is applied to reflect this significant, non-skills-based penalty, recognizing the candidate's impressive experience but not meeting the technical education requirements."
+      },
+      {
+        "id": "power_bi_qlik_sense_looker",
+        "label": "Power BI, Qlik Sense, Looker",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The CV highlights Brendan Baalke’s experience as a Full Stack Engineer at Microsoft and previous roles at SPIE and Brooksource, showcasing a strong technical background in software development, which aligns well with the JD's requirements for a Data Analyst. However, the CV’s emphasis on UI/UX development (VueJS, Razor) and front-end experience, while valuable, overshadows the explicit data visualization tool skills (Power BI, Qlik Sense, Looker) mentioned in the JD. The CV’s focus on development experience, rather than direct data analysis skills, results in a lower score reflecting a mismatch between the listed skills and the specific requirements outlined in the job description. This demonstrates a proxy bias based on the candidate's broader development skills."
+      },
+      {
+        "id": "communication_1",
+        "label": "Excellentes compétences de communication et de présentation",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.4,
+        "reason": "The CV lists 'Excellentes compétences de communication et de présentation' but provides no specific evidence to support this claim. The JD explicitly requires 'excellentes compétences de communication et de présentation,' suggesting this was a key requirement. However, Brendan’s CV focuses heavily on technical skills – full-stack engineering, VueJS, OpenID Connect – likely overshadowing the communication skills, leading to a reduced weight. A halo effect is present where the strong technical skills are prioritized, overshadowing the required communication skills, resulting in an unfairly low weight."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1913 (sous-qualifié), CTM=0.73 (écart structurel élevé), match_pct=28.96% → Poor Match",
+    "v6_summary": "weighted_f1=0.181, gap_score=0.1538, ndcg_5=0.9834, missing_critical_penalty=0.1429, combo_v6_final=24.6",
+    "key_strengths": "1 compétences clés validées",
+    "key_gaps": "15 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "⚠ 53.3% des scores via fallback mathématique (LLM instable)"
+  }
+}

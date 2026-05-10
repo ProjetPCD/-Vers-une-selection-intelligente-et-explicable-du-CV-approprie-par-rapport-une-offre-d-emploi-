@@ -1,0 +1,120 @@
+{
+  "nodes": [
+    {
+      "id": "security_expert",
+      "label": "Security Expert",
+      "type": "Domain",
+      "w_0": 0.9,
+      "seniority_required": "Senior",
+      "context": "expert who can manage our security team in Italy",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "leader",
+      "label": "Leader",
+      "type": "Domain",
+      "w_0": 0.8,
+      "seniority_required": "Senior",
+      "context": "leader in security",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "it_security",
+      "label": "IT Security",
+      "type": "Domain",
+      "w_0": 0.8,
+      "seniority_required": "Senior",
+      "context": "sécurité informatique",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "institutional_relationships",
+      "label": "Institutional Relationships",
+      "type": "Responsibility",
+      "w_0": 0.8,
+      "seniority_required": "Senior",
+      "context": "maintain institutional relationships with organizations",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "risk_management",
+      "label": "Risk Management",
+      "type": "Soft Skill",
+      "w_0": 0.7,
+      "seniority_required": "Senior",
+      "context": "gestion des risques",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "security_practice",
+      "label": "Security Practice",
+      "type": "Soft Skill",
+      "w_0": 0.7,
+      "seniority_required": "Senior",
+      "context": "pratique de sécurité",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "communication",
+      "label": "Communication",
+      "type": "Soft Skill",
+      "w_0": 0.66,
+      "seniority_required": "Senior",
+      "context": "maintain relationships with organizations",
+      "inferred": true,
+      "inferred_from": "maintain institutional relationships with organizations"
+    }
+  ],
+  "edges": [
+    {
+      "source": "leader",
+      "target": "security_expert",
+      "relation": "part_of",
+      "weight": 0.9,
+      "rationale": "Leader in security informatics is a specific type of security expert"
+    },
+    {
+      "source": "security_expert",
+      "target": "it_security",
+      "relation": "part_of",
+      "weight": 0.9,
+      "rationale": "Security expert is a specific type of IT security professional"
+    },
+    {
+      "source": "leader",
+      "target": "institutional_relationships",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "Leader is responsible for maintaining institutional relationships"
+    },
+    {
+      "source": "security_practice",
+      "target": "risk_management",
+      "relation": "complements",
+      "weight": 0.8,
+      "rationale": "Security practice and risk management are peer skills that reinforce each other"
+    },
+    {
+      "source": "leader",
+      "target": "communication",
+      "relation": "requires",
+      "weight": 0.8,
+      "rationale": "Leader needs to have good communication skills to maintain institutional relationships"
+    },
+    {
+      "source": "security_practice",
+      "target": "security_expert",
+      "relation": "part_of",
+      "weight": 0.7,
+      "rationale": "Security practice is a specific skill of a security expert"
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_49"
+}

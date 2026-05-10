@@ -1,0 +1,191 @@
+{
+  "nodes": [
+    {
+      "id": "azure_cloud",
+      "label": "Azure Cloud",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Candidat doit avoir une expérience dans les technologies suivantes : Azure Cloud.",
+      "inferred": false
+    },
+    {
+      "id": "python",
+      "label": "Python",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Candidat doit avoir une expérience dans les technologies suivantes : Python.",
+      "inferred": false
+    },
+    {
+      "id": "agile",
+      "label": "Agile",
+      "type": "Hard Skill",
+      "w_0": 0.857,
+      "seniority_required": "N/A",
+      "context": "Candidat doit avoir une bonne maîtrise de la méthode Agile.",
+      "inferred": false
+    },
+    {
+      "id": "apache_flank",
+      "label": "Apache Flink",
+      "type": "Tool",
+      "w_0": 0.802,
+      "seniority_required": "N/A",
+      "context": "Candidat doit avoir une expérience dans les technologies suivantes : Apache Flink.",
+      "inferred": false
+    },
+    {
+      "id": "kafka",
+      "label": "Kafka",
+      "type": "Hard Skill",
+      "w_0": 0.801,
+      "seniority_required": "N/A",
+      "context": "Candidat doit avoir une expérience dans les technologies suivantes : Kafka.",
+      "inferred": false
+    },
+    {
+      "id": "iot_skills",
+      "label": "IoT",
+      "type": "Domain",
+      "w_0": 0.746,
+      "seniority_required": "N/A",
+      "context": "Candidat doit avoir une expérience dans le développement de systèmes temps réel, l'intégration de données IoT.",
+      "inferred": false
+    },
+    {
+      "id": "jenkins",
+      "label": "Jenkins",
+      "type": "Tool",
+      "w_0": 0.784,
+      "seniority_required": "N/A",
+      "context": "Candidat doit avoir des compétences en matière de DevOps tels que Jenkins.",
+      "inferred": false
+    },
+    {
+      "id": "blockchain",
+      "label": "Blockchain",
+      "type": "Tool",
+      "w_0": 0.691,
+      "seniority_required": "N/A",
+      "context": "Le candidat idéal aura une expérience dans les technologies suivantes : Python, Apache Flink, Kafka, Docker, Azure Cloud, Blockchain, Flutter...",
+      "inferred": true,
+      "inferred_from": "Les missions principales consisteront à concevoir et développer des systèmes de traitement de données en temps réel, à mettre en œuvre des solutions de cloud computing sécurisées et à intégrer des données provenant de sources IoT diverses."
+    },
+    {
+      "id": "gestion-du-temps",
+      "label": "Gestion du temps",
+      "type": "Soft Skill",
+      "w_0": 0.576,
+      "seniority_required": "N/A",
+      "context": "Il devra également avoir de solides compétences en résolution de problèmes, en leadership d’équipe et en gestion du temps...",
+      "inferred": true,
+      "inferred_from": "Le candidat idéal aura une expérience dans les technologies suivantes : Python, Apache Flink, Kafka, Docker, Azure Cloud, Blockchain, Flutter..."
+    },
+    {
+      "id": "methode-agile",
+      "label": "Méthode Agile",
+      "type": "Hard Skill",
+      "w_0": 0.522,
+      "seniority_required": "N/A",
+      "context": "...ainsi qu’une bonne maîtrise de la méthode Agile et des outils de DevOps tels que Jenkins et Kubernetes.",
+      "inferred": true,
+      "inferred_from": "Le candidat idéal aura une expérience dans les technologies suivantes : Python, Apache Flink, Kafka, Docker, Azure Cloud, Blockchain, Flutter..."
+    },
+    {
+      "id": "kubernetes",
+      "label": "Kubernetes",
+      "type": "Tool",
+      "w_0": 0.59,
+      "seniority_required": "N/A",
+      "context": "...ainsi qu’une bonne maîtrise de la méthode Agile et des outils de DevOps tels que Jenkins et Kubernetes.",
+      "inferred": true,
+      "inferred_from": "Le candidat idéal aura une expérience dans les technologies suivantes : Python, Apache Flink, Kafka, Docker, Azure Cloud, Blockchain, Flutter..."
+    },
+    {
+      "id": "devops",
+      "label": "DevOps",
+      "type": "Hard Skill",
+      "w_0": 0.522,
+      "seniority_required": "N/A",
+      "context": "...ainsi qu’une bonne maîtrise de la méthode Agile et des outils de DevOps tels que Jenkins et Kubernetes.",
+      "inferred": true,
+      "inferred_from": "Le candidat idéal aura une expérience dans les technologies suivantes : Python, Apache Flink, Kafka, Docker, Azure Cloud, Blockchain, Flutter..."
+    }
+  ],
+  "edges": [
+    {
+      "source": "iot_skills",
+      "target": "python",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "Job requires experience in IoT development using Python."
+    },
+    {
+      "source": "iot_skills",
+      "target": "apache_flank",
+      "relation": "requires",
+      "weight": 0.8,
+      "rationale": "Job mentions Apache Flink as a required technology for IoT development."
+    },
+    {
+      "source": "iot_skills",
+      "target": "kafka",
+      "relation": "supports",
+      "weight": 0.7,
+      "rationale": "Kafka is mentioned as one of the technologies that can be used in the role, indicating a supporting relationship."
+    },
+    {
+      "source": "iot_skills",
+      "target": "azure_cloud",
+      "relation": "requires",
+      "weight": 0.8,
+      "rationale": "Job requires experience with Azure Cloud for secure solutions implementation."
+    },
+    {
+      "source": "iot_skills",
+      "target": "blockchain",
+      "relation": "supports",
+      "weight": 0.6,
+      "rationale": "Blockchain is mentioned as one of the technologies that can be used in the role, indicating a supporting relationship."
+    },
+    {
+      "source": "python",
+      "target": "apache_flank",
+      "relation": "implements",
+      "weight": 0.9,
+      "rationale": "Python is used to implement Apache Flink-based systems, as mentioned in the job description."
+    },
+    {
+      "source": "kafka",
+      "target": "azure_cloud",
+      "relation": "part_of",
+      "weight": 0.7,
+      "rationale": "Kafka is part of a larger solution that involves Azure Cloud for secure data processing and storage, as mentioned in the job description."
+    },
+    {
+      "source": "azure_cloud",
+      "target": "kubernetes",
+      "relation": "supports",
+      "weight": 0.6,
+      "rationale": "Kubernetes is mentioned as one of the DevOps tools that can be used with Azure Cloud, indicating a supporting relationship."
+    },
+    {
+      "source": "azure_cloud",
+      "target": "jenkins",
+      "relation": "supports",
+      "weight": 0.6,
+      "rationale": "Jenkins is mentioned as one of the DevOps tools that can be used with Azure Cloud, indicating a supporting relationship."
+    },
+    {
+      "source": "blockchain",
+      "target": "kafka",
+      "relation": "complements",
+      "weight": 0.5,
+      "rationale": "Blockchain and Kafka are complementary technologies for secure data processing and storage in the IoT domain, as mentioned in the job description."
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_123"
+}

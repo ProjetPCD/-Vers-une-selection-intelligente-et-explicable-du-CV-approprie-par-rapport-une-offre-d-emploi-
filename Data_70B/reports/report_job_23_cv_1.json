@@ -1,0 +1,463 @@
+{
+  "job_id": "job_23",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-05T01:21:56.946238",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 24.18,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.829,
+        "coverage_rate": 0.146,
+        "nodes_audited": 6,
+        "nodes_biased": 6
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.0673,
+    "edge_score": 0.0812,
+    "combined": 0.0729
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.0815,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7624,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7582,
+    "matched_nodes": "3/41",
+    "edge_match_pct": 8.12
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.0789,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.2111,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.0589,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0769,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.4942,
+    "weighted_recall": 0.0574,
+    "weighted_f1": {
+      "value": 0.1105,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6012,
+    "missing_critical_penalty": {
+      "value": 0.0909,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.826,
+    "ndcg_10": 0.889,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9183,
+    "top_skill_alignment": 0.4322,
+    "semantic_fit_score": 0.2359,
+    "experience_density": 0.0535
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 16.43,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 12.47,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 12.53,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 93.04,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 38.55,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 24.68,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 40.72,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 18,
+      "match_pct": 14.1,
+      "weight_sum": 14.451
+    },
+    "Tool": {
+      "count": 14,
+      "match_pct": 0.0,
+      "weight_sum": 11.041
+    },
+    "Soft Skill": {
+      "count": 3,
+      "match_pct": 6.5,
+      "weight_sum": 2.4
+    },
+    "Responsibility": {
+      "count": 6,
+      "match_pct": 0.0,
+      "weight_sum": 4.7
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 8.12,
+    "total_edges": 18,
+    "top_synergies": [
+      {
+        "edge_key": "full_stack_development|html5_development",
+        "source": "full_stack_development",
+        "target": "html5_development",
+        "w_0": 0.5,
+        "w_cv": 0.862,
+        "w_cv_norm": 0.862,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "full_stack_development|javascript_development",
+        "source": "full_stack_development",
+        "target": "javascript_development",
+        "w_0": 0.5,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.6,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "full_stack_development|php7_development",
+        "source": "full_stack_development",
+        "target": "php7_development",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "full_stack_development|typescript_development",
+        "source": "full_stack_development",
+        "target": "typescript_development",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "full_stack_development|python_development",
+        "source": "full_stack_development",
+        "target": "python_development",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "TypeScript",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JAVA",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Laravel",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Symfony",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "WordPress",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Soft Skills",
+      "type": "Soft Skill",
+      "gap": 0.844,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Kubernetes",
+      "type": "Tool",
+      "gap": 0.986,
+      "severity": "critical",
+      "importance": 0.986
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.981,
+      "severity": "critical",
+      "importance": 0.981
+    },
+    {
+      "skill": "Magento 2",
+      "type": "Tool",
+      "gap": 0.942,
+      "severity": "critical",
+      "importance": 0.942
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "TypeScript",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "JAVA",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Laravel",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Symfony",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "WordPress",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Soft Skills",
+        "type": "Soft Skill",
+        "gap": 0.844
+      },
+      {
+        "label": "Kubernetes",
+        "type": "Tool",
+        "gap": 0.986
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 6,
+    "edges_audited": 2,
+    "edges_with_bias": 2,
+    "bias_categories": {
+      "PRESTIGE": 7,
+      "GENDER_DIVERSITY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "javascript",
+        "label": "JavaScript",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 1.062,
+        "w_cv_corrected": 1.062,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university and company names (e.g., Go My Code, Institut Supérieur des Arts Multimédia de la Manouba) may have influenced the scoring. The correction factor is set to 1.25 to compensate for this bias, as the candidate's skills and experience are strong, but the algorithm may have unfairly penalized them due to the perceived prestige of their educational and professional background."
+      },
+      {
+        "id": "soft_skills",
+        "label": "Soft Skills",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.312,
+        "w_cv_corrected": 0.312,
+        "reason": "The weight change for soft skills is biased as it penalizes the candidate for not providing concrete project evidence, which may be due to caregiving gaps or other diversity-related factors. The correction factor is set to 1.25 to increase the weight of soft skills, as they are essential for the role and the candidate has demonstrated relevant experience in teaching and mentoring."
+      },
+      {
+        "id": "full_stack_development",
+        "label": "Full-Stack Development",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.26,
+        "w_cv_corrected": 1.26,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university and company names (e.g., Go My Code, Institut Supérieur des Arts Multimédia de la Manouba) may have unfairly influenced the score. A fairer assessment would focus on the candidate's skills and experience, such as their proficiency in JavaScript, React, and Redux, as well as their experience as a full-stack developer."
+      },
+      {
+        "id": "javascript_development",
+        "label": "JavaScript Development",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 1.312,
+        "w_cv_corrected": 1.312,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university and company names (e.g., Go My Code, Institut Supérieur des Arts Multimédia de la Manouba) may have unfairly influenced the score. A fairer assessment would focus on the candidate's skills and experience, such as their proficiency in JavaScript, React, and Redux, as well as their experience as a full-stack developer."
+      },
+      {
+        "id": "html5_development",
+        "label": "HTML5 Development",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience at 'Formation Go My Code' is moderately valued, but the algorithm penalized the candidate's overall score. The correction factor is set to 1.20 to increase the weight, as the candidate's skills and experience are relevant to the job description."
+      },
+      {
+        "id": "css3_development",
+        "label": "CSS3 Development",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university and company names (e.g., Go My Code, Institut Supérieur des Arts Multimédia de la Manouba) may have influenced the adapted weight. A fairer assessment would focus on the candidate's skills and experience, such as their proficiency in CSS3, JavaScript, and ReactJS. To correct for this bias, a correction factor of 1.20 is applied to increase the weight."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "full_stack_development|javascript_development",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased towards the candidate's previous company name 'Tek&Me', which is not a relevant skill for the required JavaScript development. The ideal weight should be based on the candidate's demonstrated skills in JavaScript, not their previous employer's prestige."
+      },
+      {
+        "edge": "full_stack_development|html5_development",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_corrected": 0.862,
+        "reason": "The weight change is biased due to the prestige bias, as the candidate's training at Go My Code is given more importance than the skills demonstrated. The ideal weight should be based on the relevance of HTML5 to the full-stack development role, rather than the prestige of the training institution. A correction factor of 1.15 is applied to increase the weight, ensuring a more merit-based evaluation."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.0815 (sous-qualifié), CTM=0.7624 (écart structurel élevé), match_pct=24.18% → Poor Match",
+    "v6_summary": "weighted_f1=0.1105, gap_score=0.0589, ndcg_5=0.826, missing_critical_penalty=0.0909, combo_v6_final=16.43",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "34 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 11,
+    "pool_size": 30,
+    "percentile": 0.6552,
+    "composite_z_score": -0.0473,
+    "tier": "Top 50%",
+    "z_scores": {
+      "combo_v6": 0.049,
+      "wf1": 0.101,
+      "gap_score": -0.192,
+      "ntcw": -0.188,
+      "match_pct": -0.066,
+      "ndcg_5": -0.751
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 15.953,
+        "std": 9.7668
+      },
+      "wf1": {
+        "mean": 0.0984,
+        "std": 0.1202
+      },
+      "gap_score": {
+        "mean": 0.0702,
+        "std": 0.0588
+      },
+      "ntcw": {
+        "mean": 0.0972,
+        "std": 0.0834
+      },
+      "match_pct": {
+        "mean": 24.7647,
+        "std": 8.8085
+      },
+      "ndcg_5": {
+        "mean": 0.8864,
+        "std": 0.0804
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

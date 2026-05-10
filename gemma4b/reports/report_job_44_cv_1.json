@@ -1,0 +1,314 @@
+{
+  "job_id": "job_44",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-03T00:58:18.947836",
+  "overall_assessment": {
+    "verdict": "Weak Match",
+    "match_pct": 53.32,
+    "confidence": {
+      "confidence_score": 0.9,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.0,
+        "coverage_rate": 0.9,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.4979,
+    "edge_score": 0.5471,
+    "combined": 0.5176
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3478,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.4626,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Écart modéré"
+    },
+    "weighted_gap": 0.4668,
+    "matched_nodes": "1/10",
+    "edge_match_pct": 27.37
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3319,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.5471,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.3378,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9932,
+    "ndcg_10": 0.9978,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.5208,
+    "semantic_fit_score": 0.9336,
+    "experience_density": 0.1697
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 27.71,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 32.42,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 46.19,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 99.73,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 10.13,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 29.43,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 8,
+      "match_pct": 25.6,
+      "weight_sum": 5.251
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 22.5,
+      "weight_sum": 1.566
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 27.37,
+    "total_edges": 10,
+    "top_synergies": [
+      {
+        "edge_key": "cnn-domain|computer-vision-domain",
+        "source": "cnn-domain",
+        "target": "computer-vision-domain",
+        "w_0": 0.863,
+        "w_cv": 0.713,
+        "w_cv_norm": 0.356,
+        "match_pct": 41.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ai-domain|ml-domain",
+        "source": "ai-domain",
+        "target": "ml-domain",
+        "w_0": 0.807,
+        "w_cv": 0.637,
+        "w_cv_norm": 0.319,
+        "match_pct": 39.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ml-domain|ai-domain",
+        "source": "ml-domain",
+        "target": "ai-domain",
+        "w_0": 0.78,
+        "w_cv": 0.637,
+        "w_cv_norm": 0.319,
+        "match_pct": 40.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "computer-vision-domain|ml-domain",
+        "source": "computer-vision-domain",
+        "target": "ml-domain",
+        "w_0": 0.799,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.3,
+        "match_pct": 37.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "leadership-skill|ai-domain",
+        "source": "leadership-skill",
+        "target": "ai-domain",
+        "w_0": 0.769,
+        "w_cv": 0.525,
+        "w_cv_norm": 0.263,
+        "match_pct": 34.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": []
+  },
+  "bias_audit": {
+    "nodes_audited": 9,
+    "nodes_with_bias": 9,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 5,
+      "HALO": 2,
+      "PRESTIGE|PROXY": 1,
+      "B": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "cnn-domain",
+        "label": "Réseaux de neurones convolutifs",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.9,
+        "reason": "The significant increase in weight (w_0 from 0.863 to 1.2) is driven primarily by the explicit mention of CNNs and a citation of a thesis focused on 3D convolutional neural networks within the project description and CV. This prioritizes experience with advanced, high-complexity technologies (CNNs) favored by the JD, suggesting a prestige bias favoring candidates with expertise in this specific area, rather than a broader assessment of skills and experience. A more fair alternative would be to weight all relevant technical skills equally, regardless of current industry buzzwords. The candidate’s demonstrated expertise in areas like SAP integration and diverse AI applications should be given more consideration."
+      },
+      {
+        "id": "ml-domain",
+        "label": "Machine learning",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.675,
+        "reason": "The candidate's CV heavily emphasizes academic credentials (MSc in Applied Computer Science with a specialization in Machine Learning) and specific publications related to 3D convolutional neural networks and medical imaging, aligning with the JD's focus on advanced technologies. The JD itself frames the role as 'expert' and 'research and development' which implicitly favors candidates with a strong academic research background and specific advanced technical skills. This prestige bias, coupled with the lengthy list of qualifications, may unfairly elevate this candidate over others with similar experience but perhaps a less visibly prestigious academic pedigree, contributing to the increased weight assigned. A fair alternative would be to prioritize demonstrable skills and project outcomes directly relevant to the NHS context."
+      },
+      {
+        "id": "ai-domain",
+        "label": "Intelligence artificielle",
+        "bias_category": "PRESTIGE|PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The candidate’s CV heavily emphasizes the French language skills (Native/Bilingual) and experience within a Tunisian context (Gouvernorat Tunis, Tunisie). The job description explicitly seeks candidates with 'une excellente connaissance des réseaux de neurones convolutifs, des transformateurs, des modèles génératifs et des modèles de langage multimodaux', leaning towards established Western AI research trends. While the candidate possesses relevant experience, the strong focus on French language and experience within a specific geographic location suggests a proxy bias based on location and potentially language proficiency, rather than solely on technical merit.  Furthermore, the detail about the 'Structure de Conseil en Intelligence Artificielle' at SFBT, while demonstrating leadership, does not directly align with the core research and development expectations outlined in the JD. Correction factor reflects the weighting shift driven by potentially irrelevant contextual signals."
+      },
+      {
+        "id": "computer-vision-domain",
+        "label": "Vision par ordinateur",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.525,
+        "reason": "The JD heavily emphasizes expertise in computer vision, machine learning, and specific technologies (CNNs, transformers, generative models) alongside broader AI skills. However, the CV primarily focuses on the candidate’s MSc and 6 years of experience, highlighting skills broadly related to machine learning and data science without deeply diving into the specific computer vision technologies mentioned in the job description. The strong signal of 'Machine Learning' in the CV is being used to judge the entire profile, leading to a disproportionate weighting given the JD's requirements. A more fair alternative would be a holistic assessment considering the candidate’s demonstrated project experience and specifically highlighting the CV’s relevant contributions to computer vision projects."
+      },
+      {
+        "id": "leadership-skill",
+        "label": "Leadership",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The model is applying a halo bias based on the mention of leading the SAP user clustering project in the job description. While Oumaima’s CV details leading an AI Business Unit at SFBT, the JD heavily emphasizes leadership responsibilities for this specific project, and the CV's description of the SFBT role is sparse. The JD’s expectation of demonstrated leadership in this project is driving an over-emphasis on the role’s leadership, overshadowing other potentially valuable skills and experience detailed in Oumaima’s CV, resulting in a lower weight assigned."
+      },
+      {
+        "id": "communication-skill",
+        "label": "Communication",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "This change in weight for 'communication skills' is likely biased due to the JD's strong emphasis on leadership, strategy, and technical depth in machine learning. The CV clearly showcases extensive experience and technical skills (machine learning, Python, publications), but the JD's focus on leadership and strategic vision overshadows the explicit mention of communication skills. While communication is listed as a skill, the significant weighting shift suggests a preference for candidates demonstrating leadership and strategic prowess, a proxy for the role's demands. A correction factor of 0.75 reflects this unfair penalization of a skill, favoring candidates who demonstrate leadership qualities implicitly within the described technical competencies and experience."
+      },
+      {
+        "id": "generative-models-domain",
+        "label": "Modèles génératifs",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The candidate's CV heavily emphasizes academic credentials (MSc in Applied Computer Science), publications focused on cutting-edge research (3D convolutional neural networks, UW-MRDC datasets), and specific software certifications (Dataiku).  Despite the JD explicitly mentioning desired skills like 'modèles génératifs', the CV's focus on prestigious academic work and specific, high-level certifications is overshadowing the candidate's direct experience in generative models as explicitly listed in the job description.  This highlights a Prestige Bias, favoring candidates with a strong academic pedigree over demonstrable practical skills. A fair alternative would prioritize the candidate's experience in related areas and skills – while acknowledging the academic foundation – over the specific weight given to the university and certifications."
+      },
+      {
+        "id": "transformers-domain",
+        "label": "Transformateurs",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.438,
+        "reason": "The candidate's CV explicitly lists 'Transformeurs' as a key skill and highlights publications focused on 3D convolutional neural networks and image segmentation – aligning directly with the JD’s emphasis on this technology. However, the weight reduction (-0.169) suggests a devaluation of this specific skill given the candidate’s demonstrated expertise in a very relevant area. This reflects prestige bias, where the name 'Transformers' carries more weight than the demonstrated skillset, particularly as the JD lacks further detail connecting skills to the project description. A fair alternative would be to increase the weight to 0.45 to reflect the candidate's proven competency."
+      },
+      {
+        "id": "multimodal-models-domain",
+        "label": "Modèles de langage multimodaux",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The job description heavily emphasizes expertise in ‘modèles de langage multimodaux’ and advanced techniques like CNNs, transformers, and generative models. The candidate’s CV prominently features publications and certifications related to 3D convolutional neural networks and applications in medical imaging (specifically Fusarium head blight detection and echocardiography), aligning strongly with the JD's requirements. However, the JD's focus on specific advanced models and the candidate’s publication record in the same area creates a prestige bias, potentially overvaluing a specific niche skillset – treating the candidate as overly specialized given the broader needs of the role.  A correction factor of 0.75 reflects this overemphasis on a specific sub-domain and the candidate's highly relevant experience within it."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3478 (sous-qualifié), CTM=0.4626 (écart structurel modéré), match_pct=53.32% → Weak Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.3378, ndcg_5=0.9932, missing_critical_penalty=0.0, combo_v6_final=27.71",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "0 gaps critiques identifiés",
+    "bias_note": "9 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.9)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

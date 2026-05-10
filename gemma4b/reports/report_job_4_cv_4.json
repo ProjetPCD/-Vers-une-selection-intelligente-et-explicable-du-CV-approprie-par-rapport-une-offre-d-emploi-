@@ -1,0 +1,320 @@
+{
+  "job_id": "job_4",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-02T16:42:12.839172",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 42.75,
+    "confidence": {
+      "confidence_score": 0.52,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.222,
+        "coverage_rate": 0.556,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.398,
+    "edge_score": 0.3728,
+    "combined": 0.3879
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2579,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5723,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5725,
+    "matched_nodes": "3/9",
+    "edge_match_pct": 18.64
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3101,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.3728,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2162,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.7499,
+    "ndcg_10": 0.8975,
+    "map_score": 0.6311,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.4067,
+    "semantic_fit_score": 0.4383,
+    "experience_density": 0.1375
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 19.63,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 25.45,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 23.99,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 77.08,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 6.49,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 23.09,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 5,
+      "match_pct": 24.5,
+      "weight_sum": 3.524
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 30.0,
+      "weight_sum": 0.808
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 14.7,
+      "weight_sum": 0.888
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 18.64,
+    "total_edges": 6,
+    "top_synergies": [
+      {
+        "edge_key": "cloud_devops_role|devsecops_implementation",
+        "source": "cloud_devops_role",
+        "target": "devsecops_implementation",
+        "w_0": 0.85,
+        "w_cv": 0.66,
+        "w_cv_norm": 0.33,
+        "match_pct": 38.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cloud_devops_role|ci_cd_pipeline",
+        "source": "cloud_devops_role",
+        "target": "ci_cd_pipeline",
+        "w_0": 0.7,
+        "w_cv": 0.524,
+        "w_cv_norm": 0.262,
+        "match_pct": 37.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cloud_devops_role|application_architecture",
+        "source": "cloud_devops_role",
+        "target": "application_architecture",
+        "w_0": 0.55,
+        "w_cv": 0.367,
+        "w_cv_norm": 0.184,
+        "match_pct": 33.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cloud_devops_role|cloud_native_solutions",
+        "source": "cloud_devops_role",
+        "target": "cloud_native_solutions",
+        "w_0": 0.48,
+        "w_cv": 0.292,
+        "w_cv_norm": 0.146,
+        "match_pct": 30.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cloud_devops_role|azure_cloud_engineer",
+        "source": "cloud_devops_role",
+        "target": "azure_cloud_engineer",
+        "w_0": 0.95,
+        "w_cv": 0.18,
+        "w_cv_norm": 0.09,
+        "match_pct": 9.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Azure",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Ingénieur",
+      "type": "Education",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Azure",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Ingénieur",
+        "type": "Education",
+        "gap": 1.0
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 6,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "HALO": 2,
+      "PROXY": 2,
+      "GENDER_DIVERSITY": 1,
+      "D": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "devsecops_implementation",
+        "label": "DevSecOps",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.96,
+        "reason": "The candidate's CV explicitly highlights their experience leading workshops and mentoring junior developers, demonstrating leadership and knowledge transfer – skills that were potentially downweighted by the initial score. The context suggests a preference for European candidates (Germany/Italy), which could represent a GENDER/DIVERSITY bias, focusing on candidates with established experience and potentially overlooking talent from diverse geographic locations. While the candidate possesses valuable DevSecOps skills, the reduction in weight indicates an unfair penalty for actively mentoring and transferring knowledge, potentially influenced by a preference for candidates with solely independent technical contributions."
+      },
+      {
+        "id": "devops_practices",
+        "label": "DevOps",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The candidate's CV highlights collaborative practices (stand-ups, code reviews, sprint planning) and leadership roles (workshops, mentoring) – elements strongly aligned with the JD's emphasis on collaboration and knowledge sharing with development teams. The decrease in weight (0.008) likely reflects an overemphasis on the ‘Agile environment’ and ‘innovative thinking’ descriptors, potentially overshadowing the candidate's specific technical skills and experience with cloud technologies (Azure, DevOps). A halo effect suggests the candidate is being favorably assessed due to demonstrated soft skills rather than a deep technical fit."
+      },
+      {
+        "id": "application_architecture",
+        "label": "Architecture Applicative",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The candidate's CV explicitly states a desire to work in Germany/Italy, indicating a preference for a European location. This signals a socioeconomic proxy (location preference) rather than demonstrable architecture skills. The reduction in weight (Delta: -0.25) reflects this bias towards a geographically-influenced criterion, as strong architectural skills are not prioritized over location. A fair alternative would be to assess skills based solely on project experience and technological proficiency, removing the location preference."
+      },
+      {
+        "id": "ci_cd_pipeline",
+        "label": "CI/CD",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.688,
+        "reason": "The candidate's CV prominently highlights their desire to work in 'Europe (Germany/Italy)', a strong signal based on location. This signals a preference for a specific geographic location, effectively creating a halo effect by inflating the value assigned to the CI/CD pipeline experience, which is a secondary skill (as demonstrated by the JD's central focus on cloud migration and DevOps).  A more appropriate assessment would focus solely on the technical skills and experience outlined in the CV and JD, without the influence of this implicit location preference, leading to an increase in the weight.  The candidate’s desire for a European role, while understandable, shouldn’t be a determining factor in automated scoring."
+      },
+      {
+        "id": "cloud_devops_role",
+        "label": "Ingénieur Cloud & DevOps",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.36,
+        "reason": "The significant weight decrease (0.158) is likely driven by bias due to the candidate’s explicit statement of seeking a role in Europe, coupled with their CV’s strong emphasis on MERN stack technologies. While the JD heavily favors Azure, DevOps, and Microsoft technologies, the candidate’s stated geographical preference and core skill set (MERN) are not aligned, creating a proxy bias – the system unfairly penalizes the candidate for lacking direct experience in the technologies prioritized in the job description. A fair alternative would be to adjust the weight based solely on skills demonstrated in the CV and the JD's requirements, acknowledging the candidate's broader experience and potential to learn new technologies, rather than penalizing the lack of specific cloud expertise."
+      },
+      {
+        "id": "cloud_native_solutions",
+        "label": "Développement de solution Cloud Native",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The candidate’s CV explicitly states a desire to work in Europe (Germany/Italy), while the job description focuses on Cloud Native solutions and experience with Azure. This indicates a proxy bias – the recruiter is prioritizing candidates based on their geographical aspirations, rather than demonstrable skills in the required technologies. The decreased weight reflects a preference for candidates aligned with the location, rather than the technical competence in cloud native solutions, which the candidate lacks. A fair alternative would be to weigh the candidate solely on their stated skills and experience with Cloud Native technologies."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2579 (sous-qualifié), CTM=0.5723 (écart structurel élevé), match_pct=42.75% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.2162, ndcg_5=0.7499, missing_critical_penalty=0.0, combo_v6_final=19.63",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "2 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.52)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

@@ -1,0 +1,367 @@
+{
+  "job_id": "job_51",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-03T06:00:55.365426",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 36.64,
+    "confidence": {
+      "confidence_score": 0.95,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.5,
+        "coverage_rate": 1.083,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.3351,
+    "edge_score": 0.6666,
+    "combined": 0.4677
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2096,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6528,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6336,
+    "matched_nodes": "3/12",
+    "edge_match_pct": 33.35
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2491,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.6028,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.1618,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1667,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.2976,
+    "weighted_recall": 0.1146,
+    "weighted_f1": {
+      "value": 0.2106,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5164,
+    "missing_critical_penalty": {
+      "value": 0.1429,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.6508,
+    "ndcg_10": 0.8102,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.96,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.2669,
+    "experience_density": 0.1272
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 29.74,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 35.23,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 19.98,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 86.03,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 39.18,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 31.2,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 18.04,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 1.0
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 19.6,
+      "weight_sum": 2.727
+    },
+    "Tool": {
+      "count": 4,
+      "match_pct": 6.9,
+      "weight_sum": 3.436
+    },
+    "Domain": {
+      "count": 3,
+      "match_pct": 38.8,
+      "weight_sum": 1.944
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 33.35,
+    "total_edges": 7,
+    "top_synergies": [
+      {
+        "edge_key": "teamwork_skill|machine_learning_domain",
+        "source": "teamwork_skill",
+        "target": "machine_learning_domain",
+        "w_0": 0.62,
+        "w_cv": 0.875,
+        "w_cv_norm": 0.438,
+        "match_pct": 70.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "machine_learning_domain|ia_domain",
+        "source": "machine_learning_domain",
+        "target": "ia_domain",
+        "w_0": 0.845,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 50.3,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "collaboration_skill|machine_learning_domain",
+        "source": "collaboration_skill",
+        "target": "machine_learning_domain",
+        "w_0": 0.606,
+        "w_cv": 0.781,
+        "w_cv_norm": 0.391,
+        "match_pct": 64.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "pytorch_framework|machine_learning_domain",
+        "source": "pytorch_framework",
+        "target": "machine_learning_domain",
+        "w_0": 0.85,
+        "w_cv": 0.688,
+        "w_cv_norm": 0.344,
+        "match_pct": 40.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "tensorflow_framework|machine_learning_domain",
+        "source": "tensorflow_framework",
+        "target": "machine_learning_domain",
+        "w_0": 0.844,
+        "w_cv": 0.594,
+        "w_cv_norm": 0.297,
+        "match_pct": 35.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Agile",
+      "type": "Soft Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Scikit-learn",
+      "type": "Tool",
+      "gap": 0.91,
+      "severity": "critical",
+      "importance": 0.91
+    },
+    {
+      "skill": "PyTorch",
+      "type": "Tool",
+      "gap": 0.656,
+      "severity": "critical",
+      "importance": 0.844
+    },
+    {
+      "skill": "MATLAB",
+      "type": "Tool",
+      "gap": 0.843,
+      "severity": "critical",
+      "importance": 0.843
+    },
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.745,
+      "severity": "critical",
+      "importance": 0.839
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Agile",
+        "type": "Soft Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Scikit-learn",
+        "type": "Tool",
+        "gap": 0.91
+      },
+      {
+        "label": "PyTorch",
+        "type": "Tool",
+        "gap": 0.656
+      },
+      {
+        "label": "MATLAB",
+        "type": "Tool",
+        "gap": 0.843
+      },
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.745
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 8,
+    "nodes_with_bias": 6,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "HALO": 4,
+      "PROXY": 1,
+      "PRESTIGE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "pytorch_framework",
+        "label": "PyTorch",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The CV heavily emphasizes Kubernetes, Terraform, and AWS certifications – signals strongly linked to the ‘AI Infrastructure Platform Engineering’ role described in the JD. While proficiency in PyTorch is mentioned, the CV’s focus on these other technologies appears to have inflated the weight assigned to PyTorch, creating a halo effect. A fairer assessment would prioritize skills directly related to machine learning model development and implementation, as highlighted in the job description's requirements regarding deep learning frameworks and model design."
+      },
+      {
+        "id": "tensorflow_framework",
+        "label": "TensorFlow",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate’s CV prominently lists certifications in Kubernetes, Terraform, and AWS Machine Learning – skills directly mentioned in the JD. This 'halo' effect is likely inflating the weight assigned to the candidate's TensorFlow knowledge, as the JD explicitly calls out TensorFlow alongside other tools, creating an over-emphasis on the certification rather than demonstrable expertise.  The significant decrease in weight suggests the system is overly relying on a single, strongly present signal (Kubernetes certifications) to judge overall suitability. A fairer approach would consider the depth of TensorFlow knowledge alongside other relevant skills."
+      },
+      {
+        "id": "scientific_research",
+        "label": "Scientifique",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV heavily emphasizes Kubernetes certifications (CKA, CKAD, CKS) and DevOps skills, reflecting the JD's requirements for deep learning tools and infrastructure. This strong focus on these specific certifications (the 'halo') unfairly weights the CV, potentially overlooking candidates with stronger academic backgrounds in machine learning or experience with other relevant deep learning frameworks like PyTorch or TensorFlow. A fairer assessment would prioritize demonstrated skills in machine learning model development and experience with AI concepts, not just Kubernetes mastery, leading to a reduction in the CV's weight."
+      },
+      {
+        "id": "collaboration_skill",
+        "label": "Collaboration",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The CV heavily emphasizes technical certifications (CKA, CKAD, CKS, Terraform) and specific infrastructure technologies (Kubernetes, AWS, Azure) – a proxy for skills related to the job description's focus on machine learning and AI infrastructure.  While these credentials demonstrate relevant technical expertise, the JD's emphasis on 'collaboration' and the increased weight given to the skill (from 0.606 to 0.75) suggests a favoring of candidates with specific, currently in-demand certifications regardless of demonstrated soft skills or experience with AI specifically.  A fair alternative would be to assess collaboration skills through behavioral questions or scenario-based assessments, rather than relying on certification holdings, which are a proxy for skills and experience.  This leads to an unfair advantage for those with the time and resources to obtain these certifications."
+      },
+      {
+        "id": "ia_domain",
+        "label": "Intelligence Artificielle",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.087,
+        "reason": "The CV heavily emphasizes Kubernetes certifications (CKA, CKAD, CKS) and Infrastructure as Code (IaC) skills, aligning strongly with the JD's focus on 'Expert Kubernetes Gestion de Kubernetes avec Rancher Infrastructure as code (IaC)'. This suggests a prestige bias where the algorithm overweights these specific, currently in-demand skills, potentially overlooking other relevant qualifications like deep learning experience or broader DevOps skills emphasized in the JD, thus boosting the weight unfairly."
+      },
+      {
+        "id": "soft_skills_requirement",
+        "label": "Soft Skills",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.525,
+        "reason": "The increased weight on ‘enjoy breaking down complex topics’ indicates a halo bias. The candidate’s CV heavily emphasizes technical skills (Kubernetes, DevOps, AWS) and certifications (CKA, CKAD, CKS), suggesting these are the primary factors driving the score. The soft skill statement, while potentially valuable, is significantly overweighted, indicating a reliance on a single, less-definitive signal (enjoyment of simplification) to judge overall suitability, unfairly influencing the weighting compared to demonstrable technical competencies."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2096 (sous-qualifié), CTM=0.6528 (écart structurel élevé), match_pct=36.64% → Poor Match",
+    "v6_summary": "weighted_f1=0.2106, gap_score=0.1618, ndcg_5=0.6508, missing_critical_penalty=0.1429, combo_v6_final=29.74",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "6 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.95)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

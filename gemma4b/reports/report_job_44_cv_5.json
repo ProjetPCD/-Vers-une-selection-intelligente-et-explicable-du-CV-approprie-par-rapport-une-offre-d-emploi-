@@ -1,0 +1,336 @@
+{
+  "job_id": "job_44",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-03T01:23:50.486830",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 35.05,
+    "confidence": {
+      "confidence_score": 0.51,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.6,
+        "coverage_rate": 0.6,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.1326,
+    "edge_score": 0.1735,
+    "combined": 0.1489
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.0926,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6376,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6495,
+    "matched_nodes": "0/10",
+    "edge_match_pct": 8.68
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.088,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1735,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.0872,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9558,
+    "ndcg_10": 0.9914,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.2417,
+    "semantic_fit_score": 0.5545,
+    "experience_density": 0.0452
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 12.11,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 9.59,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 22.9,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 98.23,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 2.62,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 12.99,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 8,
+      "match_pct": 8.6,
+      "weight_sum": 5.251
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 0.0,
+      "weight_sum": 1.566
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 8.68,
+    "total_edges": 10,
+    "top_synergies": [
+      {
+        "edge_key": "ai-domain|ml-domain",
+        "source": "ai-domain",
+        "target": "ml-domain",
+        "w_0": 0.807,
+        "w_cv": 0.3,
+        "w_cv_norm": 0.15,
+        "match_pct": 18.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ml-domain|ai-domain",
+        "source": "ml-domain",
+        "target": "ai-domain",
+        "w_0": 0.78,
+        "w_cv": 0.3,
+        "w_cv_norm": 0.15,
+        "match_pct": 19.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "computer-vision-domain|ml-domain",
+        "source": "computer-vision-domain",
+        "target": "ml-domain",
+        "w_0": 0.799,
+        "w_cv": 0.15,
+        "w_cv_norm": 0.075,
+        "match_pct": 9.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cnn-domain|computer-vision-domain",
+        "source": "cnn-domain",
+        "target": "computer-vision-domain",
+        "w_0": 0.863,
+        "w_cv": 0.15,
+        "w_cv_norm": 0.075,
+        "match_pct": 8.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "generative-models-domain|computer-vision-domain",
+        "source": "generative-models-domain",
+        "target": "computer-vision-domain",
+        "w_0": 0.562,
+        "w_cv": 0.15,
+        "w_cv_norm": 0.075,
+        "match_pct": 13.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Réseaux de neurones convolutifs",
+      "type": "Domain",
+      "gap": 0.713,
+      "severity": "critical",
+      "importance": 0.863
+    },
+    {
+      "skill": "Intelligence artificielle",
+      "type": "Domain",
+      "gap": 0.657,
+      "severity": "critical",
+      "importance": 0.807
+    },
+    {
+      "skill": "Vision par ordinateur",
+      "type": "Domain",
+      "gap": 0.799,
+      "severity": "critical",
+      "importance": 0.799
+    },
+    {
+      "skill": "Communication",
+      "type": "Soft Skill",
+      "gap": 0.797,
+      "severity": "critical",
+      "importance": 0.797
+    },
+    {
+      "skill": "Machine learning",
+      "type": "Domain",
+      "gap": 0.63,
+      "severity": "critical",
+      "importance": 0.78
+    },
+    {
+      "skill": "Leadership",
+      "type": "Soft Skill",
+      "gap": 0.769,
+      "severity": "critical",
+      "importance": 0.769
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Réseaux de neurones convolutifs",
+        "type": "Domain",
+        "gap": 0.713
+      },
+      {
+        "label": "Intelligence artificielle",
+        "type": "Domain",
+        "gap": 0.657
+      },
+      {
+        "label": "Vision par ordinateur",
+        "type": "Domain",
+        "gap": 0.799
+      },
+      {
+        "label": "Communication",
+        "type": "Soft Skill",
+        "gap": 0.797
+      },
+      {
+        "label": "Machine learning",
+        "type": "Domain",
+        "gap": 0.63
+      },
+      {
+        "label": "Leadership",
+        "type": "Soft Skill",
+        "gap": 0.769
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 4,
+    "nodes_with_bias": 4,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "HALO": 3,
+      "PROXY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "cnn-domain",
+        "label": "Réseaux de neurones convolutifs",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The substantial decrease in weight (Delta: -0.463) is driven by the CV's reliance on listed skills and certifications without demonstrable project experience. The JD prioritizes leadership, strategic vision, and deep technical expertise in areas like neural networks and multimodal models—skills not explicitly highlighted in the CV’s ‘Top Skills’ section. This suggests a proxy bias favoring candidates with a comprehensive skill set as listed on a resume, rather than those who can prove their abilities through project outcomes. A correction factor of 0.75 reflects the undue emphasis on credentials over practical application, aiming to reduce the inflated weight."
+      },
+      {
+        "id": "ml-domain",
+        "label": "Machine learning",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The candidate's CV heavily emphasizes 'Java' (8/11) and AWS certifications, aligning with the JD's explicit request for expertise in 'réseaux de neurones convolutifs, des transformateurs, des modèles génératifs et des modèles de langage multimodaux'.  This suggests a Halo bias – the strong signal of Java expertise is unduly influencing the assessment, overshadowing the lack of explicit project evidence demonstrating application of those specific AI skills within the ML domain. A fair alternative would prioritize evidence of ML project experience, even if Java skills are present."
+      },
+      {
+        "id": "ai-domain",
+        "label": "Intelligence artificielle",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The candidate's CV heavily emphasizes 'Java' as a top skill (8/11) and associated technologies, aligning with the JD's explicit request for expertise in neural networks and vision computing. However, the CV lacks concrete project evidence demonstrating application of these skills, only listing certifications and technologies. This suggests a halo effect – the strong signal of Java is being overweighted, overshadowing the lack of demonstrated practical skills directly relevant to the role’s core requirements, resulting in a lower score than justified. A fair alternative would be to prioritize demonstrated experience with relevant AI/ML frameworks and technologies."
+      },
+      {
+        "id": "generative-models-domain",
+        "label": "Modèles génératifs",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The candidate’s CV heavily emphasizes 'Java' (8/11) and 'SQL Optimization & Indexing' aligning with the JD's explicit requirements for expertise in 'réseaux de neurones convolutifs, des transformateurs, des modèles génératifs et des modèles de langage multimodaux' and 'techniques de vision par ordinateur et de l'apprentissage automatique'.  This suggests the model is placing undue weight on a single, technically less relevant skill (Java) when compared to the JD’s explicit requirements, creating a halo effect. A more holistic assessment would consider the candidate’s broader experience with relevant technologies and contributions. The Delta of -0.162 demonstrates a clear reduction in the assigned weight, indicating a bias towards prioritizing the single, heavily emphasized skill."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.0926 (sous-qualifié), CTM=0.6376 (écart structurel élevé), match_pct=35.05% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.0872, ndcg_5=0.9558, missing_critical_penalty=0.0, combo_v6_final=12.11",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "6 gaps critiques identifiés",
+    "bias_note": "4 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.51)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

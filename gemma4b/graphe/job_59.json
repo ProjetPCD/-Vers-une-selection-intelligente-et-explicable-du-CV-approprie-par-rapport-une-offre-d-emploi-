@@ -1,0 +1,171 @@
+{
+  "nodes": [
+    {
+      "id": "aws-fullstack-dev",
+      "label": "AWS",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "The job description explicitly mentions AWS as a technology to be used.",
+      "inferred": true,
+      "inferred_from": "utilisant les dernières technologies telles que Next.js, TypeScript, Tailwind CSS et AWS"
+    },
+    {
+      "id": "typescript-fullstack-dev",
+      "label": "TypeScript",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "The job description explicitly mentions TypeScript as a technology to be used.",
+      "inferred": true,
+      "inferred_from": "utilisant les dernières technologies telles que Next.js, TypeScript, Tailwind CSS et AWS"
+    },
+    {
+      "id": "nextjs-fullstack-dev",
+      "label": "Next.js",
+      "type": "Tool",
+      "w_0": 0.961,
+      "seniority_required": "Senior",
+      "context": "The job description explicitly mentions Next.js as a technology to be used.",
+      "inferred": true,
+      "inferred_from": "utilisant les dernières technologies telles que Next.js, TypeScript, Tailwind CSS et AWS"
+    },
+    {
+      "id": "tailwind-css-fullstack-dev",
+      "label": "Tailwind CSS",
+      "type": "Tool",
+      "w_0": 0.861,
+      "seniority_required": "Senior",
+      "context": "The job description explicitly mentions Tailwind CSS as a technology to be used.",
+      "inferred": true,
+      "inferred_from": "utilisant les dernières technologies telles que Next.js, TypeScript, Tailwind CSS et AWS"
+    },
+    {
+      "id": "fullstack-dev-domain",
+      "label": "full-stack expérimenté",
+      "type": "Domain",
+      "w_0": 0.653,
+      "seniority_required": "Senior",
+      "context": "The job title and description state 'développeur full-stack expérimenté'.",
+      "inferred": true,
+      "inferred_from": "Votre prochain défi professionnel consiste à rejoindre notre équipe de développement web en tant que développeur full-stack expérimenté."
+    },
+    {
+      "id": "communication-skill-fullstack-dev",
+      "label": "excellentes compétences en communication",
+      "type": "Soft Skill",
+      "w_0": 0.615,
+      "seniority_required": "Senior",
+      "context": "The job description explicitly requests 'excellentes compétences en communication'.",
+      "inferred": true,
+      "inferred_from": "Nous recherchons un candidat passionné par la technologie, avec une forte expérience dans le développement web, une excellente compréhension des principes de conception UI/UX et une solide connaissance des meilleures pratiques de développement logiciel."
+    },
+    {
+      "id": "api-backend-tool",
+      "label": "API backend",
+      "type": "Tool",
+      "w_0": 0.482,
+      "seniority_required": "N/A",
+      "context": "The job description refers to integrating with 'API backend'.",
+      "inferred": true,
+      "inferred_from": "travailler en étroite collaboration avec notre équipe de design pour créer des expériences utilisateur exceptionnelles et assurer une intégration fluide avec les API backend."
+    },
+    {
+      "id": "github-actions-tool",
+      "label": "GitHub Actions",
+      "type": "Tool",
+      "w_0": 0.463,
+      "seniority_required": "N/A",
+      "context": "The job description mentions configuring CI/CD pipelines with GitHub Actions.",
+      "inferred": true,
+      "inferred_from": "Nous aurez également la responsabilité de mettre en œuvre des pratiques de DevOps, notamment la configuration de pipelines CI/CD avec GitHub Actions..."
+    },
+    {
+      "id": "devops-fullstack-dev",
+      "label": "DevOps",
+      "type": "Hard Skill",
+      "w_0": 0.473,
+      "seniority_required": "Senior",
+      "context": "The job description mentions implementing DevOps practices, specifically CI/CD pipelines.",
+      "inferred": true,
+      "inferred_from": "Nous aurez également la responsabilité de mettre en œuvre des pratiques de DevOps, notamment la configuration de pipelines CI/CD avec GitHub Actions..."
+    },
+    {
+      "id": "uiux-design-collaboration",
+      "label": "UI/UX Design",
+      "type": "Domain",
+      "w_0": 0.25,
+      "seniority_required": "N/A",
+      "context": "The job description mentions collaboration with design team for creating user experiences.",
+      "inferred": true,
+      "inferred_from": "travailler en étroite collaboration avec notre équipe de design pour créer des expériences utilisateur exceptionnelles..."
+    }
+  ],
+  "edges": [
+    {
+      "source": "aws-fullstack-dev",
+      "target": "fullstack-dev-domain",
+      "relation": "supports",
+      "weight": 0.75,
+      "rationale": "AWS is a core technology used within the full-stack development context as described in the job description."
+    },
+    {
+      "source": "typescript-fullstack-dev",
+      "target": "fullstack-dev-domain",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "The job explicitly states using TypeScript for developing applications, implying a core requirement."
+    },
+    {
+      "source": "nextjs-fullstack-dev",
+      "target": "fullstack-dev-domain",
+      "relation": "requires",
+      "weight": 0.9,
+      "rationale": "The JD clearly states using Next.js for developing complex web applications."
+    },
+    {
+      "source": "tailwind-css-fullstack-dev",
+      "target": "fullstack-dev-domain",
+      "relation": "supports",
+      "weight": 0.7,
+      "rationale": "Tailwind CSS is listed as a technology used in the job, enhancing the styling capabilities of the applications."
+    },
+    {
+      "source": "api-backend-tool",
+      "target": "fullstack-dev-domain",
+      "relation": "supports",
+      "weight": 0.6,
+      "rationale": "The role involves working with API backend, suggesting an enabling relationship."
+    },
+    {
+      "source": "devops-fullstack-dev",
+      "target": "github-actions-tool",
+      "relation": "implements",
+      "weight": 0.8,
+      "rationale": "DevOps practices, specifically CI/CD with GitHub Actions, are explicitly mentioned as a responsibility."
+    },
+    {
+      "source": "github-actions-tool",
+      "target": "fullstack-dev-domain",
+      "relation": "supports",
+      "weight": 0.5,
+      "rationale": "GitHub Actions is a tool used within the DevOps practices and therefore supports the full stack development domain."
+    },
+    {
+      "source": "uiux-design-collaboration",
+      "target": "fullstack-dev-domain",
+      "relation": "complements",
+      "weight": 0.6,
+      "rationale": "Collaboration with UI/UX designers is mentioned, complementing the development work."
+    },
+    {
+      "source": "communication-skill-fullstack-dev",
+      "target": "fullstack-dev-domain",
+      "relation": "complements",
+      "weight": 0.5,
+      "rationale": "Excellent communication skills are a listed requirement of the role, complementing the technical aspects."
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_59"
+}

@@ -1,0 +1,161 @@
+{
+  "nodes": [
+    {
+      "id": "azure",
+      "label": "Azure",
+      "type": "Tool",
+      "w_0": 0.915,
+      "seniority_required": "Senior",
+      "context": "conception et le déploiement d'infrastructures cloud sécurisées avec Azure",
+      "inferred": false,
+      "inferred_from": null
+    },
+    {
+      "id": "cloud_computing",
+      "label": "Cloud Computing",
+      "type": "Domain",
+      "w_0": 0.833,
+      "seniority_required": "Senior",
+      "context": "architecte cloud expérimenté",
+      "inferred": true,
+      "inferred_from": "architecte cloud expérimenté chez une entreprise leader dans le domaine de la technologie"
+    },
+    {
+      "id": "devsecops",
+      "label": "DevSecOps",
+      "type": "Tool",
+      "w_0": 0.872,
+      "seniority_required": "Senior",
+      "context": "mise en œuvre de la transformation numérique vers le cloud Microsoft avec DevSecOps",
+      "inferred": false,
+      "inferred_from": null
+    },
+    {
+      "id": "security",
+      "label": "Sécurité",
+      "type": "Hard Skill",
+      "w_0": 0.753,
+      "seniority_required": "Senior",
+      "context": "mettre en œuvre les bonnes pratiques de sécurité dans les pipelines et les conteneurs",
+      "inferred": true,
+      "inferred_from": "mettre en œuvre les bonnes pratiques de sécurité dans les pipelines et les conteneurs"
+    },
+    {
+      "id": "architecture_applicative",
+      "label": "Architecture Applicative",
+      "type": "Hard Skill",
+      "w_0": 0.743,
+      "seniority_required": "Senior",
+      "context": "conception et le déploiement d'infrastructures cloud sécurisées avec Architecture Applicative",
+      "inferred": false,
+      "inferred_from": null
+    },
+    {
+      "id": "cloud_native_development",
+      "label": "Développement de solutions Cloud Native",
+      "type": "Hard Skill",
+      "w_0": 0.7,
+      "seniority_required": "Senior",
+      "context": "Développement de solutions Cloud Native",
+      "inferred": false,
+      "inferred_from": null
+    },
+    {
+      "id": "terraform",
+      "label": "Terraform",
+      "type": "Tool",
+      "w_0": 0.66,
+      "seniority_required": "Senior",
+      "context": "mise en place et la mise à jour de l'infrastructure as code avec Terraform",
+      "inferred": false,
+      "inferred_from": null
+    },
+    {
+      "id": "ecosysteme_microsoft",
+      "label": "Écosystème Microsoft",
+      "type": "Tool",
+      "w_0": 0.488,
+      "seniority_required": "Senior",
+      "context": "mise en œuvre de la transformation numérique vers le cloud Microsoft avec l'écosystème Microsoft",
+      "inferred": false,
+      "inferred_from": null
+    },
+    {
+      "id": "net",
+      "label": ".Net",
+      "type": "Tool",
+      "w_0": 0.575,
+      "seniority_required": "Senior",
+      "context": "compétences techniques requises incluent .Net",
+      "inferred": false,
+      "inferred_from": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "azure",
+      "target": "cloud_computing",
+      "relation": "part_of",
+      "weight": 0.9,
+      "rationale": "Azure is a cloud computing platform"
+    },
+    {
+      "source": "devsecops",
+      "target": "security",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "DevSecOps requires security practices"
+    },
+    {
+      "source": "architecture_applicative",
+      "target": "cloud_native_development",
+      "relation": "supports",
+      "weight": 0.8,
+      "rationale": "Applicative architecture supports cloud native development"
+    },
+    {
+      "source": "cloud_native_development",
+      "target": "azure",
+      "relation": "requires",
+      "weight": 0.9,
+      "rationale": "Cloud native development requires a cloud platform like Azure"
+    },
+    {
+      "source": "terraform",
+      "target": "azure",
+      "relation": "implements",
+      "weight": 0.85,
+      "rationale": "Terraform is used to deploy and manage infrastructure on Azure"
+    },
+    {
+      "source": "ecosysteme_microsoft",
+      "target": "azure",
+      "relation": "part_of",
+      "weight": 0.9,
+      "rationale": "Microsoft ecosystem includes Azure"
+    },
+    {
+      "source": "net",
+      "target": "ecosysteme_microsoft",
+      "relation": "part_of",
+      "weight": 0.9,
+      "rationale": ".Net is part of the Microsoft ecosystem"
+    },
+    {
+      "source": "security",
+      "target": "devsecops",
+      "relation": "part_of",
+      "weight": 0.8,
+      "rationale": "Security is a key aspect of DevSecOps"
+    },
+    {
+      "source": "cloud_computing",
+      "target": "cloud_native_development",
+      "relation": "enables",
+      "weight": 0.8,
+      "rationale": "Cloud computing enables cloud native development"
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_22"
+}

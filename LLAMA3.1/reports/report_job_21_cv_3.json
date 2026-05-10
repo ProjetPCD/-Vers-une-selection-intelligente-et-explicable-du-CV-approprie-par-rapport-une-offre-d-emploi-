@@ -1,0 +1,573 @@
+{
+  "job_id": "job_21",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-04T12:06:48.479736",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 31.52,
+    "confidence": {
+      "confidence_score": 0.59,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.767,
+        "coverage_rate": 0.733,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.4359,
+    "edge_score": 0.0,
+    "combined": 0.2615
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2414,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6915,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6848,
+    "matched_nodes": "2/30",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2497,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.3561,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.224,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0714,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.4545,
+    "weighted_recall": 0.0433,
+    "weighted_f1": {
+      "value": 0.0841,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5375,
+    "missing_critical_penalty": {
+      "value": 0.0385,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.8226,
+    "ndcg_10": 0.8423,
+    "map_score": 0.957,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9167,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.2761,
+    "experience_density": 0.1917
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 23.25,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 24.24,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 20.41,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 91.4,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 34.9,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 26.98,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 19.96,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 13,
+      "match_pct": 14.1,
+      "weight_sum": 11.605
+    },
+    "Hard Skill": {
+      "count": 8,
+      "match_pct": 27.8,
+      "weight_sum": 7.619
+    },
+    "Soft Skill": {
+      "count": 6,
+      "match_pct": 34.5,
+      "weight_sum": 4.727
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 11.6,
+      "weight_sum": 1.576
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 21.2,
+      "weight_sum": 0.865
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "total_edges": 18,
+    "top_synergies": [
+      {
+        "edge_key": "python|aws_lambda",
+        "source": "python",
+        "target": "aws_lambda",
+        "w_0": 0.85,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "go|aws_lambda",
+        "source": "go",
+        "target": "aws_lambda",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "bash|aws_lambda",
+        "source": "bash",
+        "target": "aws_lambda",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "javascript|aws_lambda",
+        "source": "javascript",
+        "target": "aws_lambda",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "perl|aws_lambda",
+        "source": "perl",
+        "target": "aws_lambda",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "AWS Lambda",
+      "type": "Tool",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Bash",
+      "type": "Hard Skill",
+      "gap": 0.688,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 0.812,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Perl",
+      "type": "Hard Skill",
+      "gap": 0.75,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "EC2",
+      "type": "Tool",
+      "gap": 0.85,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Elastic Container Service (ECS)",
+      "type": "Tool",
+      "gap": 0.787,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "VPC",
+      "type": "Tool",
+      "gap": 0.865,
+      "severity": "critical",
+      "importance": 0.965
+    },
+    {
+      "skill": "Fargate",
+      "type": "Tool",
+      "gap": 0.954,
+      "severity": "critical",
+      "importance": 0.954
+    },
+    {
+      "skill": "Go",
+      "type": "Hard Skill",
+      "gap": 0.952,
+      "severity": "critical",
+      "importance": 0.952
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "AWS Lambda",
+        "type": "Tool",
+        "gap": 0.9
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.7
+      },
+      {
+        "label": "Bash",
+        "type": "Hard Skill",
+        "gap": 0.688
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 0.812
+      },
+      {
+        "label": "Perl",
+        "type": "Hard Skill",
+        "gap": 0.75
+      },
+      {
+        "label": "EC2",
+        "type": "Tool",
+        "gap": 0.85
+      },
+      {
+        "label": "Elastic Container Service (ECS)",
+        "type": "Tool",
+        "gap": 0.787
+      },
+      {
+        "label": "VPC",
+        "type": "Tool",
+        "gap": 0.865
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 27,
+    "nodes_with_bias": 22,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 12,
+      "PROXY": 5,
+      "HALO": 2,
+      "HALO BIAS": 1,
+      "GENDER_DIVERSITY": 1,
+      "PRESTIGE|HALO": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "aws_lambda",
+        "label": "AWS Lambda",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.2,
+        "reason": "The weight change unfairly penalized the candidate due to a lack of AWS Lambda experience, which may be influenced by socioeconomic signals (location, language of CV). A fair alternative would be to consider more general skills or certifications relevant to the job description."
+      },
+      {
+        "id": "python",
+        "label": "Python",
+        "bias_category": "HALO BIAS",
+        "severity": "HIGH",
+        "correction_factor": 0.6,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "Weight change is biased towards candidates with prominent job titles and company names, rather than considering their actual skills and experience."
+      },
+      {
+        "id": "bash",
+        "label": "Bash",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.625,
+        "reason": "The candidate's CV mentions some relevant skills, but no project or work experience is provided. A fair alternative would be to consider the candidate's skills and education in a more balanced way."
+      },
+      {
+        "id": "javascript",
+        "label": "JavaScript",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "Due to the lack of project or work experience mentioned in the CV, it's likely that socioeconomic factors are at play. This bias could disproportionately affect candidates from underrepresented groups who may not have had access to job opportunities or professional networks. A fair alternative would be to consider other skills and experiences demonstrated by the candidate, such as problem-solving, programming languages, and soft skills."
+      },
+      {
+        "id": "ec2",
+        "label": "EC2",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The weight change is biased due to proxy bias, as EC2 is only listed under 'Skills' and not mentioned as part of any project or experience. A fair alternative would be to review the CV more holistically, considering both technical skills and project experiences."
+      },
+      {
+        "id": "elastic_container_service",
+        "label": "Elastic Container Service (ECS)",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.425,
+        "reason": "The weight change was unfairly favored due to a single strong signal (EC2 mention in the project). A more nuanced approach would consider multiple signals, such as relevant skills listed on the CV, work experience, and education."
+      },
+      {
+        "id": "methodologies_agiles",
+        "label": "Méthodologies agiles",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change is biased due to prestige considerations, as mentioning Agile Methodologies without concrete evidence may not accurately reflect the candidate's skills or abilities."
+      },
+      {
+        "id": "vpc",
+        "label": "VPC",
+        "bias_category": "PRESTIGE",
+        "severity": "HIGH",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.2,
+        "reason": "The candidate's CV lacks essential skills and experience for the position, particularly in Python, Go, Bash, JavaScript, TypeScript, and others."
+      },
+      {
+        "id": "bases-de-données",
+        "label": "Bases de données",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.4,
+        "reason": "The mention of 'walt.id' in the CV is likely causing prestige bias, giving an unfair advantage to candidates who have worked at this company. A fair alternative would be to remove the company name from the CV and focus on the candidate's skills and experience."
+      },
+      {
+        "id": "redshift",
+        "label": "Redshift",
+        "bias_category": "PROXY",
+        "severity": "HIGH",
+        "correction_factor": 1.3,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.325,
+        "reason": "The model is unfairly penalizing candidates with experience in Redshift, likely due to socioeconomic signals (location). To correct this, we should increase the weight given to Redshift experience by a factor of 1.30."
+      },
+      {
+        "id": "dynamodb",
+        "label": "DynamoDB",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.35,
+        "reason": "The weight change is biased towards companies with high prestige, favoring candidates from well-known organizations over those from smaller or lesser-known ones."
+      },
+      {
+        "id": "typescript",
+        "label": "TypeScript",
+        "bias_category": "PRESTIGE",
+        "severity": "HIGH",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.625,
+        "reason": "The weight change unfairly penalizes candidates from specific universities, and a more nuanced approach should be used to evaluate candidate skills and experience."
+      },
+      {
+        "id": "elastic-kubernetes-service",
+        "label": "Elastic Kubernetes Service",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.23,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.307,
+        "reason": "The weight change is biased towards prestige because the job description heavily mentions Elastic Kubernetes Service, but there's no mention of it in the candidate's CV sections. This indicates that the weight change may be favoring candidates with a prestigious background or experience. To correct this bias, we should increase the weight to ensure fairness and focus on relevant skills demonstrated by the candidate."
+      },
+      {
+        "id": "ingénieur",
+        "label": "Ingénieur",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.425,
+        "reason": "The weight change is unfairly influenced by the university name (ESPRIT), rather than the candidate's skills demonstrated."
+      },
+      {
+        "id": "gestion-du-temps",
+        "label": "Gestion du temps",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.4,
+        "reason": "The weight change unfairly favors problem-solving skills over relevant work experience, which is primarily focused on software engineering and cloud computing."
+      },
+      {
+        "id": "analyse",
+        "label": "Analyse",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.9,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The weight change penalizes candidates without projects, which could be unfairly biased against women or non-native English speakers."
+      },
+      {
+        "id": "docker",
+        "label": "Docker",
+        "bias_category": "PROXY",
+        "severity": "HIGH",
+        "correction_factor": 1.5,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The weight change unfairly penalizes candidates based on their location, which is a proxy for socioeconomic status. A fair alternative would be to remove any location-based penalties or biases and focus on the candidate's skills and qualifications."
+      },
+      {
+        "id": "communication",
+        "label": "Communication",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.625,
+        "reason": "The current weight change for communication skills unfairly penalizes candidates who may not have had opportunities to work on prominent projects, which can be a proxy for prestige."
+      },
+      {
+        "id": "cloudformation",
+        "label": "CloudFormation",
+        "bias_category": "PRESTIGE",
+        "severity": "HIGH",
+        "correction_factor": 1.5,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The model unfairly penalizes candidates with experience in CloudFormation, which is a key technology mentioned in the job description. A fair weight for CloudFormation would be around 0.7-0.8, considering its relevance."
+      },
+      {
+        "id": "kubernetes",
+        "label": "Kubernetes",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "Prestige bias detected in weight change, unfairly penalizing 'kubernetes' keyword. Fair alternative: focus on relevant skills and experience."
+      },
+      {
+        "id": "programmation",
+        "label": "Programmation",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.85,
+        "reason": "The model's reliance on the presence of a single keyword ('programmation') is unfair and biases towards candidates with similar keywords in their CV, rather than evaluating actual skills and experience."
+      },
+      {
+        "id": "resolution-problemes",
+        "label": "La résolution de problèmes",
+        "bias_category": "PRESTIGE|HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.2,
+        "reason": "Weight change biased towards prestige or halo effect, emphasizing high-level technical skills in JD without direct correlation to candidate's work experience and problem-solving skills demonstrated."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2414 (sous-qualifié), CTM=0.6915 (écart structurel élevé), match_pct=31.52% → Poor Match",
+    "v6_summary": "weighted_f1=0.0841, gap_score=0.224, ndcg_5=0.8226, missing_critical_penalty=0.0385, combo_v6_final=23.25",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "23 gaps critiques identifiés",
+    "bias_note": "22 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.59)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

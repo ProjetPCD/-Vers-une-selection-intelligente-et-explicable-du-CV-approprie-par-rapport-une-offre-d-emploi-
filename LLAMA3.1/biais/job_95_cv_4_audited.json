@@ -1,0 +1,952 @@
+{
+  "job_id": "job_95",
+  "cv_id": "cv_4",
+  "scored_nodes": {
+    "head-of-engineering": {
+      "w_cv": 0.5,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "No direct evidence, but inferred standalone with seniority_signal 'expert' and verification_question asking for project examples.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "mysql": {
+      "w_cv": 0.625,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "No direct evidence, but inferred standalone with seniority_signal 'expert' and verification_question asking for project examples.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "LOW",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.625,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change is biased due to proxy bias, specifically the candidate's location and language of CV."
+    },
+    "aws": {
+      "w_cv": 0.4,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "No direct evidence, but inferred standalone with seniority_signal 'expert' and verification_question asking for project examples.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.4,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "Prestige bias inferred due to candidate's university name and company affiliation, unfairly favoring the outcome. A fair alternative would be to assess candidates based on their actual skills and experience."
+    },
+    "mongodb": {
+      "w_cv": 0.6,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "No direct evidence, but inferred standalone with seniority_signal 'expert' and verification_question asking for project examples.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "LOW",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.6,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The weight change is biased because it unfairly penalizes candidates who may not have direct experience with all the mentioned technologies, while the candidate's CV shows relevant education and experience in data science, machine learning, and programming languages."
+    },
+    "technical_team_management": {
+      "w_cv": 0.425,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "No direct evidence, but inferred standalone with seniority_signal 'expert' and verification_question asking for project examples.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.425,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.85,
+      "p35_reason": "The weight change appears to be biased due to Halo Bias, as one strong signal (Raslen Guesmi's certifications and project work) is used to judge his entire profile."
+    },
+    "software_engineering_principles": {
+      "w_cv": 0.6,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "No direct evidence, but inferred standalone with seniority_signal 'expert' and verification_question asking for project examples.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.6,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The weight change in `w_cv` from 1 to 0.5 appears to be biased towards prestige, as the candidate's skills and expertise do not directly match the job requirements. However, upon closer inspection, it seems that the model is also favoring candidates who have worked on similar projects or have directly relevant experience. This suggests a Halo effect or Over-Specification error where one strong signal used to judge entire profile is actually irrelevant."
+    },
+    "aws-gcp": {
+      "w_cv": 1.062,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.85
+      },
+      "active_red_flags": [],
+      "rationale": "No evidence of AWS and GCP expertise mentioned in the CV.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 1.062,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change was based on the company name, which is not a fair representation of the candidate's skills."
+    },
+    "redis": {
+      "w_cv": 0.977,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.85
+      },
+      "active_red_flags": [],
+      "rationale": "No evidence of Redis expertise mentioned in the CV.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.977,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.15,
+      "p35_reason": "The weight change for Redis experience is biased because it unfairly penalizes the candidate for lacking a specific skill mentioned in the job description."
+    },
+    "gcp": {
+      "w_cv": 1.02,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.85
+      },
+      "active_red_flags": [],
+      "rationale": "No evidence of GCP expertise mentioned in the CV.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "LOW",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 1.02,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "Weight decrease for GCP expertise is unfair as there is no mention of it in the CV, but this does not necessarily mean that the candidate lacks expertise in GCP."
+    },
+    "python": {
+      "w_cv": 1.275,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.85
+      },
+      "active_red_flags": [],
+      "rationale": "CV mentions Python as a skill, but no specific project evidence is mentioned.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 1.275,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.5,
+      "p35_reason": "The weight change appears biased towards prestige universities, as it's not clear how the specific university name affects the candidate's skills or qualifications."
+    },
+    "laravel": {
+      "w_cv": 0.637,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.85
+      },
+      "active_red_flags": [],
+      "rationale": "CV mentions Laravel as a skill, but no specific project evidence is mentioned.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.637,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The weight change is due to Prestige Bias, as the candidate mentions Laravel without providing specific project evidence. The correction factor is decreased to account for this unfair favoring of brand names."
+    },
+    "angularjs": {
+      "w_cv": 0.977,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.85
+      },
+      "active_red_flags": [],
+      "rationale": "CV mentions AngularJS as a skill, but no specific project evidence is mentioned.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO BIAS",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.977,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.15,
+      "p35_reason": "The model has unfairly favored candidates with specific skills mentioned in the job description, such as AngularJS, leading to a halo effect. To correct this bias, we should increase the weight of other relevant skills and experience."
+    },
+    "php": {
+      "w_cv": 0.312,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Summary mentions 'hands-on experience in machine learning, LLMs, NLP' (evidence_anchor). No PHP project evidence mentioned.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE BIAS",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.312,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change is biased towards candidates from prestigious universities/companies due to the emphasis on 'hands-on experience in machine learning, LLMs, NLP' without considering other relevant skills or experiences. The candidate's background and education are not directly related to PHP expertise, but they have extensive experience in AI and ML, which should be valued equally."
+    },
+    "leadership": {
+      "w_cv": 1.5,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 1.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.5
+      },
+      "active_red_flags": [],
+      "rationale": "Summary mentions 'Top Rated AI Engineer and Data Scientist' (evidence_anchor). Top Rated Freelancer for consistent 5⭐ performance, strong client communication, and technical excellence.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "communication": {
+      "w_cv": 0.645,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Summary mentions 'strong client communication' (evidence_anchor).",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.645,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.29,
+      "p35_reason": "The weight change is biased because it only considers one aspect of the candidate's profile, 'strong client communication'. A more merit-based approach would consider multiple relevant signals."
+    },
+    "project_management": {
+      "w_cv": 0.8,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "Summary mentions 'end-to-end AI and data solutions' (evidence_anchor).",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.8,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "Overemphasis on end-to-end AI and data solutions, a single strong signal used to judge the entire profile."
+    },
+    "jenkins": {
+      "w_cv": 0.6,
+      "evidence_quality": "inferred_standalone",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "No project evidence mentioned (evidence_anchor).",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.6,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The algorithm is unfairly penalizing candidates with non-prestigious backgrounds, while not considering their relevant skills and experience equally."
+    },
+    "bootstrap": {
+      "w_cv": 0.4,
+      "evidence_quality": "inferred_standalone",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "No project evidence mentioned (evidence_anchor).",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.4,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The job description emphasizes specific technologies and tools, which may not accurately reflect the candidate's skills or potential for success in the role. A fair alternative would be to evaluate candidates based on their overall relevant experience and skills."
+    },
+    "jquery": {
+      "w_cv": 0.0,
+      "evidence_quality": "inferred_standalone",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.25,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.0
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Inferred standalone skill due to lack of project evidence, but candidate has some experience years detected (0), and certification is not verifiable.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "git": {
+      "w_cv": 1.0,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.25,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.0
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Weak evidence due to lack of project details, but certification is verifiable and experience years detected is 0.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "collaboration": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.25,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.0
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "No evidence of collaboration mentioned in CV, experience years detected is 0.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "agilité": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.25,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.0
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "No evidence of agility mentioned in CV, experience years detected is 0.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "soft_skills": {
+      "w_cv": 0.375,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.25,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Weak evidence due to lack of project details, experience years detected is 0.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.375,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.5,
+      "p35_reason": "The weight change appears to be biased due to a lack of project details and experience years detected as 0, which may indicate an error or limitation in the data analysis. To mitigate this bias, we should give more weight to soft skills."
+    },
+    "ingénierie_logicielle": {
+      "w_cv": 1.013,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.1,
+          "external_proof_bonus": 0.15,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.35
+      },
+      "active_red_flags": [],
+      "rationale": "Strong evidence due to project details, experience years detected is 2, external proof is true, and intensity is central.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 1.013,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "Prestige bias detected, favoring candidate's university/company name over actual skills and experience. Correction factor of 0.75 is applied to reduce the weight change."
+    },
+    "technologies_cloud": {
+      "w_cv": 0.312,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of cloud technologies in the CV, except for a general statement about \"big data\" which is not enough to score as 1.00.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.312,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change based on 'big data' is unfair because it penalizes candidates who may have a strong understanding of cloud technologies but don't explicitly mention them in their CV."
+    },
+    "devops": {
+      "w_cv": 0.8,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "outcome_bonus": 0.1,
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.05
+        },
+        "penalties": {},
+        "final_score": 0.8
+      },
+      "active_red_flags": [],
+      "rationale": "Mentioned in the \"summary\" section as one of the skills used, but no concrete project evidence provided. No quantified outcome mentioned either.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    }
+  },
+  "scored_edges": {
+    "head-of-engineering|technical_team_management": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No synergy found between head-of-engineering and technical_team_management as the candidate's experience section does not mention both skills together, but they have temporal overlap in the parent node scores.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "head-of-engineering|software_engineering_principles": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No synergy found between head-of-engineering and software_engineering_principles as the candidate's experience section does not mention both skills together, but they have temporal overlap in the parent node scores.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "head-of-engineering|python": {
+      "synergy_score": 0.95,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.65,
+        "penalties": 0.0,
+        "final_score": 0.95
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Strong synergy found between head-of-engineering and python as the candidate has used Python to build ETL pipelines in their experience section, which demonstrates mutual reinforcement.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.95
+    },
+    "head-of-engineering|jquery": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.8,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No synergy found between head-of-engineering and jquery as the candidate's experience section does not mention both skills together, with temporal overlap but no evidence of collaboration.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "technical_team_management|collaboration": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": 0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No explicit synergy evidence, but temporal overlap suggests potential for collaboration.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "aws-gcp|head-of-engineering": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": -0.2,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence of AWS and GCP being used together in the same role or project.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "laravel|head-of-engineering": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": -0.2,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence of Laravel being used as a Head of Engineering role.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "angularjs|head-of-engineering": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": -0.2,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence of AngularJS being used as a Head of Engineering role.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "redis|head-of-engineering": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": true,
+      "rationale": "No evidence of Redis being used as a Head of Engineering role, despite strong expertise in Redis (0.85) and weaker expertise in head-of-engineering (0.5).",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "mysql|head-of-engineering": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": true,
+      "rationale": "No evidence of MySQL being used as a Head of Engineering role, despite strong expertise in MySQL (0.5) and weaker expertise in head-of-engineering (0.5).",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "jenkins|head-of-engineering": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": true,
+      "rationale": "No evidence of Jenkins being used as a Head of Engineering role, despite moderate expertise in Jenkins (0.5) and weaker expertise in head-of-engineering (0.5).",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    }
+  },
+  "metadata": {
+    "skills_scored": 26,
+    "mean_score": 0.6,
+    "edges_scored": 11,
+    "mean_synergy": 0.155,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.155,
+      "max": 0.95,
+      "min": 0.0
+    },
+    "batches_ok": 5,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.6,
+      "max": 1.5,
+      "min": 0.0,
+      "above_1": 3,
+      "below_05": 6
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 20,
+    "nodes_with_bias": 19,
+    "nodes_corrected": 19,
+    "edges_audited": 0
+  }
+}

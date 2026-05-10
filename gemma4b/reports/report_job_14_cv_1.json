@@ -1,0 +1,496 @@
+{
+  "job_id": "job_14",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-03T15:55:14.732974",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 42.39,
+    "confidence": {
+      "confidence_score": 0.83,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.571,
+        "coverage_rate": 0.964,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.6229,
+    "edge_score": 0.7515,
+    "combined": 0.6743
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3511,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6055,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5761,
+    "matched_nodes": "7/28",
+    "edge_match_pct": 37.57
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3727,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.6786,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.3062,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.2593,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.3634,
+    "weighted_recall": 0.1693,
+    "weighted_f1": {
+      "value": 0.3011,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.566,
+    "missing_critical_penalty": {
+      "value": 0.2083,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.7584,
+    "ndcg_10": 0.7838,
+    "map_score": 0.9695,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8916,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.3398,
+    "experience_density": 0.2674
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 39.6,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 45.14,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 30.62,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 89.27,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 46.04,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 37.43,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 22.33,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 3,
+      "match_pct": 54.0,
+      "weight_sum": 2.332
+    },
+    "Tool": {
+      "count": 14,
+      "match_pct": 31.6,
+      "weight_sum": 12.694
+    },
+    "Hard Skill": {
+      "count": 7,
+      "match_pct": 23.5,
+      "weight_sum": 6.277
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 27.1,
+      "weight_sum": 2.737
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 37.57,
+    "total_edges": 19,
+    "top_synergies": [
+      {
+        "edge_key": "senior-devops-engineer|aws-cloud",
+        "source": "senior-devops-engineer",
+        "target": "aws-cloud",
+        "w_0": 0.95,
+        "w_cv": 1.031,
+        "w_cv_norm": 0.516,
+        "match_pct": 54.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "senior-devops-engineer|python-programming",
+        "source": "senior-devops-engineer",
+        "target": "python-programming",
+        "w_0": 0.7,
+        "w_cv": 0.938,
+        "w_cv_norm": 0.469,
+        "match_pct": 67.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "senior-devops-engineer|ansible_tower_automation",
+        "source": "senior-devops-engineer",
+        "target": "ansible_tower_automation",
+        "w_0": 0.7,
+        "w_cv": 0.875,
+        "w_cv_norm": 0.438,
+        "match_pct": 62.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "senior-devops-engineer|terraform_infrastructure_as_code",
+        "source": "senior-devops-engineer",
+        "target": "terraform_infrastructure_as_code",
+        "w_0": 0.75,
+        "w_cv": 0.86,
+        "w_cv_norm": 0.43,
+        "match_pct": 57.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "senior-devops-engineer|jenkins-ci",
+        "source": "senior-devops-engineer",
+        "target": "jenkins-ci",
+        "w_0": 0.85,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 50.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Jenkins",
+      "type": "Tool",
+      "gap": 0.681,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Ansible",
+      "type": "Tool",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "GitLab",
+      "type": "Tool",
+      "gap": 0.625,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Ruby on Rails",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Agile",
+      "type": "Hard Skill",
+      "gap": 0.775,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Scrum",
+      "type": "Hard Skill",
+      "gap": 0.76,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Azure",
+      "type": "Tool",
+      "gap": 0.665,
+      "severity": "critical",
+      "importance": 0.984
+    },
+    {
+      "skill": "Bash",
+      "type": "Hard Skill",
+      "gap": 0.759,
+      "severity": "critical",
+      "importance": 0.947
+    },
+    {
+      "skill": "Openshift",
+      "type": "Tool",
+      "gap": 0.623,
+      "severity": "critical",
+      "importance": 0.942
+    },
+    {
+      "skill": "Powershell",
+      "type": "Hard Skill",
+      "gap": 0.926,
+      "severity": "critical",
+      "importance": 0.926
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Jenkins",
+        "type": "Tool",
+        "gap": 0.681
+      },
+      {
+        "label": "Ansible",
+        "type": "Tool",
+        "gap": 0.7
+      },
+      {
+        "label": "GitLab",
+        "type": "Tool",
+        "gap": 0.625
+      },
+      {
+        "label": "Ruby on Rails",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Agile",
+        "type": "Hard Skill",
+        "gap": 0.775
+      },
+      {
+        "label": "Scrum",
+        "type": "Hard Skill",
+        "gap": 0.76
+      },
+      {
+        "label": "Azure",
+        "type": "Tool",
+        "gap": 0.665
+      },
+      {
+        "label": "Bash",
+        "type": "Hard Skill",
+        "gap": 0.759
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 20,
+    "nodes_with_bias": 15,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 10,
+      "PRESTIGE": 3,
+      "D": 1,
+      "AGEISM": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "aws-cloud",
+        "label": "AWS",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.062,
+        "reason": "The CV explicitly lists experience with VMware-based virtualized private clouds, a foundational technology often associated with AWS. However, the JD focuses heavily on AWS and explicitly states 'solutions cloud sur AWS et Azure'. The CV's detailed VMware experience, while valuable, doesn't directly address the specific requirements and weighting of the JD, indicating a potential proxy bias favoring candidates with AWS familiarity over broader cloud experience.  The reduced weight suggests a disproportionate emphasis on a specific vendor ecosystem, and a stronger focus on VMware would be more merit-based. Increasing the weight acknowledges the breadth of cloud knowledge demonstrated in the CV."
+      },
+      {
+        "id": "jenkins-ci",
+        "label": "Jenkins",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The CV prominently lists several languages (French, Arabic, English), which, while demonstrating multilingual skills, signals an applicant from a region (Tunisia) with a potentially different cultural and socioeconomic context compared to the target role’s implied location and perhaps preferred communication style.  This proxy signal of location and linguistic diversity is unfairly penalizing the candidate despite demonstrated skills. A more fair alternative would be to solely assess the candidate’s technical skills and experience, disregarding the language proficiency as a non-relevant factor.  The delta of -0.15 represents a significant decrease, indicating a strong negative impact based on this proxy bias."
+      },
+      {
+        "id": "ansible-automation",
+        "label": "Ansible",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The CV’s emphasis on specific cloud technologies (VMware, OpenStack, CloudStack) and automation tools (Terraform, Ansible, PowerCLI) aligns with the job description's requirements.  However, the detail about the specific location (Tunis, Tunisie) and language skills (Arabic) introduces a proxy bias, suggesting the candidate is favored due to geographic proximity or language skills rather than demonstrable expertise in the listed technologies. A correction factor of 0.8 reflects this bias, acknowledging the relevant skills while penalizing the location/language factors."
+      },
+      {
+        "id": "python-programming",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.875,
+        "reason": "The CV lists Python as a skill, but the JD heavily emphasizes a broader DevOps skillset including AWS, Azure, Kubernetes, and various CI/CD tools.  The CV's focus on Python alongside other technologies suggests a potentially limited understanding of the broader DevOps landscape demanded by the role, aligning with a prestige bias where proficiency in a niche language outweighs demonstrable DevOps experience. While the CV highlights relevant skills, the lack of specific examples demonstrating application of Python within a complex DevOps environment justifies a significant correction factor to reflect the JD’s more demanding requirements; a strong focus on the CV's skills would indicate a preference for prestige rather than genuine technical proficiency. This penalizes the candidate for not highlighting a wider range of technologies, failing to fully meet the specific demands outlined in the job description."
+      },
+      {
+        "id": "agile-methodology",
+        "label": "Agile",
+        "bias_category": "AGEISM",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The CV’s mention of a ‘double degree in data engineering and systems decision making, and information systems and telecommunications’ coupled with Amadou BA’s experience at 3S suggests a significant career length without explicitly mentioning the timeframe or specific achievements related to DevOps. While experience is valuable, the lack of a clear temporal context regarding his career progression and skills development in the Agile space (specifically mentioning frameworks or practices) creates a potential age bias, assuming a Senior DevOps Engineer role would typically involve substantial, recent Agile experience.  The Delta of -0.400 reflects this reduced weighting due to the ambiguous, context-dependent skill set description – the absence of demonstrated Agile methodology experience impacts his suitability compared to an ideal 1.0 weighting. A correction factor of 0.75 indicates a noticeable, but not extreme, reduction in the initial weighting to reflect this imbalance."
+      },
+      {
+        "id": "scrum-framework",
+        "label": "Scrum",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.48,
+        "reason": "The CV highlights Amadou's experience with specific cloud technologies (Azure DevOps, VMware, OpenStack, etc.), and languages (Python, Java, etc.). While expertise in these areas is valuable, the JD also explicitly mentions a requirement for a strong understanding of Agile and Scrum. The CV’s focus on technical skills, particularly those tied to specific vendor technologies, creates a proxy bias – the system is favoring candidates based on familiarity with technologies frequently listed in current job descriptions, potentially overlooking candidates with equivalent skills demonstrated through other frameworks or contexts.  A correction factor of 0.8 reflects the importance of the specific technologies listed in the JD, but acknowledges the potential for favoring those with a broad understanding of DevOps practices."
+      },
+      {
+        "id": "azure-cloud",
+        "label": "Azure",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The candidate's CV heavily emphasizes experience with VMware and PowerCLI, which directly relates to the Azure cloud environment specified in the JD.  The explicit mention of ‘Infrastructure cloud privées et virtualisées basées sur VMware’ in the evidence anchor further reinforces this connection. While the candidate possesses a strong cloud background, the heavy reliance on VMware-specific skills, often used with automation tools like PowerCLI – which are heavily tied to Microsoft Azure – suggests a proxy bias based on familiarity with a specific cloud platform rather than demonstrating core DevOps or cloud engineering skills applicable across various cloud solutions. A fair alternative would be a focus on broader cloud principles and transferable skills like Kubernetes and Terraform, reflecting a more agnostic approach to cloud technology."
+      },
+      {
+        "id": "openshift_container_platform",
+        "label": "Openshift",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The CV explicitly lists experience with OpenShift Container Platform alongside VMware, Proxmox VE, OpenStack, and CloudStack, demonstrating expertise in virtualized infrastructures. This aligns with the JD's requirements for Kubernetes and cloud technologies. However, the Delta (-0.092) suggests a negative weighting, potentially reflecting an overemphasis on the specific platform rather than broader DevOps skills. Reducing the correction factor to 0.75 acknowledges the candidate’s relevant skills but indicates a bias towards the specific OpenShift experience over a more generalized understanding of cloud and containerization technologies."
+      },
+      {
+        "id": "terraform_infrastructure_as_code",
+        "label": "Terraform",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.72,
+        "reason": "The CV explicitly highlights Amadou’s utilization of Terraform for automation, aligning with the job description’s requirements. However, the emphasis on the specific tools (Terraform, Ansible, PowerCLI) alongside his cloud expertise suggests a proxy bias, prioritizing candidates who list these technologies on their CVs rather than assessing the candidate's actual proficiency and problem-solving skills related to DevOps. A correction factor of 0.8 reflects that while the tool usage is relevant, it’s not the primary measure of competence, potentially penalizing candidates who may have strong DevOps experience but haven't explicitly highlighted these tools. This reflects a bias towards CV-driven metrics over demonstrated skills, favouring those who've listed them. The ideal weight of 0.952 is 0.052 lower than the actual weight, indicating a slight disadvantage. The candidate is listing technologies as part of their skills, indicating this is a more prominent way to showcase their expertise"
+      },
+      {
+        "id": "docker_containerization",
+        "label": "Docker",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The CV explicitly states 'J'utilise des technologies cloud native (Docker, Kubernetes, Helm)', which directly reflects a required skill in the job description. However, the Delta (-0.324) suggests a significant weighting reduction, likely due to the CV's focus on demonstrable skills (Kubernetes, Docker) rather than prestige/company name.  The location (Tunisia, Tunisie) could be interpreted as a proxy for socioeconomic status, and the CV’s emphasis on geographically-specific technologies, combined with the reduced weighting, indicates a potential proxy bias.  A fairer alternative would be to weight the candidate based solely on the demonstrable skills and experience outlined in the CV, increasing the weight to 0.75 to compensate for this potential bias."
+      },
+      {
+        "id": "kubernetes_orchestration",
+        "label": "Kubernetes",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.281,
+        "reason": "The significant decrease in weight (-0.515) is likely driven by the peripheral mention of Kubernetes within the CV's context. The candidate lists it alongside other technologies without detailing practical application or demonstrable expertise, which the JD specifically emphasizes as crucial for a Senior DevOps Engineer. This proxy signal—the presence of ‘Kubernetes’—is being unfairly weighted compared to the actual demonstration of skills and experience, indicating a bias towards simply listing popular technologies rather than demonstrating competency. A fair alternative would be to evaluate the candidate based on their documented contributions and proficiency with Kubernetes, which are notably absent from the provided CV details."
+      },
+      {
+        "id": "groovy_scripting",
+        "label": "Groovy",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease in weight for Groovy scripting (Delta: -0.601) is likely due to the absence of explicit mention of it in the CV description and JD. This proxy bias reflects a potential overemphasis on specific technologies listed in the job description (Groovy) over demonstrable skills that the candidate possesses.  A fairer assessment would consider the candidate's overall skill set and experience in DevOps, cloud, and automation, rather than penalizing them for lacking a specific tool mentioned in the requirements."
+      },
+      {
+        "id": "devops_engineer_conflict_resolution",
+        "label": "Résolution de conflits",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.062,
+        "reason": "The increased weight change (+0.073) is primarily driven by the inclusion of ‘double degree’ in the CV, specifically mentioning a ‘double degree in data and systems engineering and computer science, networks and telecommunications.’ This signals a high level of academic achievement, representing a prestige signal that may not directly correlate with practical DevOps skills. While experience with Azure DevOps and related technologies is present, the emphasis on the advanced degree elevates the candidate's perceived capability, creating an unfair advantage due to academic pedigree rather than demonstrable skills.  A correction factor of 1.25 reflects this inflated weight due to the prestige signal.  The JD also implicitly favors candidates with advanced degrees, although the CV explicitly highlights the degree's impact."
+      },
+      {
+        "id": "devops_engineer_devops_tools",
+        "label": "Outils de DevOps",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.438,
+        "reason": "The increased weight (0.374) is driven primarily by the candidate's detailed listing of DevOps tools like Terraform, Kubernetes, Helm, and Docker, alongside quantifiable project outcomes (pipeline CI/CD, Veeam, Zabbix, IAM integration).  This reflects a strong technical skillset aligning with the JD's requirements – demonstrating practical application of DevOps tools is a proxy for overall DevOps expertise.  The candidate's experience with diverse cloud platforms (Azure, AWS, VMware) and a wide range of automation and monitoring tools supports a heightened assessment, suggesting a strong candidate beyond simply 'knowing' the names of these tools. While valuable, relying solely on this tool list introduces a proxy bias. A fairer alternative would be to assess the candidate's demonstrable impact through performance metrics, system design contributions, or team leadership, rather than simply the list of tools used."
+      },
+      {
+        "id": "devops_engineer_cloud_solutions",
+        "label": "Solutions cloud",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.35,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.215,
+        "reason": "The increased weight (Delta: +0.183) is primarily driven by the candidate's educational background - a double degree in Data Engineering and Computer Science networks & telecoms. This signifies a high level of technical education, a prestige signal that the CV weight significantly boosted.  The evidence anchor highlights this, pointing to the candidate's academic qualifications as a key strength. While the candidate's experience with cloud solutions is positive, the weighting disproportionately emphasized this academic prestige over demonstrable project outcomes, representing a potential prestige bias."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3511 (sous-qualifié), CTM=0.6055 (écart structurel élevé), match_pct=42.39% → Poor Match",
+    "v6_summary": "weighted_f1=0.3011, gap_score=0.3062, ndcg_5=0.7584, missing_critical_penalty=0.2083, combo_v6_final=39.6",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "16 gaps critiques identifiés",
+    "bias_note": "15 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.83)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

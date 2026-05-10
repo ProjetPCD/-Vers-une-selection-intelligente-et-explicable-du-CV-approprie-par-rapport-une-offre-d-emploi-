@@ -1,0 +1,205 @@
+{
+  "job_id": "job_125",
+  "cv_id": "cv_4",
+  "scored_nodes": {
+    "php-expert": {
+      "w_cv": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of PHP expertise in CV sections, but a weak signal from skills section (evidence_verdict = weak)",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "full-stack-php-js-expert": {
+      "w_cv": 1.0,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "Mention of full-stack PHP/JS development in experience section (experience = Freelance Data Scientist, August 2023 - October 2024), and a strong signal from skills section (evidence_verdict = strong)",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "devops-developer": {
+      "w_cv": 0.5,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Weak signal from skills section (evidence_verdict = weak), but no concrete project evidence",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "js-expertise": {
+      "w_cv": 1.0,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "Mention of JS expertise in experience section (experience = Freelance Data Scientist, August 2023 - October 2024), and a strong signal from skills section (evidence_verdict = strong)",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "complex-projects-domain": {
+      "w_cv": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.75
+      },
+      "active_red_flags": [],
+      "rationale": "Mention of complex projects in experience section (experience = Freelance Data Scientist, August 2023 - October 2024), and a strong signal from skills section (evidence_verdict = strong)",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    }
+  },
+  "scored_edges": {
+    "full-stack-php-js-expert|js-expertise": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": -0.2,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": true,
+      "rationale": "No evidence of collaboration between full-stack PHP/JS expertise and JS expertise. The CV excerpts do not mention any joint projects or tasks, and the synergy found is false.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "full-stack-php-js-expert|php-expert": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": -0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Temporal overlap is present, but there is no evidence of collaboration between full-stack PHP/JS expertise and PHP expertise.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "full-stack-php-js-expert|complex-projects-domain": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.3,
+        "penalties": -0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Anissa Selmani has experience with complex projects in the biomedical domain and computer vision, which aligns with full-stack PHP/JS expertise.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "devops-developer|complex-projects-domain": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.3,
+        "penalties": -0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Anissa Selmani has experience with complex projects in the biomedical domain and computer vision, which aligns with DevOps & development skills.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "devops-developer|full-stack-php-js-expert": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.05,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No synergy evidence found in the CV excerpts, but there is temporal overlap (source devops-developer has a score of 0.5 and target full-stack-php-js-expert has a score of 1.0). No same project or role information available.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "full-stack-php-js-expert|devops-developer": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.05,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Temporal overlap is the only evidence available, but no synergy evidence was found in the CV excerpts.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    }
+  },
+  "metadata": {
+    "skills_scored": 5,
+    "mean_score": 0.7,
+    "edges_scored": 6,
+    "mean_synergy": 0.375,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.375,
+      "max": 0.75,
+      "min": 0.0
+    },
+    "batches_ok": 1,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.7,
+      "max": 1.0,
+      "min": 0.25,
+      "above_1": 2,
+      "below_05": 1
+    }
+  }
+}

@@ -1,0 +1,317 @@
+{
+  "job_id": "job_91",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-02T15:41:28.635167",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 31.13,
+    "confidence": {
+      "confidence_score": 0.73,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.571,
+        "coverage_rate": 0.857,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.6029,
+    "edge_score": 0.0,
+    "combined": 0.3617
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3044,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7135,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6887,
+    "matched_nodes": "0/7",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3048,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.5506,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.2793,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.4286,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.986,
+    "weighted_recall": 0.2165,
+    "weighted_f1": {
+      "value": 0.3904,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5,
+    "missing_critical_penalty": {
+      "value": 0.4286,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.9891,
+    "ndcg_10": 0.9978,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.4167,
+    "semantic_fit_score": 0.4834,
+    "experience_density": 0.2984
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 42.81,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 42.18,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 38.81,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 99.56,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 54.81,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 49.81,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 41.8,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 5,
+      "match_pct": 27.0,
+      "weight_sum": 4.979
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 50.0,
+      "weight_sum": 1.0
+    },
+    "Responsibility": {
+      "count": 1,
+      "match_pct": 25.6,
+      "weight_sum": 0.95
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "total_edges": 5,
+    "top_synergies": [
+      {
+        "edge_key": "azure-devops|terraform",
+        "source": "azure-devops",
+        "target": "terraform",
+        "w_0": 0.9,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "jenkins|devops-engineer-domain",
+        "source": "jenkins",
+        "target": "devops-engineer-domain",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "kubernetes|azure-devops",
+        "source": "kubernetes",
+        "target": "azure-devops",
+        "w_0": 0.85,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "azure-management|kubernetes",
+        "source": "azure-management",
+        "target": "kubernetes",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "azure-management|azure-devops",
+        "source": "azure-management",
+        "target": "azure-devops",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Azure DevOps",
+      "type": "Tool",
+      "gap": 0.8,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Terraform",
+      "type": "Tool",
+      "gap": 0.844,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Jenkins",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Gestion d'Azure",
+      "type": "Responsibility",
+      "gap": 0.694,
+      "severity": "critical",
+      "importance": 0.95
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Azure DevOps",
+        "type": "Tool",
+        "gap": 0.8
+      },
+      {
+        "label": "Terraform",
+        "type": "Tool",
+        "gap": 0.844
+      },
+      {
+        "label": "Jenkins",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Gestion d'Azure",
+        "type": "Responsibility",
+        "gap": 0.694
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 4,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 3,
+      "PROXY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "azure-devops",
+        "label": "Azure DevOps",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.4,
+        "reason": "The weight change is biased towards proxy signals, such as mentioning specific tools or technologies, rather than actual experience."
+      },
+      {
+        "id": "terraform",
+        "label": "Terraform",
+        "bias_category": "PRESTIGE",
+        "severity": "LOW",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "Mention of Terraform doesn't necessarily indicate relevant experience or skills in DevOps engineering; a fairer alternative would be to consider concrete evidence of Terraform usage."
+      },
+      {
+        "id": "azure",
+        "label": "Azure",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.0,
+        "reason": "The weight change due to mentioning Azure is unfair as it's based on prestige rather than demonstrated skills. This may lead to biased hiring decisions favoring candidates with experience in prominent companies over others with equivalent skills but from less well-known organizations."
+      },
+      {
+        "id": "azure-management",
+        "label": "Gestion d'Azure",
+        "bias_category": "PRESTIGE",
+        "severity": "HIGH",
+        "correction_factor": 1.025,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.512,
+        "reason": "Mentioning a specific company or role in one's resume does not necessarily indicate expertise or relevance to the job requirements. A fair alternative would be to focus on the candidate's skills and experiences mentioned in their CV."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3044 (sous-qualifié), CTM=0.7135 (écart structurel élevé), match_pct=31.13% → Poor Match",
+    "v6_summary": "weighted_f1=0.3904, gap_score=0.2793, ndcg_5=0.9891, missing_critical_penalty=0.4286, combo_v6_final=42.81",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "4 gaps critiques identifiés",
+    "bias_note": "4 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.73)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

@@ -1,0 +1,1000 @@
+{
+  "job_id": "job_14",
+  "cv_id": "cv_5",
+  "scored_nodes": {
+    "aws-cloud": {
+      "w_cv": 0.675,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.6,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.075,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.675
+      },
+      "active_red_flags": [],
+      "rationale": "Listed in the CV alongside project experience.  Moderate confidence based on mention within the InstaDeep project, where cloud infrastructure would likely be used. Evidence_anchor: AWS",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "jenkins-ci": {
+      "w_cv": 0.75,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.55,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.075,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.625
+      },
+      "active_red_flags": [],
+      "rationale": "Explicitly mentioned as a tool used within the InstaDeep project. Moderate confidence due to the specific mention. Evidence_anchor: Jenkins CI",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.75,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The reduction in weight (Delta = -0.375) is likely driven by bias against the university and specific project (InstaDeep) where Heni Loukil gained significant experience. The CV heavily emphasizes her work on a specialized Deep Learning project – 'Alzheimer's Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning' – which is very niche. While relevant to a Senior DevOps role, the high degree of specialization is not consistently reflected in the skill list and is unfairly weighted down, suggesting a prestige bias. A fair alternative would be to value the technical depth and specialized skills demonstrated, especially given her strong performance exceeding state-of-the-art methods, thus warranting a higher weight value."
+    },
+    "ansible-automation": {
+      "w_cv": 0.719,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.075,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.575
+      },
+      "active_red_flags": [],
+      "rationale": "Mentioned as a tool used within the InstaDeep project, supporting automation. Evidence_anchor: Ansible Automation",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.719,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The significant decrease in weight (w_cv from 1.0 to 0.575) is likely driven by the overemphasis on the ‘Alzheimer’s Disease Classification’ project, particularly the use of ‘Geometric Deep Learning’ and ‘Graph CNN’ within the CV. While these skills are relevant to a DevOps role, the context emphasizes research and academic project details excessively, potentially overshadowing the broader DevOps skillset demonstrated by the InstaDeep experience and other listed technologies. A fairer alternative would be to consider the role's requirements and weigh the candidate's experience with tools like Ansible and Kubernetes equally, suggesting a correction factor of 1.25 to account for the disproportionate emphasis on the academic project."
+    },
+    "gitlab-ci": {
+      "w_cv": 0.719,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.075,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.575
+      },
+      "active_red_flags": [],
+      "rationale": "Explicitly mentioned as a tool used within the InstaDeep project, supporting CI/CD. Evidence_anchor: GitLab CI",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.719,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The CV prominently features work at InstaDeep, a relatively niche AI research company, which carries a prestige factor. While Heni Loukil's research on deep learning for Alzheimer's disease is impressive, the explicit mention of InstaDeep, combined with the focus of the internship (geometric deep learning) suggests a prioritization of this specific research institution over broader DevOps experience. This unfairly elevates the value of the InstaDeep project compared to more typical DevOps skills, creating a bias towards those with experience in cutting-edge AI research, reducing the weight given to more general DevOps competencies. A fairer alternative would be to normalize the impact of the InstaDeep experience and account for broader DevOps skills equally."
+    },
+    "python-programming": {
+      "w_cv": 1.219,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 0.9,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.075,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.975
+      },
+      "active_red_flags": [],
+      "rationale": "Explicitly listed as a skill. The mention of a Deep Learning role and related projects within InstaDeep indicates proficiency. Evidence_anchor: Python Programming",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 1.219,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The CV highlights a research internship focused on Deep Learning and Geometric Deep Learning specifically related to Alzheimer’s disease classification, demonstrating a relevant skill set for a Senior DevOps Engineer role, particularly concerning cloud solutions and monitoring. While the CV mentions Python, it’s primarily tied to a highly specialized research project (Hippocampus analysis) rather than general Python programming skills applicable to broader DevOps tasks. The project's focus on Deep Learning and specific tools like TensorFlow/Keras, although valuable, doesn't directly align with the required skillset outlined in the JD for Kubernetes, Jenkins, and other core DevOps technologies. This suggests a potential overemphasis on the research experience, leading to a reduction in the weight applied, indicating a possible ageism bias or a focus on prestige/specialization over general programming ability."
+    },
+    "ruby-on-rails": {
+      "w_cv": 0.619,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.075,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.825
+      },
+      "active_red_flags": [],
+      "rationale": "Listed in skills, experience_years_detected = 1.5, moderate confidence from mentioning in the CV. The project complexity of mid.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.619,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The CV heavily emphasizes a research project focusing on Deep Learning and Geometric Deep Learning, specifically a complex academic thesis ('Alzheimer's Disease Classification'). While relevant to a DevOps role, the project's specific technical depth and area (computer vision/neuroscience) isn't directly aligned with the JD's focus on cloud, CI/CD, and traditional DevOps tooling. The ‘graduation year’ (2020) coupled with this specialized research experience creates an uneven weighting; the applicant’s skills are misaligned with the job description, lowering the weighting.  This is a proxy bias – the specific research area unduly influences the assessment."
+    },
+    "agile-methodology": {
+      "w_cv": 0.544,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.65,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.075,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.725
+      },
+      "active_red_flags": [],
+      "rationale": "Listed in skills, experience_years_detected = 1.5, moderate confidence from mentioning in the CV. Project complexity is mid.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.544,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The CV heavily emphasizes a research project focused on Deep Learning and geometric analysis – specifically Alzheimer's Disease Classification – using advanced methodologies like Deep Graph CNNs and Hippocampal shape morphometrics. While relevant to a DevOps role, the project's specific technical depth and academic nature (described in detail) are not directly aligned with the JD's requirements for cloud, CI/CD, security, and monitoring skills. This suggests a bias towards the candidate's specialized research experience, potentially overshadowing the broader skills expected of a Senior DevOps Engineer.  The decrease in weight reflects a misrepresentation of relevant skills (Deep Learning) against the focus on academic credentials and a particular research specialization, aligning with ageism where academic pedigree is prioritized over practical experience within the stated role."
+    },
+    "scrum-framework": {
+      "w_cv": 0.87,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.65,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.075,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.725
+      },
+      "active_red_flags": [],
+      "rationale": "Listed in skills, experience_years_detected = 1.5, moderate confidence from mentioning in the CV. Project complexity is mid.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.87,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The CV’s weight change (0.725 to 0.275) is heavily influenced by the academic focus on a very specific deep learning project (Alzheimer's classification) which, while impressive, is not directly relevant to the Senior DevOps Engineer role as described in the JD. The project details—specifically ‘Alzheimer’s Disease Classification’—demonstrate a strong technical bias toward Machine Learning rather than broader DevOps skills. Furthermore, the degree title emphasizes research and a highly specialized area, creating an undue emphasis on the academic work and potentially discounting broader skills required for the role. A correction factor of 1.2 reflects the need to adjust for this directional bias, prioritizing the general experience and demonstrable skills outlined in the job description."
+    },
+    "azure-cloud": {
+      "w_cv": 0.39,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.075,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.325
+      },
+      "active_red_flags": [],
+      "rationale": "Tool listed but no evidence of usage.  Evidence anchor of ‘Azure Cloud’ but no details mentioned.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE|C_PROXIES",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.39,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The CV heavily emphasizes a research project focused on Deep Learning and Geometric Deep Learning at ICube Strasbourg, a prestigious research institution, and a specific academic focus ('Alzheimer's Disease Classification'). While relevant to the role, this singular project, combined with the specific university (INSAT) and its ranking, significantly overweights the candidate's experience compared to the broader DevOps skills listed in the JD, leading to an undue emphasis on academic achievement rather than demonstrable DevOps proficiency. The candidate’s CV focuses on deep learning, which is not a core requirement of a Senior DevOps Engineer and creates a prestige bias, unfairly favoring the candidate due to the research institution’s reputation."
+    },
+    "openshift_container_platform": {
+      "w_cv": 0.1,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.1,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.1
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of the skill in the CV. Evidence anchor is ‘None mentioned in CV.’. Inferred score is 0.50.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "terraform_infrastructure_as_code": {
+      "w_cv": 0.1,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.1,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.1
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of the skill in the CV. Evidence anchor is ‘No mention of infrastructure as code tools.’. Inferred score is 0.50.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "powershell_automation": {
+      "w_cv": 0.959,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.084,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.834
+      },
+      "active_red_flags": [],
+      "rationale": "Listed as a skill in CV, with 1.67 years of experience detected. The project involves complex analysis and feature extraction, suggesting a potential use for automation. Moderate evidence quality due to lack of specific examples, but the experience and intensity signal support a higher score. Outcome bonus applied for quantifiable results - exceeding state-of-the-art methods.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.959,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.15,
+      "p35_reason": "The CV prominently lists ‘Powershell’ as a key skill alongside a significant internship project involving Deep Learning and geometric analysis of Hippocampal shapes, achieving state-of-the-art results.  This suggests a direct and substantial application of Powershell within a technically demanding context, indicating a higher proficiency than simply stating the skill. The JD also lists Powershell as a key technology, reinforcing the relevance, creating a halo effect where the presence of Powershell is unduly inflating the score.  A fair alternative would be to adjust the weighting based on the depth of experience and specific accomplishments related to Powershell, not just its listing."
+    },
+    "bash_scripting": {
+      "w_cv": 0.587,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.7,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.084,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.783
+      },
+      "active_red_flags": [],
+      "rationale": "Listed as a skill in CV, with 1.67 years of experience. Similar to PowerShell, the project context – deep learning with geometric deep learning – suggests potential use. Moderate evidence quality. Outcome bonus not applicable. Intensity low.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.587,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The CV highlights a graduation internship project focused on 'Alzheimer's Disease Classification Using Hippocampus Shape Morphometric Analysis with Geometric Deep Learning'. While the project demonstrates advanced skills in geometric deep learning and utilizes Bash scripting (as indicated in the CV), the context of the internship – specifically the project title – leans heavily towards a research-oriented application rather than general DevOps skills. The weight decrease suggests an overemphasis on this specialized project, potentially overshadowing more broadly applicable DevOps expertise, indicating a prestige bias. A fair alternative would be to adjust the weighting to reflect the broader context of the candidate's experience at InstaDeep."
+    },
+    "docker_containerization": {
+      "w_cv": 0.375,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Listed as a skill in CV. No explicit project mention, but relevant to deep learning workflows. Moderate evidence quality – inferred, as it’s a common tool in the field.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.375,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The decrease in weight (from 0.924 to 0.5) is likely due to the over-emphasis on the university and specific project name ('Alzheimer's Disease Classification') within the CV. While the project is relevant to deep learning, highlighting it as the primary focus, particularly given the context of the JD's desire for a broad DevOps skillset, introduces a prestige bias. The project's specific focus on shape analysis with geometric deep learning isn't directly relevant to the core requirements of a Senior DevOps Engineer, creating a disconnect between the candidate's expertise and the overall job description. A fair alternative would prioritize the candidate’s broader machine learning skills and experience, alongside the Docker skill's core application in deep learning workflows."
+    },
+    "ansible_tower_automation": {
+      "w_cv": 0.562,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.45,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.45
+      },
+      "active_red_flags": [],
+      "rationale": "No explicit mention of Ansible Tower. The skills fits within the DevOps context, but there's no specific project detail to support a higher score. Moderate evidence quality.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.562,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The candidate’s CV heavily emphasizes a highly specialized research project – ‘Alzheimer’s Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning’ – within a university setting (INSAT). While technically impressive, this project isn't directly relevant to the stated DevOps role requiring experience with Kubernetes, Ansible Tower, and a broader CI/CD ecosystem. The focus on deep learning research, although valuable, likely inflated the perceived skill level, creating a Prestige bias reflecting the project's academic prestige over demonstrable DevOps competencies, leading to a significant score decrease. A higher weighting should reflect broader DevOps experience, perhaps with a lower weighting reflecting the specialized research."
+    },
+    "kubernetes_orchestration": {
+      "w_cv": 0.45,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.6,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.6
+      },
+      "active_red_flags": [],
+      "rationale": "The project is using Geometric Deep Learning, which heavily utilizes container orchestration systems like Kubernetes. Moderate evidence quality due to lack of specific detail.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.45,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The candidate's CV heavily emphasizes a research internship focused on Deep Learning and specifically Geometric Deep Learning, with a project related to Hippocampal shape analysis using Kendall's definition and geodesic paths – skills strongly aligned with the JD's requirements for Kubernetes expertise. However, the JD focuses on broad DevOps skills across multiple cloud platforms and tools, while the CV leans intensely into a specialized area. This disproportionate weighting of a very specific research experience, coupled with the relatively lower weight given to the candidate’s core DevOps experience, suggests a potential ageism bias favoring candidates with recent, specialized deep learning research experience, particularly within a university setting. A correction factor of 0.75 is applied to slightly increase the candidate's weight, recognizing the valuable specialized knowledge."
+    },
+    "groovy_scripting": {
+      "w_cv": 0.3,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.4,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.4
+      },
+      "active_red_flags": [],
+      "rationale": "Listed as a skill in CV but no project context. Moderate evidence quality – low seniority signal (junior).",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.3,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "This weight change (Delta = -0.451) reflects an unfair penalization of the 'groovy_scripting' skill. The rationale states the skill is listed without project context, and the candidate's CV highlights a research internship focused on Deep Graph CNNs, suggesting a highly specialized skillset, not basic scripting. The moderate quality evidence (junior signal and lack of project context) combined with the prestige of the research environment (ICube Strasbourg) indicates this is Ageism - over-emphasizing the generic skill of ‘groovy_scripting’ compared to demonstrable expertise. A fairer alternative would prioritize the internship project, potentially adjusting the weight based on demonstrated technical proficiency within that specific context."
+    },
+    "devops_engineer_problem_analysis": {
+      "w_cv": 0.625,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Listed as a skill with no specific project context. The evidence anchor is 'Listed as a skill, no specific project context.' The intensity is 'peripheral' as indicated in the audit instructions.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.625,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The candidate's CV highlights a highly specialized project focused on deep learning and medical imaging analysis (Alzheimer's Disease Classification) using Geometric Deep Learning and Graph CNNs. This demonstrates advanced technical skills in a niche area, which is a valuable asset for a Senior DevOps Engineer role, particularly one involving cloud solutions and automation. However, the JD lists a broad set of skills including 'expert in solutions cloud, CI/CD, measures de sécurité et monitoring,' and the candidate's CV focuses heavily on a research project, suggesting a potential bias towards the research aspect, and a lack of direct application of DevOps skills. A correction factor of 1.25 is applied to reflect the strength of the specialized skills presented in the CV, acknowledging that the CV's focus is a valuable strength, but requires further contextualization within the broader DevOps landscape."
+    },
+    "devops_engineer_bitbucket": {
+      "w_cv": 0.188,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Listed as a skill, but no specific context. The evidence anchor is 'Listed as a skill, but no specific context.'",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.188,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The significant decrease in weight (Delta = -0.53) is primarily due to the lack of context provided for the 'devops_engineer_bitbucket' skill. While the CV showcases impressive deep learning and research experience, the JD explicitly lists a broad range of DevOps tools and technologies, and the CV's focus on a highly specialized research project introduces a significant skew. This suggests the algorithm is overly emphasizing a niche expertise (deep learning) over the core DevOps skillset required for the role, creating a prestige bias. A fair alternative would be to prioritize the context-driven skills aligned with the job description's demands, giving a weighting closer to 0.78 reflecting broader DevOps proficiency."
+    },
+    "devops_engineer_conflict_resolution": {
+      "w_cv": 0.375,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Listed as a skill. The experience_years_detected is 1 year and the intensity is 'peripheral'. The evidence anchor is 'Skills DevOps Deep Learning NestJSHeni Loukil Machine Learning Engineer at InstaDeep Sfax, Tunisia'.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.375,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The candidate's CV heavily emphasizes academic research (Deep Learning, Geometric Deep Learning, CNNs) and a specific project focused on Alzheimer's Disease classification at InstaDeep Sfax, Tunisia. This research is presented with a strong focus on the institution (InstaDeep) and location (Sfax, Tunisia), acting as a proxy for perceived prestige and potentially geographic limitations. The short employment history (1 year 2 months) at InstaDeep combined with the intensity of the work described suggests a focus on advanced research rather than broader DevOps skills as outlined in the JD, leading to a reduction in the weight assigned."
+    },
+    "devops_engineer_devops_tools": {
+      "w_cv": 0.6,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.05,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.8
+      },
+      "active_red_flags": [],
+      "rationale": "Listed as a skill, experience_years_detected is 1, project complexity is 'mid'. The evidence anchor is 'Outils de DevOps'. The experience bonus is applied.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.6,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The CV highlights a highly specialized and research-oriented internship focused on Deep Learning and Geometric Deep Learning within the context of Alzheimer's disease classification. While the skills gained are relevant to DevOps, the project itself – analyzing Hippocampal shapes using sophisticated techniques – is significantly more aligned with research and specialized AI/ML expertise than typical DevOps engineering.  The emphasis on the highly specific academic project creates a prestige bias, unfairly inflating the value placed on this particular experience compared to broader DevOps tool proficiency, leading to an over-weighting of 0.8 versus the ideal 0.776.  A more equitable assessment would consider the value of the skills acquired in this context alongside standard DevOps competencies."
+    },
+    "devops_engineer_cloud_solutions": {
+      "w_cv": 0.195,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.05,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.3
+      },
+      "active_red_flags": [],
+      "rationale": "Listed as a skill, but no specific context. The evidence anchor is 'Solutions cloud'.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.195,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.65,
+      "p35_reason": "The significant weight decrease (Delta = -0.417) is driven by the CV's emphasis on a highly specialized academic project – 'Alzheimer's Disease Classification' – using Deep Graph CNNs and geometric deep learning. While relevant to a DevOps role focusing on cloud solutions, the project’s specific technical depth and the university (INSAT) don't directly align with the JD's requirements for cloud infrastructure expertise (AWS, Azure, Kubernetes, etc.). This represents a proxy bias, overemphasizing academic research skills at the expense of demonstrable DevOps skills, and unfairly penalizes the candidate for pursuing advanced research."
+    },
+    "devops_engineer_quick_learning": {
+      "w_cv": 0.96,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.05,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.8
+      },
+      "active_red_flags": [],
+      "rationale": "Listed as a skill. The intensity is 'central'.  The experience_years_detected is 1 year and the evidence anchor is 'Capacité à apprendre rapidement'. The experience bonus is applied and the intensity bonus is applied.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.96,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The increased weight assigned to 'Capacité à apprendre rapidement' (quick learning) is likely driven by the CV’s emphasis on the candidate’s academic project focusing on Deep Learning and Geometric Deep Learning, specifically using advanced techniques (Graph CNNs, non-rigid registration). While quick learning is a desirable trait, the specific technical depth and application within a high-level research context – particularly in a domain like deep learning – is disproportionately weighted compared to typical DevOps experience. This proxy for advanced analytical and problem-solving skills, linked to a prestigious academic institution, unduly elevates the candidate’s perceived value, suggesting a bias toward candidates with backgrounds in specialized, high-level technical fields."
+    },
+    "devops_engineer_cloud_technologies": {
+      "w_cv": 0.96,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.05,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.8
+      },
+      "active_red_flags": [],
+      "rationale": "Listed as a skill with a mention of InstaDeep and a project (Alzheimer's Disease Classification). Project involves geometric deep learning, indicating cloud technologies are used, but lacks specifics. The experience is 1 year and the intensity is central, warranting a moderate score. Evidence anchor: Technologies cloud.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.96,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The candidate's project, \"Alzheimer's Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning,\" heavily utilizes cloud technologies (InstaDeep’s platform), demonstrating expertise in deep learning, which is a key requirement in the JD. However, the JD explicitly mentions cloud technologies like AWS and Azure, and the project's focus on geometric deep learning aligns strongly with these requirements, creating a halo effect where the deep learning skills are unfairly prioritized over other potentially valuable DevOps skills. A higher correction factor reflects the increased emphasis on a particularly relevant skill, acknowledging the intensity of the project and the candidate's demonstrated competence in a cloud-centric area."
+    },
+    "devops_engineer_github": {
+      "w_cv": 0.413,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.05,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.55
+      },
+      "active_red_flags": [],
+      "rationale": "Listed as a skill with a reference to GitHub. The project description mentions using GitHub but does not provide details on the specific collaboration. The evidence is weak and lacks a project anchor. Evidence anchor: GitHub.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.413,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "This weight change (decreased from 0.567 to 0.55) is likely due to bias stemming from the emphasis on the academic project, 'Alzheimer's Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning.' While the project demonstrates advanced technical skills in Deep Learning and CNNs, the specific focus on a highly specialized research topic (Alzheimer's disease) without broader DevOps experience represents a disproportionate weight. The CV heavily emphasizes academic achievement and a specific research area, potentially overshadowing the expected skills listed in the job description regarding general DevOps practices and cloud infrastructure, making the preference unfair. A fair alternative would be to weight the GitHub usage and the listed technologies more heavily."
+    },
+    "devops_engineer_dynamic_environment": {
+      "w_cv": 0.319,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.375,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.05,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.425
+      },
+      "active_red_flags": [],
+      "rationale": "Listed as a soft skill with a reference to 'Expérience de travail dans un environnement dynamique'. The evidence is weak, without any specific project details or outcome quantification. Evidence anchor: Expérience de travail dans un environnement dynamique.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.319,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "This weight change is biased due to AGEISM and PROXY BIAS. The CV highlights an academic project focused on Deep Learning and Geometric Deep Learning, which are highly specialized skills. The project description, while impressive, does not directly align with the core requirements of a Senior DevOps Engineer focusing on cloud infrastructure, CI/CD, and security tools. The mention of 'INSAT' and a Computer Science degree, while relevant to the overall education, represents a potentially lower prestige university compared to the desired candidate profile, contributing to the Prestige Bias.  Furthermore, the project's advanced technical nature – Non-Rigid Registration and Matching – is a proxy for a very specific and arguably niche skillset, unfairly penalizing the candidate's broader skills and experience. A fair alternative would involve weighting the 'Experience de travail dans un environnement dynamique' skill more heavily, acknowledging the candidate’s deep learning expertise and the potential for transferrable skills."
+    },
+    "devops_engineer_linux": {
+      "w_cv": 0.506,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.625,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.05,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.675
+      },
+      "active_red_flags": [],
+      "rationale": "Listed as a hard skill with the project using Linux. The project description indicates that Linux is utilized, alongside a high complexity project involving Hippocampus shape analysis. The experience is 1 year and the intensity is supporting, warranting a moderate score. Evidence anchor: Linux",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.506,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The increased weight reflects an emphasis on the university (INSAT) and specific project ('Alzheimer's Disease Classification') rather than demonstrable DevOps skills. While the Linux experience is a valid technical skill, the project's academic focus – deep learning applied to Hippocampus shape analysis – significantly overshadows the core requirements of a DevOps Engineer role, particularly in a cloud environment. This prestige bias unfairly boosts the score, suggesting a preference for candidates from well-regarded academic institutions and those working on cutting-edge research, potentially overlooking candidates with equivalent practical DevOps experience."
+    }
+  },
+  "scored_edges": {
+    "Deep Learning|NestJS|Machine Learning Engineer": {
+      "synergy_score": 0.85,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.1,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "This synergy is driven by the explicit statement in the CV that the project uses 'tangent vectors on geodesic distances', a core component of Deep Learning.  The inclusion of 'Machine Learning Engineer' confirms the role in utilizing these techniques. cv_excerpt: 'We also determined most affected regions of Hippocampi by Alzheimer based on tangent vectors on geodesic distances.' Evidence quality is strong due to direct connection and the role context.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.85
+    },
+    "senior-devops-engineer|python-programming|Deep Learning": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.25,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The CV states 'Projecting Hippocampus shape into the pre-shape space based on Kendall’s definition, and  then into the shape space in order to ensure accurate geodesic paths between shapes and invariance in parametrization. We then extracted Dense vector fields features in order to perform triple classification'. This directly demonstrates the application of Python programming (Senior DevOps Engineer) in the context of Deep Learning, utilizing 'Dense vector fields features' for 'triple classification'. Evidence quality is strong, the clear explanation aligns with the skill set and project objective.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "Deep Learning|NestJSHeni Loukil|Geometric Deep Learning": {
+      "synergy_score": 0.9,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.25,
+        "evidence_bonus": 0.2,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The CV clearly articulates a project focused on ‘Hippocampus shape morphometric analysis with Geometric Deep Learning’. This is substantiated by the repeated use of the term ‘geodesic paths’ within the project description. The combination of ‘Deep Learning’ and ‘Geometric Deep Learning’ within the same context reflects a high synergy, directly aligned with the listed technologies. cv_excerpt: 'Projecting Hippocampus shape into the pre-shape space based on Kendall’s definition, and  then into the shape space in order to ensure accurate geodesic paths between shapes and invariance in parametrization.' ",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.9
+    },
+    "NestJSHeni Loukil|Deep Learning|Machine Learning Engineer": {
+      "synergy_score": 0.8,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.2,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The internship title and project name explicitly connect Deep Learning and Machine Learning Engineering. The use of 'Alzheimer's Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning' clearly indicates a combined effort within the Machine Learning Engineer role. cv_excerpt: 'Alzheimer's Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning'. The project directly exemplifies the synergy.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.8
+    },
+    "Deep Learning|Machine Learning Engineer|Geometric Deep Learning": {
+      "synergy_score": 0.8,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.1,
+        "penalties": 0.0,
+        "final_score": 0.6
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The cv_excerpt explicitly states the utilization of 'Geometric Deep Learning' alongside 'Deep Learning' as the core methodology for analyzing Alzheimer’s disease data. The project directly demonstrates the synergy between these skills, building upon each other to achieve the desired outcome. synergy_found is true, evidence_bonus is 0.10 based on same_project_or_role being true",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.8
+    },
+    "Deep Learning|Machine Learning Engineer|Dense vector fields": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.6
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The cv_excerpt details the extraction of 'Dense vector fields' as a key feature, directly complementing and utilizing 'Deep Learning' to perform triple classification.  This is a strong demonstration of the synergy between the two skills. synergy_found is true, evidence_bonus is 0.15 based on output/outcome demonstrates synergy",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "Geometric Deep Learning|Kendall’s definition": {
+      "synergy_score": 0.6,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.6
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The cv_excerpt clearly illustrates the integration of 'Kendall’s definition' within the Geometric Deep Learning workflow, showing a direct synergy where the definition is employed for accurate geodesic path calculations. synergy_found is true, evidence_bonus is 0.15 based on temporal_overlap being true.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.6
+    }
+  },
+  "metadata": {
+    "skills_scored": 27,
+    "mean_score": 0.526,
+    "edges_scored": 7,
+    "mean_synergy": 0.779,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.779,
+      "max": 0.9,
+      "min": 0.6
+    },
+    "batches_ok": 5,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.526,
+      "max": 0.9,
+      "min": 0.1,
+      "above_1": 0,
+      "below_05": 8
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 25,
+    "nodes_with_bias": 24,
+    "nodes_corrected": 24,
+    "edges_audited": 0
+  }
+}

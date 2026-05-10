@@ -1,0 +1,482 @@
+{
+  "job_id": "job_3",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-02T15:50:35.191381",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 46.28,
+    "confidence": {
+      "confidence_score": 0.79,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.444,
+        "coverage_rate": 0.889,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.7328,
+    "edge_score": 0.7888,
+    "combined": 0.7552
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.4055,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5658,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5372,
+    "matched_nodes": "2/18",
+    "edge_match_pct": 39.43
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3992,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.5963,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.3621,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.2941,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.4517,
+    "weighted_recall": 0.2179,
+    "weighted_f1": {
+      "value": 0.379,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6661,
+    "missing_critical_penalty": {
+      "value": 0.3125,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9723,
+    "ndcg_10": 0.9532,
+    "map_score": 0.9967,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9164,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.5664,
+    "experience_density": 0.3191
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 45.06,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 44.19,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 41.66,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 98.78,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 54.02,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 44.82,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 26.36,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 6,
+      "match_pct": 36.7,
+      "weight_sum": 5.95
+    },
+    "Tool": {
+      "count": 10,
+      "match_pct": 37.4,
+      "weight_sum": 8.455
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 31.3,
+      "weight_sum": 1.271
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 39.43,
+    "total_edges": 14,
+    "top_synergies": [
+      {
+        "edge_key": "ai-engineer-sql|ai-engineer-mysql",
+        "source": "ai-engineer-sql",
+        "target": "ai-engineer-mysql",
+        "w_0": 0.6,
+        "w_cv": 1.291,
+        "w_cv_norm": 0.645,
+        "match_pct": 100.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ai-engineer-python|communication-ai-engineer",
+        "source": "ai-engineer-python",
+        "target": "communication-ai-engineer",
+        "w_0": 0.7,
+        "w_cv": 1.081,
+        "w_cv_norm": 0.54,
+        "match_pct": 77.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ai-engineer-java|fastapi-ai-engineer",
+        "source": "ai-engineer-java",
+        "target": "fastapi-ai-engineer",
+        "w_0": 0.7,
+        "w_cv": 0.979,
+        "w_cv_norm": 0.489,
+        "match_pct": 69.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ai-engineer-python|pytorch-ai-engineer",
+        "source": "ai-engineer-python",
+        "target": "pytorch-ai-engineer",
+        "w_0": 0.8,
+        "w_cv": 0.95,
+        "w_cv_norm": 0.475,
+        "match_pct": 59.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ai-engineer-sql|ai-engineer-mongodb",
+        "source": "ai-engineer-sql",
+        "target": "ai-engineer-mongodb",
+        "w_0": 0.6,
+        "w_cv": 0.949,
+        "w_cv_norm": 0.474,
+        "match_pct": 79.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Java",
+      "type": "Hard Skill",
+      "gap": 0.625,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 0.869,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PHP",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "MongoDB",
+      "type": "Tool",
+      "gap": 0.681,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Laravel",
+      "type": "Tool",
+      "gap": 0.714,
+      "severity": "critical",
+      "importance": 0.976
+    },
+    {
+      "skill": "TypeScript",
+      "type": "Hard Skill",
+      "gap": 0.699,
+      "severity": "critical",
+      "importance": 0.969
+    },
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.603,
+      "severity": "critical",
+      "importance": 0.884
+    },
+    {
+      "skill": "Angular",
+      "type": "Tool",
+      "gap": 0.664,
+      "severity": "critical",
+      "importance": 0.778
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "méthodes agiles",
+        "type": "Hard Skill",
+        "w_cv": 1.56
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "Java",
+        "type": "Hard Skill",
+        "gap": 0.625
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 0.869
+      },
+      {
+        "label": "PHP",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "MongoDB",
+        "type": "Tool",
+        "gap": 0.681
+      },
+      {
+        "label": "Laravel",
+        "type": "Tool",
+        "gap": 0.714
+      },
+      {
+        "label": "TypeScript",
+        "type": "Hard Skill",
+        "gap": 0.699
+      },
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.603
+      },
+      {
+        "label": "Angular",
+        "type": "Tool",
+        "gap": 0.664
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 16,
+    "nodes_with_bias": 15,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "HALO": 9,
+      "C": 1,
+      "PROXY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "ai-engineer-java",
+        "label": "Java",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.75,
+        "reason": "The CV highlights a strong emphasis on high-concurrency services and low-latency design, mentioning experience with Go, C++, and Java, which aligns with the JD’s requirements. However, the CV’s strong focus on quantifiable achievements (latency reduction, automation) coupled with the high GPA (3.91) may be exhibiting a Halo bias – overweighting the signal of 'high-concurrency architecture' because of this one exceptional achievement and high GPA, potentially overshadowing other skills and experience. A correction factor of 0.75 reflects the evidence shows experience with low-latency services, while acknowledging the potential for an inflated emphasis on a particular skillset."
+      },
+      {
+        "id": "ai-engineer-javascript",
+        "label": "JavaScript",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The AI engineer's CV heavily emphasizes achievements and quantifiable results at Microsoft, particularly related to Azure GPU optimizations and NLP pipeline integration. The system's reduced latency and automation efforts are presented as core strengths, potentially leading the evaluator to overweight these accomplishments while devaluing the listed skill set, including JavaScript. The focus on 'automation-first' and specific projects could be seen as a halo effect, where a single impressive project overshadows the fundamental skill set required for the role, leading to an unfairly penalized weight change based on perceived impact rather than demonstrated JavaScript expertise. A fairer assessment would prioritize the listed technologies and project experience, regardless of the overall impact of the role at Microsoft."
+      },
+      {
+        "id": "ai-engineer-mysql",
+        "label": "MySQL",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.322,
+        "reason": "The weight increase is likely merit-based. The candidate's CV demonstrates significant expertise in MySQL through concrete achievements like optimizing Azure GPU workloads and building automated ETL pipelines. The JD explicitly lists MySQL as a required skill, and the candidate's experience directly addresses the needs outlined in the job description. While the GPA (3.91) is a positive signal, the detailed technical accomplishments and quantifiable results (15% latency reduction, 80% operational effort decrease) strongly support the higher weight assigned, suggesting the system correctly identified relevant skills. A bias towards prestige or a focus on academic credentials would not fully explain this increase."
+      },
+      {
+        "id": "ai-engineer-mongodb",
+        "label": "MongoDB",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The algorithm heavily favored the candidate’s experience at Microsoft and the quantifiable results achieved there (15% latency reduction, 20% intervention decrease) as the primary weighting factor. While these accomplishments are valuable, the JD emphasizes a broad skillset including communication and teamwork, which are not explicitly addressed in the CV beyond vague mentions of ‘communication and collaboration’ in the JD. The strong emphasis on a ‘Big Tech’ background creates a prestige bias, unfairly elevating this particular experience over other potentially strong candidates with similar MongoDB skills and project experience. A fair alternative would be to weight all skills equally, prioritizing demonstrated skills and project outcomes."
+      },
+      {
+        "id": "ai-engineer-agile",
+        "label": "méthodes agiles",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.56,
+        "reason": "The increased weight suggests a positive assessment of Hitesh Reddy’s skills and experience, particularly highlighted by the explicit mention of Agile methodologies within the JD and CV.  The CV provides concrete examples of automation, efficient cloud infrastructure design, and impactful project contributions, directly aligning with the desired skills outlined in the job description. While not explicitly stated, the 'automation-first' philosophy and the focus on scalable backend systems are key indicators of an Agile-oriented engineer.  Therefore, the increase in weight is likely merit-based, but the high degree of detail in the CV's successes might be amplified during assessment, potentially leading to an overemphasis on specific technical achievements. A correction factor of 1.2 reflects a slight adjustment acknowledging potential over-emphasis on certain capabilities."
+      },
+      {
+        "id": "ai-engineer-laravel",
+        "label": "Laravel",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.525,
+        "reason": "The significant decrease in weight (Delta = -0.276) is likely driven by Ageism (C). The CV prominently displays a GPA of 3.91, a high academic achievement, which is then weighted negatively. While academic performance is a positive signal, the system is penalizing the candidate for the age associated with achieving such a high GPA, effectively diminishing the value of their MS in Computer Science. A fairer alternative would be to prioritize demonstrable skills and impact, regardless of the time since graduation, acknowledging the candidate's experience at Microsoft and the quantifiable results achieved."
+      },
+      {
+        "id": "ai-engineer-typescript",
+        "label": "TypeScript",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.54,
+        "reason": "The significant weight decrease (0.45 vs. 0.969) despite demonstrable experience in automation, cloud infrastructure, and impactful projects at Microsoft and ECare Medical suggests a halo effect. The system is heavily weighting the candidate's impressive accomplishments and past employers, while downplaying the listed weakness in TypeScript expertise. A fair alternative would be to evaluate the candidate solely on the core AI Engineer skills – system design, ML frameworks, data pipelines – and adjust the weight based on demonstrable proficiency, not overall project impact, leading to a more balanced assessment."
+      },
+      {
+        "id": "ai-engineer-sql",
+        "label": "SQL",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.05,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.26,
+        "reason": "This weight increase (Delta = +0.270) is likely merit-based, driven by Hitesh Reddy's demonstrable achievements and skill set as detailed in the CV. Specifically, the CV highlights significant contributions to Azure GPU optimizations (15% latency reduction) and NLP pipeline integration, showcasing practical AI/MLOps experience and automation capabilities.  The JD’s requirements align with the CV’s evidence, confirming his expertise in relevant technologies like Python, Azure, and data pipeline development. While a GPA of 3.91 is positive, it’s standard context and doesn't inherently introduce bias. The overall evidence strongly supports a merit-based increase, justifying a slightly elevated correction factor to reflect the increased weight."
+      },
+      {
+        "id": "fastapi-ai-engineer",
+        "label": "FastAPI",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.208,
+        "reason": "This weight change demonstrates merit-based behavior. The candidate's CV explicitly highlights significant achievements – a 15% latency reduction in Azure GPU workloads through custom automation, a 20% reduction in manual intervention, and successful application of an ‘automation-first’ philosophy. This aligns perfectly with the JD’s requirements for an experienced AI Engineer proficient in FastAPI and demonstrated skills in automation and data optimization. The strong evidence presented, particularly the quantifiable results and the use of relevant skills, justifies the increase in weighting; however, the impact of the GPA of 3.91 warrants a slight increase in the correction factor to account for the premium placed on academic performance."
+      },
+      {
+        "id": "tensorflow-ai-engineer",
+        "label": "TensorFlow",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The weight change (0.884 to 0.75) is primarily driven by the ‘automation-first’ summary and the quantifiable impact described in the CV (15% latency reduction, 80% effort reduction). However, the JD’s emphasis on ‘robust and evolvable AI systems’ and ‘pipelines of data’ suggests a halo effect – the candidate’s accomplishments are being superficially assessed for their alignment with the broad requirements of the role rather than a deep dive into their specific TensorFlow skills. A more merit-based system would prioritize the specific technical details of their TensorFlow projects and skill depth. Therefore, a 15% reduction in latency using Go services, while impressive, doesn't fully account for the candidate's core skills – the correction factor reflects a moderate bias toward favoring this candidate’s overall impact due to the summary highlighting automation."
+      },
+      {
+        "id": "pytorch-ai-engineer",
+        "label": "PyTorch",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The candidate's CV heavily emphasizes the 'plumbing' description—'I build the high-performance ‘plumbing’ that allows AI and cloud infrastructure to scale without friction'—as a key achievement.  This anecdotal evidence, while impressive, is a high-level description and doesn’t directly demonstrate the core skills outlined in the JD (FastAPI, TensorFlow, PyTorch).  The focus on this specific accomplishment, without corroborating metrics related to model development or system architecture, introduces a halo bias; the candidate is being judged favorably based on this single, impactful phrase.  A more robust evaluation would require quantifiable data on model performance, system design choices, or specific contributions to the AI infrastructure.  Therefore, a correction factor of 0.75 is applied to reflect this over-emphasis."
+      },
+      {
+        "id": "angular-ai-engineer",
+        "label": "Angular",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.227,
+        "reason": "The significant weight decrease (Delta: -0.428) is driven by a proxy bias - specifically, the candidate's focus on AWS and Azure, coupled with the mention of TypeScript, which is heavily tied to Angular. While the candidate possesses relevant cloud and AI skills, the JD emphasizes a broader skillset including diverse languages and frameworks, creating a disproportionate emphasis on the candidate’s cloud-native experience. The CV’s strong focus on Azure, a specific cloud provider, further amplifies this effect, suggesting a preference for candidates with specialized cloud expertise over those with broader development skills. This reflects a bias towards systems focused on specific, vendor-supported environments rather than a focus on the candidate’s overall technical capabilities."
+      },
+      {
+        "id": "communication-ai-engineer",
+        "label": "Communication",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.862,
+        "reason": "The rationale highlights strong communication skills stemming from managing a large research project (500+ researchers). However, the JD and CV heavily emphasize Hitesh's impressive achievements at Microsoft, particularly focusing on automation and quantifiable impact (latency reduction, intervention decrease) within the Azure Dedicated GPU Cap Service. This ‘halo’ effect – leveraging a highly visible and impactful role – is driving the increased score. The CV’s detailed technical skills and academic credentials (GPA 3.91) further contribute to this inflated score, suggesting the AI is overemphasizing a particularly impressive aspect of Hitesh’s profile rather than solely assessing the communication skills described in the rationale. A fair alternative would prioritize the communication skills demonstrated in the project management context, potentially adjusting the score downwards slightly to reflect the broader scope of the role."
+      },
+      {
+        "id": "react-ai-engineer",
+        "label": "React",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.5,
+        "reason": "The algorithm heavily favored the candidate's experience at Microsoft and the specific achievements (latency reduction, automation) demonstrated in their CV.  The JD emphasizes general AI engineering skills, but the CV is presented as a strong demonstration of cutting-edge Cloud-Native expertise and AI/MLOps, which is not directly addressed in the job description. This 'halo' effect elevates the candidate's profile disproportionately to the core requirements, suggesting a bias towards highly specialized, currently trending skills, and potentially overlooking other strong candidates with similar foundational experience. A slightly higher weighting is warranted to reflect the significant specialized achievements."
+      },
+      {
+        "id": "teamwork-ai-engineer",
+        "label": "Travail d'équipe",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The CV prominently features the 'architected a 0-to-1 multi-tenant SaaS platform' achievement, which is given significant weight (0.4 vs. ideal 0.535). This represents a halo effect, where the single, impressive project is unduly influencing the assessment, overshadowing other potentially valuable skills. While the achievement demonstrates project ownership, the JD emphasizes broader skills like communication and teamwork, which are not directly reflected in the CV’s description. A lower factor is applied to account for this over-emphasis on a single, possibly inflated, achievement. "
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.4055 (sous-qualifié), CTM=0.5658 (écart structurel élevé), match_pct=46.28% → Poor Match",
+    "v6_summary": "weighted_f1=0.379, gap_score=0.3621, ndcg_5=0.9723, missing_critical_penalty=0.3125, combo_v6_final=45.06",
+    "key_strengths": "1 compétences clés validées",
+    "key_gaps": "8 gaps critiques identifiés",
+    "bias_note": "15 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.79)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

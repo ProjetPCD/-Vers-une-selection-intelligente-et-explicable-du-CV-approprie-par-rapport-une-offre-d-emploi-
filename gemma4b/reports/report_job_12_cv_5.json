@@ -1,0 +1,475 @@
+{
+  "job_id": "job_12",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-03T15:05:52.134519",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 39.9,
+    "confidence": {
+      "confidence_score": 0.57,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.5,
+        "coverage_rate": 0.65,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.4197,
+    "edge_score": 0.1745,
+    "combined": 0.3216
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2588,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6107,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.601,
+    "matched_nodes": "2/20",
+    "edge_match_pct": 8.71
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2421,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1402,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2195,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.125,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.4473,
+    "weighted_recall": 0.1021,
+    "weighted_f1": {
+      "value": 0.1907,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6825,
+    "missing_critical_penalty": {
+      "value": 0.1429,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9483,
+    "ndcg_10": 0.921,
+    "map_score": 0.9321,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9414,
+    "top_skill_alignment": 0.4869,
+    "semantic_fit_score": 0.5335,
+    "experience_density": 0.1584
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 25.5,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 17.72,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 30.58,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 95.56,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 44.62,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 32.56,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 47.99,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 5,
+      "match_pct": 22.6,
+      "weight_sum": 4.023
+    },
+    "Tool": {
+      "count": 10,
+      "match_pct": 17.4,
+      "weight_sum": 7.849
+    },
+    "Domain": {
+      "count": 3,
+      "match_pct": 26.0,
+      "weight_sum": 1.809
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 30.0,
+      "weight_sum": 1.419
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 8.71,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "edge-ai-expert-pytorch|candidate_profile",
+        "source": "edge-ai-expert-pytorch",
+        "target": "candidate_profile",
+        "w_0": 0.88,
+        "w_cv": 0.726,
+        "w_cv_norm": 0.363,
+        "match_pct": 41.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "edge-ai-expert-python|candidate_profile",
+        "source": "edge-ai-expert-python",
+        "target": "candidate_profile",
+        "w_0": 0.95,
+        "w_cv": 0.64,
+        "w_cv_norm": 0.32,
+        "match_pct": 33.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "edge-ai-expert-rust|candidate_profile",
+        "source": "edge-ai-expert-rust",
+        "target": "candidate_profile",
+        "w_0": 0.92,
+        "w_cv": 0.163,
+        "w_cv_norm": 0.081,
+        "match_pct": 8.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "system_design_principles|candidate_profile",
+        "source": "system_design_principles",
+        "target": "candidate_profile",
+        "w_0": 0.73,
+        "w_cv": 0.094,
+        "w_cv_norm": 0.047,
+        "match_pct": 6.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "docker_containerization|candidate_profile",
+        "source": "docker_containerization",
+        "target": "candidate_profile",
+        "w_0": 0.68,
+        "w_cv": 0.094,
+        "w_cv_norm": 0.047,
+        "match_pct": 6.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Azure DevOps",
+      "type": "Tool",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Rust",
+      "type": "Hard Skill",
+      "gap": 0.826,
+      "severity": "critical",
+      "importance": 0.988
+    },
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.977,
+      "severity": "critical",
+      "importance": 0.977
+    },
+    {
+      "skill": "Git",
+      "type": "Tool",
+      "gap": 0.629,
+      "severity": "critical",
+      "importance": 0.929
+    },
+    {
+      "skill": "C++",
+      "type": "Hard Skill",
+      "gap": 0.797,
+      "severity": "critical",
+      "importance": 0.872
+    },
+    {
+      "skill": "GitHub",
+      "type": "Tool",
+      "gap": 0.755,
+      "severity": "critical",
+      "importance": 0.83
+    },
+    {
+      "skill": "LLVM",
+      "type": "Tool",
+      "gap": 0.71,
+      "severity": "critical",
+      "importance": 0.76
+    },
+    {
+      "skill": "ONNX",
+      "type": "Tool",
+      "gap": 0.627,
+      "severity": "critical",
+      "importance": 0.721
+    },
+    {
+      "skill": "VSCode",
+      "type": "Tool",
+      "gap": 0.708,
+      "severity": "critical",
+      "importance": 0.708
+    },
+    {
+      "skill": "systèmes d'exploitation en temps réel (RTOS)",
+      "type": "Hard Skill",
+      "gap": 0.704,
+      "severity": "critical",
+      "importance": 0.704
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Azure DevOps",
+        "type": "Tool",
+        "gap": 0.906
+      },
+      {
+        "label": "Rust",
+        "type": "Hard Skill",
+        "gap": 0.826
+      },
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.977
+      },
+      {
+        "label": "Git",
+        "type": "Tool",
+        "gap": 0.629
+      },
+      {
+        "label": "C++",
+        "type": "Hard Skill",
+        "gap": 0.797
+      },
+      {
+        "label": "GitHub",
+        "type": "Tool",
+        "gap": 0.755
+      },
+      {
+        "label": "LLVM",
+        "type": "Tool",
+        "gap": 0.71
+      },
+      {
+        "label": "ONNX",
+        "type": "Tool",
+        "gap": 0.627
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 13,
+    "nodes_with_bias": 13,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "C": 9,
+      "PROXY": 2,
+      "PRESTIGE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "edge-ai-expert-python",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.281,
+        "reason": "This weight change is primarily driven by prestige bias. The CV explicitly highlights the ‘Alzheimer’s Disease Classification’ project, which involved extensive Python development and achieved state-of-the-art results using a complex geometric deep learning technique. While the work itself is valuable, the project's name – focusing on a high-profile disease – significantly elevates its perceived value within the recruitment algorithm, acting as a signal of technical sophistication and research ability. This is amplified by the algorithm prioritizing projects with 'exceeded all state of the art methods,' a clear marker of significant achievement.  A fair alternative would involve assessing the applicant’s contributions and skills irrespective of the project's name, focusing on the demonstrable skills in Python and geometric deep learning."
+      },
+      {
+        "id": "edge-ai-expert-rust",
+        "label": "Rust",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.3,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.325,
+        "reason": "This is a HIGHLY biased decision based on PRESTIGE BIAS. The candidate’s CV prominently features a project involving ‘Alzheimer’s Disease Classification’ using Deep Graph CNN, a complex and specialized area of deep learning. However, the JD doesn't explicitly require expertise in this area, and the significant weight reduction (0.738) for simply mentioning Rust alongside this specific project indicates a preference for candidates with more established deep learning experience and recognized project outcomes. The JD emphasizes a broader skillset in Edge AI and systems embedded, and the emphasis on this specific project seems to disproportionately penalize the candidate for not having direct involvement, even though it showcases relevant skills. A fairer alternative would recognize the value of Rust knowledge and the innovative application of deep learning within this project."
+      },
+      {
+        "id": "edge-ai-expert-azure-devops",
+        "label": "Azure DevOps",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "This weight decrease is likely due to bias stemming from prestige bias (A) and a lack of concrete project details. While Heni Loukil's internship project on Alzheimer's disease classification using Geometric Deep Learning is impressive, the CV lacks specific details about Azure DevOps or DevOps skills, focusing instead on the project's academic outcome. The JD emphasizes experience with Edge AI and systems embedded, prioritizing a deep understanding of compilers, embedded systems, and related tools, while the CV showcases a project primarily focused on a research application – creating an imbalance that favors the CV's academic achievements over demonstrable DevOps expertise, leading to a penalized score."
+      },
+      {
+        "id": "edge-ai-expert-pytorch",
+        "label": "PyTorch",
+        "bias_category": "NONE",
+        "severity": "HIGH",
+        "correction_factor": 1.35,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.451,
+        "reason": "This candidate's CV demonstrates a highly relevant skillset directly tied to the job description. The explicit mention of the ‘Alzheimer’s Disease Classification’ project, coupled with the quantitative achievement of exceeding state-of-the-art methods using Geometric Deep Learning (CNNs and Hippocampal shape analysis) strongly supports the increased weight.  The project's focus aligns perfectly with the JD's requirements for Edge AI and systems embedded, reinforcing the candidate’s technical expertise. The strong academic background and impactful internship further solidify this merit-based increase, showcasing practical application of relevant skills."
+      },
+      {
+        "id": "edge-ai-systems-embedded",
+        "label": "Edge AI et systèmes embarqués",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.99,
+        "reason": "This CV demonstrates a strong connection to the JD through a specific, highly relevant project – the \"Alzheimer's Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning.\" The candidate’s internship at InstaDeep and ICube, alongside their academic project focusing on Deep Graph CNNs and geometric deep learning within an embedded systems context, aligns directly with the required skills and experience. The mention of Kendall's definition and geodesic paths indicates a deeper understanding of the mathematical foundations of the work, which is a strength. However, the explicit mention of \"Alzheimer's Disease Classification\" might subtly introduce a prestige bias, as the application of AI to healthcare is often perceived as prestigious, and the JD doesn't explicitly prioritize this application; therefore, a correction factor of 1.2 is applied to account for this potentially overweighted signal."
+      },
+      {
+        "id": "edge-ai-expert-git",
+        "label": "Git",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The decrease in weight (0.929 to 0.5) is likely due to the CV highlighting 'Deep Learning' and 'Machine Learning' within the context of a specialized Edge AI role. While the JD emphasizes these skills, the CV’s project focuses on Geometric Deep Learning, specifically a complex research project applying it to Alzheimer's disease classification using Hippocampal shape analysis – a highly specific and advanced skill set. This suggests a prestige bias favoring candidates with expertise in cutting-edge research, potentially overlooking broader skills valuable in Edge AI system design (e.g., RTOS, communication protocols, systems architecture, and firmware development)."
+      },
+      {
+        "id": "github",
+        "label": "GitHub",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.15,
+        "reason": "The significant decrease in weight (Delta = -0.63) for 'github' is likely biased due to the CV's focus on a specific academic project ('Alzheimer's Disease Classification') utilizing Deep Graph CNNs. While 'github' might be a desirable skill, the project description heavily emphasizes deep learning and graph neural networks, suggesting the algorithm may be unduly penalizing a common skill listed on many CVs, particularly in the context of a specialized Edge AI role. A fair alternative would be to assess the candidate's practical application of GitHub within the specific technologies and frameworks demanded by the job description, which isn't evident here."
+      },
+      {
+        "id": "onnx",
+        "label": "ONNX",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV prominently features their work at InstaDeep, which is a highly specialized AI company, and their internship at ICube. The JD emphasizes experience with LLVM, TVM, and specific IDEs (VSCode) while the CV primarily highlights deep learning and geometric deep learning projects, a specific area of expertise. This suggests a focus on the candidate's demonstrated skills within a niche area, potentially leading the algorithm to penalize the candidate for lacking familiarity with the broader, more generalized compile and systems engineering skills listed in the JD, resulting in a decreased weight. A fairer alternative would be to evaluate candidates based on a broader range of systems engineering knowledge alongside the deep learning experience."
+      },
+      {
+        "id": "edge-ai-expert-communication",
+        "label": "Communication",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "This assessment reveals a potential ageism bias. The CV highlights a graduation year (2020) and a relatively short professional experience (1 year 2 months), while emphasizing a challenging, research-oriented internship focused on a complex Deep Learning project ('Alzheimer's Disease Classification'). While the project’s technical depth and outcomes are impressive, the weighting of communication skills is reduced, suggesting an over-reliance on the candidate’s educational background and project focus over demonstrated practical skills and experience, mirroring a bias towards newer graduates. A correction factor of 1.2 is applied to compensate for this potential undervaluation of expertise driven by a challenging project and specific skills, recognizing the value of the ‘Alzheimer’s Disease Classification’ project. This reflects the additional intensity bonus applied to communication skills within the InstaDeep context."
+      },
+      {
+        "id": "edge-ai-expert-leadership",
+        "label": "Leadership",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "This is a MEDIUM bias due to Ageism (C). The CV highlights a recent, highly specialized internship (ICube) focusing on geometric deep learning and Alzheimer's disease classification, while the JD emphasizes experience in compilers, RTOS, and system-level optimization - areas less directly relevant to the listed internship. The description of the internship project, specifically the 'Hippocampus shape morphometric analysis,' suggests a very niche skillset not explicitly mentioned in the job requirements, creating a mismatch.  The candidate’s impressive academic background (INSAT) is present but overshadowed by this specific project, leading to an unfairly reduced weighting of leadership skills (as the JD requires). A higher weighting should reflect the project's advanced technical content, not the duration of the internship."
+      },
+      {
+        "id": "docker_containerization",
+        "label": "Docker",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV highlights experience with Docker, but the job description focuses on broader AI/Edge computing skills and doesn't explicitly require it. The decreased weight (0.25) combined with the context of a highly specialized role in Edge AI and systems embedded suggests a proxy bias – the presence of Docker, a common DevOps tool, is being favored over the core skills directly listed in the job description (compilers, RTOS, communication protocols).  A fair alternative would be to prioritize candidates based on demonstrable experience in AI development and embedded systems specifically, rather than relying on Docker as a signaling factor.  The application’s focus is clearly on technical depth in the requested area rather than tooling proficiency."
+      },
+      {
+        "id": "system_design_principles",
+        "label": "Principes de conception de systèmes",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "This audit identifies a bias related to ageism and prestige bias. The CV highlights a graduation project focused on a highly specialized deep learning technique (Deep Graph CNNs for Non-rigid registration) related to Alzheimer's Disease Classification, utilizing advanced methods and resulting in state-of-the-art performance. However, the JD explicitly lists 'compileurs' (compilers) as a key skill, and the CV lacks explicit detail about experience with compilers or related tools, suggesting a potential devaluation of this skill due to the candidate's academic project and potentially a preference for candidates with broader industry experience.  The JD's emphasis on established toolsets like LLVM and TVM, alongside the CV's project-specific focus, creates a disparity in the perceived relevance of skills, impacting the weight given to the candidate's education and research."
+      },
+      {
+        "id": "podman_container_management",
+        "label": "Podman",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "This bias falls under AGEISM due to the emphasis on the graduation year and the specific thesis project ('Alzheimer's Disease Classification Using Hippocampal Shape Morphometric Analysis'). While the candidate’s research is relevant to Edge AI, the focus on a highly specialized, recent project (2024) – coupled with the 'Engineer's degree' – suggests a preference for recent graduates, potentially overlooking more experienced candidates with transferable skills. The thesis’s detailed focus on geometric deep learning and specific techniques (Kendall’s definition, Dense vector fields) indicates a narrow specialization that may not align perfectly with the broader requirements of the Edge AI role, and the correction factor is increased to account for this mismatch."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2588 (sous-qualifié), CTM=0.6107 (écart structurel élevé), match_pct=39.9% → Poor Match",
+    "v6_summary": "weighted_f1=0.1907, gap_score=0.2195, ndcg_5=0.9483, missing_critical_penalty=0.1429, combo_v6_final=25.5",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "10 gaps critiques identifiés",
+    "bias_note": "13 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.57)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

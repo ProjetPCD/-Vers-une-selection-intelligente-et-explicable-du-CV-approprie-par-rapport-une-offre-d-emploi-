@@ -1,0 +1,569 @@
+{
+  "job_id": "job_40",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-02T22:33:56.602265",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 37.1,
+    "confidence": {
+      "confidence_score": 0.74,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.536,
+        "coverage_rate": 0.857,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.4203,
+    "edge_score": 0.5236,
+    "combined": 0.4616
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2504,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6379,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.629,
+    "matched_nodes": "2/28",
+    "edge_match_pct": 26.19
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2547,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.4642,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2263,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0357,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.1893,
+    "weighted_recall": 0.0331,
+    "weighted_f1": {
+      "value": 0.0643,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.75,
+    "missing_critical_penalty": {
+      "value": 0.0556,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8753,
+    "ndcg_10": 0.881,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.374,
+    "experience_density": 0.1702
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 25.29,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 27.33,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 23.03,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 95.01,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 37.63,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 29.57,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 25.9,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Certification": {
+      "count": 2,
+      "match_pct": 37.4,
+      "weight_sum": 1.98
+    },
+    "Hard Skill": {
+      "count": 5,
+      "match_pct": 22.8,
+      "weight_sum": 4.79
+    },
+    "Tool": {
+      "count": 12,
+      "match_pct": 14.0,
+      "weight_sum": 9.583
+    },
+    "Domain": {
+      "count": 6,
+      "match_pct": 30.9,
+      "weight_sum": 4.338
+    },
+    "Soft Skill": {
+      "count": 3,
+      "match_pct": 12.6,
+      "weight_sum": 1.99
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 26.19,
+    "total_edges": 15,
+    "top_synergies": [
+      {
+        "edge_key": "aws_certified_ai_practitioner|machine-learning-domain",
+        "source": "aws_certified_ai_practitioner",
+        "target": "machine-learning-domain",
+        "w_0": 0.98,
+        "w_cv": 1.219,
+        "w_cv_norm": 0.609,
+        "match_pct": 62.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python|machine-learning-domain",
+        "source": "python",
+        "target": "machine-learning-domain",
+        "w_0": 0.95,
+        "w_cv": 1.05,
+        "w_cv_norm": 0.525,
+        "match_pct": 55.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "spark|machine-learning-domain",
+        "source": "spark",
+        "target": "machine-learning-domain",
+        "w_0": 0.8,
+        "w_cv": 0.844,
+        "w_cv_norm": 0.422,
+        "match_pct": 52.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "typescript-hard-skill|fastapi-tool",
+        "source": "typescript-hard-skill",
+        "target": "fastapi-tool",
+        "w_0": 0.7,
+        "w_cv": 0.519,
+        "w_cv_norm": 0.26,
+        "match_pct": 37.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "aws|cloud_practitioner",
+        "source": "aws",
+        "target": "cloud_practitioner",
+        "w_0": 0.8,
+        "w_cv": 0.506,
+        "w_cv_norm": 0.253,
+        "match_pct": 31.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Cloud Practitioner",
+      "type": "Certification",
+      "gap": 0.719,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Java",
+      "type": "Hard Skill",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 0.719,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "méthodologie agile",
+      "type": "Hard Skill",
+      "gap": 0.918,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "AWS",
+      "type": "Tool",
+      "gap": 0.775,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 0.955,
+      "severity": "critical",
+      "importance": 0.955
+    },
+    {
+      "skill": "GCP",
+      "type": "Tool",
+      "gap": 0.86,
+      "severity": "critical",
+      "importance": 0.954
+    },
+    {
+      "skill": "Hadoop",
+      "type": "Tool",
+      "gap": 0.823,
+      "severity": "critical",
+      "importance": 0.917
+    },
+    {
+      "skill": "Spark",
+      "type": "Tool",
+      "gap": 0.808,
+      "severity": "critical",
+      "importance": 0.902
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "Machine Learning",
+        "type": "Domain",
+        "w_cv": 1.5
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "Cloud Practitioner",
+        "type": "Certification",
+        "gap": 0.719
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.7
+      },
+      {
+        "label": "Java",
+        "type": "Hard Skill",
+        "gap": 0.906
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 0.719
+      },
+      {
+        "label": "méthodologie agile",
+        "type": "Hard Skill",
+        "gap": 0.918
+      },
+      {
+        "label": "AWS",
+        "type": "Tool",
+        "gap": 0.775
+      },
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "gap": 0.955
+      },
+      {
+        "label": "GCP",
+        "type": "Tool",
+        "gap": 0.86
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 24,
+    "nodes_with_bias": 21,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 11,
+      "HALO": 4,
+      "PRESTIGE": 3,
+      "C: AGEISM": 1,
+      "B": 1,
+      "C": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "cloud_practitioner",
+        "label": "Cloud Practitioner",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The candidate's CV heavily emphasizes educational certifications and bootcamp completion, which are proxy signals for skills and experience. While relevant, relying solely on these 'badges' without concrete project experience or demonstrated skills is a proxy for actual capability. The JD stresses practical skills and experience, while the CV prioritizes training and certifications, resulting in a lower weight given to the candidate's interest in Cloud and DevOps - this reflects a potential bias towards those with formal training rather than demonstrable application of knowledge."
+      },
+      {
+        "id": "python",
+        "label": "Python",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The candidate lists 'Machine Learning A-Z: AI, Python & R' as a completed learning resource. While completing this course demonstrates a willingness to learn Python, the JD heavily emphasizes a broad skillset including various technologies (SQL, Java, etc.) and expects a 'combination of technical and soft skills'.  The CV's focus on the course as a primary qualification, rather than practical experience, suggests a reliance on a single, potentially less relevant, indicator. This leans towards proxy bias—using the completion of a specific course as a proxy for overall Python proficiency and practical application. A correction factor of 0.75 reflects this, acknowledging the course completion but penalizing the over-emphasis on it."
+      },
+      {
+        "id": "java",
+        "label": "Java",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV highlights their study of Java/Spring Boot and React, aligning with the JD's requirements for full-stack development. However, the CV explicitly states they are a ‘software engineering student’ and ‘in their final year’, indicating limited professional experience. The significant weight reduction (-0.75) suggests a proxy bias—the system is penalizing the candidate for lacking established professional experience (graduation year) rather than assessing their demonstrated skills. A fairer alternative would be to weigh the candidate's academic project work and the specifics of their skills gained through coursework."
+      },
+      {
+        "id": "javascript",
+        "label": "JavaScript",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The CV heavily emphasizes recent coding bootcamps (The Complete 2024 Web Development Bootcamp) and online courses (A-Z AI, Data Analyst) rather than deep technical experience.  The JD specifically mentions 'solide formation en informatique' (solid IT education), suggesting a preference for candidates with a more traditional academic background and professional experience. The applicant's focus on relatively recent, intensive training programs coupled with the JD's weighting implies a proxy bias—the system is prioritizing signals of recent learning rather than demonstrated mastery of JavaScript and full-stack development skills, which is a key requirement. A correction factor of 0.75 reflects this over-emphasis on training modules."
+      },
+      {
+        "id": "agile_methodology",
+        "label": "méthodologie agile",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.163,
+        "reason": "The CV explicitly mentions 'agile' as a required skill but lacks concrete evidence of experience applying it. The JD emphasizes the need for agile methodologies, creating a discrepancy. The CV's listing of 'Agile' alongside a focus on DevOps and good practices suggests a surface-level understanding rather than practical application, aligning with the proxy bias of highlighting buzzwords without demonstrable skills. Correction factor reduced to 0.65 reflecting the reliance on a listed keyword rather than proven expertise."
+      },
+      {
+        "id": "aws",
+        "label": "AWS",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The weight decrease is likely driven by the candidate's stated interest in 'Cloud et le DevOps', specifically referencing AWS. This signals a desire to work with a specific technology stack, which, while a valuable skill, isn't a direct demonstration of the core competencies required for a Data Science and Full Stack role as outlined in the JD. Proxy bias occurs when socioeconomic or circumstantial signals (in this case, interest in a specific cloud platform) are inadvertently influencing the evaluation, potentially overshadowing more fundamental skills and experience. A correction factor of 0.75 is applied to account for this influence, reflecting the fact that the reduction in weight is due to a contextual signal rather than a direct mismatch with the job requirements."
+      },
+      {
+        "id": "gcp",
+        "label": "GCP",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV lists ‘GCP’ as a skill, but there's no project evidence or contextual mention of GCP usage, only a general listing. This indicates the algorithm may be prioritizing the mere presence of ‘GCP’ in a candidate’s skills list (proxy for experience) without evaluating the depth or application of that knowledge – a proxy bias. The JD emphasizes practical application of GCP technologies, suggesting that simply listing it as a skill doesn't reflect genuine competency. A fair alternative would be to require demonstrable GCP experience through project descriptions or certifications."
+      },
+      {
+        "id": "aws_certified_ai_practitioner",
+        "label": "AWS Certified AI Practitioner",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight increase (Delta +0.270) is primarily driven by holding the AWS Certified AI Practitioner certification, which is a credential focused on technical skills and cloud platform knowledge rather than demonstrable practical experience with Machine Learning projects. This represents a proxy for expertise – the candidate possesses a certification validating their interest and foundational understanding, but lacks direct experience as evidenced by the student status and internship descriptions. A lower correction factor reflects the reliance on a credential rather than a proven track record, suggesting a potential bias favoring those with formal certifications over those with practical application experience."
+      },
+      {
+        "id": "spark",
+        "label": "Spark",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate lists 'Spark' as a skill but provides no project evidence or contextual mention of its use. The job description heavily emphasizes Spark within a Big Data ecosystem (Spark, Hadoop, Kafka), yet the CV simply lists it as a skill without demonstrating practical application. This suggests the weighting is driven by the presence of 'Spark' on the CV rather than a genuine assessment of the candidate's ability, aligning with a proxy bias based on skill listing rather than demonstrated competency. A fairer alternative would prioritize evidence of actual Spark usage and impact, adjusting the weighting accordingly to reflect demonstrated capability."
+      },
+      {
+        "id": "hadoop",
+        "label": "Hadoop",
+        "bias_category": "C: AGEISM",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate lists 'Hadoop' as a skill, but the evidence anchor (Hadoop) verdict is 'weak'. Furthermore, the CV indicates the candidate is a 'Software engineering student' in their final year of a degree program (ENSA Khouribga, ending 2026). The JD emphasizes experience with Big Data technologies like Hadoop, suggesting a higher level of expertise than the candidate’s current stage of study would reasonably demonstrate.  This disparity suggests a preference for more experienced candidates, reflecting ageism – prioritizing graduates over students even when skills overlap. A fair alternative would be to require demonstrable project experience using Hadoop, regardless of the candidate's academic status."
+      },
+      {
+        "id": "data-science-domain",
+        "label": "Data Science",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The significant weight decrease (Delta: -0.387) is likely driven by the candidate's participation in a 'Data Analyst The Complete 2024 Web Development Bootcamp'. While the JD emphasizes data science skills, the CV prominently features this bootcamp, suggesting the algorithm is over-emphasizing a specific training course as a primary indicator of data science aptitude (Halo bias).  A fairer assessment would focus more on demonstrated project experience, skills demonstrated, and the direct application of concepts from the bootcamp to solve real-world problems.  The reliance on this single training course creates an uneven weighting, unfairly penalizing candidates without similar bootcamps, despite possessing other relevant skills. The ideal weight of 0.887 reflects a strong data science profile, while the adapted weight of 0.5 indicates a significant imbalance based on this one course."
+      },
+      {
+        "id": "fastapi-tool",
+        "label": "FastAPI",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV explicitly lists 'FastAPI' within the 'The Complete 2024 Web Development Bootcamp' course, indicating a foundational understanding but lacking demonstrable experience or project usage. The job description emphasizes experience with FastAPI as a key skill, and the CV's mention of it is presented as a course completion rather than active application. This creates a halo effect – the candidate is perceived as having proficiency in FastAPI due to the course, overshadowing the lack of practical experience."
+      },
+      {
+        "id": "docker-tool",
+        "label": "Docker",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The candidate's CV explicitly lists 'Docker, GitLab CI/CD, Linux, Agile' as skills, aligning with the JD’s requirements for DevOps practices and modern development workflows. However, the weight decrease suggests an over-emphasis on these specific tools, potentially indicating a proxy bias towards candidates who have recently completed courses or training involving these technologies, rather than a deep understanding of the underlying concepts.  The candidate's student status and internships also create a potential proxy signal based on recent educational experiences. A correction factor of 0.75 reflects the relevance of the skills but acknowledges the possible influence of these proximal factors."
+      },
+      {
+        "id": "collaboration-soft-skill",
+        "label": "capacité à travailler de manière collaborative",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The weight reduction for 'collaboration-soft-skill' is likely biased due to the limited evidence in the CV. The candidate’s experience primarily focuses on academic projects and internships with limited detail on collaborative project outcomes. While the JD explicitly states collaboration is a key requirement, the CV provides no concrete evidence or quantification of Saad’s collaborative skills, resulting in a reduced weighting reflecting a lack of demonstrable proficiency. This unfairly penalizes the candidate, favoring candidates with more clearly articulated collaborative experiences. A fair alternative would be to adjust the weight based on demonstrable skills and experiences, not a presumption of weakness."
+      },
+      {
+        "id": "communication_1",
+        "label": "Communiquer efficacement",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The audit indicates a 'weak' evidence verdict for communication skills, despite the JD explicitly requiring strong communication. The CV highlights 'Communication' as a skill and lists certifications related to data analysis and web development (which indirectly require communication), but lacks specific examples of communication experience. This suggests a potential halo bias – the candidate is being assessed based on their other credentials (degree, certifications) rather than demonstrable communication skills, leading to an unfairly reduced weight. A fair alternative would involve requiring concrete examples of communication achievements (e.g., presentations, reports, collaboration experiences) to accurately assess the candidate's communication proficiency. The delta of -0.172 reflects this lack of demonstrated communication skills."
+      },
+      {
+        "id": "pyspark_1",
+        "label": "PySpark",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The substantial weight decrease (-0.402) is likely driven by the absence of explicit PySpark experience in the candidate's CV. The job description heavily emphasizes PySpark as a core skill, and the candidate’s CV solely lists ‘Machine Learning A-Z: AI, Python & R Data Analyst’ which doesn’t demonstrate PySpark proficiency. This proxy for experience – relying on a broader data analysis course – unfairly penalizes the candidate for lacking the specific skill the role requires, representing a bias towards candidates with direct PySpark experience. A fair alternative would be a more nuanced evaluation considering the candidate's other skills and potential for rapid learning."
+      },
+      {
+        "id": "big_data_1",
+        "label": "Big Data",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The candidate prominently lists ‘Data Analyst The Complete 2024 Web Development Bootcamp’ as a key skill. While the bootcamp demonstrates foundational knowledge, prioritizing a comprehensive bootcamp over more specialized and potentially higher-level skills (as implied by the JD’s requirements for ‘Machine Learning, Deep Learning, Predictive Modeling’) indicates prestige bias. The JD emphasizes advanced technical skills and specific technologies, suggesting a preference for candidates with deeper, more targeted expertise. A correction factor of 0.75 reflects the increased weight due to the intense focus on this particular (and arguably introductory) course."
+      },
+      {
+        "id": "data_wrangling_1",
+        "label": "Data Wrangling",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The candidate’s CV prominently lists ‘Data Analyst The Complete 2024 Web Development Bootcamp’ as a skill. While completing this course demonstrates a willingness to learn and potentially some foundational knowledge, the JD emphasizes a deep, applied understanding of Data Science and Machine Learning – a level of expertise typically found in individuals with formal education and professional experience. This highlights prestige bias, favoring a specific, popular online course over demonstrable skills and a relevant academic background. A fair alternative would be to weight skills acquired through formal education and verified professional experience more heavily."
+      },
+      {
+        "id": "kubernetes_1",
+        "label": "Kubernetes",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The candidate’s CV explicitly states they are a 'Software engineering student' and mention ‘React’ and ‘Spring Boot’ which are heavily associated with prestige universities and companies, particularly in the context of the JD which emphasizes modern web development technologies. The JD highlights familiarity with these technologies as a key requirement, indicating a preference for candidates with demonstrable experience, but the CV’s mention of these technologies, coupled with a student status, resulted in a decrease in the weight. A correction factor of 0.75 reflects this undeservedly inflated weighting."
+      },
+      {
+        "id": "predictive_modeling_1",
+        "label": "Predictive Modeling",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The weight change appears to be driven by halo bias – the candidate's explicit mention of 'Supervised Machine Learning: Regression and Classification' triggered an intensity bonus (w_cv = 0.5), overshadowing other potentially relevant aspects of their profile, such as their student status and internships. The JD heavily emphasizes these specific machine learning techniques, leading to an over-weighting of this single signal. A fairer assessment would consider the breadth of their skills and experience, not just the focus on this particular domain, reducing the impact of this one strong signal."
+      },
+      {
+        "id": "soft_skills_1",
+        "label": "Soft skills",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV prominently highlights 'curious and motivated' as soft skills, reflecting a halo effect from their stated interest in learning. The JD emphasizes the need for collaborative skills, but the CV's description of these skills is vague and lacks specific examples, causing the weight change. This demonstrates the system unfairly over-weighting a general description of desired soft skills, rather than evaluating demonstrated skills from the experience provided. A fairer alternative would prioritize evidence of collaboration and communication from the experience sections, alongside the mentioned skills."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2504 (sous-qualifié), CTM=0.6379 (écart structurel élevé), match_pct=37.1% → Poor Match",
+    "v6_summary": "weighted_f1=0.0643, gap_score=0.2263, ndcg_5=0.8753, missing_critical_penalty=0.0556, combo_v6_final=25.29",
+    "key_strengths": "1 compétences clés validées",
+    "key_gaps": "15 gaps critiques identifiés",
+    "bias_note": "21 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.74)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

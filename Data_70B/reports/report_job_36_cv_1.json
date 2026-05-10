@@ -1,0 +1,505 @@
+{
+  "job_id": "job_36",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-04T02:28:45.616576",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 28.64,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.75,
+        "coverage_rate": 0.219,
+        "nodes_audited": 7,
+        "nodes_biased": 7
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.1497,
+    "edge_score": 0.2516,
+    "combined": 0.1904
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1734,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7604,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7136,
+    "matched_nodes": "6/32",
+    "edge_match_pct": 25.16
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1717,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.6406,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.1117,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1875,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.2506,
+    "weighted_recall": 0.1544,
+    "weighted_f1": {
+      "value": 0.2749,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.7035,
+    "missing_critical_penalty": {
+      "value": 0.2069,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.9069,
+    "ndcg_10": 0.9191,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9056,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.1928,
+    "experience_density": 0.127
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 31.66,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 33.98,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 15.9,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 96.28,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 47.7,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 31.81,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 23.64,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Responsibility": {
+      "count": 5,
+      "match_pct": 42.6,
+      "weight_sum": 4.3
+    },
+    "Tool": {
+      "count": 9,
+      "match_pct": 0.0,
+      "weight_sum": 7.874
+    },
+    "Hard Skill": {
+      "count": 8,
+      "match_pct": 0.0,
+      "weight_sum": 7.335
+    },
+    "Experience": {
+      "count": 1,
+      "match_pct": 66.0,
+      "weight_sum": 0.9
+    },
+    "Certification": {
+      "count": 4,
+      "match_pct": 35.7,
+      "weight_sum": 3.243
+    },
+    "Soft Skill": {
+      "count": 5,
+      "match_pct": 13.7,
+      "weight_sum": 3.512
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 25.16,
+    "total_edges": 14,
+    "top_synergies": [
+      {
+        "edge_key": "senior_cybersecurity_engineer|incident_response",
+        "source": "senior_cybersecurity_engineer",
+        "target": "incident_response",
+        "w_0": 0.5,
+        "w_cv": 0.862,
+        "w_cv_norm": 0.862,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "risk_management|senior_cybersecurity_engineer",
+        "source": "risk_management",
+        "target": "senior_cybersecurity_engineer",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "senior_cybersecurity_engineer|security_strategy_development",
+        "source": "senior_cybersecurity_engineer",
+        "target": "security_strategy_development",
+        "w_0": 0.5,
+        "w_cv": 0.637,
+        "w_cv_norm": 0.637,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "senior_cybersecurity_engineer|risk_analysis",
+        "source": "senior_cybersecurity_engineer",
+        "target": "risk_analysis",
+        "w_0": 0.5,
+        "w_cv": 0.637,
+        "w_cv_norm": 0.637,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "information_security_experience|senior_cybersecurity_engineer",
+        "source": "information_security_experience",
+        "target": "senior_cybersecurity_engineer",
+        "w_0": 0.5,
+        "w_cv": 0.637,
+        "w_cv_norm": 0.637,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "SIEM",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Bash",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PowerShell",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "AWS",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Azure",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Agile Approach",
+      "type": "Hard Skill",
+      "gap": 0.935,
+      "severity": "critical",
+      "importance": 0.935
+    },
+    {
+      "skill": "Firewalls",
+      "type": "Tool",
+      "gap": 0.883,
+      "severity": "critical",
+      "importance": 0.883
+    },
+    {
+      "skill": "Security Tools",
+      "type": "Tool",
+      "gap": 0.872,
+      "severity": "critical",
+      "importance": 0.872
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "Senior Cybersecurity Engineer",
+        "type": "Responsibility",
+        "gap": 0.0
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "SIEM",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Bash",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "PowerShell",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "AWS",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Azure",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Agile Approach",
+        "type": "Hard Skill",
+        "gap": 0.935
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 7,
+    "nodes_with_bias": 7,
+    "edges_audited": 4,
+    "edges_with_bias": 4,
+    "bias_categories": {
+      "PRESTIGE": 10,
+      "AGEISM": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "senior_cybersecurity_engineer",
+        "label": "Senior Cybersecurity Engineer",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.68,
+        "w_cv_corrected": 1.68,
+        "reason": "The weight change is likely due to prestige bias, as the candidate's university and company names are not as well-known as those typically associated with top-tier institutions. The candidate's skills and experience, however, align well with the job description. To correct for this bias, a correction factor of 1.20 is applied to increase the weight."
+      },
+      {
+        "id": "security_strategy_development",
+        "label": "Security Strategy Development",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 1.375,
+        "w_cv_corrected": 1.375,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university and company names are not directly relevant to the job requirements. The candidate's experience and certifications in cybersecurity are more important than their educational background. A fairer assessment would give more weight to their relevant skills and experience."
+      },
+      {
+        "id": "information_security_experience",
+        "label": "Information Security Experience",
+        "bias_category": "AGEISM",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.32,
+        "w_cv_corrected": 1.32,
+        "reason": "The weight change is biased due to ageism, as the candidate's 11 years of experience in information security is penalized, despite having relevant certifications and skills. The correction factor is set to 1.20 to increase the weight, as the candidate's experience and skills are undervalued."
+      },
+      {
+        "id": "iso_27001",
+        "label": "ISO 27001",
+        "bias_category": "PRESTIGE",
+        "severity": "LOW",
+        "correction_factor": 1.15,
+        "w_cv_before": 1.438,
+        "w_cv_corrected": 1.438,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's ISO 27001 certification is given more importance than their actual skills and experience. The correction factor is set to 1.15 to increase the weight and counteract the bias."
+      },
+      {
+        "id": "nist",
+        "label": "NIST",
+        "bias_category": "PRESTIGE",
+        "severity": "LOW",
+        "correction_factor": 1.1,
+        "w_cv_before": 1.375,
+        "w_cv_corrected": 1.375,
+        "reason": "The weight change is biased due to prestige bias, as the NIST certification mentioned in the CV is given more importance than other skills and experiences. The correction factor is set to 1.10 to increase the weight, as the candidate's skills and experiences are being unfairly penalized."
+      },
+      {
+        "id": "risk_management",
+        "label": "Risk Management",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.2,
+        "w_cv_corrected": 1.2,
+        "reason": "The weight change is likely due to prestige bias, as the candidate's CV mentions EBIOS Risk Manager Confirmed, which may have unfairly decreased the weight. The correction factor is set to 1.20 to account for the potential unfair penalty."
+      },
+      {
+        "id": "incident_response",
+        "label": "Incident Response",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.938,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university and company names (e.g., African Development Bank Group, Société Tunisienne de l'Electricité et du Gaz) may have unfairly influenced the adapted weight. The correction factor is set to 1.25 to account for the unfair penalty."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "senior_cybersecurity_engineer|security_strategy_development",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_corrected": 0.637,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's previous role title 'Cybersecurity Assistant Manager' is given more importance than the actual skills demonstrated. The correction factor is set to 0.85 to reduce the unfair advantage given to the candidate based on their previous job title."
+      },
+      {
+        "edge": "senior_cybersecurity_engineer|risk_analysis",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_corrected": 0.637,
+        "reason": "The candidate's EBIOS Risk Manager certification is given more weight due to its prestige, rather than the skills demonstrated. The certification is directly related to risk analysis, but the weight change is not entirely merit-based. A fairer approach would be to evaluate the candidate's skills and experience in risk analysis, rather than relying on the prestige of the certification."
+      },
+      {
+        "edge": "senior_cybersecurity_engineer|incident_response",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_corrected": 0.862,
+        "reason": "The candidate's experience in incident management processes improvement is a key aspect of incident response, but the weight change from 0.9 to 0.75 may be influenced by the prestige bias, as the candidate's senior cybersecurity engineering background is not fully valued. A fairer assessment would give more weight to the candidate's relevant experience, increasing the correction factor to 1.15."
+      },
+      {
+        "edge": "information_security_experience|senior_cybersecurity_engineer",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_corrected": 0.637,
+        "reason": "The weight change from 0.9 to 0.75 may be due to prestige bias, as the candidate's summary mentions a senior role and specific technologies, but the weight decrease may be unfair as it doesn't consider the candidate's actual skills and experience. A fairer approach would be to evaluate the candidate's skills and experience in information security, rather than relying on the prestige of their previous role."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1734 (sous-qualifié), CTM=0.7604 (écart structurel élevé), match_pct=28.64% → Poor Match",
+    "v6_summary": "weighted_f1=0.2749, gap_score=0.1117, ndcg_5=0.9069, missing_critical_penalty=0.2069, combo_v6_final=31.66",
+    "key_strengths": "1 compétences clés validées",
+    "key_gaps": "24 gaps critiques identifiés",
+    "bias_note": "7 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 15,
+    "pool_size": 45,
+    "percentile": 0.6818,
+    "composite_z_score": 0.299,
+    "tier": "Top 50%",
+    "z_scores": {
+      "combo_v6": 0.593,
+      "wf1": 0.752,
+      "gap_score": -0.175,
+      "ntcw": 0.031,
+      "match_pct": -0.192,
+      "ndcg_5": -0.046
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 22.4153,
+        "std": 15.5835
+      },
+      "wf1": {
+        "mean": 0.1472,
+        "std": 0.1697
+      },
+      "gap_score": {
+        "mean": 0.1336,
+        "std": 0.125
+      },
+      "ntcw": {
+        "mean": 0.1689,
+        "std": 0.1488
+      },
+      "match_pct": {
+        "mean": 31.3518,
+        "std": 14.1146
+      },
+      "ndcg_5": {
+        "mean": 0.91,
+        "std": 0.0674
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

@@ -1,0 +1,404 @@
+{
+  "job_id": "job_42",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-03T00:05:19.971173",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 34.0,
+    "confidence": {
+      "confidence_score": 0.64,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.583,
+        "coverage_rate": 0.75,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.3643,
+    "edge_score": 0.4606,
+    "combined": 0.4028
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2163,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6633,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.66,
+    "matched_nodes": "1/12",
+    "edge_match_pct": 23.04
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2386,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.456,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1919,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0833,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.0177,
+    "weighted_recall": 0.056,
+    "weighted_f1": {
+      "value": 0.1062,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5375,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.7491,
+    "ndcg_10": 0.8465,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.4832,
+    "semantic_fit_score": 0.3797,
+    "experience_density": 0.1457
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 24.33,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 27.59,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 23.05,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 89.96,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 31.67,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 25.76,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 43.2,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 4,
+      "match_pct": 12.3,
+      "weight_sum": 3.725
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 31.9,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 28.1,
+      "weight_sum": 1.0
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 9.8,
+      "weight_sum": 1.494
+    },
+    "Domain": {
+      "count": 4,
+      "match_pct": 22.8,
+      "weight_sum": 2.38
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 23.04,
+    "total_edges": 8,
+    "top_synergies": [
+      {
+        "edge_key": "data-scientist-experience|data_scientist_domain",
+        "source": "data-scientist-experience",
+        "target": "data_scientist_domain",
+        "w_0": 0.75,
+        "w_cv": 0.781,
+        "w_cv_norm": 0.391,
+        "match_pct": 52.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "phd_degree|data_scientist_domain",
+        "source": "phd_degree",
+        "target": "data_scientist_domain",
+        "w_0": 0.85,
+        "w_cv": 0.562,
+        "w_cv_norm": 0.281,
+        "match_pct": 33.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_programming|data_scientist_domain",
+        "source": "python_programming",
+        "target": "data_scientist_domain",
+        "w_0": 0.95,
+        "w_cv": 0.525,
+        "w_cv_norm": 0.263,
+        "match_pct": 27.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "pytorch_deep_learning|data_scientist_domain",
+        "source": "pytorch_deep_learning",
+        "target": "data_scientist_domain",
+        "w_0": 0.9,
+        "w_cv": 0.451,
+        "w_cv_norm": 0.225,
+        "match_pct": 25.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "mysql_database|data_scientist_domain",
+        "source": "mysql_database",
+        "target": "data_scientist_domain",
+        "w_0": 0.7,
+        "w_cv": 0.413,
+        "w_cv_norm": 0.207,
+        "match_pct": 29.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Azure Machine Learning",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PhD",
+      "type": "Education",
+      "gap": 0.681,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.719,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "MySQL",
+      "type": "Tool",
+      "gap": 0.831,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Communication",
+      "type": "Soft Skill",
+      "gap": 0.915,
+      "severity": "critical",
+      "importance": 0.915
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.748,
+      "severity": "critical",
+      "importance": 0.879
+    },
+    {
+      "skill": "PyTorch",
+      "type": "Tool",
+      "gap": 0.639,
+      "severity": "critical",
+      "importance": 0.846
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Azure Machine Learning",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "PhD",
+        "type": "Education",
+        "gap": 0.681
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.719
+      },
+      {
+        "label": "MySQL",
+        "type": "Tool",
+        "gap": 0.831
+      },
+      {
+        "label": "Communication",
+        "type": "Soft Skill",
+        "gap": 0.915
+      },
+      {
+        "label": "Docker",
+        "type": "Tool",
+        "gap": 0.748
+      },
+      {
+        "label": "PyTorch",
+        "type": "Tool",
+        "gap": 0.639
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 8,
+    "nodes_with_bias": 8,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "C": 3,
+      "PROXY": 3,
+      "PRESTIGE": 2
+    },
+    "biased_nodes": [
+      {
+        "id": "phd_degree",
+        "label": "PhD",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The weight change (decreased by 0.15) associated with a PhD degree is likely driven by prestige bias. While a PhD signifies advanced knowledge, the CV primarily highlights experience with modern machine learning techniques (Python, PyTorch, Azure ML) and fintech applications, neglecting the core ‘expert’ skills described in the JD. The candidate’s Computer Science Engineering degree and preparatory studies are weighted less heavily than the PhD, indicating an overemphasis on academic credentials rather than practical skills. A fair alternative would be to give equal weight to all relevant experience and education, regardless of the highest degree obtained."
+      },
+      {
+        "id": "python_programming",
+        "label": "Python",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The weight decrease for 'python_programming' is likely driven by prestige bias, stemming from Akrem's educational background. The CV highlights a Computer Science Engineering degree from ENSI, which may be implicitly devalued compared to a PhD in Data Science, as suggested by the JD's requirement. While Python is a key skill and demonstrated in the candidate's projects, the JD’s focus on a PhD suggests a preference for candidates with a higher academic qualification. A fair alternative would be to assess skills irrespective of the degree type, focusing on demonstrable experience and proficiency."
+      },
+      {
+        "id": "mysql_database",
+        "label": "MySQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.338,
+        "reason": "The CV prominently lists ‘MySQL’ as a key skill alongside other more modern technologies like Python and PyTorch. However, the candidate’s education is from an engineering school in Tunisia, and the job description explicitly requires a PhD or equivalent in Data Science or a related field, implying a focus on data science methodologies and advanced techniques rather than foundational database administration. The candidate's location (Tunisia) and education institution (ENSI) suggest a potential proxy bias based on geographic origin and academic background, unfairly penalizing a candidate with strong skills in a widely used database platform simply because it wasn't explicitly tied to the advanced analytical skillset the role demands. A fairer alternative would be to prioritize skills aligned with the PhD level requirements and data science methodologies rather than the presence of MySQL."
+      },
+      {
+        "id": "docker_containerization",
+        "label": "Docker",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The candidate's CV lists ‘Tunis, Tunisia’ as their location, which is a proxy for socioeconomic status and potentially geographical bias. The JD emphasizes experience with international fintech companies, suggesting a preference for candidates with experience in a higher-income environment. While familiarity with Docker is listed as a key skill, the substantial weighting decrease indicates this signal is being unfairly penalized due to the candidate’s location – a fair alternative would be to evaluate skills regardless of geographical origin.  Delta of -0.529 reflects a significant negative weighting shift driven by this proxy signal."
+      },
+      {
+        "id": "pytorch_deep_learning",
+        "label": "PyTorch",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.413,
+        "reason": "The weight change (Delta: -0.296) indicates a significant decrease in the candidate's score despite listing PyTorch as a key skill. This suggests AGEISM - the CV highlights a relatively recent Computer Science Engineering degree (ENSI - January 2021 - September 2024) which may be unfairly penalized given the job description's emphasis on experience with AI and neural networks.  A fair alternative would be to assess the candidate's skills and project experience directly, rather than prioritizing the degree's age.  The JD explicitly states a PhD is preferred, suggesting the system is overly sensitive to recent graduates. The candidate's experience with 'classical machine learning' and 'generative AI' in fintech aligns with the job requirements, but the reduction in score is disproportionate to the apparent lack of relevant professional experience."
+      },
+      {
+        "id": "data_scientist_domain",
+        "label": "Data Scientist",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.488,
+        "reason": "The CV heavily emphasizes Robotic Process Automation (RPA) and Analytical Skills alongside Data Science, skills not directly aligned with the JD’s focus on ‘apprentissage automatique et des réseaux de neurones’ (machine learning and neural networks). This suggests the system is prioritizing a broader skill set (RPA) which is not a core requirement for the role, exhibiting prestige bias. The candidate’s degree from an engineering preparatory institute, while relevant, is not a PhD in Science of Data as explicitly stated in the job description, leading to an unfair weighting reduction.  A fair alternative would be to prioritize the core skills explicitly listed in the JD, like Python, PyTorch, and Azure Machine Learning. The Delta of -0.014 further indicates a decreased emphasis on the candidate's primary qualifications, validating this bias."
+      },
+      {
+        "id": "expert_level",
+        "label": "Expert",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.15,
+        "reason": "The algorithm has significantly decreased the weight assigned to the ‘expert_level’ label (w_cv from 0.586 to 0.2) due to the absence of supporting evidence for the claim of ‘expert’ status. The JD heavily emphasizes a PhD and significant experience in AI, yet the CV primarily highlights skills like RPA and fintech experience, which are not core to a data science expert role, particularly within this specific domain. This suggests the system is prioritizing prestige (name of experience) over demonstrable expertise, unfairly penalizing candidates who might possess the required skills but haven't explicitly highlighted a PhD or experience in the desired technologies. A fairer alternative would be to assess skills and experience directly, using the JD criteria as a benchmark."
+      },
+      {
+        "id": "resolution-de-problemes",
+        "label": "résolution de problèmes",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.506,
+        "reason": "The candidate's CV prominently lists 'Robotic Process Automation (RPA)' as a key skill, which is an unusual and potentially biasing signal given the JD’s focus on ‘apprentissage automatique’ (machine learning) and ‘réseaux de neurones’ (neural networks).  This suggests a proxy bias based on industry/geographic concentration – the candidate's location (Tunis, Tunisia) and the skills listed likely reflect the demand and specialization within that regional tech landscape. A merit-based system would prioritize skills directly aligned with the stated requirements (Python, PyTorch, Azure Machine Learning) and the project descriptions, rather than a top-level RPA skill. The increased weight likely reflects this unintended prioritization. Correction factor decreased to 0.75 to account for the disproportionate emphasis on RPA."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2163 (sous-qualifié), CTM=0.6633 (écart structurel élevé), match_pct=34.0% → Poor Match",
+    "v6_summary": "weighted_f1=0.1062, gap_score=0.1919, ndcg_5=0.7491, missing_critical_penalty=0.0, combo_v6_final=24.33",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "7 gaps critiques identifiés",
+    "bias_note": "8 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.64)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

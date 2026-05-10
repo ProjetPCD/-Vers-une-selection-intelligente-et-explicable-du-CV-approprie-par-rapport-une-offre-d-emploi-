@@ -1,0 +1,237 @@
+{
+  "job_id": "job_66",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-02T12:07:58.664680",
+  "overall_assessment": {
+    "verdict": "Moderate Match",
+    "match_pct": 62.66,
+    "confidence": {
+      "confidence_score": 1.0,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.0,
+        "coverage_rate": 1.0,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 1.0061,
+    "edge_score": 0.0,
+    "combined": 0.6037
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.5855,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.3877,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Écart modéré"
+    },
+    "weighted_gap": 0.3734,
+    "matched_nodes": "2/7",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.567,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.5714,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.5358,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.4286,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.3035,
+    "weighted_recall": 0.3172,
+    "weighted_f1": {
+      "value": 0.5102,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5364,
+    "missing_critical_penalty": {
+      "value": 0.4,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.7459,
+    "ndcg_10": 0.868,
+    "map_score": 0.8179,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8999,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.5139,
+    "experience_density": 0.4085
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 54.17,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 53.39,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 50.13,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 83.46,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 55.88,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 54.07,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 24.26,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 1,
+      "match_pct": 47.7,
+      "weight_sum": 0.954
+    },
+    "Tool": {
+      "count": 3,
+      "match_pct": 48.0,
+      "weight_sum": 2.766
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 48.9,
+      "weight_sum": 0.954
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 60.3,
+      "weight_sum": 1.01
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "top_synergies": [],
+    "total_edges": 0
+  },
+  "critical_gaps": [],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": []
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 6,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 4,
+      "HALO_BIAS": 1,
+      "PROXY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "senior_frontend_engineer",
+        "label": "Senior Frontend Engineer",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.83,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.954,
+        "reason": "The weight change is biased towards prestige, as the candidate's university/company name (Capgemini & Blue Harvest) and experience (10+ years in software engineering and architecture) are given significant importance without context. A fair alternative would be to focus on relevant skills demonstrated in the CV, such as expertise with React, Next.js, TypeScript, Vue.js, and cross-functional coordination."
+      },
+      {
+        "id": "react",
+        "label": "React",
+        "bias_category": "HALO_BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.0,
+        "reason": "The weight change is biased because it relies heavily on a single signal (mention of React in the projects section) without concrete evidence to confirm its usage. A fair alternative would be to use multiple signals, such as actual experience with React or relevant skills listed in the CV."
+      },
+      {
+        "id": "typescript",
+        "label": "TypeScript",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.977,
+        "reason": "The weight change is biased towards prestige bias, as the CV mentions TypeScript in the 'projects' section without concrete evidence of its usage. The JD emphasizes expertise in React, Next.js, and Vue.js, but TypeScript is not a primary focus. A correction factor of 0.85 is applied to reflect this unfair advantage."
+      },
+      {
+        "id": "vue_js",
+        "label": "Vue.js",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.0,
+        "reason": "The weight change in Vue.js expertise is biased towards prestige, as the job description mentions several specific technologies (React, Next.js, TypeScript) alongside Vue.js, but there's no concrete evidence of the candidate's usage or experience with Vue.js beyond it being mentioned in a project section. A fair alternative would be to use more objective metrics, such as a skills assessment or a technical interview, to evaluate the candidate's expertise."
+      },
+      {
+        "id": "next_js",
+        "label": "Next.js",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.1,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.88,
+        "reason": "The weight change is biased towards Next.js because the candidate's proficiency in using Next.js is not explicitly stated, but rather mentioned as one of the tools used in a project. This may be an indirect way to favor candidates with more prominent experience in popular frameworks like Next.js. A fair alternative would be to assess the candidate's skills and experience based on concrete evidence provided in the CV, such as their expertise in React or other relevant technologies."
+      },
+      {
+        "id": "principes_de_conception",
+        "label": "Principes de conception",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.105,
+        "reason": "The weight change is biased towards prestige because the job description emphasizes 'expertise approfondie' in specific technologies, whereas the candidate's summary highlights their experience with a wide range of technologies, indicating a broad and adaptable skill set. This suggests that the adapted weight is overemphasizing the importance of name-brand technologies at the expense of more general or transferable skills."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.5855 (sous-qualifié), CTM=0.3877 (écart structurel modéré), match_pct=62.66% → Moderate Match",
+    "v6_summary": "weighted_f1=0.5102, gap_score=0.5358, ndcg_5=0.7459, missing_critical_penalty=0.4, combo_v6_final=54.17",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "0 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (1.0)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "job_id": "job_57",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-03T11:56:35.044331",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 21.75,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.846,
+        "coverage_rate": 0.154,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.7692
+  },
+  "final_scores": {
+    "node_score": 0.1023,
+    "edge_score": 0.4234,
+    "combined": 0.2308
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.0614,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7844,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7825,
+    "matched_nodes": "1/13",
+    "edge_match_pct": 21.17
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.0814,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.2228,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.045,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0769,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.0057,
+    "weighted_recall": 0.0499,
+    "weighted_f1": {
+      "value": 0.0951,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.525,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.7446,
+    "ndcg_10": 0.848,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.2229,
+    "semantic_fit_score": 0.243,
+    "experience_density": 0.0414
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 14.77,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 12.98,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 12.23,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 89.78,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 30.61,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 21.35,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 27.72,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 23.0,
+      "weight_sum": 1.528
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 0.0,
+      "weight_sum": 3.501
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 10.6,
+      "weight_sum": 1.428
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 0.859
+    },
+    "Tool": {
+      "count": 3,
+      "match_pct": 0.0,
+      "weight_sum": 2.502
+    },
+    "Responsibility": {
+      "count": 1,
+      "match_pct": 5.0,
+      "weight_sum": 0.703
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 21.17,
+    "total_edges": 7,
+    "top_synergies": [
+      {
+        "edge_key": "python_data_scientist|machine_learning_techniques",
+        "source": "python_data_scientist",
+        "target": "machine_learning_techniques",
+        "w_0": 0.95,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 44.7,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "tensorflow_tool|machine_learning_techniques",
+        "source": "tensorflow_tool",
+        "target": "machine_learning_techniques",
+        "w_0": 0.75,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 56.7,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ubuntu_platform|python_data_scientist",
+        "source": "ubuntu_platform",
+        "target": "python_data_scientist",
+        "w_0": 0.8,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.3,
+        "match_pct": 37.5,
+        "p3_confidence": "MEDIUM",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "machine_learning_techniques|classification_research",
+        "source": "machine_learning_techniques",
+        "target": "classification_research",
+        "w_0": 0.65,
+        "w_cv": 0.188,
+        "w_cv_norm": 0.094,
+        "match_pct": 14.5,
+        "p3_confidence": "LOW",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "data_science_domain|data_science_teaching_role",
+        "source": "data_science_domain",
+        "target": "data_science_teaching_role",
+        "w_0": 0.8,
+        "w_cv": 0.15,
+        "w_cv_norm": 0.075,
+        "match_pct": 9.4,
+        "p3_confidence": "LOW",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.925,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Communication",
+      "type": "Soft Skill",
+      "gap": 0.964,
+      "severity": "critical",
+      "importance": 0.964
+    },
+    {
+      "skill": "Data science",
+      "type": "Domain",
+      "gap": 0.793,
+      "severity": "critical",
+      "importance": 0.906
+    },
+    {
+      "skill": "Ubuntu",
+      "type": "Tool",
+      "gap": 0.871,
+      "severity": "critical",
+      "importance": 0.871
+    },
+    {
+      "skill": "Créativité",
+      "type": "Soft Skill",
+      "gap": 0.865,
+      "severity": "critical",
+      "importance": 0.865
+    },
+    {
+      "skill": "Flexibilité",
+      "type": "Soft Skill",
+      "gap": 0.865,
+      "severity": "critical",
+      "importance": 0.865
+    },
+    {
+      "skill": "Ingénieur",
+      "type": "Education",
+      "gap": 0.859,
+      "severity": "critical",
+      "importance": 0.859
+    },
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.835,
+      "severity": "critical",
+      "importance": 0.835
+    },
+    {
+      "skill": "Capacité de travailler en équipe",
+      "type": "Soft Skill",
+      "gap": 0.807,
+      "severity": "critical",
+      "importance": 0.807
+    },
+    {
+      "skill": "Matlab",
+      "type": "Tool",
+      "gap": 0.796,
+      "severity": "critical",
+      "importance": 0.796
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.925
+      },
+      {
+        "label": "Communication",
+        "type": "Soft Skill",
+        "gap": 0.964
+      },
+      {
+        "label": "Data science",
+        "type": "Domain",
+        "gap": 0.793
+      },
+      {
+        "label": "Ubuntu",
+        "type": "Tool",
+        "gap": 0.871
+      },
+      {
+        "label": "Créativité",
+        "type": "Soft Skill",
+        "gap": 0.865
+      },
+      {
+        "label": "Flexibilité",
+        "type": "Soft Skill",
+        "gap": 0.865
+      },
+      {
+        "label": "Ingénieur",
+        "type": "Education",
+        "gap": 0.859
+      },
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.835
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 3,
+    "nodes_with_bias": 3,
+    "edges_audited": 1,
+    "edges_with_bias": 1,
+    "bias_categories": {
+      "PROXY": 4
+    },
+    "biased_nodes": [
+      {
+        "id": "python_data_scientist",
+        "label": "Python",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.15,
+        "reason": "The candidate’s CV includes fluency in multiple Indian languages (Telugu, Hindi, Marathi, Marwari) alongside English. While multilingualism can be a valuable asset, the JD doesn’t explicitly require or prioritize it. The decreased weight suggests a proxy bias – the system is penalizing the candidate for possessing these linguistic skills, potentially due to a lack of representation of individuals from these backgrounds in the data used to train the algorithm. A fair alternative would be to focus solely on demonstrable skills and experience relevant to the role, rather than linguistic diversity, ensuring a level playing field for all applicants regardless of their cultural background. The CV’s extensive and varied professional experience is being overshadowed by this secondary linguistic information."
+      },
+      {
+        "id": "data_science_domain",
+        "label": "Data science",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The CV heavily emphasizes Ajay’s fluency in multiple Indian languages (Telugu, Hindi, Marathi, Marwari) alongside English, alongside certifications focused on web development technologies. This suggests a proxy for socioeconomic background and potentially location bias – a strong emphasis on diverse languages signals a candidate from a non-Western, likely lower-income, background. While language skills aren't inherently negative, the disproportionate weighting in the CV compared to technical skills indicates an unfair prioritization of factors beyond demonstrated competence in data science, thus creating a proxy bias. A fairer alternative would prioritize skills and experience directly relevant to the role's requirements, such as data science experience, Python, TensorFlow, and machine learning concepts."
+      },
+      {
+        "id": "classification_research",
+        "label": "Classification",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease in weight (w_cv from 0.522 to 0.25) is likely driven by proxy bias related to Ajay's language skills (Telugu, Hindi, Marathi, Marwari) and geographic location (San Francisco Bay Area). While possessing multilingual skills could be valuable in certain research contexts, the system is heavily weighting these as signals of potential, instead of demonstrable skills related to classification research, project experience, and technical expertise in relevant technologies like Python and deep learning. The JD emphasizes skills like ‘analysis of data’ and ‘machine learning’, yet Ajay’s CV focuses heavily on general software engineering skills and his native languages, implying an over-reliance on signals that are not directly linked to the role's core requirements. A fair alternative would involve prioritizing skills and experience directly relevant to the classification research domain, discounting the language skills as a secondary consideration."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "machine_learning_techniques|classification_research",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV excerpt describes a role focused on classification research using machine learning techniques, aligning with the job description's emphasis on 'classification and machine learning.' However, the candidate's CV focuses solely on 'GPU power optimization solutions for data centers,' which, while relevant to AI, doesn't directly demonstrate a connection to the specified classification research. This proxy bias leverages a related skill (AI computing) as a substitute for the desired classification expertise, unfairly penalizing the candidate for not explicitly highlighting the desired research focus. A fair alternative would be to adjust the weight based on the demonstrable skills in machine learning and the alignment with the research aspects outlined in the job description."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.0614 (sous-qualifié), CTM=0.7844 (écart structurel élevé), match_pct=21.75% → Poor Match",
+    "v6_summary": "weighted_f1=0.0951, gap_score=0.045, ndcg_5=0.7446, missing_critical_penalty=0.0, combo_v6_final=14.77",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "11 gaps critiques identifiés",
+    "bias_note": "3 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "⚠ 76.9% des scores via fallback mathématique (LLM instable)"
+  }
+}

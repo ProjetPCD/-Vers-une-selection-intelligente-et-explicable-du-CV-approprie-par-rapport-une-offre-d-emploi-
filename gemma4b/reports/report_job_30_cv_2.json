@@ -1,0 +1,433 @@
+{
+  "job_id": "job_30",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-07T00:30:45.482884",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 31.95,
+    "confidence": {
+      "confidence_score": 0.47,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.714,
+        "coverage_rate": 0.571,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.3348,
+    "edge_score": 0.1825,
+    "combined": 0.2739
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1974,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6852,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6805,
+    "matched_nodes": "3/14",
+    "edge_match_pct": 9.12
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.229,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.0912,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1636,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0909,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.128,
+    "weighted_recall": 0.0563,
+    "weighted_f1": {
+      "value": 0.1073,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.547,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.671,
+    "ndcg_10": 0.8115,
+    "map_score": 0.7376,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.3475,
+    "experience_density": 0.1325
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 17.69,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 14.62,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 20.98,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 77.66,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 33.11,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 24.91,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 19.06,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 5,
+      "match_pct": 8.9,
+      "weight_sum": 4.627
+    },
+    "Hard Skill": {
+      "count": 4,
+      "match_pct": 21.6,
+      "weight_sum": 3.415
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 13.6,
+      "weight_sum": 1.203
+    },
+    "Soft Skill": {
+      "count": 3,
+      "match_pct": 29.4,
+      "weight_sum": 1.836
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 9.12,
+    "total_edges": 6,
+    "top_synergies": [
+      {
+        "edge_key": "devops_linux|devops_kubernetes",
+        "source": "devops_linux",
+        "target": "devops_kubernetes",
+        "w_0": 0.793,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 47.3,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devops_python|devops_ml_model",
+        "source": "devops_python",
+        "target": "devops_ml_model",
+        "w_0": 0.85,
+        "w_cv": 0.188,
+        "w_cv_norm": 0.094,
+        "match_pct": 11.1,
+        "p3_confidence": "LOW",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "devops_python|devops_data_science",
+        "source": "devops_python",
+        "target": "devops_data_science",
+        "w_0": 0.745,
+        "w_cv": 0.15,
+        "w_cv_norm": 0.075,
+        "match_pct": 10.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devops_java|devops_communication_skills",
+        "source": "devops_java",
+        "target": "devops_communication_skills",
+        "w_0": 0.65,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devops_docker|devops_kubernetes",
+        "source": "devops_docker",
+        "target": "devops_kubernetes",
+        "w_0": 0.917,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "AWS",
+      "type": "Tool",
+      "gap": 0.918,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Jenkins",
+      "type": "Tool",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Java",
+      "type": "Hard Skill",
+      "gap": 0.646,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.646,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Go",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.823,
+      "severity": "critical",
+      "importance": 0.917
+    },
+    {
+      "skill": "Kubernetes",
+      "type": "Tool",
+      "gap": 0.823,
+      "severity": "critical",
+      "importance": 0.917
+    },
+    {
+      "skill": "Linux",
+      "type": "Tool",
+      "gap": 0.712,
+      "severity": "critical",
+      "importance": 0.793
+    },
+    {
+      "skill": "science des données",
+      "type": "Domain",
+      "gap": 0.745,
+      "severity": "critical",
+      "importance": 0.745
+    },
+    {
+      "skill": "communication",
+      "type": "Soft Skill",
+      "gap": 0.72,
+      "severity": "critical",
+      "importance": 0.72
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "AWS",
+        "type": "Tool",
+        "gap": 0.918
+      },
+      {
+        "label": "Jenkins",
+        "type": "Tool",
+        "gap": 0.906
+      },
+      {
+        "label": "Java",
+        "type": "Hard Skill",
+        "gap": 0.646
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.646
+      },
+      {
+        "label": "Go",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Docker",
+        "type": "Tool",
+        "gap": 0.823
+      },
+      {
+        "label": "Kubernetes",
+        "type": "Tool",
+        "gap": 0.823
+      },
+      {
+        "label": "Linux",
+        "type": "Tool",
+        "gap": 0.712
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 8,
+    "nodes_with_bias": 8,
+    "edges_audited": 1,
+    "edges_with_bias": 1,
+    "bias_categories": {
+      "PROXY": 9
+    },
+    "biased_nodes": [
+      {
+        "id": "devops_aws",
+        "label": "AWS",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.163,
+        "reason": "The candidate’s CV primarily lists web development technologies (Next.js, React.js, Spring Boot) aligning with their stated skills and listed experience. The job description explicitly requires experience with DevOps tools like Docker, Kubernetes, Jenkins, and particularly AWS. The candidate’s location of Algiers, Algeria, coupled with their prior experience in web development roles in Algeria suggests a proxy bias based on socioeconomic signals; it's likely the system is penalizing the candidate for not having experience in a location more traditionally associated with DevOps roles. A fair alternative would be to assess the candidate's transferable skills and willingness to learn DevOps tools."
+      },
+      {
+        "id": "devops_jenkins",
+        "label": "Jenkins",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV's focus on location (Algiers, Algeria) and language (Arabic) alongside web development skills (Next.js, React, Spring Boot) suggests a proxy bias. The JD explicitly lists Jenkins as a required tool, yet the candidate's skillset does not include DevOps or Jenkins experience. The CV's emphasis on an Algerian location and language is likely a response to the job's requirement, disproportionately influencing the weight assigned, despite a lack of demonstrable DevOps experience. A fairer alternative would be to assess skills based solely on the listed technologies and experience, regardless of geographic origin."
+      },
+      {
+        "id": "devops_java",
+        "label": "Java",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.708,
+        "reason": "The candidate's CV prominently displays Spring Boot, a key skill listed in the job description, and their experience includes it. However, the location listed is Algiers, Algeria, which may inadvertently introduce a proxy bias favoring candidates from locations with lower average salaries or access to resources, potentially impacting the perceived value of their skillset relative to candidates in higher-cost regions like France or the US. While the experience itself is relevant, the location's socioeconomic implications suggest a potential unfair weighting, requiring a reduction in the initial weighting to reflect this contextual factor."
+      },
+      {
+        "id": "devops_python",
+        "label": "Python",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.708,
+        "reason": "The candidate's CV predominantly highlights skills and experience relevant to the DevOps/MLOps role, specifically mentioning Spring Boot, a key technology listed in the JD. However, the candidate's location is Algiers, Algeria, while the role is in France (Issy-les-Moulineaux, Île-de-France). This geographic mismatch, combined with the fact the candidate has experience at Capgemin (France), suggests a proxy bias favoring candidates based on location, potentially overlooking more qualified candidates from other locations. A correction factor of 0.75 reflects the undue influence of location on this candidate's score, recommending a reduction to prioritize candidates with demonstrable skillsets regardless of geographic origin."
+      },
+      {
+        "id": "devops_docker",
+        "label": "Docker",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV prominently features a portfolio built on web development technologies (Next.js, React.js, Spring Boot), aligning with the skills listed in the 'Top Skills' section. However, the job description explicitly requires expertise in DevOps tools like Docker, Kubernetes, and Jenkins. The significant weight decrease (-0.667) indicates a proxy bias based on location (Algeria) and the candidate's focus on web development, suggesting a mismatch between the applicant's listed skills and the requirements of the role, potentially leading to a lower score."
+      },
+      {
+        "id": "devops_kubernetes",
+        "label": "Kubernetes",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV overwhelmingly lists web development technologies (Next.js, React.js, Spring Boot) rather than DevOps tools like Docker, Kubernetes, or Jenkins, which are explicitly listed as required in the job description. This suggests a proxy bias based on the candidate's location (Algiers, Algeria) and the language of the CV, potentially leading the recruiter to undervalue skills not prominently displayed in English.  The JD emphasizes experience with Kubernetes, indicating a misaligned skill set, hence a penalized factor."
+      },
+      {
+        "id": "devops_linux",
+        "label": "Linux",
+        "bias_category": "PROXY",
+        "severity": "HIGH",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.163,
+        "reason": "The CV prominently lists web development technologies (Next.js, React.js, Spring Boot) and a Full-Stack Developer role, while the job description explicitly requires significant experience with DevOps tools like Docker, Kubernetes, Jenkins, AWS, and Linux. The candidate's location in Algiers, Algeria, coupled with the lack of explicit DevOps skills, suggests a proxy bias – the system is prioritizing the candidate's location and web development skills, rather than their expertise in the required DevOps technologies. This dramatically underrepresents the ideal weight, indicating a significant, unfair penalization for not possessing the core requirements."
+      },
+      {
+        "id": "devops_teamwork",
+        "label": "Teamwork",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.094,
+        "reason": "The increased weight change is driven by experience at Capgemini and Portuaire d’Alger, which are located in Algeria. This represents a proxy for socioeconomic status, as these companies are often associated with higher income levels than the average candidate. While teamwork experience is a positive signal, the location introduces a potentially unfair bias based on geographic origin. A fairer alternative would be to focus solely on the skills and experience within those companies, minimizing the influence of the location, with a correction factor of 1.2."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "devops_python|devops_ml_model",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The system is unfairly penalizing the candidate for the absence of explicit Python/ML model mentions, driven by a proxy for the candidate's skills. The job description heavily emphasizes Python and ML model utilization but doesn't require it to be explicitly stated on the CV.  The low CV weight (0.25) combined with the high emphasis in the JD suggests a bias towards candidates who explicitly highlight these skills, regardless of actual experience. A fair alternative would be to weight the candidate based on overall DevOps experience and the ability to learn and apply these technologies, rather than demanding a specific keyword match."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1974 (sous-qualifié), CTM=0.6852 (écart structurel élevé), match_pct=31.95% → Poor Match",
+    "v6_summary": "weighted_f1=0.1073, gap_score=0.1636, ndcg_5=0.671, missing_critical_penalty=0.0, combo_v6_final=17.69",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "10 gaps critiques identifiés",
+    "bias_note": "8 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.47)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

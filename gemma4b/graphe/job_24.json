@@ -1,0 +1,171 @@
+{
+  "nodes": [
+    {
+      "id": "engineer_in_ia_ml",
+      "label": "Ingénieur en Intelligence Artificielle et Apprentissage Automatique (IA/ML)",
+      "type": "Education",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Job title",
+      "inferred": false,
+      "inferred_from": "Mission passionnante pour un Ingénieur en Intelligence Artificielle et Apprentissage Automatique (IA/ML) chez notre entreprise !"
+    },
+    {
+      "id": "tensorflow",
+      "label": "TensorFlow",
+      "type": "Tool",
+      "w_0": 0.997,
+      "seniority_required": "N/A",
+      "context": "utiliser les frameworks tels que Scikit-Learn, TensorFlow, Keras et Hugging Face",
+      "inferred": true,
+      "inferred_from": "TensorFlow"
+    },
+    {
+      "id": "keras",
+      "label": "Keras",
+      "type": "Tool",
+      "w_0": 0.943,
+      "seniority_required": "N/A",
+      "context": "utiliser les frameworks tels que Scikit-Learn, TensorFlow, Keras et Hugging Face",
+      "inferred": true,
+      "inferred_from": "Keras"
+    },
+    {
+      "id": "sklearn",
+      "label": "Scikit-Learn",
+      "type": "Tool",
+      "w_0": 0.956,
+      "seniority_required": "N/A",
+      "context": "utiliser les frameworks tels que Scikit-Learn, TensorFlow, Keras et Hugging Face",
+      "inferred": true,
+      "inferred_from": "Scikit-Learn"
+    },
+    {
+      "id": "hugging_face",
+      "label": "Hugging Face",
+      "type": "Tool",
+      "w_0": 0.887,
+      "seniority_required": "N/A",
+      "context": "utiliser les frameworks tels que Scikit-Learn, TensorFlow, Keras et Hugging Face",
+      "inferred": true,
+      "inferred_from": "Hugging Face"
+    },
+    {
+      "id": "medical_datasets",
+      "label": "datasets médicaux et documentaires",
+      "type": "Tool",
+      "w_0": 0.868,
+      "seniority_required": "N/A",
+      "context": "modélisation prédictive, la somatisation et la représentation de texte dans les datasets médicaux et documentaires",
+      "inferred": true,
+      "inferred_from": "datasets médicaux et documentaires"
+    },
+    {
+      "id": "python_programming",
+      "label": "Programmation Python",
+      "type": "Hard Skill",
+      "w_0": 0.85,
+      "seniority_required": "Senior",
+      "context": "Strongly implied as the primary language for developing AI/ML models.",
+      "inferred": true,
+      "inferred_from": "une excellente compréhension des concepts de l'apprentissage automatique et de la programmation Python"
+    },
+    {
+      "id": "ia_ml_domain",
+      "label": "IA/ML",
+      "type": "Domain",
+      "w_0": 0.82,
+      "seniority_required": "N/A",
+      "context": "projets complexes et stimulants, en utilisant les dernières technologies IA/ML",
+      "inferred": true,
+      "inferred_from": "IA/ML"
+    },
+    {
+      "id": "professional_domain",
+      "label": "professionnel",
+      "type": "Domain",
+      "w_0": 0.699,
+      "seniority_required": "N/A",
+      "context": "une excellente compréhension des concepts de l'apprentissage automatique et de la programmation Python, ainsi que des compétences en matière de communication et de collaboration",
+      "inferred": true,
+      "inferred_from": "professionnel"
+    },
+    {
+      "id": "communication_collaboration",
+      "label": "communication et de collaboration",
+      "type": "Soft Skill",
+      "w_0": 0.573,
+      "seniority_required": "N/A",
+      "context": "communication et de collaboration",
+      "inferred": true,
+      "inferred_from": "communication et de collaboration"
+    }
+  ],
+  "edges": [
+    {
+      "source": "python_programming",
+      "target": "sklearn",
+      "relation": "requires",
+      "weight": 0.956,
+      "rationale": "Scikit-Learn is a popular Python-based machine learning library, and the JD explicitly states using it for model development."
+    },
+    {
+      "source": "python_programming",
+      "target": "tensorflow",
+      "relation": "requires",
+      "weight": 0.997,
+      "rationale": "TensorFlow is a widely used Python-based framework for building and training machine learning models. The JD mentions using it."
+    },
+    {
+      "source": "python_programming",
+      "target": "keras",
+      "relation": "requires",
+      "weight": 0.943,
+      "rationale": "Keras is a high-level API that runs on top of TensorFlow and is commonly used with Python."
+    },
+    {
+      "source": "python_programming",
+      "target": "hugging_face",
+      "relation": "requires",
+      "weight": 0.887,
+      "rationale": "Hugging Face provides Python libraries for working with transformer models, which are frequently used in NLP tasks. The job context refers to using it for text representation."
+    },
+    {
+      "source": "medical_datasets",
+      "target": "sklearn",
+      "relation": "supports",
+      "weight": 0.868,
+      "rationale": "Scikit-Learn can be used for analyzing medical datasets and implementing various machine learning algorithms. This is implied by the use case."
+    },
+    {
+      "source": "medical_datasets",
+      "target": "tensorflow",
+      "relation": "supports",
+      "weight": 0.868,
+      "rationale": "TensorFlow is a suitable framework for handling and training models on larger medical datasets."
+    },
+    {
+      "source": "medical_datasets",
+      "target": "hugging_face",
+      "relation": "supports",
+      "weight": 0.887,
+      "rationale": "Hugging Face provides tools for processing medical text data which aligns with the dataset type."
+    },
+    {
+      "source": "ia_ml_domain",
+      "target": "python_programming",
+      "relation": "part_of",
+      "weight": 0.82,
+      "rationale": "Python programming is a core skill and fundamental part of the IA/ML domain."
+    },
+    {
+      "source": "professional_domain",
+      "target": "communication_collaboration",
+      "relation": "complements",
+      "weight": 0.699,
+      "rationale": "Effective communication and collaboration are essential for successful team projects, complementing professional expertise."
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_24"
+}

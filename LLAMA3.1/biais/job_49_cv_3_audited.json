@@ -1,0 +1,292 @@
+{
+  "job_id": "job_49",
+  "cv_id": "cv_3",
+  "scored_nodes": {
+    "leadership_in_sécurité": {
+      "w_cv": 0.0,
+      "evidence_quality": "inferred_standalone",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "No explicit mention of leadership in security, only a question about it.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "security_practice": {
+      "w_cv": 1.08,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.1
+        },
+        "penalties": {},
+        "final_score": 1.35
+      },
+      "active_red_flags": [],
+      "rationale": "\"dévelopé une plateforme automatisée de déploiement de clusters Kubernetes personnalisés...\" in part_2, strong evidence of security practice skills.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 1.08,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change is biased towards prestige bias because the job description specifically mentions 'leader en sécurité informatique' and 'expert qui pourra gérer notre équipe de sécurité', implying that candidates with prestigious backgrounds or experience will be favored over others. The candidate's mention of developing a customized Kubernetes deployment platform in their part_2 also reinforces this bias. A fair alternative would be to focus on the skills demonstrated by the candidate, such as their experience with Kubernetes, Terraform, and Prometheus."
+    },
+    "security_policy": {
+      "w_cv": 1.275,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.1
+        },
+        "penalties": {},
+        "final_score": 0.85
+      },
+      "active_red_flags": [],
+      "rationale": "\"dévelopé une plateforme automatisée de déploiement de clusters Kubernetes personnalisés...\" in part_2, moderate evidence of security policy skills.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO BIAS",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 1.275,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.5,
+      "p35_reason": "The weight change from 1.0 to 0.85 is biased because it unfairly penalizes a strong signal (moderate evidence of security policy skills in part_2) and does not account for the candidate's actual qualifications or experience. A fair alternative would be to assign a higher weight to this signal, considering its relevance to the job requirements."
+    },
+    "institutional_relationships": {
+      "w_cv": 0.0,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "No explicit mention of institutional relationships skills, only a question about it.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "expert_in_sécurité": {
+      "w_cv": 1.6,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.25,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.1
+        },
+        "penalties": {},
+        "final_score": 1.6
+      },
+      "active_red_flags": [],
+      "rationale": "\"Spécialisée dans la conception et l'exploitation d'infrastructures cloud hautement disponibles sur Kubernetes/ OpenShift...\" in part_1, strong evidence of expertise in security.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "risk_management": {
+      "w_cv": 0.0,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "No explicit mention of risk management skills, only a question about it.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "leader_in_sécurité": {
+      "w_cv": 1.1,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.1
+        },
+        "penalties": {},
+        "final_score": 1.1
+      },
+      "active_red_flags": [],
+      "rationale": "\"dévelopé une plateforme automatisée de déploiement de clusters Kubernetes personnalisés...\" in part_2, moderate evidence of leadership skills in security.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm"
+    }
+  },
+  "scored_edges": {
+    "leader_in_sécurité|leadership_in_sécurité": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.05,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No synergy evidence found, but there is temporal overlap (source has a score of 0.75 and target has a score of 0.0). CV excerpt: null.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "leader_in_sécurité|security_policy": {
+      "synergy_score": 0.9,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.45,
+        "penalties": 0.0,
+        "final_score": 0.9
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Synergy found in CV excerpt: \"conçu et développé la plateforme “EspaceRDV”, adoptée par 50 000+ patients dans les hôpitaux publics, facilitant l’inscription, la prise de rendez-vous en ligne et le paiement numérique sécurisé.\" The candidate used their leadership in sécurité to develop a platform that facilitated secure online payments. This is an example of strong synergy as the two skills are used together in the same accomplishment.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.9
+    },
+    "leader_in_sécurité|institutional_relationships": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.05,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No synergy evidence found, but there is temporal overlap (source has a score of 0.75 and target has a score of 0.0). CV excerpt: null.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "risk_management|security_practice": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.1,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No synergy evidence found and no temporal overlap (source has a score of 0.0 and target has a score of 1.0). CV excerpt: null.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "risk_management|security_policy": {
+      "synergy_score": 0.5,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.25,
+        "final_score": 0.5
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate used risk management to migrate applications to a cloud private infrastructure, ensuring continuity of service and reducing hosting costs by 25%. However, there is no direct evidence of using security policy in the same project or role. Temporal overlap exists, but synergy_found is weak due to lack of collaboration between the two skills.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.5
+    },
+    "institutional_relationships|security_policy": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.8,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence found showing both skills used together in the same role or project.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "expert_in_sécurité|leader_in_sécurité": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.8,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence found showing both skills used together in the same role or project.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "risk_management|leader_in_sécurité": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.35,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "In the Cloud Engineer role at NEXT STEP (2024-2024), risk management and leader in sécurité are used together in the same project, as seen in the provided CV excerpt.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    }
+  },
+  "metadata": {
+    "skills_scored": 7,
+    "mean_score": 0.5,
+    "edges_scored": 8,
+    "mean_synergy": 0.331,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.331,
+      "max": 0.9,
+      "min": 0.0
+    },
+    "batches_ok": 1,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.5,
+      "max": 1.25,
+      "min": 0.0,
+      "above_1": 2,
+      "below_05": 3
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 2,
+    "nodes_with_bias": 2,
+    "nodes_corrected": 2,
+    "edges_audited": 0
+  }
+}

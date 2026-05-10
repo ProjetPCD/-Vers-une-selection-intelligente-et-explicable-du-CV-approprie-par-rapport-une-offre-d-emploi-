@@ -1,0 +1,374 @@
+{
+  "job_id": "job_30",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-07T00:46:16.854591",
+  "overall_assessment": {
+    "verdict": "Weak Match",
+    "match_pct": 50.45,
+    "confidence": {
+      "confidence_score": 0.83,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.429,
+        "coverage_rate": 0.929,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.7473,
+    "edge_score": 0.5087,
+    "combined": 0.6519
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.4407,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5641,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.4955,
+    "matched_nodes": "7/14",
+    "edge_match_pct": 25.44
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.4206,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.2543,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.3114,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.3077,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.085,
+    "weighted_recall": 0.2678,
+    "weighted_f1": {
+      "value": 0.4296,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6679,
+    "missing_critical_penalty": {
+      "value": 0.3,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.7331,
+    "ndcg_10": 0.7682,
+    "map_score": 0.7118,
+    "mrr_score": 0.5,
+    "skill_balance_score": 0.8341,
+    "top_skill_alignment": 0.6896,
+    "semantic_fit_score": 0.3797,
+    "experience_density": 0.2958
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 38.71,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 33.42,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 33.44,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 66.74,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 53.43,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 41.02,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 60.43,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 5,
+      "match_pct": 37.6,
+      "weight_sum": 4.627
+    },
+    "Hard Skill": {
+      "count": 4,
+      "match_pct": 27.6,
+      "weight_sum": 3.415
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 38.1,
+      "weight_sum": 1.203
+    },
+    "Soft Skill": {
+      "count": 3,
+      "match_pct": 54.5,
+      "weight_sum": 1.836
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 25.44,
+    "total_edges": 6,
+    "top_synergies": [
+      {
+        "edge_key": "devops_python|devops_data_science",
+        "source": "devops_python",
+        "target": "devops_data_science",
+        "w_0": 0.745,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 57.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devops_python|devops_ml_model",
+        "source": "devops_python",
+        "target": "devops_ml_model",
+        "w_0": 0.85,
+        "w_cv": 0.8,
+        "w_cv_norm": 0.4,
+        "match_pct": 47.1,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devops_java|devops_communication_skills",
+        "source": "devops_java",
+        "target": "devops_communication_skills",
+        "w_0": 0.65,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 57.7,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devops_jenkins|devops_java",
+        "source": "devops_jenkins",
+        "target": "devops_java",
+        "w_0": 0.793,
+        "w_cv": 0.45,
+        "w_cv_norm": 0.225,
+        "match_pct": 28.4,
+        "p3_confidence": "LOW",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "devops_docker|devops_kubernetes",
+        "source": "devops_docker",
+        "target": "devops_kubernetes",
+        "w_0": 0.917,
+        "w_cv": 0.281,
+        "w_cv_norm": 0.141,
+        "match_pct": 15.3,
+        "p3_confidence": "LOW",
+        "p35_is_biased": true
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Jenkins",
+      "type": "Tool",
+      "gap": 0.812,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Java",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Go",
+      "type": "Hard Skill",
+      "gap": 0.875,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.617,
+      "severity": "critical",
+      "importance": 0.917
+    },
+    {
+      "skill": "Kubernetes",
+      "type": "Tool",
+      "gap": 0.823,
+      "severity": "critical",
+      "importance": 0.917
+    },
+    {
+      "skill": "science des données",
+      "type": "Domain",
+      "gap": 0.682,
+      "severity": "critical",
+      "importance": 0.745
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "AWS",
+        "type": "Tool",
+        "w_cv": 1.55
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "Jenkins",
+        "type": "Tool",
+        "gap": 0.812
+      },
+      {
+        "label": "Java",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Go",
+        "type": "Hard Skill",
+        "gap": 0.875
+      },
+      {
+        "label": "Docker",
+        "type": "Tool",
+        "gap": 0.617
+      },
+      {
+        "label": "Kubernetes",
+        "type": "Tool",
+        "gap": 0.823
+      },
+      {
+        "label": "science des données",
+        "type": "Domain",
+        "gap": 0.682
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 9,
+    "nodes_with_bias": 4,
+    "edges_audited": 2,
+    "edges_with_bias": 2,
+    "bias_categories": {
+      "C": 1,
+      "D": 1,
+      "B": 1,
+      "HALO": 1,
+      "A": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "devops_jenkins",
+        "label": "Jenkins",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The CV demonstrates a specific technical achievement – automating incident resolution with Python and Shell scripting, directly referencing Jenkins – which aligns with the job description’s requirements for DevOps and MLOps expertise. However, the description focuses on broader Python skills rather than explicitly highlighting Jenkins proficiency, leading to a decreased score. This suggests a potential bias toward candidates who more explicitly demonstrate Jenkins skills, despite the candidate’s demonstrated ability to apply Python in a high-impact automation scenario, representing a moderate level of unfair penalization."
+      },
+      {
+        "id": "devops_docker",
+        "label": "Docker",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The CV explicitly details experience with Docker containerization through the mention of 'architecting secure VPC solutions in AWS with the help of ACLs, security groups, public and private network configurations'. While the JD lists Docker as a required tool, the CV provides concrete evidence of practical experience with it. This demonstrates a valuable skill beyond the listed requirements, suggesting the weight reduction is a result of focusing disproportionately on the less-detailed JD description and potentially overlooking the CV's specific skill set, thus exhibiting ageism through prioritizing a broad, general requirement over demonstrable expertise.  A higher correction factor is warranted to reflect the significant contribution made by the candidate's Docker experience."
+      },
+      {
+        "id": "devops_kubernetes",
+        "label": "Kubernetes",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV demonstrates strong cloud engineering skills (AWS, Linux, Python, Docker) and a focus on operational aspects (uptime, automation, incident resolution) aligned with the JD's requirements for a DevOps/MLOps specialist. However, the JD specifically lists Kubernetes as a required skill and this absence is causing a large weight reduction. The CV's focus on VPC architecture with Kubernetes principles suggests relevant skills, but the explicit lack of Kubernetes experience leads to a bias. Correction factor applied to acknowledge the relevant skills while mitigating the negative impact of the missing Kubernetes expertise. Further investigation should consider the candidate's ability to quickly learn and apply Kubernetes."
+      },
+      {
+        "id": "devops_communication",
+        "label": "communication",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.938,
+        "reason": "The CV's note about communication skills is listed as a 'soft skill' with no specifics mentioned, mirroring the JD's request for a concrete example. The CV provides a specific, quantifiable example of communication skills – automating incident resolution and contributing to uptime – demonstrating a significant impact. This emphasizes a proactive and results-oriented approach to communication, which is a strength and deserves a higher weight. Penalizing the increased weight without acknowledging this demonstrable skill represents a Gender/Diversity bias, unfairly discounting valuable experience based on skill demonstration rather than the expected 'soft skill' label."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "devops_docker|devops_kubernetes",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.281,
+        "reason": "The JD heavily emphasizes experience with Docker, Kubernetes, Jenkins, AWS, Linux, Java, Python, and Go – a long list of commonly used tools.  The candidate's CV mentioning the 'Nix ecosystem' for deployment is a supporting indicator, but the JD's exhaustive tool list creates a halo effect, potentially unfairly weighting the candidate higher simply because they possess skills mentioned in the JD, regardless of the strength of their expertise.  A fair alternative would prioritize skills directly demonstrated in the candidate’s experience, such as deployment methodologies and orchestration technologies, over a broad list of tools. The CV excerpt provides supporting evidence but doesn't justify the current weight."
+      },
+      {
+        "edge": "devops_jenkins|devops_java",
+        "bias_category": "A",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The audit identifies prestige bias due to the emphasis on Python scripting and incident automation, linked to Java's role in system management. The CV excerpt highlights quantifiable achievements (reducing manual interventions) which are valued more than simply stating Java skills. A correction factor of 1.2 reflects an unfairly penalized skillset – the CV is prioritizing demonstrable impact over the specific language, which is a common indicator of prestige bias."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.4407 (sous-qualifié), CTM=0.5641 (écart structurel élevé), match_pct=50.45% → Weak Match",
+    "v6_summary": "weighted_f1=0.4296, gap_score=0.3114, ndcg_5=0.7331, missing_critical_penalty=0.3, combo_v6_final=38.71",
+    "key_strengths": "1 compétences clés validées",
+    "key_gaps": "6 gaps critiques identifiés",
+    "bias_note": "4 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.83)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

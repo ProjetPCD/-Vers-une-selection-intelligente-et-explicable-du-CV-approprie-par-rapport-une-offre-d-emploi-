@@ -1,0 +1,222 @@
+{
+  "nodes": [
+    {
+      "id": "data-scientist-role",
+      "label": "Data Scientist",
+      "type": "Domain",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Job title - core requirement",
+      "inferred": true,
+      "inferred_from": "Votre prochain défi professionnel est chez notre entreprise en tant que Data Scientist."
+    },
+    {
+      "id": "python-programming",
+      "label": "Python",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Explicitly mentioned as a required tool",
+      "inferred": true,
+      "inferred_from": "Vous devrez avoir une maîtrise des outils tels que R, Python, SQL, et des technologies de Big Data comme Hadoop et Spark."
+    },
+    {
+      "id": "sql-database",
+      "label": "SQL",
+      "type": "Tool",
+      "w_0": 0.993,
+      "seniority_required": "N/A",
+      "context": "Explicitly mentioned as a required tool",
+      "inferred": true,
+      "inferred_from": "Vous devrez avoir une maîtrise des outils tels que R, Python, SQL, et des technologies de Big Data comme Hadoop et Spark."
+    },
+    {
+      "id": "d3-js-visualization",
+      "label": "D3.js",
+      "type": "Tool",
+      "w_0": 0.926,
+      "seniority_required": "N/A",
+      "context": "Explicitly mentioned as a desirable tool",
+      "inferred": true,
+      "inferred_from": "Une expérience avec les bibliothèques de visualisation de données comme Tableau et D3.js est également souhaitable."
+    },
+    {
+      "id": "nosql-database",
+      "label": "NoSQL",
+      "type": "Tool",
+      "w_0": 0.936,
+      "seniority_required": "N/A",
+      "context": "Explicitly mentioned as a desirable tool",
+      "inferred": true,
+      "inferred_from": "Vous devrez avoir une maîtrise des outils tels que R, Python, SQL, et des technologies de Big Data comme Hadoop et Spark."
+    },
+    {
+      "id": "tensorflow-ml",
+      "label": "TensorFlow",
+      "type": "Tool",
+      "w_0": 0.935,
+      "seniority_required": "N/A",
+      "context": "Explicitly mentioned as a desirable tool",
+      "inferred": true,
+      "inferred_from": "Une expérience avec les frameworks de machine learning comme Scikit-Learn et TensorFlow est également souhaitable."
+    },
+    {
+      "id": "hadoop-big-data",
+      "label": "Hadoop",
+      "type": "Tool",
+      "w_0": 0.891,
+      "seniority_required": "N/A",
+      "context": "Explicitly mentioned as a desirable tool",
+      "inferred": true,
+      "inferred_from": "Vous devrez avoir une maîtrise des outils tels que R, Python, SQL, et des technologies de Big Data comme Hadoop et Spark."
+    },
+    {
+      "id": "scikit-learn-ml",
+      "label": "Scikit-Learn",
+      "type": "Tool",
+      "w_0": 0.878,
+      "seniority_required": "N/A",
+      "context": "Explicitly mentioned as a desirable tool",
+      "inferred": true,
+      "inferred_from": "Une expérience avec les frameworks de machine learning comme Scikit-Learn et TensorFlow est également souhaitable."
+    },
+    {
+      "id": "tableau-visualization",
+      "label": "Tableau",
+      "type": "Tool",
+      "w_0": 0.84,
+      "seniority_required": "N/A",
+      "context": "Explicitly mentioned as a desirable tool",
+      "inferred": true,
+      "inferred_from": "Une expérience avec les bibliothèques de visualisation de données comme Tableau et D3.js est également souhaitable."
+    },
+    {
+      "id": "spark-big-data",
+      "label": "Spark",
+      "type": "Tool",
+      "w_0": 0.689,
+      "seniority_required": "N/A",
+      "context": "Strongly implied as a tool, given Big Data context",
+      "inferred": true,
+      "inferred_from": "Vous devrez avoir une maîtrise des outils tels que R, Python, SQL, et des technologies de Big Data comme Hadoop et Spark."
+    },
+    {
+      "id": "communication",
+      "label": "Communication",
+      "type": "Soft Skill",
+      "w_0": 0.733,
+      "seniority_required": "N/A",
+      "context": "The job description mentions ‘compétences en communication’",
+      "inferred": true,
+      "inferred_from": "Vous devrez également avoir de solides compétences en communication..."
+    },
+    {
+      "id": "r",
+      "label": "R",
+      "type": "Tool",
+      "w_0": 0.693,
+      "seniority_required": "N/A",
+      "context": "The job description mentions ‘R’ as a tool.",
+      "inferred": true,
+      "inferred_from": "Vous devrez avoir une maîtrise des outils tels que R, Python, SQL..."
+    },
+    {
+      "id": "data_science",
+      "label": "Data Science",
+      "type": "Hard Skill",
+      "w_0": 0.618,
+      "seniority_required": "N/A",
+      "context": "The job description explicitly states ‘solide formation en data science’",
+      "inferred": true,
+      "inferred_from": "Le candidat idéal aura une expérience significative dans l'utilisation des données pour stimuler la croissance commerciale."
+    }
+  ],
+  "edges": [
+    {
+      "source": "data-scientist-role",
+      "target": "data_science",
+      "relation": "part_of",
+      "weight": 0.85,
+      "rationale": "Data Science is the broader domain that this role belongs to."
+    },
+    {
+      "source": "data-scientist-role",
+      "target": "python-programming",
+      "relation": "requires",
+      "weight": 0.95,
+      "rationale": "The job context explicitly states using Python for model development and data analysis, a common practice in data science."
+    },
+    {
+      "source": "data-scientist-role",
+      "target": "sql-database",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "The job context mentions a need to use SQL for data analysis."
+    },
+    {
+      "source": "data-scientist-role",
+      "target": "nosql-database",
+      "relation": "supports",
+      "weight": 0.65,
+      "rationale": "The job context mentions using Big Data technologies, and NoSQL databases are frequently part of Big Data solutions."
+    },
+    {
+      "source": "data-scientist-role",
+      "target": "tensorflow-ml",
+      "relation": "requires",
+      "weight": 0.75,
+      "rationale": "The job context indicates using TensorFlow for model building, given the overall context of data science and ML."
+    },
+    {
+      "source": "data-scientist-role",
+      "target": "d3-js-visualization",
+      "relation": "supports",
+      "weight": 0.65,
+      "rationale": "The job context highlights a need for data visualization tools, and D3.js is a common choice."
+    },
+    {
+      "source": "data-scientist-role",
+      "target": "hadoop-big-data",
+      "relation": "supports",
+      "weight": 0.65,
+      "rationale": "The job context mentions using Hadoop as part of Big Data technologies."
+    },
+    {
+      "source": "data-scientist-role",
+      "target": "scikit-learn-ml",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "The job context mentions using Scikit-Learn for building predictive models."
+    },
+    {
+      "source": "data-scientist-role",
+      "target": "tableau-visualization",
+      "relation": "supports",
+      "weight": 0.75,
+      "rationale": "The job context states needing data visualization tools like Tableau."
+    },
+    {
+      "source": "data-scientist-role",
+      "target": "communication",
+      "relation": "complements",
+      "weight": 0.75,
+      "rationale": "The job context emphasizes the need for strong communication skills."
+    },
+    {
+      "source": "data-scientist-role",
+      "target": "r",
+      "relation": "part_of",
+      "weight": 0.65,
+      "rationale": "R is a prevalent tool within the data science domain."
+    },
+    {
+      "source": "data-scientist-role",
+      "target": "spark-big-data",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "The job context explicitly states needing to use Spark for Big Data processing."
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_11"
+}

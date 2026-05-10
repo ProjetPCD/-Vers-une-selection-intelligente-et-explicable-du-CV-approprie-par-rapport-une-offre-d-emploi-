@@ -1,0 +1,563 @@
+{
+  "job_id": "job_40",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-02T23:20:31.684078",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 41.63,
+    "confidence": {
+      "confidence_score": 0.76,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.321,
+        "coverage_rate": 0.821,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.5108,
+    "edge_score": 0.4907,
+    "combined": 0.5028
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3044,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5975,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5837,
+    "matched_nodes": "2/28",
+    "edge_match_pct": 24.52
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.314,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.3971,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2753,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1071,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.4712,
+    "weighted_recall": 0.0681,
+    "weighted_f1": {
+      "value": 0.1302,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5165,
+    "missing_critical_penalty": {
+      "value": 0.1111,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.7997,
+    "ndcg_10": 0.8248,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9795,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.2891,
+    "experience_density": 0.2069
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 28.01,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 29.14,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 23.81,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 91.99,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 36.78,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 33.4,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 19.63,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Certification": {
+      "count": 2,
+      "match_pct": 44.0,
+      "weight_sum": 1.98
+    },
+    "Hard Skill": {
+      "count": 5,
+      "match_pct": 19.3,
+      "weight_sum": 4.79
+    },
+    "Tool": {
+      "count": 12,
+      "match_pct": 24.5,
+      "weight_sum": 9.583
+    },
+    "Domain": {
+      "count": 6,
+      "match_pct": 19.2,
+      "weight_sum": 4.338
+    },
+    "Soft Skill": {
+      "count": 3,
+      "match_pct": 41.0,
+      "weight_sum": 1.99
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 24.52,
+    "total_edges": 15,
+    "top_synergies": [
+      {
+        "edge_key": "spark|hadoop",
+        "source": "spark",
+        "target": "hadoop",
+        "w_0": 0.85,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 50.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "aws|cloud_practitioner",
+        "source": "aws",
+        "target": "cloud_practitioner",
+        "w_0": 0.8,
+        "w_cv": 0.8,
+        "w_cv_norm": 0.4,
+        "match_pct": 50.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "aws_certified_ai_practitioner|machine-learning-domain",
+        "source": "aws_certified_ai_practitioner",
+        "target": "machine-learning-domain",
+        "w_0": 0.98,
+        "w_cv": 0.769,
+        "w_cv_norm": 0.384,
+        "match_pct": 39.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "docker-tool|fastapi-tool",
+        "source": "docker-tool",
+        "target": "fastapi-tool",
+        "w_0": 0.7,
+        "w_cv": 0.745,
+        "w_cv_norm": 0.372,
+        "match_pct": 53.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "communication_1|collaboration-soft-skill",
+        "source": "communication_1",
+        "target": "collaboration-soft-skill",
+        "w_0": 0.6,
+        "w_cv": 0.732,
+        "w_cv_norm": 0.366,
+        "match_pct": 61.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.812,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Java",
+      "type": "Hard Skill",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 0.875,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "méthodologie agile",
+      "type": "Hard Skill",
+      "gap": 0.719,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "GCP",
+      "type": "Tool",
+      "gap": 0.954,
+      "severity": "critical",
+      "importance": 0.954
+    },
+    {
+      "skill": "Hadoop",
+      "type": "Tool",
+      "gap": 0.792,
+      "severity": "critical",
+      "importance": 0.917
+    },
+    {
+      "skill": "Spark",
+      "type": "Tool",
+      "gap": 0.808,
+      "severity": "critical",
+      "importance": 0.902
+    },
+    {
+      "skill": "Data Science",
+      "type": "Domain",
+      "gap": 0.887,
+      "severity": "critical",
+      "importance": 0.887
+    },
+    {
+      "skill": "PySpark",
+      "type": "Tool",
+      "gap": 0.652,
+      "severity": "critical",
+      "importance": 0.652
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.812
+      },
+      {
+        "label": "Java",
+        "type": "Hard Skill",
+        "gap": 0.906
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 0.875
+      },
+      {
+        "label": "méthodologie agile",
+        "type": "Hard Skill",
+        "gap": 0.719
+      },
+      {
+        "label": "GCP",
+        "type": "Tool",
+        "gap": 0.954
+      },
+      {
+        "label": "Hadoop",
+        "type": "Tool",
+        "gap": 0.792
+      },
+      {
+        "label": "Spark",
+        "type": "Tool",
+        "gap": 0.808
+      },
+      {
+        "label": "Data Science",
+        "type": "Domain",
+        "gap": 0.887
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 24,
+    "nodes_with_bias": 20,
+    "edges_audited": 2,
+    "edges_with_bias": 2,
+    "bias_categories": {
+      "HALO": 10,
+      "PROXY": 8,
+      "HALO BIAS": 3,
+      "PRESTIGE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "cloud_practitioner",
+        "label": "Cloud Practitioner",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.825,
+        "reason": "The increased weight (Delta +0.100) primarily reflects the candidate's demonstrable competitive achievements in Capture The Flag (CTF) competitions and certifications (CRTE, CCNA, OSEP). While the project migration experience is valuable, the focus on these technical challenges - showcasing skills in vulnerability scanning, penetration testing, and cybersecurity – is heavily weighted relative to the overall job description's emphasis on broader data science skills, cloud technologies, and full-stack development. This constitutes a halo effect, where impressive cybersecurity achievements disproportionately influence the weight assigned, overshadowing the core requirements of the role which includes data science and cloud work."
+      },
+      {
+        "id": "python",
+        "label": "Python",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The CV lists ‘Programming and Scripting - OSINT’ as a skill, but the evidence is limited to a single project with no demonstrable application or outcome. The JD emphasizes a need for deep expertise in Python within data science and full-stack development, yet the candidate's CV highlights other security skills first. This suggests the weight change reflects a proxy for broader cybersecurity experience rather than an actual assessment of Python proficiency, penalizing a candidate for focusing on a less directly relevant area while the job description prioritizes data science applications of Python."
+      },
+      {
+        "id": "java",
+        "label": "Java",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV focuses heavily on cybersecurity skills – penetration testing, vulnerability scanning, etc. – while the job description emphasizes data science, full-stack development, and specific technologies like Java, Python, and big data tools.  The lack of any mention of Java projects or experience within the CV despite the JD's explicit requirements constitutes a proxy signal (location and expressed skills) that is not aligned with the role's needs. This suggests the algorithm is prioritizing skills listed on the CV over demonstrated capabilities relevant to the job description, indicating a proxy bias. A correction factor of 0.75 reflects this misaligned emphasis, as the candidate's skills don't directly address the primary requirements of the role."
+      },
+      {
+        "id": "agile_methodology",
+        "label": "méthodologie agile",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The audit notes the mention of 'agile methodology' due to the project description and mentions it's expected. However, the CV primarily focuses on cybersecurity skills (Penetration Testing, Vulnerability Scanning, etc.) and certifications, with limited explicit detail about Agile methodology experience beyond a passing reference in the JD. This suggests the weight reduction is driven by a halo effect - the presence of cybersecurity credentials is heavily weighting the 'agile' mention, overshadowing the actual experience or proficiency in Agile practices. A fair alternative would involve assessing Agile experience separately, rather than relying on a single keyword within a broader skillset."
+      },
+      {
+        "id": "aws",
+        "label": "AWS",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.825,
+        "reason": "The weight increase for 'aws' is largely driven by the presence of the CRTE certificate and mention of the project's cloud architecture migration, which are technically strong signals. However, the JD heavily emphasizes broad data science skills across multiple cloud platforms (AWS and GCP) and doesn't prioritize AWS specifically. The CV primarily showcases cybersecurity expertise (CRTE, OSCP, etc.) and a penetration testing skillset, with AWS mentioned as a relevant tool for a specific project, representing a halo effect – the certificate overshadowing a more general skill set. A more fair alternative would be to weight the project context and the certificate separately, rather than elevating the overall weight based on a single technology."
+      },
+      {
+        "id": "aws_certified_ai_practitioner",
+        "label": "AWS Certified AI Practitioner",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.938,
+        "reason": "The significant increase in weight (0.27) is primarily driven by the explicit mention of the 'aws_certified_ai_practitioner' certification in the CV. This represents a single, strong signal, effectively creating a halo effect where the certification dominates the assessment, overshadowing other potentially relevant skills like the extensive cybersecurity experience outlined in the CV. A fairer alternative would be to give less weight to a single certification and consider the candidate's broader skill set, including their penetration testing and cybersecurity certifications and experience, which are arguably more closely aligned with the JD's requirements. This highlights a bias towards highly specific, single qualifications over a more holistic evaluation."
+      },
+      {
+        "id": "spark",
+        "label": "Spark",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease in weight (from 0.902 to 0.25) is likely driven by the prominence of the candidate's competitive CTF (Capture The Flag) participation and cybersecurity certifications (OSCE, CRTE, CCNA) within their CV. While these achievements demonstrate technical skills and problem-solving abilities, the JD focuses on broader Data Science and Full Stack development with a specific mention of 'Spark' as an expected tool. The CV’s overwhelming focus on cybersecurity and CTF wins, coupled with the lack of contextualized skill description for 'Spark', creates a proxy signal of a candidate pursuing a niche technical area, rather than the broad skills outlined in the job description.  This over-representation of a specific skill subset leads to an unfairly reduced weighting. A fair alternative would be to adjust the weighting based on demonstrable experience and proficiency with the tools *specifically* requested in the JD – namely Python, SQL, and Spark within a Data Science context."
+      },
+      {
+        "id": "sql-requirement",
+        "label": "SQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.04,
+        "reason": "The CV heavily emphasizes cybersecurity skills (Penetration Testing, Vulnerability Scanning, etc.) and CTF achievements, which are not directly aligned with the JD's focus on Data Science and Machine Learning. The significant weight increase reflects an overemphasis on skills not core to the desired role, suggesting a proxy bias towards candidates with technical backgrounds and CTF experience, rather than a direct assessment of SQL proficiency and data manipulation skills. A correction factor of 0.8 is applied to reduce the inflated weight given to these non-SQL related experiences."
+      },
+      {
+        "id": "machine-learning-domain",
+        "label": "Machine Learning",
+        "bias_category": "HALO BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The CV's strong emphasis on cybersecurity certifications (CRTE, OSCP, eWPTX) and CTF participation (G²FOSS, HACKFEST, Securinets ISI) heavily influenced the weighting, effectively using these achievements as a 'halo' effect. While these skills are valuable, the JD doesn't explicitly require them, and the CV provides no evidence of how these skills directly translate to the Machine Learning domain.  This over-emphasis on security experience, rather than demonstrable ML expertise, creates a bias. A fairer approach would de-weight this halo effect, reflecting a more nuanced assessment based on the specific requirements of the Machine Learning role –  a correction factor of 0.75 would appropriately reduce the impact of this over-representation."
+      },
+      {
+        "id": "docker-tool",
+        "label": "Docker",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.84,
+        "reason": "The increased weight given to 'Docker' is primarily driven by the project description highlighting 'Wireless Penetration Testing' which explicitly mentions Docker's use for network configuration. The CV’s strong focus on penetration testing skills and related certifications (OSEP, CRTE) demonstrates a direct relevance to the project. However, the JD doesn't explicitly require Docker, and the weight increase appears to be a halo effect – associating the skill with the impactful project rather than a fundamental requirement, creating an uneven distribution of weighting. A fairer alternative would be to reduce the weight to reflect the project-specific use of Docker, acknowledging its relevance within a narrower context, ensuring it doesn't overshadow more broadly applicable skills."
+      },
+      {
+        "id": "typescript-hard-skill",
+        "label": "TypeScript",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change for 'typescript-hard-skill' is primarily driven by the presence of 'Programming and Scripting' within the evidence anchor, which is a peripheral skill listed in the project description.  The JD and CV heavily emphasize multiple advanced technical skills (Python, Java, etc.), and the CV's listing of 'Programming and Scripting' feels like a halo effect, overstating the importance of TypeScript hard-skills.  While the candidate possesses TypeScript knowledge, it's clearly not the primary differentiator for the role's requirements. A correction factor of 0.75 acknowledges this inflated weight due to the halo effect, indicating unfair emphasis on a less critical skill within the broader context of the job description and the candidate's provided evidence."
+      },
+      {
+        "id": "deep-learning-domain",
+        "label": "Deep Learning",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.44,
+        "reason": "The CV heavily emphasizes cybersecurity skills (Penetration Testing, Vulnerability Scanning, etc.) and CTF participation, while the JD focuses on Deep Learning and Data Science. This suggests the candidate’s skills may not align with the specific requirements of the role, creating a proxy bias based on the candidate’s demonstrated expertise in a completely different domain.  The weight reduction indicates a mismatch between the listed skills and the advertised needs. A correction factor of 0.8 is applied to reflect this mismatch and the dominance of non-relevant skills. The candidate's accomplishments in CTFs, while impressive, are not directly applicable to a role requiring Deep Learning model development."
+      },
+      {
+        "id": "kafka_1",
+        "label": "Kafka",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.84,
+        "reason": "The increased weight (w_0) on experience with Tunisie Télécom is likely driven by the candidate’s explicit mention of Kafka within that role's description, aligning with the JD's requirements. This represents a halo effect – the candidate’s security skillset (demonstrated through certifications and CTF achievements) is being over-weighted relative to the core requirements of network management and Kafka experience, creating a bias. A fair alternative would prioritize the broader technical skills (Python, SQL, etc.) listed in the JD and the candidate’s demonstrable experience in cybersecurity roles, offering a more balanced assessment."
+      },
+      {
+        "id": "communication_1",
+        "label": "Communiquer efficacement",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.413,
+        "reason": "The decrease in weight (w_0) is likely due to a halo effect stemming from the candidate’s strong performance in CTF competitions (G²FOSS, HACKFEST, Securinets ISI CTF) and certifications (OSEP, CRTE, CCNA). While these achievements demonstrate technical skills, the JD specifically requests ‘the ability to communicate results and insights’ which is not explicitly showcased within the CV. The CV focuses heavily on technical capabilities and project achievements, neglecting the soft skill of communication as required by the job description. A correction factor of 0.75 reduces the impact of this skill, acknowledging the strong underlying technical foundation."
+      },
+      {
+        "id": "big_data_1",
+        "label": "Big Data",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The significant increase in weight (Delta +0.105) is driven by the candidate's placement in a Capture the Flag (CTF) competition (G²FOSS CTF 2016) and top placement in several cybersecurity challenges (HACKFEST, Securinets ISI CTF). While these accomplishments demonstrate technical skills, the prominence given to these competitive achievements – particularly the CTF win – reflects prestige bias, prioritizing competitive ranking over demonstrable practical skills within a professional setting. A fairer assessment would have placed more weight on the candidate’s experience with the ELK stack, which is directly aligned with the job description’s focus on data analysis and big data concepts, as supported by the provided context.  The CV prioritizes competition over consistent professional experience."
+      },
+      {
+        "id": "data_wrangling_1",
+        "label": "Data Wrangling",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The candidate's CV highlights significant experience with the ELK stack, specifically using it for log analysis, which aligns with the JD's requirement for data wrangling. However, the CV focuses heavily on cybersecurity and penetration testing skills – a highly specialized area – while the JD emphasizes a broader data science and full-stack development skillset. The increased weight given to the ELK stack experience could be a proxy for the candidate’s skills in cybersecurity, which are not explicitly mentioned as desired in the JD. This suggests a bias favoring candidates with a specific technical specialization, rather than general data wrangling abilities. A fair alternative would prioritize skills more directly aligned with the JD’s description of data science and full-stack development, like SQL or Python data manipulation."
+      },
+      {
+        "id": "kubernetes_1",
+        "label": "Kubernetes",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate’s CV heavily emphasizes cybersecurity skills (Penetration Testing, Vulnerability Scanning, Network Security) and CTF participation, aligning with the JD’s focus on Data Science and Full Stack development. However, the significant weight reduction (-0.422) suggests a proxy bias—the algorithm is prioritizing signals related to cybersecurity experience (certifications, CTF rankings) over the skills explicitly required in the JD (Python, SQL, Spark, etc.).  A fair alternative would involve weighting the candidate's network management experience and skills related to modern application deployment, acknowledging the overlap but not overemphasizing the security credentials.  The strong focus on security qualifications represents a proxy for a particular type of skillset rather than a direct demonstration of the required data science competencies."
+      },
+      {
+        "id": "git_1",
+        "label": "Git",
+        "bias_category": "HALO BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.68,
+        "reason": "The significant weight increase (0.18) is driven by the explicit mention of 'Git' within the job description and the candidate's CV. This constitutes a strong evidence signal and project anchor, creating a halo effect where the presence of Git overshadows other potentially relevant skills and experience. While the candidate demonstrates demonstrable skills, the weighting is disproportionately influenced by a single keyword, indicating a halo bias.  A fair alternative would be to treat all relevant skills with equal weighting, recognizing the overall skillset of the candidate."
+      },
+      {
+        "id": "predictive_modeling_1",
+        "label": "Predictive Modeling",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV prominently features competitive cybersecurity certifications (CRTE, OSCP, etc.) and CTF participation, which are highly relevant to the JD's demand for 'Predictive Modeling' skills. However, the skill's weight was drastically reduced to 0.25 due to the inferred nature of the skill, evidenced by the null evidence anchor. This highlights a halo effect where the candidate's strong cybersecurity profile is overshadowing the core skill requirement, and the weight reduction is disproportionate to the actual lack of direct project data.  A fair alternative would be to retain a higher weight reflecting the candidate’s general technical abilities and adaptability, recognizing that some skill demonstration would naturally be inferred based on their experience. "
+      },
+      {
+        "id": "power_bi_1",
+        "label": "Power BI",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV prominently features extensive cybersecurity and penetration testing skills – a strong, specific signal – which heavily influenced the initial score of 0.539. However, the JD lists Power BI as a 'must-have' alongside broader data science skills, without requiring specific expertise in visualization. The fact that the CV lacks any explicit mention of Power BI or data visualization tools, combined with the inferred skill designation, suggests the system is giving undue weight to the cybersecurity skills presented on the CV, creating a halo effect. A fair alternative would be to evaluate the candidate’s ability to translate their technical skills into actionable insights using visualization tools, which is missing from the CV. This overemphasis represents a significant bias."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "python|machine-learning-domain",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The candidate's CV highlights experience with 'Programming and Scripting' in 'Phishing and social engineering,' while the JD emphasizes Machine Learning skills. The current weight of 0.6 reflects a focus on the application of programming skills, potentially penalizing the candidate for lacking explicit Machine Learning experience, which is heavily prioritized in the JD.  A proxy bias exists due to the JD’s strong emphasis on specific, advanced ML technologies, implicitly favoring candidates with demonstrable experience in those areas. A fairer alternative would be to adjust the weight to 0.8, recognizing the candidate's transferable programming skills within a relevant domain, while acknowledging the core requirements of the role."
+      },
+      {
+        "edge": "spark|machine-learning-domain",
+        "bias_category": "HALO BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The job description heavily emphasizes the use of PySpark alongside other technologies like Spark and Hadoop, implicitly favoring candidates who have experience with these tools even if they aren't explicitly listed as requirements. This creates a halo effect - strong signal (PySpark) unduly influences the weight assigned, potentially overlooking candidates proficient in other relevant machine learning technologies. A fair alternative would be to base the weight on demonstrable experience with core machine learning techniques and skills, regardless of specific tool usage. The ideal weight of 0.8 is inflated by the prominence of PySpark."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3044 (sous-qualifié), CTM=0.5975 (écart structurel élevé), match_pct=41.63% → Poor Match",
+    "v6_summary": "weighted_f1=0.1302, gap_score=0.2753, ndcg_5=0.7997, missing_critical_penalty=0.1111, combo_v6_final=28.01",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "9 gaps critiques identifiés",
+    "bias_note": "20 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.76)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

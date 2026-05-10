@@ -1,0 +1,440 @@
+{
+  "job_id": "job_3",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-02T16:27:15.572709",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 19.87,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.778,
+        "coverage_rate": 0.5,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.2046,
+    "edge_score": 0.1843,
+    "combined": 0.1965
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1132,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7946,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.8013,
+    "matched_nodes": "0/18",
+    "edge_match_pct": 9.23
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1199,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1567,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1042,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8493,
+    "ndcg_10": 0.8414,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.3072,
+    "semantic_fit_score": 0.289,
+    "experience_density": 0.0891
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 11.35,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 10.28,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 14.28,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 93.97,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 3.13,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 17.14,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 6,
+      "match_pct": 10.3,
+      "weight_sum": 5.95
+    },
+    "Tool": {
+      "count": 10,
+      "match_pct": 10.4,
+      "weight_sum": 8.455
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 9.0,
+      "weight_sum": 1.271
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 9.23,
+    "total_edges": 14,
+    "top_synergies": [
+      {
+        "edge_key": "ai-engineer-typescript|angular-ai-engineer",
+        "source": "ai-engineer-typescript",
+        "target": "angular-ai-engineer",
+        "w_0": 0.75,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 50.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ai-engineer-javascript|angular-ai-engineer",
+        "source": "ai-engineer-javascript",
+        "target": "angular-ai-engineer",
+        "w_0": 0.78,
+        "w_cv": 0.516,
+        "w_cv_norm": 0.258,
+        "match_pct": 33.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ai-engineer-sql|ai-engineer-mongodb",
+        "source": "ai-engineer-sql",
+        "target": "ai-engineer-mongodb",
+        "w_0": 0.6,
+        "w_cv": 0.237,
+        "w_cv_norm": 0.119,
+        "match_pct": 19.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ai-engineer-mongodb|ai-engineer-sql",
+        "source": "ai-engineer-mongodb",
+        "target": "ai-engineer-sql",
+        "w_0": 0.8,
+        "w_cv": 0.237,
+        "w_cv_norm": 0.119,
+        "match_pct": 14.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ai-engineer-sql|ai-engineer-mysql",
+        "source": "ai-engineer-sql",
+        "target": "ai-engineer-mysql",
+        "w_0": 0.6,
+        "w_cv": 0.188,
+        "w_cv_norm": 0.094,
+        "match_pct": 15.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Java",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 0.719,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PHP",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "MySQL",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "MongoDB",
+      "type": "Tool",
+      "gap": 0.95,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "méthodes agiles",
+      "type": "Hard Skill",
+      "gap": 0.756,
+      "severity": "critical",
+      "importance": 0.981
+    },
+    {
+      "skill": "Laravel",
+      "type": "Tool",
+      "gap": 0.926,
+      "severity": "critical",
+      "importance": 0.976
+    },
+    {
+      "skill": "TypeScript",
+      "type": "Hard Skill",
+      "gap": 0.856,
+      "severity": "critical",
+      "importance": 0.969
+    },
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 0.743,
+      "severity": "critical",
+      "importance": 0.93
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Java",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 0.719
+      },
+      {
+        "label": "PHP",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "MySQL",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "MongoDB",
+        "type": "Tool",
+        "gap": 0.95
+      },
+      {
+        "label": "méthodes agiles",
+        "type": "Hard Skill",
+        "gap": 0.756
+      },
+      {
+        "label": "Laravel",
+        "type": "Tool",
+        "gap": 0.926
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 10,
+    "nodes_with_bias": 10,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 7,
+      "D": 2,
+      "PRESTIGE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "ai-engineer-javascript",
+        "label": "JavaScript",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The candidate's CV heavily emphasizes Full-Stack Development experience in Tunisia, specifically with ODDO BHF and Amen Bank. The JD explicitly lists Python, JavaScript, and TypeScript, but doesn't heavily weight those skills.  The focus on Tunisian-based companies and experience suggests a proxy bias – the system is prioritizing location and familiarity with specific banking systems over the candidate's stated skills in Javascript and React.js, indicating a preference for candidates with experience in the target market, leading to a decrease in the score."
+      },
+      {
+        "id": "ai-engineer-agile",
+        "label": "méthodes agiles",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The significant weight decrease (-0.381) is likely driven by the CV's heavy focus on front-end technologies (React.js, D3.js) and full-stack development experience in Tunisia, while the Job Description explicitly lists ‘AI Engineer’ and emphasizes experience with machine learning frameworks (FastAPI, TensorFlow, PyTorch). This proxy bias reflects a disproportionate weighting of skills outside the core requirements, suggesting a preference for front-end expertise over the stated AI engineering role, and a possible bias against candidates from Tunisia. A correction factor of 0.75 is applied to acknowledge the candidate's relevant full-stack experience but penalize the mismatch in skill weighting."
+      },
+      {
+        "id": "ai-engineer-typescript",
+        "label": "TypeScript",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The candidate's CV heavily emphasizes full-stack development experience in Tunisia, coupled with roles at banks and a network administrator position, highlighting location and socioeconomic context.  This disproportionate focus on 'Full-Stack Development (FE-Heavy) Tunisie' alongside limited mention of TypeScript skills (explicitly stated as a requirement) suggests a proxy bias – the system is penalizing the candidate for their location and the types of roles they’ve held, rather than objectively assessing their TypeScript proficiency. A fairer alternative would involve a more balanced assessment, prioritizing demonstrable TypeScript skills, or a skills-based evaluation regardless of the candidate’s employment history."
+      },
+      {
+        "id": "ai-engineer-sql",
+        "label": "SQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The CV heavily emphasizes full-stack development experience (React, JavaScript, etc.) and Tunisian-based experience with specific banks (ODDO BHF, Amen Bank, STB Bank). While these skills might be relevant, the JD emphasizes a need for SQL expertise, and the CV's SQL skills are listed as a secondary skill alongside other technologies. This suggests the system is prioritizing the candidate's overall development experience and location (Tunisia) over the explicit SQL proficiency, which represents a proxy bias against candidates from locations outside the target area. A reduction in weighting is warranted to reflect the relative importance of SQL skills as demonstrated in the job description."
+      },
+      {
+        "id": "tensorflow-ai-engineer",
+        "label": "TensorFlow",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV overwhelmingly focuses on full-stack development skills (React, Elasticsearch, etc.) and Tunisian-based experience, while the job description explicitly lists TensorFlow as a key requirement.  The significant weight decrease (Delta = -0.634) suggests a proxy bias favoring candidates with experience in more commonly known technologies/frameworks, penalizing the lack of TensorFlow skill even though the candidate possesses valuable full-stack experience. A fairer alternative would be to adjust the weighting based on demonstrated TensorFlow proficiency or equivalent experience."
+      },
+      {
+        "id": "pytorch-ai-engineer",
+        "label": "PyTorch",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV heavily emphasizes full-stack development experience across various companies in Tunisia, utilizing technologies like React.js and Elasticsearch, while the job description specifically lists PyTorch and TensorFlow as desired skills. This suggests a proxy bias—the system is prioritizing geographic location and specific technology stacks (React, Elasticsearch) commonly found in the Tunisian tech market, rather than assessing the candidate's core competency in PyTorch, which is a critical requirement for the role. The candidate's long employment history with diverse full-stack roles provides no direct evidence of AI or machine learning expertise, further supporting the proxy bias. A fair alternative would be to weight skills directly related to the JD, minimizing the influence of geographic location or broadly applicable full-stack skills."
+      },
+      {
+        "id": "angular-ai-engineer",
+        "label": "Angular",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.469,
+        "reason": "The CV’s emphasis on 'Full-Stack Development (FE-Heavy)' and extensive work history within Tunisian banks (ODDO BHF, STB Bank, Amen Bank) coupled with the JD’s focus on a specific AI Engineer role with experience in FastAPI, TensorFlow, and PyTorch indicates a proxy bias. The candidate’s background, while demonstrating full-stack development skills, doesn't explicitly showcase the deep technical expertise in AI frameworks and machine learning expected in the target role, unfairly penalizing them based on location and the type of organizations they've worked with. A fair alternative would prioritize demonstrable skills in AI and machine learning, regardless of the specific sector of experience."
+      },
+      {
+        "id": "communication-ai-engineer",
+        "label": "Communication",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.175,
+        "reason": "The CV heavily emphasizes full-stack development experience with React, D3.js, and Elasticsearch, reflecting skills more commonly associated with front-end development than the requirements of an AI Engineer role. The lack of communication-related skills explicitly mentioned in the CV, combined with the JD’s emphasis on communication, suggests a proxy bias – the CV’s technical focus is being unduly weighted, potentially overlooking a candidate's ability to communicate technical concepts effectively. This penalizes the candidate for a non-technical skill, therefore impacting their score. A lower correction factor acknowledges this bias while still aiming to reflect the candidate’s technical strengths."
+      },
+      {
+        "id": "react-ai-engineer",
+        "label": "React",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.739,
+        "reason": "The CV heavily emphasizes React.js and 'Full-Stack Development (FE-Heavy)' experience, aligning with the JD's requirements. However, the CV's location (Tunisia) and the listing of previous roles at banks (ODDO BHF, STB Bank) coupled with the explicit mention of 'Full-Stack Development (FE-Heavy)' introduces a prestige bias. The JD prioritizes experience with modern AI frameworks (FastAPI, TensorFlow, PyTorch) while the CV focuses on more traditional frontend technologies. This suggests the algorithm is overemphasizing the 'Full-Stack' label and the established financial institutions where the candidate gained experience, leading to an inflated weight compared to a candidate with similar skills but a more modern AI/ML background. Correction factor adjusted to 0.75 to reflect this undue emphasis on the institution and experience level."
+      },
+      {
+        "id": "teamwork-ai-engineer",
+        "label": "Travail d'équipe",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV primarily lists full-stack development experience with React, D3, and Elasticsearch, indicating a strong front-end skillset. The JD emphasizes AI engineering and requires expertise in areas like TensorFlow and PyTorch, which aren't reflected in the CV. The candidate's location and prior roles in Tunisian banks (ODDO BHF, Amen Bank, STB Bank) – consistently in Tunisia – suggest a proxy bias based on location and potentially socioeconomic factors influencing candidate pools.  A fair alternative would be to evaluate skills directly related to the AI engineering role, adjusting the weight proportionally to reflect the skill mismatch.  The significant reduction in the weight reflects the lack of relevant technical experience, favoring a location-based signal."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1132 (sous-qualifié), CTM=0.7946 (écart structurel élevé), match_pct=19.87% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.1042, ndcg_5=0.8493, missing_critical_penalty=0.0, combo_v6_final=11.35",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "14 gaps critiques identifiés",
+    "bias_note": "10 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

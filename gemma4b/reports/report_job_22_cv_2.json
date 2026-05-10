@@ -1,0 +1,318 @@
+{
+  "job_id": "job_22",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-05T09:07:32.416937",
+  "overall_assessment": {
+    "verdict": "Weak Match",
+    "match_pct": 50.7,
+    "confidence": {
+      "confidence_score": 0.55,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.143,
+        "coverage_rate": 0.571,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.5381,
+    "edge_score": 0.4606,
+    "combined": 0.5071
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3531,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.4901,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Écart modéré"
+    },
+    "weighted_gap": 0.493,
+    "matched_nodes": "3/7",
+    "edge_match_pct": 23.04
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3981,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.2732,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.3202,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8309,
+    "ndcg_10": 0.8836,
+    "map_score": 0.8529,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.3637,
+    "semantic_fit_score": 0.4869,
+    "experience_density": 0.1835
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 22.09,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 25.49,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 29.85,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 88.09,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 9.61,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 21.86,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 4,
+      "match_pct": 29.6,
+      "weight_sum": 3.125
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 9.4,
+      "weight_sum": 0.682
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 40.2,
+      "weight_sum": 0.562
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 16.9,
+      "weight_sum": 0.406
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 23.04,
+    "total_edges": 7,
+    "top_synergies": [
+      {
+        "edge_key": "azure-cloud-architect|devsecops-pipeline",
+        "source": "azure-cloud-architect",
+        "target": "devsecops-pipeline",
+        "w_0": 0.85,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 50.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "azure-cloud-architect|terraform-infrastructure",
+        "source": "azure-cloud-architect",
+        "target": "terraform-infrastructure",
+        "w_0": 0.75,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.3,
+        "match_pct": 40.0,
+        "p3_confidence": "MEDIUM",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devsecops-pipeline|azure-cloud-architect",
+        "source": "devsecops-pipeline",
+        "target": "azure-cloud-architect",
+        "w_0": 0.8,
+        "w_cv": 0.563,
+        "w_cv_norm": 0.282,
+        "match_pct": 35.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "azure-cloud-architect|net-cloud-development",
+        "source": "azure-cloud-architect",
+        "target": "net-cloud-development",
+        "w_0": 0.65,
+        "w_cv": 0.45,
+        "w_cv_norm": 0.225,
+        "match_pct": 34.6,
+        "p3_confidence": "LOW",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "azure-cloud-architect|microsoft-ecosystem",
+        "source": "azure-cloud-architect",
+        "target": "microsoft-ecosystem",
+        "w_0": 0.9,
+        "w_cv": 0.35,
+        "w_cv_norm": 0.175,
+        "match_pct": 19.4,
+        "p3_confidence": "LOW",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Azure",
+      "type": "Tool",
+      "gap": 0.831,
+      "severity": "critical",
+      "importance": 1.0
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Azure",
+        "type": "Tool",
+        "gap": 0.831
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 6,
+    "edges_audited": 2,
+    "edges_with_bias": 1,
+    "bias_categories": {
+      "PROXY": 4,
+      "C": 1,
+      "HALO": 1,
+      "PRESTIGE|PROXY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "azure-cloud-architect",
+        "label": "Azure",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.338,
+        "reason": "The candidate's CV heavily emphasizes AWS and DevOps experience, while the job description explicitly calls for Azure expertise. The significant weight decrease (-0.55) suggests a bias towards candidates with AWS experience, fitting into the category of PROXY BIAS – the candidate’s experience with AWS is being weighted disproportionately due to perceived relevance to the cloud environment, rather than demonstrable Azure skills. A fair alternative would prioritize Azure certifications and hands-on experience, lowering the overall score due to this weighting. Furthermore, the long list of previous roles (TCS, Cerner, IBM) while showcasing experience, doesn't directly address the core requirement of Azure cloud architecture."
+      },
+      {
+        "id": "devsecops-pipeline",
+        "label": "DevSecOps",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.788,
+        "reason": "The candidate's location (TCS Kolkata, West Bengal, India) is being heavily weighted (w_cv = 1.05) despite being a soft signal. While experience within a large company is valuable, the JD emphasizes skills and experience over geographic location. A fair alternative would be to treat location as a neutral factor, or assign a lower weight reflecting the broader talent pool available in India."
+      },
+      {
+        "id": "terraform-infrastructure",
+        "label": "Terraform",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.595,
+        "reason": "The increased weight given to the candidate’s skill in Terraform is likely driven by the mention of their employer, TCS Kolkata, West Bengal, India. This constitutes a proxy bias, as location can be a significant factor in recruitment, potentially introducing geographic preference. While Terraform is a valuable skill, attributing increased weight solely based on the company's location (a geographically specific tech hub) rather than demonstrated proficiency is unfair. A fair alternative would focus solely on the candidate’s experience and skills listed on the CV, weighting Terraform based on proven competency, not geographic origin."
+      },
+      {
+        "id": "architecture-applicative",
+        "label": "Architecture Applicative",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The applicant's extensive work history with IBM India Private Limited (3+ years) and TCS Kolkata (4+ years) – particularly DevOps Engineer roles – is being heavily weighted (w_cv = 0.25, a significant decrease from the ideal 0.682) despite the JD primarily focusing on 'Architecture Applicative' skills, not necessarily a specific vendor or long-term employment. This suggests the system is unfairly prioritizing historical employment, creating a halo effect around these past roles and discounting the candidate's specific skills related to the architecture, which is the core focus of the job description. A fairer alternative would be to weight the candidate's skills related to Azure, Terraform, and DevSecOps more heavily, based on demonstrable expertise within the architectural focus."
+      },
+      {
+        "id": "net-cloud-development",
+        "label": ".Net",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.805,
+        "reason": "The candidate’s CV lists 4 years of experience as a DevOps Engineer at TCS, which aligns with the JD’s requirement for ‘experience detected as 4 years’. However, the CV also details previous roles with IBM and Cerner, highlighting a long and consistent career trajectory in DevOps and related technologies. This extended tenure is being implicitly favored through an increased weight, suggesting a proxy bias related to candidate longevity and experience within established, potentially prestigious, companies like IBM and TCS, rather than solely focusing on demonstrated skills and experience. A fair alternative would be to weight all experience equally, regardless of the employer, and focus on verifiable skills and certifications."
+      },
+      {
+        "id": "cloud-architect-role",
+        "label": "architecte cloud expérimenté",
+        "bias_category": "PRESTIGE|PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.338,
+        "reason": "The increased weight on ‘architecte cloud expérimenté’ (experienced cloud architect) suggests a prestige bias favoring candidates from well-known companies or prestigious educational institutions. While experience is valuable, the CV’s listing of prior roles at Tata Consultancy Services (TCS), Cerner, and IBM, combined with a B.Tech degree from Future Institute of Engineering and Management, creates a signal that may be unduly influenced by the perception of these organizations. A fairer alternative would prioritize demonstrable skills and experience with AWS, Terraform, and DevOps practices, reflecting the specific requirements outlined in the job description. Correction factor is set to 0.75 to reduce the weight given to the title and acknowledge that the candidate's experience, while relevant, isn’t explicitly tied to a highly-regarded global organization. The increase in weight is not justified by skills."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "terraform-infrastructure|azure-cloud-architect",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.14,
+        "reason": "The CV highlights AWS and Terraform, suggesting a potential fit for the Azure/Terraform role described in the job description. However, the CV's focus on DevOps, AWS, and specific certifications (like Python for Data Science) and the listed employment at TCS (primarily focused on AWS) represents a proxy bias – the candidate's existing skills and experience are prioritized over the specific requirements of the Azure role.  The JD explicitly calls for Azure expertise, indicating a lack of alignment despite the listed Terraform skill, resulting in a lower weight (0.2)."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3531 (sous-qualifié), CTM=0.4901 (écart structurel modéré), match_pct=50.7% → Weak Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.3202, ndcg_5=0.8309, missing_critical_penalty=0.0, combo_v6_final=22.09",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "1 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.55)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

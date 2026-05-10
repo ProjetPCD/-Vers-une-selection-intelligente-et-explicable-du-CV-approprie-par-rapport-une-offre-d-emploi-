@@ -1,0 +1,466 @@
+{
+  "job_id": "job_123",
+  "cv_id": "cv_1",
+  "scored_nodes": {
+    "azure_cloud": {
+      "w_cv": 1.035,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.05
+        },
+        "penalties": {},
+        "final_score": 1.15
+      },
+      "active_red_flags": [],
+      "rationale": "TCS DevOps Engineer role, moderate evidence anchor",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "LOW",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 1.035,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.9,
+      "p35_reason": "The weight change based on Microsoft Azure experience may unfairly favor candidates from specific socioeconomic backgrounds or geographical locations, potentially leading to biases in hiring decisions."
+    },
+    "python": {
+      "w_cv": 0.72,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.05
+        },
+        "penalties": {},
+        "final_score": 0.9
+      },
+      "active_red_flags": [],
+      "rationale": "TCS DevOps Engineer role, strong evidence anchor",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.72,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "Prestige bias due to university/company names (GDSC and GCCP) unfairly influencing weight change."
+    },
+    "agile": {
+      "w_cv": 0.892,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.85
+      },
+      "active_red_flags": [],
+      "rationale": "Summary, weak evidence anchor",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "LOW",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.892,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.05,
+      "p35_reason": "The weight change is due to prestige bias, where the university/company name is used as an anchor rather than the candidate's actual skills and experience."
+    },
+    "apache_flank": {
+      "w_cv": 0.5,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Inferred from Skills section, no project anchor",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "kafka": {
+      "w_cv": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Skills section, zero project anchor",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "iot_skills": {
+      "w_cv": 0.0,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "No mention anywhere",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "jenkins": {
+      "w_cv": 0.72,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.05
+        },
+        "penalties": {},
+        "final_score": 0.9
+      },
+      "active_red_flags": [],
+      "rationale": "TCS DevOps Engineer role, moderate evidence anchor",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.72,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change unfairly favors candidates with experience in Jenkins, a specific tool mentioned in the job description, representing a proxy bias. To ensure fairness, we decrease the importance given to this signal."
+    },
+    "blockchain": {
+      "w_cv": 0.635,
+      "evidence_quality": "inferred_standalone",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Inferred from Skills section, no project anchor",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.635,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.27,
+      "p35_reason": "The weight change is biased towards Halo bias as it significantly decreased due to missing project anchor. A fair alternative would be to consider multiple skills and experiences from the candidate's profile."
+    },
+    "gestion-du-temps": {
+      "w_cv": 0.6,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Inferred from Summary, no project anchor",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.6,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The weight change appears to be biased towards university/company names, rather than skills demonstrated."
+    },
+    "methode-agile": {
+      "w_cv": 0.9,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.05
+        },
+        "penalties": {},
+        "final_score": 0.9
+      },
+      "active_red_flags": [],
+      "rationale": "Summary, moderate evidence anchor",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm"
+    },
+    "kubernetes": {
+      "w_cv": 0.5,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence Anchor: 'As a Cloud and DevOps enthusiast, I am skilled in implementing end-to-end solutions that optimize efficiency and scalability.'\nInferred evidence quality due to lack of specific project or outcome mentioned.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "devops": {
+      "w_cv": 1.2,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "outcome_bonus": 0.25,
+          "experience_bonus": 0.2
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.2
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence Anchor: 'As a Cloud and DevOps enthusiast, I am skilled in implementing end-to-end solutions that optimize efficiency and scalability.'\nModerate evidence quality due to mention of specific project application (end-to-end solutions).\nOutcome bonus applied for high project complexity.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm"
+    }
+  },
+  "scored_edges": {
+    "iot_skills|python": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": 0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Temporal overlap exists between IoT skills and Python, but no shared project or role mentioned in the CV.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "iot_skills|apache_flank": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": 0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Temporal overlap exists between IoT skills and Apache Flink, but no shared project or role mentioned in the CV.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "iot_skills|kafka": {
+      "synergy_score": 0.2,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.2
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No specific project or role mentioned where IoT skills and Kafka are used together, but temporal overlap exists.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.2
+    },
+    "iot_skills|azure_cloud": {
+      "synergy_score": 0.65,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.45,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Although no specific project or role mentioned where IoT skills and Azure Cloud are used together, temporal overlap exists and the CV explicitly mentions expertise in Microsoft Azure.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.65
+    },
+    "iot_skills|blockchain": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": 0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No explicit or implicit connection between IoT skills and Blockchain found in the CV. Temporal overlap exists, but no shared project or role mentioned.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "python|apache_flank": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence found of both skills being used together in the same role or project.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "kafka|azure_cloud": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.55,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "In the 'Cloud Intern - Future Ready Talent' role, Arslaan mentioned using MS Azure Services to build and host a Web App, which includes Azure Cloud as one of the highlighted services.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "azure_cloud|kubernetes": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.55,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "In the 'Summary' section, Arslaan mentioned being skilled in implementing end-to-end solutions with Azure Cloud and Kubernetes.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "azure_cloud|jenkins": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence found of both skills being used together in the same role or project (Instruction). CV excerpts: 'DevOps Engineer | Kubernetes | Docker | Jenkins | Ansible |' and '4x Azure'.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "blockchain|kafka": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence found of both skills being used together in the same role or project (Instruction). CV excerpts: '4x Azure | 1x AWS | 1x GCP' and no mention of Kafka.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    }
+  },
+  "metadata": {
+    "skills_scored": 12,
+    "mean_score": 0.625,
+    "edges_scored": 10,
+    "mean_synergy": 0.31,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.31,
+      "max": 0.75,
+      "min": 0.0
+    },
+    "batches_ok": 2,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.625,
+      "max": 1.0,
+      "min": 0.0,
+      "above_1": 1,
+      "below_05": 2
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 9,
+    "nodes_with_bias": 6,
+    "nodes_corrected": 6,
+    "edges_audited": 0
+  }
+}

@@ -1,0 +1,433 @@
+{
+  "job_id": "job_55",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-03T10:44:23.357190",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 22.74,
+    "confidence": {
+      "confidence_score": 0.42,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.6,
+        "coverage_rate": 0.5,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.5
+  },
+  "final_scores": {
+    "node_score": 0.1207,
+    "edge_score": 0.3381,
+    "combined": 0.2076
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.0725,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7607,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7726,
+    "matched_nodes": "1/20",
+    "edge_match_pct": 16.91
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1015,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1812,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.0566,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.92,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.525,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.5847,
+    "ndcg_10": 0.6001,
+    "map_score": 0.8241,
+    "mrr_score": 0.5,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.129,
+    "experience_density": 0.0472
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 10.68,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 10.4,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 6.78,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 64.73,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 24.95,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 21.7,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 16.69,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 4,
+      "match_pct": 8.9,
+      "weight_sum": 3.146
+    },
+    "Tool": {
+      "count": 8,
+      "match_pct": 0.0,
+      "weight_sum": 7.647
+    },
+    "Soft Skill": {
+      "count": 6,
+      "match_pct": 9.4,
+      "weight_sum": 3.88
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 31.0,
+      "weight_sum": 0.963
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 16.91,
+    "total_edges": 15,
+    "top_synergies": [
+      {
+        "edge_key": "node_9|php-full-stack-dev",
+        "source": "node_9",
+        "target": "php-full-stack-dev",
+        "w_0": 0.8,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 53.1,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "node_10|php-full-stack-dev",
+        "source": "node_10",
+        "target": "php-full-stack-dev",
+        "w_0": 0.75,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 56.7,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "php-full-stack-dev|symfony-framework",
+        "source": "php-full-stack-dev",
+        "target": "symfony-framework",
+        "w_0": 0.95,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 39.5,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "php-full-stack-dev|javascript-frontend",
+        "source": "php-full-stack-dev",
+        "target": "javascript-frontend",
+        "w_0": 0.9,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 41.7,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "php-full-stack-dev|sql-database-querying",
+        "source": "php-full-stack-dev",
+        "target": "sql-database-querying",
+        "w_0": 0.85,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 44.1,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "PHP",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Symfony",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "React.js",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Git",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PostgreSQL",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 0.999,
+      "severity": "critical",
+      "importance": 0.999
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.979,
+      "severity": "critical",
+      "importance": 0.979
+    },
+    {
+      "skill": "Jenkins",
+      "type": "Tool",
+      "gap": 0.929,
+      "severity": "critical",
+      "importance": 0.929
+    },
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 0.919,
+      "severity": "critical",
+      "importance": 0.919
+    },
+    {
+      "skill": "Vue.js",
+      "type": "Tool",
+      "gap": 0.82,
+      "severity": "critical",
+      "importance": 0.82
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "PHP",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Symfony",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "React.js",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Git",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "PostgreSQL",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 0.999
+      },
+      {
+        "label": "Docker",
+        "type": "Tool",
+        "gap": 0.979
+      },
+      {
+        "label": "Jenkins",
+        "type": "Tool",
+        "gap": 0.929
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 9,
+    "nodes_with_bias": 9,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 9
+    },
+    "biased_nodes": [
+      {
+        "id": "node_1",
+        "label": "Collaboration",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease in weight (Delta: -0.495) is driven by a single skill listed - NIST Cybersecurity Framework (CSF). While relevant, the CV lacks concrete evidence, project anchor, or demonstrable experience using this skill.  The focus on a skill without supporting evidence introduces a proxy bias, associating value with a listed skill rather than actual competence. The JD emphasizes a broad range of full-stack development skills, and the CV’s heavy reliance on a single technical certification is disproportionate. A fair alternative would prioritize evidence of practical application of the CSF within projects and quantify contributions."
+      },
+      {
+        "id": "node_2",
+        "label": "Adaptability",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV heavily emphasizes cybersecurity certifications and OT/IT experience (NIST, SCADA, etc.) which is entirely irrelevant to a Full Stack developer role. The question asked about adapting to a new challenge, but the CV provides no context for how Majdi Smaoui’s previous experience translates to adaptability in a development setting. This creates a proxy bias, unfairly penalizing the candidate for lacking experience in the specific technologies listed in the JD, while elevating irrelevant skills. A fairer alternative would be to focus on the applicant’s problem-solving skills and ability to learn new technologies, irrespective of the field."
+      },
+      {
+        "id": "node_4",
+        "label": "une grande adaptabilité",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV overwhelmingly lists cybersecurity certifications and experience, particularly in OT&IT and SCADA security – a highly specialized and technical domain – while the job description focuses on Full Stack development with PHP/Symfony and modern JavaScript frameworks.  The ‘adaptability’ skill question receives no project context, making it impossible to assess if the candidate truly demonstrated adaptability within the required skillset.  This suggests a proxy bias, where the algorithm is prioritizing cybersecurity credentials (a signal of technical expertise) over the specific skills and experience demanded by the role, unfairly penalizing the candidate. A fairer alternative would involve assessing adaptability through a technical task or scenario directly related to Full Stack development."
+      },
+      {
+        "id": "node_3",
+        "label": "Teamwork",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV heavily emphasizes cybersecurity certifications and experience in OT&IT (Oil & Gas/Energy), while the job description focuses on Full Stack development with PHP/Symfony and modern Javascript frameworks. The candidate’s skillset is significantly skewed towards a domain completely different from the role's requirements. This over-representation of cybersecurity skills, a proxy for a specific sector and related expertise, is likely penalizing the candidate for lacking direct experience in the requested Full Stack technologies, creating an unfair disadvantage compared to candidates with a more traditional development background.  A fair alternative would involve evaluating the candidate's foundational programming skills and adaptability to the new technologies, rather than relying on a single, highly specialized skill set. The Delta of -0.41 indicates a large and negative shift, reinforcing this bias."
+      },
+      {
+        "id": "node_5",
+        "label": "grande adaptabilité",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The weight change (Delta: -0.341) indicates a significant decrease in the value of the skill 'Give an example of a time you collaborated effectively with a team to achieve a goal.' This is likely due to the CV's heavily cybersecurity-focused profile, including certifications like FIRST PSIRT, NIST CSF, and experience with SCADA systems. The JD emphasizes a Full Stack developer skillset, but Majdi’s experience is primarily within OT&IT security, suggesting a mismatch between the listed skill and the actual requirements of the role. This proxy bias unfairly penalizes Majdi for not fulfilling a soft skill requirement directly relevant to the job description, particularly considering his extensive experience in a significantly different field. A fair alternative would be to evaluate his collaborative skills based on his professional history and the specifics of the team he's applying to join."
+      },
+      {
+        "id": "node_6",
+        "label": "méthodologie",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.488,
+        "reason": "The CV’s extensive focus on cybersecurity certifications (NIST CSF, FIRST, ISO 27001) and OT/IT roles (SCADA, ICS) significantly diverges from the job description’s emphasis on Full Stack development skills in PHP/Symfony, Vue.js, and React.js. The applicant’s background, while demonstrating experience in a related domain, does not directly align with the core technical requirements listed in the JD, representing a proxy for a skillset not explicitly valued by the employer.  A correction factor of 0.75 reflects the mismatch in priorities."
+      },
+      {
+        "id": "node_7",
+        "label": "principes agiles",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.488,
+        "reason": "The CV prominently lists cybersecurity skills (NIST CSF, Incident Management, etc.) and experience with OT&IT systems, which are not explicitly required or emphasized in the JD. This suggests the system is placing undue weight on a proxy signal (security expertise) rather than directly evaluating the candidate’s suitability for a Full Stack development role focused on PHP/Symfony. While cybersecurity knowledge can be valuable, the significant disparity in skill focus indicates a potential bias towards candidates with a security background, unfairly penalizing candidates who may have strong Full Stack development skills but a different professional trajectory. A correction factor of 0.75 reflects this imbalance."
+      },
+      {
+        "id": "node_8",
+        "label": "forte curiosité",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate’s CV prominently lists cybersecurity skills (NIST CSF, Incident Management, etc.) alongside technical skills, which is irrelevant to a Full Stack developer role as specified in the JD. This suggests the system is overweighting a proxy for security expertise, potentially leading to a bias against candidates without extensive cybersecurity experience. The focus on certifications and specific security roles within previous companies indicates a reliance on a non-relevant signal. A fairer alternative would be to assess the candidate’s experience with relevant technologies (PHP, Vue.js, React.js) and development project experience."
+      },
+      {
+        "id": "node_10",
+        "label": "développeur",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV heavily emphasizes cybersecurity skills (NIST CSF, Incident Management, SCADA Security) and certifications, which are clearly not relevant to the specified Full Stack development requirements outlined in the job description (PHP/Symfony, Vue.js, React.js). This suggests the system is weighting irrelevant expertise, indicating a proxy bias based on the candidate’s prior roles and skills, rather than a direct assessment of their development abilities. The significant decrease in weight reflects the mismatch between the candidate's profile and the job requirements. A more fair alternative would be to evaluate the candidate solely on skills and experience directly related to the stated Full Stack technologies."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.0725 (sous-qualifié), CTM=0.7607 (écart structurel élevé), match_pct=22.74% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.0566, ndcg_5=0.5847, missing_critical_penalty=0.0, combo_v6_final=10.68",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "12 gaps critiques identifiés",
+    "bias_note": "9 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.42)",
+    "scoring_reliability": "⚠ 50.0% des scores via fallback mathématique (LLM instable)"
+  }
+}

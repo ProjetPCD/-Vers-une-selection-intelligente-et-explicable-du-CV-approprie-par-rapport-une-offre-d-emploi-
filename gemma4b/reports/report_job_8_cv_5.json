@@ -1,0 +1,384 @@
+{
+  "job_id": "job_8",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-03T12:35:52.459645",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 11.6,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.842,
+        "coverage_rate": 0.158,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.5556
+  },
+  "final_scores": {
+    "node_score": 0.1598,
+    "edge_score": 0.0325,
+    "combined": 0.1089
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.0829,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.8964,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.884,
+    "matched_nodes": "1/19",
+    "edge_match_pct": 1.62
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.0917,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.0325,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.0632,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0526,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.6835,
+    "weighted_recall": 0.0329,
+    "weighted_f1": {
+      "value": 0.0646,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.594,
+    "missing_critical_penalty": {
+      "value": 0.0556,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9031,
+    "ndcg_10": 0.9355,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.4637,
+    "semantic_fit_score": 0.2661,
+    "experience_density": 0.0759
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 12.93,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 6.12,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 13.16,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 96.12,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 37.9,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 24.68,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 42.52,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 7,
+      "match_pct": 14.7,
+      "weight_sum": 6.771
+    },
+    "Tool": {
+      "count": 12,
+      "match_pct": 3.9,
+      "weight_sum": 11.278
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 1.62,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "data_scientist_role|git-tool",
+        "source": "data_scientist_role",
+        "target": "git-tool",
+        "w_0": 0.547,
+        "w_cv": 0.469,
+        "w_cv_norm": 0.234,
+        "match_pct": 42.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data_scientist_role|pandas",
+        "source": "data_scientist_role",
+        "target": "pandas",
+        "w_0": 0.978,
+        "w_cv": 0.094,
+        "w_cv_norm": 0.047,
+        "match_pct": 4.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data_scientist_role|machine_learning_skill",
+        "source": "data_scientist_role",
+        "target": "machine_learning_skill",
+        "w_0": 0.978,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data_scientist_role|deep_learning_skill",
+        "source": "data_scientist_role",
+        "target": "deep_learning_skill",
+        "w_0": 0.978,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data_scientist_role|python_skill",
+        "source": "data_scientist_role",
+        "target": "python_skill",
+        "w_0": 0.998,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Data Scientist",
+      "type": "Domain",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Deep Learning",
+      "type": "Domain",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PyTorch",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "AWS",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Seaborn",
+      "type": "Tool",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "NumPy",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Pandas",
+      "type": "Tool",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Data Scientist",
+        "type": "Domain",
+        "gap": 1.0
+      },
+      {
+        "label": "Deep Learning",
+        "type": "Domain",
+        "gap": 1.0
+      },
+      {
+        "label": "Python",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "PyTorch",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "AWS",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Seaborn",
+        "type": "Tool",
+        "gap": 0.906
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 5,
+    "nodes_with_bias": 5,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "C": 3,
+      "PROXY": 2
+    },
+    "biased_nodes": [
+      {
+        "id": "seaborn",
+        "label": "Seaborn",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate lists 'Seaborn' as a skill but provides no supporting evidence within the CV, only React.js and D3.js are listed as skills. This suggests the system is relying on the presence of a specific skill (Seaborn) regardless of the candidate's actual proficiency, reflecting a proxy bias related to desired tools rather than demonstrated skills.  The ideal weight of 1.0 was significantly reduced to 0.25, indicating a substantial penalty for the lack of evidence supporting this skill's use, and the candidate's focus is on front-end development rather than data visualization.  A fair alternative would be to assess proficiency based on project experience or relevant skills, not simply a listed tool."
+      },
+      {
+        "id": "ingenieur_analytics",
+        "label": "Ingénieur en Analytics",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.807,
+        "reason": "The weight reduction (Delta = -0.05) is likely due to ageism (Category C) stemming from the inclusion of 'Engineer’s degree, Computer Science' alongside a Bachelor's degree in Network and Information Security. While experience is valued, emphasizing a higher-level degree, particularly in a field related to the job description's core focus, may unintentionally signal a lack of recent experience or adaptability, reinforcing assumptions about career progression. A more nuanced approach would consider the depth of knowledge gained in each degree and the demonstrable skills obtained."
+      },
+      {
+        "id": "science_des_donnees",
+        "label": "science des données",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.188,
+        "reason": "The weight change from 1.0 to 0.95 indicates a decrease primarily due to the candidate's listed experience being 'Full-Stack Development (FE-Heavy)'. The rationale highlights this experience, yet the CV's heavy focus on front-end development (React.js, D3.js) while minimizing mentions of core data science skills (Python, R, SQL, Machine Learning) creates a proxy bias.  The JD heavily weights experience in core data science skills, and the CV's technical skills don't align with those requirements, resulting in a less favorable score. An increase in the weight factor of 1.25 reflects the importance of the 'Full-Stack Development (FE-Heavy)' experience as a foundation, even if it’s not a perfect match for the role’s emphasis on data science, with the understanding that this reflects a career path and foundational skillset."
+      },
+      {
+        "id": "pandas",
+        "label": "Pandas",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV lists 'Pandas' as a skill, however, the evidence anchor provided (React.js, D3.js, Elasticsearch) points strongly towards a frontend development background with experience in JavaScript libraries rather than data analysis expertise. This suggests the system is unfairly penalizing the listed skill based on a misinterpretation of the candidate's skillset, demonstrating a category C bias (Ageism - reliance on graduation year and irrelevant career details), and a correction factor of 0.75, reflecting an unfairly decreased weight due to the mismatch between the listed skill and supporting evidence. A fair alternative would be to only consider skills explicitly demonstrated with evidence in the CV."
+      },
+      {
+        "id": "git-tool",
+        "label": "Git",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.938,
+        "reason": "This weight increase (Delta: +0.203) for 'git-tool' is likely AGEISM. While Git is a standard tool in modern software development, the candidate's employment history primarily spans from 2014-2019, a period significantly before widespread Git adoption became the norm. The resume doesn’t demonstrate current proficiency beyond mention – the JD specifically names Git as a required skill, indicating a more recent standard.  Therefore, the system has unfairly favored a skill due to the candidate’s older experience, potentially overlooking more contemporary technical skills. A correction factor of 1.25 is applied, reflecting the potential for an outdated perception of skill importance based on career stage."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.0829 (sous-qualifié), CTM=0.8964 (écart structurel élevé), match_pct=11.6% → Poor Match",
+    "v6_summary": "weighted_f1=0.0646, gap_score=0.0632, ndcg_5=0.9031, missing_critical_penalty=0.0556, combo_v6_final=12.93",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "16 gaps critiques identifiés",
+    "bias_note": "5 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "⚠ 55.6% des scores via fallback mathématique (LLM instable)"
+  }
+}

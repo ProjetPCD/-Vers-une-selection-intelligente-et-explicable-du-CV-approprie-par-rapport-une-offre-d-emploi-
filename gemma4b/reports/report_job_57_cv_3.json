@@ -1,0 +1,445 @@
+{
+  "job_id": "job_57",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-03T11:56:24.739650",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 31.55,
+    "confidence": {
+      "confidence_score": 0.62,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.769,
+        "coverage_rate": 0.769,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.2982,
+    "edge_score": 0.2707,
+    "combined": 0.2872
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1789,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6835,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6845,
+    "matched_nodes": "0/13",
+    "edge_match_pct": 13.53
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1831,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.2707,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1679,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8885,
+    "ndcg_10": 0.901,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.2817,
+    "semantic_fit_score": 0.4157,
+    "experience_density": 0.1207
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 15.85,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 16.8,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 21.27,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 95.54,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 5.04,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 16.5,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 3.2,
+      "weight_sum": 1.528
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 15.3,
+      "weight_sum": 3.501
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 21.4,
+      "weight_sum": 1.428
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 45.0,
+      "weight_sum": 0.859
+    },
+    "Tool": {
+      "count": 3,
+      "match_pct": 9.5,
+      "weight_sum": 2.502
+    },
+    "Responsibility": {
+      "count": 1,
+      "match_pct": 7.5,
+      "weight_sum": 0.703
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 13.53,
+    "total_edges": 7,
+    "top_synergies": [
+      {
+        "edge_key": "engineer_education|data_science_domain",
+        "source": "engineer_education",
+        "target": "data_science_domain",
+        "w_0": 0.75,
+        "w_cv": 0.68,
+        "w_cv_norm": 0.34,
+        "match_pct": 45.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data_science_domain|data_science_teaching_role",
+        "source": "data_science_domain",
+        "target": "data_science_teaching_role",
+        "w_0": 0.8,
+        "w_cv": 0.305,
+        "w_cv_norm": 0.152,
+        "match_pct": 19.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "machine_learning_techniques|classification_research",
+        "source": "machine_learning_techniques",
+        "target": "classification_research",
+        "w_0": 0.65,
+        "w_cv": 0.281,
+        "w_cv_norm": 0.141,
+        "match_pct": 21.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "communication_skills|data_science_teaching_role",
+        "source": "communication_skills",
+        "target": "data_science_teaching_role",
+        "w_0": 0.7,
+        "w_cv": 0.263,
+        "w_cv_norm": 0.131,
+        "match_pct": 18.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ubuntu_platform|python_data_scientist",
+        "source": "ubuntu_platform",
+        "target": "python_data_scientist",
+        "w_0": 0.8,
+        "w_cv": 0.18,
+        "w_cv_norm": 0.09,
+        "match_pct": 11.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Communication",
+      "type": "Soft Skill",
+      "gap": 0.776,
+      "severity": "critical",
+      "importance": 0.964
+    },
+    {
+      "skill": "Data science",
+      "type": "Domain",
+      "gap": 0.676,
+      "severity": "critical",
+      "importance": 0.906
+    },
+    {
+      "skill": "Ubuntu",
+      "type": "Tool",
+      "gap": 0.691,
+      "severity": "critical",
+      "importance": 0.871
+    },
+    {
+      "skill": "Créativité",
+      "type": "Soft Skill",
+      "gap": 0.745,
+      "severity": "critical",
+      "importance": 0.865
+    },
+    {
+      "skill": "Flexibilité",
+      "type": "Soft Skill",
+      "gap": 0.75,
+      "severity": "critical",
+      "importance": 0.865
+    },
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.785,
+      "severity": "critical",
+      "importance": 0.835
+    },
+    {
+      "skill": "Capacité de travailler en équipe",
+      "type": "Soft Skill",
+      "gap": 0.62,
+      "severity": "critical",
+      "importance": 0.807
+    },
+    {
+      "skill": "Matlab",
+      "type": "Tool",
+      "gap": 0.746,
+      "severity": "critical",
+      "importance": 0.796
+    },
+    {
+      "skill": "Enseignant vacataire",
+      "type": "Responsibility",
+      "gap": 0.628,
+      "severity": "critical",
+      "importance": 0.703
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Communication",
+        "type": "Soft Skill",
+        "gap": 0.776
+      },
+      {
+        "label": "Data science",
+        "type": "Domain",
+        "gap": 0.676
+      },
+      {
+        "label": "Ubuntu",
+        "type": "Tool",
+        "gap": 0.691
+      },
+      {
+        "label": "Créativité",
+        "type": "Soft Skill",
+        "gap": 0.745
+      },
+      {
+        "label": "Flexibilité",
+        "type": "Soft Skill",
+        "gap": 0.75
+      },
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.785
+      },
+      {
+        "label": "Capacité de travailler en équipe",
+        "type": "Soft Skill",
+        "gap": 0.62
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 9,
+    "nodes_with_bias": 9,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "HALO": 6,
+      "HALO BIAS": 2,
+      "PRESTIGE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "communication_skills",
+        "label": "Communication",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The candidate’s CV explicitly highlights 'Rigorous, responsive, and solution-oriented, I quickly adapt to each client’s needs to deliver concrete and long-lasting results,' which aligns with the JD's requirement for 'bonnes compétences en communication et en pédagogie.' However, the reduced weight (0.5) likely reflects a halo effect—the system over-emphasized this single, positive statement, overshadowing other potentially relevant skills and experiences detailed in the CV, particularly given the JD’s specific technical requirements. A fairer alternative would be to weight the communication skills based on the breadth of evidence related to communication presented throughout the CV, not solely on this isolated phrase.  The JD emphasizes communication alongside technical skills, suggesting a more nuanced assessment is warranted."
+      },
+      {
+        "id": "data_science_domain",
+        "label": "Data science",
+        "bias_category": "HALO BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.46,
+        "reason": "The candidate's CV heavily emphasizes ‘microservices architecture and cloud solutions’ – a phrase directly pulled from the job description (JD) – leading to an inflated score. This demonstrates a Halo bias where a single, prominently stated skill is disproportionately weighted, overshadowing other potentially relevant skills like full-stack development, DevOps experience, and specific technologies like React and Spring Boot. A fair alternative would be to weight the candidate’s skills based on a more comprehensive assessment of their stated abilities and experience, rather than prioritizing a phrase found in the JD."
+      },
+      {
+        "id": "engineer_education",
+        "label": "Ingénieur",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.9,
+        "reason": "The candidate's education at an engineering school in Tunisia (Ecole Nationale d'Ingénieurs de Tunis) is being overweighted, suggesting a prestige bias. Despite demonstrating relevant skills and experience through their work history, the emphasis on the specific, potentially less-known university is driving an increase in the weight. A fairer approach would prioritize demonstrated skills and experience, reducing the influence of the institution's reputation, correcting the factor to 0.75."
+      },
+      {
+        "id": "ubuntu_platform",
+        "label": "Ubuntu",
+        "bias_category": "HALO BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.36,
+        "reason": "The system is heavily influenced by the explicit mention of ‘Ubuntu’ in the Job Description (JD) which is immediately reflected in the CV’s skills section. This creates a halo effect, where the presence of Ubuntu elevates the candidate’s score regardless of the demonstrated skills related to microservices architecture or cloud solutions. The candidate's experience clearly outlines skills in these areas, but the JD’s strong emphasis on Ubuntu is disproportionately driving the weight change, suggesting bias. A fair alternative would be to focus solely on the demonstrable skills outlined in the CV, rather than relying on the explicit mention of a platform."
+      },
+      {
+        "id": "creativity_soft_skill",
+        "label": "Créativité",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.24,
+        "reason": "The candidate's CV includes a strong, generalized statement about being 'Rigorous, responsive, and solution-oriented, I quickly adapt to each client’s needs to deliver concrete and long-lasting results.' This is a classic example of halo bias, where a positive impression based on one skill (adaptability) overshadows the evaluation of creativity, a specifically listed soft skill. The JD specifically requires creativity, but the CV’s phrasing has unfairly inflated the weight given to adaptability, penalizing the candidate for lacking a demonstrable creative output within the context of the role, and this is a medium severity issue."
+      },
+      {
+        "id": "flexibility_soft_skill",
+        "label": "Flexibilité",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.23,
+        "reason": "The candidate’s CV explicitly states ‘Rigorous, responsive, and solution-oriented, I quickly adapt to each client’s needs to deliver concrete and long-lasting results’ - a key requirement outlined in the Job Description. However, the weight assigned to ‘flexibility_soft_skill’ has significantly decreased (-0.665), suggesting a halo effect where the single, emphasized statement is overshadowing other potential positive attributes. This indicates an over-reliance on one signal, neglecting the broader demonstration of the skill. A fair alternative would be to assess flexibility through specific examples and behaviors documented throughout the candidate's experience, rather than solely relying on this generic phrase."
+      },
+      {
+        "id": "teamwork_skill",
+        "label": "Capacité de travailler en équipe",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The candidate’s CV contains a strong, explicit statement of teamwork skills ('Rigorous, responsive, and solution-oriented, I quickly adapt to each client’s needs to deliver concrete and long-lasting results'). This constitutes a halo effect, where a single positive signal (the explicit teamwork statement) is unduly influencing the score, overshadowing other potentially relevant skills. The JD also mentions 'compétences soft incluent la capacité de travailler en équipe', which supports the team-work description in the CV.  A reduction in weighting is warranted to mitigate the impact of this single, potentially inflated, assertion. A fair alternative would be to weight the teamwork skill at the ideal 0.807, considering the contextual support."
+      },
+      {
+        "id": "machine_learning_techniques",
+        "label": "Techniques d'apprentissage automatique",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease in weight (from 0.528 to 0.25) for 'machine learning techniques' is likely driven by halo bias. The description heavily emphasizes ‘microservices architecture and cloud solutions,’ a single strong signal, overshadowing the specific skill of machine learning. While the candidate mentions ‘building end-to-end projects,’ the lack of detail about *how* machine learning was utilized within those projects is insufficient to justify the substantial weight reduction. A fair alternative would be to assess the candidate's ML skills based on concrete project examples and quantifiable results, rather than relying solely on a general mention within a broader skill set. The JD also focuses on broader skills like communication and pedagogy, further reinforcing the halo effect."
+      },
+      {
+        "id": "classification_research",
+        "label": "Classification",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The application heavily emphasizes the 'classification and machine learning' project described in the CV, aligning with the job description's focus. However, the CV's details about this project – specifically the 'Conception et implémentation d’une application web complète pour la gestion sécurisée des dossiers médicaux...' – were the primary driver of the initial 0.522 weighting. This represents a halo effect, where the success of one specific project unduly influenced the overall assessment, ignoring potentially broader skills demonstrated in the CV, such as full-stack development and DevOps experience. A reduction in weighting acknowledges this over-emphasis, suggesting the model isn't fully capturing the candidate's overall skillset."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1789 (sous-qualifié), CTM=0.6835 (écart structurel élevé), match_pct=31.55% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.1679, ndcg_5=0.8885, missing_critical_penalty=0.0, combo_v6_final=15.85",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "10 gaps critiques identifiés",
+    "bias_note": "9 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.62)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

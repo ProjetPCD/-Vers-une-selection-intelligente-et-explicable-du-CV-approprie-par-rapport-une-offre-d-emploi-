@@ -1,0 +1,424 @@
+{
+  "job_id": "job_28",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-06T22:52:26.184383",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 29.61,
+    "confidence": {
+      "confidence_score": 0.63,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.786,
+        "coverage_rate": 0.786,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.4009,
+    "edge_score": 0.379,
+    "combined": 0.3921
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2227,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7081,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7039,
+    "matched_nodes": "3/14",
+    "edge_match_pct": 18.97
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2349,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.333,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.196,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.7525,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5435,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.6689,
+    "ndcg_10": 0.787,
+    "map_score": 0.8268,
+    "mrr_score": 0.5,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.3542,
+    "semantic_fit_score": 0.3781,
+    "experience_density": 0.1728
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 18.92,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 21.05,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 21.07,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 68.19,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 23.83,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 25.88,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 37.47,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 5,
+      "match_pct": 9.9,
+      "weight_sum": 4.567
+    },
+    "Tool": {
+      "count": 7,
+      "match_pct": 23.8,
+      "weight_sum": 6.499
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 32.5,
+      "weight_sum": 0.592
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 54.4,
+      "weight_sum": 0.409
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 18.97,
+    "total_edges": 10,
+    "top_synergies": [
+      {
+        "edge_key": "sql_tool|postgresql_db",
+        "source": "sql_tool",
+        "target": "postgresql_db",
+        "w_0": 0.75,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 56.7,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "full_stack_experience|javascript_full_stack_dev",
+        "source": "full_stack_experience",
+        "target": "javascript_full_stack_dev",
+        "w_0": 0.5,
+        "w_cv": 0.543,
+        "w_cv_norm": 0.272,
+        "match_pct": 54.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "java_full_stack_dev|postgresql_db",
+        "source": "java_full_stack_dev",
+        "target": "postgresql_db",
+        "w_0": 0.7,
+        "w_cv": 0.431,
+        "w_cv_norm": 0.216,
+        "match_pct": 30.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "node_js_full_stack|docker_containerization",
+        "source": "node_js_full_stack",
+        "target": "docker_containerization",
+        "w_0": 0.75,
+        "w_cv": 0.4,
+        "w_cv_norm": 0.2,
+        "match_pct": 26.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "php_full_stack_dev|laravel_framework",
+        "source": "php_full_stack_dev",
+        "target": "laravel_framework",
+        "w_0": 0.95,
+        "w_cv": 0.375,
+        "w_cv_norm": 0.188,
+        "match_pct": 19.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "PHP",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Laravel",
+      "type": "Tool",
+      "gap": 0.625,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PostgreSQL",
+      "type": "Tool",
+      "gap": 0.775,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Java",
+      "type": "Hard Skill",
+      "gap": 0.793,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.812,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Git",
+      "type": "Tool",
+      "gap": 0.831,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 0.968,
+      "severity": "critical",
+      "importance": 0.968
+    },
+    {
+      "skill": "React",
+      "type": "Tool",
+      "gap": 0.753,
+      "severity": "critical",
+      "importance": 0.941
+    },
+    {
+      "skill": "Asana",
+      "type": "Tool",
+      "gap": 0.75,
+      "severity": "critical",
+      "importance": 0.89
+    },
+    {
+      "skill": "Node.js",
+      "type": "Hard Skill",
+      "gap": 0.608,
+      "severity": "critical",
+      "importance": 0.821
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "PHP",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Laravel",
+        "type": "Tool",
+        "gap": 0.625
+      },
+      {
+        "label": "PostgreSQL",
+        "type": "Tool",
+        "gap": 0.775
+      },
+      {
+        "label": "Java",
+        "type": "Hard Skill",
+        "gap": 0.793
+      },
+      {
+        "label": "Docker",
+        "type": "Tool",
+        "gap": 0.812
+      },
+      {
+        "label": "Git",
+        "type": "Tool",
+        "gap": 0.831
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 0.968
+      },
+      {
+        "label": "React",
+        "type": "Tool",
+        "gap": 0.753
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 11,
+    "nodes_with_bias": 8,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 6,
+      "PRESTIGE|PROXY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "postgresql_db",
+        "label": "PostgreSQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The rationale suggests the candidate's use of PostgreSQL was inferred based on common practices within the tools listed (Airflow, PySpark, BigQuery). This represents a proxy bias – the system is assuming a connection between these tools and the use of PostgreSQL rather than evaluating the candidate's specific SQL skills or experience with PostgreSQL. While the candidate explicitly states ETL pipeline development, the system is extrapolating a connection that isn’t directly demonstrated. A more merit-based approach would focus on the demonstrated skills within the provided context – the candidate’s experience with Airflow, PySpark, BigQuery, and AI tool development strongly suggests capabilities applicable to PostgreSQL data warehousing, justifying the reduced weight. Correction factor of 0.75 to acknowledge the inferred connection while still reflecting the candidate's demonstrable skills."
+      },
+      {
+        "id": "java_full_stack_dev",
+        "label": "Java",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.413,
+        "reason": "The candidate's experience heavily features AI tool development using FastAPI, Flask, and Streamlit – technologies strongly favored in the job description's listed preferred technologies (React, Node.js, PHP, and Java).  The decrease in weight (w_0) suggests the algorithm is disproportionately penalizing the candidate's demonstrated skills in modern AI/ML development, leaning on the candidate's use of Python and related technologies which are not explicitly listed as preferred in the JD. This constitutes a proxy bias based on the specific technologies listed, rather than evaluating core full-stack development competency, ultimately reducing the candidate's score unfairly."
+      },
+      {
+        "id": "docker_containerization",
+        "label": "Docker",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The candidate’s CV explicitly states experience with Docker, FastAPI, Flask, and Streamlit, technologies directly relevant to the JD's requirements for web application development.  The reduced weight (w_cv) reflects an overemphasis on the candidate's AI/ML skills and potentially undervalues the foundational full-stack capabilities, indicating a proxy bias based on the candidate's specialization (AI/ML) influencing the scoring.  A fair alternative would be to weigh the candidate's broader development experience including the technologies mentioned in the JD, reducing the weight decrease to 25%."
+      },
+      {
+        "id": "git_version_control",
+        "label": "Git",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.338,
+        "reason": "The candidate explicitly demonstrates proficiency in Git through a 'Certificate of completion - Git and GitHub' mentioned directly in their CV.  The weight change from 1.0 to 0.45 reflects a decrease in importance attributed to this skill, likely due to the JD’s broader requirements encompassing full-stack development with multiple technologies.  While the lack of explicit mention of Git within the responsibilities section of the JD may be a factor, the candidate’s CV proactively highlights this crucial skill, justifying a slight reduction in the weighting.  A correction factor of 0.75 acknowledges the evidence but recognizes the broader skill set demanded by the role."
+      },
+      {
+        "id": "react_javascript_framework",
+        "label": "React",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The candidate’s experience with FastAPI, Flask, and Streamlit (explicitly listed as tools used for AI tool development) strongly aligns with the requirements of the JD, which specifically mentions React, Node.js, PHP and Laravel. However, the weight change (-0.441) suggests the algorithm penalized this skill due to its association with a relatively newer and potentially ‘trendy’ skillset (AI tool development) compared to the more established technologies listed in the JD (Node.js, PHP). This indicates a Proxy Bias – the system is prioritizing technologies mentioned in the JD, regardless of the candidate’s demonstrable ability, creating a disadvantage for those utilizing newer AI-related frameworks.  A fair alternative would be to assign a weight reflecting the candidate's versatility and modern AI development experience."
+      },
+      {
+        "id": "asana_project_management",
+        "label": "Asana",
+        "bias_category": "PRESTIGE|PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.28,
+        "reason": "The candidate's experience with ETL pipelines (Airflow, PySpark, BigQuery) and AI tools (FastAPI, Flask, Streamlit) demonstrates a strong technical skillset directly relevant to the JD’s requirements for a full-stack developer. However, the CV highlights the use of Asana – a project management tool – in conjunction with these technical skills, suggesting a focus on collaboration and workflow management, rather than the specialized technical skills emphasized in the job description. This leans toward a PRESTIGE bias, prioritizing the candidate's ability to utilize Asana, and potentially penalizing candidates who don't show familiarity with this specific tool, even if they possess stronger technical abilities. The delta of -0.490 indicates a significant decrease in the weighted score, suggesting unfairness."
+      },
+      {
+        "id": "node_js_full_stack",
+        "label": "Node.js",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.425,
+        "reason": "The candidate’s experience explicitly includes building AI tools with FastAPI, Flask, and Streamlit, aligning with the job description’s requirement for Node.js full-stack development. However, the CV’s focus on advanced AI/ML skills (LLMs, RAG Optimization, NLP) and deployment tools (Airflow, BigQuery) elevates the candidate’s skillset beyond what is primarily assessed by the job description's listed technologies. This signals a proxy for expertise in higher-level AI development, potentially leading to an unfairly inflated assessment based on perceived potential rather than demonstrated proficiency in the specifically listed technologies (Node.js, React, Laravel, Postgres).  Correction factor is increased to 0.85 to account for this potential over-emphasis on advanced AI skills."
+      },
+      {
+        "id": "cpp_hard_skill",
+        "label": "C++",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease in weight for 'cpp_hard_skill' (from 0.778 to 0.25) is likely driven by the absence of explicit mention of C++ within the provided CV. While the JD lists C++ as a desired skill, the CV lacks detailed examples of its use, suggesting the automated system is placing undue emphasis on a skill not demonstrated. This proxies for a focus on skills explicitly listed in the CV without validating actual competency, aligning with a Proxy Bias."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2227 (sous-qualifié), CTM=0.7081 (écart structurel élevé), match_pct=29.61% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.196, ndcg_5=0.6689, missing_critical_penalty=0.0, combo_v6_final=18.92",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "11 gaps critiques identifiés",
+    "bias_note": "8 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.63)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

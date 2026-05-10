@@ -1,0 +1,176 @@
+{
+  "nodes": [
+    {
+      "id": "engineer_edu",
+      "label": "Ingénieur (Bachelors/Master)",
+      "type": "Education",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Recherchons un candidat avec une formation en IA/ML ou dans un domaine connexe.",
+      "inferred": false
+    },
+    {
+      "id": "python_hardskill",
+      "label": "Python",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Excellente compréhension des concepts de l'apprentissage automatique et de la programmation Python.",
+      "inferred": false
+    },
+    {
+      "id": "ia_ml_domain",
+      "label": "IA/ML Domain",
+      "type": "Domain",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "domaine connexe (conf=0.433)",
+      "inferred": true,
+      "inferred_from": "domaine connexe"
+    },
+    {
+      "id": "tensorflow_tool",
+      "label": "TensorFlow",
+      "type": "Tool",
+      "w_0": 0.926,
+      "seniority_required": "Mid",
+      "context": "Utilisation des dernières technologies IA/ML pour développer des solutions innovantes.",
+      "inferred": false
+    },
+    {
+      "id": "keras_tool",
+      "label": "Keras",
+      "type": "Tool",
+      "w_0": 0.899,
+      "seniority_required": "Mid",
+      "context": "Utilisation des dernières technologies IA/ML pour développer des solutions innovantes.",
+      "inferred": false
+    },
+    {
+      "id": "scikit_learn_tool",
+      "label": "Scikit-Learn",
+      "type": "Tool",
+      "w_0": 0.945,
+      "seniority_required": "Mid",
+      "context": "Utilisation des dernières technologies IA/ML pour développer des solutions innovantes.",
+      "inferred": false
+    },
+    {
+      "id": "hugging_face_tool",
+      "label": "Hugging Face",
+      "type": "Tool",
+      "w_0": 0.889,
+      "seniority_required": "Mid",
+      "context": "Utilisation des dernières technologies IA/ML pour développer des solutions innovantes.",
+      "inferred": false
+    },
+    {
+      "id": "medical_datasets_tool",
+      "label": "datasets médicaux et documentaires",
+      "type": "Tool",
+      "w_0": 0.866,
+      "seniority_required": "Mid",
+      "context": "Utilisation des dernières technologies IA/ML pour développer des solutions innovantes.",
+      "inferred": false
+    },
+    {
+      "id": "professional_domain",
+      "label": "Professionnel (Domain)",
+      "type": "Domain",
+      "w_0": 0.733,
+      "seniority_required": "N/A",
+      "context": "Recherchons un candidat avec une formation en IA/ML ou dans un domaine connexe.",
+      "inferred": false
+    },
+    {
+      "id": "communication_softskill",
+      "label": "Communication et de collaboration (Soft Skill)",
+      "type": "Soft Skill",
+      "w_0": 0.558,
+      "seniority_required": "N/A",
+      "context": "Excellentes compétences en matière de communication et de collaboration.",
+      "inferred": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "engineer_edu",
+      "target": "ia_ml_domain",
+      "relation": "requires",
+      "weight": 0.9,
+      "rationale": "The job description mentions that the ideal candidate should have a formation in IA/ML or a related domain."
+    },
+    {
+      "source": "python_hardskill",
+      "target": "scikit_learn_tool",
+      "relation": "requires",
+      "weight": 0.95,
+      "rationale": "The job description explicitly states that the candidate will use Scikit-Learn for modeling predictive tasks."
+    },
+    {
+      "source": "python_hardskill",
+      "target": "tensorflow_tool",
+      "relation": "requires",
+      "weight": 0.93,
+      "rationale": "The job description explicitly states that the candidate will use TensorFlow for modeling predictive tasks."
+    },
+    {
+      "source": "python_hardskill",
+      "target": "keras_tool",
+      "relation": "requires",
+      "weight": 0.92,
+      "rationale": "The job description explicitly states that the candidate will use Keras for modeling predictive tasks."
+    },
+    {
+      "source": "python_hardskill",
+      "target": "hugging_face_tool",
+      "relation": "requires",
+      "weight": 0.91,
+      "rationale": "The job description explicitly states that the candidate will use Hugging Face for text representation tasks."
+    },
+    {
+      "source": "ia_ml_domain",
+      "target": "professional_domain",
+      "relation": "part_of",
+      "weight": 1.0,
+      "rationale": "IA/ML is a sub-domain of Professional (Domain)."
+    },
+    {
+      "source": "communication_softskill",
+      "target": "engineer_edu",
+      "relation": "enables",
+      "weight": 0.85,
+      "rationale": "The job description mentions that the ideal candidate should have excellent communication and collaboration skills, which are required for the role."
+    },
+    {
+      "source": "scikit_learn_tool",
+      "target": "python_hardskill",
+      "relation": "supports",
+      "weight": 0.75,
+      "rationale": "Scikit-Learn can be used with Python, but it doesn't necessarily require it."
+    },
+    {
+      "source": "tensorflow_tool",
+      "target": "python_hardskill",
+      "relation": "supports",
+      "weight": 0.75,
+      "rationale": "TensorFlow can be used with Python, but it doesn't necessarily require it."
+    },
+    {
+      "source": "keras_tool",
+      "target": "python_hardskill",
+      "relation": "supports",
+      "weight": 0.75,
+      "rationale": "Keras can be used with Python, but it doesn't necessarily require it."
+    },
+    {
+      "source": "hugging_face_tool",
+      "target": "python_hardskill",
+      "relation": "supports",
+      "weight": 0.75,
+      "rationale": "Hugging Face can be used with Python, but it doesn't necessarily require it."
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_24"
+}

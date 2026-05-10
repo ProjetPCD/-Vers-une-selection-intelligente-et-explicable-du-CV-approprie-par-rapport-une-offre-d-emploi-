@@ -1,0 +1,382 @@
+{
+  "job_id": "job_56",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-03T11:11:26.026966",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 30.04,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.636,
+        "coverage_rate": 0.364,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.4386,
+    "edge_score": 0.4067,
+    "combined": 0.4258
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2386,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7141,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6996,
+    "matched_nodes": "1/11",
+    "edge_match_pct": 20.35
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2529,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.4067,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2153,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8927,
+    "ndcg_10": 0.9385,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.4042,
+    "semantic_fit_score": 0.3941,
+    "experience_density": 0.1976
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 19.85,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 24.35,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 22.41,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 95.71,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 6.46,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 24.16,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 4,
+      "match_pct": 16.9,
+      "weight_sum": 3.684
+    },
+    "Tool": {
+      "count": 4,
+      "match_pct": 23.0,
+      "weight_sum": 3.408
+    },
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 27.2,
+      "weight_sum": 2.822
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 20.35,
+    "total_edges": 10,
+    "top_synergies": [
+      {
+        "edge_key": "python-programming|data-engineer-domain",
+        "source": "python-programming",
+        "target": "data-engineer-domain",
+        "w_0": 0.9,
+        "w_cv": 0.644,
+        "w_cv_norm": 0.322,
+        "match_pct": 35.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "databricks_data_engineer|data-engineer-domain",
+        "source": "databricks_data_engineer",
+        "target": "data-engineer-domain",
+        "w_0": 0.62,
+        "w_cv": 0.644,
+        "w_cv_norm": 0.322,
+        "match_pct": 51.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "sql-querying|data-engineer-domain",
+        "source": "sql-querying",
+        "target": "data-engineer-domain",
+        "w_0": 0.85,
+        "w_cv": 0.525,
+        "w_cv_norm": 0.263,
+        "match_pct": 30.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "aws-cloud|data-engineer-domain",
+        "source": "aws-cloud",
+        "target": "data-engineer-domain",
+        "w_0": 0.65,
+        "w_cv": 0.525,
+        "w_cv_norm": 0.263,
+        "match_pct": 40.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data-engineer-domain|etl-process",
+        "source": "data-engineer-domain",
+        "target": "etl-process",
+        "w_0": 0.85,
+        "w_cv": 0.338,
+        "w_cv_norm": 0.169,
+        "match_pct": 19.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Data Engineer",
+      "type": "Domain",
+      "gap": 0.831,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "ETL",
+      "type": "Domain",
+      "gap": 0.831,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "AWS",
+      "type": "Tool",
+      "gap": 0.644,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Azure",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Architectures de données",
+      "type": "Domain",
+      "gap": 0.747,
+      "severity": "critical",
+      "importance": 0.916
+    },
+    {
+      "skill": "Spark",
+      "type": "Tool",
+      "gap": 0.619,
+      "severity": "critical",
+      "importance": 0.788
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Data Engineer",
+        "type": "Domain",
+        "gap": 0.831
+      },
+      {
+        "label": "ETL",
+        "type": "Domain",
+        "gap": 0.831
+      },
+      {
+        "label": "AWS",
+        "type": "Tool",
+        "gap": 0.644
+      },
+      {
+        "label": "Azure",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Architectures de données",
+        "type": "Domain",
+        "gap": 0.747
+      },
+      {
+        "label": "Spark",
+        "type": "Tool",
+        "gap": 0.619
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 8,
+    "nodes_with_bias": 7,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 7
+    },
+    "biased_nodes": [
+      {
+        "id": "data-engineer-domain",
+        "label": "Data Engineer",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.338,
+        "reason": "The CV heavily emphasizes frontend development experience (React, Next.js, TypeScript) and soft skills, while the job description explicitly lists ETL, Data Lakes, and data architecture expertise as core requirements for a data engineer. The candidate's listed roles (Software Engineer, Frontend Developer) lack the technical depth expected of a data engineer, particularly in areas like data warehousing and pipeline development, indicating a proxy bias based on the candidate's geographic location (Tunis, Tunisia) and typical roles within that region which might not align with the specific data engineering demands. A decrease in weight is warranted to reflect the misalignment between the candidate's stated skills and the job requirements."
+      },
+      {
+        "id": "etl-process",
+        "label": "ETL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.338,
+        "reason": "The candidate's CV heavily emphasizes frontend web development experience (React, Next.js, TypeScript) and Tunisian location, while the job description explicitly lists ETL process as a core requirement. The reduction in weight reflects a proxy bias—the system is prioritizing skills listed in the CV and geographical location over the explicit technical requirements detailed in the job description. A fairer alternative would be to evaluate the candidate's ability to demonstrate ETL knowledge through projects or relevant experience, regardless of their location or specific frontend technologies."
+      },
+      {
+        "id": "aws-cloud",
+        "label": "AWS",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.712,
+        "reason": "The weight decrease likely reflects a proxy bias related to the candidate's location (Tunis, Tunisia). The JD explicitly states a preference for candidates with experience in AWS, but the candidate’s experience is primarily documented in Tunisia, which might be perceived as less desirable or accessible than locations closer to the company’s primary operations. This is a proxy for socioeconomic factors and access to advanced technologies, unfairly penalizing the candidate for their geographic origin. A fair alternative would be to assess the candidate’s AWS experience independently of their location, prioritizing skills demonstrated and project outputs rather than the location where they gained them."
+      },
+      {
+        "id": "data-architectures",
+        "label": "Architectures de données",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.338,
+        "reason": "The candidate's CV heavily emphasizes frontend web development experience with React, Next.js, and TypeScript, aligning with the JD's requirements for a data engineer, but lacks explicit data architecture experience (Data Lake, ETL). The candidate's location (Tunis, Tunisia) and extended periods in roles focused on frontend development, while valuable, represent a socioeconomic proxy for experience aligning with the core requirements of a data architect role. This unfairly penalizes the candidate for a location-based signal rather than demonstrable data architecture skills. A fair alternative would prioritize skills like data modeling, data warehousing, and ETL processes, regardless of location or previous role title."
+      },
+      {
+        "id": "sql-querying",
+        "label": "SQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.712,
+        "reason": "The increased weight given to the candidate’s experience stating they use SQL for building scalable applications is likely influenced by a PROXY bias. The CV highlights the candidate's location (Tunis, Tunisia), a factor often correlated with socioeconomic status and potentially unfairly weighted in a recruitment process. While SQL skills are valuable, the JD’s emphasis on ‘architectures de données’ and specific tools (Databricks, Spark, AWS, Azure) could implicitly favor candidates from locations with higher concentrations of tech companies utilizing those technologies, unintentionally penalizing candidates from regions with fewer such opportunities. A fair alternative would be to focus solely on demonstrated SQL proficiency and complexity within the candidate’s projects, irrespective of their location. Further investigation is needed to assess the true technical merit."
+      },
+      {
+        "id": "data-lake-storage",
+        "label": "Data Lake",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.338,
+        "reason": "The candidate's CV emphasizes frontend development skills (React, Next.js, TypeScript) and experience with web applications, aligning with the JD's focus on ETL and Data Lake technologies. However, the CV lacks any explicit mention or demonstration of experience with Data Lake technologies (Databricks, Spark, AWS, Azure) which are explicitly required in the job description. This suggests the algorithm is prioritizing the candidate's existing skillset and geographical location (Tunis, Tunisia) – a proxy for potentially lower cost of labor – over the required data lake expertise, creating a bias against candidates without prior Data Lake experience. A fair alternative would be to equally weight skills based on demonstrated expertise or require explicit evidence of Data Lake knowledge."
+      },
+      {
+        "id": "spark-processing",
+        "label": "Spark",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.338,
+        "reason": "The weight reduction is likely driven by proxy bias related to the candidate’s location (Tunis, Tunisia) and CV’s focus on projects in Tunisia. While experience is valued, the JD’s emphasis on specific tools and technologies (Databricks, Spark, AWS, Azure) combined with the candidate’s location suggests a preference for candidates based in regions where these technologies are more prevalent. The lack of explicit evidence of Spark processing skills in the CV and the reliance on self-reported experience creates an opportunity for proxy bias to skew the assessment, unfairly penalizing the candidate. A fair alternative would be to evaluate the candidate's skills based purely on the listed technologies and project experience, irrespective of geographic location."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2386 (sous-qualifié), CTM=0.7141 (écart structurel élevé), match_pct=30.04% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.2153, ndcg_5=0.8927, missing_critical_penalty=0.0, combo_v6_final=19.85",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "7 gaps critiques identifiés",
+    "bias_note": "7 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

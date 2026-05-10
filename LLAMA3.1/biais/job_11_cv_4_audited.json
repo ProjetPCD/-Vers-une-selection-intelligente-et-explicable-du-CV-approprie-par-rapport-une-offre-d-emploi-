@@ -1,0 +1,603 @@
+{
+  "job_id": "job_11",
+  "cv_id": "cv_4",
+  "scored_nodes": {
+    "data-scientist": {
+      "w_cv": 1.0,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.15
+        },
+        "penalties": {},
+        "final_score": 1.25
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence anchor: Upwork Freelance Data Scientist...; base score driven by project complexity (mid) and seniority signal (expert); cert bonus applied due to verifiable certification",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 1.0,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The algorithm unfairly favors candidates with experience in prestigious platforms or companies like Upwork Freelance Data Scientist, suggesting a prestige bias."
+    },
+    "python": {
+      "w_cv": 1.5,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15
+        },
+        "penalties": {},
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence anchor: Upwork Freelance Data Scientist...; base score driven by project complexity (high) and seniority signal (expert); no bonuses applied due to lack of certification",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "LOW",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 1.5,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.5,
+      "p35_reason": "Weight change decreased due to lack of certification, which is an unfair penalty for candidates without this signal."
+    },
+    "sql": {
+      "w_cv": 0.825,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.4,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15
+        },
+        "penalties": {},
+        "final_score": 0.55
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence anchor: Ines Souissi.pdf | Coordonnées...; base score driven by project complexity (mid) and evidence verdict (weak); no bonuses applied due to lack of quantified outcome",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.825,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.5,
+      "p35_reason": "The weight change is biased due to the use of socioeconomic signals (location, language of CV) as a proxy for candidate quality. The adapted weight w_cv (0.55) significantly decreased from the ideal weight w_0 (0.993), indicating that candidates with certain backgrounds or locations are unfairly penalized in the evaluation process."
+    },
+    "d3-js": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "ghost_skill": -0.2
+        },
+        "final_score": 0.0
+      },
+      "active_red_flags": [
+        "ghost_skill"
+      ],
+      "rationale": "Evidence anchor: , ; base score driven by ghost skill penalty; no bonuses applied due to lack of evidence",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "nosql": {
+      "w_cv": 0.699,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.4,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15
+        },
+        "penalties": {},
+        "final_score": 0.55
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence anchor: Ines Souissi.pdf | Coordonnées...; base score driven by project complexity (mid) and evidence verdict (weak); no bonuses applied due to lack of quantified outcome",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.699,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.27,
+      "p35_reason": "The weight change is biased towards prestige as the job description highlights specific company names (Tata, BCG) and certifications (BCG Open-Access Data Science & Advanced Analytics Virtual Experience Program), which may favor candidates with connections to these institutions over others with similar skills."
+    },
+    "tensorflow": {
+      "w_cv": 0.8,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15
+        },
+        "penalties": {},
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence anchor: Upwork Freelance Data Scientist...; base score driven by project complexity (mid) and seniority signal (expert); no bonuses applied due to lack of certification",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.8,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight increase is due to the candidate's association with Upwork, a prestigious freelance platform. This suggests that the model is unfairly favoring candidates from well-known companies or universities, rather than evaluating them based on their skills and experience."
+    },
+    "hadoop": {
+      "w_cv": 0.55,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.4,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15
+        },
+        "penalties": {},
+        "final_score": 0.55
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence anchor: Ines Souissi.pdf | Coordonnées...; base score driven by project complexity (mid) and evidence verdict (weak); no bonuses applied due to lack of quantified outcome",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "scikit-learn": {
+      "w_cv": 0.8,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15
+        },
+        "penalties": {},
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence anchor: Upwork Freelance Data Scientist...; base score driven by project complexity (mid) and seniority signal (expert); no bonuses applied due to lack of certification",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.8,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight increase is driven by non-essential criteria, such as experience with specific tools and technologies. A fair alternative would be to weight the candidate's experience more equally across different domains and focus on the most relevant skills mentioned in the job description."
+    },
+    "tableau": {
+      "w_cv": 0.66,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.4,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15
+        },
+        "penalties": {},
+        "final_score": 0.55
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence anchor: Ines Souissi.pdf | Coordonnées...; base score driven by project complexity (mid) and evidence verdict (weak); no bonuses applied due to lack of quantified outcome",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.66,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The algorithm gave less weight to the candidate's experience and skills because of their university/company name, which is an example of prestige bias."
+    },
+    "spark": {
+      "w_cv": 0.8,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15
+        },
+        "penalties": {},
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence anchor: Upwork Freelance Data Scientist...; base score driven by project complexity (mid) and seniority signal (expert); no bonuses applied due to lack of certification",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.8,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "Weight change driven by candidate's university/company name, rather than demonstrated skills. A fair alternative would be to focus on the candidate's actual skills and experiences."
+    },
+    "communication": {
+      "w_cv": 0.5,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Inferred due to CV section \"part_1\" mentioning Ines Souissi as a Data Engineer and Machine Learning engineer with no specific mention of communication skills.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "bases_de_donnees_relationnelles": {
+      "w_cv": 0.375,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Weak evidence due to CV section \"part_2\" mentioning a project with relational databases but no specific details on the skill.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.375,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.5,
+      "p35_reason": "The weight change is likely due to prestige bias, as the candidate's mention of relational databases seems to be influencing the model without clear justification from the job description."
+    },
+    "attitude_proactive": {
+      "w_cv": 0.625,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Inferred due to CV section \"part_3\" mentioning a project with cross-functional teams and diverse perspectives but no specific mention of proactive attitude.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.625,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change for 'attitude_proactive' seems to be influenced by prestige bias due to the mention of prominent institutions like Tata Data Visualisation and BCG Open-Access Data Science & Advanced Analytics Virtual Experience Program, rather than specific skills demonstrated."
+    },
+    "data_science": {
+      "w_cv": 1.15,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "experience_bonus": 0.15
+        },
+        "penalties": {},
+        "final_score": 1.15
+      },
+      "active_red_flags": [],
+      "rationale": "Strong evidence due to CV section \"part_1\" mentioning a project with data science techniques and certification found in the experience years section.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "big_data": {
+      "w_cv": 0.2,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Weak evidence due to CV section \"part_1\" mentioning a project with big data but no specific details on the skill.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.2,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change for 'big data' experience is decreased due to a lack of specificity in the CV."
+    },
+    "collaboration": {
+      "w_cv": 0.6,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "external_proof_bonus": 0.15,
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.05
+        },
+        "penalties": {},
+        "final_score": 0.8
+      },
+      "active_red_flags": [],
+      "rationale": "Strong evidence due to CV section \"part_1\" mentioning a project with collaboration and external proof in the experience years section.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.6,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "While collaboration is valued, the increased weight might unfairly favor candidates with extensive collaborative experiences over others with strong technical skills and qualifications."
+    },
+    "statistiques": {
+      "w_cv": 0.325,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Weak evidence due to CV section \"part_2\" mentioning a project with statistical techniques but no specific details on the skill.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.325,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.3,
+      "p35_reason": "The model has unfairly penalized the candidate due to the prestige associated with the Tata Data Visualization certification, which may not be directly relevant to the position of Data Scientist at Statistiques."
+    },
+    "solide_formation": {
+      "w_cv": 0.3,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Inferred due to CV section \"part_3\" mentioning a Master's degree in Software Engineering but no specific details on the skill.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE_BIAS",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.3,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.6,
+      "p35_reason": "Weight change biased towards prestige due to university name, not specific skills demonstrated."
+    },
+    "capacite_apprentissage": {
+      "w_cv": 0.625,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Inferred due to CV section \"part_3\" mentioning a Master's degree in Software Engineering but no specific details on the skill.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.625,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change is biased due to Prestige Bias, where the university/company name has an unfair influence on the score. A fair alternative would be to evaluate the candidate based on their relevant work experience, skills, and achievements."
+    }
+  },
+  "scored_edges": {
+    "data-scientist|python": {
+      "synergy_score": 0.9,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.3,
+        "penalties": 0.0,
+        "final_score": 0.9
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Ines Souissi used Python as part of her work as Data Scientist in the Upwork Freelance Data Scientist role, developing a systematic image segmentation methodology for generative modeling. This demonstrates strong synergy between Data Scientist and Python skills.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.9
+    },
+    "data-scientist|sql": {
+      "synergy_score": 0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.8,
+        "final_score": 0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence found showing both skills used together in the same role or project.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0
+    },
+    "data-scientist|hadoop": {
+      "synergy_score": 0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.8,
+        "final_score": 0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence found showing both skills used together in the same role or project.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0
+    },
+    "data-scientist|spark": {
+      "synergy_score": 0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.8,
+        "final_score": 0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence found showing both skills used together in the same role or project.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0
+    },
+    "data-scientist|tableau": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.05,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Ines Souissi may have used Tableau to support her work as a Data Scientist, but no direct evidence found of using both skills together in the same role or project.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "data-scientist|d3-js": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.1,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No explicit mention of both skills together in the same project or role, and temporal overlap is not sufficient for synergy.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "data-scientist|communication": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.25,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Although a program name includes both skills, no specific project or role mentions both together, but temporal overlap and presence of synergy evidence (BCG Open-Access Data Science & Advanced Analytics Virtual Experience Program) support strong synergy.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    }
+  },
+  "metadata": {
+    "skills_scored": 19,
+    "mean_score": 0.545,
+    "edges_scored": 7,
+    "mean_synergy": 0.271,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.271,
+      "max": 0.9,
+      "min": 0
+    },
+    "batches_ok": 2,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.545,
+      "max": 1.0,
+      "min": 0.0,
+      "above_1": 1,
+      "below_05": 8
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 17,
+    "nodes_with_bias": 15,
+    "nodes_corrected": 15,
+    "edges_audited": 0
+  }
+}

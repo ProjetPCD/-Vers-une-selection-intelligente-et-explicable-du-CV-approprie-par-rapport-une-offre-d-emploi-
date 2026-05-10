@@ -1,0 +1,390 @@
+{
+  "job_id": "job_16",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-04T12:59:30.189911",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 20.67,
+    "confidence": {
+      "confidence_score": 0.48,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.8,
+        "coverage_rate": 0.6,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.245,
+    "edge_score": 0.3318,
+    "combined": 0.2797
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1338,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7871,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7933,
+    "matched_nodes": "0/10",
+    "edge_match_pct": 16.61
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1342,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.3318,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1257,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9655,
+    "ndcg_10": 0.9876,
+    "map_score": 0.9468,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.4646,
+    "semantic_fit_score": 0.5777,
+    "experience_density": 0.1084
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 16.06,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 16.98,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 25.25,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 96.76,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 3.77,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 25.4,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 1,
+      "match_pct": 20.3,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 26.2,
+      "weight_sum": 2.0
+    },
+    "Tool": {
+      "count": 5,
+      "match_pct": 4.6,
+      "weight_sum": 4.696
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 12.2,
+      "weight_sum": 1.154
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 16.61,
+    "total_edges": 8,
+    "top_synergies": [
+      {
+        "edge_key": "python-skill|data-analyst-role",
+        "source": "python-skill",
+        "target": "data-analyst-role",
+        "w_0": 0.95,
+        "w_cv": 0.512,
+        "w_cv_norm": 0.256,
+        "match_pct": 27.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "sql-skill|data-analyst-role",
+        "source": "sql-skill",
+        "target": "data-analyst-role",
+        "w_0": 0.92,
+        "w_cv": 0.418,
+        "w_cv_norm": 0.209,
+        "match_pct": 22.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "mysql-tool|data-analyst-role",
+        "source": "mysql-tool",
+        "target": "data-analyst-role",
+        "w_0": 0.88,
+        "w_cv": 0.418,
+        "w_cv_norm": 0.209,
+        "match_pct": 23.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "esprit-equipe|data-analyst-role",
+        "source": "esprit-equipe",
+        "target": "data-analyst-role",
+        "w_0": 0.55,
+        "w_cv": 0.325,
+        "w_cv_norm": 0.163,
+        "match_pct": 29.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "honnete-sans-faille|data-analyst-role",
+        "source": "honnete-sans-faille",
+        "target": "data-analyst-role",
+        "w_0": 0.49,
+        "w_cv": 0.325,
+        "w_cv_norm": 0.163,
+        "match_pct": 33.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Data Analyst",
+      "type": "Domain",
+      "gap": 0.797,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.691,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "MySQL",
+      "type": "Tool",
+      "gap": 0.784,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "SQL",
+      "type": "Hard Skill",
+      "gap": 0.784,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "SSRS",
+      "type": "Tool",
+      "gap": 0.944,
+      "severity": "critical",
+      "importance": 0.944
+    },
+    {
+      "skill": "SSIS",
+      "type": "Tool",
+      "gap": 0.938,
+      "severity": "critical",
+      "importance": 0.938
+    },
+    {
+      "skill": "Power BI",
+      "type": "Tool",
+      "gap": 0.912,
+      "severity": "critical",
+      "importance": 0.912
+    },
+    {
+      "skill": "SSMS",
+      "type": "Tool",
+      "gap": 0.902,
+      "severity": "critical",
+      "importance": 0.902
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Data Analyst",
+        "type": "Domain",
+        "gap": 0.797
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.691
+      },
+      {
+        "label": "MySQL",
+        "type": "Tool",
+        "gap": 0.784
+      },
+      {
+        "label": "SQL",
+        "type": "Hard Skill",
+        "gap": 0.784
+      },
+      {
+        "label": "SSRS",
+        "type": "Tool",
+        "gap": 0.944
+      },
+      {
+        "label": "SSIS",
+        "type": "Tool",
+        "gap": 0.938
+      },
+      {
+        "label": "Power BI",
+        "type": "Tool",
+        "gap": 0.912
+      },
+      {
+        "label": "SSMS",
+        "type": "Tool",
+        "gap": 0.902
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 6,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 5,
+      "C": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "data-analyst-role",
+        "label": "Data Analyst",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.406,
+        "reason": "This weight decrease (0.675) is likely driven by proxy bias due to the candidate's listed native language (Oriya) and extensive fluency in Hindi and Bengali, alongside limited English proficiency. While multilingual skills can be valuable, the JD prioritizes data analysis skills and explicitly lists Python, R, and SQL as key tools – skills not directly reflected in the candidate's CV beyond a general mention of NLP. The prominence of language skills alongside a previous role as a Machine Learning Engineer at TCS suggests a potential focus on broader engineering skills rather than pure data analysis, resulting in an unfair penalization. A more merit-based approach would recognize the candidate's experience and skills while adjusting for the lesser emphasis on English language proficiency within the specific job description."
+      },
+      {
+        "id": "python-skill",
+        "label": "Python",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.619,
+        "reason": "The significant decrease in weight (-0.175) for the 'python-skill' node suggests a proxy bias related to language proficiency. While Python skills are desired, the explicit listing of Oriya, Hindi, and Bengali languages on the CV, combined with the limited professional English proficiency, might be unfairly penalized. The JD doesn't explicitly require fluency in those languages, yet the CV’s focus on them could be interpreted as a negative signal, reflecting socioeconomic signals related to the candidate’s origin and potentially reinforcing biases against candidates from non-English speaking backgrounds. A correction factor of 0.75 acknowledges the language emphasis but reduces the weight to reflect the potential for bias."
+      },
+      {
+        "id": "mysql-tool",
+        "label": "MySQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.431,
+        "reason": "The candidate’s CV prominently features ‘Machine Learning Engineer @TCS Bhubaneswar, Odisha, India’, which, coupled with the JD’s emphasis on data analysis, leads to an overemphasis on the employer’s location and prior company. This proxy bias unfairly penalizes the candidate for working at a specific location (India) potentially leading to a lower score based on geographic preference. The CV’s focus on the ML role and associated skills overshadows the candidate's broader skillset, creating an unfair weighting based on the type of role held rather than demonstrated competency, leading to a reduction in the merit score. A more equitable assessment would prioritize skills like SQL and NLP regardless of the previous employer’s location."
+      },
+      {
+        "id": "sql-skill",
+        "label": "SQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.431,
+        "reason": "The candidate's SQL skill weight was decreased due to the JD emphasizing experience at TCS Bhubaneswar, Odisha, India. This suggests a proxy bias – the system is penalizing candidates based on their geographical location (India) and potentially their company affiliation (TCS) as opposed to demonstrated SQL proficiency. A more fair alternative would be to assess SQL skills irrespective of the employer or location, focusing solely on the candidate's ability to perform the required tasks. The candidate’s LinkedIn profile lists SQL alongside other skills, implying some level of competence, but the reduced weight is disproportionate to the role’s requirements."
+      },
+      {
+        "id": "esprit-equipe",
+        "label": "esprit d'équipe",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.244,
+        "reason": "The significant weight decrease (Delta = -0.358) is likely due to the inclusion of ‘Oriya’ as a skill, which is a proxy for socioeconomic background and geographic origin. While fluency in multiple languages can be a valuable asset, prioritizing a native language (Oriya) over skills explicitly listed in the JD (SQL, Python, NLP) suggests a bias towards candidates from specific regions (Odisha, India), unfairly penalizing candidates from other backgrounds. A fair alternative would have prioritized demonstrable skills and experience, regardless of linguistic background."
+      },
+      {
+        "id": "honnete-sans-faille",
+        "label": "honnêteté",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.244,
+        "reason": "The significant decrease in weight (0.471 to 0.325) is likely driven by the candidate's location – 'Bhubaneswar, Odisha, India' – and language skills beyond English. While location itself isn't inherently biased, the emphasis on Oriya and Hindi, coupled with a CV from a less-established tech hub, likely contributes to a Proxy Bias.  The system might be unfairly penalizing the candidate due to their geographic origin and language proficiency, suggesting a preference for candidates from more globally recognized tech centers with primarily English-speaking skills.  A fairer alternative would involve assessing skills and experience independent of location and language, focusing solely on the listed technical abilities and accomplishments."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1338 (sous-qualifié), CTM=0.7871 (écart structurel élevé), match_pct=20.67% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.1257, ndcg_5=0.9655, missing_critical_penalty=0.0, combo_v6_final=16.06",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "8 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.48)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

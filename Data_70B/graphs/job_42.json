@@ -1,0 +1,191 @@
+{
+  "nodes": [
+    {
+      "id": "azure_machine_learning",
+      "label": "Azure Machine Learning",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Notre stack technologique comprend ... Azure Machine Learning",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "phd",
+      "label": "PhD",
+      "type": "Education",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Nous recherchons un candidat avec un PhD en science des données ou un domaine connexe",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "python",
+      "label": "Python",
+      "type": "Hard Skill",
+      "w_0": 0.954,
+      "seniority_required": "N/A",
+      "context": "Notre stack technologique comprend ... Python",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "mysql",
+      "label": "MySQL",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Notre stack technologique comprend ... MySQL",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "communication",
+      "label": "Communication",
+      "type": "Soft Skill",
+      "w_0": 0.9,
+      "seniority_required": "N/A",
+      "context": "Vous devrez également avoir de solides compétences en ... communication",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "docker",
+      "label": "Docker",
+      "type": "Tool",
+      "w_0": 0.858,
+      "seniority_required": "N/A",
+      "context": "Notre stack technologique comprend ... Docker",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "pytorch",
+      "label": "PyTorch",
+      "type": "Tool",
+      "w_0": 0.819,
+      "seniority_required": "N/A",
+      "context": "Notre stack technologique comprend ... PyTorch",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "data_scientist",
+      "label": "Data Scientist",
+      "type": "Domain",
+      "w_0": 0.664,
+      "seniority_required": "N/A",
+      "context": "Mission passionnante pour un Data Scientist expérimenté",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "expert",
+      "label": "Expert",
+      "type": "Domain",
+      "w_0": 0.64,
+      "seniority_required": "N/A",
+      "context": "Nous recherche un expert capable de développer et de mettre en œuvre des solutions d'intelligence artificielle",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "neural_networks",
+      "label": "Neural Networks",
+      "type": "Domain",
+      "w_0": 0.583,
+      "seniority_required": "N/A",
+      "context": "expérimenté dans le domaine de l'apprentissage automatique et des réseaux de neurones",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "problem_solving",
+      "label": "Problem Solving",
+      "type": "Soft Skill",
+      "w_0": 0.579,
+      "seniority_required": "N/A",
+      "context": "Vous devrez également avoir de solides compétences en ... résolution de problèmes",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "experienced_data_scientist",
+      "label": "Experienced Data Scientist",
+      "type": "Domain",
+      "w_0": 0.547,
+      "seniority_required": "N/A",
+      "context": "Mission passionnante pour un Data Scientist expérimenté",
+      "inferred": false,
+      "inferred_from": ", "
+    }
+  ],
+  "edges": [
+    {
+      "source": "python",
+      "target": "pytorch",
+      "relation": "requires",
+      "weight": 0.9,
+      "rationale": "PyTorch is built on top of Python"
+    },
+    {
+      "source": "python",
+      "target": "azure_machine_learning",
+      "relation": "requires",
+      "weight": 0.9,
+      "rationale": "Azure Machine Learning uses Python as a primary language"
+    },
+    {
+      "source": "data_scientist",
+      "target": "experienced_data_scientist",
+      "relation": "part_of",
+      "weight": 0.8,
+      "rationale": "Experienced Data Scientist is a specific type of Data Scientist"
+    },
+    {
+      "source": "experienced_data_scientist",
+      "target": "problem_solving",
+      "relation": "requires",
+      "weight": 0.8,
+      "rationale": "Experienced Data Scientist requires strong problem-solving skills"
+    },
+    {
+      "source": "experienced_data_scientist",
+      "target": "communication",
+      "relation": "requires",
+      "weight": 0.8,
+      "rationale": "Experienced Data Scientist requires strong communication skills"
+    },
+    {
+      "source": "phd",
+      "target": "experienced_data_scientist",
+      "relation": "enables",
+      "weight": 0.7,
+      "rationale": "Having a PhD in Data Science enables the role of Experienced Data Scientist"
+    },
+    {
+      "source": "docker",
+      "target": "azure_machine_learning",
+      "relation": "supports",
+      "weight": 0.6,
+      "rationale": "Docker supports Azure Machine Learning deployment"
+    },
+    {
+      "source": "mysql",
+      "target": "azure_machine_learning",
+      "relation": "supports",
+      "weight": 0.6,
+      "rationale": "MySQL supports Azure Machine Learning data storage"
+    },
+    {
+      "source": "neural_networks",
+      "target": "pytorch",
+      "relation": "part_of",
+      "weight": 0.5,
+      "rationale": "PyTorch is a tool for building Neural Networks"
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_42"
+}

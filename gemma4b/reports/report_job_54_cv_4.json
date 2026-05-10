@@ -1,0 +1,361 @@
+{
+  "job_id": "job_54",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-03T09:57:22.159504",
+  "overall_assessment": {
+    "verdict": "Weak Match",
+    "match_pct": 52.56,
+    "confidence": {
+      "confidence_score": 0.67,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.333,
+        "coverage_rate": 0.733,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.5571,
+    "edge_score": 0.3396,
+    "combined": 0.4701
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3757,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5266,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.4744,
+    "matched_nodes": "6/15",
+    "edge_match_pct": 16.98
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3933,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.3002,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2691,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1538,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.8691,
+    "weighted_recall": 0.1475,
+    "weighted_f1": {
+      "value": 0.2521,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.659,
+    "missing_critical_penalty": {
+      "value": 0.1429,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.6382,
+    "ndcg_10": 0.7518,
+    "map_score": 0.7784,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8925,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.2343,
+    "experience_density": 0.1951
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 30.46,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 30.08,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 22.81,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 77.77,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 41.49,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 33.07,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 23.67,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 13.6,
+      "weight_sum": 1.404
+    },
+    "Tool": {
+      "count": 8,
+      "match_pct": 35.3,
+      "weight_sum": 5.658
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 30.1,
+      "weight_sum": 2.441
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 16.98,
+    "total_edges": 8,
+    "top_synergies": [
+      {
+        "edge_key": "cybersecurity_expert|neural_networks",
+        "source": "cybersecurity_expert",
+        "target": "neural_networks",
+        "w_0": 0.6,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 62.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cybersecurity_expert|anomaly_detection_algorithms",
+        "source": "cybersecurity_expert",
+        "target": "anomaly_detection_algorithms",
+        "w_0": 0.55,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.3,
+        "match_pct": 54.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cybersecurity_expert|security_strategies",
+        "source": "cybersecurity_expert",
+        "target": "security_strategies",
+        "w_0": 0.45,
+        "w_cv": 0.425,
+        "w_cv_norm": 0.212,
+        "match_pct": 47.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cybersecurity_expert|access_management_systems",
+        "source": "cybersecurity_expert",
+        "target": "access_management_systems",
+        "w_0": 0.75,
+        "w_cv": 0.356,
+        "w_cv_norm": 0.178,
+        "match_pct": 23.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cybersecurity_expert|risk_analysis",
+        "source": "cybersecurity_expert",
+        "target": "risk_analysis",
+        "w_0": 0.5,
+        "w_cv": 0.356,
+        "w_cv_norm": 0.178,
+        "match_pct": 35.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Cybersécurité",
+      "type": "Domain",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Méthodes Agiles",
+      "type": "Hard Skill",
+      "gap": 0.954,
+      "severity": "critical",
+      "importance": 0.954
+    },
+    {
+      "skill": "Antivirus",
+      "type": "Tool",
+      "gap": 0.659,
+      "severity": "critical",
+      "importance": 0.79
+    },
+    {
+      "skill": "Firewalls",
+      "type": "Tool",
+      "gap": 0.695,
+      "severity": "critical",
+      "importance": 0.695
+    },
+    {
+      "skill": "Fortes compétences analytiques",
+      "type": "Soft Skill",
+      "gap": 0.683,
+      "severity": "critical",
+      "importance": 0.683
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "Réseaux de Neurones",
+        "type": "Tool",
+        "w_cv": 1.5
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "Cybersécurité",
+        "type": "Domain",
+        "gap": 1.0
+      },
+      {
+        "label": "Méthodes Agiles",
+        "type": "Hard Skill",
+        "gap": 0.954
+      },
+      {
+        "label": "Antivirus",
+        "type": "Tool",
+        "gap": 0.659
+      },
+      {
+        "label": "Firewalls",
+        "type": "Tool",
+        "gap": 0.695
+      },
+      {
+        "label": "Fortes compétences analytiques",
+        "type": "Soft Skill",
+        "gap": 0.683
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 6,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "HALO": 4,
+      "C": 1,
+      "PRESTIGE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "jira",
+        "label": "Jira",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.712,
+        "reason": "The increased weight for 'Jira' suggests a preference for candidates who utilize this specific tool, despite the job description focusing on broader cybersecurity skills and technologies like neural networks and anomaly detection.  This indicates a Halo bias where Jira, a relatively specific tool, is disproportionately weighted, overshadowing more crucial qualifications like machine learning expertise and experience with diverse security technologies.  A fair alternative would be to assess candidates based on a broader range of cybersecurity skills and experience, not tool-specific usage.  The JD explicitly lists a diverse tech stack and the CV highlights multiple relevant skills beyond Jira, indicating the weight change is not justified by merit."
+      },
+      {
+        "id": "git",
+        "label": "Git",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.712,
+        "reason": "The significant increase in weight for 'Git' is likely due to the mention of it within the Job Description (JD) highlighting its use as a project management tool. This represents a halo effect, where the presence of Git, a known tool for the role, is disproportionately influencing the score regardless of the candidate's demonstrated proficiency.  A more appropriate approach would be to evaluate the candidate’s actual use of Git and their ability to apply it to the specific challenges outlined in the JD. The weight increase seems driven by the *existence* of Git rather than demonstrating competence with it, suggesting bias."
+      },
+      {
+        "id": "antivirus",
+        "label": "Antivirus",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The CV lacks any mention of antivirus systems, despite the JD explicitly stating it as a required skill. This absence represents a significant weight reduction. This suggests a bias against candidates who don't highlight this specific skill, even if they possess strong machine learning experience – a category of bias (PROXY) where the CV is omitting a skill not explicitly mentioned in the job description, focusing instead on related but different expertise. A correction factor of 0.75 reflects this unjustified reduction in weighting, as the candidate’s core skillset (machine learning) is clearly relevant to the role’s demands."
+      },
+      {
+        "id": "access_management_systems",
+        "label": "Systèmes de Gestion des Accès",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.712,
+        "reason": "The CV heavily emphasizes the candidate's academic background (MSc in Applied Computer Science with a specialization in Machine Learning) and publications in deep learning and 3D convolutional neural networks, while the job description focuses on practical experience with access management systems and familiarity with specific security technologies. This halo effect, where the strong signal of advanced technical skills overshadows the relevance of experience with systems directly related to the job's core requirements, suggests bias. A more appropriate correction would reduce the weighting to acknowledge the candidate’s strong technical background, but mitigate the inflated impact of prestige signals. A fair alternative would prioritize skills directly linked to the JD, such as experience with security systems and network administration."
+      },
+      {
+        "id": "risk_analysis",
+        "label": "Analyse et Résolution de Problèmes",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.712,
+        "reason": "The CV heavily emphasizes academic qualifications (MSc in Applied Computer Science) and specific certifications (Dataiku) which are prestige signals. This over-weighting of these elements, suggesting a preference for candidates with specific advanced degrees and vendor certifications, aligns with prestige bias. The JD itself does not prioritize these qualifications but the candidate's CV significantly boosts their score. A fair alternative would be to weigh skills and experience based on demonstrated proficiency and impact, rather than solely relying on academic prestige and certifications."
+      },
+      {
+        "id": "cybersecurity_expert_communication_skills",
+        "label": "Excellentes compétences de communication",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.76,
+        "reason": "The substantial increase in weight (Delta = +0.301) is primarily driven by the explicit statement of 'Excellentes compétences de communication' (part_3) from the job description. This represents a Halo bias, where the single, highly valued skill ('communication') is disproportionately weighting the candidate's profile, overshadowing other potentially strong aspects like her advanced machine learning experience and multiple certifications. A fair alternative would be to weight all skills equally, considering the overall expertise demonstrated through her experience and qualifications."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3757 (sous-qualifié), CTM=0.5266 (écart structurel élevé), match_pct=52.56% → Weak Match",
+    "v6_summary": "weighted_f1=0.2521, gap_score=0.2691, ndcg_5=0.6382, missing_critical_penalty=0.1429, combo_v6_final=30.46",
+    "key_strengths": "1 compétences clés validées",
+    "key_gaps": "5 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.67)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

@@ -1,0 +1,471 @@
+{
+  "job_id": "job_3",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-02T16:07:33.035027",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 20.26,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.833,
+        "coverage_rate": 0.278,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.2123,
+    "edge_score": 0.5212,
+    "combined": 0.3359
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1175,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7854,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7974,
+    "matched_nodes": "0/18",
+    "edge_match_pct": 26.06
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1157,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.2823,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1146,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9435,
+    "ndcg_10": 0.9628,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.2667,
+    "semantic_fit_score": 0.6194,
+    "experience_density": 0.0924
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 14.84,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 14.51,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 26.26,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 97.74,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 3.44,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 15.18,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 6,
+      "match_pct": 14.9,
+      "weight_sum": 5.95
+    },
+    "Tool": {
+      "count": 10,
+      "match_pct": 7.0,
+      "weight_sum": 8.455
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 14.8,
+      "weight_sum": 1.271
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 26.06,
+    "total_edges": 14,
+    "top_synergies": [
+      {
+        "edge_key": "ai-engineer-python|fastapi-ai-engineer",
+        "source": "ai-engineer-python",
+        "target": "fastapi-ai-engineer",
+        "w_0": 0.95,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 44.7,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ai-engineer-python|tensorflow-ai-engineer",
+        "source": "ai-engineer-python",
+        "target": "tensorflow-ai-engineer",
+        "w_0": 0.85,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 44.1,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ai-engineer-typescript|angular-ai-engineer",
+        "source": "ai-engineer-typescript",
+        "target": "angular-ai-engineer",
+        "w_0": 0.75,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 50.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ai-engineer-laravel|fastapi-ai-engineer",
+        "source": "ai-engineer-laravel",
+        "target": "fastapi-ai-engineer",
+        "w_0": 0.6,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 62.5,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ai-engineer-mysql|ai-engineer-sql",
+        "source": "ai-engineer-mysql",
+        "target": "ai-engineer-sql",
+        "w_0": 0.85,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 44.1,
+        "p3_confidence": "MEDIUM",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.85,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Java",
+      "type": "Hard Skill",
+      "gap": 0.85,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 0.8,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PHP",
+      "type": "Hard Skill",
+      "gap": 0.85,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "MySQL",
+      "type": "Tool",
+      "gap": 0.85,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "MongoDB",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "méthodes agiles",
+      "type": "Hard Skill",
+      "gap": 0.887,
+      "severity": "critical",
+      "importance": 0.981
+    },
+    {
+      "skill": "Laravel",
+      "type": "Tool",
+      "gap": 0.826,
+      "severity": "critical",
+      "importance": 0.976
+    },
+    {
+      "skill": "TypeScript",
+      "type": "Hard Skill",
+      "gap": 0.819,
+      "severity": "critical",
+      "importance": 0.969
+    },
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 0.78,
+      "severity": "critical",
+      "importance": 0.93
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.85
+      },
+      {
+        "label": "Java",
+        "type": "Hard Skill",
+        "gap": 0.85
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 0.8
+      },
+      {
+        "label": "PHP",
+        "type": "Hard Skill",
+        "gap": 0.85
+      },
+      {
+        "label": "MySQL",
+        "type": "Tool",
+        "gap": 0.85
+      },
+      {
+        "label": "MongoDB",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "méthodes agiles",
+        "type": "Hard Skill",
+        "gap": 0.887
+      },
+      {
+        "label": "Laravel",
+        "type": "Tool",
+        "gap": 0.826
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 13,
+    "nodes_with_bias": 12,
+    "edges_audited": 1,
+    "edges_with_bias": 1,
+    "bias_categories": {
+      "PROXY": 9,
+      "D": 2,
+      "HALO": 1,
+      "A": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "ai-engineer-python",
+        "label": "Python",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The candidate’s skill set – Next.js, React.js, Spring Boot – heavily aligns with the job description’s requirements for JavaScript and Java frameworks, indicating familiarity with modern web development. However, the candidate’s CV prominently features projects and experience primarily based in Algeria (Port Cap Camarat and Capgemini), combined with a French university degree. This geographic bias, where location is unfairly weighting skill relevance, suggests a proxy bias favoring candidates from the same country/region, disproportionately penalizing candidates without similar geographic contexts. A fair alternative would be to focus solely on demonstrable skills and experience regardless of the candidate's location."
+      },
+      {
+        "id": "ai-engineer-java",
+        "label": "Java",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The candidate’s CV prominently lists 'Spring Boot' as a key skill alongside 'React.js', suggesting a focus on web development rather than Java-specific AI engineering. The JD emphasizes a need for experience in systems AI, machine learning, and data pipelines, while the CV’s skills align more with full-stack web development, specifically utilizing Spring Boot. This suggests the algorithm unfairly weighted the candidate's web development skills, reflecting a proxy bias based on location (Algeria) and the candidate's listed technologies, ignoring the more relevant skills listed in the job description. A fair alternative would be to prioritize skills directly related to the advertised AI engineering role, such as Python and machine learning frameworks."
+      },
+      {
+        "id": "ai-engineer-php",
+        "label": "PHP",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The CV overwhelmingly emphasizes full-stack development skills (Next.js, React, Spring Boot, etc.) and experience in Algeria, while explicitly stating the absence of PHP skills found in the job description. This suggests a proxy bias favoring candidates from regions (Algeria) with potentially lower average salaries or different skill sets, incorrectly penalizing the applicant for lacking a skill not specifically required. A fairer alternative would prioritize skills directly mentioned in the JD, such as FastAPI, TensorFlow, and PyTorch, without being unduly influenced by geographic location."
+      },
+      {
+        "id": "ai-engineer-mysql",
+        "label": "MySQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The CV explicitly lists skills like Python and JavaScript, indicating development experience, however, there's no mention of MySQL or database experience. The location (Algiers, Algeria) combined with the company names (Capgemini, Portuaire d'Alger) suggests a proxy for socioeconomic background and potentially location-specific skills demand, unfairly penalizing the candidate for not having a MySQL focus. A fair alternative would have been to assess the candidate's overall coding abilities and adaptability, rather than relying solely on skills listed in the JD which wasn't reflected in the CV. This reflects a bias towards candidates with experience in Western European database systems."
+      },
+      {
+        "id": "ai-engineer-agile",
+        "label": "méthodes agiles",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV prominently lists skills in Next.js, React.js, Spring Boot, and other technologies, while the job description explicitly focuses on experience with 'Agile methodologies' and 'AI systems' - suggesting a focus on tools and technologies rather than broader project experience. The candidate's location in Algeria and the use of a Vercel portfolio (a relatively uncommon setup for European candidates) indicate a proxy bias, favoring applicants based on geographical origin and potentially less established tech ecosystems. This reduces the weight given to their skills and experience, making the decrease in weight justified."
+      },
+      {
+        "id": "ai-engineer-laravel",
+        "label": "Laravel",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The candidate's CV heavily emphasizes skills in Laravel and PHP, technologies not explicitly listed in the job description which focuses on FastAPI, TensorFlow, and PyTorch.  This suggests a PROXY bias – the system is prioritizing the candidate's past experience with technologies from a geographically and culturally distant location (Algeria) rather than the specific skills required for this role. The candidate's location (Algiers, Algeria) and use of PHP/Laravel, which are less common in the desired skillset, contribute to this bias. A fairer approach would be to assess the candidate's skills based on their demonstrated proficiency in the technologies listed in the JD, regardless of their past experience."
+      },
+      {
+        "id": "ai-engineer-typescript",
+        "label": "TypeScript",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The AI Engineer role specifically requires TypeScript skills, yet the CV prominently features skills like React, Next.js, and Spring Boot, indicating a focus on front-end and back-end web development rather than AI engineering. The candidate's location in Algiers, Algeria, coupled with the CV’s focus on full-stack development experience, suggests a proxy bias – the system is prioritizing skills related to web development commonly found in the Algiers market, rather than evaluating the candidate’s suitability for an AI role based on demonstrable skills. A fair alternative would be to weight skills directly related to AI development such as TensorFlow or PyTorch, or to explicitly exclude candidates outside of a specific geographic region if that’s a core requirement."
+      },
+      {
+        "id": "ai-engineer-sql",
+        "label": "SQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The candidate's CV prominently lists skills and experience in languages and frameworks (Next.js, React, Spring Boot) that are not explicitly required in the JD.  The location 'Algeria' and use of 'Arabic' in the contact information (achikh200@gmail.com) suggest a proxy bias, potentially penalizing the candidate due to geographic location and language of communication, rather than solely relying on SQL skills.  A fair alternative would prioritize skills demonstrated within the JD's tech stack, and the candidate’s university degrees are listed rather than their proficiency in those technologies, reducing the impact of the location signal. This suggests an unfair reduction in the weight based on factors beyond demonstrable skills."
+      },
+      {
+        "id": "fastapi-ai-engineer",
+        "label": "FastAPI",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate’s CV prominently lists 'Next.js React.js Spring Boot' as ‘Top Skills’, which forms the anchor for the weight change, despite a lack of project evidence aligning with this skillset. This suggests the system is prioritizing the listed skills (often associated with React and modern web development) over demonstrable experience, creating a halo effect where the candidate is favorably weighted simply for possessing these popular skills, rather than genuine competence. A fairer alternative would be to assess the candidate’s expertise based on projects and specific contributions, discounting the skill-based anchor to focus on actual abilities, resulting in a lower weight score."
+      },
+      {
+        "id": "communication-ai-engineer",
+        "label": "Communication",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The weight change from 0.736 to 0.5 reflects a bias towards proxy signals. The CV heavily emphasizes a 'Full-Stack Developer' skillset, which, while valuable, doesn't directly correlate with the specific requirements of an 'AI Engineer' as detailed in the JD, especially given the candidate's short employment history. Furthermore, the CV originates from Algeria, potentially introducing a geographic bias absent in candidates from countries more commonly associated with AI talent. This favors a skill set primarily built around web development, unfairly penalizing the candidate's ability to demonstrate core AI engineering competencies; a correction factor of 0.75 is applied to account for this imbalance."
+      },
+      {
+        "id": "react-ai-engineer",
+        "label": "React",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV emphasizes 'Next.js React.js Spring Boot' as top skills, aligning with the JD's mention of React. However, there's no project evidence provided to demonstrate expertise in these technologies. The candidate's listed experience is primarily in full-stack development with less focus on AI-specific skills and the location of Algiers, Algeria, is a proxy for socioeconomic factors which may be unfairly weighted compared to candidates in other locations (e.g., France or the UK) who are more likely to have experience with the desired AI frameworks and technologies. A reduction in weight reflects the lack of concrete evidence and the potential for location bias."
+      },
+      {
+        "id": "teamwork-ai-engineer",
+        "label": "Travail d'équipe",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease in weight (0.535 to 0.25) despite the candidate listing 'Teamwork d’équipe' and a relevant skill ('React.js') suggests proxy bias based on location. The CV highlights experience in France (Capgemini), which is a higher-paying market than Algeria, and the candidate’s language skills are primarily French, which may be unfairly weighted compared to skills demonstrated in a more affordable context.  The lack of specific project context further supports this, as the system might be overemphasizing the 'teamwork' descriptor due to the candidate's geographic origin and potentially higher salary expectations. A fairer alternative would be to adjust the weight based solely on demonstrable skills and experience, rather than geographic location."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "ai-engineer-php|fastapi-ai-engineer",
+        "bias_category": "A",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The audit identifies a bias related to prestige (A) due to the candidate's previous role at Capgemini not explicitly demonstrating simultaneous use of PHP and FastAPI, technologies heavily emphasized in the JD. The JD's focus on advanced AI roles and specific frameworks (FastAPI, TensorFlow, PyTorch) unfairly elevates the importance of these technologies compared to the candidate’s existing skillset, suggesting a preference for candidates with more directly aligned experience. A fair alternative would prioritize the candidate's overall full-stack development experience and adaptability, adjusting the weight given to the specific technology stack based on demonstrable skills rather than assumed proficiency. This factor warrants a reduction in weight, reflecting an overemphasis on specific technologies."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1175 (sous-qualifié), CTM=0.7854 (écart structurel élevé), match_pct=20.26% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.1146, ndcg_5=0.9435, missing_critical_penalty=0.0, combo_v6_final=14.84",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "15 gaps critiques identifiés",
+    "bias_note": "12 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

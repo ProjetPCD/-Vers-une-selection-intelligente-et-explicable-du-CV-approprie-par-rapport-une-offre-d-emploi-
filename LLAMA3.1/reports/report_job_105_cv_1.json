@@ -1,0 +1,446 @@
+{
+  "job_id": "job_105",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-02T17:32:08.425814",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 43.95,
+    "confidence": {
+      "confidence_score": 0.7,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.5,
+        "coverage_rate": 0.8,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.5169,
+    "edge_score": 0.0,
+    "combined": 0.3102
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3156,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5961,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5605,
+    "matched_nodes": "4/20",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3265,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.282,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2697,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.25,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.5272,
+    "weighted_recall": 0.1537,
+    "weighted_f1": {
+      "value": 0.2792,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5,
+    "missing_critical_penalty": {
+      "value": 0.2105,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.8679,
+    "ndcg_10": 0.8999,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.326,
+    "experience_density": 0.2103
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 32.32,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 29.18,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 28.45,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 94.72,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 44.51,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 38.62,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 19.21,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 6,
+      "match_pct": 25.0,
+      "weight_sum": 4.873
+    },
+    "Tool": {
+      "count": 8,
+      "match_pct": 12.1,
+      "weight_sum": 6.64
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 50.0,
+      "weight_sum": 0.907
+    },
+    "Domain": {
+      "count": 5,
+      "match_pct": 44.9,
+      "weight_sum": 3.85
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "total_edges": 7,
+    "top_synergies": [
+      {
+        "edge_key": "event-driven-architecture|databricks",
+        "source": "event-driven-architecture",
+        "target": "databricks",
+        "w_0": 0.9,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "delta-lake|databricks",
+        "source": "delta-lake",
+        "target": "databricks",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "kubernetes|event-driven-architecture",
+        "source": "kubernetes",
+        "target": "event-driven-architecture",
+        "w_0": 0.9,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "tensorflow|software-architecture",
+        "source": "tensorflow",
+        "target": "software-architecture",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "fastapi|flask",
+        "source": "fastapi",
+        "target": "flask",
+        "w_0": 0.7,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Event-Driven Architecture",
+      "type": "Hard Skill",
+      "gap": 0.943,
+      "severity": "critical",
+      "importance": 0.943
+    },
+    {
+      "skill": "Delta Lake",
+      "type": "Tool",
+      "gap": 0.774,
+      "severity": "critical",
+      "importance": 0.924
+    },
+    {
+      "skill": "Design Patterns",
+      "type": "Hard Skill",
+      "gap": 0.754,
+      "severity": "critical",
+      "importance": 0.879
+    },
+    {
+      "skill": "Kubernetes",
+      "type": "Tool",
+      "gap": 0.711,
+      "severity": "critical",
+      "importance": 0.867
+    },
+    {
+      "skill": "Data Engineering",
+      "type": "Hard Skill",
+      "gap": 0.733,
+      "severity": "critical",
+      "importance": 0.833
+    },
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.739,
+      "severity": "critical",
+      "importance": 0.833
+    },
+    {
+      "skill": "Vector DB",
+      "type": "Tool",
+      "gap": 0.676,
+      "severity": "critical",
+      "importance": 0.814
+    },
+    {
+      "skill": "Databricks",
+      "type": "Tool",
+      "gap": 0.805,
+      "severity": "critical",
+      "importance": 0.805
+    },
+    {
+      "skill": "FastAPI",
+      "type": "Tool",
+      "gap": 0.799,
+      "severity": "critical",
+      "importance": 0.799
+    },
+    {
+      "skill": "Flask",
+      "type": "Tool",
+      "gap": 0.755,
+      "severity": "critical",
+      "importance": 0.755
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Event-Driven Architecture",
+        "type": "Hard Skill",
+        "gap": 0.943
+      },
+      {
+        "label": "Delta Lake",
+        "type": "Tool",
+        "gap": 0.774
+      },
+      {
+        "label": "Design Patterns",
+        "type": "Hard Skill",
+        "gap": 0.754
+      },
+      {
+        "label": "Kubernetes",
+        "type": "Tool",
+        "gap": 0.711
+      },
+      {
+        "label": "Data Engineering",
+        "type": "Hard Skill",
+        "gap": 0.733
+      },
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.739
+      },
+      {
+        "label": "Vector DB",
+        "type": "Tool",
+        "gap": 0.676
+      },
+      {
+        "label": "Databricks",
+        "type": "Tool",
+        "gap": 0.805
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 16,
+    "nodes_with_bias": 10,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 4,
+      "PRESTIGE": 3,
+      "HALO": 2,
+      "PRESTIGE|HALO": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "kubernetes",
+        "label": "Kubernetes",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "The weight change is based on the mention of a specific tool (Kubernetes) rather than demonstrated skills or experience, unfairly penalizing the candidate."
+      },
+      {
+        "id": "delta-lake",
+        "label": "Delta Lake",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The weight change from w_0 (ideal) = 0.924 to w_cv (adapted) = 0.25 suggests that the algorithm is unfairly penalizing candidates without experience with Delta Lake, which is a case of prestige bias."
+      },
+      {
+        "id": "nosql-db",
+        "label": "NoSQL DB",
+        "bias_category": "PRESTIGE|HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.8,
+        "reason": "The current weightage overemphasizes experience at the expense of other factors like skills and education, which could lead to unfair treatment of candidates who are equally qualified but lack experience."
+      },
+      {
+        "id": "data-engineering",
+        "label": "Data Engineering",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.2,
+        "reason": "The weight change seems biased because the candidate has mentioned a single tool (Framework Spring) without providing any concrete project evidence."
+      },
+      {
+        "id": "tensorflow",
+        "label": "TensorFlow",
+        "bias_category": "PRESTIGE",
+        "severity": "HIGH",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The weight change favors candidates with more prestigious names (tensorflow), rather than evaluating their actual skills and experience. A fair alternative would be to use a more nuanced evaluation of relevant skills and experience, such as those listed in the job description."
+      },
+      {
+        "id": "software-architecture",
+        "label": "Software Architecture",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.8,
+        "reason": "Relying on a single signal (mentioning Spring) may lead to an unfair advantage for candidates who have knowledge of popular tools, rather than those with more relevant skills and experience."
+      },
+      {
+        "id": "vector-db",
+        "label": "Vector DB",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.1,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.275,
+        "reason": "Unfair penalty due to proxy bias, specifically related to socio-economic signals (mention of Vector DB without concrete evidence). Correction factor increased to account for this bias."
+      },
+      {
+        "id": "cnn",
+        "label": "CNN (Convolutional Neural Networks)",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.9,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.9,
+        "reason": "The job description emphasizes working with 'des équipes pluridisciplinaires' and utilizing various cloud technologies, but the candidate's location (Casablanca-Settat, Maroc) is mentioned in their experience section, which may not be directly relevant to these requirements."
+      },
+      {
+        "id": "self-supervised-learning",
+        "label": "Self-Supervised Learning",
+        "bias_category": "PROXY",
+        "severity": "LOW",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.8,
+        "reason": "Proxy bias due to socioeconomic signal (location) in CV, focusing on technical skills and experience would be a fair alternative."
+      },
+      {
+        "id": "computer-vision",
+        "label": "Computer Vision",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.8,
+        "reason": "The weight increase is likely due to the mention of a specific location (Casablanca-Settat, Maroc) in the CV, which may indicate that the system is biased towards candidates with certain socioeconomic backgrounds or locations. A fair alternative would be to consider skills and experience rather than location."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3156 (sous-qualifié), CTM=0.5961 (écart structurel élevé), match_pct=43.95% → Poor Match",
+    "v6_summary": "weighted_f1=0.2792, gap_score=0.2697, ndcg_5=0.8679, missing_critical_penalty=0.2105, combo_v6_final=32.32",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "10 gaps critiques identifiés",
+    "bias_note": "10 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.7)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

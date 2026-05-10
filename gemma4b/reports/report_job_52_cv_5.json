@@ -1,0 +1,309 @@
+{
+  "job_id": "job_52",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-03T06:29:10.603878",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 40.46,
+    "confidence": {
+      "confidence_score": 0.66,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.286,
+        "coverage_rate": 0.714,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.526,
+    "edge_score": 0.6255,
+    "combined": 0.5658
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3064,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.61,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5954,
+    "matched_nodes": "0/7",
+    "edge_match_pct": 31.26
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3179,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.6233,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.2694,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1667,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.7569,
+    "weighted_recall": 0.0973,
+    "weighted_f1": {
+      "value": 0.1843,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.51,
+    "missing_critical_penalty": {
+      "value": 0.2,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9074,
+    "ndcg_10": 0.958,
+    "map_score": 0.9762,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.4042,
+    "semantic_fit_score": 0.5027,
+    "experience_density": 0.2136
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 35.08,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 38.7,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 32.54,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 95.46,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 42.19,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 38.08,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 39.78,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 3,
+      "match_pct": 18.0,
+      "weight_sum": 2.898
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 32.8,
+      "weight_sum": 1.449
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 51.0,
+      "weight_sum": 0.896
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 9.4,
+      "weight_sum": 0.441
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 31.26,
+    "total_edges": 5,
+    "top_synergies": [
+      {
+        "edge_key": "typescript-lang|fullstack-dev",
+        "source": "typescript-lang",
+        "target": "fullstack-dev",
+        "w_0": 0.9,
+        "w_cv": 0.9,
+        "w_cv_norm": 0.45,
+        "match_pct": 50.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "nodejs-js|fullstack-dev",
+        "source": "nodejs-js",
+        "target": "fullstack-dev",
+        "w_0": 0.95,
+        "w_cv": 0.865,
+        "w_cv_norm": 0.432,
+        "match_pct": 45.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "nodejs-js|backend-solutions",
+        "source": "nodejs-js",
+        "target": "backend-solutions",
+        "w_0": 0.6,
+        "w_cv": 0.719,
+        "w_cv_norm": 0.359,
+        "match_pct": 59.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "postgresql-db|backend-solutions",
+        "source": "postgresql-db",
+        "target": "backend-solutions",
+        "w_0": 0.85,
+        "w_cv": 0.338,
+        "w_cv_norm": 0.169,
+        "match_pct": 19.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cloud-deployment|backend-solutions",
+        "source": "cloud-deployment",
+        "target": "backend-solutions",
+        "w_0": 0.75,
+        "w_cv": 0.244,
+        "w_cv_norm": 0.122,
+        "match_pct": 16.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "PostgreSQL",
+      "type": "Tool",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Déploiement Cloud",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "PostgreSQL",
+        "type": "Tool",
+        "gap": 0.906
+      },
+      {
+        "label": "Déploiement Cloud",
+        "type": "Tool",
+        "gap": 1.0
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 5,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 2,
+      "PRESTIGE BIAS": 2,
+      "PRESTIGE|HALO": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "postgresql-db",
+        "label": "PostgreSQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant weight decrease (-0.75) is likely driven by the absence of explicit PostgreSQL experience in the job description and candidate CV. This represents a proxy bias, where the system is unfairly penalizing the candidate for not possessing a skill mentioned in the job description, even though PostgreSQL is a valid technology for a full-stack developer. A fair alternative would be to assess the candidate's proficiency in relational databases regardless of explicit PostgreSQL mentions. The CV highlights strong skills in deep learning and geometric deep learning, potentially indicating a broader understanding of data engineering that should be prioritized."
+      },
+      {
+        "id": "fullstack-dev",
+        "label": "Développeur Full-Stack",
+        "bias_category": "PRESTIGE|HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.78,
+        "reason": "The weight change suggests a potential prestige bias stemming from the applicant's internship at InstaDeep and the highly specialized nature of their project - ‘Alzheimer’s Disease Classification Using Hippocampus shape morphometric analysis.’ The JD heavily emphasizes ‘state-of-the-art methods’ and ‘microservices,’ potentially elevating the value placed on experience within complex, research-driven environments compared to broader full-stack skills. The halo effect is present as the applicant’s successful outcome of exceeding state-of-the-art methods heavily influences the weighting, overshadowing perhaps a less technically-focused skillset. A fairer alternative would be to de-emphasize the project’s complexity and focus solely on the candidate’s demonstrable skills in Node.js, TypeScript, PostgreSQL, and adherence to SOLID principles."
+      },
+      {
+        "id": "typescript-lang",
+        "label": "TypeScript",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.02,
+        "reason": "The CV heavily emphasizes a highly specialized academic project ('Alzheimer's Disease Classification...') using Geometric Deep Learning and specific technical terms (Kendall’s definition, Dense vector fields, triple classification). While relevant to the role, the JD doesn't explicitly require this level of deep expertise in this specific domain. The increased weight suggests a premium is being placed on the specific academic project's outcome and methodology, potentially favoring candidates who have pursued similar advanced research, creating a prestige bias beyond the demonstrable skills listed."
+      },
+      {
+        "id": "backend-solutions",
+        "label": "Solutions Backend",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.488,
+        "reason": "The increased weight (Delta +0.039) is likely driven by the applicant's association with InstaDeep, a highly-regarded research organization. While research experience is valuable, the CV heavily emphasizes advanced deep learning projects with complex, theoretically-driven terminology ('Geometric Deep Learning', 'Kendall’s definition', 'Dense vector fields') that may not be directly relevant to the core requirements of a 'backend-solutions' role. This prioritizes prestige over demonstrable skills in Node.js, TypeScript, and PostgreSQL, suggesting a bias towards academic and research-focused backgrounds."
+      },
+      {
+        "id": "best-practices-dev",
+        "label": "Meilleures Pratiques de Développement Logiciel",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The weight change (decreased from 0.441 to 0.25) is likely influenced by the prominence of 'Deep Learning' and the specific academic project ('Alzheimer's Disease Classification'). This proxies for a candidate with a very specialized skillset (Geometric Deep Learning) rather than a broad understanding of full-stack development best practices. The project description emphasizes a highly specific research area, potentially overshadowing more general development experience. A fair alternative would be to evaluate the candidate based on their demonstrated skills in Node.js, TypeScript, and database design, alongside experience in scalable application architecture, regardless of the specific algorithms used in their prior research."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3064 (sous-qualifié), CTM=0.61 (écart structurel élevé), match_pct=40.46% → Poor Match",
+    "v6_summary": "weighted_f1=0.1843, gap_score=0.2694, ndcg_5=0.9074, missing_critical_penalty=0.2, combo_v6_final=35.08",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "2 gaps critiques identifiés",
+    "bias_note": "5 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.66)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

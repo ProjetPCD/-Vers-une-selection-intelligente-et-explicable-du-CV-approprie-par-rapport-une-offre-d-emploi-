@@ -1,0 +1,440 @@
+{
+  "job_id": "job_53",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-03T06:57:03.371993",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 39.12,
+    "confidence": {
+      "confidence_score": 0.62,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.56,
+        "coverage_rate": 0.72,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.2069
+  },
+  "final_scores": {
+    "node_score": 0.3732,
+    "edge_score": 0.2935,
+    "combined": 0.3414
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2368,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6331,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6088,
+    "matched_nodes": "4/25",
+    "edge_match_pct": 14.69
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.231,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.2483,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1741,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.125,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.082,
+    "weighted_recall": 0.0986,
+    "weighted_f1": {
+      "value": 0.1807,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5523,
+    "missing_critical_penalty": {
+      "value": 0.0667,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.5986,
+    "ndcg_10": 0.7394,
+    "map_score": 0.8378,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9209,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.2667,
+    "experience_density": 0.1391
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 22.39,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 21.06,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 19.42,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 78.27,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 36.59,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 26.98,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 19.35,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 15,
+      "match_pct": 11.3,
+      "weight_sum": 11.832
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 21.3,
+      "weight_sum": 1.571
+    },
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 22.6,
+      "weight_sum": 2.207
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 48.7,
+      "weight_sum": 0.9
+    },
+    "Domain": {
+      "count": 4,
+      "match_pct": 40.9,
+      "weight_sum": 2.129
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 14.69,
+    "total_edges": 13,
+    "top_synergies": [
+      {
+        "edge_key": "git-tool|gitlab-ci-tool",
+        "source": "git-tool",
+        "target": "gitlab-ci-tool",
+        "w_0": 0.76,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 55.9,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "jira_issue_tracking|agile_methodology",
+        "source": "jira_issue_tracking",
+        "target": "agile_methodology",
+        "w_0": 0.74,
+        "w_cv": 0.721,
+        "w_cv_norm": 0.361,
+        "match_pct": 48.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "golang_programming_language|azure_cloud_platform",
+        "source": "golang_programming_language",
+        "target": "azure_cloud_platform",
+        "w_0": 0.95,
+        "w_cv": 0.531,
+        "w_cv_norm": 0.266,
+        "match_pct": 27.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "splunk-tool|azure_cloud_platform",
+        "source": "splunk-tool",
+        "target": "azure_cloud_platform",
+        "w_0": 0.78,
+        "w_cv": 0.412,
+        "w_cv_norm": 0.206,
+        "match_pct": 26.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "teamwork-softskill|agile_methodology",
+        "source": "teamwork-softskill",
+        "target": "agile_methodology",
+        "w_0": 0.58,
+        "w_cv": 0.375,
+        "w_cv_norm": 0.188,
+        "match_pct": 32.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "AWS",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Azure",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Agile",
+      "type": "Soft Skill",
+      "gap": 0.719,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Ansible",
+      "type": "Tool",
+      "gap": 0.77,
+      "severity": "critical",
+      "importance": 0.901
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.747,
+      "severity": "critical",
+      "importance": 0.878
+    },
+    {
+      "skill": "Bash",
+      "type": "Hard Skill",
+      "gap": 0.862,
+      "severity": "critical",
+      "importance": 0.862
+    },
+    {
+      "skill": "Confluence",
+      "type": "Tool",
+      "gap": 0.843,
+      "severity": "critical",
+      "importance": 0.843
+    },
+    {
+      "skill": "GitLab-CI",
+      "type": "Tool",
+      "gap": 0.716,
+      "severity": "critical",
+      "importance": 0.766
+    },
+    {
+      "skill": "Prometheus",
+      "type": "Tool",
+      "gap": 0.766,
+      "severity": "critical",
+      "importance": 0.766
+    },
+    {
+      "skill": "Podman",
+      "type": "Tool",
+      "gap": 0.765,
+      "severity": "critical",
+      "importance": 0.765
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "AWS",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Azure",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Agile",
+        "type": "Soft Skill",
+        "gap": 0.719
+      },
+      {
+        "label": "Ansible",
+        "type": "Tool",
+        "gap": 0.77
+      },
+      {
+        "label": "Docker",
+        "type": "Tool",
+        "gap": 0.747
+      },
+      {
+        "label": "Bash",
+        "type": "Hard Skill",
+        "gap": 0.862
+      },
+      {
+        "label": "Confluence",
+        "type": "Tool",
+        "gap": 0.843
+      },
+      {
+        "label": "GitLab-CI",
+        "type": "Tool",
+        "gap": 0.716
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 8,
+    "nodes_with_bias": 8,
+    "edges_audited": 1,
+    "edges_with_bias": 1,
+    "bias_categories": {
+      "PROXY": 7,
+      "PRESTIGE BIAS": 1,
+      "PRESTIGE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "agile_methodology",
+        "label": "Agile",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The candidate's CV primarily highlights skills and technologies relevant to a specific geographic location (Tunisia) and leverages a less common Agile methodology – ‘pull request-based workflow’ – which is not explicitly prioritized in the job description's emphasis on ‘excellent understanding of methodologies Agile.’ The JD strongly emphasizes experience with widely recognized Agile frameworks (e.g., Scrum, Kanban) and focuses on skills valued globally.  The candidate's lack of demonstrable experience in globally-recognized Agile practices, coupled with their location, contributes to the decreased weight.  A fairer alternative would be to assess candidates based on a broader range of Agile experience or project involvement regardless of their geographic origin."
+      },
+      {
+        "id": "golang_programming_language",
+        "label": "Golang",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.062,
+        "reason": "The candidate's CV prominently features Java and Angular, aligning with the job description’s emphasis on ‘Golang’ and ‘Java library development.’ However, the primary focus of their experience described in the CV (a Java library) is heavily weighted, suggesting a preference for Java technologies over Golang despite the JD’s explicit requirement for Golang expertise. The evidence anchor, referencing a ‘Java library,’ further reinforces this prestige bias, and the candidate's skills listed (Angular, Spring Boot) are not prioritized in the initial weight adjustment, indicating a system favoring established Java skills over the desired Golang skill. A fairer alternative would be to prioritize skills directly related to backend development utilizing Golang, regardless of the initial library's technology."
+      },
+      {
+        "id": "jira_issue_tracking",
+        "label": "Jira",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.88,
+        "reason": "The candidate's experience using Jira is positively weighted, but the context reveals the candidate is from Tunisia, which is a proxy for socioeconomic status. While Jira usage is valuable, prioritizing it over demonstrable skills (like Java development or specific frameworks) suggests a bias towards candidates from locations with better-resourced IT environments. The JD emphasizes expertise in specific tools, and the candidate's experience aligns, but the increased weight is disproportionate, implying a bias based on geographic origin. A fair alternative would be to reduce the weight by 20% to reflect the contextual factor."
+      },
+      {
+        "id": "engineering_degree",
+        "label": "Ingénieur",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.975,
+        "reason": "The significant increase in weight (Delta +0.400) for a Bac +3 engineering degree from Tunis, combined with the provided experience and skills, indicates proxy bias. The CV highlights skills and experience relevant to the role (Java, Angular, DevOps), but the degree itself, particularly originating from a location (Tunis, Tunisia), is a proxy for socioeconomic background and potentially institutional prestige, unfairly inflating the candidate's score. A fairer alternative would be to de-emphasize the degree’s impact, focusing solely on the demonstrable skills and experience outlined in the CV. The strong emphasis on the degree suggests a bias toward candidates from higher-ranked educational institutions, disproportionately favoring candidates from Western Europe or North America."
+      },
+      {
+        "id": "ansible_automation_tool",
+        "label": "Ansible",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The significant decrease in weight (from 0.901 to 0.35) is likely driven by proxy bias due to the candidate’s location (Tunis, Tunisia) and the mention of ‘Ansible’ within a highly technical job description. The JD specifically lists Ansible as a required skill, while the CV doesn't prominently feature Ansible experience, instead focusing on general full-stack development skills with Java and Angular. This discrepancy likely triggers a penalization based on perceived socioeconomic factors (location) and the lack of a direct Ansible skill match, leading to a lower weight assigned during the initial screening. A fair alternative would be to evaluate the candidate solely on the listed skills and experience, without considering geographic location as a negative factor."
+      },
+      {
+        "id": "docker_containerization_tool",
+        "label": "Docker",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The candidate's CV heavily emphasizes skills relevant to the job description (Java, Angular, DevOps tools) but lacks demonstrable experience in the listed technologies. The location (Tunis, Tunisia) and CV language (French/Arabic) represent a socioeconomic proxy, potentially leading the system to penalize candidates from regions with lower average salaries or less common programming languages. While experience is valuable, the significant drop in weight suggests the system is overly prioritizing the *appearance* of experience rather than demonstrated proficiency, driven by this proxy signal. A fairer alternative would be to focus solely on skills and demonstrable project outcomes, de-emphasizing geographic location and language proficiency."
+      },
+      {
+        "id": "splunk-tool",
+        "label": "Splunk",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.825,
+        "reason": "The increased weight assigned to this candidate's application is likely driven by the specific technology mentioned in the job description - the JavaMail API and its use with Spring Boot - a key Splunk use case. While the candidate's experience with this technology is directly relevant, the emphasis on this particular skill represents a prestige bias, potentially overlooking other valuable skills showcased on the CV such as Angular development and broader DevOps experience. A correction factor of 0.75 reflects the undue influence of a narrow, highly sought-after technology skill, suggesting the system overvalues this specific experience compared to a broader skill set. The candidate's use of JavaMail API, while valuable, doesn't inherently outweigh the need for a strong understanding of Kubernetes, Git, and other technologies listed in the JD."
+      },
+      {
+        "id": "teamwork-softskill",
+        "label": "Capacité à travailler en équipe",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV lacks explicit mentions of teamwork skills or collaborative projects, despite the JD emphasizing the need for \"capacity to work in a team to solve complex technical problems.\" The CV's focus on individual technical skills (Java, Angular, Selenium) and a strong emphasis on the applicant's location (Tunis, Tunisia) suggests a proxy bias – the algorithm is prioritizing location and specific technologies over demonstrated teamwork abilities, reflecting socioeconomic signals. A correction factor of 0.75 indicates a reduction in the weight to account for this, assuming the skills in the CV are sufficiently strong but the contextual evidence for teamwork is lacking."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "bash-skill|ansible_automation_tool",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The CV's emphasis on Selenium, Tkinter, and Angular certifications, alongside MTA certifications, demonstrates a focus on web development skills rather than DevOps or infrastructure automation, which are explicitly prioritized in the job description. This creates a proxy bias – the candidate’s skillset is being judged based on technologies outside the core requirements, leading to an undervaluation of skills relevant to the role’s primary responsibilities, aligning with the ‘Proxy Bias’ category. A fairer assessment would consider the candidate's experience with scripting languages, even if not explicitly listed, and the broader context of collaborative development. The ideal weight (0.68) is significantly higher than the CV’s weight (0.35), indicating a substantial bias."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2368 (sous-qualifié), CTM=0.6331 (écart structurel élevé), match_pct=39.12% → Poor Match",
+    "v6_summary": "weighted_f1=0.1807, gap_score=0.1741, ndcg_5=0.5986, missing_critical_penalty=0.0667, combo_v6_final=22.39",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "14 gaps critiques identifiés",
+    "bias_note": "8 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.62)",
+    "scoring_reliability": "✅ 79.3% des scores via LLM (fiable)"
+  }
+}

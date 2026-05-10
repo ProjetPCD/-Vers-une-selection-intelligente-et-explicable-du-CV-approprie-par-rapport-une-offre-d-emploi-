@@ -1,0 +1,348 @@
+{
+  "job_id": "job_66",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-05T08:24:08.606363",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 42.2,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.286,
+        "coverage_rate": 0.571,
+        "nodes_audited": 4,
+        "nodes_biased": 4
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.3262,
+    "edge_score": 0.2374,
+    "combined": 0.2907
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3608,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.617,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.578,
+    "matched_nodes": "1/7",
+    "edge_match_pct": 23.74
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3535,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.71,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.2992,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.4286,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.7331,
+    "weighted_recall": 0.2885,
+    "weighted_f1": {
+      "value": 0.4947,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.577,
+    "missing_critical_penalty": {
+      "value": 0.6,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.9443,
+    "ndcg_10": 0.9914,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9466,
+    "top_skill_alignment": 0.7885,
+    "semantic_fit_score": 0.5829,
+    "experience_density": 0.2796
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 51.14,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 49.7,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 43.08,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 97.77,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 60.2,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 57.91,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 62.33,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 1,
+      "match_pct": 60.0,
+      "weight_sum": 1.0
+    },
+    "Tool": {
+      "count": 3,
+      "match_pct": 20.6,
+      "weight_sum": 2.915
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 53.1,
+      "weight_sum": 1.0
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 20.8,
+      "weight_sum": 1.085
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 23.74,
+    "total_edges": 9,
+    "top_synergies": [
+      {
+        "edge_key": "senior_frontend_engineer|react",
+        "source": "senior_frontend_engineer",
+        "target": "react",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "react|typescript",
+        "source": "react",
+        "target": "typescript",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "senior_frontend_engineer|typescript",
+        "source": "senior_frontend_engineer",
+        "target": "typescript",
+        "w_0": 0.5,
+        "w_cv": 0.637,
+        "w_cv_norm": 0.637,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "senior_frontend_engineer|next_js",
+        "source": "senior_frontend_engineer",
+        "target": "next_js",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "senior_frontend_engineer|vue_js",
+        "source": "senior_frontend_engineer",
+        "target": "vue_js",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Vue.js",
+      "type": "Tool",
+      "gap": 0.958,
+      "severity": "critical",
+      "importance": 0.958
+    },
+    {
+      "skill": "Next.js",
+      "type": "Tool",
+      "gap": 0.957,
+      "severity": "critical",
+      "importance": 0.957
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Vue.js",
+        "type": "Tool",
+        "gap": 0.958
+      },
+      {
+        "label": "Next.js",
+        "type": "Tool",
+        "gap": 0.957
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 4,
+    "nodes_with_bias": 4,
+    "edges_audited": 2,
+    "edges_with_bias": 1,
+    "bias_categories": {
+      "PRESTIGE": 5
+    },
+    "biased_nodes": [
+      {
+        "id": "senior_frontend_engineer",
+        "label": "Senior Frontend Engineer",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.2,
+        "w_cv_corrected": 1.2,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's CV lacks a prestigious university or company name, despite having relevant skills and experience in React and frontend development. The correction factor is set to 1.20 to increase the weight and compensate for the unfair penalty."
+      },
+      {
+        "id": "react",
+        "label": "React",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.2,
+        "w_cv_corrected": 1.2,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (HTWK Leipzig) and previous company (ACTIA Engineering Services) may not be as well-known as other institutions, leading to an unfair decrease in weight. The correction factor is set to 1.20 to compensate for this bias, as the candidate's skills and experience in React and frontend development are highly relevant to the job description."
+      },
+      {
+        "id": "typescript",
+        "label": "TypeScript",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 1.062,
+        "w_cv_corrected": 1.062,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (HTWK Leipzig) and previous company (ACTIA Engineering Services) may not be as well-known as other institutions, leading to an unfair decrease in weight. The correction factor is set to 1.25 to compensate for this bias."
+      },
+      {
+        "id": "user_experience",
+        "label": "User Experience",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.78,
+        "w_cv_corrected": 0.78,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience at ACTIA Engineering Services, a lesser-known company, is unfairly penalized compared to the ideal weight. The evidence anchor 'Conception de pages React modulaires avec architecture par fonctionnalités' is a relevant skill for the job, but the adapted weight is decreased, suggesting that the algorithm is favoring candidates from more prestigious companies. A correction factor of 1.20 is applied to increase the weight and mitigate the bias."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "senior_frontend_engineer|typescript",
+        "bias_category": "PRESTIGE",
+        "severity": "LOW",
+        "correction_factor": 0.85,
+        "w_cv_corrected": 0.637,
+        "reason": "The weight change is biased towards the candidate's university/company name (ACTIA Engineering Services) rather than their demonstrated skills in TypeScript. The correction factor is set to 0.85 to reduce the unfair advantage given to the candidate due to their prestigious employer."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3608 (sous-qualifié), CTM=0.617 (écart structurel élevé), match_pct=42.2% → Poor Match",
+    "v6_summary": "weighted_f1=0.4947, gap_score=0.2992, ndcg_5=0.9443, missing_critical_penalty=0.6, combo_v6_final=51.14",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "2 gaps critiques identifiés",
+    "bias_note": "4 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 1,
+    "pool_size": 40,
+    "percentile": 1.0,
+    "composite_z_score": 2.4308,
+    "tier": "Top 10%",
+    "z_scores": {
+      "combo_v6": 3.107,
+      "wf1": 3.149,
+      "gap_score": 2.966,
+      "ntcw": 2.799,
+      "match_pct": 1.668,
+      "ndcg_5": 0.566
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 14.8592,
+        "std": 11.6758
+      },
+      "wf1": {
+        "mean": 0.0815,
+        "std": 0.1312
+      },
+      "gap_score": {
+        "mean": 0.0782,
+        "std": 0.0745
+      },
+      "ntcw": {
+        "mean": 0.1,
+        "std": 0.0932
+      },
+      "match_pct": {
+        "mean": 25.444,
+        "std": 10.0462
+      },
+      "ndcg_5": {
+        "mean": 0.8913,
+        "std": 0.0935
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

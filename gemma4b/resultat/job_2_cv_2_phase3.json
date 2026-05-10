@@ -1,0 +1,214 @@
+{
+  "job_id": "job_2",
+  "cv_id": "cv_2",
+  "scored_nodes": {
+    "node_5": {
+      "w_cv": 1.1,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 0.95,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15,
+          "outcome_bonus": 0.2,
+          "intensity_bonus": 0.1
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.1
+      },
+      "active_red_flags": [],
+      "rationale": "The evidence anchor, 'Experience CraftSchoolship Software Engineer September 2025-Present (6 months) California, United States GoMyDesk Backend & DevOps Cloud-Native Developer (Golang / Kubernetes)', explicitly details Ahmed's work with Kubernetes, a key skill. The description mentions '99.9 Fibas’ availability and automation of transcoding, further validating the skill's application. The use of Docker also supports a solid understanding of deployment.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "node_7": {
+      "w_cv": 0.65,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "penalties": {
+          "intensity_bonus": 0.05
+        },
+        "final_score": 0.65,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15
+        }
+      },
+      "active_red_flags": [],
+      "rationale": "The discussion of MySQL vs. MongoDB is brief and lacks depth, suggesting a minimal understanding of database selection criteria.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "node_4": {
+      "w_cv": 0.9,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "outcome_bonus": 0.1,
+        "penalties": {
+          "intensity_bonus": 0.05
+        },
+        "final_score": 0.9,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15
+        }
+      },
+      "active_red_flags": [],
+      "rationale": "Ahmed's experience using Docker to resolve deployment issues showcases a practical understanding of containerization, a key component of modern software development.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm"
+    },
+    "node_3": {
+      "w_cv": 0.85,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.65,
+        "outcome_bonus": 0.05,
+        "penalties": {
+          "intensity_bonus": 0.05
+        },
+        "final_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.2
+        }
+      },
+      "active_red_flags": [],
+      "rationale": "The use of Git for collaborative development demonstrates familiarity with version control best practices, a fundamental skill in software development teams.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm"
+    },
+    "node_6": {
+      "w_cv": 0.7,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.55,
+        "penalties": {
+          "intensity_bonus": 0.05
+        },
+        "final_score": 0.7,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15
+        }
+      },
+      "active_red_flags": [],
+      "rationale": "While the description mentions Prometheus, the explanation of its use is superficial, indicating a basic level of awareness rather than demonstrable expertise.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "node_8": {
+      "w_cv": 0.6,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.45,
+        "penalties": {
+          "intensity_bonus": 0.05
+        },
+        "final_score": 0.6,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15
+        }
+      },
+      "active_red_flags": [],
+      "rationale": "The description offers a very basic explanation of MongoDB, without showcasing any practical considerations.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "node_9": {
+      "w_cv": 0.55,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.4,
+        "penalties": {
+          "intensity_bonus": 0.05
+        },
+        "final_score": 0.55,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15
+        }
+      },
+      "active_red_flags": [],
+      "rationale": "The discussion of MongoDB and MySQL is extremely basic, lacking any practical examples or comparisons.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    }
+  },
+  "scored_edges": {
+    "node_3|node_1": {
+      "synergy_score": 0.95,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Ahmed utilizes Git for version control (node_3) and integrates Docker (containerization) to manage application deployments, aligning with the description of building microservices, requiring both a codebase management (Git) and deployment strategy (Docker). The evidence clearly shows deployment automation alongside service design and integration. cv_excerpt: 'Containerized 100% of services with Docker, ensuring consistent builds across development, staging, and production.'",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.95
+    },
+    "node_3|node_2": {
+      "synergy_score": 0.75,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Ahmed employs Docker to containerize services and implements NoSQL databases, indicating the practical application of containerization in a real-world development environment. The use of Docker is a key element for Ahmed's DevOps skillset. cv_excerpt: 'Containerized 100% of services with Docker, ensuring consistent builds across development, staging, and production.'",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "node_3|node_10": {
+      "synergy_score": 0.85,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.25,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The consistent use of Docker across all projects and services highlights a core DevOps skill set utilized in conjunction with Git. This showcases a robust deployment pipeline management. cv_excerpt: 'Containerized 100% of services with Docker, ensuring consistent builds across development, staging, and production.'",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.85
+    }
+  },
+  "metadata": {
+    "skills_scored": 7,
+    "mean_score": 0.607,
+    "edges_scored": 3,
+    "mean_synergy": 0.85,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.85,
+      "max": 0.95,
+      "min": 0.75
+    },
+    "batches_ok": 1,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.607,
+      "max": 0.95,
+      "min": 0.4,
+      "above_1": 0,
+      "below_05": 2
+    }
+  }
+}

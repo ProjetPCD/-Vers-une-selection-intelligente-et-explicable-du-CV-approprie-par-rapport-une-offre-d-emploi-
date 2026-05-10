@@ -1,0 +1,281 @@
+{
+  "job_id": "job_47",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-03T03:39:05.722976",
+  "overall_assessment": {
+    "verdict": "Weak Match",
+    "match_pct": 62.95,
+    "confidence": {
+      "confidence_score": 0.86,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.0,
+        "coverage_rate": 0.857,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.9017,
+    "edge_score": 0.8981,
+    "combined": 0.9003
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.5489,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.372,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Écart modéré"
+    },
+    "weighted_gap": 0.3705,
+    "matched_nodes": "1/7",
+    "edge_match_pct": 44.88
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.5209,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.8344,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Excellent"
+    },
+    "gap_score": {
+      "value": 0.5297,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.3333,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.5462,
+    "weighted_recall": 0.2657,
+    "weighted_f1": {
+      "value": 0.4535,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6467,
+    "missing_critical_penalty": {
+      "value": 0.5,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9944,
+    "ndcg_10": 0.9951,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9784,
+    "top_skill_alignment": 0.6567,
+    "semantic_fit_score": 0.9712,
+    "experience_density": 0.3436
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 59.37,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 58.37,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 63.51,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 99.78,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 58.32,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 60.46,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 59.11,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 63.2,
+      "weight_sum": 1.0
+    },
+    "Tool": {
+      "count": 3,
+      "match_pct": 46.4,
+      "weight_sum": 2.214
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 45.0,
+      "weight_sum": 0.963
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 26.9,
+      "weight_sum": 1.157
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 44.88,
+    "total_edges": 6,
+    "top_synergies": [
+      {
+        "edge_key": "sql_data_analyst_alternance|data_analyst_domain",
+        "source": "sql_data_analyst_alternance",
+        "target": "data_analyst_domain",
+        "w_0": 0.9,
+        "w_cv": 1.111,
+        "w_cv_norm": 0.555,
+        "match_pct": 61.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_data_analyst_alternance|data_analyst_domain",
+        "source": "python_data_analyst_alternance",
+        "target": "data_analyst_domain",
+        "w_0": 0.95,
+        "w_cv": 1.083,
+        "w_cv_norm": 0.541,
+        "match_pct": 57.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "power_bi_tool|data_analyst_domain",
+        "source": "power_bi_tool",
+        "target": "data_analyst_domain",
+        "w_0": 0.8,
+        "w_cv": 0.91,
+        "w_cv_norm": 0.455,
+        "match_pct": 56.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "esprit_equipe_soft_skill|data_analyst_domain",
+        "source": "esprit_equipe_soft_skill",
+        "target": "data_analyst_domain",
+        "w_0": 0.65,
+        "w_cv": 0.768,
+        "w_cv_norm": 0.384,
+        "match_pct": 59.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "capacite_adaptation_soft_skill|data_analyst_domain",
+        "source": "capacite_adaptation_soft_skill",
+        "target": "data_analyst_domain",
+        "w_0": 0.55,
+        "w_cv": 0.656,
+        "w_cv_norm": 0.328,
+        "match_pct": 59.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": []
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 5,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "HALO": 2
+    },
+    "biased_nodes": [
+      {
+        "id": "python_data_analyst_alternance",
+        "label": "Python",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.265,
+        "reason": "The candidate's CV demonstrates a strong alignment with the JD's requirements, particularly highlighting experience with Python (Pandas) for data pipelines, automated data quality processes, and collaboration with teams – all key elements emphasized in the job description. The experience bonus and complexity bonus accurately reflect the demonstrated skills and accomplishments. While the increase in weight is positive, a slightly higher factor (1.15) is warranted to fully capture the demonstrable value and skill application presented in the candidate's experience, acknowledging the explicit mention of these skills within the JD’s requirements."
+      },
+      {
+        "id": "sql_data_analyst_alternance",
+        "label": "SQL",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.322,
+        "reason": "The increased weight reflects strong merit based on demonstrable skills and experience. The CV explicitly details significant contributions to Timsoft Group utilizing key technologies like SQL Server, Azure Data Factory, Python, and Power BI - directly aligning with the JD requirements. The experience bonus and complexity bonus further justify the increased weight, indicating a valuable and capable candidate. While prestige isn't explicitly mentioned, the tangible results achieved within a reputable organization (Timsoft Group) contribute positively to the candidate’s profile."
+      },
+      {
+        "id": "power_bi_tool",
+        "label": "Power BI",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.92,
+        "reason": "This weight increase (Delta +0.402) is driven primarily by demonstrable skills and experience with Power BI and related technologies (Azure Data Factory, Python, SQL) showcased within the CV and job description. The candidate's experience designing interactive dashboards for sales and performance tracking, along with automated data pipelines, aligns directly with the JD's requirements. While the experience bonus and complexity bonus contribute to the increase, the core value proposition is clearly rooted in demonstrated technical proficiency. A correction factor of 0.80 acknowledges this merit-based weighting but indicates a slight overemphasis due to the extensive detail provided regarding Power BI usage, which may have inflated the initial weight."
+      },
+      {
+        "id": "esprit_equipe_soft_skill",
+        "label": "esprit d'équipe",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The increase in weight (Delta: +0.109) for 'esprit_equipe_soft_skill' appears to be a halo effect driven by the specific details of the CV and JD. The candidate explicitly highlights collaboration and teamwork across multiple projects ('collaboré avec les équipes métiers', 'travaillerez avec des équipes') and uses descriptive language that aligns with the stated values of the role. This creates an over-representation of the skill due to the contextual emphasis on team-oriented work, rather than demonstrated expertise which might be more objectively evaluated. A reduction in the correction factor acknowledges this bias, reducing the weight assigned to the skill until further evidence of the candidate's actual collaborative capabilities can be obtained."
+      },
+      {
+        "id": "capacite_adaptation_soft_skill",
+        "label": "capacité d'adaptation",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.413,
+        "reason": "The increased weight for 'capacite_adaptation_soft_skill' likely reflects a halo effect due to the candidate's extensive experience and listed skills (Power BI, Python, SQL, Azure Data Factory). The JD explicitly states 'une bonne capacité d'adaptation' as a desirable trait, but this is being overweighted despite the lack of specific evidence of adaptability demonstrated within the CV's project descriptions. A fairer alternative would be to reduce the weight, focusing solely on demonstrable skills and experience within the context of the role requirements. The candidate's experience in diverse projects (EY, Timsoft Group) may have inflated the perceived importance of general adaptability."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.5489 (sous-qualifié), CTM=0.372 (écart structurel modéré), match_pct=62.95% → Weak Match",
+    "v6_summary": "weighted_f1=0.4535, gap_score=0.5297, ndcg_5=0.9944, missing_critical_penalty=0.5, combo_v6_final=59.37",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "0 gaps critiques identifiés",
+    "bias_note": "5 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.86)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "nodes": [
+    {
+      "id": "postgresql-db",
+      "label": "PostgreSQL",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Used as a database for applications.",
+      "inferred": true,
+      "inferred_from": "utilisant Node.js, TypeScript, PostgreSQL et d'autres technologies de pointe."
+    },
+    {
+      "id": "cloud-deployment",
+      "label": "Déploiement Cloud",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Handling deployment of applications.",
+      "inferred": true,
+      "inferred_from": "déploiement cloud"
+    },
+    {
+      "id": "fullstack-dev",
+      "label": "Développeur Full-Stack",
+      "type": "Domain",
+      "w_0": 0.838,
+      "seniority_required": "Senior",
+      "context": "The primary role being described.",
+      "inferred": true,
+      "inferred_from": "Votre prochain défi professionnel vous attend dans un contexte de développement web full-stack"
+    },
+    {
+      "id": "nodejs-js",
+      "label": "Node.js",
+      "type": "Tool",
+      "w_0": 0.898,
+      "seniority_required": "Senior",
+      "context": "Used for backend development.",
+      "inferred": true,
+      "inferred_from": "utilisant Node.js"
+    },
+    {
+      "id": "typescript-lang",
+      "label": "TypeScript",
+      "type": "Hard Skill",
+      "w_0": 0.896,
+      "seniority_required": "Senior",
+      "context": "A programming language.",
+      "inferred": true,
+      "inferred_from": "TypeScript"
+    },
+    {
+      "id": "backend-solutions",
+      "label": "Solutions Backend",
+      "type": "Domain",
+      "w_0": 0.611,
+      "seniority_required": "Senior",
+      "context": "The domain of application development.",
+      "inferred": true,
+      "inferred_from": "mettre en valeur vos compétences techniques et votre passion pour les solutions backend"
+    },
+    {
+      "id": "best-practices-dev",
+      "label": "Meilleures Pratiques de Développement Logiciel",
+      "type": "Soft Skill",
+      "w_0": 0.441,
+      "seniority_required": "Senior",
+      "context": "Adherence to standards and quality.",
+      "inferred": true,
+      "inferred_from": "une excellente compréhension des principes SOLID, de la conception de code propre et des meilleures pratiques de développement logiciel"
+    }
+  ],
+  "edges": [
+    {
+      "source": "nodejs-js",
+      "target": "fullstack-dev",
+      "relation": "requires",
+      "weight": 0.95,
+      "rationale": "The job description explicitly states working with Node.js as a core skill for a full-stack developer."
+    },
+    {
+      "source": "typescript-lang",
+      "target": "fullstack-dev",
+      "relation": "requires",
+      "weight": 0.9,
+      "rationale": "The job description specifies using TypeScript, implying it's a necessary skill for the full-stack role."
+    },
+    {
+      "source": "postgresql-db",
+      "target": "backend-solutions",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "The job context mentions developing applications using PostgreSQL, indicating it's a core component of backend solutions."
+    },
+    {
+      "source": "cloud-deployment",
+      "target": "backend-solutions",
+      "relation": "supports",
+      "weight": 0.75,
+      "rationale": "The role involves deployment to the cloud, suggesting a supportive relationship between cloud deployment and backend solutions."
+    },
+    {
+      "source": "nodejs-js",
+      "target": "backend-solutions",
+      "relation": "part_of",
+      "weight": 0.6,
+      "rationale": "Node.js is a key technology used in the development of backend solutions."
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_52"
+}

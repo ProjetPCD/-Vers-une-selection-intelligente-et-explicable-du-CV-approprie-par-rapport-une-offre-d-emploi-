@@ -1,0 +1,201 @@
+{
+  "nodes": [
+    {
+      "id": "phd_in_systems_engineering",
+      "label": "PhD in Systems Engineering",
+      "type": "Education",
+      "w_0": 1.0,
+      "seniority_required": "Expert",
+      "context": "PhD en Ingénierie des Systèmes d'Information",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "java_programming",
+      "label": "Java Programming",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "Mid",
+      "context": "excellentes compétences en programmation (Java, ...)",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "j2ee_programming",
+      "label": "J2EE Programming",
+      "type": "Hard Skill",
+      "w_0": 0.925,
+      "seniority_required": "Mid",
+      "context": "excellentes compétences en programmation (... J2EE)",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "blockchain_domain",
+      "label": "Blockchain Domain",
+      "type": "Domain",
+      "w_0": 0.779,
+      "seniority_required": "Mid",
+      "context": "solutions de federated learning basées sur la technologie blockchain",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "communication_skill",
+      "label": "Communication Skill",
+      "type": "Soft Skill",
+      "w_0": 0.7,
+      "seniority_required": "Mid",
+      "context": "d'excellentes compétences en communication",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "wireless_sensor_networks_domain",
+      "label": "Wireless Sensor Networks Domain",
+      "type": "Domain",
+      "w_0": 0.678,
+      "seniority_required": "Mid",
+      "context": "réseaux de capteurs sans fil",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "smart_grid_domain",
+      "label": "Smart Grid Domain",
+      "type": "Domain",
+      "w_0": 0.649,
+      "seniority_required": "Mid",
+      "context": "contexte de smart grid",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "c_plus_plus_programming",
+      "label": "C++ Programming",
+      "type": "Hard Skill",
+      "w_0": 0.517,
+      "seniority_required": "Mid",
+      "context": "excellentes compétences en programmation (... C++)",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "data_analysis_skill",
+      "label": "Data Analysis Skill",
+      "type": "Hard Skill",
+      "w_0": 0.5,
+      "seniority_required": "Mid",
+      "context": "analyse de données",
+      "inferred": true,
+      "inferred_from": "concevoir et mettre en œuvre des systèmes intelligents capables de gérer et d'analyser de grandes quantités de données"
+    },
+    {
+      "id": "artificial_intelligence_skill",
+      "label": "Artificial Intelligence Skill",
+      "type": "Hard Skill",
+      "w_0": 0.5,
+      "seniority_required": "Mid",
+      "context": "intelligence artificielle",
+      "inferred": true,
+      "inferred_from": "concevoir et mettre en œuvre des systèmes intelligents"
+    },
+    {
+      "id": "machine_learning_skill",
+      "label": "Machine Learning Skill",
+      "type": "Hard Skill",
+      "w_0": 0.5,
+      "seniority_required": "Mid",
+      "context": "machine learning",
+      "inferred": true,
+      "inferred_from": "solutions de federated learning"
+    },
+    {
+      "id": "problem_solving_skill",
+      "label": "Problem Solving Skill",
+      "type": "Soft Skill",
+      "w_0": 0.5,
+      "seniority_required": "Mid",
+      "context": "forte capacité d'analyse et de résolution de problèmes",
+      "inferred": true,
+      "inferred_from": ", "
+    },
+    {
+      "id": "autonomy_skill",
+      "label": "Autonomy Skill",
+      "type": "Soft Skill",
+      "w_0": 0.5,
+      "seniority_required": "Mid",
+      "context": "grande autonomie",
+      "inferred": true,
+      "inferred_from": ", "
+    }
+  ],
+  "edges": [
+    {
+      "source": "phd_in_systems_engineering",
+      "target": "blockchain_domain",
+      "relation": "part_of",
+      "weight": 0.9,
+      "rationale": "PhD in Systems Engineering is required for blockchain domain expertise"
+    },
+    {
+      "source": "java_programming",
+      "target": "j2ee_programming",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "J2EE programming requires Java programming skills"
+    },
+    {
+      "source": "c_plus_plus_programming",
+      "target": "java_programming",
+      "relation": "complements",
+      "weight": 0.65,
+      "rationale": "C++ and Java programming skills are complementary"
+    },
+    {
+      "source": "blockchain_domain",
+      "target": "smart_grid_domain",
+      "relation": "part_of",
+      "weight": 0.8,
+      "rationale": "Blockchain domain is part of smart grid domain"
+    },
+    {
+      "source": "wireless_sensor_networks_domain",
+      "target": "smart_grid_domain",
+      "relation": "part_of",
+      "weight": 0.75,
+      "rationale": "Wireless sensor networks domain is part of smart grid domain"
+    },
+    {
+      "source": "data_analysis_skill",
+      "target": "machine_learning_skill",
+      "relation": "feeds",
+      "weight": 0.7,
+      "rationale": "Data analysis skill feeds into machine learning skill"
+    },
+    {
+      "source": "artificial_intelligence_skill",
+      "target": "machine_learning_skill",
+      "relation": "part_of",
+      "weight": 0.8,
+      "rationale": "Artificial intelligence skill is part of machine learning skill"
+    },
+    {
+      "source": "problem_solving_skill",
+      "target": "autonomy_skill",
+      "relation": "complements",
+      "weight": 0.6,
+      "rationale": "Problem solving skill complements autonomy skill"
+    },
+    {
+      "source": "communication_skill",
+      "target": "problem_solving_skill",
+      "relation": "complements",
+      "weight": 0.6,
+      "rationale": "Communication skill complements problem solving skill"
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_64"
+}

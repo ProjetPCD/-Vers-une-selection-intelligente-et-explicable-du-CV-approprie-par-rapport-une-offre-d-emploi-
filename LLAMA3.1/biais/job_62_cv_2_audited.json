@@ -1,0 +1,136 @@
+{
+  "job_id": "job_62",
+  "cv_id": "cv_2",
+  "scored_nodes": {
+    "frontend_developer": {
+      "w_cv": 0.6,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Project anchor not found, but mentioned in skills section.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.6,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The weight change is biased due to Halo effect, as the score has been unfairly penalized based on a single strong signal (project anchor mention in skills section). This indicates that the model is overly relying on one aspect of the candidate's profile, rather than considering multiple factors. A correction factor of 1.20 would be applied to mitigate this bias and ensure a more fair evaluation."
+    },
+    "azure_devops": {
+      "w_cv": 0.625,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Project anchor not found, but mentioned in skills section.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "LOW",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.625,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change was likely due to socioeconomic signals (personal website and LinkedIn profile), which are not directly relevant to the job requirements."
+    },
+    "agile": {
+      "w_cv": 0.6,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "Mentioned in experience section, but no concrete project evidence found.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.6,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.6,
+      "p35_reason": "The weight change is biased because it unfairly favors candidates who have a strong signal of 'Agile' in their experience section, without concrete project evidence to support this claim. The candidate's LinkedIn profile and personal website also highlight their expertise in various technologies and design patterns, but these are not directly related to the Agile methodology required for the job. A fair alternative would be to assess candidates based on their actual skills and experience, rather than relying on a single strong signal."
+    },
+    "github_actions": {
+      "w_cv": 0.75,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Project anchor not found, but mentioned in skills section.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO BIAS",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.75,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.5,
+      "p35_reason": "The weight change is biased due to a strong signal from the candidate's experience and skills, which are heavily emphasized in their profile. The ideal weight (0.717) should be maintained to ensure that all candidates have an equal chance of being selected, regardless of their level of experience or skills."
+    }
+  },
+  "scored_edges": {},
+  "metadata": {
+    "skills_scored": 4,
+    "mean_score": 0.625,
+    "edges_scored": 0,
+    "mean_synergy": 0,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0,
+      "max": 0,
+      "min": 0
+    },
+    "batches_ok": 1,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.625,
+      "max": 1.0,
+      "min": 0.5,
+      "above_1": 1,
+      "below_05": 0
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 4,
+    "nodes_with_bias": 4,
+    "nodes_corrected": 4,
+    "edges_audited": 0
+  }
+}

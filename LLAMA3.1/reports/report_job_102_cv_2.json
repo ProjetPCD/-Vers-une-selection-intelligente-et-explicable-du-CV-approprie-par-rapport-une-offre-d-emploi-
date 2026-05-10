@@ -1,0 +1,348 @@
+{
+  "job_id": "job_102",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-02T20:06:23.034270",
+  "overall_assessment": {
+    "verdict": "Weak Match",
+    "match_pct": 50.67,
+    "confidence": {
+      "confidence_score": 0.93,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.267,
+        "coverage_rate": 1.0,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.6353,
+    "edge_score": 0.0,
+    "combined": 0.3812
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3922,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5035,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.4933,
+    "matched_nodes": "4/15",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.4195,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1333,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.3574,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0769,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.3418,
+    "weighted_recall": 0.0602,
+    "weighted_f1": {
+      "value": 0.1152,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5678,
+    "missing_critical_penalty": {
+      "value": 0.1,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.8422,
+    "ndcg_10": 0.8443,
+    "map_score": 0.7959,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9167,
+    "top_skill_alignment": 0.4667,
+    "semantic_fit_score": 0.4944,
+    "experience_density": 0.2408
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 27.42,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 23.37,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 33.52,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 86.54,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 36.26,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 34.06,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 45.18,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 50.2,
+      "weight_sum": 1.954
+    },
+    "Tool": {
+      "count": 8,
+      "match_pct": 25.4,
+      "weight_sum": 6.839
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 31.3,
+      "weight_sum": 2.102
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 50.0,
+      "weight_sum": 0.476
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "top_synergies": [],
+    "total_edges": 0
+  },
+  "critical_gaps": [
+    {
+      "skill": "NestJS",
+      "type": "Tool",
+      "gap": 0.688,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Azure",
+      "type": "Tool",
+      "gap": 0.925,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "RabbitMQ",
+      "type": "Tool",
+      "gap": 0.72,
+      "severity": "critical",
+      "importance": 0.876
+    },
+    {
+      "skill": "ts-mockito",
+      "type": "Tool",
+      "gap": 0.632,
+      "severity": "critical",
+      "importance": 0.832
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "NestJS",
+        "type": "Tool",
+        "gap": 0.688
+      },
+      {
+        "label": "Azure",
+        "type": "Tool",
+        "gap": 0.925
+      },
+      {
+        "label": "RabbitMQ",
+        "type": "Tool",
+        "gap": 0.72
+      },
+      {
+        "label": "ts-mockito",
+        "type": "Tool",
+        "gap": 0.632
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 12,
+    "nodes_with_bias": 12,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 7,
+      "AGEISM": 2,
+      "HALO": 2,
+      "PROXY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "nodejs",
+        "label": "Node.js",
+        "bias_category": "AGEISM",
+        "severity": "LOW",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.2,
+        "reason": "The weight change is biased due to ageism, as it unfairly penalizes the candidate's short experience duration without considering their relevant skills and accomplishments. A fair alternative would be to assign a higher weight based on the candidate's achievements in the bootcamp, freelancing project, and relevant technologies used (Node.js)."
+      },
+      {
+        "id": "typescript",
+        "label": "TypeScript",
+        "bias_category": "AGEISM",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.8,
+        "reason": "The weight change is biased towards experience years, which may not be a fair indicator of candidate's abilities. The job description emphasizes skills and qualifications over experience. Additionally, the candidate has provided relevant technical skills in their CV, but their limited experience (7 months) should not unfairly penalize them."
+      },
+      {
+        "id": "nestjs",
+        "label": "NestJS",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.625,
+        "reason": "The weight change is unfairly penalized due to lack of concrete project evidence using NestJS, which was mentioned in the job description."
+      },
+      {
+        "id": "azure",
+        "label": "Azure",
+        "bias_category": "PRESTIGE",
+        "severity": "HIGH",
+        "correction_factor": 0.6,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.15,
+        "reason": "The weight change in the Azure score is biased towards prestige bias, as it disproportionately penalizes candidates who do not have experience with Azure, despite the job description mentioning that experience with Node.js and other technologies are more important. The job description does not require Azure expertise, but rather a strong background in Node.js and related technologies. Therefore, the correction factor should be decreased to 0.60 to reflect this unfair bias."
+      },
+      {
+        "id": "redis",
+        "label": "Redis",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.5,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.75,
+        "reason": "The weight change was based solely on the mention of 'Redis' in the CV, which is not a direct requirement for the job."
+      },
+      {
+        "id": "rabbitmq",
+        "label": "RabbitMQ",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "The weight change is biased towards prestige bias because the JD explicitly mentions RabbitMQ, while the CV does not have any mention of it in the provided context. This suggests that the model is giving more importance to the job description's emphasis on RabbitMQ rather than the candidate's actual skills or experience."
+      },
+      {
+        "id": "ts-mockito",
+        "label": "ts-mockito",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.4,
+        "reason": "The current weighting scheme gives an unfair advantage to candidates who mention specific technologies, such as ts-mockito, without providing concrete evidence of their use."
+      },
+      {
+        "id": "jest",
+        "label": "Jest",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.5,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The weight change from w_0 (ideal) to w_cv (adapted) is a significant decrease of -0.488, which may indicate prestige bias. The job description requires Node.js expertise and mentions Jest as one of the required technologies, while the candidate's CV does not explicitly mention Jest or any experience with it. However, the candidate has experience with other backend technologies like React Native, Next.js, and Strapi.js, but not specifically Node.js or Jest. This suggests that the weight change may be unfairly penalizing the candidate for not having a direct mention of Jest in their CV, rather than evaluating their actual skills and experience."
+      },
+      {
+        "id": "openapi",
+        "label": "OpenAPI",
+        "bias_category": "PRESTIGE",
+        "severity": "HIGH",
+        "correction_factor": 1.45,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.725,
+        "reason": "The weight change is biased towards prestige bias because the job description heavily emphasizes OpenAPI, but the candidate's experience and skills do not necessarily demonstrate expertise in this area. The candidate has more general backend development experience with Node.js, Express.js, and MongoDB. Additionally, the job description requires a strong understanding of distributed system design principles and excellent knowledge of technologies like NestJS, Redis, RabbitMQ, and Azure, which are not explicitly mentioned in the candidate's CV or LinkedIn profile."
+      },
+      {
+        "id": "git",
+        "label": "Git",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.8,
+        "reason": "The weight change was made due to the university/company name 'Go My Code' mentioned in the evidence, rather than skills demonstrated. A correction factor of 0.8 would be applied to reduce the weight increase to a more merit-based value."
+      },
+      {
+        "id": "excellente-communication",
+        "label": "Excellente Communication",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The model may have unfairly penalized the candidate due to their educational background. The correct alternative would be to assign equal weights to candidates from different educational backgrounds, based on their skills and experience."
+      },
+      {
+        "id": "forte-capacite-analyse-resolution-problemes",
+        "label": "Forte capacité d'analyse et de résolution de problèmes",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.4,
+        "reason": "The weight change is biased because it relies on a single signal that may not accurately reflect the candidate's overall abilities or experience."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3922 (sous-qualifié), CTM=0.5035 (écart structurel élevé), match_pct=50.67% → Weak Match",
+    "v6_summary": "weighted_f1=0.1152, gap_score=0.3574, ndcg_5=0.8422, missing_critical_penalty=0.1, combo_v6_final=27.42",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "4 gaps critiques identifiés",
+    "bias_note": "12 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.93)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

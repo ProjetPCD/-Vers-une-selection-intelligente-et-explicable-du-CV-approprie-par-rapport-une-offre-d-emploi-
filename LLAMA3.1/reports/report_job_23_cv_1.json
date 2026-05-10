@@ -1,0 +1,434 @@
+{
+  "job_id": "job_23",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-04T13:13:45.048253",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 37.72,
+    "confidence": {
+      "confidence_score": 0.62,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.435,
+        "coverage_rate": 0.696,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.4862,
+    "edge_score": 0.0,
+    "combined": 0.2917
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2862,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6516,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6228,
+    "matched_nodes": "6/23",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2651,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.3341,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2022,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1429,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.0593,
+    "weighted_recall": 0.1039,
+    "weighted_f1": {
+      "value": 0.1893,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6261,
+    "missing_critical_penalty": {
+      "value": 0.1429,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.6686,
+    "ndcg_10": 0.7243,
+    "map_score": 0.7533,
+    "mrr_score": 0.5,
+    "skill_balance_score": 0.7794,
+    "top_skill_alignment": 0.4667,
+    "semantic_fit_score": 0.2754,
+    "experience_density": 0.1909
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 25.87,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 25.87,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 21.3,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 65.61,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 39.03,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 28.8,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 45.94,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 9,
+      "match_pct": 16.6,
+      "weight_sum": 7.149
+    },
+    "Tool": {
+      "count": 11,
+      "match_pct": 21.4,
+      "weight_sum": 9.054
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 60.0,
+      "weight_sum": 1.0
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 77.5,
+      "weight_sum": 0.858
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "python|strapi_cms",
+        "source": "python",
+        "target": "strapi_cms",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python|kubernetes",
+        "source": "python",
+        "target": "kubernetes",
+        "w_0": 0.65,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "javascript|strapi_cms",
+        "source": "javascript",
+        "target": "strapi_cms",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "typescript|strapi_cms",
+        "source": "typescript",
+        "target": "strapi_cms",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "html5|strapi_cms",
+        "source": "html5",
+        "target": "strapi_cms",
+        "w_0": 0.6,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "TypeScript",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "WordPress",
+      "type": "Tool",
+      "gap": 0.834,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.856,
+      "severity": "critical",
+      "importance": 0.981
+    },
+    {
+      "skill": "JAVA",
+      "type": "Hard Skill",
+      "gap": 0.954,
+      "severity": "critical",
+      "importance": 0.954
+    },
+    {
+      "skill": "Symfony",
+      "type": "Tool",
+      "gap": 0.954,
+      "severity": "critical",
+      "importance": 0.954
+    },
+    {
+      "skill": "Kubernetes",
+      "type": "Tool",
+      "gap": 0.922,
+      "severity": "critical",
+      "importance": 0.922
+    },
+    {
+      "skill": "Jenkins",
+      "type": "Tool",
+      "gap": 0.744,
+      "severity": "critical",
+      "importance": 0.913
+    },
+    {
+      "skill": "PHP7+",
+      "type": "Hard Skill",
+      "gap": 0.789,
+      "severity": "critical",
+      "importance": 0.789
+    },
+    {
+      "skill": "JAVA EE",
+      "type": "Hard Skill",
+      "gap": 0.631,
+      "severity": "critical",
+      "importance": 0.631
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "TypeScript",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "WordPress",
+        "type": "Tool",
+        "gap": 0.834
+      },
+      {
+        "label": "Docker",
+        "type": "Tool",
+        "gap": 0.856
+      },
+      {
+        "label": "JAVA",
+        "type": "Hard Skill",
+        "gap": 0.954
+      },
+      {
+        "label": "Symfony",
+        "type": "Tool",
+        "gap": 0.954
+      },
+      {
+        "label": "Kubernetes",
+        "type": "Tool",
+        "gap": 0.922
+      },
+      {
+        "label": "Jenkins",
+        "type": "Tool",
+        "gap": 0.744
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 12,
+    "nodes_with_bias": 9,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 6,
+      "PROXY": 3
+    },
+    "biased_nodes": [
+      {
+        "id": "javascript",
+        "label": "JavaScript",
+        "bias_category": "PROXY",
+        "severity": "LOW",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.977,
+        "reason": "The weight increase appears to be driven by proxy bias, with the candidate's profile containing similar keywords as the job description."
+      },
+      {
+        "id": "laravel",
+        "label": "Laravel",
+        "bias_category": "PRESTIGE",
+        "severity": "LOW",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.188,
+        "reason": "Prestige bias due to university/company name, increasing weight to original value to make it more merit-based."
+      },
+      {
+        "id": "wordpress",
+        "label": "WordPress",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.33,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.333,
+        "reason": "The weight change due to WordPress in the job description is unfair because it doesn't reflect the candidate's actual skills or experience."
+      },
+      {
+        "id": "soft-skills",
+        "label": "Soft Skills",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.2,
+        "reason": "The weight increase for soft skills is unjustified because it disproportionately benefits candidates from certain universities or companies that have previously used specific technologies."
+      },
+      {
+        "id": "magento-2",
+        "label": "Magento 2",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.87,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.827,
+        "reason": "The weight change is biased due to Prestige Bias. The candidate's experience with Magento 2 is not the sole reason for the decreased weight, as their LinkedIn profile and GitHub repository do not explicitly mention any significant contributions or expertise in Magento 2. A fair alternative would be to evaluate the candidate's skills and experience based on the actual tasks and technologies mentioned in their portfolio and job descriptions."
+      },
+      {
+        "id": "jenkins",
+        "label": "Jenkins",
+        "bias_category": "PRESTIGE",
+        "severity": "LOW",
+        "correction_factor": 1.35,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.338,
+        "reason": "The weight decrease is likely due to prestige or name recognition bias, as there's no relevant information about Jenkins in the CV. A correction factor should increase to counterbalance this unfair penalty."
+      },
+      {
+        "id": "git",
+        "label": "Git",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change unfairly penalizes the candidate based on socio-economic signals, specifically the mention of Git in the CV. A fair alternative would be to evaluate the candidate based on their actual experience and skills demonstrated in their projects."
+      },
+      {
+        "id": "html5",
+        "label": "HTML5",
+        "bias_category": "PROXY",
+        "severity": "LOW",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.85,
+        "reason": "Weight change biased towards candidates with HTML5 in CV, rather than evaluating its relevance or importance to job requirements."
+      },
+      {
+        "id": "strapi_cms",
+        "label": "Strapi CMS",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The weight change is biased because it favors candidates based on the prestige of the technology (Strapi CMS), rather than their actual skills."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2862 (sous-qualifié), CTM=0.6516 (écart structurel élevé), match_pct=37.72% → Poor Match",
+    "v6_summary": "weighted_f1=0.1893, gap_score=0.2022, ndcg_5=0.6686, missing_critical_penalty=0.1429, combo_v6_final=25.87",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "10 gaps critiques identifiés",
+    "bias_note": "9 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.62)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

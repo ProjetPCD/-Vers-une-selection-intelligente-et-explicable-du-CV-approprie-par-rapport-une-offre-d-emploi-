@@ -1,0 +1,406 @@
+{
+  "job_id": "job_18",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-04T14:02:18.859259",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 49.05,
+    "confidence": {
+      "confidence_score": 0.55,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.333,
+        "coverage_rate": 0.6,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.5225,
+    "edge_score": 0.5794,
+    "combined": 0.5453
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3389,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5043,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5095,
+    "matched_nodes": "2/15",
+    "edge_match_pct": 28.95
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3437,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.5794,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.3215,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8142,
+    "ndcg_10": 0.9099,
+    "map_score": 0.7636,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.3764,
+    "semantic_fit_score": 0.6483,
+    "experience_density": 0.1872
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 26.29,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 34.03,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 35.55,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 84.29,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 9.64,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 22.56,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 37.5,
+      "weight_sum": 1.0
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 31.8,
+      "weight_sum": 0.952
+    },
+    "Tool": {
+      "count": 8,
+      "match_pct": 25.0,
+      "weight_sum": 5.923
+    },
+    "Domain": {
+      "count": 5,
+      "match_pct": 22.6,
+      "weight_sum": 2.873
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 28.95,
+    "total_edges": 9,
+    "top_synergies": [
+      {
+        "edge_key": "fullstack_dev_postgresql|dev-role",
+        "source": "fullstack_dev_postgresql",
+        "target": "dev-role",
+        "w_0": 0.7,
+        "w_cv": 0.835,
+        "w_cv_norm": 0.417,
+        "match_pct": 59.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "fullstack_dev_mysql|dev-role",
+        "source": "fullstack_dev_mysql",
+        "target": "dev-role",
+        "w_0": 0.75,
+        "w_cv": 0.795,
+        "w_cv_norm": 0.397,
+        "match_pct": 53.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "fullstack_dev_agile|dev-role",
+        "source": "fullstack_dev_agile",
+        "target": "dev-role",
+        "w_0": 0.6,
+        "w_cv": 0.733,
+        "w_cv_norm": 0.366,
+        "match_pct": 61.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "fullstack_dev_doctrine|dev-role",
+        "source": "fullstack_dev_doctrine",
+        "target": "dev-role",
+        "w_0": 0.65,
+        "w_cv": 0.687,
+        "w_cv_norm": 0.344,
+        "match_pct": 52.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "github-repo|dev-role",
+        "source": "github-repo",
+        "target": "dev-role",
+        "w_0": 0.55,
+        "w_cv": 0.515,
+        "w_cv_norm": 0.258,
+        "match_pct": 46.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "PHP",
+      "type": "Hard Skill",
+      "gap": 0.625,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "MySQL",
+      "type": "Tool",
+      "gap": 0.618,
+      "severity": "critical",
+      "importance": 0.998
+    },
+    {
+      "skill": "Méthodes Agiles",
+      "type": "Soft Skill",
+      "gap": 0.634,
+      "severity": "critical",
+      "importance": 0.952
+    },
+    {
+      "skill": "Symfony",
+      "type": "Tool",
+      "gap": 0.604,
+      "severity": "critical",
+      "importance": 0.826
+    },
+    {
+      "skill": "Technologies de l'Information",
+      "type": "Domain",
+      "gap": 0.624,
+      "severity": "critical",
+      "importance": 0.788
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "PHP",
+        "type": "Hard Skill",
+        "gap": 0.625
+      },
+      {
+        "label": "MySQL",
+        "type": "Tool",
+        "gap": 0.618
+      },
+      {
+        "label": "Méthodes Agiles",
+        "type": "Soft Skill",
+        "gap": 0.634
+      },
+      {
+        "label": "Symfony",
+        "type": "Tool",
+        "gap": 0.604
+      },
+      {
+        "label": "Technologies de l'Information",
+        "type": "Domain",
+        "gap": 0.624
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 12,
+    "nodes_with_bias": 11,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "C": 5,
+      "PROXY": 4,
+      "PRESTIGE": 1,
+      "AGEISM": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "fullstack_dev_agile",
+        "label": "Méthodes Agiles",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.636,
+        "reason": "The candidate's CV lists extensive experience as a Senior ML Engineer at InstaDeep and a CDO role, signaling a prestige status that unfairly elevates the value attributed to ‘fullstack_dev_agile’. While Agile methodologies are relevant, the CV’s focus on high-level strategic roles and advanced certifications (MLOps, Regression Models, etc.) suggests a skillset beyond what’s immediately apparent in the job description requiring PHP, Symfony, and Docker; this overemphasis on experience and title is unfairly weighted. A more appropriate weighting would reflect the value of the specific technical skills sought in the job description."
+      },
+      {
+        "id": "fullstack_dev_mysql",
+        "label": "MySQL",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.76,
+        "reason": "The significant weight decrease (-0.048) is likely due to ageism. The CV prominently features a lengthy career history (10+ years as a CDO, followed by roles at InstaDeep and SOTIPAPIER), with a PhD in Artificial Intelligence completed more recently. While experience is valuable, the system appears to be unduly penalizing the candidate's career length and academic background, focusing on the time since graduation year (implicitly represented by the PhD completion date) rather than demonstrable skills and project experience. A fairer alternative would prioritize the applicant's applied machine learning experience and technical expertise, aligning with the JD's requirements for skills like Python for Applied Data Science and MySQL."
+      },
+      {
+        "id": "fullstack_dev_postgresql",
+        "label": "PostgreSQL",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.839,
+        "reason": "The significant decrease in weight (from 0.975 to 0.699) is likely due to ageism and an overemphasis on experience. While the CV demonstrates extensive experience as a Senior ML Engineer and CDO, the JD primarily focuses on full-stack development with PHP, Symfony, and PostgreSQL. The candidate's lengthy career, including a PhD, is being unfairly penalized despite demonstrating relevant skills, and the system is likely prioritizing recent experience over demonstrable full-stack capabilities.  A fair alternative would be to weight the candidate's core skills (SQL, PostgreSQL) alongside their demonstrated experience, acknowledging the valuable knowledge gained throughout their career."
+      },
+      {
+        "id": "fullstack_dev_symfony",
+        "label": "Symfony",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.443,
+        "reason": "The candidate's CV emphasizes extensive experience as a Senior ML Engineer at InstaDeep and a CDO role, suggesting a strong focus on business and strategy rather than core full-stack development skills. The JD prioritizes Symfony and Docker expertise, while the CV’s detailed description of AI/ML roles and business experience has negatively impacted the score. This represents a proxy bias – the system is overly influenced by signals (business titles and advanced technical skills) that are not directly related to the requirements of a full-stack developer role, leading to an unfair decrease in the score."
+      },
+      {
+        "id": "fullstack_dev_it_tech",
+        "label": "Technologies de l'Information",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.329,
+        "reason": "The significant weight decrease (Delta = -0.349) is likely driven by the lack of contextualized skills listed on the CV. While the JD emphasizes proficiency in PHP, Symfony, and Docker, the CV predominantly highlights high-level, theoretical skills like MLOps, Machine Learning, and Python without demonstrating them through projects or specific accomplishments. This reliance on a skill list, rather than demonstrable experience, represents a proxy bias—the algorithm is overly influenced by the presence of buzzwords without assessing the candidate’s ability to apply them effectively, especially considering the diverse experience listed (CDO, ML Engineer). A fair alternative would be a more holistic evaluation focusing on the demonstrable impact of the candidate’s skills.  The CV’s lengthy list of certifications and roles, including multiple advanced degrees, contributes to an impression of overqualification that may be unfairly penalized given the lack of project detail."
+      },
+      {
+        "id": "fullstack_dev_docker",
+        "label": "Docker",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.431,
+        "reason": "The significant decrease in weight (0.786 to 0.539) for ‘Docker’ is likely a proxy bias driven by the context of the job description and the candidate’s CV. The JD heavily emphasizes Docker's use in deploying applications, while the CV showcases extensive experience as a Senior ML Engineer at InstaDeep, highlighting technical depth in MLOps, Machine Learning and data science – areas orthogonal to core DevOps skills.  The candidate’s focus on advanced analytical skills and AI development within a larger, complex organization likely led the algorithm to overemphasize skills directly related to the immediate technical needs of the role, penalizing a valuable, but more broadly applicable skill."
+      },
+      {
+        "id": "fullstack_dev_doctrine",
+        "label": "Doctrine",
+        "bias_category": "AGEISM",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.544,
+        "reason": "The significant decrease in weight (w_0 from 0.697 to 0.435) is likely due to the CV's extensive detail on Mohamed Nadhir DAOUD’s career progression, particularly his advanced degrees (PhD in Artificial Intelligence, Master’s from ENIT) and significant experience as a Chief Digital Officer. This prolonged, high-level experience is being given less weight compared to the ideal 0.697, suggesting an age-based bias where candidates with established career trajectories are unfairly penalized, and the system overemphasizes more recent skills and certifications. A fairer alternative would be to assign a weight reflecting the breadth of his experience and expertise, acknowledging his professional journey rather than solely relying on the specific skills listed in the job description."
+      },
+      {
+        "id": "fullstack_dev_web_dev",
+        "label": "Développement Web",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.214,
+        "reason": "This is a MEDIUM severity bias due to AGEISM and PROXY BIAS. The candidate's CV boasts a substantial and diverse career history, including significant roles as a Chief Digital Officer and Senior Machine Learning Engineer at InstaDeep, showcasing advanced technical skills and experience. However, the job description explicitly prioritizes ‘forte compétence technique, notamment en back-end et front-end development’ and experience with ‘méthodes agiles et les outils de versionnement,’ which are not prominently displayed on the CV.  The CV’s extensive experience with Machine Learning and advanced analytical skills is significantly overshadowed by the lack of demonstrable project experience, creating a mismatch between the ideal candidate profile and the applicant’s background. This leads to a penalization (Delta of -0.252) despite possessing potentially valuable skills, reflecting a focus on current skill requirements rather than a holistic assessment of experience and potential."
+      },
+      {
+        "id": "fullstack_dev_fullstack",
+        "label": "Full-Stack",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.275,
+        "reason": "This weight change from 0.573 to 0.229 represents a significant decrease, likely due to the CV's focus on a Chief Digital Officer and Machine Learning Engineer role, coupled with a PhD in Artificial Intelligence – skills not explicitly emphasized in the JD's request for a fullstack developer.  This highlights AGEISM (using graduation year and career length without context), as the candidate’s extensive, highly specialized experience is being unfairly penalized by the algorithm, rather than being assessed for its relevance to the role’s practical demands. A fairer alternative would involve weighting the candidate’s specific ML skills alongside the other required fullstack technologies, recognizing the value of their experience while acknowledging the need to demonstrate proficiency in PHP, Symfony, and Docker."
+      },
+      {
+        "id": "github-repo",
+        "label": "GitHub",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.2,
+        "reason": "The applicant's CV prominently features GitHub, a core requirement outlined in the job description (GitLab & GitHub). However, the applicant only lists their LinkedIn profile and a listed skill. The significant decrease in weight (w_cv from 0.62 to 0.25) suggests a proxy bias – penalizing the applicant for not directly linking to a GitHub project, implying a preference for demonstrable project experience rather than simply possessing the skill. A fairer alternative would recognize the skill listed alongside the credential's presence, suggesting the applicant *could* have GitHub experience."
+      },
+      {
+        "id": "gitlab-repo",
+        "label": "GitLab",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease (-0.36) in weight assigned to the mention of GitLab suggests Ageism. The CV highlights extensive experience (10+ years) in various roles, including a Chief Digital Officer and Senior ML Engineer, alongside a PhD in AI from a reputable institution.  However, the JD explicitly lists GitLab as a required tool alongside newer technologies like Docker and PHP, implying a preference for more current tech stacks, which may unfairly penalize candidates with longer experience. A fair alternative would be to evaluate GitLab skill based on demonstrated proficiency and relevance to the project, rather than penalizing experience due to tool adoption."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3389 (sous-qualifié), CTM=0.5043 (écart structurel élevé), match_pct=49.05% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.3215, ndcg_5=0.8142, missing_critical_penalty=0.0, combo_v6_final=26.29",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "5 gaps critiques identifiés",
+    "bias_note": "11 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.55)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

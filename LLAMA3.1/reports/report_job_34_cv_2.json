@@ -1,0 +1,466 @@
+{
+  "job_id": "job_34",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-04T10:28:05.226027",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 42.62,
+    "confidence": {
+      "confidence_score": 0.88,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.5,
+        "coverage_rate": 1.0,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.6189,
+    "edge_score": 0.0,
+    "combined": 0.3713
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3503,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5892,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5738,
+    "matched_nodes": "2/16",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3607,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.4455,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.3224,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.2,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.6473,
+    "weighted_recall": 0.1241,
+    "weighted_f1": {
+      "value": 0.2308,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5396,
+    "missing_critical_penalty": {
+      "value": 0.2,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.8546,
+    "ndcg_10": 0.8886,
+    "map_score": 0.9914,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8861,
+    "top_skill_alignment": 0.4167,
+    "semantic_fit_score": 0.4327,
+    "experience_density": 0.2649
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 34.81,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 35.02,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 33.04,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 93.88,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 44.38,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 37.39,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 42.32,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 5,
+      "match_pct": 29.5,
+      "weight_sum": 4.936
+    },
+    "Education": {
+      "count": 2,
+      "match_pct": 30.7,
+      "weight_sum": 1.9
+    },
+    "Tool": {
+      "count": 4,
+      "match_pct": 28.3,
+      "weight_sum": 3.432
+    },
+    "Soft Skill": {
+      "count": 3,
+      "match_pct": 47.8,
+      "weight_sum": 2.245
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 13.0,
+      "weight_sum": 1.184
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "total_edges": 7,
+    "top_synergies": [
+      {
+        "edge_key": "alternant|cybersécurité",
+        "source": "alternant",
+        "target": "cybersécurité",
+        "w_0": 0.9,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_skill|alternant",
+        "source": "python_skill",
+        "target": "alternant",
+        "w_0": 1.0,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "visual_studio_code_tool|alternant",
+        "source": "visual_studio_code_tool",
+        "target": "alternant",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cisco_packet_tracer_tool|alternant",
+        "source": "cisco_packet_tracer_tool",
+        "target": "alternant",
+        "w_0": 1.0,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "github|alternant",
+        "source": "github",
+        "target": "alternant",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "PHP",
+      "type": "Hard Skill",
+      "gap": 0.844,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 0.844,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Bachelor IT",
+      "type": "Education",
+      "gap": 0.688,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "HTML",
+      "type": "Hard Skill",
+      "gap": 0.78,
+      "severity": "critical",
+      "importance": 0.936
+    },
+    {
+      "skill": "Cisco Packet Tracer",
+      "type": "Tool",
+      "gap": 0.788,
+      "severity": "critical",
+      "importance": 0.925
+    },
+    {
+      "skill": "Bachelor",
+      "type": "Education",
+      "gap": 0.6,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Visual Studio Code",
+      "type": "Tool",
+      "gap": 0.667,
+      "severity": "critical",
+      "importance": 0.848
+    },
+    {
+      "skill": "Cybersécurité",
+      "type": "Domain",
+      "gap": 0.666,
+      "severity": "critical",
+      "importance": 0.786
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "PHP",
+        "type": "Hard Skill",
+        "gap": 0.844
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 0.844
+      },
+      {
+        "label": "Bachelor IT",
+        "type": "Education",
+        "gap": 0.688
+      },
+      {
+        "label": "HTML",
+        "type": "Hard Skill",
+        "gap": 0.78
+      },
+      {
+        "label": "Cisco Packet Tracer",
+        "type": "Tool",
+        "gap": 0.788
+      },
+      {
+        "label": "Bachelor",
+        "type": "Education",
+        "gap": 0.6
+      },
+      {
+        "label": "Visual Studio Code",
+        "type": "Tool",
+        "gap": 0.667
+      },
+      {
+        "label": "Cybersécurité",
+        "type": "Domain",
+        "gap": 0.666
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 15,
+    "nodes_with_bias": 13,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 10,
+      "PROXY": 2,
+      "PRESTIGE|GENDER_DIVERSITY|AGEISM|PROXY|HALO|NONE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python_skill",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "HIGH",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.0,
+        "reason": "The weight change appears to favor candidates from well-known companies, which may not accurately reflect the candidate's skills and qualifications. A fair alternative would be to use a more objective measure of the candidate's Python skills."
+      },
+      {
+        "id": "php_skill",
+        "label": "PHP",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "Prestige bias; unfairly penalized for lacking direct PHP experience; focus on transferable skills instead."
+      },
+      {
+        "id": "javascript_skill",
+        "label": "JavaScript",
+        "bias_category": "PRESTIGE|GENDER_DIVERSITY|AGEISM|PROXY|HALO|NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "The model is unfairly penalizing candidates who don't have direct experience with JavaScript, even if they have relevant skills and qualifications in other areas. This could be seen as a PRESTIGE BIAS."
+      },
+      {
+        "id": "sql_skill",
+        "label": "SQL",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.0,
+        "reason": "The current weight change favors candidates with high-prestige education and experience, which may unfairly disadvantage other candidates. A fairer approach would be to focus on the candidate's actual skills and experience rather than their prestige."
+      },
+      {
+        "id": "bachelor_edu",
+        "label": "Bachelor IT",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.625,
+        "reason": "Unfair penalty due to prestigious institution's name without concrete project evidence. A fair alternative would be to evaluate the candidate based on their skills and experience demonstrated in their CV."
+      },
+      {
+        "id": "html_skill",
+        "label": "HTML",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "The weight change is influenced by the university name (MIT), which may not reflect the candidate's actual skills or experience."
+      },
+      {
+        "id": "cisco_packet_tracer_tool",
+        "label": "Cisco Packet Tracer",
+        "bias_category": "PROXY",
+        "severity": "HIGH",
+        "correction_factor": 1.1,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.275,
+        "reason": "Potential proxy bias detected due to discrepancies in skill sets mentioned between JD and CV, favoring those with a background in Python despite other programming languages being listed."
+      },
+      {
+        "id": "bachelor_edu_gen",
+        "label": "Bachelor",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The algorithm is unfairly penalizing the candidate due to their university name, rather than their actual skills and qualifications."
+      },
+      {
+        "id": "communication_soft_skill",
+        "label": "Communication",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.862,
+        "reason": "The weight change in communication_soft_skill may be biased towards prestige or university/company name not skills demonstrated. The candidate's background is primarily technical, and there is limited evidence of soft skills."
+      },
+      {
+        "id": "visual_studio_code_tool",
+        "label": "Visual Studio Code",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.45,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.362,
+        "reason": "The weight change is biased towards prestige due to the candidate's alma mater (Massachusetts Institute of Technology) and work experience at FinGenesis, which suggests a strong emphasis on prestige over actual skills demonstrated in the CV."
+      },
+      {
+        "id": "oracle",
+        "label": "Oracle",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.812,
+        "reason": "The weight change is biased towards Prestige bias because the ideal weight (w_0) of 0.821 is higher than the adapted weight (w_cv) of 0.65, indicating a decrease in weight for this candidate. Upon reviewing the CV and JD, we notice that the candidate has a strong background in machine learning, with multiple positions at FinGenesis and Data C'EPT, and holds certifications in Python and Machine Learning. However, the JD does not require extensive experience or specific industry knowledge, suggesting that the prestige of the university/company (Massachusetts Institute of Technology) is being unfairly prioritized over skills demonstrated."
+      },
+      {
+        "id": "cybersécurité",
+        "label": "Cybersécurité",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.6,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.24,
+        "reason": "The weight change is unfairly penalized due to PRESTIGE BIAS, and a fair alternative would be to evaluate the candidate based on their skills demonstrated in the CV and cover letter."
+      },
+      {
+        "id": "résolution de problèmes",
+        "label": "Résolution de problèmes",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.72,
+        "reason": "The weight change for experience years unfairly favors candidates with more extensive work experience, without sufficient concrete project anchors."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3503 (sous-qualifié), CTM=0.5892 (écart structurel élevé), match_pct=42.62% → Poor Match",
+    "v6_summary": "weighted_f1=0.2308, gap_score=0.3224, ndcg_5=0.8546, missing_critical_penalty=0.2, combo_v6_final=34.81",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "8 gaps critiques identifiés",
+    "bias_note": "13 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.88)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

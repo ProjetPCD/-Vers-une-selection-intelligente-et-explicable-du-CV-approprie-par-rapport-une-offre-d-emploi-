@@ -1,0 +1,424 @@
+{
+  "job_id": "job_28",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-06T22:48:51.036739",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 25.83,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.714,
+        "coverage_rate": 0.429,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.319,
+    "edge_score": 0.3136,
+    "combined": 0.3169
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1773,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7481,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7417,
+    "matched_nodes": "2/14",
+    "edge_match_pct": 15.67
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1921,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.3136,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1506,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8172,
+    "ndcg_10": 0.8583,
+    "map_score": 0.8653,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.4142,
+    "experience_density": 0.1375
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 15.93,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 18.66,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 20.52,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 87.97,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 4.52,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 2.75,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 5,
+      "match_pct": 7.1,
+      "weight_sum": 4.567
+    },
+    "Tool": {
+      "count": 7,
+      "match_pct": 20.6,
+      "weight_sum": 6.499
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 13.1,
+      "weight_sum": 0.592
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 45.0,
+      "weight_sum": 0.409
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 15.67,
+    "total_edges": 10,
+    "top_synergies": [
+      {
+        "edge_key": "sql_tool|postgresql_db",
+        "source": "sql_tool",
+        "target": "postgresql_db",
+        "w_0": 0.75,
+        "w_cv": 0.706,
+        "w_cv_norm": 0.353,
+        "match_pct": 47.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "git_version_control|docker_containerization",
+        "source": "git_version_control",
+        "target": "docker_containerization",
+        "w_0": 0.6,
+        "w_cv": 0.469,
+        "w_cv_norm": 0.234,
+        "match_pct": 39.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "java_full_stack_dev|postgresql_db",
+        "source": "java_full_stack_dev",
+        "target": "postgresql_db",
+        "w_0": 0.7,
+        "w_cv": 0.456,
+        "w_cv_norm": 0.228,
+        "match_pct": 32.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "full_stack_experience|javascript_full_stack_dev",
+        "source": "full_stack_experience",
+        "target": "javascript_full_stack_dev",
+        "w_0": 0.5,
+        "w_cv": 0.45,
+        "w_cv_norm": 0.225,
+        "match_pct": 45.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "php_full_stack_dev|laravel_framework",
+        "source": "php_full_stack_dev",
+        "target": "laravel_framework",
+        "w_0": 0.95,
+        "w_cv": 0.394,
+        "w_cv_norm": 0.197,
+        "match_pct": 20.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "PHP",
+      "type": "Hard Skill",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Laravel",
+      "type": "Tool",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PostgreSQL",
+      "type": "Tool",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Java",
+      "type": "Hard Skill",
+      "gap": 0.844,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 0.968,
+      "severity": "critical",
+      "importance": 0.968
+    },
+    {
+      "skill": "React",
+      "type": "Tool",
+      "gap": 0.941,
+      "severity": "critical",
+      "importance": 0.941
+    },
+    {
+      "skill": "Asana",
+      "type": "Tool",
+      "gap": 0.89,
+      "severity": "critical",
+      "importance": 0.89
+    },
+    {
+      "skill": "Node.js",
+      "type": "Hard Skill",
+      "gap": 0.821,
+      "severity": "critical",
+      "importance": 0.821
+    },
+    {
+      "skill": "C++",
+      "type": "Hard Skill",
+      "gap": 0.684,
+      "severity": "critical",
+      "importance": 0.778
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "PHP",
+        "type": "Hard Skill",
+        "gap": 0.906
+      },
+      {
+        "label": "Laravel",
+        "type": "Tool",
+        "gap": 0.7
+      },
+      {
+        "label": "PostgreSQL",
+        "type": "Tool",
+        "gap": 0.7
+      },
+      {
+        "label": "Java",
+        "type": "Hard Skill",
+        "gap": 0.844
+      },
+      {
+        "label": "Docker",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 0.968
+      },
+      {
+        "label": "React",
+        "type": "Tool",
+        "gap": 0.941
+      },
+      {
+        "label": "Asana",
+        "type": "Tool",
+        "gap": 0.89
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 8,
+    "nodes_with_bias": 8,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "C": 6,
+      "PRESTIGE": 2
+    },
+    "biased_nodes": [
+      {
+        "id": "php_full_stack_dev",
+        "label": "PHP",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV prominently highlights their work as a Machine Learning Engineer at InstaDeep, focusing on Deep Learning and Geometric Deep Learning, specifically related to Alzheimer's disease classification using Hippocampal shape analysis. This directly contradicts the job description's emphasis on PHP (Laravel) and React/Node.js, indicating a significant mismatch in technical skills.  The decrease in weight reflects an unfair penalization based on skills not explicitly requested, falling under the category of PROXY bias - favoring specialized skills over the core requirements of the role. A fair alternative would have been to assign a lower weight reflecting the candidate's specialized expertise rather than a substantial decrease."
+      },
+      {
+        "id": "laravel_framework",
+        "label": "Laravel",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The CV prominently features a project titled 'Alzheimer's Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning,' leveraging the Laravel framework. This aligns closely with the JD's requirement for PHP (Laravel) expertise. However, the project's specific niche – a highly specialized research area – introduces a prestige bias, potentially elevating the candidate’s score unfairly due to the sophisticated nature of the work, rather than demonstrating general full-stack skills. A correction factor of 1.2 is applied to account for this, recognizing the strong, relevant project experience but mitigating the potential for undue weighting based solely on the framework’s use in this particular context. "
+      },
+      {
+        "id": "postgresql_db",
+        "label": "PostgreSQL",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The CV explicitly mentions a project titled \"Alzheimer's Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning\". This aligns directly with the job description's requirements for PostgreSQL experience, suggesting the candidate's skills were appropriately assessed. However, the weighting decreased significantly (-0.500) despite the direct relevance of their project, indicating a potential bias towards more general 'full stack' skills. A correction factor of 1.2 is applied to reflect the project's direct relevance and the resulting under-representation in the model's score. The model should prioritize the specific skills demonstrated in the project, as it reflects an understanding of the required technologies listed in the JD."
+      },
+      {
+        "id": "java_full_stack_dev",
+        "label": "Java",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "The candidate’s CV demonstrates a strong focus on deep learning and geometric deep learning research, particularly within the context of Alzheimer's disease classification, which is not explicitly mentioned in the job description. While possessing valuable technical skills (Java, NestJS, etc.), the CV's emphasis on a highly specialized research project (Hippocampus shape analysis) suggests a bias towards candidates with a particular academic background, potentially overlooking candidates with broader full-stack experience.  The significant reduction in weight (0.75) is unfair, penalizing a specialized skill set not directly aligned with the JD's stated requirements and disproportionately favoring candidates with similar advanced research experience.  A more appropriate factor would be 1.25 to reflect the candidate's specific skillset beyond the base requirements."
+      },
+      {
+        "id": "git_version_control",
+        "label": "Git",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change from 1.0 to 0.75 (-0.25) reflects an unfair penalty for using Git version control. While familiarity with Git is a desirable skill for a full-stack developer, the CV's project description – a highly specialized deep learning project focused on Alzheimer's disease classification – heavily relies on version control for tracking experiments, managing code, and collaborating within the research context. The JD emphasizes broader experience across multiple technologies, whereas the CV’s project highlights a focused skillset directly relevant to the role, suggesting the decrease is based on a prestige bias favoring more broadly applicable skills. A fairer alternative would be to maintain the full 1.0 weighting, recognizing the project’s reliance on Git as a core tool."
+      },
+      {
+        "id": "cpp_hard_skill",
+        "label": "C++",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The JD explicitly lists C++ as a desirable skill for a Full Stack Developer. However, the CV focuses heavily on Deep Learning projects (using C++) and a research internship with a geometric deep learning theme, showcasing a highly specialized skill set that is not directly relevant to the stated job requirements. This over-emphasis on a specific, niche technology, without demonstrable application in the context of the advertised role, suggests a bias towards candidates with strong deep learning backgrounds, unfairly penalizing those lacking this specialized expertise. The reduction in weight reflects this mismatch between the candidate’s skill set and the advertised job requirements. "
+      },
+      {
+        "id": "sql_tool",
+        "label": "SQL",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.812,
+        "reason": "The CV highlights a research internship focused on 'Alzheimer's Disease Classification Using Geometric Deep Learning' and 'Dense vector features.' While the project's technical depth is impressive, the specific university (INSAT) and the highly specialized research area (geometric deep learning for Alzheimer's) carries a prestige bias.  The application heavily emphasizes this research project, potentially over-weighting it compared to more general development skills listed in the job description.  A fairer alternative would recognize the candidate's expertise in a cutting-edge area but adjust the weight downwards to account for the relative emphasis given to this specific academic project.  The 'Dense vector features' extraction further reinforces the prestige bias, as it points to the use of a highly specialized technique, implicitly favoring candidates with experience in this particular domain."
+      },
+      {
+        "id": "soft_skills",
+        "label": "Soft Skills",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The significant decrease in weight assigned to ‘soft skills’ (0.592 to 0.35) is likely due to the CV’s emphasis on the academic project title – ‘Alzheimer’s Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning.’ While the project demonstrates advanced technical skills and a research-oriented background, the weight given to it appears to unduly prioritize a specific academic project over the broader soft skills listed in the job description (teamwork, communication, autonomy, etc.). This is a proxy bias, as the CV’s technical focus – a highly specific research project – is being overly weighted, potentially overshadowing the essential soft skills required for a full-stack development role within the team. A fair alternative would be to treat the project as a strong technical demonstration and adjust the soft skill weight accordingly, rather than reducing it disproportionately."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1773 (sous-qualifié), CTM=0.7481 (écart structurel élevé), match_pct=25.83% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.1506, ndcg_5=0.8172, missing_critical_penalty=0.0, combo_v6_final=15.93",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "10 gaps critiques identifiés",
+    "bias_note": "8 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

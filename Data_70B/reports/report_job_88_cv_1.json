@@ -1,0 +1,547 @@
+{
+  "job_id": "job_88",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-05T15:09:12.558289",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 40.66,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.433,
+        "coverage_rate": 0.4,
+        "nodes_audited": 12,
+        "nodes_biased": 12
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.1549,
+    "edge_score": 0.2434,
+    "combined": 0.1903
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.207,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6119,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5934,
+    "matched_nodes": "4/30",
+    "edge_match_pct": 24.34
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2094,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.6195,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.1625,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1154,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.7577,
+    "weighted_recall": 0.0815,
+    "weighted_f1": {
+      "value": 0.1558,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.531,
+    "missing_critical_penalty": {
+      "value": 0.1429,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.943,
+    "ndcg_10": 0.8732,
+    "map_score": 0.9009,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.5988,
+    "semantic_fit_score": 0.3784,
+    "experience_density": 0.1105
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 29.64,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 32.94,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 22.63,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 94.25,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 41.37,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 32.02,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 48.08,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 6,
+      "match_pct": 20.9,
+      "weight_sum": 4.721
+    },
+    "Domain": {
+      "count": 3,
+      "match_pct": 32.4,
+      "weight_sum": 2.12
+    },
+    "Tool": {
+      "count": 15,
+      "match_pct": 9.0,
+      "weight_sum": 11.253
+    },
+    "Soft Skill": {
+      "count": 6,
+      "match_pct": 18.8,
+      "weight_sum": 3.306
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 24.34,
+    "total_edges": 25,
+    "top_synergies": [
+      {
+        "edge_key": "java_engineer|spring_data_jpa",
+        "source": "java_engineer",
+        "target": "spring_data_jpa",
+        "w_0": 0.5,
+        "w_cv": 0.862,
+        "w_cv_norm": 0.862,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "java_engineer|software_development_principles",
+        "source": "java_engineer",
+        "target": "software_development_principles",
+        "w_0": 0.5,
+        "w_cv": 0.862,
+        "w_cv_norm": 0.862,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "java_engineer|java",
+        "source": "java_engineer",
+        "target": "java",
+        "w_0": 0.5,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.85,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "java_engineer|spring_boot",
+        "source": "java_engineer",
+        "target": "spring_boot",
+        "w_0": 0.5,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.85,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "java_engineer|git",
+        "source": "java_engineer",
+        "target": "git",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Spring Cloud",
+      "type": "Tool",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Spring Data JPA",
+      "type": "Tool",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Spring Security",
+      "type": "Tool",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Kubernetes",
+      "type": "Hard Skill",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "ELK",
+      "type": "Tool",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Java 8",
+      "type": "Hard Skill",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Software Development Principles",
+      "type": "Hard Skill",
+      "gap": 0.8,
+      "severity": "critical",
+      "importance": 0.8
+    },
+    {
+      "skill": "Gradle",
+      "type": "Tool",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 0.7
+    },
+    {
+      "skill": "IntelliJ",
+      "type": "Tool",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 0.7
+    },
+    {
+      "skill": "Eclipse",
+      "type": "Tool",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 0.7
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Spring Cloud",
+        "type": "Tool",
+        "gap": 0.9
+      },
+      {
+        "label": "Spring Data JPA",
+        "type": "Tool",
+        "gap": 0.9
+      },
+      {
+        "label": "Spring Security",
+        "type": "Tool",
+        "gap": 0.9
+      },
+      {
+        "label": "Kubernetes",
+        "type": "Hard Skill",
+        "gap": 0.9
+      },
+      {
+        "label": "ELK",
+        "type": "Tool",
+        "gap": 0.9
+      },
+      {
+        "label": "Java 8",
+        "type": "Hard Skill",
+        "gap": 0.9
+      },
+      {
+        "label": "Software Development Principles",
+        "type": "Hard Skill",
+        "gap": 0.8
+      },
+      {
+        "label": "Gradle",
+        "type": "Tool",
+        "gap": 0.7
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 12,
+    "nodes_with_bias": 12,
+    "edges_audited": 5,
+    "edges_with_bias": 5,
+    "bias_categories": {
+      "PRESTIGE": 16,
+      "GENDER_DIVERSITY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "agile",
+        "label": "Agile",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 1.062,
+        "w_cv_corrected": 1.062,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (ENSA Khouribga) and company names (Oracle, COLAS DIGITAL SOLUTIONS, Onedustry Technologies) may have unfairly influenced the scoring. The correction factor is set to 1.25 to compensate for this bias."
+      },
+      {
+        "id": "java_engineer",
+        "label": "Java Engineer",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 1.062,
+        "w_cv_corrected": 1.062,
+        "reason": "The weight change is biased due to prestige bias, as the adapted weight is decreased despite the candidate having relevant skills and experience in Java and Spring Boot. The candidate's education from a lesser-known institution (ENSA Khouribga) may have contributed to the decreased weight. A fairer assessment would consider the candidate's skills and experience more heavily, resulting in a correction factor of 1.25 to increase the weight."
+      },
+      {
+        "id": "spring_boot",
+        "label": "Spring Boot",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 1.062,
+        "w_cv_corrected": 1.062,
+        "reason": "The weight change is biased due to prestige bias, as the adapted weight is decreased despite the candidate having relevant skills and experience in Spring Boot, Java, and Full-Stack development. The candidate's education from a lesser-known institution (Ecole Nationale des Sciences Appliquées de Khouribga) may have contributed to the bias. A fairer assessment would consider the candidate's skills and experience more heavily, resulting in a correction factor of 1.25 to increase the adapted weight."
+      },
+      {
+        "id": "java",
+        "label": "Java",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.938,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (ENSA Khouribga) and company names (Oracle, COLAS DIGITAL SOLUTIONS, Onedustry Technologies) may have unfairly influenced the adapted weight. The candidate's skills and experience in Java and Spring Boot are relevant to the job description, but the algorithm may have penalized them due to the perceived lower prestige of their university and companies. A correction factor of 1.25 is applied to increase the weight and mitigate the bias."
+      },
+      {
+        "id": "maven",
+        "label": "Maven",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.938,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (ENSA Khouribga) and company names (Oracle, COLAS DIGITAL SOLUTIONS, Onedustry Technologies) may have unfairly influenced the adapted weight. A fairer assessment would focus on the candidate's skills and experience, such as their proficiency in Maven, Spring Boot, and cloud computing."
+      },
+      {
+        "id": "git",
+        "label": "GIT",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's mention of Git is contextual and lacks concrete project evidence, whereas the job description emphasizes Git as a required skill. The correction factor is set to 1.20 to compensate for the unfair penalty."
+      },
+      {
+        "id": "cloud_computing",
+        "label": "Cloud Computing",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (ENSA Khouribga) and company names (Oracle, COLAS DIGITAL SOLUTIONS, Onedustry Technologies) may have influenced the scoring. The candidate's skills and experience in cloud computing are not adequately reflected in the adapted weight. A fairer assessment would consider the candidate's demonstrated skills and experience, rather than their educational background or company affiliations."
+      },
+      {
+        "id": "communication",
+        "label": "Communication",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (ENSA Khouribga) and company names (Oracle, COLAS DIGITAL SOLUTIONS, Onedustry Technologies) may have influenced the scoring. The candidate's communication skills are mentioned in the CV preamble, but the scoring rationale focuses on the lack of concrete project evidence, which may not be the only indicator of communication skills. A fairer approach would consider the candidate's overall profile and experience."
+      },
+      {
+        "id": "agile_methodologies",
+        "label": "Agile Methodologies",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's mention of Agile in their CV is not given sufficient weight, likely due to the lack of a prestigious university or company name associated with it. The correction factor is 1.20 to increase the weight to a more fair value, considering the candidate's mention of Agile in their CV and its relevance to the job description."
+      },
+      {
+        "id": "teamwork",
+        "label": "Teamwork",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.3,
+        "w_cv_corrected": 0.3,
+        "reason": "The candidate's CV mentions teamwork-related skills like 'Communication' and 'Collaboration' but lacks concrete project evidence. The weight change is biased as it penalizes the candidate for soft skills, which are essential for teamwork. A fairer approach would be to consider the candidate's potential for teamwork based on their overall profile, rather than solely relying on concrete project evidence."
+      },
+      {
+        "id": "communication_skills",
+        "label": "Communication Skills",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (ENSA Khouribga) and company names (Oracle, COLAS DIGITAL SOLUTIONS, Onedustry Technologies) may not be as well-known as others, leading to an unfair decrease in the weight of communication skills. A fairer assessment would consider the candidate's demonstrated skills and experience, rather than the prestige of their affiliations."
+      },
+      {
+        "id": "docker",
+        "label": "Docker",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's CV mentions Docker but lacks concrete project evidence, whereas the job description emphasizes Docker as a required skill. The correction factor is set to 1.20 to compensate for the unfair penalty."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "java_engineer|docker",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_corrected": 0.637,
+        "reason": "The edge weight change is biased due to prestige bias, as the candidate's mention of Docker is given more importance because of its association with good practices, rather than a direct demonstration of skills. A fairer approach would be to evaluate the candidate's skills and experience with Docker, rather than relying on the prestige of the technology."
+      },
+      {
+        "edge": "java_engineer|spring_data_jpa",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_corrected": 0.862,
+        "reason": "The weight change from 0.9 to 0.75 may be due to prestige bias, as the candidate's CV excerpt mentions 'spécialisé en développement Full-Stack avec Java/Spring Boot', which is a relevant skill for the Java Engineer role. The correction factor is set to 1.15 to account for the unfair penalization of the candidate's skills due to the prestige bias."
+      },
+      {
+        "edge": "java_engineer|spring_security",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_corrected": 0.637,
+        "reason": "The edge weight change is biased due to prestige bias, as the candidate's mention of Java and Spring Boot in their education section is given more weight due to the perceived prestige of using these technologies together in a full-stack development context, rather than solely based on the skills demonstrated. A fairer approach would be to evaluate the candidate's skills and experience in a more nuanced and context-agnostic manner."
+      },
+      {
+        "edge": "java_engineer|agile",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_corrected": 0.637,
+        "reason": "The weight change is biased towards prestige, as the ideal weight is higher than the CV weight, indicating a preference for candidates with experience in top-tier companies or prestigious projects, rather than solely considering the skills and qualifications mentioned in the job description."
+      },
+      {
+        "edge": "java_engineer|software_development_principles",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_corrected": 0.862,
+        "reason": "The candidate's mention of seeking a PFE internship and contributing to concrete projects indicates a strong motivation to apply Java engineering skills in practice, which aligns with the job description. However, the weight reduction from 0.9 to 0.75 may be due to the candidate's lack of prestige associated with not having a well-known university or company name in their CV, rather than a lack of demonstrated skills. A correction factor of 1.15 is applied to increase the weight to reflect the candidate's merit-based qualifications."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.207 (sous-qualifié), CTM=0.6119 (écart structurel élevé), match_pct=40.66% → Poor Match",
+    "v6_summary": "weighted_f1=0.1558, gap_score=0.1625, ndcg_5=0.943, missing_critical_penalty=0.1429, combo_v6_final=29.64",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "13 gaps critiques identifiés",
+    "bias_note": "12 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 6,
+    "pool_size": 50,
+    "percentile": 0.898,
+    "composite_z_score": 1.0962,
+    "tier": "Top 25%",
+    "z_scores": {
+      "combo_v6": 1.714,
+      "wf1": 0.79,
+      "gap_score": 1.231,
+      "ntcw": 1.297,
+      "match_pct": 1.742,
+      "ndcg_5": 0.585
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 12.852,
+        "std": 9.7967
+      },
+      "wf1": {
+        "mean": 0.0674,
+        "std": 0.1119
+      },
+      "gap_score": {
+        "mean": 0.0674,
+        "std": 0.0772
+      },
+      "ntcw": {
+        "mean": 0.0865,
+        "std": 0.0929
+      },
+      "match_pct": {
+        "mean": 21.8864,
+        "std": 10.7767
+      },
+      "ndcg_5": {
+        "mean": 0.8904,
+        "std": 0.0899
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

@@ -1,0 +1,357 @@
+{
+  "job_id": "job_51",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-03T05:56:23.609376",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 25.7,
+    "confidence": {
+      "confidence_score": 0.57,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.583,
+        "coverage_rate": 0.667,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.1125,
+    "edge_score": 0.0541,
+    "combined": 0.0892
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.0704,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7251,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.743,
+    "matched_nodes": "0/12",
+    "edge_match_pct": 2.71
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.0728,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.0541,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.0689,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8838,
+    "ndcg_10": 0.9167,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.3896,
+    "semantic_fit_score": 0.5034,
+    "experience_density": 0.0427
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 9.21,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 4.81,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 20.38,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 95.35,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 2.07,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 20.33,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 9.4,
+      "weight_sum": 1.0
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 8.2,
+      "weight_sum": 2.727
+    },
+    "Tool": {
+      "count": 4,
+      "match_pct": 3.8,
+      "weight_sum": 3.436
+    },
+    "Domain": {
+      "count": 3,
+      "match_pct": 3.2,
+      "weight_sum": 1.944
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 2.71,
+    "total_edges": 7,
+    "top_synergies": [
+      {
+        "edge_key": "python_programming|machine_learning_domain",
+        "source": "python_programming",
+        "target": "machine_learning_domain",
+        "w_0": 0.95,
+        "w_cv": 0.094,
+        "w_cv_norm": 0.047,
+        "match_pct": 4.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "machine_learning_domain|ia_domain",
+        "source": "machine_learning_domain",
+        "target": "ia_domain",
+        "w_0": 0.845,
+        "w_cv": 0.094,
+        "w_cv_norm": 0.047,
+        "match_pct": 5.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "scikit_learn_library|machine_learning_domain",
+        "source": "scikit_learn_library",
+        "target": "machine_learning_domain",
+        "w_0": 0.91,
+        "w_cv": 0.075,
+        "w_cv_norm": 0.037,
+        "match_pct": 4.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "teamwork_skill|machine_learning_domain",
+        "source": "teamwork_skill",
+        "target": "machine_learning_domain",
+        "w_0": 0.62,
+        "w_cv": 0.05,
+        "w_cv_norm": 0.025,
+        "match_pct": 4.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "pytorch_framework|machine_learning_domain",
+        "source": "pytorch_framework",
+        "target": "machine_learning_domain",
+        "w_0": 0.85,
+        "w_cv": 0.025,
+        "w_cv_norm": 0.013,
+        "match_pct": 1.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Agile",
+      "type": "Soft Skill",
+      "gap": 0.869,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Scikit-learn",
+      "type": "Tool",
+      "gap": 0.835,
+      "severity": "critical",
+      "importance": 0.91
+    },
+    {
+      "skill": "Machine Learning",
+      "type": "Domain",
+      "gap": 0.845,
+      "severity": "critical",
+      "importance": 0.845
+    },
+    {
+      "skill": "PyTorch",
+      "type": "Tool",
+      "gap": 0.819,
+      "severity": "critical",
+      "importance": 0.844
+    },
+    {
+      "skill": "MATLAB",
+      "type": "Tool",
+      "gap": 0.793,
+      "severity": "critical",
+      "importance": 0.843
+    },
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.839,
+      "severity": "critical",
+      "importance": 0.839
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.906
+      },
+      {
+        "label": "Agile",
+        "type": "Soft Skill",
+        "gap": 0.869
+      },
+      {
+        "label": "Scikit-learn",
+        "type": "Tool",
+        "gap": 0.835
+      },
+      {
+        "label": "Machine Learning",
+        "type": "Domain",
+        "gap": 0.845
+      },
+      {
+        "label": "PyTorch",
+        "type": "Tool",
+        "gap": 0.819
+      },
+      {
+        "label": "MATLAB",
+        "type": "Tool",
+        "gap": 0.793
+      },
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.839
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 4,
+    "nodes_with_bias": 4,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 4
+    },
+    "biased_nodes": [
+      {
+        "id": "python_programming",
+        "label": "Python",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV primarily highlights full-stack development experience with React.js, D3.js, and Elasticsearch, skills listed in the JD. However, the candidate lacks specific programming experience in Python, despite the JD explicitly requiring it. This suggests the weight decrease is driven by a proxy signal – the candidate’s skillset focused on front-end technologies, which are less aligned with the job’s needs, rather than a genuine lack of Python proficiency. A fair alternative would be to adjust the weight based on demonstrable Python skills or project experience."
+      },
+      {
+        "id": "agile_methodologies",
+        "label": "Agile",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The candidate's CV heavily emphasizes full-stack development experience within Tunisian banks, utilizing technologies like React.js and Elasticsearch, which are not explicitly mentioned or prioritized in the job description (JD). This suggests the algorithm is weighting location (Tunisie) and the type of experience (banking full-stack) as proxies for relevant skills, rather than directly assessing Agile methodology knowledge.  The Delta of -0.65 indicates a significant reduction in weight, implying a bias towards candidates with a specific geographic and industry background. A fairer alternative would be to weight Agile experience equally regardless of the candidate’s location or previous employment sector, focusing solely on skills demonstrated through the CV’s listed technologies."
+      },
+      {
+        "id": "ia_domain",
+        "label": "Intelligence Artificielle",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV heavily emphasizes front-end development skills (React.js, D3.js) and experience at Tunisian banks, while the job description explicitly requires machine learning experience and deep learning model design. This suggests a proxy bias based on location and industry familiarity, prioritizing candidates with a strong presence in the existing IT landscape of Tunisia rather than assessing genuine machine learning aptitude. The lack of concrete evidence related to AI ('Intelligence Artificielle') further supports this, as the system may be overemphasizing the candidate's general tech stack skills due to the context of the role being in Tunisia."
+      },
+      {
+        "id": "soft_skills_requirement",
+        "label": "Soft Skills",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV heavily emphasizes technical skills (React, Elasticsearch, etc.) and professional experience, but lacks direct evidence of soft skills. The JD explicitly requests soft skills ('travailler en équipe, de communiquer clairement ses idées') yet the CV presents a purely technical profile focusing on development roles and previous company names, effectively using location (Tunisie) and previous employers (ODDO BHF, Amen Bank, STB Bank) as proxies for broader skill sets rather than demonstrating soft skills. A reduction in weight is warranted to reduce reliance on these potentially biased signals."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.0704 (sous-qualifié), CTM=0.7251 (écart structurel élevé), match_pct=25.7% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.0689, ndcg_5=0.8838, missing_critical_penalty=0.0, combo_v6_final=9.21",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "7 gaps critiques identifiés",
+    "bias_note": "4 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.57)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

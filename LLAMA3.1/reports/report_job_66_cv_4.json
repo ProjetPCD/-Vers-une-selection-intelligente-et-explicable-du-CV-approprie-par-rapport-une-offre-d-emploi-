@@ -1,0 +1,206 @@
+{
+  "job_id": "job_66",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-02T12:13:04.920779",
+  "overall_assessment": {
+    "verdict": "Moderate Match",
+    "match_pct": 60.15,
+    "confidence": {
+      "confidence_score": 1.0,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.0,
+        "coverage_rate": 1.0,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.9635,
+    "edge_score": 0.0,
+    "combined": 0.5781
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.5607,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.4156,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Écart modéré"
+    },
+    "weighted_gap": 0.3985,
+    "matched_nodes": "2/7",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.5313,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.5714,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.5024,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.4286,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.2969,
+    "weighted_recall": 0.3124,
+    "weighted_f1": {
+      "value": 0.5035,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5433,
+    "missing_critical_penalty": {
+      "value": 0.4,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.7532,
+    "ndcg_10": 0.8691,
+    "map_score": 0.8179,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9,
+    "top_skill_alignment": 0.4167,
+    "semantic_fit_score": 0.5076,
+    "experience_density": 0.3912
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 52.78,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 51.97,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 48.58,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 83.75,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 55.66,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 53.07,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 44.96,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 1,
+      "match_pct": 50.0,
+      "weight_sum": 0.954
+    },
+    "Tool": {
+      "count": 3,
+      "match_pct": 44.3,
+      "weight_sum": 2.766
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 42.5,
+      "weight_sum": 0.954
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 62.5,
+      "weight_sum": 1.01
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "top_synergies": [],
+    "total_edges": 0
+  },
+  "critical_gaps": [],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": []
+  },
+  "bias_audit": {
+    "nodes_audited": 5,
+    "nodes_with_bias": 3,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 2,
+      "HALO": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "typescript",
+        "label": "TypeScript",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.85,
+        "reason": "The weight change is biased towards prestige because the adapted weight w_cv (1.0) has increased by +0.046 from the ideal weight w_0 (0.954), indicating that the model is placing more emphasis on the applicant's name ('typescript') rather than their skills and experience, which are not relevant to the job description."
+      },
+      {
+        "id": "vue_js",
+        "label": "Vue.js",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.85,
+        "reason": "The weight change is biased towards prestige due to the candidate's extensive experience in senior roles, certifications, and technical skills mentioned in their CV, which may not be directly relevant to the job requirements as a Senior Frontend Engineer. A fair alternative would be to assess the candidate based on their specific experience with React, Next.js, and Vue.js, rather than their overall technical seniority."
+      },
+      {
+        "id": "next_js",
+        "label": "Next.js",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.8,
+        "reason": "The weight change is biased towards Halo bias, as a single strong signal (seniority_signal mid) significantly impacts the weight increase, while other relevant information such as education and work experience are not adequately considered."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.5607 (sous-qualifié), CTM=0.4156 (écart structurel modéré), match_pct=60.15% → Moderate Match",
+    "v6_summary": "weighted_f1=0.5035, gap_score=0.5024, ndcg_5=0.7532, missing_critical_penalty=0.4, combo_v6_final=52.78",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "0 gaps critiques identifiés",
+    "bias_note": "3 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (1.0)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

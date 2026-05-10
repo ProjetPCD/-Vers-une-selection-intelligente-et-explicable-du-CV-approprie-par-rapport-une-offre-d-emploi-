@@ -1,0 +1,527 @@
+{
+  "job_id": "job_94",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-05T17:26:04.356439",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 43.93,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.435,
+        "coverage_rate": 0.478,
+        "nodes_audited": 10,
+        "nodes_biased": 10
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.2159,
+    "edge_score": 0.4351,
+    "combined": 0.3036
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.278,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6024,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5607,
+    "matched_nodes": "8/23",
+    "edge_match_pct": 43.51
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3005,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.6469,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.2063,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.381,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.4809,
+    "weighted_recall": 0.2542,
+    "weighted_f1": {
+      "value": 0.4339,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5124,
+    "missing_critical_penalty": {
+      "value": 0.3333,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.8284,
+    "ndcg_10": 0.8199,
+    "map_score": 0.9681,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9866,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.2816,
+    "experience_density": 0.1601
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 41.65,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 44.19,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 27.63,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 92.02,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 52.62,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 42.59,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 18.57,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 8,
+      "match_pct": 26.9,
+      "weight_sum": 6.535
+    },
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 36.0,
+      "weight_sum": 2.425
+    },
+    "Soft Skill": {
+      "count": 6,
+      "match_pct": 8.5,
+      "weight_sum": 4.012
+    },
+    "Domain": {
+      "count": 6,
+      "match_pct": 17.4,
+      "weight_sum": 4.086
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 43.51,
+    "total_edges": 16,
+    "top_synergies": [
+      {
+        "edge_key": "terraform|cloud_computing",
+        "source": "terraform",
+        "target": "cloud_computing",
+        "w_0": 0.5,
+        "w_cv": 0.862,
+        "w_cv_norm": 0.862,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "kubernetes|cloud_computing",
+        "source": "kubernetes",
+        "target": "cloud_computing",
+        "w_0": 0.5,
+        "w_cv": 0.862,
+        "w_cv_norm": 0.862,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "docker|cloud_computing",
+        "source": "docker",
+        "target": "cloud_computing",
+        "w_0": 0.5,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.85,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "azure|cloud_computing",
+        "source": "azure",
+        "target": "cloud_computing",
+        "w_0": 0.5,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.85,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "docker|cloud_expert",
+        "source": "docker",
+        "target": "cloud_expert",
+        "w_0": 0.5,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.85,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "AWS",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "MongoDB",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "InfluxDB",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Analytical",
+      "type": "Soft Skill",
+      "gap": 0.811,
+      "severity": "critical",
+      "importance": 0.811
+    },
+    {
+      "skill": "Perseverant",
+      "type": "Soft Skill",
+      "gap": 0.799,
+      "severity": "critical",
+      "importance": 0.799
+    },
+    {
+      "skill": "Networks",
+      "type": "Domain",
+      "gap": 0.788,
+      "severity": "critical",
+      "importance": 0.788
+    },
+    {
+      "skill": "Problem Solver",
+      "type": "Soft Skill",
+      "gap": 0.775,
+      "severity": "critical",
+      "importance": 0.775
+    },
+    {
+      "skill": "Data Architecture",
+      "type": "Domain",
+      "gap": 0.74,
+      "severity": "critical",
+      "importance": 0.74
+    },
+    {
+      "skill": "Software Development Best Practices",
+      "type": "Hard Skill",
+      "gap": 0.714,
+      "severity": "critical",
+      "importance": 0.714
+    },
+    {
+      "skill": "Operating Systems",
+      "type": "Domain",
+      "gap": 0.682,
+      "severity": "critical",
+      "importance": 0.682
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "AWS",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "MongoDB",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "InfluxDB",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Analytical",
+        "type": "Soft Skill",
+        "gap": 0.811
+      },
+      {
+        "label": "Perseverant",
+        "type": "Soft Skill",
+        "gap": 0.799
+      },
+      {
+        "label": "Networks",
+        "type": "Domain",
+        "gap": 0.788
+      },
+      {
+        "label": "Problem Solver",
+        "type": "Soft Skill",
+        "gap": 0.775
+      },
+      {
+        "label": "Data Architecture",
+        "type": "Domain",
+        "gap": 0.74
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 10,
+    "nodes_with_bias": 10,
+    "edges_audited": 5,
+    "edges_with_bias": 5,
+    "bias_categories": {
+      "PRESTIGE": 14,
+      "GENDER_DIVERSITY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "azure_devops",
+        "label": "Azure DevOps",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.02,
+        "w_cv_corrected": 1.02,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience with Azure DevOps is penalized despite being relevant to the job description. The correction factor is set to 1.20 to increase the weight, as the candidate's skills and experience are undervalued."
+      },
+      {
+        "id": "python",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.02,
+        "w_cv_corrected": 1.02,
+        "reason": "The weight change is likely due to prestige bias, as the candidate's university and company names are not explicitly mentioned in the CV, but the algorithm may have penalized the candidate for not having a 'top-tier' university or company background. The correction factor is set to 1.20 to account for this unfair penalty."
+      },
+      {
+        "id": "azure",
+        "label": "Azure",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.02,
+        "w_cv_corrected": 1.02,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience with Azure is penalized despite meeting the job requirements. The correction factor is set to 1.20 to increase the weight, as the candidate's skills and experience are undervalued."
+      },
+      {
+        "id": "nodejs",
+        "label": "Node.js",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.02,
+        "w_cv_corrected": 1.02,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience with Node.js is downplayed despite being mentioned in the job description. The correction factor is set to 1.20 to increase the weight, as the candidate's skills in Node.js are relevant to the job requirements."
+      },
+      {
+        "id": "communication",
+        "label": "Communication",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change from 0.704 to 0.25 for the 'communication' skill is biased due to gender/diversity bias. The CV highlights the candidate's proficiency in multiple languages, including French, Arabic, and English, which is relevant to the job requirement. However, the adapted weight is significantly lower, indicating that the algorithm may be penalizing the candidate for their language skills or cultural background. A correction factor of 1.20 is applied to increase the weight to a more fair value."
+      },
+      {
+        "id": "cloud_computing",
+        "label": "Cloud Computing",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 1.062,
+        "w_cv_corrected": 1.062,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university and company names are not explicitly mentioned in the CV, but the job description emphasizes the importance of experience and skills in cloud computing, which the candidate has demonstrated. The correction factor is 1.25 to increase the weight to account for the unfair penalty."
+      },
+      {
+        "id": "terraform",
+        "label": "Terraform",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.02,
+        "w_cv_corrected": 1.02,
+        "reason": "The weight change is likely due to prestige bias, as the candidate's university and company names are not explicitly mentioned in the CV, but the auditor suspects that the algorithm may be penalizing the candidate for not having a top-tier university or company background. The correction factor is set to 1.20 to compensate for this unfair penalty."
+      },
+      {
+        "id": "cloud_expert",
+        "label": "Cloud Expert",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.02,
+        "w_cv_corrected": 1.02,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university and company names are not explicitly mentioned in the CV, but the job description emphasizes the importance of experience and skills. The correction factor is set to 1.20 to compensate for the unfair penalty."
+      },
+      {
+        "id": "docker",
+        "label": "Docker",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.02,
+        "w_cv_corrected": 1.02,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience with Docker is penalized despite being a relevant skill for the job. The correction factor is 1.20 to account for the unfair decrease in weight."
+      },
+      {
+        "id": "technical_skills",
+        "label": "Technical Skills",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's technical skills are downweighted despite demonstrating a strong range of skills and experience. The correction factor is set to 1.20 to account for the unfair penalty."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "terraform|cloud_computing",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_corrected": 0.862,
+        "reason": "The weight change from 0.9 to 0.75 may be due to prestige bias, as Terraform is a well-known and respected technology in the cloud computing domain. The correction factor is set to 1.15 to adjust for this potential bias, ensuring that candidates with relevant skills but without the 'prestige' of Terraform experience are not unfairly penalized."
+      },
+      {
+        "edge": "kubernetes|cloud_computing",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_corrected": 0.862,
+        "reason": "The edge weight change from 0.9 to 0.75 may be due to prestige bias, as the ideal weight is based on the relevance of Kubernetes to cloud computing, but the CV weight is lower, potentially because the candidate's experience with Kubernetes is not from a prestigious company or university. To correct for this bias, a correction factor of 1.15 is applied to increase the weight and give the candidate a fairer assessment."
+      },
+      {
+        "edge": "azure_devops|software_development_best_practices",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_corrected": 0.637,
+        "reason": "The weight change is biased towards prestige, as the ideal weight is higher than the CV weight, indicating a preference for candidates with experience in Azure DevOps, a well-known and respected technology. This may unfairly penalize candidates with similar skills but less prestigious experience. A fairer approach would be to focus on the skills demonstrated, rather than the specific technology used."
+      },
+      {
+        "edge": "terraform|cloud_expert",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased towards prestige, as the candidate's experience with Terraform is given more importance due to their previous company name (3S Standard Sharing Software) rather than the skills demonstrated. A fairer assessment would focus on the skills and experience with Terraform, rather than the company name."
+      },
+      {
+        "edge": "kubernetes|cloud_expert",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased towards prestige, as the candidate's experience with Kubernetes is given more importance due to their previous company's name (3S Standard Sharing Software) rather than the skills demonstrated. A fair alternative would be to focus on the specific skills and experiences mentioned, rather than the company name."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.278 (sous-qualifié), CTM=0.6024 (écart structurel élevé), match_pct=43.93% → Poor Match",
+    "v6_summary": "weighted_f1=0.4339, gap_score=0.2063, ndcg_5=0.8284, missing_critical_penalty=0.3333, combo_v6_final=41.65",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "10 gaps critiques identifiés",
+    "bias_note": "10 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 2,
+    "pool_size": 20,
+    "percentile": 0.9474,
+    "composite_z_score": 1.0356,
+    "tier": "Top 10%",
+    "z_scores": {
+      "combo_v6": 1.342,
+      "wf1": 1.645,
+      "gap_score": 0.961,
+      "ntcw": 1.197,
+      "match_pct": 1.363,
+      "ndcg_5": -0.853
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 18.525,
+        "std": 17.2363
+      },
+      "wf1": {
+        "mean": 0.1236,
+        "std": 0.1886
+      },
+      "gap_score": {
+        "mean": 0.0978,
+        "std": 0.113
+      },
+      "ntcw": {
+        "mean": 0.122,
+        "std": 0.1303
+      },
+      "match_pct": {
+        "mean": 27.81,
+        "std": 11.8284
+      },
+      "ndcg_5": {
+        "mean": 0.9186,
+        "std": 0.1058
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

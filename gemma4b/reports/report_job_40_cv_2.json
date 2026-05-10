@@ -1,0 +1,514 @@
+{
+  "job_id": "job_40",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-02T22:50:03.883640",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 35.26,
+    "confidence": {
+      "confidence_score": 0.78,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.5,
+        "coverage_rate": 0.893,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.1935
+  },
+  "final_scores": {
+    "node_score": 0.3835,
+    "edge_score": 0.4028,
+    "combined": 0.3912
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2285,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6657,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6474,
+    "matched_nodes": "1/28",
+    "edge_match_pct": 20.13
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2328,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.3832,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1926,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1429,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.6091,
+    "weighted_recall": 0.0988,
+    "weighted_f1": {
+      "value": 0.1862,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5593,
+    "missing_critical_penalty": {
+      "value": 0.1667,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9104,
+    "ndcg_10": 0.8847,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9329,
+    "top_skill_alignment": 0.4384,
+    "semantic_fit_score": 0.326,
+    "experience_density": 0.1553
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 27.74,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 26.3,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 22.69,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 96.42,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 42.29,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 32.77,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 41.8,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Certification": {
+      "count": 2,
+      "match_pct": 30.5,
+      "weight_sum": 1.98
+    },
+    "Hard Skill": {
+      "count": 5,
+      "match_pct": 11.3,
+      "weight_sum": 4.79
+    },
+    "Tool": {
+      "count": 12,
+      "match_pct": 24.0,
+      "weight_sum": 9.583
+    },
+    "Domain": {
+      "count": 6,
+      "match_pct": 19.4,
+      "weight_sum": 4.338
+    },
+    "Soft Skill": {
+      "count": 3,
+      "match_pct": 2.8,
+      "weight_sum": 1.99
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 20.13,
+    "total_edges": 15,
+    "top_synergies": [
+      {
+        "edge_key": "aws_certified_ai_practitioner|machine-learning-domain",
+        "source": "aws_certified_ai_practitioner",
+        "target": "machine-learning-domain",
+        "w_0": 0.98,
+        "w_cv": 0.879,
+        "w_cv_norm": 0.439,
+        "match_pct": 44.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python|machine-learning-domain",
+        "source": "python",
+        "target": "machine-learning-domain",
+        "w_0": 0.95,
+        "w_cv": 0.806,
+        "w_cv_norm": 0.403,
+        "match_pct": 42.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "spark|hadoop",
+        "source": "spark",
+        "target": "hadoop",
+        "w_0": 0.85,
+        "w_cv": 0.637,
+        "w_cv_norm": 0.319,
+        "match_pct": 37.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python|data-science-domain",
+        "source": "python",
+        "target": "data-science-domain",
+        "w_0": 0.9,
+        "w_cv": 0.618,
+        "w_cv_norm": 0.309,
+        "match_pct": 34.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python|fastapi-tool",
+        "source": "python",
+        "target": "fastapi-tool",
+        "w_0": 0.6,
+        "w_cv": 0.594,
+        "w_cv_norm": 0.297,
+        "match_pct": 49.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Cloud Practitioner",
+      "type": "Certification",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Java",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "méthodologie agile",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "AWS",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Machine Learning",
+      "type": "Domain",
+      "gap": 0.629,
+      "severity": "critical",
+      "importance": 0.892
+    },
+    {
+      "skill": "Data Science",
+      "type": "Domain",
+      "gap": 0.812,
+      "severity": "critical",
+      "importance": 0.887
+    },
+    {
+      "skill": "FastAPI",
+      "type": "Tool",
+      "gap": 0.753,
+      "severity": "critical",
+      "importance": 0.803
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.743,
+      "severity": "critical",
+      "importance": 0.793
+    },
+    {
+      "skill": "TypeScript",
+      "type": "Hard Skill",
+      "gap": 0.79,
+      "severity": "critical",
+      "importance": 0.79
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Cloud Practitioner",
+        "type": "Certification",
+        "gap": 1.0
+      },
+      {
+        "label": "Java",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "méthodologie agile",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "AWS",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Machine Learning",
+        "type": "Domain",
+        "gap": 0.629
+      },
+      {
+        "label": "Data Science",
+        "type": "Domain",
+        "gap": 0.812
+      },
+      {
+        "label": "FastAPI",
+        "type": "Tool",
+        "gap": 0.753
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 16,
+    "nodes_with_bias": 16,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "C": 5,
+      "PROXY": 4,
+      "PRESTIGE": 3,
+      "HALO": 1,
+      "HALO BIAS": 1,
+      "PRESTIGE|PROXY": 1,
+      "B": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.087,
+        "reason": "The increased weight assigned to the Python candidate, coupled with the detailed description of projects utilizing Python (Odoo module development, deep learning model, custom app), suggests a prestige bias favoring established technologies and frameworks (Python, Odoo) mentioned prominently in the job description. While the candidate’s experience is relevant, the JD heavily emphasizes these tools, potentially overvaluing them compared to other equally skilled candidates without this specific background. A fair alternative would be to assess skills demonstrated through a standardized assessment and a focus on the candidate’s problem-solving abilities and quantifiable outcomes, rather than prioritizing the use of specific technologies."
+      },
+      {
+        "id": "gcp",
+        "label": "GCP",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.013,
+        "reason": "The increased weight (w_0) is likely due to the candidate's explicit mention of 'Deep Learning Convolutional Neural Networks (CNN) Transfer Learning' and 'Building Apps with AI Tools: ChatGPT, Semantic Kernel, and Langchain,' which aligns with the job description's emphasis on advanced ML and AI tools. However, this is a halo effect – the candidate’s strong signal regarding deep learning is overshadowing the more foundational and less directly specified skills presented on their CV, such as their Python/Odoo development experience and CCNA certification.  A fairer assessment would prioritize skills demonstrated in the job description like data wrangling, SQL and big data technologies, which are not explicitly highlighted by the candidate's skills list. The increase is therefore unfairly biased towards a single, strong signal, and a reduced correction factor is necessary."
+      },
+      {
+        "id": "aws_certified_ai_practitioner",
+        "label": "AWS Certified AI Practitioner",
+        "bias_category": "HALO BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.232,
+        "reason": "The CV explicitly lists 'aws_certified_ai_practitioner', and the rationale increases the weight due to this certification. However, the CV's details (Odoo development, specific projects like Scar and Digit-U) and the JD's emphasis on broad technical skills (Python, SQL, Spark, etc.) suggest a halo effect – the strong signal of the AWS certification is dominating the assessment, overshadowing the other relevant skills and experiences. A more fair assessment would consider the depth of experience in the CV alongside the certification, rather than solely relying on the certification's presence. The candidate's diverse project experience and skills warrant a reduction in the weight increase."
+      },
+      {
+        "id": "spark",
+        "label": "Spark",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The weight change reflects a penalty for mentioning 'Spark' in the context of a deep learning project, but the CV lacks specific details about the project's implementation. This indicates a proxy bias—the system is overweighting the mere mention of 'Spark' (a popular Big Data technology) as a signal of potential rather than assessing the candidate’s skills in applying it effectively. The JD emphasizes broad technical skills and the CV focuses on specific Odoo development experience, creating a mismatch and triggering this proxy bias. A fair alternative would be to focus solely on the candidate’s demonstrable Python and deep learning skills, regardless of the specific technology used in a past project."
+      },
+      {
+        "id": "hadoop",
+        "label": "Hadoop",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The weight change (from 0.917 to 0.85) indicates a significant decrease, suggesting a potential bias related to ageism. The CV highlights a strong technical background with CNNs, Generative AI, and certifications, which are relevant to the JD’s focus on Deep Learning and Machine Learning. However, the candidate’s experience primarily revolves around Odoo development with Python and a stage as a Data Scientist, lacking the advanced data science experience emphasized in the JD.  The mention of Cisco CCNA adds a non-core technical element that may have unduly influenced the scoring, shifting the weighting away from core skills.  A fair alternative weighting would prioritize the candidate’s deep learning and machine learning experience while acknowledging the breadth of their skills."
+      },
+      {
+        "id": "sql-requirement",
+        "label": "SQL",
+        "bias_category": "PRESTIGE|PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.75,
+        "reason": "The candidate's CV heavily emphasizes experience with Odoo modules and data migration (specifically SQL for data manipulation within Odoo), which aligns with the JD’s requirements for SQL skills in a data science role. However, the CV includes non-relevant certifications (CCNA, Generative AI), suggesting a desire to appear more advanced than the candidate's actual practical skills. This reflects prestige bias – the applicant is leveraging the perceived value of Odoo development and migration experience, potentially overshadowing the explicit technical skills demanded (Machine Learning, Deep Learning) outlined in the job description. A reduction in weight acknowledges this influence of a less directly relevant experience."
+      },
+      {
+        "id": "machine-learning-domain",
+        "label": "Machine Learning",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.525,
+        "reason": "The CV demonstrates a breadth of technical skills, including Deep Learning (CNNs, Generative AI) and Python development, but heavily emphasizes Odoo development and associated technologies like Python, Odoo, and Postgresql. The JD heavily emphasizes Machine Learning expertise, and the CV's focus on Odoo-related tasks, combined with a relatively brief deep learning stage, contributes to a lower weight. This suggests a Prestige Bias - the CV's technical focus doesn't strongly align with the required ML skills, leading to an unfair penalization. A fair alternative would involve weighting the candidate's ML project experience and certifications more heavily, or adjusting the criteria for relevant skills. The delta of -0.192 (decreased) indicates a significant shift away from the ideal weight, necessitating a correction."
+      },
+      {
+        "id": "data-science-domain",
+        "label": "Data Science",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.15,
+        "reason": "The candidate's CV heavily emphasizes Odoo development experience and specific certifications (CCNA, Generative AI) which are not directly relevant to the stated Data Science role requiring Machine Learning, Deep Learning, and Big Data skills. The JD explicitly lists Python, Spark, Hadoop, Kafka as key technologies, while the CV focuses on Odoo and Python in a different context. This proxy signal of Odoo experience, coupled with non-core data science certifications, likely led to a reduction in weight, unfairly penalizing the candidate for skills not central to the desired role, reflecting a bias towards specific technical stacks rather than core competencies."
+      },
+      {
+        "id": "collaboration-soft-skill",
+        "label": "capacité à travailler de manière collaborative",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.15,
+        "reason": "The weight change from 0.735 to 0.2 indicates a significant decrease in the importance of 'collaboration-soft-skill' despite the job description explicitly stating it as a key requirement. The CV primarily showcases technical skills (Python, Odoo, Deep Learning), while the JD emphasizes collaborative teamwork. This suggests a bias favoring purely technical skills over those crucial soft skills, specifically penalizing the candidate for not showcasing collaborative experience despite the company's need for collaborative professionals. A fair alternative would be to maintain or increase the weighting to reflect the stated need for collaboration."
+      },
+      {
+        "id": "deep-learning-domain",
+        "label": "Deep Learning",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.15,
+        "reason": "The candidate’s CV heavily emphasizes hands-on experience with Odoo and specific technologies (Python, SQL, XML, Qweb) which aligns with the JD's explicit requirement for skills in Python, Spark, Hadoop, Kafka, and data wrangling. However, the JD emphasizes deep learning and ML skills above specific tool proficiency. The significantly decreased weight shift (Delta: -0.479) likely reflects an overemphasis on the candidate’s Odoo experience, creating a proxy bias. A fairer alternative would be to focus on deep learning experience and projects, regardless of the specific tools used, to better assess suitability for the core requirements of the role. The CV’s focus on Odoo and related technologies creates a non-merit-based signal."
+      },
+      {
+        "id": "pyspark_1",
+        "label": "PySpark",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The weight change from 0.652 to 0.4 is significant, driven by the project 'Développement d'un modèle deep learning pour l’estimation de l’âge des personnes dans un vidéo streaming capturé par des caméras installées au niveau des totems publicitaires indoor.'  This project occurred during a very short 6-month stage, a significant period in a career, and is listed as the *only* deep learning project on their CV. The JD heavily emphasizes PySpark and Big Data technologies, implying a preference for candidates with broader experience in this area, while the CV’s primary focus is on a single, relatively short-term deep learning project. This suggests a halo effect - the deep learning project overshadowing other skills, unfairly penalizing the candidate’s broader experience and potentially signaling a lack of versatility, creating a bias towards more established Big Data experience."
+      },
+      {
+        "id": "big_data_1",
+        "label": "Big Data",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.525,
+        "reason": "This weight change appears to be influenced by prestige bias. The candidate’s stage role at Digit-U, focused on a deep learning project within a research institution ('Digit-U Data Scientist (Stage)') from 2020, is being heavily weighted, while the more recent and relevant experience at Focus Corporation developing Odoo modules with Python and Odoo is receiving a lower weight (w_0 = 0.645 vs. w_cv = 0.7). The JD emphasizes broad data science skills, creating an environment where a name-brand academic project, even a stage role, carries more weight than demonstrable experience with current, relevant technologies and methodologies (Python, Odoo, modern data tooling) – suggesting an over-emphasis on the institution rather than the skills applied. A more fair alternative would be to prioritize the skills and technologies used in the Focus Corporation role, given its more recent and practically applicable experience."
+      },
+      {
+        "id": "data_wrangling_1",
+        "label": "Data Wrangling",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.525,
+        "reason": "The weight increase (Delta: +0.075) is driven by a project from 2020, 'Digit-U Data Scientist (Stage)', which involved deep learning and model development. While valuable, the project dates back to 2020 and the candidate's experience is primarily focused on a specific, somewhat niche, deep learning project within a 6-month internship.  The JD emphasizes a broader range of data science skills (including full-stack development with Python and modern frameworks), and the CV leans heavily on Odoo development with Python, suggesting the candidate’s strongest skills are not directly aligned with the advertised core competencies. Therefore, the weight increase is likely reflecting a nostalgic view of the candidate's earlier experience, rather than a current, merit-based assessment of their skills, particularly given the evolution of the field since 2020. A correction factor of 0.75 is appropriate to reduce the over-emphasis on this older project."
+      },
+      {
+        "id": "git_1",
+        "label": "Git",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.712,
+        "reason": "The significant increase in weight (w_0 from 0.67 to 0.95) for 'Git' is likely driven by the explicit mention of 'Agile methodology' and 'Git for version management' within the job description, alongside the candidate’s listed experience with Odoo development, a popular ERP system. This prioritizes a specific tool (Git) over demonstrated skills or experience, aligning with prestige bias.  A more appropriate approach would focus on skills like Python, Odoo experience, and problem-solving abilities demonstrated in project descriptions. The candidate’s experience with Odoo (4 years) contributes to the boost in weighting, but this emphasis feels disproportionate to the broader requirements outlined in the JD, suggesting a preference for specific technologies."
+      },
+      {
+        "id": "predictive_modeling_1",
+        "label": "Predictive Modeling",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.517,
+        "reason": "The CV highlights a stage role at Digit-U as a Data Scientist, which utilizes predictive modeling skills, but the JD emphasizes advanced technical skills and project details, implying a strong preference for candidates with demonstrable experience in machine learning projects. The reduction in weight suggests the model is prioritizing the candidate's CV, specifically the listed 'Predictive Modeling' skill, over the depth and specifics of the Digit-U project, potentially driven by prestige associated with the university and the breadth of the JD's required technologies (deep learning, Spark, etc.) making the Stage role appear less competitive. A fairer approach would consider the specifics of the project at Digit-U, rather than simply flagging 'Predictive Modeling' as a skill."
+      },
+      {
+        "id": "power_bi_1",
+        "label": "Power BI",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The weight decrease is likely due to the lack of project details associated with Power BI despite it being listed as a key skill in the profile. The CV primarily details work with Odoo, which isn’t directly relevant to the JD's emphasis on data science and complex machine learning applications. The candidate’s skills are primarily focused on application development and database management, rather than utilizing Power BI for data visualization and analysis as demanded by the job description. This proxy signal (the presence of Power BI listed as a skill) is being disproportionately weighted without sufficient supporting evidence, reflecting a focus on superficial skills rather than demonstrable expertise, which is a proxy for experience."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2285 (sous-qualifié), CTM=0.6657 (écart structurel élevé), match_pct=35.26% → Poor Match",
+    "v6_summary": "weighted_f1=0.1862, gap_score=0.1926, ndcg_5=0.9104, missing_critical_penalty=0.1667, combo_v6_final=27.74",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "14 gaps critiques identifiés",
+    "bias_note": "16 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.78)",
+    "scoring_reliability": "✅ 80.7% des scores via LLM (fiable)"
+  }
+}

@@ -1,0 +1,310 @@
+{
+  "job_id": "job_103",
+  "cv_id": "cv_1",
+  "scored_nodes": {
+    "data-scientist": {
+      "w_cv": 0.5,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence Anchor: \", \" (no mention of project application), Skill Type: Domain",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "python": {
+      "w_cv": 1.1,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.1
+        },
+        "penalties": {},
+        "final_score": 1.1
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence Anchor: Summary: \"With experience in data extraction, analysis and visualization for large-scale projects, I’m proficient in SQL, NOSQL , Power BI and Python.\", Experience Years Detected: 2",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "sql": {
+      "w_cv": 1.1,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.1
+        },
+        "penalties": {},
+        "final_score": 1.1
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence Anchor: Summary: \"With experience in data extraction, analysis and visualization for large-scale projects, I’m proficient in SQL, NOSQL , Power BI and Python.\", Experience Years Detected: 2",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "hadoop": {
+      "w_cv": 0.85,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.1
+        },
+        "penalties": {},
+        "final_score": 0.85
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence Anchor: Certs: \"Hadoop Foundations - Level 2\", Certification Found: true",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm"
+    },
+    "machine-learning": {
+      "w_cv": 0.5,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence Anchor: , \" (no mention of project application), Skill Type: Hard Skill",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "tableau": {
+      "w_cv": 0.85,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.1
+        },
+        "penalties": {},
+        "final_score": 0.85
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence Anchor: , \" (no mention of project application), Experience Years Detected: 2",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm"
+    },
+    "spark": {
+      "w_cv": 1.1,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.1
+        },
+        "penalties": {},
+        "final_score": 1.1
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence Anchor: Preamble: \"Top Skills\nPython\nHadoop\nApache Spark\", Certification Found: true",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm"
+    }
+  },
+  "scored_edges": {
+    "data-scientist|python|data-scientist|sql": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": -0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Temporal overlap exists, but no explicit project description mentions both skills together (cv_excerpt: \"Data scientist at Data For Brands\").",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "data-scientist|python|data-scientist|hadoop": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.4,
+        "penalties": -0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Emna worked as a data scientist at Data For Brands, where Hadoop is likely used in conjunction with Python for large-scale projects (cv_excerpt: \"Data scientist at Data For Brands\").",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "data-scientist|python|data-scientist|spark": {
+      "synergy_score": 0.9,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.5,
+        "penalties": -0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Emna is certified in Spark Overview for Scala Analytics, which indicates her proficiency in using Spark with Python (cv_excerpt: null).",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.9
+    },
+    "data-scientist|python|data-scientist|tableau": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": -0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Temporal overlap exists, but no explicit project description mentions both skills together (cv_excerpt: null).",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "data-scientist|sql": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": 0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Temporal overlap only; data scientist role and SQL proficiency mentioned in \"Data analyst at Infor\" section, but no explicit project description mentions both skills together.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "data-scientist|hadoop": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Same sentence in \"Infor\" section: \"Business Data analyst at Infor\nJanuary 2024 - Present (2 years 2 months)\nhadoop, Python...\", indicating proficiency in Hadoop while being a data scientist.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "data-scientist|spark": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Same sentence in \"Infor\" section: \"Business Data analyst at Infor\nJanuary 2024 - Present (2 years 2 months)\nSpark Overview for Scala Analytics...\", indicating proficiency in Spark while being a data scientist.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "data-scientist|tableau": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": 0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Temporal overlap only; data scientist role and Tableau proficiency mentioned, but no explicit project description mentions both skills together.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "data-scientist|hadoop|data-scientist|tableau": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.8,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence found that Emna used both Hadoop and Tableau together in the same role or project.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "data-scientist|spark|data-scientist|tableau": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.55,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Emna's experience as a Data Scientist at Infor (2024-present) mentions proficiency in Apache Spark, which demonstrates synergy with Tableau.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "python|machine-learning": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.8,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No explicit or implicit evidence of using Python and Machine Learning together in the same role or project.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    }
+  },
+  "metadata": {
+    "skills_scored": 7,
+    "mean_score": 0.786,
+    "edges_scored": 11,
+    "mean_synergy": 0.445,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.445,
+      "max": 0.9,
+      "min": 0.0
+    },
+    "batches_ok": 1,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.786,
+      "max": 1.0,
+      "min": 0.5,
+      "above_1": 3,
+      "below_05": 0
+    }
+  }
+}

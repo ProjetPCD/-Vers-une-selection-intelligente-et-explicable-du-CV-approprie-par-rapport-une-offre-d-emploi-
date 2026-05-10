@@ -1,0 +1,463 @@
+{
+  "job_id": "job_17",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-04T13:16:52.250224",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 41.37,
+    "confidence": {
+      "confidence_score": 0.8,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.571,
+        "coverage_rate": 0.929,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.6337,
+    "edge_score": 0.4892,
+    "combined": 0.5759
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3508,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6161,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5863,
+    "matched_nodes": "2/14",
+    "edge_match_pct": 24.45
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3547,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.4465,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.3141,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.2857,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.5059,
+    "weighted_recall": 0.1921,
+    "weighted_f1": {
+      "value": 0.3408,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6031,
+    "missing_critical_penalty": {
+      "value": 0.2857,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9056,
+    "ndcg_10": 0.9525,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9306,
+    "top_skill_alignment": 0.4614,
+    "semantic_fit_score": 0.4158,
+    "experience_density": 0.283
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 39.02,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 36.96,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 34.26,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 96.22,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 50.63,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 42.32,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 46.82,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 8,
+      "match_pct": 37.3,
+      "weight_sum": 7.533
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 20.6,
+      "weight_sum": 0.814
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 31.3,
+      "weight_sum": 3.158
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 24.45,
+    "total_edges": 10,
+    "top_synergies": [
+      {
+        "edge_key": "devops-engineer-kubernetes|devops-engineer-docker",
+        "source": "devops-engineer-kubernetes",
+        "target": "devops-engineer-docker",
+        "w_0": 0.988,
+        "w_cv": 0.847,
+        "w_cv_norm": 0.423,
+        "match_pct": 42.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devops-engineer-terraform|devops-engineer-aws",
+        "source": "devops-engineer-terraform",
+        "target": "devops-engineer-aws",
+        "w_0": 0.958,
+        "w_cv": 0.843,
+        "w_cv_norm": 0.421,
+        "match_pct": 44.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devops-engineer-git|devops-engineer-engineer",
+        "source": "devops-engineer-git",
+        "target": "devops-engineer-engineer",
+        "w_0": 0.854,
+        "w_cv": 0.64,
+        "w_cv_norm": 0.32,
+        "match_pct": 37.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devops-engineer-communication|devops-engineer-engineer",
+        "source": "devops-engineer-communication",
+        "target": "devops-engineer-engineer",
+        "w_0": 0.776,
+        "w_cv": 0.532,
+        "w_cv_norm": 0.266,
+        "match_pct": 34.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devops-engineer-kubernetes|devops-engineer-grafana-experience",
+        "source": "devops-engineer-kubernetes",
+        "target": "devops-engineer-grafana-experience",
+        "w_0": 0.958,
+        "w_cv": 0.452,
+        "w_cv_norm": 0.226,
+        "match_pct": 23.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "AWS",
+      "type": "Tool",
+      "gap": 0.747,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Engineer",
+      "type": "Education",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Kubernetes",
+      "type": "Tool",
+      "gap": 0.781,
+      "severity": "critical",
+      "importance": 0.988
+    },
+    {
+      "skill": "Prometheus",
+      "type": "Tool",
+      "gap": 0.728,
+      "severity": "critical",
+      "importance": 0.958
+    },
+    {
+      "skill": "Grafana",
+      "type": "Tool",
+      "gap": 0.713,
+      "severity": "critical",
+      "importance": 0.958
+    },
+    {
+      "skill": "Agile",
+      "type": "Soft Skill",
+      "gap": 0.717,
+      "severity": "critical",
+      "importance": 0.83
+    },
+    {
+      "skill": "Agile Methodologies",
+      "type": "Hard Skill",
+      "gap": 0.607,
+      "severity": "critical",
+      "importance": 0.814
+    },
+    {
+      "skill": "Jira",
+      "type": "Tool",
+      "gap": 0.628,
+      "severity": "critical",
+      "importance": 0.787
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "AWS",
+        "type": "Tool",
+        "gap": 0.747
+      },
+      {
+        "label": "Engineer",
+        "type": "Education",
+        "gap": 1.0
+      },
+      {
+        "label": "Kubernetes",
+        "type": "Tool",
+        "gap": 0.781
+      },
+      {
+        "label": "Prometheus",
+        "type": "Tool",
+        "gap": 0.728
+      },
+      {
+        "label": "Grafana",
+        "type": "Tool",
+        "gap": 0.713
+      },
+      {
+        "label": "Agile",
+        "type": "Soft Skill",
+        "gap": 0.717
+      },
+      {
+        "label": "Agile Methodologies",
+        "type": "Hard Skill",
+        "gap": 0.607
+      },
+      {
+        "label": "Jira",
+        "type": "Tool",
+        "gap": 0.628
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 13,
+    "nodes_with_bias": 13,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 8,
+      "C": 2,
+      "D": 1,
+      "PRESTIGE": 1,
+      "GENDER_DIVERSITY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "devops-engineer-terraform",
+        "label": "Terraform",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.179,
+        "reason": "The CV exhibits proxy bias through the candidate's location (Pune, Maharashtra, India) and the specific technologies listed (Azure, Github). While the job description doesn't explicitly exclude candidates outside of the target geographical area, the weighting increase suggests an unintended preference for candidates with experience within the Indian tech ecosystem, potentially overlooking equally qualified individuals elsewhere.  The explicit mention of Azure, a specific cloud provider, further reinforces this proxy bias, even if the JD lists AWS as a primary technology. The justification acknowledges the positive experience and skills, but a slight increase in the correction factor is warranted to counteract the bias inherent in prioritizing location and specific cloud platform expertise."
+      },
+      {
+        "id": "devops-engineer-aws",
+        "label": "AWS",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.506,
+        "reason": "The CV prominently highlights experience with Azure and IBM, while the job description specifically emphasizes AWS and Terraform. This suggests a bias towards candidates with Azure expertise, even though the role requires significant AWS skills. The location of ‘Pune, Maharashtra, India’ within the CV points towards a location bias as Pune is not a major AWS hub compared to other regions, unfairly penalizing candidates from this area. A fair alternative would prioritize demonstrable skills in the specified technologies (Kubernetes, Terraform, AWS) regardless of the candidate's primary experience, and location."
+      },
+      {
+        "id": "devops-engineer-kubernetes",
+        "label": "Kubernetes",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.413,
+        "reason": "The significant decrease in weight (-0.438) coupled with the lack of direct evidence of skills demonstrated in the application (only mentioning tools in the summary) suggests a PROXY BIAS. The application primarily focuses on listing technologies aligned with the job description, lacking specific accomplishments or quantified results. Furthermore, the CV includes a diverse range of previous roles (SEO Analyst, IBM Associate) which, while providing experience, doesn't directly align with the core requirements of a DevOps Engineer specializing in Kubernetes and cloud technologies, creating a mismatch between the ideal weight (0.988) and the adjusted weight (0.55). A reduced factor of 0.75 reflects the application's reliance on general technical knowledge rather than demonstrable expertise in the key technologies."
+      },
+      {
+        "id": "devops-engineer-docker",
+        "label": "Docker",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.281,
+        "reason": "The increased weight (Delta of +0.037) is primarily driven by the candidate's experience with tools like Docker, GitHub Actions, and Azure, all of which are explicitly listed in the job description (JD). The CV highlights these skills prominently, suggesting a direct match to the required stack.  Furthermore, the candidate's location (Pune, India) – while not directly a skill – aligns with the company's operational base, indicating a lower relocation cost and potentially a stronger cultural fit, which the algorithm implicitly favors as a proxy for long-term commitment and reduced risk. This suggests a PROXY BIAS favoring candidates from the same geographic region, even if skills are comparable."
+      },
+      {
+        "id": "devops-engineer-prometheus-experience",
+        "label": "Prometheus",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.46,
+        "reason": "The candidate's CV heavily emphasizes location (Pune, Maharashtra, India) and their previous role at TCS in India, aligning with a lower-cost location. While experience is valuable, the system penalized the candidate for being located in a region associated with lower labor costs, demonstrating a proxy bias related to socioeconomic signals. A fair alternative would be to evaluate the candidate solely on their skills and experience, irrespective of their geographical location, with a factor of 1.25 to mitigate the impact of the location on the score. The decreased weight reflects an unfair penalization due to the contextual location."
+      },
+      {
+        "id": "devops-engineer-grafana-experience",
+        "label": "Grafana",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.49,
+        "reason": "The weight change (0.958 to 0.613) is significantly decreased (-0.345) due to the CV highlighting experience with Azure and a less-known tool (SonarQube) compared to the ideal profile emphasized in the job description (Kubernetes, Terraform, Prometheus, Grafana). This suggests a Prestige Bias – the algorithm is prioritizing technologies mentioned more prominently in the JD, potentially overlooking valuable skills like Azure expertise, which is increasingly important in DevOps, and penalizing the use of SonarQube which is a robust tool for code quality. A correction factor of 0.80 is applied to reflect the importance of the Azure experience and to mitigate the impact of the less emphasized skills, promoting a more balanced assessment."
+      },
+      {
+        "id": "devops-engineer-git",
+        "label": "Git",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.281,
+        "reason": "The significant increase in weight (0.171) is primarily driven by the explicit mention of ‘GitHub Action’ within the CV, which aligns directly with the job description's requirement for expertise in this specific DevOps tool. While the experience and project context are positive, the disproportionate weighting assigned to GitHub Action suggests a prestige bias favoring candidates highlighting this tool, potentially overlooking other equally valuable DevOps skills. A correction factor of 1.25 is applied to account for this potentially inflated emphasis on a single, fashionable technology, recognizing the value of the other demonstrated skills."
+      },
+      {
+        "id": "devops-engineer-agile",
+        "label": "Agile Methodologies",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.413,
+        "reason": "The CV heavily emphasizes geographic location (Pune, Maharashtra, India) and prior employment at Indian companies (TCS, Accenture, Prudour), suggesting a proxy for socioeconomic status and potentially limiting the talent pool to candidates from a specific region. While experience is valuable, prioritizing candidates based on location introduces a bias, unfairly penalizing candidates from other regions. The reduction in weight (-0.264) reflects this proxy bias, and a correction factor of 0.75 indicates it's not a critical bias, but warrants attention; a fair alternative would involve focusing solely on skills and experience regardless of location."
+      },
+      {
+        "id": "devops-engineer-agile-skills",
+        "label": "Agile",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The CV emphasizes experience at Indian companies (TCS, Accenture, IBM) and location in Pune, Maharashtra, India, signaling a socioeconomic proxy. While skills are listed, the lack of information about specific project accomplishments or quantifiable results within those roles contributes to the reduced weight. This reflects a potential bias towards candidates from specific geographical locations, unfairly disadvantaging those from other areas. A fair alternative would be to prioritize demonstrable skills and project outcomes regardless of the company or location."
+      },
+      {
+        "id": "devops-engineer-communication",
+        "label": "Communication Skills",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.064,
+        "reason": "The evidence suggests the candidate explicitly stated a desire for a ‘progressive work culture with all freedom to deliver perfection’, indicating a prioritization of communication and collaboration – aligning with the JD’s requirements. However, the CV includes a self-description emphasizing ‘perfection’ and a focus on ‘freedom,’ which, while positive, could be interpreted as prioritizing individual performance over teamwork, potentially leading to a bias favoring individuals who demonstrate an intense drive. The increased weight reflects the importance of communication, but the strong emphasis on ‘perfection’ and potentially driven performance adds a layer of subjectivity that needs to be mitigated."
+      },
+      {
+        "id": "devops-engineer-time-management",
+        "label": "Time Management Skills",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.659,
+        "reason": "This audit identifies a bias stemming from a proxy signal. The CV explicitly states 3.5 years of experience, which is a numerical signal. However, the algorithm is undervaluing this experience likely due to the location (India) being presented as a proxy for perceived skill level or cost of labor. A reasonable correction factor is applied to reflect the value of the 3.5 years of experience, recognizing the candidate's demonstrated skills in Azure, Terraform, and DevOps practices, acknowledging that experience in a global context can vary in its delivery and application."
+      },
+      {
+        "id": "devops-engineer-problem-solving",
+        "label": "Problem Solving Skills",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.581,
+        "reason": "The decreased weight (Delta = -0.001) likely reflects a proxy bias related to the candidate’s location (India - Pune, Maharashtra). The JD heavily emphasizes technologies commonly used and prevalent in the Indian tech market (Azure, Terraform, Kubernetes).  While experience is a factor, the strong emphasis on specific technologies within the job description, combined with the candidate’s location, suggests the algorithm is prioritizing candidates with experience in that particular geographic ecosystem, rather than a genuine assessment of problem-solving skills.  A fair alternative would involve assessing problem-solving abilities through a standardized test or behavioral interview, irrespective of the candidate's location or technological stack familiarity."
+      },
+      {
+        "id": "devops-engineer-jira-experience",
+        "label": "Jira",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.319,
+        "reason": "The CV heavily emphasizes location (Pune, Maharashtra, India) and previous employers (TCS, Accenture) which, while relevant experience, serve as a proxy for socioeconomic status and potentially access to networks.  The JD's focus on specific technologies (Kubernetes, Terraform, AWS) without explicitly stating required experience levels disproportionately weights the candidate's Jira experience, treating Jira as a primary skill without assessing the depth of practical application. This indicates a preference for candidates from established tech companies in India, unfairly penalizing candidates without that specific geographical or employer history, therefore proxy bias is present. A fair alternative would be to evaluate skill demonstrated through projects and certifications, not solely on the name of the company previously worked for."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3508 (sous-qualifié), CTM=0.6161 (écart structurel élevé), match_pct=41.37% → Poor Match",
+    "v6_summary": "weighted_f1=0.3408, gap_score=0.3141, ndcg_5=0.9056, missing_critical_penalty=0.2857, combo_v6_final=39.02",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "8 gaps critiques identifiés",
+    "bias_note": "13 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.8)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

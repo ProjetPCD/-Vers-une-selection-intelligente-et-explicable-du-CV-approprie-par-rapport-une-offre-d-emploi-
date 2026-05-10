@@ -1,0 +1,432 @@
+{
+  "job_id": "job_27",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-05T12:24:41.448087",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 46.52,
+    "confidence": {
+      "confidence_score": 0.69,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.312,
+        "coverage_rate": 0.75,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.6048,
+    "edge_score": 0.558,
+    "combined": 0.5861
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3612,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5573,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5348,
+    "matched_nodes": "1/16",
+    "edge_match_pct": 27.91
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.342,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.5216,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.3217,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.25,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.5738,
+    "weighted_recall": 0.1892,
+    "weighted_f1": {
+      "value": 0.3378,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6117,
+    "missing_critical_penalty": {
+      "value": 0.3636,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9842,
+    "ndcg_10": 0.9457,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8957,
+    "top_skill_alignment": 0.6558,
+    "semantic_fit_score": 0.757,
+    "experience_density": 0.2438
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 42.14,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 38.19,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 45.61,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 99.37,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 51.38,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 45.75,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 56.02,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 6,
+      "match_pct": 34.3,
+      "weight_sum": 5.11
+    },
+    "Tool": {
+      "count": 2,
+      "match_pct": 51.8,
+      "weight_sum": 1.903
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 50.0,
+      "weight_sum": 0.915
+    },
+    "Domain": {
+      "count": 3,
+      "match_pct": 10.9,
+      "weight_sum": 2.369
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 17.1,
+      "weight_sum": 2.601
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 27.91,
+    "total_edges": 10,
+    "top_synergies": [
+      {
+        "edge_key": "java-skill|system-embedded-domain",
+        "source": "java-skill",
+        "target": "system-embedded-domain",
+        "w_0": 0.68,
+        "w_cv": 0.91,
+        "w_cv_norm": 0.455,
+        "match_pct": 66.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "git-tool|system-embedded-domain",
+        "source": "git-tool",
+        "target": "system-embedded-domain",
+        "w_0": 0.75,
+        "w_cv": 0.87,
+        "w_cv_norm": 0.435,
+        "match_pct": 58.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "engineering-education|system-embedded-domain",
+        "source": "engineering-education",
+        "target": "system-embedded-domain",
+        "w_0": 0.85,
+        "w_cv": 0.72,
+        "w_cv_norm": 0.36,
+        "match_pct": 42.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "svn-tool|system-embedded-domain",
+        "source": "svn-tool",
+        "target": "system-embedded-domain",
+        "w_0": 0.7,
+        "w_cv": 0.614,
+        "w_cv_norm": 0.307,
+        "match_pct": 43.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "communication_efficace|system-embedded-domain",
+        "source": "communication_efficace",
+        "target": "system-embedded-domain",
+        "w_0": 0.6,
+        "w_cv": 0.538,
+        "w_cv_norm": 0.269,
+        "match_pct": 44.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "VHDL",
+      "type": "Hard Skill",
+      "gap": 0.89,
+      "severity": "critical",
+      "importance": 0.984
+    },
+    {
+      "skill": "ingénieur système embarqué",
+      "type": "Domain",
+      "gap": 0.663,
+      "severity": "critical",
+      "importance": 0.883
+    },
+    {
+      "skill": "C/C++",
+      "type": "Hard Skill",
+      "gap": 0.667,
+      "severity": "critical",
+      "importance": 0.874
+    },
+    {
+      "skill": "systèmes embarqués",
+      "type": "Domain",
+      "gap": 0.797,
+      "severity": "critical",
+      "importance": 0.797
+    },
+    {
+      "skill": "capacité de travailler en équipe",
+      "type": "Soft Skill",
+      "gap": 0.674,
+      "severity": "critical",
+      "importance": 0.768
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "VHDL",
+        "type": "Hard Skill",
+        "gap": 0.89
+      },
+      {
+        "label": "ingénieur système embarqué",
+        "type": "Domain",
+        "gap": 0.663
+      },
+      {
+        "label": "C/C++",
+        "type": "Hard Skill",
+        "gap": 0.667
+      },
+      {
+        "label": "systèmes embarqués",
+        "type": "Domain",
+        "gap": 0.797
+      },
+      {
+        "label": "capacité de travailler en équipe",
+        "type": "Soft Skill",
+        "gap": 0.674
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 15,
+    "nodes_with_bias": 13,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 5,
+      "B": 3,
+      "PRESTIGE": 1,
+      "C": 1,
+      "HALO": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "java-skill",
+        "label": "Java",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.38,
+        "reason": "The increase in weight for ‘java-skill’ is likely driven by the candidate’s role at InstaDeep – BionTech Gou, a recognized leader in embedded systems.  This implies a need for Java skills for model development and deployment, aligning with the JD requirements. While the CV clearly lists Java as a key skill, the weighting reflects a potential prestige bias prioritizing companies with a strong reputation, boosting the skill's importance beyond demonstrated proficiency – this is a key characteristic of prestige bias. A fairer alternative would have been to reduce the weighting if the Java skills were solely based on the candidate's self-assessment, not linked to the company’s reputation."
+      },
+      {
+        "id": "vhdl-skill",
+        "label": "VHDL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease in weight (from 0.984 to 0.25) for VHDL skills is likely driven by a proxy bias. The CV prominently lists several technical skills, but the context highlights that Mohamed Nadhir DAOUD's experience with VHDL within InstaDeep is limited and not explicitly showcased, instead focusing on his broader ML Engineering role.  This suggests the algorithm prioritized the presence of ‘VHDL’ within the candidate’s skills list without sufficient evidence of its practical application or expertise – a key indicator of proxy bias. A fair alternative would involve a deeper investigation into the specifics of his VHDL usage within InstaDeep projects, which is absent from the provided information. The delta of -0.734 further supports a bias caused by an over-emphasis on the *presence* of the skill rather than its demonstrated proficiency."
+      },
+      {
+        "id": "svn-tool",
+        "label": "SVN",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.788,
+        "reason": "The increased weight for SVN (version control) primarily reflects the CV’s explicit listing of Git and SVN as tools used in the candidate’s previous roles, specifically at InstaDeep. This constitutes a proxy bias – the system is rewarding familiarity with specific version control tools, irrespective of the candidate’s broader skills, experience, or performance. While using Git and SVN are relevant skills for a systems engineer, they aren't the core competency and weighting them so heavily suggests a preference for candidates using the same tools, rather than a rigorous assessment of technical ability. A fairer alternative would involve weighting skills based on demonstrable expertise and project impact, not tool proficiency alone."
+      },
+      {
+        "id": "engineering-education",
+        "label": "ingénieur",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.0,
+        "reason": "The audit identifies a negative weight change (w_cv = 0.8 compared to ideal 0.915) due to a lack of demonstrable connection between the candidate's engineering education and their InstaDeep role. The CV focuses heavily on the PhD and prior experience at SOTIPAPIER and ARDIA, lacking details on how the Master's degree in Artificial Intelligence from Ensit directly relates to the JD's requirements for system embedded engineering. This proxy bias relies on prestige (Ensit, PhD in AI) rather than directly assessing skills related to C/C++, VHDL, and other technologies listed in the job description, therefore unfairly penalizing the candidate."
+      },
+      {
+        "id": "system-embedded-domain",
+        "label": "ingénieur système embarqué",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.44,
+        "reason": "The weight change (w_0 from 0.883 to 0.55) suggests a penalty against the candidate's experience at InstaDeep due to a weak connection to the advertised role in 'systems embedded'. The CV highlights the candidate's senior ML engineering role at InstaDeep, a well-known company in AI/ML, and lists extensive technical skills relevant to the job description. However, the JD's emphasis on ‘systems embedded’ coupled with the minimal evidence of InstaDeep experience directly related to this domain leads to a reduced weighting. This indicates a proxy bias – the system is prioritizing a company name (InstaDeep) which, while respectable, doesn't inherently translate to expertise in embedded systems. A fair alternative would be to focus on the candidate's core ML skills, experience with relevant tools, and demonstrable understanding of the technology stack, rather than simply the employer."
+      },
+      {
+        "id": "c-plus-plus-skill",
+        "label": "C/C++",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.413,
+        "reason": "The significant decrease in weight for C/C++ (w_0 from 0.874 to 0.55) is likely proxy bias. The candidate's experience at InstaDeep, a leading ML company, is primarily focused on Machine Learning roles utilizing Python and other modern tools, while the JD explicitly lists C/C++ as a required skill. The CV’s experience does not emphasize C/C++ despite being listed, suggesting a mismatch between the candidate's demonstrated skills and the JD’s weighting, favoring a more contemporary skill set. A correction factor of 0.75 is applied to account for this mismatch, recognizing the listed skill has a reduced relevance in the context of the candidate's most recent and impactful experience."
+      },
+      {
+        "id": "teamwork-soft-skill",
+        "label": "capacité de travailler en équipe",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's experience is heavily weighted towards machine learning roles at InstaDeep, but the evidence anchor (teamwork skill) is simply listed without any supporting details or context regarding their collaboration efforts. This suggests a Gender/Diversity bias – unfairly penalizing a candidate for lacking explicitly documented teamwork experience, especially considering the strength of their technical ML skills and the demanding nature of the role. A more fair alternative would be to require specific examples of collaborative projects or team contributions, rather than relying solely on a generic ‘teamwork’ skill listed on a CV."
+      },
+      {
+        "id": "communication_efficace",
+        "label": "Communication efficace",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The CV lists multiple languages (Arabic, German, French, English) prominently, demonstrating strong multilingual capabilities - a skill often valued in international tech companies. However, the weighted score decreased slightly (-0.009) suggesting the automated system may have unintentionally penalized this strong soft skill. A correction factor of 0.85 acknowledges the value of multilingualism while ensuring the system doesn't overemphasize the simple presence of these languages at the expense of other relevant skills; furthermore, the applicant's extensive experience as a Senior Machine Learning Engineer at InstaDeep further supports the weight given to this skill."
+      },
+      {
+        "id": "systems_real_time",
+        "label": "Systèmes temps-réel",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The systems temps-réel (real-time systems) requirement is absent from the CV, despite the JD explicitly stating it as a desired experience. This suggests the algorithm is unfairly penalizing candidates who lack experience in this specific domain, even though experience in broader embedded systems is present. This proxy for ‘real-time systems’ experience (location of work/previous company) is driving the low score, prioritizing a niche skill over demonstrated competency.  A fairer alternative would be to assess candidates based solely on their stated skills and experience in embedded systems development, while acknowledging that the absence of specific mention doesn't automatically negate a candidate's suitability.  The Delta of -0.439 indicates a significant decrease in weight, implying a strong bias towards the missing keyword."
+      },
+      {
+        "id": "agile_methodology",
+        "label": "Méthodes de gestion de projet agiles",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The decrease in weight (-0.005) for ‘agile methodology’ is likely a halo effect. The candidate's CV prominently lists ‘Digital Transformation Project Manager’ and experience, which heavily influenced the initial score.  The mere mention of ‘agile methodology’ (explicitly requested in the JD) has been given undue weight, inflating the score beyond what a solely skills-based evaluation would justify.  A more fair alternative would be to discount the score slightly, recognizing that familiarity with agile is a beneficial asset, not a primary requirement. The weight change reflects an overemphasis on a single listed skill rather than a holistic assessment of the candidate's technical capabilities and experience."
+      },
+      {
+        "id": "c_plus_plus",
+        "label": "C++",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.163,
+        "reason": "The CV explicitly states 'MLOps Applied Machine Learning' and 'Python for Applied Data Science' indicating proficiency in C++ is not relevant to the role. The JD prioritizes C/C++ for system embedded development, demonstrating a mismatch between the candidate's skills and the job requirements. This indicates a penalization of a skill not needed, representing a bias against candidates with diverse experience, further compounded by the CV's focus on advanced ML areas not aligned with the specific requirement."
+      },
+      {
+        "id": "problem_solving",
+        "label": "Résolution de problèmes",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The reduction in weight for 'problem-solving' (w_0 from 0.55 to 0.4) is likely biased due to the lack of specific evidence in the CV. While the JD explicitly lists problem-solving as an essential soft skill, Mohamed Nadhir DAOUD’s CV focuses heavily on senior leadership roles, machine learning engineering, and diverse technical qualifications, overshadowing evidence of practical problem-solving skills. The breadth of experience – including a recent PhD in Artificial Intelligence, a role at InstaDeep, and a previous CDO position – suggests a shift in focus away from hands-on problem-solving tasks, rather than a reflection of a genuine lack of ability.  A correction factor of 0.75 acknowledges this skewed weighting and represents a moderately reduced bias."
+      },
+      {
+        "id": "soft_skills",
+        "label": "Soft skills",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The weight on 'soft skills' decreased significantly (-0.274) despite the candidate possessing relevant experience (Senior ML Engineer at InstaDeep, CDO, Digital Transformation Project Manager). The JD explicitly states that 'Des soft skills telles que la capacité de travailler en équipe, la communication efficace et la résolution de problèmes sont également essentielles', yet the CV lacks any quantifiable evidence or specific examples of these soft skills, leading to a penalization. This suggests a Gender/Diversity Bias, where the system is prioritizing technical skills over well-roundedness and potentially penalizing candidates with diverse professional backgrounds or those who may not have explicitly highlighted their soft skills on a resume. A lower weight should be assigned to ‘soft skills’ given the provided context and the candidate's extensive technical background."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3612 (sous-qualifié), CTM=0.5573 (écart structurel élevé), match_pct=46.52% → Poor Match",
+    "v6_summary": "weighted_f1=0.3378, gap_score=0.3217, ndcg_5=0.9842, missing_critical_penalty=0.3636, combo_v6_final=42.14",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "5 gaps critiques identifiés",
+    "bias_note": "13 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.69)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

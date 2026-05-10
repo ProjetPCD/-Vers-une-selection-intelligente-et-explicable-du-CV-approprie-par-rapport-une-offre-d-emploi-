@@ -1,0 +1,424 @@
+{
+  "job_id": "job_102",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-05T14:27:22.224806",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 38.74,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.467,
+        "coverage_rate": 0.4,
+        "nodes_audited": 4,
+        "nodes_biased": 4
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.212,
+    "edge_score": 0.1301,
+    "combined": 0.1793
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2575,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6559,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6126,
+    "matched_nodes": "5/15",
+    "edge_match_pct": 13.01
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2783,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.5692,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.1738,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.3333,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.163,
+    "weighted_recall": 0.2452,
+    "weighted_f1": {
+      "value": 0.405,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6357,
+    "missing_critical_penalty": {
+      "value": 0.2,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.8089,
+    "ndcg_10": 0.892,
+    "map_score": 0.9392,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8949,
+    "top_skill_alignment": 0.5262,
+    "semantic_fit_score": 0.3265,
+    "experience_density": 0.1623
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 37.15,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 39.39,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 26.71,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 90.23,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 51.81,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 33.11,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 48.63,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 59.4,
+      "weight_sum": 2.0
+    },
+    "Tool": {
+      "count": 8,
+      "match_pct": 6.8,
+      "weight_sum": 6.938
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 30.7,
+      "weight_sum": 2.102
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 30.0,
+      "weight_sum": 0.443
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 13.01,
+    "total_edges": 14,
+    "top_synergies": [
+      {
+        "edge_key": "node_js|backend_developer",
+        "source": "node_js",
+        "target": "backend_developer",
+        "w_0": 0.5,
+        "w_cv": 0.862,
+        "w_cv_norm": 0.862,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "git|node_js",
+        "source": "git",
+        "target": "node_js",
+        "w_0": 0.5,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.6,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "type_script|node_js",
+        "source": "type_script",
+        "target": "node_js",
+        "w_0": 0.5,
+        "w_cv": 0.36,
+        "w_cv_norm": 0.36,
+        "match_pct": 72.0,
+        "p3_confidence": "MEDIUM",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "nest_js|node_js",
+        "source": "nest_js",
+        "target": "node_js",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "redis|node_js",
+        "source": "redis",
+        "target": "node_js",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "NestJS",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Azure",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Redis",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "RabbitMQ",
+      "type": "Tool",
+      "gap": 0.92,
+      "severity": "critical",
+      "importance": 0.92
+    },
+    {
+      "skill": "ts-mockito",
+      "type": "Tool",
+      "gap": 0.832,
+      "severity": "critical",
+      "importance": 0.832
+    },
+    {
+      "skill": "Jest",
+      "type": "Tool",
+      "gap": 0.738,
+      "severity": "critical",
+      "importance": 0.738
+    },
+    {
+      "skill": "OpenAPI",
+      "type": "Tool",
+      "gap": 0.738,
+      "severity": "critical",
+      "importance": 0.738
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "NestJS",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Azure",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Redis",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "RabbitMQ",
+        "type": "Tool",
+        "gap": 0.92
+      },
+      {
+        "label": "ts-mockito",
+        "type": "Tool",
+        "gap": 0.832
+      },
+      {
+        "label": "Jest",
+        "type": "Tool",
+        "gap": 0.738
+      },
+      {
+        "label": "OpenAPI",
+        "type": "Tool",
+        "gap": 0.738
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 4,
+    "nodes_with_bias": 4,
+    "edges_audited": 3,
+    "edges_with_bias": 3,
+    "bias_categories": {
+      "PRESTIGE": 7
+    },
+    "biased_nodes": [
+      {
+        "id": "node_js",
+        "label": "Node.js",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 1.438,
+        "w_cv_corrected": 1.438,
+        "reason": "The weight change is likely due to prestige bias, as the candidate's experience and certification in Node.js are not fully valued. The candidate has 11 years of experience and relevant certifications, but the adapted weight is decreased. A fairer assessment would give more weight to the candidate's skills and experience, rather than penalizing them for not having a 'perfect' background."
+      },
+      {
+        "id": "type_script",
+        "label": "TypeScript",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.938,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's certification in TypeScript is mentioned in the certification section, but there is no project experience or external proof. The job description requires strong experience in TypeScript, and the candidate's certification is not sufficient to demonstrate this. A fairer assessment would consider the candidate's overall experience and skills, rather than relying solely on the certification."
+      },
+      {
+        "id": "git",
+        "label": "Git",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.32,
+        "w_cv_corrected": 1.32,
+        "reason": "The weight change is likely due to prestige bias, as the candidate's experience with Git is heavily emphasized in the CV, but the adapted weight is decreased. The evidence anchor points to UI development, which may not be directly related to the Node.js Backend Developer role. A correction factor of 1.20 is applied to increase the weight, as the candidate's Git experience is still relevant to the role, but not overly emphasized."
+      },
+      {
+        "id": "backend_developer",
+        "label": "Backend Developer",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience is from IBM, a well-known company, but the algorithm penalized the candidate's backend development skills. The candidate has relevant experience in API mock-up creation and maintenance using NodeJS, which aligns with the job description. The correction factor is set to 1.20 to increase the weight and fairly evaluate the candidate's skills."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "node_js|backend_developer",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_corrected": 0.862,
+        "reason": "The candidate's experience with Node.js is unfairly penalized due to their current role as a frontend developer, implying a prestige bias. The correction factor is set to 1.15 to account for the candidate's relevant skills and experience, despite not being a traditional backend developer."
+      },
+      {
+        "edge": "type_script|node_js",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.36,
+        "reason": "The candidate's certification in TypeScript and experience with Node.js are being overly weighted due to the prestige associated with having a certification, rather than solely based on the skills demonstrated. This is evident from the CV excerpt highlighting the certification, which may not be a direct indicator of their ability to perform the job requirements. A more merit-based approach would focus on the candidate's actual experience and skills in Node.js and TypeScript, rather than the certification itself."
+      },
+      {
+        "edge": "git|node_js",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased towards prestige, as the candidate's mention of using Git for code review is given more importance due to the association with Node.js development, rather than the actual skills demonstrated. A fairer approach would be to evaluate the candidate's skills in Git and Node.js separately, without giving undue weight to the synergy between the two."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2575 (sous-qualifié), CTM=0.6559 (écart structurel élevé), match_pct=38.74% → Poor Match",
+    "v6_summary": "weighted_f1=0.405, gap_score=0.1738, ndcg_5=0.8089, missing_critical_penalty=0.2, combo_v6_final=37.15",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "7 gaps critiques identifiés",
+    "bias_note": "4 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 1,
+    "pool_size": 10,
+    "percentile": 1.0,
+    "composite_z_score": 1.3486,
+    "tier": "Top 10%",
+    "z_scores": {
+      "combo_v6": 1.617,
+      "wf1": 2.047,
+      "gap_score": 1.339,
+      "ntcw": 1.563,
+      "match_pct": 1.907,
+      "ndcg_5": -0.212
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 18.232,
+        "std": 11.6995
+      },
+      "wf1": {
+        "mean": 0.1207,
+        "std": 0.1389
+      },
+      "gap_score": {
+        "mean": 0.0846,
+        "std": 0.0666
+      },
+      "ntcw": {
+        "mean": 0.1157,
+        "std": 0.0907
+      },
+      "match_pct": {
+        "mean": 24.15,
+        "std": 7.6522
+      },
+      "ndcg_5": {
+        "mean": 0.8241,
+        "std": 0.0713
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

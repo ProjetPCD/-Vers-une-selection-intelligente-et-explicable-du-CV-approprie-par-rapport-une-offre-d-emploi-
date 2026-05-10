@@ -1,0 +1,406 @@
+{
+  "job_id": "job_12",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-03T14:36:51.017548",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 33.9,
+    "confidence": {
+      "confidence_score": 0.59,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.6,
+        "coverage_rate": 0.7,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.2997,
+    "edge_score": 0.1652,
+    "combined": 0.2459
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1848,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.663,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.661,
+    "matched_nodes": "0/20",
+    "edge_match_pct": 8.27
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1553,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1121,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1527,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1875,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.7349,
+    "weighted_recall": 0.1251,
+    "weighted_f1": {
+      "value": 0.2334,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5594,
+    "missing_critical_penalty": {
+      "value": 0.2143,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9819,
+    "ndcg_10": 0.9926,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9293,
+    "top_skill_alignment": 0.4542,
+    "semantic_fit_score": 0.6083,
+    "experience_density": 0.1132
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 24.8,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 14.82,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 32.09,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 99.28,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 45.97,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 33.88,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 41.76,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 5,
+      "match_pct": 18.1,
+      "weight_sum": 4.023
+    },
+    "Tool": {
+      "count": 10,
+      "match_pct": 18.4,
+      "weight_sum": 7.849
+    },
+    "Domain": {
+      "count": 3,
+      "match_pct": 4.9,
+      "weight_sum": 1.809
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 0.0,
+      "weight_sum": 1.419
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 8.27,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "edge-ai-expert-python|candidate_profile",
+        "source": "edge-ai-expert-python",
+        "target": "candidate_profile",
+        "w_0": 0.95,
+        "w_cv": 0.9,
+        "w_cv_norm": 0.45,
+        "match_pct": 47.4,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "edge-ai-expert-pytorch|candidate_profile",
+        "source": "edge-ai-expert-pytorch",
+        "target": "candidate_profile",
+        "w_0": 0.88,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.3,
+        "match_pct": 34.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "github|candidate_profile",
+        "source": "github",
+        "target": "candidate_profile",
+        "w_0": 0.81,
+        "w_cv": 0.094,
+        "w_cv_norm": 0.047,
+        "match_pct": 5.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "edge-ai-expert-rust|candidate_profile",
+        "source": "edge-ai-expert-rust",
+        "target": "candidate_profile",
+        "w_0": 0.92,
+        "w_cv": 0.082,
+        "w_cv_norm": 0.041,
+        "match_pct": 4.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "c-plus-plus|candidate_profile",
+        "source": "c-plus-plus",
+        "target": "candidate_profile",
+        "w_0": 0.84,
+        "w_cv": 0.082,
+        "w_cv_norm": 0.041,
+        "match_pct": 4.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Azure DevOps",
+      "type": "Tool",
+      "gap": 0.681,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Rust",
+      "type": "Hard Skill",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 0.988
+    },
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.977,
+      "severity": "critical",
+      "importance": 0.977
+    },
+    {
+      "skill": "Edge AI et systèmes embarqués",
+      "type": "Domain",
+      "gap": 0.856,
+      "severity": "critical",
+      "importance": 0.95
+    },
+    {
+      "skill": "C++",
+      "type": "Hard Skill",
+      "gap": 0.79,
+      "severity": "critical",
+      "importance": 0.872
+    },
+    {
+      "skill": "GitHub",
+      "type": "Tool",
+      "gap": 0.736,
+      "severity": "critical",
+      "importance": 0.83
+    },
+    {
+      "skill": "LLVM",
+      "type": "Tool",
+      "gap": 0.76,
+      "severity": "critical",
+      "importance": 0.76
+    },
+    {
+      "skill": "Communication",
+      "type": "Soft Skill",
+      "gap": 0.748,
+      "severity": "critical",
+      "importance": 0.748
+    },
+    {
+      "skill": "ONNX",
+      "type": "Tool",
+      "gap": 0.721,
+      "severity": "critical",
+      "importance": 0.721
+    },
+    {
+      "skill": "VSCode",
+      "type": "Tool",
+      "gap": 0.708,
+      "severity": "critical",
+      "importance": 0.708
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Azure DevOps",
+        "type": "Tool",
+        "gap": 0.681
+      },
+      {
+        "label": "Rust",
+        "type": "Hard Skill",
+        "gap": 0.906
+      },
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.977
+      },
+      {
+        "label": "Edge AI et systèmes embarqués",
+        "type": "Domain",
+        "gap": 0.856
+      },
+      {
+        "label": "C++",
+        "type": "Hard Skill",
+        "gap": 0.79
+      },
+      {
+        "label": "GitHub",
+        "type": "Tool",
+        "gap": 0.736
+      },
+      {
+        "label": "LLVM",
+        "type": "Tool",
+        "gap": 0.76
+      },
+      {
+        "label": "Communication",
+        "type": "Soft Skill",
+        "gap": 0.748
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 8,
+    "nodes_with_bias": 6,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "D": 2,
+      "PROXY": 2,
+      "C": 1,
+      "C_PROXY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "edge-ai-expert-rust",
+        "label": "Rust",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.163,
+        "reason": "This weight change from 0.988 to 0.25 is significantly impacted by the presence of 'Rust' on the CV without any context or demonstrated experience.  This falls squarely under PROXY BIAS – the algorithm is penalizing the candidate for listing a modern language (Rust) that is mentioned in the job description, but without evidence of proficiency or practical application.  The ideal weight reflects a strong candidate with demonstrated skills; the reduced weight suggests a reliance on a single, unsupported skill, favoring prestige over demonstrated competence. A fairer alternative would be to weigh the candidate based on Python skills and the candidate’s overall experience, providing a less punitive approach."
+      },
+      {
+        "id": "edge-ai-expert-azure-devops",
+        "label": "Azure DevOps",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The CV lists 'Azure DevOps' as a skill, which aligns with the job description’s emphasis on systems integration and software development, but the candidate's experience is primarily in data consulting, AI model interpretation, and systems engineering internships. The focus on DevOps, coupled with a consultancy role, may be unduly penalizing the candidate for lacking explicit DevOps experience, relying on a proxy signal (DevOps skill) to assess suitability for a role heavily focused on embedded AI and systems design. A correction factor of 0.85 reflects this overemphasis on the skill rather than the candidate's core competencies. It's important to prioritize the candidate's demonstrated skills in AI, deep learning, and systems engineering, as well as her geographical location to mitigate potential bias."
+      },
+      {
+        "id": "edge-ai-expert-pytorch",
+        "label": "PyTorch",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.2,
+        "reason": "The increased weight assigned to the candidate’s skill in 'Python' is likely a proxy bias reflecting the JD's explicit requirement for Python proficiency. While Oumaima’s CV clearly lists Python, the JD’s focus on Edge AI and systems embedded significantly narrows the skillset considered valuable, potentially overweighting Python in this specific context.  A more nuanced approach would consider the candidate’s overall experience and how their skills align with the broader requirements of the role, rather than solely relying on a single keyword match, thus impacting the selection."
+      },
+      {
+        "id": "edge-ai-systems-embedded",
+        "label": "Edge AI et systèmes embarqués",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease in weight (-0.70) for the 'Edge AI et systèmes embarqués' skill is likely due to the CV lacking supporting details and context. The job description explicitly requires an 'expert' with a strong background, yet the CV primarily focuses on data science skills (Python, Power BI, etc.) and internship experience with a limited (7 months) focus on a specific deep learning project related to Edge AI.  This reflects a potential Ageism bias – relying heavily on graduation year and a limited project experience without demonstrating concrete Edge AI expertise. A fairer alternative would be to assign a lower weight, but not as drastically reduced, considering the applicant’s diverse skillset and willingness to learn. However, given the significant decrease, a 75% correction factor is appropriate to mitigate the impact of this overly low weighting."
+      },
+      {
+        "id": "c-plus-plus",
+        "label": "C++",
+        "bias_category": "C_PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.163,
+        "reason": "The CV mentions 'C++' but lacks demonstrable expertise or recent project experience, leading to a significant weight reduction. This suggests a proxy bias, where the presence of C++ is favored despite a lack of concrete evidence of skills due to the JD's focus on Edge AI and systems embedded. A more fair alternative would be to assess skills based on project involvement and demonstrable proficiency in the technologies listed in the JD, rather than relying solely on the presence of the language itself."
+      },
+      {
+        "id": "github",
+        "label": "GitHub",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV lists 'GitHub' as a skill but lacks context, and a 'ghost_skill' penalty is applied. The job description heavily emphasizes experience with cutting-edge AI tools and systems (LLVM, TVM, etc.), yet the CV's listing of GitHub is minimal and lacks demonstration of practical application within those technologies. This indicates a reliance on a signal (GitHub) without sufficient supporting evidence, reflecting a proxy bias based on online presence rather than demonstrable skills.  A correction factor of 0.75 reflects the unfair penalization, as the applicant possesses relevant technical skills and experience, but the lack of contextual GitHub usage is a significant detriment."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1848 (sous-qualifié), CTM=0.663 (écart structurel élevé), match_pct=33.9% → Poor Match",
+    "v6_summary": "weighted_f1=0.2334, gap_score=0.1527, ndcg_5=0.9819, missing_critical_penalty=0.2143, combo_v6_final=24.8",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "12 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.59)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

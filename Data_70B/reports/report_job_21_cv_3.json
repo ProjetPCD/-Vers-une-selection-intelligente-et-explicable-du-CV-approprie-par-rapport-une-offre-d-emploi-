@@ -1,0 +1,387 @@
+{
+  "job_id": "job_21",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-03T13:32:07.296026",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 15.29,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.848,
+        "coverage_rate": 0.182,
+        "nodes_audited": 6,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.0292,
+    "edge_score": 0.0,
+    "combined": 0.0175
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.0266,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.8393,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.8471,
+    "matched_nodes": "0/33",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.04,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.0724,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.029,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.7659,
+    "ndcg_10": 0.8267,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.1141,
+    "experience_density": 0.0249
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 6.44,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 4.13,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 5.15,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 90.64,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 0.87,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 0.5,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 13,
+      "match_pct": 0.0,
+      "weight_sum": 12.0
+    },
+    "Hard Skill": {
+      "count": 8,
+      "match_pct": 1.3,
+      "weight_sum": 7.712
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 25.0,
+      "weight_sum": 0.915
+    },
+    "Domain": {
+      "count": 4,
+      "match_pct": 0.0,
+      "weight_sum": 2.932
+    },
+    "Soft Skill": {
+      "count": 7,
+      "match_pct": 10.8,
+      "weight_sum": 4.578
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "total_edges": 19,
+    "top_synergies": [
+      {
+        "edge_key": "aws_lambda|python",
+        "source": "aws_lambda",
+        "target": "python",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "elastic_container_service|docker",
+        "source": "elastic_container_service",
+        "target": "docker",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "fargate|docker",
+        "source": "fargate",
+        "target": "docker",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "elastic_kubernetes_service|kubernetes",
+        "source": "elastic_kubernetes_service",
+        "target": "kubernetes",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ingenieur_de_confiance_de_site|programmation",
+        "source": "ingenieur_de_confiance_de_site",
+        "target": "programmation",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Go",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Bash",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Perl",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "EC2",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "AWS Lambda",
+      "type": "Tool",
+      "gap": 0.966,
+      "severity": "critical",
+      "importance": 0.966
+    },
+    {
+      "skill": "Elastic Container Service",
+      "type": "Tool",
+      "gap": 0.966,
+      "severity": "critical",
+      "importance": 0.966
+    },
+    {
+      "skill": "Méthodologies Agiles",
+      "type": "Hard Skill",
+      "gap": 0.966,
+      "severity": "critical",
+      "importance": 0.966
+    },
+    {
+      "skill": "VPC",
+      "type": "Tool",
+      "gap": 0.964,
+      "severity": "critical",
+      "importance": 0.964
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Go",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Bash",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Perl",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "EC2",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "AWS Lambda",
+        "type": "Tool",
+        "gap": 0.966
+      },
+      {
+        "label": "Elastic Container Service",
+        "type": "Tool",
+        "gap": 0.966
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 0,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {},
+    "biased_nodes": [],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.0266 (sous-qualifié), CTM=0.8393 (écart structurel élevé), match_pct=15.29% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.029, ndcg_5=0.7659, missing_critical_penalty=0.0, combo_v6_final=6.44",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "28 gaps critiques identifiés",
+    "bias_note": "0 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 3,
+    "pool_size": 5,
+    "percentile": 0.5,
+    "composite_z_score": -0.4391,
+    "tier": "Top 50%",
+    "z_scores": {
+      "combo_v6": -0.562,
+      "wf1": -0.5,
+      "gap_score": -0.655,
+      "ntcw": -0.784,
+      "match_pct": -0.724,
+      "ndcg_5": 1.01
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 8.166,
+        "std": 3.0727
+      },
+      "wf1": {
+        "mean": 0.019,
+        "std": 0.0381
+      },
+      "gap_score": {
+        "mean": 0.0397,
+        "std": 0.0164
+      },
+      "ntcw": {
+        "mean": 0.041,
+        "std": 0.0183
+      },
+      "match_pct": {
+        "mean": 16.808,
+        "std": 2.0965
+      },
+      "ndcg_5": {
+        "mean": 0.7213,
+        "std": 0.0441
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

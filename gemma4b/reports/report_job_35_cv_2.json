@@ -1,0 +1,383 @@
+{
+  "job_id": "job_35",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-02T18:50:17.671926",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 23.98,
+    "confidence": {
+      "confidence_score": 0.46,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.667,
+        "coverage_rate": 0.556,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.1485,
+    "edge_score": 0.3034,
+    "combined": 0.2105
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.089,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7586,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7602,
+    "matched_nodes": "4/18",
+    "edge_match_pct": 15.17
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1266,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.3034,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.064,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0588,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.056,
+    "weighted_recall": 0.0365,
+    "weighted_f1": {
+      "value": 0.0706,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.5862,
+    "ndcg_10": 0.7189,
+    "map_score": 0.9385,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.1275,
+    "experience_density": 0.0584
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 15.16,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 17.15,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 8.49,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 81.3,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 29.11,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 21.92,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 16.17,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 6,
+      "match_pct": 1.3,
+      "weight_sum": 4.969
+    },
+    "Hard Skill": {
+      "count": 4,
+      "match_pct": 0.0,
+      "weight_sum": 3.805
+    },
+    "Soft Skill": {
+      "count": 6,
+      "match_pct": 17.1,
+      "weight_sum": 4.251
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 23.1,
+      "weight_sum": 1.145
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 15.17,
+    "total_edges": 8,
+    "top_synergies": [
+      {
+        "edge_key": "communication-skills|data-analysis-skills",
+        "source": "communication-skills",
+        "target": "data-analysis-skills",
+        "w_0": 0.68,
+        "w_cv": 0.694,
+        "w_cv_norm": 0.347,
+        "match_pct": 51.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_coding|data-analysis-skills",
+        "source": "python_coding",
+        "target": "data-analysis-skills",
+        "w_0": 0.95,
+        "w_cv": 0.45,
+        "w_cv_norm": 0.225,
+        "match_pct": 23.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "sql-database-knowledge|data-analysis-skills",
+        "source": "sql-database-knowledge",
+        "target": "data-analysis-skills",
+        "w_0": 0.85,
+        "w_cv": 0.45,
+        "w_cv_norm": 0.225,
+        "match_pct": 26.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "excel_spreadsheet|data-analysis-skills",
+        "source": "excel_spreadsheet",
+        "target": "data-analysis-skills",
+        "w_0": 0.75,
+        "w_cv": 0.45,
+        "w_cv_norm": 0.225,
+        "match_pct": 30.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "power_bi_visualization|data-visualization-skills",
+        "source": "power_bi_visualization",
+        "target": "data-visualization-skills",
+        "w_0": 0.8,
+        "w_cv": 0.244,
+        "w_cv_norm": 0.122,
+        "match_pct": 15.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "MySQL",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Agile",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Scrum",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Capacité à travailler en équipe",
+      "type": "Soft Skill",
+      "gap": 0.995,
+      "severity": "critical",
+      "importance": 0.995
+    },
+    {
+      "skill": "Excel",
+      "type": "Tool",
+      "gap": 0.88,
+      "severity": "critical",
+      "importance": 0.88
+    },
+    {
+      "skill": "Power BI",
+      "type": "Tool",
+      "gap": 0.87,
+      "severity": "critical",
+      "importance": 0.87
+    },
+    {
+      "skill": "Bonne communication",
+      "type": "Soft Skill",
+      "gap": 0.864,
+      "severity": "critical",
+      "importance": 0.864
+    },
+    {
+      "skill": "Méthodes de gestion de projet",
+      "type": "Hard Skill",
+      "gap": 0.805,
+      "severity": "critical",
+      "importance": 0.805
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "MySQL",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Agile",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Scrum",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Capacité à travailler en équipe",
+        "type": "Soft Skill",
+        "gap": 0.995
+      },
+      {
+        "label": "Excel",
+        "type": "Tool",
+        "gap": 0.88
+      },
+      {
+        "label": "Power BI",
+        "type": "Tool",
+        "gap": 0.87
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 5,
+    "nodes_with_bias": 4,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "HALO": 4
+    },
+    "biased_nodes": [
+      {
+        "id": "communication-skills",
+        "label": "capacité à communiquer efficacement avec les parties prenantes",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.488,
+        "reason": "The CV heavily emphasizes the phrase 'Translated complex data into actionable insights, guiding business decisions' which is directly linked to the JD's requirement for strong communication skills. However, the CV provides a broader description of this skill, but lacks specific quantifiable evidence or examples of project impact to justify the full weight assigned by the system. This suggests a halo effect – the single, highly valued phrase is disproportionately weighting the score, rather than a true assessment of communication ability based on project outcomes. A correction factor of 0.75 reflects the elevated score due to this halo effect, acknowledging the skill but reducing its weighting due to insufficient supporting evidence."
+      },
+      {
+        "id": "data-visualization-skills",
+        "label": "data visualization",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.488,
+        "reason": "The significant increase in weight (0.147) for 'Data Visualization Skills' appears to be driven by the strong mention of 'Championed cross-functional collaboration...at enterprise scale' in the CV, which highlights a leadership role and tangible results. This is a halo effect - focusing heavily on the impact of collaboration, overshadowing the core skill of data visualization itself, which is listed as a key requirement in the JD. The lack of specific examples of visualization work in the CV further reinforces this bias, suggesting the applicant is being evaluated based on the *outcome* of their collaboration rather than the *skill* of data visualization."
+      },
+      {
+        "id": "teamwork-skills",
+        "label": "compétences (soft skills)",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The weight increased for ‘Championed cross-functional collaboration’ primarily due to the explicit statement within the CV showcasing this activity. However, the JD also highlights the importance of teamwork and collaboration. This suggests a Halo bias – the strong signal of cross-functional collaboration in the CV is disproportionately influencing the weighting, overshadowing the broader requirements of the role as outlined in the JD. A fair alternative would be to consider the skill's importance across both documents, applying a more balanced weighting reflecting the overall job requirements, reducing the overemphasis on a single highlighted achievement."
+      },
+      {
+        "id": "data-analysis-tools",
+        "label": "outils de data analysis",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The CV heavily emphasizes skills like Python, Machine Learning, and quantitative research – skills explicitly mentioned in the job description (JD) as 'a plus'. This creates a halo effect, where the candidate is unduly favored simply for possessing these skills, rather than demonstrating a specific proficiency in the listed tools (Power BI, Excel, SQL, MySQL) – which are mentioned as essential. The lack of concrete details about experience with these specific tools results in the decreased weight, indicating a bias toward preferred skills without genuine validation."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.089 (sous-qualifié), CTM=0.7586 (écart structurel élevé), match_pct=23.98% → Poor Match",
+    "v6_summary": "weighted_f1=0.0706, gap_score=0.064, ndcg_5=0.5862, missing_critical_penalty=0.0, combo_v6_final=15.16",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "12 gaps critiques identifiés",
+    "bias_note": "4 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.46)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

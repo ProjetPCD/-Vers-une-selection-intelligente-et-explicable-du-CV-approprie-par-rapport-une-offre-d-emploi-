@@ -1,0 +1,592 @@
+{
+  "job_id": "job_12",
+  "cv_id": "cv_2",
+  "scored_nodes": {
+    "edge-ai-expert-python": {
+      "w_cv": 1.15,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.1
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.15
+      },
+      "active_red_flags": [],
+      "rationale": "The CV explicitly lists 'Python' as a key skill. Oumaima's role includes \"Python Developer\" and uses Python extensively in her described data analysis tasks. The project evidence strongly aligns with this skill, described as \"Feature Engineering Data Engineering\".",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "LOW",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "edge-ai-expert-rust": {
+      "w_cv": 0.163,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.2,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [
+        "ghost_skill"
+      ],
+      "rationale": "The CV lists 'Rust' but provides no context or evidence of its use.  The 'ghost_skill' penalty is applied due to the lack of any supporting information.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "D",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.163,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.65,
+      "p35_reason": "This weight change from 0.988 to 0.25 is significantly impacted by the presence of 'Rust' on the CV without any context or demonstrated experience.  This falls squarely under PROXY BIAS – the algorithm is penalizing the candidate for listing a modern language (Rust) that is mentioned in the job description, but without evidence of proficiency or practical application.  The ideal weight reflects a strong candidate with demonstrated skills; the reduced weight suggests a reliance on a single, unsupported skill, favoring prestige over demonstrated competence. A fairer alternative would be to weigh the candidate based on Python skills and the candidate’s overall experience, providing a less punitive approach."
+    },
+    "edge-ai-expert-azure-devops": {
+      "w_cv": 0.637,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.75
+      },
+      "active_red_flags": [],
+      "rationale": "The CV lists 'Azure DevOps' as a technical skill and it is mentioned within her broader technical skills section.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.637,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.85,
+      "p35_reason": "The CV lists 'Azure DevOps' as a skill, which aligns with the job description’s emphasis on systems integration and software development, but the candidate's experience is primarily in data consulting, AI model interpretation, and systems engineering internships. The focus on DevOps, coupled with a consultancy role, may be unduly penalizing the candidate for lacking explicit DevOps experience, relying on a proxy signal (DevOps skill) to assess suitability for a role heavily focused on embedded AI and systems design. A correction factor of 0.85 reflects this overemphasis on the skill rather than the candidate's core competencies. It's important to prioritize the candidate's demonstrated skills in AI, deep learning, and systems engineering, as well as her geographical location to mitigate potential bias."
+    },
+    "edge-ai-expert-pytorch": {
+      "w_cv": 1.2,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "The CV highlights 'PyTorch' and describes its use in her data analysis roles, aligning with the skill’s context. Strong evidence supports this listing.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 1.2,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The increased weight assigned to the candidate’s skill in 'Python' is likely a proxy bias reflecting the JD's explicit requirement for Python proficiency. While Oumaima’s CV clearly lists Python, the JD’s focus on Edge AI and systems embedded significantly narrows the skillset considered valuable, potentially overweighting Python in this specific context.  A more nuanced approach would consider the candidate’s overall experience and how their skills align with the broader requirements of the role, rather than solely relying on a single keyword match, thus impacting the selection."
+    },
+    "edge-ai-systems-embedded": {
+      "w_cv": 0.188,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "The skill 'Edge AI et systèmes embarqués' is listed but lacks supporting details or context in the CV.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.188,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The significant decrease in weight (-0.70) for the 'Edge AI et systèmes embarqués' skill is likely due to the CV lacking supporting details and context. The job description explicitly requires an 'expert' with a strong background, yet the CV primarily focuses on data science skills (Python, Power BI, etc.) and internship experience with a limited (7 months) focus on a specific deep learning project related to Edge AI.  This reflects a potential Ageism bias – relying heavily on graduation year and a limited project experience without demonstrating concrete Edge AI expertise. A fairer alternative would be to assign a lower weight, but not as drastically reduced, considering the applicant’s diverse skillset and willingness to learn. However, given the significant decrease, a 75% correction factor is appropriate to mitigate the impact of this overly low weighting."
+    },
+    "edge-ai-expert-git": {
+      "w_cv": 1.0,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "The CV mentions 'Git' and it's a core component in her listed technical skills. The explicit listing of 'Git' demonstrates proficiency.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "LOW",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "c-plus-plus": {
+      "w_cv": 0.163,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.2,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "The CV mentions 'C++' but doesn’t include any project or professional detail that speaks to expertise, and recency gap applied.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "C_PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.163,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.65,
+      "p35_reason": "The CV mentions 'C++' but lacks demonstrable expertise or recent project experience, leading to a significant weight reduction. This suggests a proxy bias, where the presence of C++ is favored despite a lack of concrete evidence of skills due to the JD's focus on Edge AI and systems embedded. A more fair alternative would be to assess skills based on project involvement and demonstrable proficiency in the technologies listed in the JD, rather than relying solely on the presence of the language itself."
+    },
+    "github": {
+      "w_cv": 0.188,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.2,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [
+        "ghost_skill"
+      ],
+      "rationale": "The CV lists 'GitHub' as a tool but with no further context. The 'ghost_skill' penalty is applied.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "D",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.188,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The CV lists 'GitHub' as a skill but lacks context, and a 'ghost_skill' penalty is applied. The job description heavily emphasizes experience with cutting-edge AI tools and systems (LLVM, TVM, etc.), yet the CV's listing of GitHub is minimal and lacks demonstration of practical application within those technologies. This indicates a reliance on a signal (GitHub) without sufficient supporting evidence, reflecting a proxy bias based on online presence rather than demonstrable skills.  A correction factor of 0.75 reflects the unfair penalization, as the applicant possesses relevant technical skills and experience, but the lack of contextual GitHub usage is a significant detriment."
+    },
+    "edge-ai-expert-llvm": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "No evidence of LLVM usage is provided in the CV.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "Python (Programming Language)": {
+      "w_cv": 1.0,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "The CV explicitly lists 'Python (Programming Language)' as a key skill, with 3 years of experience. This aligns with a strong level of expertise and is central to the candidate’s role. The experience years detected is 3 years.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "Feature Engineering": {
+      "w_cv": 0.5,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Contextual mention of Feature Engineering within the description of the candidate’s role and experience.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm"
+    },
+    "Data Analysis with Python Tools for Data Science": {
+      "w_cv": 0.5,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "The CV lists 'Python for Data Science, AI & Development' as a key skill.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm"
+    },
+    "Power BI : la formation complète - Microsoft Power BI": {
+      "w_cv": 0.5,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "The CV mentions 'Power BI' as a skill,<unused5813> indicating familiarity with the tool.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm"
+    },
+    "Docker containerization": {
+      "w_cv": 0.3,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.3,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.3
+      },
+      "active_red_flags": [],
+      "rationale": "The CV explicitly mentions ‘Docker containerization’ and describes its use.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm"
+    },
+    "System design principles": {
+      "w_cv": 0.1,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.1,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.1
+      },
+      "active_red_flags": [],
+      "rationale": "No specific mention of ‘System design principles’ in the candidate’s profile.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "Candidate profile": {
+      "w_cv": 1.0,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "This skill is assessed based on the 3 years of experience explicitly stated in the CV.  The 3 years is a key differentiator.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    }
+  },
+  "scored_edges": {
+    "edge-ai-expert-python|candidate_profile": {
+      "synergy_score": 0.9,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The role description explicitly states 'Python Developer', clearly demonstrating the combined use of Python alongside consulting activities. The same role confirmation constitutes a strong synergy. cv_excerpt: \"Python Developer\", ",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.9
+    },
+    "Python|Power BI": {
+      "synergy_score": 0.85,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.1,
+        "penalties": 0.0,
+        "final_score": 0.85
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate explicitly states experience using ‘Python Tools for Data Science’ and ‘Python for Data Science, AI & Development’ within the role at Infor. This clearly indicates simultaneous use of Python and Power BI for data analysis. cv_excerpt: ‘Data Analysis with Python Tools for Data Science Python for Data Science, AI & Development’",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.85
+    },
+    "Python|SQL": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The CV lists Python and SQL as technical skills, suggesting their use together for data manipulation and analysis – a common pairing. cv_excerpt: ‘Technical skills : Python, Git, Power BI, SQL, Excel’",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "Machine Learning|Infor": {
+      "synergy_score": 0.95,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.95
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate’s role as a Machine Learning Engineer at Infor provides direct evidence of the simultaneous use of Machine Learning and the Infor platform. cv_excerpt: ‘Machine Learning Engineer at Infor Gouvernorat Tunis, Tunisie’",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.95
+    },
+    "Python|Data Analysis with Python Tools for Data Science|Power BI|Feature Engineering": {
+      "synergy_score": 0.9,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.9
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Oumaima Ghazouani’s role as Machine Learning Engineer at Infor includes using Python for data analysis and working with Power BI for feature engineering, explicitly stated in her role description and skills section. This represents a direct synergy within her current role. cv_excerpt: ‘Data Analysis with Python Tools for Data Science’",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.9
+    },
+    "Python|Machine Learning Engineer|SQL|Infor Gouvernorat Tunis": {
+      "synergy_score": 0.85,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The synergy is demonstrated through the cv_excerpt: \"collect, analyse, interpret and then model to help businesses... make enlightened decisions.\" This explicitly shows the candidate utilizing Python for data analysis and modelling, aligning directly with her role involving SQL and data manipulation at Infor. The same_project_or_role flag is also true, confirming this collaboration within her current position.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.85
+    },
+    "Power BI|Data Analysis|Python|Feature Engineering": {
+      "synergy_score": 0.8,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "This synergy is evident in the 'Data Analysis with Python Tools for Data Science' skill. The candidate uses Power BI for data analysis and Python (specifically utilizing the Tools for Data Science) for feature engineering. This demonstrates a clear combined use of both skills within her role at Infor. The temporal_overlap is false, but the direct connection of tools and skillset is powerful.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.8
+    }
+  },
+  "metadata": {
+    "skills_scored": 16,
+    "mean_score": 0.541,
+    "edges_scored": 7,
+    "mean_synergy": 0.857,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.857,
+      "max": 0.95,
+      "min": 0.75
+    },
+    "batches_ok": 2,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.541,
+      "max": 1.0,
+      "min": 0.0,
+      "above_1": 5,
+      "below_05": 7
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 8,
+    "nodes_with_bias": 6,
+    "nodes_corrected": 6,
+    "edges_audited": 0
+  }
+}

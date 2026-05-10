@@ -1,0 +1,364 @@
+{
+  "job_id": "job_51",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-03T05:45:48.741913",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 40.17,
+    "confidence": {
+      "confidence_score": 0.69,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.333,
+        "coverage_rate": 0.75,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.4019,
+    "edge_score": 0.5048,
+    "combined": 0.4431
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2514,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.609,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5983,
+    "matched_nodes": "1/12",
+    "edge_match_pct": 25.26
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2736,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.502,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.218,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0833,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.7585,
+    "weighted_recall": 0.0568,
+    "weighted_f1": {
+      "value": 0.1101,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5175,
+    "missing_critical_penalty": {
+      "value": 0.1429,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8588,
+    "ndcg_10": 0.8784,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.4254,
+    "semantic_fit_score": 0.4478,
+    "experience_density": 0.1525
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 28.36,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 30.6,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 26.48,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 94.35,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 38.65,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 33.68,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 39.84,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 1.0
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 10.5,
+      "weight_sum": 2.727
+    },
+    "Tool": {
+      "count": 4,
+      "match_pct": 30.9,
+      "weight_sum": 3.436
+    },
+    "Domain": {
+      "count": 3,
+      "match_pct": 24.8,
+      "weight_sum": 1.944
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 25.26,
+    "total_edges": 7,
+    "top_synergies": [
+      {
+        "edge_key": "scikit_learn_library|machine_learning_domain",
+        "source": "scikit_learn_library",
+        "target": "machine_learning_domain",
+        "w_0": 0.91,
+        "w_cv": 0.742,
+        "w_cv_norm": 0.371,
+        "match_pct": 40.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "tensorflow_framework|machine_learning_domain",
+        "source": "tensorflow_framework",
+        "target": "machine_learning_domain",
+        "w_0": 0.844,
+        "w_cv": 0.645,
+        "w_cv_norm": 0.323,
+        "match_pct": 38.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "machine_learning_domain|ia_domain",
+        "source": "machine_learning_domain",
+        "target": "ia_domain",
+        "w_0": 0.845,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.3,
+        "match_pct": 35.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "pytorch_framework|machine_learning_domain",
+        "source": "pytorch_framework",
+        "target": "machine_learning_domain",
+        "w_0": 0.85,
+        "w_cv": 0.506,
+        "w_cv_norm": 0.253,
+        "match_pct": 29.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "teamwork_skill|machine_learning_domain",
+        "source": "teamwork_skill",
+        "target": "machine_learning_domain",
+        "w_0": 0.62,
+        "w_cv": 0.426,
+        "w_cv_norm": 0.213,
+        "match_pct": 34.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Agile",
+      "type": "Soft Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Machine Learning",
+      "type": "Domain",
+      "gap": 0.62,
+      "severity": "critical",
+      "importance": 0.845
+    },
+    {
+      "skill": "MATLAB",
+      "type": "Tool",
+      "gap": 0.843,
+      "severity": "critical",
+      "importance": 0.843
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Agile",
+        "type": "Soft Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Machine Learning",
+        "type": "Domain",
+        "gap": 0.62
+      },
+      {
+        "label": "MATLAB",
+        "type": "Tool",
+        "gap": 0.843
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 8,
+    "nodes_with_bias": 8,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "HALO": 4,
+      "PRESTIGE": 2,
+      "PROXY": 1,
+      "B": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "scikit_learn_library",
+        "label": "Scikit-learn",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.035,
+        "reason": "The weight change (Delta: -0.010) is primarily driven by the mention of 'Développement back-end avec Spring Boot : architecture microservices, API REST sécurisées, gestion des accès et autorisations' within the CV. This demonstrates a specific technical skill (Spring Boot) that aligns with the JD’s requirements for working with machine learning models within a back-end context.  However, the CV's emphasis on this specific technology, especially given the JD's broad requirements (including PyTorch, TensorFlow, and Scikit-learn), suggests a Prestige bias - prioritizing a specific technology stack over broader machine learning competencies. A correction factor of 1.15 is applied to account for this undue emphasis on a specific tech stack, even though the candidate possesses related skills. Fair alternative would be a more holistic assessment of the candidate's understanding of core ML concepts and their ability to apply them across different frameworks."
+      },
+      {
+        "id": "machine_learning_domain",
+        "label": "Machine Learning",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The significant weight decrease (Delta = -0.245) is likely driven by the prominence of the phrase ‘Passionate about microservices architecture and cloud solutions, I have built several end-to-end projects’ from part_2. This represents a clear signal aligning with the explicit requirements of the JD – specifically the desired expertise in machine learning applications within complex systems. However, the CV’s initial focus on full-stack development and a broad range of technologies (Java, React, Kubernetes) creates a Halo bias, unduly emphasizing these skills over the core ML domain, which is the job’s primary focus. A fairer alternative would involve a more direct articulation of ML experience and projects, mitigating the over-influence of this single, technically aligned phrase."
+      },
+      {
+        "id": "pytorch_framework",
+        "label": "PyTorch",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The weight change indicates a decrease (Delta: -0.094) in the candidate's score related to the mention of 'Mise en place d’un pipeline DevOps (CI/CD)'. This signals a proxy bias; the system is reacting to the presence of DevOps experience, a common requirement in modern ML roles and specifically within the context of CI/CD pipelines, which are increasingly standard practice for model deployment and monitoring.  The CV highlights this deployment experience, suggesting a favored signal.  A fair alternative would be to focus solely on demonstrable skills related to deep learning model building and algorithm design, rather than relying on a feature (DevOps pipeline implementation) that's frequently required but not necessarily core to the role’s technical demands. This reduction factor reflects the overemphasis on this proxy signal."
+      },
+      {
+        "id": "tensorflow_framework",
+        "label": "TensorFlow",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.84,
+        "reason": "The weight change (Delta = -0.139) indicates a decrease in the assigned weight for the candidate. The CV prominently highlights 'Développement front-end avec React TypeScript : interface utilisateur moderne et réactive,' which aligns with the JD's requirements for TensorFlow and modern UI development. However, the candidate’s CV focuses heavily on front-end technologies (React, TypeScript) and Agile methodologies – skills potentially valued for UI development – rather than the core machine learning aspects (PyTorch, TensorFlow) explicitly named in the JD. This suggests an over-emphasis on front-end experience, potentially penalizing the candidate for prioritizing a desirable UI component over a more direct machine learning focus, representing a prestige bias."
+      },
+      {
+        "id": "teamwork_skill",
+        "label": "Travailler en équipe",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.402,
+        "reason": "The audit notes highlight the candidate’s statement 'Rigorous, responsive, and solution-oriented, I quickly adapt to each client’s needs to deliver concrete and long-lasting results,' which directly relates to teamwork. However, the CV emphasizes individual achievements (modern web applications, microservices architecture, DevOps pipeline) and specific technologies (Java, React, Spring Boot) which are heavily weighted.  This suggests a Halo Bias – the candidate is judged primarily on the single, positive soft skill statement rather than the breadth of their technical skills or experience, resulting in a disproportionately low weight assigned to the teamwork signal.  A fairer alternative would prioritize a more comprehensive assessment across multiple skills and experiences, rather than relying solely on this highlighted soft skill."
+      },
+      {
+        "id": "scientific_research",
+        "label": "Scientifique",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.345,
+        "reason": "The candidate’s CV heavily emphasizes DevOps experience and pipeline automation (CI/CD), aligning with the job description's emphasis on ‘automatisation du build, des tests, du déploiement et surveillance’. This suggests a halo effect—the strong signal of DevOps skills is disproportionately influencing the weighting, overshadowing potentially valuable aspects of their software engineering background, like deep learning model design. A more fair assessment would prioritize the candidate's core machine learning skills and experience with deep learning, as these are specifically requested in the job description. Correction factor is increased to 1.15 to reflect the over-emphasis on a single, arguably less core, skill."
+      },
+      {
+        "id": "collaboration_skill",
+        "label": "Collaboration",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "This audit identifies a significant decrease (-0.306) in the weight assigned to the 'collaboration_skill' signal. The context reveals the job description explicitly emphasizes collaboration as a key requirement, and the candidate’s CV includes a detailed statement showcasing their collaborative approach and experience, specifically stating 'Rigorous, responsive, and solution-oriented, I quickly adapt to each client’s needs to deliver concrete and long-lasting results'.  This indicates a potential Gender/Diversity bias as the system is penalizing a soft skill valued in the role, rather than focusing on the candidate’s ability to collaborate effectively. A correction factor of 0.75 is applied to reduce the unfair penalty and give greater weight to the demonstrated skill."
+      },
+      {
+        "id": "soft_skills_requirement",
+        "label": "Soft Skills",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The evidence anchor explicitly states 'Rigorous, responsive, and solution-oriented, I quickly adapt to each client’s needs to deliver concrete and long-lasting results.' This statement reflects the desired soft skill – adaptability – as highlighted in the job description. However, the CV's statement is a standalone, somewhat generic description of the candidate’s approach, rather than demonstrating adaptability within a specific project or context. This creates a halo effect, where the single, positive attribute (responsiveness) is overly emphasized, potentially overshadowing other, more concrete evidence of adaptability within the candidate's experience. A lower correction factor is applied to account for this influence of the halo effect."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2514 (sous-qualifié), CTM=0.609 (écart structurel élevé), match_pct=40.17% → Poor Match",
+    "v6_summary": "weighted_f1=0.1101, gap_score=0.218, ndcg_5=0.8588, missing_critical_penalty=0.1429, combo_v6_final=28.36",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "4 gaps critiques identifiés",
+    "bias_note": "8 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.69)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

@@ -1,0 +1,743 @@
+{
+  "job_id": "job_15",
+  "cv_id": "cv_1",
+  "scored_nodes": {
+    "java": {
+      "w_cv": 0.75,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.75
+      },
+      "active_red_flags": [],
+      "rationale": "Inferred from CV description of using Java for web application development. No specific project anchor, but certification found.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "javascript": {
+      "w_cv": 0.9,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "outcome_bonus": 0.1,
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "Inferred from CV description of using JavaScript for web application development. No specific project anchor, but quantified outcome mentioned.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "LOW",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.9,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.9,
+      "p35_reason": "The weight change is biased towards project anchors, which may not accurately reflect expertise in JavaScript. A fair alternative would be to use a combination of keywords from the job description and resume relevance."
+    },
+    "go": {
+      "w_cv": 0.312,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of Go in CV, despite presence in skills list.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.312,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change penalizes candidates without explicit mention of 'Go' in their CV, despite the language being listed as a required skill in the job description. This suggests a biased Halo effect, where one strong signal (the presence of 'Go' in the JD) is used to judge an entire profile, potentially excluding qualified candidates who do not explicitly mention 'Go' in their CV."
+    },
+    "python": {
+      "w_cv": 0.375,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of Python in CV, despite presence in skills list.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.375,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.5,
+      "p35_reason": "The weight was unfairly penalized for not mentioning Python in the CV, despite its presence in the job description. A fair alternative would be to weight based on demonstrated skills and experience."
+    },
+    "postgresql": {
+      "w_cv": 0.5,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Inferred from CV description of database-related work, but no specific project anchor mentioned.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "mongodb": {
+      "w_cv": 0.625,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Inferred from CV description of database-related work, but no specific project anchor mentioned.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.625,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The CV contains specific project anchors that demonstrate strong relevant skills, but the weight change has unfairly penalized the candidate due to the lack of explicit mention of these projects in the job description."
+    },
+    "express": {
+      "w_cv": 0.6,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "weak evidence from the CV, mentioning React in the skills section (evidence_anchor), but no explicit project experience or outcome.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.6,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The weight change unfairly penalizes candidates without explicit project experience or outcome, while other factors like React skills are mentioned in the CV."
+    },
+    "django": {
+      "w_cv": 0.6,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "weak evidence from the CV, mentioning React in the skills section (evidence_anchor), but no explicit project experience or outcome.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.6,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The model has unfairly penalized the candidate for mentioning React without considering other relevant information such as project experience or outcomes."
+    },
+    "communication efficace": {
+      "w_cv": 0.4,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "final_score": 0.5
+      },
+      "penalties": {},
+      "final_score": 0.5,
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.4,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change unfairly penalizes candidates who may not have attended prestigious universities or worked for well-known companies, reflecting a bias towards prestige."
+    },
+    "capacité à travailler sous pression": {
+      "w_cv": 0.5,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "final_score": 0.5
+      },
+      "penalties": {},
+      "final_score": 0.5,
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "gitlab": {
+      "w_cv": 0.375,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "final_score": 0.25
+      },
+      "penalties": {},
+      "final_score": 0.25,
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.375,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.5,
+      "p35_reason": "The weight change is biased towards prestige, as the adapted weight (0.25) is significantly lower than the ideal weight (0.889). This suggests that the model is giving undue weight to the name 'gitlab', rather than skills demonstrated in the resume and job description."
+    },
+    "jira": {
+      "w_cv": 0.362,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "final_score": 0.25
+      },
+      "penalties": {},
+      "final_score": 0.25,
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE|HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.362,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.45,
+      "p35_reason": "Prestige or halo bias likely influenced weight adjustment; correction factor applied to reflect candidate's actual skills."
+    },
+    "github": {
+      "w_cv": 0.325,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of GitHub in CV sections, evidence verdict is 'weak'.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE BIAS",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.325,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.3,
+      "p35_reason": "The weight change in the GitHub section appears to be biased against candidates without specific GitHub experience, despite no mention of relevant skills or experience in the candidate's CV."
+    },
+    "slack": {
+      "w_cv": 0.3,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of Slack in CV sections, evidence verdict is 'weak'.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.3,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "Prestige Bias: Unfair penalization due to company name 'Slack', rather than skills demonstrated. A fair alternative would be to evaluate the candidate's skills and experience based on the actual requirements mentioned in the job description."
+    },
+    "react": {
+      "w_cv": 1.1,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.1
+        },
+        "penalties": {},
+        "final_score": 1.1
+      },
+      "active_red_flags": [],
+      "rationale": "Mention of React in CV sections, 'moderate' evidence quality due to limited project context.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "methodologies_de_travail_en_equipe": {
+      "w_cv": 0.312,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of team collaboration methodologies in CV sections, evidence verdict is 'weak'.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.312,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The model has unfairly penalized CV sections, potentially due to a bias towards prestige or socio-economic signals. A fair alternative would be to reassess the weights and assign equal importance to both JD and CV sections."
+    },
+    "nodejs": {
+      "w_cv": 0.312,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of NodeJS in CV sections, evidence verdict is 'weak'.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.312,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change is biased against candidates who do not mention 'NodeJS' in their CVs, despite the job description's emphasis on NodeJS skills. A fair alternative would be to use a more nuanced evaluation method."
+    },
+    "agile": {
+      "w_cv": 0.312,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of Agile methodologies in CV sections, evidence verdict is 'weak'.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.312,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The job description is placing too much emphasis on Agile methodologies, which are not explicitly mentioned in the CV. A more fair alternative would be to focus on relevant technologies and skills demonstrated by the candidate."
+    },
+    "git": {
+      "w_cv": 0.312,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": -0.25,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Git mentioned in CV, but no project anchor and weak evidence quality.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.312,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The algorithm relied on a socioeconomic signal (Git being mentioned) rather than actual skills demonstrated, leading to unfair penalization of the candidate."
+    },
+    "developpeur-full-stack-expérimenté": {
+      "w_cv": 1.35,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.1
+        },
+        "penalties": {},
+        "final_score": 1.35
+      },
+      "active_red_flags": [],
+      "rationale": "Developpeur-full-stack-expérimenté mentioned in CV with strong evidence quality and project complexity of high.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "microsoft-teams": {
+      "w_cv": 0.565,
+      "evidence_quality": "inferred_standalone",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Microsoft Teams inferred standalone in CV, but no project anchor and weak evidence quality.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.565,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.13,
+      "p35_reason": "The model is unfairly penalizing the candidate because their skills and experience do not match the company name (Microsoft Teams) mentioned in the job description."
+    },
+    "resolutions_de_problemes": {
+      "w_cv": 0.312,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Resolutions_de_problemes mentioned in CV, but no project anchor and weak evidence quality.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.312,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change was decreased because the candidate did not have a project anchor, which is often associated with prestige in the industry. A fair alternative would be to review the candidate's skills and experience more holistically."
+    },
+    "softskills": {
+      "w_cv": 0.2,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Softskills mentioned in CV, but no project anchor and weak evidence quality.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "GENDER_DIVERSITY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.2,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The AI system unfairly penalizes candidates with strong soft skills, leading to biased outcomes. A fair alternative would be to evaluate soft skills as an additional criterion."
+    }
+  },
+  "scored_edges": {
+    "java|postgresql": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": -0.2,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence found that Java and PostgreSQL were used together in the same role or project. The CV mentions Java as a language for web development, but does not specify its use with PostgreSQL.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "javascript|mongodb": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": -0.2,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence found that JavaScript and MongoDB were used together in the same role or project. The CV mentions JavaScript as a language for web development, but does not specify its use with MongoDB.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "go|postgresql": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": -0.2,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence found that Go and PostgreSQL were used together in the same role or project. The CV does not mention Go as a language used with PostgreSQL.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "python|django": {
+      "synergy_score": 0.2,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.2
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The CV explicitly mentions that the candidate uses Python with Django for developing web applications. This shows a synergy between Python (source) and Django (target).",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.2
+    },
+    "python|postgresql": {
+      "synergy_score": 0.65,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.45,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The CV mentions the use of Python with PostgreSQL in a back-end development role, demonstrating a synergy between Python (source) and PostgreSQL (target).",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.65
+    },
+    "git|github": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.8,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence found of git and github being used together in the same role or project.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "express|nodejs": {
+      "synergy_score": 1.0,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.8,
+        "penalties": 0.0,
+        "final_score": 1.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Express is mentioned in the context of development with NodeJS (as Spring Boot) in the Telnet role, demonstrating a synergy between Express and NodeJS.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 1.0
+    },
+    "react|nodejs": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 1.0,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Although react and nodejs are mentioned together in the Telnet role, no evidence is found of them being used as a synergy (e.g. implementing/using nodejs to support React).",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "gitlab|github": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No synergy between gitlab and github; no evidence of collaboration in the CV excerpts (part_1, part_2, part_3)",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    }
+  },
+  "metadata": {
+    "skills_scored": 23,
+    "mean_score": 0.457,
+    "edges_scored": 9,
+    "mean_synergy": 0.206,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.206,
+      "max": 1.0,
+      "min": 0.0
+    },
+    "batches_ok": 4,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.457,
+      "max": 1.25,
+      "min": 0.25,
+      "above_1": 3,
+      "below_05": 12
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 22,
+    "nodes_with_bias": 18,
+    "nodes_corrected": 18,
+    "edges_audited": 0
+  }
+}

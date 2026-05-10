@@ -1,0 +1,813 @@
+{
+  "job_id": "job_73",
+  "cv_id": "cv_2",
+  "scored_nodes": {
+    "ingénieur": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of engineering degree in CV.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "python": {
+      "w_cv": 0.8,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "outcome_bonus": 0.25,
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "Used in at least one project with basic outcome mentioned (AI/Data Science Intern | Oracle Cloud Infrastructure AI Foundations Associate).",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "GENDER_DIVERSITY_BIAS",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.8,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The job description disproportionately emphasizes hard skills, which may discourage qualified candidates with strong soft skills and experiences from applying."
+    },
+    "pytorch": {
+      "w_cv": 0.625,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Contextual mention of PyTorch, but no concrete project evidence.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.625,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change is biased towards prestige, as the job description heavily emphasizes the use of PyTorch and related technologies, which is a strong signal for candidates familiar with these tools. However, there is no concrete project evidence in the provided CV to support this emphasis. A fair alternative would be to evaluate candidates based on their relevant skills and experiences, regardless of the specific technology used."
+    },
+    "matplotlib": {
+      "w_cv": 0.312,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Listed in skills only, zero project anchor.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.312,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change is biased due to socio-economic signals in the candidate's CV, specifically their location (Tunisia) and language of education (French). This may indicate that candidates from certain regions or with specific languages are unfairly penalized. A fair alternative would be to use skills-based weights that do not consider these proxy signals."
+    },
+    "mdr": {
+      "w_cv": 0.625,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Contextual mention of MDR certification, but no concrete project evidence.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.625,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change is biased towards prestige-based weights because it disproportionately penalized the candidate for not having concrete project evidence related to MDR certification, despite mentioning it in the CV. A fair alternative would be to consider relevant work experience and projects over certifications."
+    },
+    "fda": {
+      "w_cv": 0.212,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Listed in skills only, zero project anchor.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.212,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.85,
+      "p35_reason": "The weight change unfairly favors candidates with specific linguistic skills and location, which may be due to the fact that the job description is written in French. A fair alternative would be to translate the job description into multiple languages and consider candidates from diverse regions."
+    },
+    "plotly": {
+      "w_cv": 0.3,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of Plotly in the CV, only a list of skills.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.3,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The weight change is biased due to proxy bias, as the job description mentions Plotly as a required tool, but the candidate's CV does not mention it, suggesting that the model is unfairly penalizing candidates who do not explicitly list tools in their profile. A fair alternative would be to use skills and experience demonstrated in the CV as the primary factor for weight change."
+    },
+    "pandas": {
+      "w_cv": 0.8,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "Mentioned in the CV as one of the skills, but no concrete project evidence.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.8,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change is biased towards candidates with a strong signal of having Python skills, as indicated by the job description's emphasis on it. However, upon reviewing the candidate's CV, we see that they have only mentioned Python as one of their skills without providing concrete project evidence to support it. This suggests that the weight change is favoring candidates who can simply claim proficiency in Python rather than those who have demonstrated actual experience with it."
+    },
+    "pyg": {
+      "w_cv": 0.325,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of PyG in the CV, only a list of skills.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.325,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.3,
+      "p35_reason": "Prestige Bias: Unfairly penalizing candidate for not mentioning PyG explicitly in CV, despite having relevant skills and experience."
+    },
+    "itk": {
+      "w_cv": 0.625,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Contextual mention in the CV, but no concrete project evidence.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.625,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight decrease is due to the university name mentioned in the CV, rather than the skills demonstrated. A fair alternative would be to weight the candidate's experience and skills more heavily."
+    },
+    "onnx": {
+      "w_cv": 0.6,
+      "evidence_quality": "inferred_standalone",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Inferred standalone, no project anchor mentioned.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.6,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The weight decrease is likely due to Prestige Bias, as the candidate's university name might not be well-known or recognized in the context of AI and machine learning research. A fair alternative would be to consider the candidate's skills and experience, rather than their education background."
+    },
+    "monai": {
+      "w_cv": 0.39,
+      "evidence_quality": "inferred_standalone",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Inferred standalone, no project anchor mentioned.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.39,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.78,
+      "p35_reason": "The weight change seems to reflect a bias towards candidates who are familiar with specific tools and technologies, which may inadvertently penalize applicants from diverse backgrounds or regions."
+    },
+    "vtk": {
+      "w_cv": 0.3,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "No explicit mention of VTK in the CV, only a question about familiarity in the verification section.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.3,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.6,
+      "p35_reason": "The weight change is biased because the candidate's proficiency in VTK is not explicitly mentioned in their CV, but it is heavily emphasized in the job description. The JD mentions 'VTK' 3 times, while the CV does not mention it at all. This creates a halo effect, where one strong signal (VTK) is used to judge the entire profile. A correction factor of 0.60 is applied to adjust for this bias."
+    },
+    "tensorrt": {
+      "w_cv": 0.362,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of TensorRT in the CV.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.362,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.45,
+      "p35_reason": "The weight change is unfair because it penalizes candidates who don't mention TensorRT in their CV, regardless of their actual skills or experience."
+    },
+    "leadership": {
+      "w_cv": 0.637,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.15
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.75
+      },
+      "active_red_flags": [],
+      "rationale": "CV mentions 'Passionate about AI and project management, I oversee data science, machine learning, and Agile methodologies to optimize decision-making.' and 'As a Scrum Master, I support teams by driving strategies and innovation.' as evidence of leadership experience. Additionally, CV shows 11 months of experience in Linedata.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.637,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.85,
+      "p35_reason": "The weight increase is likely due to prestige bias, as the candidate's experience at prominent companies like Oracle and Smart Conseil may have influenced the scoring."
+    },
+    "autonomie_et_equipe": {
+      "w_cv": 0.45,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.75
+      },
+      "active_red_flags": [],
+      "rationale": "CV mentions 'Passionate about AI and project management, I oversee data science, machine learning, and Agile methodologies to optimize decision-making.' as evidence of autonomous and team work experience.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.45,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.6,
+      "p35_reason": "The weight change favors the candidate unfairly due to prestige bias, as their CV lacks concrete evidence of technical expertise in AI and computer vision."
+    },
+    "methodologies": {
+      "w_cv": 0.325,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "No explicit mention of methodologies in the CV, only a question about experience in the verification section.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.325,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.3,
+      "p35_reason": "The weight change is biased towards prestige, as the ideal value w_0 for methodologies is significantly higher than the adapted value w_cv, despite there being no explicit mention of methodologies in the CV."
+    },
+    "candidat": {
+      "w_cv": 1.0,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "CV explicitly mentions 'candidate' as evidence of being a candidate.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "communication": {
+      "w_cv": 0.4,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "CV mentions communication as a skill, but no concrete project evidence (base score: 0.25).",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.4,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change for 'communication' is biased towards prestige, as it increases by 7.8% despite no concrete project evidence. This suggests that the model may prioritize university names over actual skills demonstrated."
+    },
+    "scientifique": {
+      "w_cv": 1.0,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "CV mentions expertise in 'scientifique' with strong evidence (base score: 1.00).",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "aprentissage_automatique": {
+      "w_cv": 0.312,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "No project evidence for Aprendissement Automatique (base score: 0.25).",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.312,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change is biased towards prestige bias, as the job description requires experience in PyTorch, a specific AI framework, and the candidate's certifications and education are heavily weighted. This suggests that the model is giving more importance to the prestige of the institution and the specific skills mentioned in the job description rather than the candidate's actual abilities and experience."
+    }
+  },
+  "scored_edges": {
+    "pytorch|python": {
+      "synergy_score": 0.25,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.05,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No explicit or implicit connections between PyTorch and Python were found in the CV.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "pyg|python": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.3,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate's experience as an AI/Data Science Intern at Oracle Cloud Infrastructure, where they were an AI Foundations Associate and Scrum Fundamentals Certified, implies that they used PyG with Python in this role.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "monai|python": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.1,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No explicit or implicit connections between MONAI and Python were found in the CV.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "onnx|python": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.1,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No explicit or implicit connections between ONNX and Python were found in the CV.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "tensorrt|python": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.8,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No explicit or implicit connections between TensorRT and Python were found in the CV.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "pandas|python": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": 0.9,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence found of both skills used together in the same role or project.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "matplotlib|python": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": 0.9,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence found of both skills used together in the same role or project.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "plotly|python": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.55,
+        "penalties": 0.25,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "As an AI Data Scientist at axefinance, Nour Hentati used Plotly and Python together in the same role.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "scientifique|ingénieur": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": -0.05,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The instruction mentions that Nour Hentati is both a Data Scientist and an Engineer by education, but this is only mentioned in the preamble and not explicitly used together in any project or role. No temporal overlap between the two skills is found.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "communication|leadership": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": -0.2,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence found of both skills used together in the same role or project.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "autonomie_et_equipe|leadership": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": -0.05,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No explicit connection between autonomous work and teamwork skills to leadership is made in the CV excerpts, but as a Scrum Master, Nour Hentati mentions driving strategies and innovation (leadership), which may imply autonomous work.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "communication|scientifique": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": -0.2,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence found that Nour Hentati used both communication and scientific skills together in the same role or project.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    }
+  },
+  "metadata": {
+    "skills_scored": 21,
+    "mean_score": 0.512,
+    "edges_scored": 12,
+    "mean_synergy": 0.229,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.229,
+      "max": 0.75,
+      "min": 0.0
+    },
+    "batches_ok": 4,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.512,
+      "max": 1.0,
+      "min": 0.0,
+      "above_1": 4,
+      "below_05": 8
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 18,
+    "nodes_with_bias": 18,
+    "nodes_corrected": 18,
+    "edges_audited": 0
+  }
+}

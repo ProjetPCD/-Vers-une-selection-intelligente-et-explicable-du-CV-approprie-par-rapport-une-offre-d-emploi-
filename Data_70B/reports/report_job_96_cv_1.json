@@ -1,0 +1,491 @@
+{
+  "job_id": "job_96",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-05T18:39:50.823689",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 26.2,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.63,
+        "coverage_rate": 0.37,
+        "nodes_audited": 10,
+        "nodes_biased": 10
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.1295,
+    "edge_score": 0.0,
+    "combined": 0.0777
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1493,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.744,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.738,
+    "matched_nodes": "2/27",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1562,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1208,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.123,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0435,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.6667,
+    "weighted_recall": 0.0293,
+    "weighted_f1": {
+      "value": 0.0575,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6,
+    "missing_critical_penalty": {
+      "value": 0.0455,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.8981,
+    "ndcg_10": 0.8541,
+    "map_score": 0.9632,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.4667,
+    "semantic_fit_score": 0.3247,
+    "experience_density": 0.1074
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 16.26,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 11.56,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 17.37,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 94.64,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 37.55,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 25.96,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 43.48,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Education": {
+      "count": 1,
+      "match_pct": 60.0,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 12,
+      "match_pct": 10.9,
+      "weight_sum": 10.117
+    },
+    "Tool": {
+      "count": 10,
+      "match_pct": 6.3,
+      "weight_sum": 8.723
+    },
+    "Soft Skill": {
+      "count": 3,
+      "match_pct": 31.0,
+      "weight_sum": 2.084
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 0.477
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "total_edges": 24,
+    "top_synergies": [
+      {
+        "edge_key": "python|security_principles",
+        "source": "python",
+        "target": "security_principles",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "rust|security_principles",
+        "source": "rust",
+        "target": "security_principles",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "docker|security_principles",
+        "source": "docker",
+        "target": "security_principles",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ansible|security_principles",
+        "source": "ansible",
+        "target": "security_principles",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "sql|security_principles",
+        "source": "sql",
+        "target": "security_principles",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Rust",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Bash",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.675,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Swift",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "OCaml",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Office 365",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Ansible",
+      "type": "Tool",
+      "gap": 0.99,
+      "severity": "critical",
+      "importance": 0.99
+    },
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 0.96,
+      "severity": "critical",
+      "importance": 0.96
+    },
+    {
+      "skill": "Terraform",
+      "type": "Tool",
+      "gap": 0.947,
+      "severity": "critical",
+      "importance": 0.947
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.624,
+      "severity": "critical",
+      "importance": 0.924
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Rust",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Bash",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.675
+      },
+      {
+        "label": "Swift",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "OCaml",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Office 365",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Ansible",
+        "type": "Tool",
+        "gap": 0.99
+      },
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "gap": 0.96
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 10,
+    "nodes_with_bias": 10,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 9,
+      "GENDER_DIVERSITY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "ingenieur",
+        "label": "Ingénieur",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.2,
+        "w_cv_corrected": 1.2,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's 'Diplôme d'ingénieur' from a specific institution (ENSA Khouribga) is being overly relied upon. This is evident from the significant decrease in weight despite the candidate's relevant skills and experience. A fairer assessment would consider the candidate's skills and experience more holistically, without undue emphasis on the institution's name."
+      },
+      {
+        "id": "python",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.3,
+        "w_cv_before": 0.65,
+        "w_cv_corrected": 0.65,
+        "reason": "The weight change is biased due to prestige bias, as the certification 'Machine Learning A-Z: AI, Python & R' is from a non-prestigious institution, which led to a decreased weight. A fair alternative would be to evaluate the certification based on the skills demonstrated, rather than the institution's name. The correction factor is set to 1.30 to compensate for the unfair penalty."
+      },
+      {
+        "id": "docker",
+        "label": "Docker",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The candidate's mention of Docker in their CV is penalized without concrete project evidence, indicating a prestige bias towards candidates with experience in specific technologies listed in the job description. The correction factor is set to 1.20 to account for the unfair penalty."
+      },
+      {
+        "id": "git",
+        "label": "Git",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's mention of Git in their CV is not valued equally to the ideal weight, likely because they didn't attend a prestigious university or have a well-known company on their resume. The correction factor is set to 1.20 to increase the weight and account for the unfair penalty."
+      },
+      {
+        "id": "agile",
+        "label": "Agile",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's mention of Agile in their CV is penalized despite being a relevant skill for the job description. The correction factor is set to 1.20 to increase the weight, as the candidate's experience and skills align with the job requirements, and the Agile framework is explicitly mentioned in the job description."
+      },
+      {
+        "id": "autonomy",
+        "label": "Autonomy",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.3,
+        "w_cv_before": 0.65,
+        "w_cv_corrected": 0.65,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's mention of autonomy through self-initiated projects or personal interests is undervalued. The correction factor is set to 1.30 to account for the unfair penalty. A fairer approach would be to evaluate the candidate's autonomy based on their skills and experiences, rather than the university or company name."
+      },
+      {
+        "id": "teamwork",
+        "label": "Teamwork",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change for 'teamwork' is biased as it unfairly penalizes the candidate for lacking explicit mentions of teamwork in their CV, despite having relevant experience in collaborative projects and internships. This is a classic case of gender/diversity bias, where soft skills like collaboration are undervalued. A fairer assessment would consider the candidate's experience in Full Stack Developer roles and internships, which demonstrate their ability to work in a team."
+      },
+      {
+        "id": "collaborative_work_methods",
+        "label": "Méthodes de travail collaboratif",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's mention of Agile practices is downplayed despite being relevant to the job description. The correction factor is set to 1.20 to increase the weight of collaborative_work_methods, as the candidate's experience and skills in Agile practices are undervalued."
+      },
+      {
+        "id": "react",
+        "label": "React",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.9,
+        "w_cv_corrected": 0.9,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (ENSA Khouribga) and company names (Oracle, COLAS DIGITAL SOLUTIONS, Onedustry Technologies) may have unfairly influenced the algorithm's assessment. The correction factor is set to 1.20 to compensate for this bias, as the candidate's skills and experience in React are relevant to the job description."
+      },
+      {
+        "id": "problem_solving",
+        "label": "Analyse et résolution de problèmes",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience in software development with Java/Spring Boot and React is being undervalued. The mention of 'spécialisé en développement Full-Stack avec Java/Spring Boot et React' in the CV is a strong signal of problem-solving skills, but the adapted weight is decreased. A fairer assessment would increase the weight to reflect the candidate's demonstrated skills."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1493 (sous-qualifié), CTM=0.744 (écart structurel élevé), match_pct=26.2% → Poor Match",
+    "v6_summary": "weighted_f1=0.0575, gap_score=0.123, ndcg_5=0.8981, missing_critical_penalty=0.0455, combo_v6_final=16.26",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "17 gaps critiques identifiés",
+    "bias_note": "10 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 5,
+    "pool_size": 15,
+    "percentile": 0.7143,
+    "composite_z_score": 0.2646,
+    "tier": "Top 50%",
+    "z_scores": {
+      "combo_v6": 0.145,
+      "wf1": -0.408,
+      "gap_score": 1.264,
+      "ntcw": 1.037,
+      "match_pct": -0.295,
+      "ndcg_5": 0.414
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 15.1213,
+        "std": 7.848
+      },
+      "wf1": {
+        "mean": 0.0848,
+        "std": 0.067
+      },
+      "gap_score": {
+        "mean": 0.0689,
+        "std": 0.0428
+      },
+      "ntcw": {
+        "mean": 0.0928,
+        "std": 0.0545
+      },
+      "match_pct": {
+        "mean": 28.0047,
+        "std": 6.1137
+      },
+      "ndcg_5": {
+        "mean": 0.8487,
+        "std": 0.1194
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

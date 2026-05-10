@@ -1,0 +1,425 @@
+{
+  "job_id": "job_56",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-03T11:25:23.596515",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 30.37,
+    "confidence": {
+      "confidence_score": 0.74,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.727,
+        "coverage_rate": 0.909,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.4452,
+    "edge_score": 0.4394,
+    "combined": 0.4428
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2422,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7058,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6963,
+    "matched_nodes": "0/11",
+    "edge_match_pct": 21.99
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2382,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.4234,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2244,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9619,
+    "ndcg_10": 0.9713,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.3822,
+    "semantic_fit_score": 0.6601,
+    "experience_density": 0.2006
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 21.2,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 24.35,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 32.08,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 98.48,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 6.73,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 23.12,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 4,
+      "match_pct": 18.1,
+      "weight_sum": 3.684
+    },
+    "Tool": {
+      "count": 4,
+      "match_pct": 12.2,
+      "weight_sum": 3.408
+    },
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 39.9,
+      "weight_sum": 2.822
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 21.99,
+    "total_edges": 10,
+    "top_synergies": [
+      {
+        "edge_key": "javascript-programming|data-engineer-domain",
+        "source": "javascript-programming",
+        "target": "data-engineer-domain",
+        "w_0": 0.65,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 57.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "aws-cloud|data-engineer-domain",
+        "source": "aws-cloud",
+        "target": "data-engineer-domain",
+        "w_0": 0.65,
+        "w_cv": 0.675,
+        "w_cv_norm": 0.338,
+        "match_pct": 51.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data-engineer-domain|data-architectures",
+        "source": "data-engineer-domain",
+        "target": "data-architectures",
+        "w_0": 0.85,
+        "w_cv": 0.582,
+        "w_cv_norm": 0.291,
+        "match_pct": 34.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data-engineer-domain|data-lake-storage",
+        "source": "data-engineer-domain",
+        "target": "data-lake-storage",
+        "w_0": 0.85,
+        "w_cv": 0.525,
+        "w_cv_norm": 0.263,
+        "match_pct": 30.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "databricks_data_engineer|data-engineer-domain",
+        "source": "databricks_data_engineer",
+        "target": "data-engineer-domain",
+        "w_0": 0.62,
+        "w_cv": 0.488,
+        "w_cv_norm": 0.244,
+        "match_pct": 39.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Data Engineer",
+      "type": "Domain",
+      "gap": 0.606,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "ETL",
+      "type": "Domain",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "AWS",
+      "type": "Tool",
+      "gap": 0.719,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Azure",
+      "type": "Tool",
+      "gap": 0.925,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 0.644,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Architectures de données",
+      "type": "Domain",
+      "gap": 0.729,
+      "severity": "critical",
+      "importance": 0.916
+    },
+    {
+      "skill": "Spark",
+      "type": "Tool",
+      "gap": 0.788,
+      "severity": "critical",
+      "importance": 0.788
+    },
+    {
+      "skill": "Data Lake",
+      "type": "Domain",
+      "gap": 0.637,
+      "severity": "critical",
+      "importance": 0.768
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Data Engineer",
+        "type": "Domain",
+        "gap": 0.606
+      },
+      {
+        "label": "ETL",
+        "type": "Domain",
+        "gap": 1.0
+      },
+      {
+        "label": "AWS",
+        "type": "Tool",
+        "gap": 0.719
+      },
+      {
+        "label": "Azure",
+        "type": "Tool",
+        "gap": 0.925
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 0.644
+      },
+      {
+        "label": "Architectures de données",
+        "type": "Domain",
+        "gap": 0.729
+      },
+      {
+        "label": "Spark",
+        "type": "Tool",
+        "gap": 0.788
+      },
+      {
+        "label": "Data Lake",
+        "type": "Domain",
+        "gap": 0.637
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 9,
+    "nodes_with_bias": 9,
+    "edges_audited": 1,
+    "edges_with_bias": 1,
+    "bias_categories": {
+      "HALO": 7,
+      "PROXY": 3
+    },
+    "biased_nodes": [
+      {
+        "id": "data-engineer-domain",
+        "label": "Data Engineer",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.788,
+        "reason": "The increased weight (Delta +0.050) is primarily driven by the candidate's experience at NVIDIA, specifically their Frontend Engineer role, which is highlighted prominently in the CV summary. This creates a halo effect, unfairly emphasizing a role that may not be directly relevant to the core data engineering skills outlined in the JD (ETL, Data Lake, AWS/Azure). A fairer alternative would prioritize experience with the technologies explicitly listed in the JD – Databricks, Spark, and relevant database skills – while acknowledging the NVIDIA experience without inflating its weight. The candidate’s native language skills and certifications are distractions from the core job requirements."
+      },
+      {
+        "id": "aws-cloud",
+        "label": "AWS",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The significant weight decrease (0.25) appears to be driven by the prominence of \"AWS\" in the job description and the candidate's CV. The JD heavily emphasizes AWS, and the CV lists AWS as a key technology, yet the algorithm penalized this signal. A fair alternative would be to weight all relevant technical skills equally, regardless of their explicit mention in the job description. This represents a halo bias, where a single, highly emphasized term in the JD unduly influences the scoring."
+      },
+      {
+        "id": "azure-cloud",
+        "label": "Azure",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.15,
+        "reason": "The significant decrease in weight (w_cv from 1.0 to 0.2) likely reflects a proxy bias based on Lorenzo Brown's language skills. While fluency in Spanish and Portuguese is a positive attribute, the CV doesn't explicitly highlight their relevance to the ‘data engineer’ role, focusing instead on frontend development experience and languages like Swift and JavaScript – skills not directly linked to the core data engineering requirements outlined in the JD. This suggests the algorithm unfairly penalized Brown for possessing skills outside the immediate scope, prioritizing skills that might not be essential for the role, thus creating a proxy for socioeconomic advantage or cultural fit (where fluency in multiple languages is considered desirable)."
+      },
+      {
+        "id": "python-programming",
+        "label": "Python",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.862,
+        "reason": "The significant increase in weight (w_cv from 1.0 to 1.15) is likely driven by the candidate's experience with Swift and SwiftUI, which are prominently highlighted in their CV summary and experience descriptions. This creates a halo effect, unfairly emphasizing these technologies over the core requirement of Python programming skills, which are explicitly listed as 'solid' within the job description. A fair alternative would be to assess the candidate solely on their Python proficiency and related data engineering skills, rather than relying on a single, visually prominent technology stack. This bias prioritizes preferred technologies over demonstrable skills."
+      },
+      {
+        "id": "javascript-programming",
+        "label": "JavaScript",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.712,
+        "reason": "The CV heavily emphasizes frontend development skills (Swift, SwiftUI, Firebase) and experience at NVIDIA, while the job description prioritizes data engineering skills (ETL, Data Lake, Spark, Databricks) and specific programming languages like JavaScript. The significant weight reduction (Delta = -0.05) likely reflects a halo effect – the strong emphasis on frontend skills unduly influenced the algorithm, overshadowing the candidate's potentially limited JavaScript experience and deviating from the core requirements. A fairer alternative would weight the candidate's programming skills – particularly any experience with data processing languages or ETL tools – more equally, or adjust the JD to better reflect a broader range of acceptable skillsets."
+      },
+      {
+        "id": "data-architectures",
+        "label": "Architectures de données",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The significant decrease in weight (w_cv from 0.916 to 0.5) is likely driven by the prominence of ‘NVIDIA’ in Lorenzo’s CV. The JD heavily emphasizes experience with Databricks, Spark, AWS, and Azure, and the CV immediately showcases a role at NVIDIA, creating a halo effect where the candidate is judged primarily on this single, strong signal. A fair alternative would prioritize skills and experience in the technologies listed in the JD – ETL, Data Lake, and the specific cloud platforms – rather than simply the employer name. This represents a bias towards prestige and a failure to adequately assess the candidate's core technical capabilities."
+      },
+      {
+        "id": "sql-querying",
+        "label": "SQL",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.825,
+        "reason": "The significant weight increase (+0.278) is likely driven by the candidate's listed skills - specifically 'SQL' - which is prominently featured in the Job Description. This constitutes a Halo bias, where the single signal (SQL proficiency) unduly influences the assessment, overshadowing potentially other valuable skills demonstrated in the CV, like experience with SwiftUI, Firebase, and architectural leadership. A fairer alternative would be to evaluate the candidate's overall experience and contributions across multiple domains, rather than prioritizing a single keyword match.  The JD explicitly states SQL is a key skill, amplifying its impact on the score."
+      },
+      {
+        "id": "data-lake-storage",
+        "label": "Data Lake",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The CV heavily emphasizes Lorenzo Brown's experience as a Frontend Engineer at NVIDIA, alongside his previous roles, creating a halo effect around his skills. The weight change (decrease) suggests the algorithm unfairly prioritized this strong signal (frontend engineering role) to the detriment of other potentially relevant skills, such as data engineering experience directly stated in the JD. A fair alternative would be to assess candidate skill sets across all relevant areas, not solely through the lens of their most recent or prestigious role. The reduction in weight reflects an over-reliance on one specific signal and a potential disregard for broader data engineering expertise."
+      },
+      {
+        "id": "databricks_data_engineer",
+        "label": "Databricks",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV lacks any mention of Databricks, Spark, AWS, or Azure – technologies explicitly listed in the Job Description (JD). This suggests the algorithm is prioritizing prestige signals (company names, specific technologies) over demonstrated skills. While Lorenzo's experience is valuable, the absence of key technical skills relevant to the role results in a penalty. A fair alternative would be to assess the candidate's skills and experience based on their accomplishments and the technologies they *have* used, rather than excluding them based on a missing keyword. The weight decrease reflects this misalignment."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "python-programming|data-engineer-domain",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The CV heavily emphasizes frontend engineering skills (Swift, SwiftUI, Firebase) and project experience at NVIDIA, which aligns with a different domain than the JD's focus on data engineering with Python. The limited mention of Python (as a general skill) and the lack of data engineering project details create a proxy bias – the system is prioritizing skills relevant to a different role, penalizing the candidate for not explicitly demonstrating data engineering expertise in their CV. A fairer alternative would be to assess the candidate's skills based on the JD's requirements and experience in related programming languages within a data engineering context."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2422 (sous-qualifié), CTM=0.7058 (écart structurel élevé), match_pct=30.37% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.2244, ndcg_5=0.9619, missing_critical_penalty=0.0, combo_v6_final=21.2",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "8 gaps critiques identifiés",
+    "bias_note": "9 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.74)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

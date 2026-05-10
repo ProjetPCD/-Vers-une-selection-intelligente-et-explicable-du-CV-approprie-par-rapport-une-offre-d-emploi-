@@ -1,0 +1,113 @@
+{
+  "nodes": [
+    {
+      "id": "sql_skill",
+      "label": "SQL",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "The job description explicitly lists SQL as an advanced tool.",
+      "inferred": true,
+      "inferred_from": "Le candidat idéal devra avoir une solide formation en extraction de données et en visualisation de données, ainsi que des compétences avancées en utilisant des outils tels que SQL..."
+    },
+    {
+      "id": "python_skill",
+      "label": "Python",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "The job description explicitly lists Python as an advanced tool.",
+      "inferred": true,
+      "inferred_from": "Le candidat idéal devra avoir une solide formation en extraction de données et en visualisation de données, ainsi que des compétences avancées en utilisant des outils tels que SQL, Python..."
+    },
+    {
+      "id": "excel_tool",
+      "label": "Microsoft Excel",
+      "type": "Tool",
+      "w_0": 0.969,
+      "seniority_required": "N/A",
+      "context": "The job description explicitly lists Microsoft Excel as an advanced tool.",
+      "inferred": true,
+      "inferred_from": "Le candidat idéal devra avoir une solide formation en extraction de données et en visualisation de données, ainsi que des compétences avancées en utilisant des outils tels que SQL, Python et Microsoft Excel."
+    },
+    {
+      "id": "data_analyst_domain",
+      "label": "Data Analyst",
+      "type": "Domain",
+      "w_0": 0.953,
+      "seniority_required": "N/A",
+      "context": "The job description states 'Mission passionnante pour un Data Analyst...'",
+      "inferred": true,
+      "inferred_from": "Mission passionnante pour un Data Analyst..."
+    },
+    {
+      "id": "advanced_skills_softskill",
+      "label": "compétences avancées",
+      "type": "Soft Skill",
+      "w_0": 0.88,
+      "seniority_required": "N/A",
+      "context": "The job description states 'des compétences avancées...'",
+      "inferred": true,
+      "inferred_from": "des compétences avancées en utilisant des outils tels que SQL, Python..."
+    },
+    {
+      "id": "statistical_analysis_hardskill",
+      "label": "analyse statistique",
+      "type": "Hard Skill",
+      "w_0": 0.626,
+      "seniority_required": "N/A",
+      "context": "The job description states 'solide formation en analyse statistique…'",
+      "inferred": true,
+      "inferred_from": "solide formation en analyse statistique..."
+    },
+    {
+      "id": "data_extraction_domain",
+      "label": "extraction de données",
+      "type": "Domain",
+      "w_0": 0.508,
+      "seniority_required": "N/A",
+      "context": "The job description states 'solide formation en extraction de données…'",
+      "inferred": true,
+      "inferred_from": "solide formation en extraction de données…"
+    }
+  ],
+  "edges": [
+    {
+      "source": "sql_skill",
+      "target": "data_analyst_domain",
+      "relation": "requires",
+      "weight": 0.95,
+      "rationale": "The JD explicitly states 'compétences avancées en utilisant des outils tels que SQL' indicating SQL is necessary for the role."
+    },
+    {
+      "source": "python_skill",
+      "target": "data_analyst_domain",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "The JD mentions 'compétences avancées en utilisant des outils tels que Python', strongly implying Python is required for data analysis tasks."
+    },
+    {
+      "source": "excel_tool",
+      "target": "data_analyst_domain",
+      "relation": "supports",
+      "weight": 0.75,
+      "rationale": "Microsoft Excel is often used as a supporting tool for data analysis and reporting, as described in the JD's emphasis on 'présenter de manière claire et concise'."
+    },
+    {
+      "source": "statistical_analysis_hardskill",
+      "target": "data_analyst_domain",
+      "relation": "part_of",
+      "weight": 0.65,
+      "rationale": "The JD specifies a 'solide formation en analyse statistique', indicating this skill is a core component of the Data Analyst role."
+    },
+    {
+      "source": "data_extraction_domain",
+      "target": "data_analyst_domain",
+      "relation": "part_of",
+      "weight": 0.55,
+      "rationale": "The JD requires expertise in 'extraction de données', making this a key part of the Data Analyst responsibilities."
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_43"
+}

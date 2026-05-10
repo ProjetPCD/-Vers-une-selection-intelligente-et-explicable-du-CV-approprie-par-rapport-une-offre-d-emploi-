@@ -1,0 +1,462 @@
+{
+  "job_id": "job_12",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-03T14:46:50.666443",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 43.85,
+    "confidence": {
+      "confidence_score": 0.53,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.45,
+        "coverage_rate": 0.6,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.4988,
+    "edge_score": 0.5149,
+    "combined": 0.5052
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3076,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5893,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5615,
+    "matched_nodes": "6/20",
+    "edge_match_pct": 25.73
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3194,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.4669,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2468,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1875,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.5306,
+    "weighted_recall": 0.1453,
+    "weighted_f1": {
+      "value": 0.2654,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6489,
+    "missing_critical_penalty": {
+      "value": 0.2143,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9049,
+    "ndcg_10": 0.8091,
+    "map_score": 0.8652,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9139,
+    "top_skill_alignment": 0.6771,
+    "semantic_fit_score": 0.4838,
+    "experience_density": 0.1883
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 34.64,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 33.8,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 31.49,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 91.48,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 48.3,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 36.4,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 57.09,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 5,
+      "match_pct": 33.2,
+      "weight_sum": 4.023
+    },
+    "Tool": {
+      "count": 10,
+      "match_pct": 21.7,
+      "weight_sum": 7.849
+    },
+    "Domain": {
+      "count": 3,
+      "match_pct": 15.0,
+      "weight_sum": 1.809
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 32.3,
+      "weight_sum": 1.419
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 25.73,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "edge-ai-expert-pytorch|candidate_profile",
+        "source": "edge-ai-expert-pytorch",
+        "target": "candidate_profile",
+        "w_0": 0.88,
+        "w_cv": 0.855,
+        "w_cv_norm": 0.427,
+        "match_pct": 48.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "edge-ai-expert-python|candidate_profile",
+        "source": "edge-ai-expert-python",
+        "target": "candidate_profile",
+        "w_0": 0.95,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 44.7,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "docker_containerization|candidate_profile",
+        "source": "docker_containerization",
+        "target": "candidate_profile",
+        "w_0": 0.68,
+        "w_cv": 0.772,
+        "w_cv_norm": 0.386,
+        "match_pct": 56.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "edge-ai-expert-rtos|candidate_profile",
+        "source": "edge-ai-expert-rtos",
+        "target": "candidate_profile",
+        "w_0": 0.75,
+        "w_cv": 0.688,
+        "w_cv_norm": 0.344,
+        "match_pct": 45.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "system_design_principles|candidate_profile",
+        "source": "system_design_principles",
+        "target": "candidate_profile",
+        "w_0": 0.73,
+        "w_cv": 0.647,
+        "w_cv_norm": 0.324,
+        "match_pct": 44.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Rust",
+      "type": "Hard Skill",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 0.988
+    },
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.977,
+      "severity": "critical",
+      "importance": 0.977
+    },
+    {
+      "skill": "Edge AI et systèmes embarqués",
+      "type": "Domain",
+      "gap": 0.787,
+      "severity": "critical",
+      "importance": 0.95
+    },
+    {
+      "skill": "Git",
+      "type": "Tool",
+      "gap": 0.929,
+      "severity": "critical",
+      "importance": 0.929
+    },
+    {
+      "skill": "C++",
+      "type": "Hard Skill",
+      "gap": 0.703,
+      "severity": "critical",
+      "importance": 0.872
+    },
+    {
+      "skill": "GitHub",
+      "type": "Tool",
+      "gap": 0.736,
+      "severity": "critical",
+      "importance": 0.83
+    },
+    {
+      "skill": "LLVM",
+      "type": "Tool",
+      "gap": 0.76,
+      "severity": "critical",
+      "importance": 0.76
+    },
+    {
+      "skill": "ONNX",
+      "type": "Tool",
+      "gap": 0.721,
+      "severity": "critical",
+      "importance": 0.721
+    },
+    {
+      "skill": "VSCode",
+      "type": "Tool",
+      "gap": 0.708,
+      "severity": "critical",
+      "importance": 0.708
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Rust",
+        "type": "Hard Skill",
+        "gap": 0.906
+      },
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.977
+      },
+      {
+        "label": "Edge AI et systèmes embarqués",
+        "type": "Domain",
+        "gap": 0.787
+      },
+      {
+        "label": "Git",
+        "type": "Tool",
+        "gap": 0.929
+      },
+      {
+        "label": "C++",
+        "type": "Hard Skill",
+        "gap": 0.703
+      },
+      {
+        "label": "GitHub",
+        "type": "Tool",
+        "gap": 0.736
+      },
+      {
+        "label": "LLVM",
+        "type": "Tool",
+        "gap": 0.76
+      },
+      {
+        "label": "ONNX",
+        "type": "Tool",
+        "gap": 0.721
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 12,
+    "nodes_with_bias": 12,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "C": 6,
+      "PRESTIGE|NONE": 1,
+      "PRESTIGE|PROXY": 1,
+      "PROXY": 1,
+      "C_AGEISM": 1,
+      "D": 1,
+      "PRESTIGE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "edge-ai-expert-python",
+        "label": "Python",
+        "bias_category": "PRESTIGE|NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.312,
+        "reason": "The weight increase (Delta: +0.050) is primarily driven by the explicit mention of 'Python for DATA SCIENCE' within the CV and its prominence in the JD. This aligns with the JD's requirements for a candidate skilled in data science applications within edge AI, and the CV’s prominent listing of this skill reflects a strong match to the desired expertise. While the experience is relevant, the JD specifically highlighted Python for DATA SCIENCE as a key requirement, boosting its value and explaining the weight increase. This isn't a prestige bias as there's no information regarding company name, but it demonstrates an accurate match to the skills requested, leaning towards a favorable assessment of the candidate’s qualifications."
+      },
+      {
+        "id": "edge-ai-expert-rust",
+        "label": "Rust",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.163,
+        "reason": "The audit identified a significant decrease (Delta = -0.738) in the weight assigned to the candidate's Rust skill, despite the JD explicitly requesting it. The CV lacks any demonstrable experience or skills related to Rust, focusing primarily on AWS, DevOps, and experience in other languages like C++, Python, and Bengali/English. This indicates a reliance on inferred skill, which is not supported by the provided data, leading to an unfair penalization. The candidate's background is primarily in DevOps and system engineering, highlighting a lack of direct Rust expertise, thus a correction factor of 0.65 reflects the unwarranted reduction in weight."
+      },
+      {
+        "id": "edge-ai-expert-azure-devops",
+        "label": "Azure DevOps",
+        "bias_category": "PRESTIGE|PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.438,
+        "reason": "The increased weight assigned to 'DevOps' experience, particularly the 4 years of experience, is likely a proxy bias. The CV explicitly highlights DevOps roles, which are currently highly sought after and can carry a premium in compensation.  While relevant, this weight reflects a Prestige Bias - the JD heavily emphasizes DevOps, potentially giving an advantage to candidates simply listing that experience regardless of other skills.  The addition of 0.15 reflects the weight is likely inflated due to market trends and the JD's focus.  A fairer alternative would be to weight skills demonstrated in the JD (e.g., AI, embedded systems) more heavily."
+      },
+      {
+        "id": "edge-ai-expert-pytorch",
+        "label": "PyTorch",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.14,
+        "reason": "The significant decrease in weight (0.027) for PyTorch is likely a proxy bias due to the CV explicitly mentioning PyTorch, which aligns with the JD's requirements for an Edge AI expert. While Shirsendu's experience as a DevOps Engineer at TCS includes some Python usage, the JD's emphasis on PyTorch as a core skill and the explicitly stated experience is indicative of a preference for candidates who highlight this specific technology, rather than a genuine assessment of their overall expertise.  A correction factor of 1.20 is applied to account for this potential bias, reflecting the importance of PyTorch in the context of the role."
+      },
+      {
+        "id": "edge-ai-systems-embedded",
+        "label": "Edge AI et systèmes embarqués",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.3,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.325,
+        "reason": "The significant decrease in weight (Delta = -0.700) for 'edge-ai-systems-embedded' is likely due to ageism. The CV primarily highlights extensive experience at IBM and TCS, spanning over a decade, without explicitly showcasing recent skills or projects related to the rapidly evolving field of edge AI and embedded systems. The JD emphasizes 'cutting-edge' solutions and specific tool expertise (LLVM, TVM) which isn't strongly reflected in the candidate's listed experience, creating a mismatch between the desired profile and the candidate's technical background. A fair alternative would prioritize more recent and relevant project experience, despite the longer career timeline, adjusting the weight to reflect the dynamic nature of the role."
+      },
+      {
+        "id": "c-plus-plus",
+        "label": "C++",
+        "bias_category": "C_AGEISM",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.338,
+        "reason": "The CV shows 4 years of experience, which is being heavily penalized (Delta = -0.422). While experience is valued, the substantial reduction in weight suggests an ageist bias. The JD emphasizes a modern approach to edge AI development, and the candidate's experience, while valuable, aligns with a slightly older generation of software engineering practices (IBM and TCS experience). This creates a disparity – the CV's experience is diminished without context to its relevance to the current, demanding skillset outlined in the JD, and focuses disproportionately on legacy technologies."
+      },
+      {
+        "id": "github",
+        "label": "GitHub",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "This weight decrease (w_cv from 0.83 to 0.25) is likely driven by AGEISM and PROXY BIAS. The candidate's CV highlights extensive experience (12+ years) at TCS, Cerner, and IBM, using older technologies (May 2016 - November 2019) and languages, while the JD explicitly prioritizes modern Edge AI tools like LLVM, TVM, and Rust. The CV emphasizes familiarity with older systems, suggesting the algorithm is penalizing experience with newer technologies, a proxy for 'modernity' implicitly valued by the role.  The low weight assigned to GitHub (a key modern DevOps tool) reflects this bias. A fair alternative would be to give a higher weight to demonstrable skills in the required modern technologies, regardless of overall experience."
+      },
+      {
+        "id": "edge-ai-expert-rtos",
+        "label": "systèmes d'exploitation en temps réel (RTOS)",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.806,
+        "reason": "This weight increase (Delta = +0.371) is likely due to the candidate's experience listed as a DevOps Engineer at TCS (4.5 years). This represents a significant increase in weighting, suggesting a potential AGEISM bias where experience beyond a certain threshold is unfairly favored without a rigorous skills assessment.  The JD emphasizes expertise in RTOS and embedded systems which the CV confirms with experience at TCS.  A fairer alternative would be to reduce the factor slightly to acknowledge the increased experience while retaining its value, as the candidate’s profile aligns with the technical requirements, however, the weight increase is disproportionate to the limited context provided."
+      },
+      {
+        "id": "edge-ai-expert-communication",
+        "label": "Communication",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.906,
+        "reason": "The CV indicates 4.5 years of experience as a DevOps Engineer at TCS, demonstrating relevant technical skills for Edge AI and systems embedded. However, the description lacks project context and specific accomplishments related to AI or low-power systems, leading to a decreased weight. This suggests a proxy bias; the experience is valuable but not directly aligned with the specific needs of the role, potentially overlooking Shrirsendu Bhunia’s capabilities in this particular domain, requiring an increase in the weight to reflect the breadth of his DevOps experience and potential for adaptation."
+      },
+      {
+        "id": "edge-ai-expert-leadership",
+        "label": "Leadership",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.356,
+        "reason": "The candidate's CV lacks evidence of direct expertise in 'Edge AI' or 'Edge AI Expert Leadership', despite claims to the contrary and the job description's requirements. The CV highlights a history of DevOps Engineering, primarily at TCS, with experience in areas like AWS, Docker, and Terraform – valuable but not directly aligned with the specific demands of designing and developing 'AI solutions for low-power and sustainable applications.' The reduction in weight suggests a misplacement of emphasis on general DevOps skills rather than the sought-after Edge AI expertise, indicating potential ageism by prioritizing experience rather than relevant skills in the current role’s context. A fairer alternative would be to assess the candidate's understanding of AI principles and system design, or provide a specific skills assessment."
+      },
+      {
+        "id": "podman_container_management",
+        "label": "Podman",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.404,
+        "reason": "This weight increase likely reflects a bias towards experience, specifically within DevOps and systems engineering. While the JD explicitly states a need for expertise in Edge AI and systems embedded, the CV heavily emphasizes prior DevOps roles at major firms like TCS, IBM, and Cerner, and includes certifications relevant to those areas (AWS, Terraform, Python for Data Science). The extended duration of Shirsendu's experience across multiple companies (10+ years total) is also a factor, potentially overweighing skills directly related to Edge AI compared to the JD’s stated requirements. A fair alternative would prioritize the mentioned AI skills, particularly if the resume highlights relevant projects, but this is not currently evident."
+      },
+      {
+        "id": "candidate_profile",
+        "label": "Candidat",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.57,
+        "reason": "The candidate's CV highlights experience at TCS, a well-regarded and prestigious engineering firm, which is explicitly mentioned in the job description. This preference for a large, respected company, without considering the candidate's specific skills or experience within the Edge AI and systems embedded domain, indicates prestige bias. The increased weighting suggests a disproportionate focus on the company name rather than demonstrable technical abilities like experience with compilers, RTOS, or specific AI tools."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3076 (sous-qualifié), CTM=0.5893 (écart structurel élevé), match_pct=43.85% → Poor Match",
+    "v6_summary": "weighted_f1=0.2654, gap_score=0.2468, ndcg_5=0.9049, missing_critical_penalty=0.2143, combo_v6_final=34.64",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "9 gaps critiques identifiés",
+    "bias_note": "12 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.53)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

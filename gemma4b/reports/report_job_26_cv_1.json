@@ -1,0 +1,461 @@
+{
+  "job_id": "job_26",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-05T11:34:30.960736",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 37.38,
+    "confidence": {
+      "confidence_score": 0.6,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.55,
+        "coverage_rate": 0.7,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.4857,
+    "edge_score": 0.5216,
+    "combined": 0.5001
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2795,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6324,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6262,
+    "matched_nodes": "2/20",
+    "edge_match_pct": 26.08
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2672,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.5186,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.2586,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0526,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.838,
+    "weighted_recall": 0.0326,
+    "weighted_f1": {
+      "value": 0.0641,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.531,
+    "missing_critical_penalty": {
+      "value": 0.0625,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.899,
+    "ndcg_10": 0.9362,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.3917,
+    "semantic_fit_score": 0.542,
+    "experience_density": 0.2033
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 27.63,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 30.15,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 30.63,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 95.96,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 37.53,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 30.88,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 39.58,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 2,
+      "match_pct": 18.4,
+      "weight_sum": 1.631
+    },
+    "Tool": {
+      "count": 10,
+      "match_pct": 21.4,
+      "weight_sum": 8.098
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 38.0,
+      "weight_sum": 3.561
+    },
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 19.9,
+      "weight_sum": 2.602
+    },
+    "Responsibility": {
+      "count": 1,
+      "match_pct": 18.8,
+      "weight_sum": 0.85
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 26.08,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "backend_engineer|go_programming",
+        "source": "backend_engineer",
+        "target": "go_programming",
+        "w_0": 0.95,
+        "w_cv": 0.832,
+        "w_cv_norm": 0.416,
+        "match_pct": 43.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "backend_engineer|communication-skills",
+        "source": "backend_engineer",
+        "target": "communication-skills",
+        "w_0": 0.75,
+        "w_cv": 0.706,
+        "w_cv_norm": 0.353,
+        "match_pct": 47.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "backend_engineer|gitlab_ci",
+        "source": "backend_engineer",
+        "target": "gitlab_ci",
+        "w_0": 0.7,
+        "w_cv": 0.673,
+        "w_cv_norm": 0.337,
+        "match_pct": 48.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "backend_engineer|kubernetes_orchestration",
+        "source": "backend_engineer",
+        "target": "kubernetes_orchestration",
+        "w_0": 0.86,
+        "w_cv": 0.58,
+        "w_cv_norm": 0.29,
+        "match_pct": 33.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "backend_engineer|postgres_db",
+        "source": "backend_engineer",
+        "target": "postgres_db",
+        "w_0": 0.87,
+        "w_cv": 0.574,
+        "w_cv_norm": 0.287,
+        "match_pct": 33.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Backend Engineer",
+      "type": "Domain",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PostgreSQL",
+      "type": "Tool",
+      "gap": 0.726,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Kubernetes",
+      "type": "Tool",
+      "gap": 0.72,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Redis",
+      "type": "Tool",
+      "gap": 0.818,
+      "severity": "critical",
+      "importance": 0.984
+    },
+    {
+      "skill": "Kafka",
+      "type": "Tool",
+      "gap": 0.749,
+      "severity": "critical",
+      "importance": 0.96
+    },
+    {
+      "skill": "Capacité à travailler en équipe",
+      "type": "Soft Skill",
+      "gap": 0.649,
+      "severity": "critical",
+      "importance": 0.89
+    },
+    {
+      "skill": "Clean Architecture",
+      "type": "Hard Skill",
+      "gap": 0.85,
+      "severity": "critical",
+      "importance": 0.85
+    },
+    {
+      "skill": "Code Reviews",
+      "type": "Responsibility",
+      "gap": 0.662,
+      "severity": "critical",
+      "importance": 0.85
+    },
+    {
+      "skill": "SOLID",
+      "type": "Hard Skill",
+      "gap": 0.776,
+      "severity": "critical",
+      "importance": 0.776
+    },
+    {
+      "skill": "gRPC",
+      "type": "Tool",
+      "gap": 0.72,
+      "severity": "critical",
+      "importance": 0.72
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Backend Engineer",
+        "type": "Domain",
+        "gap": 0.7
+      },
+      {
+        "label": "PostgreSQL",
+        "type": "Tool",
+        "gap": 0.726
+      },
+      {
+        "label": "Kubernetes",
+        "type": "Tool",
+        "gap": 0.72
+      },
+      {
+        "label": "Redis",
+        "type": "Tool",
+        "gap": 0.818
+      },
+      {
+        "label": "Kafka",
+        "type": "Tool",
+        "gap": 0.749
+      },
+      {
+        "label": "Capacité à travailler en équipe",
+        "type": "Soft Skill",
+        "gap": 0.649
+      },
+      {
+        "label": "Clean Architecture",
+        "type": "Hard Skill",
+        "gap": 0.85
+      },
+      {
+        "label": "Code Reviews",
+        "type": "Responsibility",
+        "gap": 0.662
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 14,
+    "nodes_with_bias": 11,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 6,
+      "B": 3,
+      "PRESTIGE|PROXY": 1,
+      "C": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "backend_engineer",
+        "label": "Backend Engineer",
+        "bias_category": "PRESTIGE|PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.601,
+        "reason": "The CV demonstrates experience with Next.js and Java Spring Boot in the ‘Novy’ project, aligning with the JD’s technology stack requirements (Go, PostgreSQL, Redis, Kafka, gRPC, Kubernetes). However, the location (Oujda, Morocco) and association with Oracle Casablanca introduce a proxy bias – favoring candidates from well-known companies and locations, potentially overlooking equally qualified individuals from less prestigious locations.  This is a MEDIUM severity bias because while the technical skills are relevant, the contextual information related to the project and location adds an unfair weighting. A correction factor of 0.75 is applied to account for the added influence of the project and geographic location, recognizing the potential for favoring candidates associated with established organizations."
+      },
+      {
+        "id": "postgres_db",
+        "label": "PostgreSQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.547,
+        "reason": "The significant decrease in weight for PostgreSQL (w_0 = 0.643 compared to ideal 1.0) is likely due to the project context mentioning specific technologies like Next.js and Java Spring Boot used within the Jira synchronization project. This proxies socioeconomic factors – specifically, that the candidate’s experience with Next.js and Spring Boot, rather than core backend skills like PostgreSQL, is being overly emphasized in the screening process. While proficiency in PostgreSQL is required, the JD focuses heavily on newer, more modern technologies, unfairly prioritizing the candidate's experience in those areas and potentially devaluing the crucial experience with PostgreSQL. The correction factor reflects this biased weighting."
+      },
+      {
+        "id": "redis_cache",
+        "label": "Redis",
+        "bias_category": "PROXY",
+        "severity": "LOW",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.332,
+        "reason": "The decrease in weight (w_cv from 0.984 to 0.442) for 'Redis' is likely a proxy bias. The job description explicitly lists Redis as a key technology, indicating its importance, yet the CV simply lists it as a tool within a project, offering no depth of knowledge or demonstrated proficiency.  This suggests that the algorithm is prioritizing the name of the technology (Redis) over the applicant's actual skills in utilizing it, reflecting a preference for familiarity with commonly listed technologies.  A fair alternative would be a weighting that reflects demonstrated experience with Redis, regardless of its presence in the project description. The rationale provided – ‘Peripheral mention in the context of project involvement. Weak evidence’ – further supports the assessment of a proxy bias."
+      },
+      {
+        "id": "kubernetes_orchestration",
+        "label": "Kubernetes",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.559,
+        "reason": "The significant decrease in the weight for Kubernetes orchestration (w_0) is likely driven by the context provided in the CV.  Hamza's experience primarily revolves around a specific Jira project ('Développement et intégration de la fonctionnalité de connexion et synchronisation des tickets Jira') using Next.js and Java Spring Boot, highlighting a specific use case rather than a general proficiency in Kubernetes.  This leans heavily on a proxy signal - the project itself - to evaluate his Kubernetes skills, rather than demonstrating actual expertise. A moderate evidence score indicates the project context, but it is not a broadly recognized demonstration of Kubernetes skills and is likely biasing the evaluation.  A fair alternative would be to assess his Kubernetes knowledge through a technical assessment or specific questions regarding its implementation and best practices."
+      },
+      {
+        "id": "communication_skills",
+        "label": "Communication efficace",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.836,
+        "reason": "The CV explicitly states 'Collaboration avec l’équipe de développement et interaction avec l’équipe QA’ alongside evidence of project collaboration and bug resolution. This demonstrates communication skills vital for the backend engineer role. While the adjusted score (0.697) is lower than the ideal (0.969), the contextual evidence strongly suggests the decrease is due to an overemphasis on ideal communication skills rather than a deficit, warranting an increase to 1.2 to reflect the documented contributions and the importance of communication in this specific role. The JD also mentions a need for strong communication skills, further reinforcing the need to prioritize this aspect of the candidate's profile."
+      },
+      {
+        "id": "go_programming",
+        "label": "Go",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.062,
+        "reason": "This weight change (Delta: -0.126) represents a significant decrease in the weight of the ‘go_programming’ node. The rationale highlights the explicit use of Go within a specific project (‘Développement et intégration de la fonctionnalité de connexion et synchronisation des tickets Jira’) and notes high experience years. However, the CV primarily details work with Next.js and Java Spring Boot, alongside a relatively junior role at Oracle and a short-term project involving Next.js. The JD emphasizes Go as a core technology, yet the candidate’s experience is heavily weighted towards technologies outside of Go, creating a misrepresentation of their skillset and leading to a bias in the weighting.  Therefore, the decrease in weight is unfair, requiring an increase to mitigate the bias. This bias falls under Ageism as the CV’s emphasis on recent projects using different technologies might undervalue foundational skills demonstrated through previous experience with Go."
+      },
+      {
+        "id": "teamwork_skills",
+        "label": "Capacité à travailler en équipe",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.482,
+        "reason": "The reduction in weight for 'teamwork_skills' (from 0.89 to 0.643) is driven by the JD's emphasis on leadership and communication skills as 'essential.' However, the CV explicitly states 'Collaboration avec l’équipe de développement et interaction avec l’équipe QA,' highlighting the skill's demonstration through practical experience. Given the contextual evidence strongly supports teamwork, a decrease in weight is biased, favoring the direct evidence within the CV. A correction factor of 0.75 aims to rectify this and appropriately weight the demonstrated teamwork capability."
+      },
+      {
+        "id": "kafka_messaging",
+        "label": "Kafka",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.421,
+        "reason": "The substantial decrease in weight (w_cv from 0.96 to 0.495) for Kafka, despite it being a listed technology in the JD, suggests a proxy bias. The CV’s mention of Kafka is simply descriptive, not demonstrating a demonstrable skill or project involvement. This focus on merely listing skills from the JD (rather than concrete experience) disproportionately penalizes candidates who have Kafka experience, reflecting an unwarranted emphasis on the presence of a technology name rather than a skill proficiency -  likely due to the candidate’s junior experience within Oracle. A fairer alternative would be to assess the candidate’s application of technologies in a project-based manner."
+      },
+      {
+        "id": "code-review",
+        "label": "Code Reviews",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The significant decrease in weight (w_cv from 0.85 to 0.5) is driven by the lack of explicit mention of code review experience in the CV. The JD explicitly states that code reviews are a core responsibility, yet the candidate's CV focuses on project collaborations and overall development experience without detailing active participation in reviewing code. This proxy bias reflects an assumption that experience with a specific methodology (code reviews) is present simply because the candidate is a software engineer, which isn't always the case. A higher weighting would be appropriate if the CV had even a single line mentioning code review activity."
+      },
+      {
+        "id": "nosql-databases",
+        "label": "NoSQL Databases",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.525,
+        "reason": "The decreased weight on the candidate's experience with NoSQL databases (specifically Next.js and Java Spring Boot integration within the Novy project) suggests a proxy bias related to the specific technologies listed in the job description. While experience with those technologies is valuable, the emphasis on them in the CV, coupled with the project's description, may be unduly favoring candidates who have worked with those technologies, regardless of their overall backend engineering skills. A fair alternative would be to assess the candidate's broader backend skills and adaptability rather than solely focusing on this single technology stack."
+      },
+      {
+        "id": "communication-skills",
+        "label": "Communication",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 1.08,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.81,
+        "reason": "The CV explicitly highlights Hamza's collaborative experience and understanding of project lifecycles gained through team projects, aligning with the JD's emphasis on communication and collaboration. The increased weight (Delta +0.048) suggests the algorithm is recognizing and rewarding this relevant skill. While the CV's focus on student status might be a minor factor, the demonstrable collaborative skills outweigh this prestige signal, classifying this as a positive weighting adjustment.  This indicates a merit-based adjustment, leaning slightly toward favoring the candidate based on the stated evidence."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2795 (sous-qualifié), CTM=0.6324 (écart structurel élevé), match_pct=37.38% → Poor Match",
+    "v6_summary": "weighted_f1=0.0641, gap_score=0.2586, ndcg_5=0.899, missing_critical_penalty=0.0625, combo_v6_final=27.63",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "11 gaps critiques identifiés",
+    "bias_note": "11 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.6)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

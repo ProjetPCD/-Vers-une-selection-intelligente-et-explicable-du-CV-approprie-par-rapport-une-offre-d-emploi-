@@ -1,0 +1,103 @@
+{
+  "nodes": [
+    {
+      "id": "azure_devops_frontend_dev",
+      "label": "Azure DevOps",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Used as an essential development tool within the role.",
+      "inferred": true,
+      "inferred_from": "outils de développement tels que Azure DevOps"
+    },
+    {
+      "id": "frontend_developer_role",
+      "label": "Frontend Developer",
+      "type": "Domain",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Explicitly stated as the role being filled.",
+      "inferred": true,
+      "inferred_from": "En tant que Frontend Developer"
+    },
+    {
+      "id": "agile_methodology",
+      "label": "Agile",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Explicitly mentioned as a required methodology.",
+      "inferred": true,
+      "inferred_from": "et qui est à l'aise avec les méthodologies Agile"
+    },
+    {
+      "id": "github_actions_dev_tool",
+      "label": "GitHub Actions",
+      "type": "Tool",
+      "w_0": 0.658,
+      "seniority_required": "N/A",
+      "context": "Listed as a development tool.",
+      "inferred": true,
+      "inferred_from": "outils de développement tels que GitHub Actions"
+    },
+    {
+      "id": "user_experience_ux",
+      "label": "expérience utilisateur",
+      "type": "Soft Skill",
+      "w_0": 0.535,
+      "seniority_required": "N/A",
+      "context": "Requirement related to UI design and usability.",
+      "inferred": true,
+      "inferred_from": "de l'expérience utilisateur"
+    },
+    {
+      "id": "web_applications_domain",
+      "label": "applications web",
+      "type": "Domain",
+      "w_0": 0.443,
+      "seniority_required": "N/A",
+      "context": "The type of applications the developer will be working on.",
+      "inferred": true,
+      "inferred_from": "développement de applications web innovantes et scalables"
+    }
+  ],
+  "edges": [
+    {
+      "source": "frontend_developer_role",
+      "target": "web_applications_domain",
+      "relation": "part_of",
+      "weight": 0.65,
+      "rationale": "Frontend Developers are involved in the creation of web applications."
+    },
+    {
+      "source": "frontend_developer_role",
+      "target": "azure_devops_frontend_dev",
+      "relation": "supports",
+      "weight": 0.5,
+      "rationale": "Azure DevOps is a common tool used by frontend developers for CI/CD and project management."
+    },
+    {
+      "source": "frontend_developer_role",
+      "target": "github_actions_dev_tool",
+      "relation": "supports",
+      "weight": 0.4,
+      "rationale": "GitHub Actions is increasingly used for frontend deployments and testing."
+    },
+    {
+      "source": "frontend_developer_role",
+      "target": "agile_methodology",
+      "relation": "part_of",
+      "weight": 0.7,
+      "rationale": "Frontend development heavily relies on Agile methodologies for iterative development."
+    },
+    {
+      "source": "frontend_developer_role",
+      "target": "user_experience_ux",
+      "relation": "complements",
+      "weight": 0.4,
+      "rationale": "Understanding UX principles is a key requirement for creating user-friendly web applications."
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_62"
+}

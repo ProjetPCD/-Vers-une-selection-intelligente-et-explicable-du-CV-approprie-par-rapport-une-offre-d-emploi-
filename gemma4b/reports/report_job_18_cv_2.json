@@ -1,0 +1,357 @@
+{
+  "job_id": "job_18",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-04T13:59:37.278683",
+  "overall_assessment": {
+    "verdict": "Weak Match",
+    "match_pct": 56.25,
+    "confidence": {
+      "confidence_score": 0.85,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.067,
+        "coverage_rate": 0.867,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.6665,
+    "edge_score": 0.5543,
+    "combined": 0.6216
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.4324,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.4473,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Écart modéré"
+    },
+    "weighted_gap": 0.4375,
+    "matched_nodes": "5/15",
+    "edge_match_pct": 27.72
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.4385,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.5376,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.3982,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.25,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.7663,
+    "weighted_recall": 0.1761,
+    "weighted_f1": {
+      "value": 0.3202,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5518,
+    "missing_critical_penalty": {
+      "value": 0.4286,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9173,
+    "ndcg_10": 0.9163,
+    "map_score": 0.8513,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9122,
+    "top_skill_alignment": 0.6146,
+    "semantic_fit_score": 0.7109,
+    "experience_density": 0.2388
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 45.04,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 42.61,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 47.06,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 91.49,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 50.55,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 51.62,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 52.06,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 10.0,
+      "weight_sum": 1.0
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 53.1,
+      "weight_sum": 0.952
+    },
+    "Tool": {
+      "count": 8,
+      "match_pct": 38.8,
+      "weight_sum": 5.923
+    },
+    "Domain": {
+      "count": 5,
+      "match_pct": 23.7,
+      "weight_sum": 2.873
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 27.72,
+    "total_edges": 9,
+    "top_synergies": [
+      {
+        "edge_key": "fullstack_dev_postgresql|dev-role",
+        "source": "fullstack_dev_postgresql",
+        "target": "dev-role",
+        "w_0": 0.7,
+        "w_cv": 0.957,
+        "w_cv_norm": 0.479,
+        "match_pct": 68.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "fullstack_dev_agile|dev-role",
+        "source": "fullstack_dev_agile",
+        "target": "dev-role",
+        "w_0": 0.6,
+        "w_cv": 0.863,
+        "w_cv_norm": 0.431,
+        "match_pct": 71.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "fullstack_dev_mysql|dev-role",
+        "source": "fullstack_dev_mysql",
+        "target": "dev-role",
+        "w_0": 0.75,
+        "w_cv": 0.832,
+        "w_cv_norm": 0.416,
+        "match_pct": 55.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "github-repo|dev-role",
+        "source": "github-repo",
+        "target": "dev-role",
+        "w_0": 0.55,
+        "w_cv": 0.656,
+        "w_cv_norm": 0.328,
+        "match_pct": 59.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "gitlab-repo|dev-role",
+        "source": "gitlab-repo",
+        "target": "dev-role",
+        "w_0": 0.5,
+        "w_cv": 0.656,
+        "w_cv_norm": 0.328,
+        "match_pct": 65.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "PHP",
+      "type": "Hard Skill",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 1.0
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "PHP",
+        "type": "Hard Skill",
+        "gap": 0.9
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 12,
+    "nodes_with_bias": 11,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 8,
+      "D": 2,
+      "PRESTIGE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "fullstack_dev_php",
+        "label": "PHP",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.2,
+        "reason": "The candidate's CV lacks explicit mention of PHP or related technologies (Symfony, Docker), which are key requirements outlined in the job description. The large delta (-0.75) indicates a significant penalty for not meeting these core technical needs. This represents a proxy bias - the system is prioritizing skills listed in the JD, penalizing the candidate for lacking those specific skills despite possessing relevant experience in cloud, Kubernetes, and DevOps. A correction factor of 0.80 reflects the unfairness of this penalization based solely on the absence of PHP mentions, acknowledging the candidate's substantial experience in related areas."
+      },
+      {
+        "id": "fullstack_dev_agile",
+        "label": "Méthodes Agiles",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.062,
+        "reason": "The candidate's CV highlights extensive experience with Kubernetes, OpenShift, and DevOps practices, directly aligning with the JD's requirements for a full-stack developer with Agile experience and strong cloud skills. However, the reduction in weight suggests the algorithm unfairly penalized the candidate's strong technical background, particularly regarding cloud infrastructure expertise, which is a critical component of the role. This proxy bias prioritizes a university name (implied through the company Next Step) over demonstrable skills in a relevant and highly sought-after technology area, favoring prestige over practical experience."
+      },
+      {
+        "id": "fullstack_dev_postgresql",
+        "label": "PostgreSQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.25,
+        "reason": "The increased weight for w_cv (1.0 vs. 0.975) is likely driven by Azza Kouka's experience with automating Kubernetes cluster deployments, specifically in the context of the JD's requirements. This highlights a proxy bias – the system is favoring candidates demonstrating practical experience in deploying and managing infrastructure, which aligns with the specific technical demands of the role. The CV’s focus on Kubernetes/OpenShift and IaC solutions is likely the source of this increased weight, suggesting the system is prioritizing skills related to cloud infrastructure rather than broad development experience."
+      },
+      {
+        "id": "fullstack_dev_symfony",
+        "label": "Symfony",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.938,
+        "reason": "The significant decrease in weight (0.826 to 0.75) primarily driven by the applicant's listed language skills (German - Elementary, English - Professional, Arabic - Native/Bilingual) suggests Proxy Bias. While language skills are valuable, the system penalized a candidate for possessing these skills, especially given the job's context requiring expertise in PHP, Symfony, and DevOps – areas where native fluency isn't a primary requirement.  This unfairly diminishes the candidate's technical qualifications and experience, favoring candidates with only English fluency.  A fairer alternative would be to focus solely on the technical skills demonstrated (Kubernetes, OpenShift, Terraform, CI/CD) and ignore the language proficiency as a separate evaluation factor.  The current weighting implicitly penalizes candidates from diverse linguistic backgrounds."
+      },
+      {
+        "id": "fullstack_dev_it_tech",
+        "label": "Technologies de l'Information",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.552,
+        "reason": "The significant decrease in weight (w_0) despite the candidate possessing strong technical skills aligned with the JD's requirements suggests a proxy bias. The CV highlights expertise in Kubernetes/OpenShift and SRE, directly addressing the key skills emphasized in the job description – particularly the focus on ‘DevOps and the ability to work in a Linux environment.’ The candidate's experience with infrastructure and cloud technologies outweighs the relatively low score, indicating a reliance on less relevant signals like the candidate’s native Arabic language skills, which are not directly related to the job’s technical demands. This reflects an overemphasis on geographic or linguistic factors as proxies for suitable candidates, resulting in an unfair penalization."
+      },
+      {
+        "id": "fullstack_dev_docker",
+        "label": "Docker",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The weight decrease (Delta = -0.036) is likely driven by the applicant’s CV highlighting experience with Red Hat OpenShift and Kubernetes, technologies explicitly mentioned in the JD. This suggests a proxy bias – the system is prioritizing candidates with experience in technologies aligned with the specific deployment environment (Kubernetes cluster) rather than assessing the candidate's broader technical skills or suitability for the role’s broader requirements. A lower weight given to OpenShift/Kubernetes expertise reflects an overemphasis on a specific technology preference, potentially excluding candidates with valuable experience in related areas. A correction factor of 0.75 acknowledges this undue weighting."
+      },
+      {
+        "id": "fullstack_dev_doctrine",
+        "label": "Doctrine",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The significant decrease in weight (w_cv from 0.697 to 0.35) for Azza Kouka's CV is likely driven by the prominence of non-technical skills and language proficiency – specifically, her fluency in German, French, and Arabic.  The job description heavily emphasizes PHP, Symfony, Docker, and DevOps skills, while Azza's CV focuses on a broader cloud engineering skillset and extensive operational experience.  This proxy bias unfairly penalizes her for skills not directly related to the technical requirements as defined in the job description, potentially overlooking her valuable experience as a SRE, particularly in high-availability environments."
+      },
+      {
+        "id": "fullstack_dev_web_dev",
+        "label": "Développement Web",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.488,
+        "reason": "The increased weight (Delta = +0.069) is likely driven by the candidate's skills in cloud technologies (Kubernetes, OpenShift, Terraform, Prometheus, Grafana) which align with the job description's emphasis on DevOps and cloud-native development. This proxy bias prioritizes location-specific experience ( Tunisie) and language skills (German, Arabic), which are not core requirements for a fullstack dev role, potentially overshadowing more broadly applicable technical skills. A correction factor of 0.75 reflects the undue influence of these non-essential factors in the assessment."
+      },
+      {
+        "id": "github-repo",
+        "label": "GitHub",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.648,
+        "reason": "The significant increase in weight (0.244) for the candidate’s experience with GitLab and GitHub repositories, coupled with the strong rationale emphasizing their key skills within those platforms, suggests a prestige bias. The JD specifically highlights GitLab and GitHub as essential tools, and the candidate’s experience directly aligns with those requirements. While relevant, the weighting disproportionately emphasizes these tools, potentially overshadowing other equally valuable skills and experience the candidate possesses, particularly given the context of a global hiring process and the inherent biases in quantifying experience based on specific tools. A more reasonable weighting would acknowledge the skill and experience but not inflate it to such an extent, reflecting a fairer assessment of the candidate's overall suitability. The correction factor reflects the overemphasis on this specific technology stack."
+      },
+      {
+        "id": "gitlab-repo",
+        "label": "GitLab",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.648,
+        "reason": "The significant increase in weight (w_0 from 0.61 to 0.864) is likely driven by the candidate’s specific geographic location (Tunisia) and language skills (Arabic, German). While technical skills are relevant, the system appears to be over-weighting signals related to regional expertise and language proficiency, which are proxies for socioeconomic factors and potentially irrelevant to the role's requirements. A fairer system would focus solely on demonstrable technical skills and experience."
+      },
+      {
+        "id": "apache-web-server",
+        "label": "Apache",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.437,
+        "reason": "The increased weight for Apache web servers in the adapted CV (0.514) compared to the ideal (0.411) is likely a proxy bias. The job description heavily emphasizes Kubernetes/OpenShift and modern cloud technologies, while the CV prominently features experience with legacy systems like Apache and Tomcat. This indicates the recruiter may be disproportionately valuing familiarity with older technologies, reflecting a bias toward candidates with experience in traditional environments rather than prioritizing the candidate's specific skills in OpenShift and cloud-native development, where their experience is more relevant."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.4324 (sous-qualifié), CTM=0.4473 (écart structurel modéré), match_pct=56.25% → Weak Match",
+    "v6_summary": "weighted_f1=0.3202, gap_score=0.3982, ndcg_5=0.9173, missing_critical_penalty=0.4286, combo_v6_final=45.04",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "1 gaps critiques identifiés",
+    "bias_note": "11 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.85)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

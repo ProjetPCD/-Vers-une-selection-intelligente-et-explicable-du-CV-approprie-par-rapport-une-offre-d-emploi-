@@ -1,0 +1,520 @@
+{
+  "job_id": "job_7",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-02T18:33:38.406369",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 38.07,
+    "confidence": {
+      "confidence_score": 0.63,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.565,
+        "coverage_rate": 0.739,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.436,
+    "edge_score": 0.3484,
+    "combined": 0.401
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2604,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6267,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6193,
+    "matched_nodes": "3/23",
+    "edge_match_pct": 17.44
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2793,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.3357,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2323,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.05,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.1448,
+    "weighted_recall": 0.0385,
+    "weighted_f1": {
+      "value": 0.0745,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.656,
+    "missing_critical_penalty": {
+      "value": 0.0526,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.6918,
+    "ndcg_10": 0.7749,
+    "map_score": 0.8058,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.3949,
+    "experience_density": 0.1735
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 23.28,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 24.17,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 24.36,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 80.88,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 34.88,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 29.6,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 23.15,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 2,
+      "match_pct": 9.6,
+      "weight_sum": 1.528
+    },
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 48.5,
+      "weight_sum": 1.751
+    },
+    "Tool": {
+      "count": 13,
+      "match_pct": 19.3,
+      "weight_sum": 11.538
+    },
+    "Methodology": {
+      "count": 1,
+      "match_pct": 8.1,
+      "weight_sum": 0.797
+    },
+    "Soft Skill": {
+      "count": 5,
+      "match_pct": 26.1,
+      "weight_sum": 2.694
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 17.44,
+    "total_edges": 15,
+    "top_synergies": [
+      {
+        "edge_key": "python-job-hint-1|machine_learning_hard_skill",
+        "source": "python-job-hint-1",
+        "target": "machine_learning_hard_skill",
+        "w_0": 0.95,
+        "w_cv": 1.012,
+        "w_cv_norm": 0.506,
+        "match_pct": 53.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python-job-hint-1|data-scientist-job-hint-1",
+        "source": "python-job-hint-1",
+        "target": "data-scientist-job-hint-1",
+        "w_0": 0.98,
+        "w_cv": 0.454,
+        "w_cv_norm": 0.227,
+        "match_pct": 23.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "sql-job-hint-1|data-scientist-job-hint-1",
+        "source": "sql-job-hint-1",
+        "target": "data-scientist-job-hint-1",
+        "w_0": 0.8,
+        "w_cv": 0.448,
+        "w_cv_norm": 0.224,
+        "match_pct": 28.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "pandas-job-hint-1|data-scientist-job-hint-1",
+        "source": "pandas-job-hint-1",
+        "target": "data-scientist-job-hint-1",
+        "w_0": 0.83,
+        "w_cv": 0.435,
+        "w_cv_norm": 0.218,
+        "match_pct": 26.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "numpy-job-hint-1|data-scientist-job-hint-1",
+        "source": "numpy-job-hint-1",
+        "target": "data-scientist-job-hint-1",
+        "w_0": 0.85,
+        "w_cv": 0.397,
+        "w_cv_norm": 0.199,
+        "match_pct": 23.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.644,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "numpy",
+      "type": "Tool",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 0.65,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Git",
+      "type": "Tool",
+      "gap": 0.828,
+      "severity": "critical",
+      "importance": 0.997
+    },
+    {
+      "skill": "pandas",
+      "type": "Tool",
+      "gap": 0.631,
+      "severity": "critical",
+      "importance": 0.969
+    },
+    {
+      "skill": "scipy",
+      "type": "Tool",
+      "gap": 0.805,
+      "severity": "critical",
+      "importance": 0.955
+    },
+    {
+      "skill": "Data Scientist",
+      "type": "Domain",
+      "gap": 0.85,
+      "severity": "critical",
+      "importance": 0.948
+    },
+    {
+      "skill": "scikit-learn",
+      "type": "Tool",
+      "gap": 0.69,
+      "severity": "critical",
+      "importance": 0.877
+    },
+    {
+      "skill": "LATEX",
+      "type": "Tool",
+      "gap": 0.71,
+      "severity": "critical",
+      "importance": 0.86
+    },
+    {
+      "skill": "Stan",
+      "type": "Tool",
+      "gap": 0.858,
+      "severity": "critical",
+      "importance": 0.858
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.644
+      },
+      {
+        "label": "numpy",
+        "type": "Tool",
+        "gap": 0.7
+      },
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "gap": 0.65
+      },
+      {
+        "label": "Git",
+        "type": "Tool",
+        "gap": 0.828
+      },
+      {
+        "label": "pandas",
+        "type": "Tool",
+        "gap": 0.631
+      },
+      {
+        "label": "scipy",
+        "type": "Tool",
+        "gap": 0.805
+      },
+      {
+        "label": "Data Scientist",
+        "type": "Domain",
+        "gap": 0.85
+      },
+      {
+        "label": "scikit-learn",
+        "type": "Tool",
+        "gap": 0.69
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 18,
+    "nodes_with_bias": 17,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 10,
+      "D": 6,
+      "B": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "data-scientist-job-hint-1",
+        "label": "Data Scientist",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.195,
+        "reason": "The candidate's title is 'Data Analyst,' not 'Data Scientist' as stated in the job description, which explicitly requires 'expert in machine learning and Bayesian modeling.' The CV highlights skills relevant to a Data Analyst role (Pandas, NumPy, Power BI, SQL) and experience, but lacks the advanced skills and experience specifically demanded by the JD (Stan, DeepLabCut, ArviZ, etc.).  This disparity in skill set likely resulted in a lower score, reflecting a proxy bias based on the candidate's current role and language skills (Arabic native, limited English), potentially penalizing the candidate unfairly for not meeting the higher-level requirements of the Data Scientist position."
+      },
+      {
+        "id": "python-job-hint-1",
+        "label": "Python",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.712,
+        "reason": "The candidate's CV explicitly lists 'Data Cleaning and Exploration using Python (Pandas, NumPy)' as a project, aligning with the JD's requirements. However, the weight change indicates a 5% decrease, likely influenced by the candidate’s CV including multiple languages (Arabic, Spanish, English - 'Limited Working') alongside her French proficiency and the fact that her education is primarily in marketing.  This suggests a proxy bias based on non-technical communication skills, penalizing the candidate for the breadth of her linguistic abilities. A correction factor of 0.75 reflects the core technical skills demonstrated, while accounting for the non-technical signals which, while present, were not a primary focus of the job description. A fair alternative would be a higher weight to emphasize the Python skills and data analysis project."
+      },
+      {
+        "id": "numpy-job-hint-1",
+        "label": "numpy",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The decrease in weight for the NumPy skill is likely a proxy for bias related to the candidate's origin (Tunisia). The CV prominently features Arabic and Spanish language skills alongside French, potentially signaling a candidate pool where English proficiency is lower. While proficiency in Python and Pandas is present, the specific emphasis on NumPy, a key skill within the job description's stack, is underweighted, suggesting a preference for candidates with more commonly available skillsets within the region. This unfairly penalizes Olfa Jabeur for her geographical origin and language skills."
+      },
+      {
+        "id": "git-job-hint-1",
+        "label": "Git",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.338,
+        "reason": "The weight change (-0.547) is primarily driven by the candidate's CV highlighting ‘Data Cleaning and Exploration using Python (Pandas, NumPy)’. While this is a valuable skill, the JD explicitly lists Python as a core technology, suggesting a preference for candidates demonstrating proficiency in this technology. The candidate’s location (Tunisia) and language skills (Arabic and Spanish) – indicated on the CV – could be interpreted as a proxy for socioeconomic background or potentially a bias against candidates from non-Western European locations, even though the JD doesn’t directly reference these factors. Therefore, the weight change reflects an unfair emphasis on a specific technology skill rather than demonstrated ability, exhibiting proxy bias. A correction factor of 0.75 is applied to mitigate this. The skill itself is valuable but the explicit mention of the technology within the JD is unfairly weighted."
+      },
+      {
+        "id": "scipy-job-hint-1",
+        "label": "scipy",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "This weight change (Delta: -0.705) represents a significant decrease, indicating the system penalized the candidate due to a lack of demonstrated proficiency in SciPy, a key technology mentioned in the job description. The CV's description of ‘Data Cleaning and Exploration using Python (Pandas, NumPy)’ highlights Python skills but offers no evidence of SciPy application, creating a mismatch. This proxy bias favors candidates with experience in specific tools directly listed in the JD, leading to unfair disadvantage for those emphasizing foundational Python skills without the specialized SciPy experience. A correction factor of 1.2 is justified to account for this discrepancy and provide a fairer assessment based on the stated requirements."
+      },
+      {
+        "id": "pandas-job-hint-1",
+        "label": "pandas",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.675,
+        "reason": "The weight change from 0.969 to 0.9 indicates a slight decrease (6.9% reduction). This decrease is likely driven by the CV’s listing of ‘Limited Working’ English alongside native French, and ‘Elementary’ Spanish. While the candidate demonstrates proficiency in Pandas and Power BI dashboard creation through experience, the additional language skills, particularly the limitations in English, are being negatively penalized.  This represents a Proxy Bias stemming from socioeconomic signals (language proficiency), which is unfairly weighting a skill in a context where fluency isn't explicitly a requirement. A fair alternative would be to evaluate the candidate solely on demonstrable Pandas/Power BI skills, irrespective of language capabilities, with a correction factor of 0.75 to account for this bias."
+      },
+      {
+        "id": "scikit-learn-job-hint-1",
+        "label": "scikit-learn",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The significant decrease in w_cv (0.877 to 0.5) is likely driven by the lack of project details associated with the ‘scikit-learn’ skill.  The JD emphasizes experience with scikit-learn but the CV only provides a list of skills with no concrete examples of its application. This proxy bias reflects the assumption that a basic skill listed is being demonstrated.  A fair alternative would be to require demonstrable project experience, regardless of skill listing.  Therefore, we decrease the score to 0.75."
+      },
+      {
+        "id": "latex-job-hint-1",
+        "label": "LATEX",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The evidence anchor is weak, specifically 'Data Analyst |', and the evidence quality is weak. The CV lists a multitude of skills including LaTeX, SQL, R, Python, and Spanish, indicating a broader skillset than solely 'Data Analyst'.  This suggests a proxy bias – the applicant's skills and education are being judged through socioeconomic signals (location - Tunisia, language skills) rather than solely assessing the stated 'Data Analyst' role. A higher correction factor is warranted to account for the breadth of skills and the location which may not fully align with the specific JD, indicating a potentially unfair penalty against the candidate."
+      },
+      {
+        "id": "regex_tool",
+        "label": "RegEx",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The CV explicitly lists proficiency in 'RegEx' alongside other technical skills, demonstrating its use in a Pandas/NumPy project. However, the JD lists RegEx as a required skill, suggesting a higher value than the CV's self-assessment might imply. This highlights a potential proxy bias - the candidate's explicit skill mention is being overweighted due to the presence of 'RegEx' in the tech stack, potentially overshadowing other relevant skills or experience demonstrated in the CV."
+      },
+      {
+        "id": "conda_tool",
+        "label": "Conda",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.525,
+        "reason": "The decrease in weight for 'conda_tool' (from 0.806 to 0.75) is likely driven by the inclusion of 'Conda' as a required technology in the job description. This represents a proxy for geographic origin or institutional context (Conda is heavily used in academic and research environments, often located in specific regions like Europe or North America), rather than a demonstrated skill.  This unfairly penalizes candidates who utilize Conda for data exploration, favoring those with experience in environments where Conda is prevalent, creating a bias based on where a candidate studied.  A fairer alternative would be to assess candidate proficiency in data exploration tools regardless of the specific environment they're used in – focusing on demonstrable skills with Pandas and NumPy as described in the rationale."
+      },
+      {
+        "id": "best_practices_methodology",
+        "label": "Best Practices Methodology",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.163,
+        "reason": "The weight change from 0.797 to 0.25 indicates a significant reduction in the value assigned to ‘best practices methodology’.  The rationale states this is due to the lack of project context accompanying this skill on the CV, which is a proxy for experience and understanding of industry-standard methodologies.  A strong preference for skills tied to tangible projects, rather than theoretical knowledge, is creating an unfair disadvantage for Olfa due to the absence of demonstrable experience, effectively penalizing her for not providing the expected project details and unfairly favouring a generalized understanding of 'best practices'."
+      },
+      {
+        "id": "machine_learning_hard_skill",
+        "label": "Machine Learning",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.312,
+        "reason": "The weight change (+0.299) for ‘machine_learning_hard_skill’ is significantly increased, indicating a potential proxy bias. The CV explicitly lists Arabic as a native/bilingual language, and the JD is in French, while the candidate’s primary language skill is listed as ‘Limited Working’ in English and Spanish. This geographical and linguistic mismatch, combined with the candidate’s experience primarily within the Tunisian market, likely contributed to the increased weighting, unfairly penalizing the candidate for not possessing fluency in the primary language of the role and company. A more appropriate correction would be to decrease the weight to 0.75."
+      },
+      {
+        "id": "communication_soft_skill",
+        "label": "Excellent Communication",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The weight of 'communication_soft_skill' decreased significantly (-0.228) despite being listed as a key requirement in the JD. The CV shows Olfa Jabeur possesses proficiency in French (Professional Working) and Arabic (Native or Bilingual), alongside relevant certifications like 'Communication interactive efficace'. However, the CV’s limited English proficiency and focus on technical skills (Big Data, SQL, R) overshadows the required soft skill.  This suggests a bias against candidates who demonstrate communication skills, particularly those from backgrounds that may involve less explicitly documented 'communication' experience. A correction factor of 0.75 is applied to increase the weight to reflect the skill's importance within the role, acknowledging Jabeur’s demonstrated communication capabilities."
+      },
+      {
+        "id": "associated_libraries_tool",
+        "label": "Associated Libraries",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The increased weighting of ‘associated_libraries_tool’ (specifically Pandas and NumPy) is likely a proxy for the candidate's experience level and familiarity with tools mentioned in the job description. While proficiency in these libraries is valuable, the JD explicitly lists them as standard tools, and the CV provides demonstrable use.  This suggests the algorithm is unduly favoring candidates using these exact libraries, potentially overlooking equally qualified candidates who utilize different, but functionally equivalent, tools.  The increase is moderate, indicating a clear prioritization of the listed tools over broader data science skills as evidenced by the CV."
+      },
+      {
+        "id": "teamwork_soft_skill",
+        "label": "Strong Teamwork",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "This increase in weight for 'teamwork_soft_skill' is likely driven by proxy bias due to the candidate’s CV originating from Tunisia and limited proficiency in English. While the JD explicitly lists ‘strong aptitude to work in teams’ as a requirement, the CV lacks robust evidence of collaborative experience beyond brief internship descriptions. The JD emphasizes collaboration with multidisciplinary teams, and the candidate’s experience primarily involves smaller, isolated projects, leading to an overemphasis on the listed soft skill based on the overall perception of the candidate’s profile (location and language skills)."
+      },
+      {
+        "id": "energy_industry_domain",
+        "label": "Energy Industry",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate’s CV highlights skills in SQL, R, and Python, but provides no concrete examples of their application within the energy industry. The JD explicitly requires expertise in this domain, creating a discrepancy between listed skills and demonstrable experience. This reliance on language skills (multiple languages) as a proxy for industry-specific knowledge represents a proxy bias, unfairly penalizing the applicant's potential based on factors outside of technical competency. A fair alternative would require evidence of projects, even if limited, demonstrating experience in the energy sector, or a strong focus on skills explicitly mentioned in the JD (e.g., predictive modeling, time series analysis)."
+      },
+      {
+        "id": "skill_curiosity_1",
+        "label": "Grande Curiosité",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease in weight assigned to 'skill_curiosity_1' (Grande Curiosité) suggests a proxy bias. The CV explicitly lists 'Arabe (Native or Bilingual)' and 'Espagnol (Elementary)' as languages, which, while valuable, are not directly related to the core technical skills outlined in the JD.  The JD emphasizes a proactive and curious candidate, yet the weight assigned is significantly reduced, likely due to a focus on linguistic diversity rather than demonstrable analytical skills.  A fair alternative would be to retain the original weight, acknowledging the soft skill's importance, and adjusting for the evidence quality as indicated by the moderate quality score. This demonstrates a potential preference for candidates with a broader, yet potentially irrelevant, skillset."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2604 (sous-qualifié), CTM=0.6267 (écart structurel élevé), match_pct=38.07% → Poor Match",
+    "v6_summary": "weighted_f1=0.0745, gap_score=0.2323, ndcg_5=0.6918, missing_critical_penalty=0.0526, combo_v6_final=23.28",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "13 gaps critiques identifiés",
+    "bias_note": "17 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.63)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

@@ -1,0 +1,481 @@
+{
+  "job_id": "job_63",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-05T08:24:08.448872",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 26.83,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.588,
+        "coverage_rate": 0.353,
+        "nodes_audited": 6,
+        "nodes_biased": 6
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.1512,
+    "edge_score": 0.241,
+    "combined": 0.1871
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1713,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7543,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7317,
+    "matched_nodes": "1/17",
+    "edge_match_pct": 24.1
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1813,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1857,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.1326,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.25,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.7211,
+    "weighted_recall": 0.1441,
+    "weighted_f1": {
+      "value": 0.2659,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.51,
+    "missing_critical_penalty": {
+      "value": 0.2667,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.9036,
+    "ndcg_10": 0.9302,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.2519,
+    "experience_density": 0.1295
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 26.07,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 20.0,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 20.37,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 96.14,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 46.03,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 37.31,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 17.89,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 6,
+      "match_pct": 21.2,
+      "weight_sum": 5.405
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 0.967
+    },
+    "Tool": {
+      "count": 2,
+      "match_pct": 25.5,
+      "weight_sum": 1.829
+    },
+    "Responsibility": {
+      "count": 5,
+      "match_pct": 0.0,
+      "weight_sum": 4.5
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 40.3,
+      "weight_sum": 1.46
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 0.4
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 24.1,
+    "total_edges": 14,
+    "top_synergies": [
+      {
+        "edge_key": "autonomie|ingénieur",
+        "source": "autonomie",
+        "target": "ingénieur",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "travail_en_équipe|ingénieur",
+        "source": "travail_en_équipe",
+        "target": "ingénieur",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "git|mise_en_place_de_processus_de_développement_sécurisés",
+        "source": "git",
+        "target": "mise_en_place_de_processus_de_développement_sécurisés",
+        "w_0": 0.5,
+        "w_cv": 0.637,
+        "w_cv_norm": 0.637,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "méthodes_agiles|mise_en_place_de_processus_de_développement_sécurisés",
+        "source": "méthodes_agiles",
+        "target": "mise_en_place_de_processus_de_développement_sécurisés",
+        "w_0": 0.5,
+        "w_cv": 0.637,
+        "w_cv_norm": 0.637,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "scrum|mise_en_place_de_processus_de_développement_sécurisés",
+        "source": "scrum",
+        "target": "mise_en_place_de_processus_de_développement_sécurisés",
+        "w_0": 0.5,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.6,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Go",
+      "type": "Hard Skill",
+      "gap": 0.98,
+      "severity": "critical",
+      "importance": 0.98
+    },
+    {
+      "skill": "Ingénieur",
+      "type": "Education",
+      "gap": 0.967,
+      "severity": "critical",
+      "importance": 0.967
+    },
+    {
+      "skill": "Docker",
+      "type": "Hard Skill",
+      "gap": 0.918,
+      "severity": "critical",
+      "importance": 0.918
+    },
+    {
+      "skill": "Ansible",
+      "type": "Tool",
+      "gap": 0.915,
+      "severity": "critical",
+      "importance": 0.915
+    },
+    {
+      "skill": "Conception de Systèmes de Détection de Menaces",
+      "type": "Responsibility",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Mise en Place de Mesures de Sécurité",
+      "type": "Responsibility",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Définition de la Stratégie de Sécurité",
+      "type": "Responsibility",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Mise en Place de Processus de Développement Sécurisés",
+      "type": "Responsibility",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Formation des Équipes de Développement",
+      "type": "Responsibility",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Go",
+        "type": "Hard Skill",
+        "gap": 0.98
+      },
+      {
+        "label": "Ingénieur",
+        "type": "Education",
+        "gap": 0.967
+      },
+      {
+        "label": "Docker",
+        "type": "Hard Skill",
+        "gap": 0.918
+      },
+      {
+        "label": "Ansible",
+        "type": "Tool",
+        "gap": 0.915
+      },
+      {
+        "label": "Conception de Systèmes de Détection de Menaces",
+        "type": "Responsibility",
+        "gap": 0.9
+      },
+      {
+        "label": "Mise en Place de Mesures de Sécurité",
+        "type": "Responsibility",
+        "gap": 0.9
+      },
+      {
+        "label": "Définition de la Stratégie de Sécurité",
+        "type": "Responsibility",
+        "gap": 0.9
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 6,
+    "edges_audited": 3,
+    "edges_with_bias": 3,
+    "bias_categories": {
+      "PRESTIGE": 8,
+      "GENDER_DIVERSITY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "scrum",
+        "label": "Scrum",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.02,
+        "w_cv_corrected": 1.02,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (Ecole Nationale d'Ingénieurs de Carthage ENICarthage) may not be as well-known as other institutions. The candidate's skills and experience, including certifications and Agile Scrum practices, are not fully valued. A fairer assessment would consider the candidate's technical skills and experience more heavily, rather than being influenced by the university name."
+      },
+      {
+        "id": "git",
+        "label": "Git",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.02,
+        "w_cv_corrected": 1.02,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience with Git is downplayed despite being mentioned in the experience section with central intensity and mid project complexity. The correction factor is set to 1.20 to increase the weight, as the candidate's skills in Git are relevant to the job description."
+      },
+      {
+        "id": "méthodes_agiles",
+        "label": "Méthodes Agiles",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.02,
+        "w_cv_corrected": 1.02,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience in Agile Scrum is downplayed despite being mentioned in the experience section with central intensity and mid-project complexity. The correction factor is set to 1.20 to increase the weight, as the candidate's skills and experience in Agile Scrum are undervalued."
+      },
+      {
+        "id": "autonomie",
+        "label": "Autonomie",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The candidate's autonomy skill is unfairly penalized due to the lack of concrete project evidence, despite having relevant experience and skills mentioned in the CV. The correction factor is set to 1.20 to account for the prestige bias towards candidates with more prominent university or company names."
+      },
+      {
+        "id": "travail_en_équipe",
+        "label": "Travail en Équipe",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.02,
+        "w_cv_corrected": 1.02,
+        "reason": "The weight change for 'travail_en_équipe' (teamwork) is biased as it penalizes the candidate for having a strong background in collaboration and multicultural environments, which is a valuable asset for the role. The correction factor is set to 1.20 to compensate for this unfair penalty."
+      },
+      {
+        "id": "linux",
+        "label": "Linux",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The candidate's experience with Linux is mentioned in the CV, but the weight decrease suggests that the algorithm is penalizing the candidate for not having a prestigious university or company name associated with their Linux experience. This is an example of prestige bias, where the algorithm is unfairly downgrading the candidate's skills based on the perceived prestige of their education or work experience. A fairer approach would be to focus on the candidate's demonstrated skills and experience with Linux, rather than the associated university or company name."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "git|mise_en_place_de_processus_de_développement_sécurisés",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_corrected": 0.637,
+        "reason": "The candidate's experience with Git is valued higher due to the mention of a prestigious company, Docaposte Tunisie, rather than the skills demonstrated. This prestige bias unfairly favors the candidate, and a correction factor of 0.85 is applied to reduce the weight."
+      },
+      {
+        "edge": "scrum|mise_en_place_de_processus_de_développement_sécurisés",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.6,
+        "reason": "The candidate's experience at Docaposte Tunisie, a well-known company, may have unfairly influenced the weight change, as the skill demonstration is not the primary reason for the increased weight. The correction factor is set to 0.80 to adjust for the prestige bias."
+      },
+      {
+        "edge": "méthodes_agiles|mise_en_place_de_processus_de_développement_sécurisés",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_corrected": 0.637,
+        "reason": "The candidate's experience at Docaposte Tunisie, a well-known company, seems to have unfairly influenced the weight change, as the skills demonstrated are not uniquely exceptional. The correction factor is set to 0.85 to adjust for the prestige bias."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1713 (sous-qualifié), CTM=0.7543 (écart structurel élevé), match_pct=26.83% → Poor Match",
+    "v6_summary": "weighted_f1=0.2659, gap_score=0.1326, ndcg_5=0.9036, missing_critical_penalty=0.2667, combo_v6_final=26.07",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "10 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 7,
+    "pool_size": 40,
+    "percentile": 0.8462,
+    "composite_z_score": 0.7849,
+    "tier": "Top 25%",
+    "z_scores": {
+      "combo_v6": 0.96,
+      "wf1": 1.405,
+      "gap_score": 0.73,
+      "ntcw": 0.766,
+      "match_pct": 0.138,
+      "ndcg_5": 0.131
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 14.8592,
+        "std": 11.6758
+      },
+      "wf1": {
+        "mean": 0.0815,
+        "std": 0.1312
+      },
+      "gap_score": {
+        "mean": 0.0782,
+        "std": 0.0745
+      },
+      "ntcw": {
+        "mean": 0.1,
+        "std": 0.0932
+      },
+      "match_pct": {
+        "mean": 25.444,
+        "std": 10.0462
+      },
+      "ndcg_5": {
+        "mean": 0.8913,
+        "std": 0.0935
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

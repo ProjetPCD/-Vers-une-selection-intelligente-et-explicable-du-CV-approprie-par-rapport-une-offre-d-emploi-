@@ -1,0 +1,352 @@
+{
+  "job_id": "job_103",
+  "cv_id": "cv_2",
+  "scored_nodes": {
+    "data-scientist": {
+      "w_cv": 0.625,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": -0.25
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Inferred standalone evidence with no project anchor and a recency gap.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.625,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change is biased because it decreases the importance of a candidate's background and experience (as inferred from the standalone CV evidence with no project anchor and a recency gap). This decrease may unfairly penalize candidates without prestige signals, such as university name or company reputation. A fair alternative would be to increase the importance of skills demonstrated in the CV, such as DevOps, AWS, and Python, which are relevant to the data scientist role."
+    },
+    "python": {
+      "w_cv": 0.85,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "outcome_bonus": 0.1,
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "Contextual mention with basic outcome in 'Summary' section and quantified outcome of 2 years.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY|HALO|NONE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.85,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.85,
+      "p35_reason": "The weight change is biased towards the candidate's experience and education, as it penalizes the 'Python' node with a decrease in weight. However, the job description mentions Python as one of the required skills. A fair alternative would be to consider the candidate's actual skills and experiences rather than their educational background or previous job titles."
+    },
+    "sql": {
+      "w_cv": 0.85,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "outcome_bonus": 0.1,
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "Strong project anchor in 'Summary' section with basic outcome and quantified outcome of 4 years.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.85,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.85,
+      "p35_reason": "The weight change appears to be biased due to the candidate's education background and work experience. The job description mentions skills in R, Python, SQL, Hadoop, Spark, and Tableau, but the candidate's CV highlights DevOps and AWS expertise instead of data science skills. This suggests that the weight change is based on proxy signals such as the candidate's university name or location rather than their actual skills demonstrated. A fair alternative would be to adjust the weight to 0.85 to account for the mismatch between the job requirements and the candidate's background."
+    },
+    "hadoop": {
+      "w_cv": 0.625,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": -0.25
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Inferred standalone evidence with no project anchor and a recency gap.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.625,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change is biased towards prestige bias due to the mention of prominent companies such as Accenture and IBM in the candidate's CV, which may indicate an unfair advantage. A fair alternative would be to focus on skills demonstrated rather than company names."
+    },
+    "machine-learning": {
+      "w_cv": 0.625,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": -0.25
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Inferred standalone evidence with no project anchor and a recency gap.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY|HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.625,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change is biased because it penalizes a candidate with a strong LinkedIn profile and multiple certifications (e.g., AWS Certified SysOps Administator-Associate, Certified SAFe® Practitioner). These signals are likely being used as proxies for the candidate's skills or experience, which may not be directly relevant to the job requirements. Furthermore, the use of LinkedIn and certification signals without considering other factors such as project experience or skills demonstrated in the resume suggests an overreliance on 'halo' effects, where a strong signal is used to judge the entire profile."
+    },
+    "tableau": {
+      "w_cv": 0.625,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": -0.25
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Inferred standalone evidence with no project anchor and a recency gap.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "AGEISM",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.625,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The algorithm is unfairly penalizing the candidate due to an inferred standalone evidence with no project anchor and a recency gap, which may disproportionately affect older candidates."
+    },
+    "spark": {
+      "w_cv": 0.5,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": -0.25
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Inferred standalone evidence with no project anchor and a recency gap.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY|NONE",
+      "p35_severity": "LOW",
+      "p35_correction_direction": "INCREASE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    }
+  },
+  "scored_edges": {
+    "data-scientist|python": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Temporal overlap between Python and data-scientist skills, but no explicit or implicit connection found in the provided CV.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "data-scientist|sql": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Temporal overlap between SQL and Data Scientist skills, but no explicit connection found in the CV.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "data-scientist|hadoop": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Temporal overlap between Hadoop and Data Scientist skills, but no explicit connection found in the CV.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "data-scientist|spark": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Temporal overlap between Spark and Data Scientist skills, but no explicit connection found in the CV.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "data-scientist|tableau": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.8,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No connection found between Tableau and Data Scientist skills in the CV.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "data-scientist|hadoop|data-scientist|tableau": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.8,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No explicit or implicit connection found between Hadoop and Tableau skills in the provided CV. They have temporal overlap but are not used together in any project or role.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "data-scientist|spark|data-scientist|tableau": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.8,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No explicit or implicit connection found between Spark and Tableau skills in the provided CV. They have temporal overlap but are not used together in any project or role.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "python|machine-learning": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": 0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No explicit or implicit evidence of using Python and Machine Learning together in the same role or project.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    }
+  },
+  "metadata": {
+    "skills_scored": 7,
+    "mean_score": 0.643,
+    "edges_scored": 8,
+    "mean_synergy": 0.156,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.156,
+      "max": 0.25,
+      "min": 0.0
+    },
+    "batches_ok": 1,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.643,
+      "max": 1.0,
+      "min": 0.5,
+      "above_1": 2,
+      "below_05": 0
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 7,
+    "nodes_with_bias": 6,
+    "nodes_corrected": 6,
+    "edges_audited": 0
+  }
+}

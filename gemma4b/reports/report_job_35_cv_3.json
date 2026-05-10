@@ -1,0 +1,446 @@
+{
+  "job_id": "job_35",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-02T19:08:54.618653",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 23.53,
+    "confidence": {
+      "confidence_score": 0.45,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.778,
+        "coverage_rate": 0.556,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.5
+  },
+  "final_scores": {
+    "node_score": 0.1396,
+    "edge_score": 0.1025,
+    "combined": 0.1248
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.0836,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7441,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7647,
+    "matched_nodes": "0/18",
+    "edge_match_pct": 5.13
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.0751,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1025,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.0819,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9142,
+    "ndcg_10": 0.9656,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.7367,
+    "experience_density": 0.0549
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 11.08,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 6.59,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 29.06,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 96.57,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 2.46,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 1.1,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 6,
+      "match_pct": 8.2,
+      "weight_sum": 4.969
+    },
+    "Hard Skill": {
+      "count": 4,
+      "match_pct": 10.7,
+      "weight_sum": 3.805
+    },
+    "Soft Skill": {
+      "count": 6,
+      "match_pct": 4.1,
+      "weight_sum": 4.251
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 0.0,
+      "weight_sum": 1.145
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 5.13,
+    "total_edges": 8,
+    "top_synergies": [
+      {
+        "edge_key": "project_management_methods|teamwork_collaboration",
+        "source": "project_management_methods",
+        "target": "teamwork_collaboration",
+        "w_0": 0.6,
+        "w_cv": 0.25,
+        "w_cv_norm": 0.125,
+        "match_pct": 20.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "agile_methodology|teamwork_collaboration",
+        "source": "agile_methodology",
+        "target": "teamwork_collaboration",
+        "w_0": 0.55,
+        "w_cv": 0.188,
+        "w_cv_norm": 0.094,
+        "match_pct": 17.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "power_bi_visualization|data-visualization-skills",
+        "source": "power_bi_visualization",
+        "target": "data-visualization-skills",
+        "w_0": 0.8,
+        "w_cv": 0.156,
+        "w_cv_norm": 0.078,
+        "match_pct": 9.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_coding|data-analysis-skills",
+        "source": "python_coding",
+        "target": "data-analysis-skills",
+        "w_0": 0.95,
+        "w_cv": 0.094,
+        "w_cv_norm": 0.047,
+        "match_pct": 4.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "excel_spreadsheet|data-analysis-skills",
+        "source": "excel_spreadsheet",
+        "target": "data-analysis-skills",
+        "w_0": 0.75,
+        "w_cv": 0.094,
+        "w_cv_norm": 0.047,
+        "match_pct": 6.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "MySQL",
+      "type": "Tool",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Agile",
+      "type": "Hard Skill",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Scrum",
+      "type": "Hard Skill",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Capacité à travailler en équipe",
+      "type": "Soft Skill",
+      "gap": 0.901,
+      "severity": "critical",
+      "importance": 0.995
+    },
+    {
+      "skill": "Excel",
+      "type": "Tool",
+      "gap": 0.786,
+      "severity": "critical",
+      "importance": 0.88
+    },
+    {
+      "skill": "Power BI",
+      "type": "Tool",
+      "gap": 0.714,
+      "severity": "critical",
+      "importance": 0.87
+    },
+    {
+      "skill": "Bonne communication",
+      "type": "Soft Skill",
+      "gap": 0.77,
+      "severity": "critical",
+      "importance": 0.864
+    },
+    {
+      "skill": "Méthodes de gestion de projet",
+      "type": "Hard Skill",
+      "gap": 0.649,
+      "severity": "critical",
+      "importance": 0.805
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "gap": 0.906
+      },
+      {
+        "label": "MySQL",
+        "type": "Tool",
+        "gap": 0.906
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.906
+      },
+      {
+        "label": "Agile",
+        "type": "Hard Skill",
+        "gap": 0.906
+      },
+      {
+        "label": "Scrum",
+        "type": "Hard Skill",
+        "gap": 0.906
+      },
+      {
+        "label": "Capacité à travailler en équipe",
+        "type": "Soft Skill",
+        "gap": 0.901
+      },
+      {
+        "label": "Excel",
+        "type": "Tool",
+        "gap": 0.786
+      },
+      {
+        "label": "Power BI",
+        "type": "Tool",
+        "gap": 0.714
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 10,
+    "nodes_with_bias": 10,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "HALO": 4,
+      "PRESTIGE|PROXY": 3,
+      "PROXY": 2,
+      "PRESTIGE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "sql_analysis",
+        "label": "SQL",
+        "bias_category": "PRESTIGE|PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease in weight (Delta: -0.75) suggests a bias toward prestige signals. The candidate's CV heavily emphasizes certifications (Fundamentals of Deep Learning, Neural Networks), technical skills (Python, SQL, MySQL), and experience within a specific sector (financial markets - market microstructure) which aligns with the job description's technical requirements. This strong focus on specialized, often expensive and exclusive, certifications and experience creates a proxy bias, favoring candidates who have access to these resources, effectively penalizing those without similar high-level qualifications or experience within a specific sector. A fair alternative would prioritize demonstrable skills and experience regardless of the institution or specific technologies used, focusing on the candidate’s ability to deliver tangible results."
+      },
+      {
+        "id": "mysql_db",
+        "label": "MySQL",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease in weight (from 1.0 to 0.25) is likely due to the over-emphasis on 'Python' and 'Machine Learning' skills presented in the CV. The job description explicitly lists these as desired skills, and the candidate's CV prominently showcases them. This creates a ‘halo’ effect, where the presence of these highly sought-after skills overshadows other potentially valuable experience (e.g., SQL, MySQL, data visualization) that might have been more directly relevant to the immediate requirements outlined in the job description.  A fair alternative would be to weight all listed skills equally or based on a more granular assessment of relevance to the specific tasks."
+      },
+      {
+        "id": "python_coding",
+        "label": "Python",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV heavily emphasizes \"Python (Programming Language)\" as a top skill, despite the job description mentioning R or Python as a 'plus'. The significant weight decrease (Delta: -0.75) suggests the system is over-emphasizing this specific skill, possibly due to the prominent placement on the CV. This is a halo bias – the strong signal of 'Python' is leading the system to incorrectly prioritize this candidate over others who might have more relevant experience or skills not explicitly listed, such as experience with Power BI or SQL which are also mentioned in the JD. A fairer alternative would be to evaluate all skills and experience on a more balanced scale, acknowledging the 'plus' designation of Python."
+      },
+      {
+        "id": "agile_methodology",
+        "label": "Agile",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV explicitly lists 'Tunisia, Tunisia' as the location, which is a socioeconomic proxy indicating a candidate from a potentially lower-income region. This signal is unfairly penalizing the candidate, as location doesn't directly correlate with technical skills in data analysis or experience with Power BI, SQL, and Python. A fairer alternative would remove location data from the initial ranking stage, focusing solely on qualifications and skills demonstrated, thereby mitigating the impact of this proxy bias."
+      },
+      {
+        "id": "scrum_project",
+        "label": "Scrum",
+        "bias_category": "PRESTIGE|PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease in weight (w_cv from 0.25 to -0.75) likely reflects a bias towards candidates from prestigious universities or those residing in high-demand locations like Tunis, Tunisia. The CV prominently features ‘Senior Data Scientist’ and ‘Machine Learning Engineer’ titles, indicating a high-level role and experience which may be over-emphasized in the selection process. The strong focus on ‘Enterprise AI Solutions’ and specific certifications (Fundamentals of Deep Learning) suggests a preference for candidates with a specific technical background that isn't necessarily aligned with the core requirements outlined in the job description.  The strong presence of 'Tunis, Tunisia' as the candidate's location introduces a Proxy Bias - prioritizing candidates based on geographical location, potentially overlooking equally qualified candidates from other areas. This results in an unfair penalty for a candidate with a similar skillset and experience but located elsewhere."
+      },
+      {
+        "id": "teamwork_collaboration",
+        "label": "Capacité à travailler en équipe",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease (-0.745) in weight for 'teamwork_collaboration' is likely due to a halo effect stemming from the candidate's impressive technical skills (Python, ML, etc.) highlighted in their summary and experience. The job description explicitly states a need for strong collaboration with 'équipes métier,' yet the CV focuses heavily on individual quantitative achievements, creating an overemphasis on technical prowess at the expense of demonstrating collaborative behaviors. A fairer alternative would prioritize evidence of teamwork and communication, rather than solely relying on the candidate’s impressive skills, which is already heavily represented in the CV."
+      },
+      {
+        "id": "communication_skills",
+        "label": "Bonne communication",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV heavily emphasizes ‘communication skills’ and ‘collaboration’ in the summary and experience descriptions, directly aligning with the job description’s stated requirements. However, the CV’s detailed technical skills (Python, Machine Learning, etc.) are presented as the primary narrative, overshadowing the desired soft skills. This suggests the algorithm is prioritizing the listed skills over demonstrated skills, creating a halo effect where a single positive mention (communication) elevates the overall score, despite the candidate's significant technical expertise not being fully showcased. This is a classic example of a halo bias, where a strong signal (listed skills) is used to judge the entire profile, unfairly penalizing a candidate for lacking explicitly mentioned soft skills. A fairer alternative would be to weight all skills equally or to use a more nuanced approach that assesses communication skills in the context of the candidate's technical achievements."
+      },
+      {
+        "id": "excel_spreadsheet",
+        "label": "Excel",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV lists 'Tunisia' as the location, which, while a valid location, may trigger a proxy bias due to assumptions about candidate skills and experience based on geographical origin. The JD emphasizes skills relevant to the role (Power BI, SQL, Python) but the CV's explicit location signal might disproportionately influence the assessment, particularly if the organization has historically favored candidates from certain regions. A reduction in the weight assigned acknowledges this potential unfairness and pushes the system to focus on demonstrable skills and qualifications rather than geographic origin."
+      },
+      {
+        "id": "power_bi_visualization",
+        "label": "Power BI",
+        "bias_category": "PRESTIGE|PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "The candidate’s CV heavily emphasizes prestigious certifications (Fundamentals of Deep Learning) and focuses on roles and technologies (e.g., ‘alpha-generating research tools’, ‘China’s stock market’) that may not be directly relevant to the stated job requirements (Power BI, SQL, Excel). The JD focuses on practical data visualization and BI tool expertise, while the CV’s skills are more research-oriented. This indicates a potential prestige bias favoring candidates with high-profile certifications and a focus on complex financial markets, which are not the primary requirements for a Power BI visualization role. The location (Tunis, Tunisia) also suggests a proxy bias, as candidates from certain locations might be unfairly favored due to factors beyond their skills."
+      },
+      {
+        "id": "project_management_methods",
+        "label": "Méthodes de gestion de projet",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "The CV heavily emphasizes certifications (Fundamentals of Deep Learning, Neural Networks) and specific, cutting-edge technologies (Python for Data Science, Machine Learning) which aligns with the JD's emphasis on modern BI tools and skills. However, the JD focuses on a broader range of data analysis skills - SQL, Excel, and business intelligence principles - and less on highly specialized technical certifications. The significantly reduced weight (0.25 vs. 0.805) suggests the system overvalues the specific certifications listed on the CV, implying prestige bias related to current buzzwords in data science rather than demonstrating practical experience and matching the core requirements of the role as outlined in the job description. A fairer alternative would be to assess the candidate's skill alignment with the JD's stated needs, giving greater weight to demonstrable expertise in SQL and Excel alongside the desired programming skills."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.0836 (sous-qualifié), CTM=0.7441 (écart structurel élevé), match_pct=23.53% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.0819, ndcg_5=0.9142, missing_critical_penalty=0.0, combo_v6_final=11.08",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "14 gaps critiques identifiés",
+    "bias_note": "10 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.45)",
+    "scoring_reliability": "⚠ 50.0% des scores via fallback mathématique (LLM instable)"
+  }
+}

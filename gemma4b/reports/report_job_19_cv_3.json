@@ -1,0 +1,579 @@
+{
+  "job_id": "job_19",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-04T14:57:25.977964",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 38.82,
+    "confidence": {
+      "confidence_score": 0.63,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.609,
+        "coverage_rate": 0.739,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.511,
+    "edge_score": 0.4871,
+    "combined": 0.5015
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2947,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6329,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6118,
+    "matched_nodes": "4/23",
+    "edge_match_pct": 24.36
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3043,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.482,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2577,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1364,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.3899,
+    "weighted_recall": 0.1041,
+    "weighted_f1": {
+      "value": 0.1937,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6523,
+    "missing_critical_penalty": {
+      "value": 0.15,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8379,
+    "ndcg_10": 0.8686,
+    "map_score": 0.934,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8622,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.2621,
+    "experience_density": 0.2143
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 30.96,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 32.45,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 22.89,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 91.21,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 43.3,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 32.48,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 23.86,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 14,
+      "match_pct": 18.1,
+      "weight_sum": 12.412
+    },
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 33.8,
+      "weight_sum": 2.851
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 37.6,
+      "weight_sum": 2.628
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 78.1,
+      "weight_sum": 0.869
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 9.4,
+      "weight_sum": 0.525
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 24.36,
+    "total_edges": 10,
+    "top_synergies": [
+      {
+        "edge_key": "python|communication_skill",
+        "source": "python",
+        "target": "communication_skill",
+        "w_0": 0.851,
+        "w_cv": 0.825,
+        "w_cv_norm": 0.412,
+        "match_pct": 48.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "java|communication_skill",
+        "source": "java",
+        "target": "communication_skill",
+        "w_0": 0.851,
+        "w_cv": 0.806,
+        "w_cv_norm": 0.403,
+        "match_pct": 47.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python|groovy_skill",
+        "source": "python",
+        "target": "groovy_skill",
+        "w_0": 0.851,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 44.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python|azure",
+        "source": "python",
+        "target": "azure",
+        "w_0": 0.951,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.3,
+        "match_pct": 31.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "azure|docker_tool",
+        "source": "azure",
+        "target": "docker_tool",
+        "w_0": 0.714,
+        "w_cv": 0.394,
+        "w_cv_norm": 0.197,
+        "match_pct": 27.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Azure Kubernetes Services",
+      "type": "Tool",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Azure Container Instances",
+      "type": "Tool",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Java",
+      "type": "Hard Skill",
+      "gap": 0.719,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Azure",
+      "type": "Tool",
+      "gap": 0.658,
+      "severity": "critical",
+      "importance": 0.958
+    },
+    {
+      "skill": "NoSQL",
+      "type": "Tool",
+      "gap": 0.859,
+      "severity": "critical",
+      "importance": 0.953
+    },
+    {
+      "skill": "Ansible",
+      "type": "Tool",
+      "gap": 0.852,
+      "severity": "critical",
+      "importance": 0.946
+    },
+    {
+      "skill": "Jenkins",
+      "type": "Tool",
+      "gap": 0.834,
+      "severity": "critical",
+      "importance": 0.928
+    },
+    {
+      "skill": "BlackDuck",
+      "type": "Tool",
+      "gap": 0.811,
+      "severity": "critical",
+      "importance": 0.905
+    },
+    {
+      "skill": "Veracode",
+      "type": "Tool",
+      "gap": 0.673,
+      "severity": "critical",
+      "importance": 0.861
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "Ingénieur",
+        "type": "Education",
+        "w_cv": 1.562
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "Azure Kubernetes Services",
+        "type": "Tool",
+        "gap": 0.906
+      },
+      {
+        "label": "Azure Container Instances",
+        "type": "Tool",
+        "gap": 0.906
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.7
+      },
+      {
+        "label": "Java",
+        "type": "Hard Skill",
+        "gap": 0.719
+      },
+      {
+        "label": "Azure",
+        "type": "Tool",
+        "gap": 0.658
+      },
+      {
+        "label": "NoSQL",
+        "type": "Tool",
+        "gap": 0.859
+      },
+      {
+        "label": "Ansible",
+        "type": "Tool",
+        "gap": 0.852
+      },
+      {
+        "label": "Jenkins",
+        "type": "Tool",
+        "gap": 0.834
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 22,
+    "nodes_with_bias": 22,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 10,
+      "C": 6,
+      "PRESTIGE": 2,
+      "AGEISM": 1,
+      "GENDER_DIVERSITY": 1,
+      "B": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "azure_kubernetes_services",
+        "label": "Azure Kubernetes Services",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV prominently lists 'Azure Kubernetes Services' alongside 'FastAPI Microservices and Machine Learning,' but provides no evidence of practical application. The job description focuses on broad technical skills and experience, while the CV's skill listing is solely based on terminology. This suggests the system is prioritizing a listed skill (Azure Kubernetes Services) without validating its demonstrated proficiency, indicating a proxy bias related to the candidate's location and potentially the perceived prestige of using Azure - a common signal in cloud-focused roles."
+      },
+      {
+        "id": "azure_container_instances",
+        "label": "Azure Container Instances",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate lists Azure Container Instances as a skill alongside FastAPI Microservices and Machine Learning, which are highly relevant to the JD. However, there’s no evidence of practical experience or project involvement with Azure Container Instances demonstrated on the CV. This suggests the skill is listed due to familiarity with containerization technologies rather than demonstrable expertise, indicating a potential bias favoring candidates who list this skill without sufficient supporting evidence. The decrease in weight reflects a lack of tangible application of the skill as described in the context."
+      },
+      {
+        "id": "python",
+        "label": "Python",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The CV prominently features 'Python' alongside 'FastAPI Microservices and Machine Learning,' indicating a relevant skill set for the JD's requirements. However, the candidate's location is Tunisia, and the JD heavily emphasizes experience within Microsoft Azure (strongly associated with Western/European tech companies), suggesting a potential proxy bias favoring candidates with Azure experience. The moderate quality anchor and 'central' intensity signal further support this assessment, indicating a reliance on contextual signals rather than demonstrated skills. A correction factor of 0.8 reduces the penalty, acknowledging the skill while recognizing the influence of location."
+      },
+      {
+        "id": "java",
+        "label": "Java",
+        "bias_category": "AGEISM",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The CV mentions a graduation year of 2021, indicating a candidate recently graduated from university. The JD explicitly lists experience as 'senior' which often implies a more experienced candidate. While the candidate possesses relevant skills, the prominence of the graduation year alongside the ‘senior’ designation suggests an Ageism bias, penalizing the candidate for their relatively recent entry into the workforce. A fairer alternative would be to focus solely on demonstrated skills and experience within the listed technologies rather than the candidate's age at the time of application."
+      },
+      {
+        "id": "microsoft_azure",
+        "label": "Microsoft Azure",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.312,
+        "reason": "The increased weight given to 'Microsoft Azure' (w_cv = 1.05 vs. ideal 0.951) is likely prestige bias. The CV explicitly lists Azure Kubernetes Services and Azure Container Instances, highlighting cutting-edge technologies favored in current recruitment practices. While Moetez Saidi’s experience is relevant, emphasizing this specific and highly sought-after cloud technology, particularly given the context of a senior role, suggests an overemphasis on the latest trends rather than a purely skills-based assessment. A correction factor of 1.25 reflects the potential for undue influence of prestige signals in this case."
+      },
+      {
+        "id": "azure",
+        "label": "Azure",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The significant decrease in the weight of ‘Azure’ (w_0 from 0.958 to 0.8) is likely a proxy bias reflecting the candidate's location (Tunisia) and the JD's strong emphasis on Microsoft Azure, a technology heavily tied to specific geographic markets. While Moetez Saidi's CV lists Azure skills, the JD's focus suggests a preference for candidates with experience within the Microsoft ecosystem, potentially overlooking candidates from regions where Azure adoption is less prevalent. A correction factor of 0.75 acknowledges the potential unfairness stemming from this signal and recommends a slight increase in the weight to ensure equitable consideration."
+      },
+      {
+        "id": "nosql",
+        "label": "NoSQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's skills section lists NoSQL, but the evidence anchor (project details) is null. This suggests a proxy bias – the system is penalizing the absence of explicitly stated NoSQL experience, which may be linked to geographic location (Tunisia) or a less-common skill within the JD's scope, rather than genuine lack of expertise. The JD emphasizes Azure which could be seen as a subtle signal for preference towards specific cloud technologies, impacting the weighting of other skills like NoSQL. Correction factor reduces weighting to reflect the potentially biased weight reduction."
+      },
+      {
+        "id": "ansible",
+        "label": "Ansible",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV lists Ansible as a skill, but the evidence anchor is null, indicating no actual project experience or context is provided. The JD explicitly lists Ansible as a requirement, yet the candidate's background is primarily in data science and engineering roles within Tunisia, suggesting a reliance on self-reported skills rather than demonstrable Ansible proficiency. This indicates a proxy bias – the candidate is being favored based on the presence of 'Ansible' on their CV, rather than any concrete evidence of their abilities, potentially influenced by the candidate's location and the JD’s emphasis on DevOps tools."
+      },
+      {
+        "id": "blackduck",
+        "label": "BlackDuck",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate’s CV strongly emphasizes skills related to data science and machine learning, without any mention of BlackDuck experience. The JD explicitly lists BlackDuck as a required skill, suggesting a potential proxy bias where the absence of BlackDuck experience leads to a lower weighting, reflecting a preference for candidates with specific AI/ML experience and a lack of awareness of the candidate’s broader technical background. A reduction in weight is warranted to avoid penalizing the candidate based on a non-essential skill, given the lack of contextual evidence, and to provide a fairer assessment based on skills demonstrated."
+      },
+      {
+        "id": "jenkins",
+        "label": "Jenkins",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The weight change from 0.928 to 0.25 reflects a significant penalty for the skill ‘Jenkins’ due to a lack of contextual evidence in the candidate's CV. The job description explicitly lists Jenkins as a required technology, yet the candidate’s experience is only listed as a skill without any project anchor or project experience, indicating a potential bias favoring candidates who can demonstrate practical application of the tool. This represents a proxy bias, as the absence of evidence for Jenkins suggests an overreliance on the candidate's listed skills and the system penalizes the lack of demonstrated expertise, aligning with the JD's requirement."
+      },
+      {
+        "id": "communication_skill",
+        "label": "Excellente communication",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.05,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.05,
+        "reason": "The increased weight on 'communication_skill' (from 0.907 to 1.0) is likely biased due to the JD emphasizing 'excellent communication' alongside other technical skills, while the CV primarily highlights technical skills like FastAPI, Microservices, and Machine Learning. This suggests a preference for candidates who can articulate technical concepts effectively, a commonly recognized soft skill, potentially reflecting a gendered expectation that highlights communication prowess for technically skilled roles.  The JD's emphasis coupled with the CV's skill focus pushes this beyond a merit-based adjustment and points toward a bias favoring those who can communicate technical aspects effectively, a skill disproportionately associated with female representation in tech roles. A slight increase is warranted to account for this potential influence."
+      },
+      {
+        "id": "engineering_degree",
+        "label": "Ingénieur",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.562,
+        "reason": "The significant increase in weight (w_0 from 0.869 to 1.25) for ‘engineering_degree’ – specifically, the ENSI diploma – is likely prestige bias. The JD emphasizes experience with ‘Ingénieur’ and lists ENSI as a verified degree type, while the CV highlights Moetez’s role as a Data Scientist at Infor Tunisia, suggesting a preference for graduates from a well-regarded engineering school. This disproportionate weighting indicates a bias favoring candidates from prestigious institutions, even if other skills and experience are equally relevant."
+      },
+      {
+        "id": "veracode_tool",
+        "label": "Veracode",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The applicant’s CV strongly emphasizes data science and machine learning skills, and mentions experience at Infor and Algobrain, while the job description heavily focuses on DevOps and security tooling (Veracode, SonarQube, etc.). This suggests a bias towards skills highlighted in the CV, favoring a data science profile over the specific software engineering experience required. The reduced weight reflects a mismatch between the desired skills and the candidate's demonstrable expertise, and the lack of a project anchor further amplifies this potential bias. A correction factor of 0.75 reflects that while the candidate possesses valuable skills, they are not aligned with the core requirements of the role as presented in the job description."
+      },
+      {
+        "id": "sonarqube_tool",
+        "label": "SonarQube",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.35,
+        "reason": "The candidate's CV primarily lists skills (FastAPI, Microservices, Machine Learning) and employment with Infor and Algobrain, lacking a project anchor (e.g., specific contributions to projects using SonarQube).  The JD heavily emphasizes SonarQube as a core tool, yet the CV doesn't demonstrate significant hands-on experience with it beyond a listed skill.  This suggests the weight reduction reflects a reliance on the candidate's skills list rather than demonstrated proficiency, creating a proxy bias linked to the candidate's location and work history in a region with potentially different software development practices and tooling adoption rates."
+      },
+      {
+        "id": "groovy_skill",
+        "label": "Groovy",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.9,
+        "reason": "This weight change (Groovy: 0.851 to 0.75) appears biased due to the provided context. While the candidate's experience aligns with the JD's requirements, the employment history shows several short-term roles (Algobrain, elyadata, Infor), potentially signaling instability or lack of commitment.  The candidate’s educational background (ENSI - 2021-2024) is recent, and the CV heavily emphasizes various skills, while the skill weighting specifically on Groovy – a key requirement – has been slightly reduced. A higher correction factor (1.2) is warranted to account for the potential instability indicated by the short-term employment history, as this reduces the overall perceived value of the candidate’s skillset despite demonstrated proficiency."
+      },
+      {
+        "id": "linux_shell_tool",
+        "label": "Linux Shell",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The weight change from 0.792 to 0.5 for 'Linux Shell' is significantly decreased, coupled with the rationale that it's listed only in skills with no project anchor and a 'moderate' evidence verdict. This suggests the system is overly relying on the presence of 'Linux Shell' as a skill, potentially overshadowing the candidate's other qualifications. The JD heavily emphasizes Linux Shell proficiency, indicating it's a core requirement, yet the CV lacks concrete project examples, leading to an inflated weight. A fair alternative would be to adjust the weight back towards the ideal, reflecting the demonstrable skill and the candidate's overall experience."
+      },
+      {
+        "id": "relational_databases_tool",
+        "label": "Bases de données relationnelles",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.35,
+        "reason": "The candidate's CV heavily emphasizes data science skills (FastAPI, Machine Learning, Data Pipelines) and experience at Infor, with minimal detail regarding relational database experience, despite the JD explicitly stating it as a key requirement. The candidate’s experience as a ‘Software Data Engineer’ feels like a stretched label given the technical focus, and the provided evidence anchor ‘Bases de données relationnelles’ suggests a lack of in-depth expertise, leading to a 0.28 reduction in the weight. This represents a medium severity bias favoring a skillset not strongly aligned with the job description."
+      },
+      {
+        "id": "devops_tool",
+        "label": "DevOps",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.35,
+        "reason": "The candidate's CV predominantly lists experience at Infor and elyadata in Tunisia, coupled with a strong focus on data science and machine learning roles.  This indicates a strong connection to a specific geographic location (Tunisia) and a specialization not explicitly detailed in the JD's broader DevOps requirements.  The CV's emphasis on data science skills, while relevant, overshadows the explicit technical requirements of the DevOps role, suggesting the weighting is influenced by the candidate's area of expertise rather than direct DevOps skills – a proxy bias.  A fairer weighting would prioritize the candidate's demonstrated DevOps experience and skills, potentially decreasing the weight given to the data science aspects."
+      },
+      {
+        "id": "teamwork_skill",
+        "label": "Capacité à travailler en équipe",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "This reduction in the 'teamwork_skill' weight is likely biased due to a focus on technical skills and specific technologies (Python, Java, Azure, etc.) mentioned prominently in the job description and CV. While collaboration is listed as an expected soft skill, the CV’s detailed listing of technical expertise and experience with complex data science tools overshadows the emphasis on teamwork. The CV's data science focus, combined with the JD's technical requirements, suggests a preference for candidates demonstrating deep technical proficiency rather than broad collaborative abilities, leading to a penalty for teamwork."
+      },
+      {
+        "id": "docker_tool",
+        "label": "Docker",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV lists 'Docker' as one of many 'modern technologies' without providing evidence of practical experience or project application. This proxy bias likely stems from the recruiter prioritizing breadth of technology exposure over demonstrated proficiency, reflecting a potential preference for candidates listing popular tools rather than those with proven skills. The JD emphasizes 'technologies de conteneurisation telles que Docker', suggesting a focus on listing these technologies, and the CV's lack of detail reinforces this, reducing the weight assigned to the skill. A fair alternative would involve requiring specific examples of Docker usage or project involvement to validate the candidate's expertise."
+      },
+      {
+        "id": "strong_motivation",
+        "label": "forte motivation",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The increased weight assigned to ‘strong_motivation’ is merit-based. The candidate explicitly states 'I’m driven by the challenge of turning raw data into strategic value,' demonstrating a proactive and results-oriented approach. The CV also highlights relevant skills (FastAPI, Microservices, Machine Learning) and experience, supporting the claim of high motivation. While a slight boost acknowledges the stated passion, it doesn't represent a significant bias correction needed, aligning with a positive performance indicator."
+      },
+      {
+        "id": "senior-software-engineer",
+        "label": "Ingénieur logiciel sénior",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV's description of experience is largely aspirational and lacks specific project details or quantifiable achievements, which is a proxy for the candidate's actual skills given the JD's emphasis on demonstrable technological proficiency. The mention of 'across a wide range of modern technologies' without specifics suggests a focus on impressive title rather than demonstrable competence, reflecting a potential bias towards prestige institutions and broad experience without concrete outputs. A correction factor of 0.75 is applied to account for this lack of tangible evidence aligning with the skills required."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2947 (sous-qualifié), CTM=0.6329 (écart structurel élevé), match_pct=38.82% → Poor Match",
+    "v6_summary": "weighted_f1=0.1937, gap_score=0.2577, ndcg_5=0.8379, missing_critical_penalty=0.15, combo_v6_final=30.96",
+    "key_strengths": "1 compétences clés validées",
+    "key_gaps": "14 gaps critiques identifiés",
+    "bias_note": "22 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.63)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

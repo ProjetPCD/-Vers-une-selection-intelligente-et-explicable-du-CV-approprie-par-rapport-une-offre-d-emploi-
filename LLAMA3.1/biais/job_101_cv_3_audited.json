@@ -1,0 +1,459 @@
+{
+  "job_id": "job_101",
+  "cv_id": "cv_3",
+  "scored_nodes": {
+    "business_analyst": {
+      "w_cv": 0.5,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Inferred from profile headline and summary, no concrete project evidence",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "sql": {
+      "w_cv": 1.04,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.3
+        },
+        "penalties": {},
+        "final_score": 1.3
+      },
+      "active_red_flags": [],
+      "rationale": "Used in multiple projects, basic outcome mentioned (e.g., \"business and technical analysis\"), no quantified outcomes",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO_BIAS",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 1.04,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change is biased due to Halo Bias, where one strong signal (the candidate's experience in Generative AI) is used to judge the entire profile. Although the candidate has extensive experience and skills in various areas, the weight placed on their work with GenAI adoption and governance seems disproportionate compared to other relevant factors. A fair alternative would be to consider a more balanced approach, where each skill set receives a reasonable weight based on its relevance and importance for the Business Analyst role."
+    },
+    "python": {
+      "w_cv": 1.04,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.3
+        },
+        "penalties": {},
+        "final_score": 1.3
+      },
+      "active_red_flags": [],
+      "rationale": "Used in multiple projects, basic outcome mentioned (e.g., \"backend solutions\"), no quantified outcomes",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO BIAS",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 1.04,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change is biased towards a single strong signal (experience with Python) without considering other relevant skills or qualifications. The job description emphasizes the use of multiple tools, but the adapted weight gives excessive importance to the mention of 'backend solutions'. A fair alternative would be to distribute the weight among multiple relevant signals, such as programming languages, certifications, and work experience."
+    },
+    "business_intelligence": {
+      "w_cv": 0.625,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Inferred from profile headline and summary, no concrete project evidence",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.625,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "Weight change appears to be biased due to emphasis on business analyst role, not reflected in candidate's skills and experience."
+    },
+    "qliksense": {
+      "w_cv": 0.312,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Listed in skills only, zero project anchor",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.312,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change unfairly penalizes QlikSense, which is not explicitly highlighted as a key strength in the CV. A fair assessment should consider the candidate's overall skill set and experience."
+    },
+    "excel": {
+      "w_cv": 1.001,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.3
+        },
+        "penalties": {},
+        "final_score": 1.3
+      },
+      "active_red_flags": [],
+      "rationale": "Used in multiple projects, basic outcome mentioned (e.g., \"business and technical analysis\"), no quantified outcomes",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 1.001,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.77,
+      "p35_reason": "The weight change in favor of 'excel' (w_cv: 1.3) is biased due to prestige bias, as it weights a specific tool name ('excel') more than its ideal weight (w_0: 0.984), despite the candidate having experience with multiple tools and techniques mentioned in the CV. A fair alternative would be to assign equal or lower weight to 'excel' compared to other tools, considering the candidate's diverse skill set."
+    },
+    "salesforce": {
+      "w_cv": 0.15,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Listed in skills only, zero project anchor",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.15,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.6,
+      "p35_reason": "The algorithm has unfairly penalized the candidate by giving too much weightage to the company name 'Salesforce', rather than their actual skills."
+    },
+    "power-bi": {
+      "w_cv": 0.15,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Listed in skills only, zero project anchor",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.15,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.6,
+      "p35_reason": "The model appears to be favoring Power BI despite having zero project anchor, which raises questions about the relevance of this attribute in the hiring process."
+    },
+    "sap": {
+      "w_cv": 0.3,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Listed in skills only, zero project anchor",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.3,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "Weight change decreased due to prestige bias; fair alternative is to extract relevant skills and experiences from the CV without considering university/company name."
+    },
+    "data_management": {
+      "w_cv": 0.4,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Inferred from profile headline and summary, no concrete project evidence",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO BIAS",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.4,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The candidate has a strong profile with multiple relevant certifications and extensive experience in software engineering and architecture. However, the weight change is unfair as it decreases from 0.608 to 0.5, indicating that the algorithm is penalizing the candidate's profile due to one strong signal (certifications and experience) rather than evaluating their skills and qualifications holistically."
+    }
+  },
+  "scored_edges": {
+    "Generative AI (GenAI)|Lightweight governance": {
+      "synergy_score": 0.65,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.1,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate used Generative AI (GenAI) in conjunction with lightweight governance, demonstrating synergy between the two skills as per CV excerpt: 'Establishes lightweight governance, prompt-engineering standards, and simple KPIs to track impact and manage risk, balancing delivery with continuous experimentation'. Same project or role indicates confirmed collaboration.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.65
+    },
+    "Test-Driven Development (TDD)|Comprehensive unit/integration/e2e test suites": {
+      "synergy_score": 0.8,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.3,
+        "penalties": 0.0,
+        "final_score": 0.8
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate used TDD in conjunction with comprehensive unit/integration/e2e test suites, demonstrating synergy between the two skills as per CV excerpt: 'Drives Test-Driven Development (TDD) and comprehensive unit/integration/e2e test suites across development teams'. Same project or role indicates confirmed collaboration.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.8
+    },
+    ".NET (core/.NET)|Java / Spring Boot": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.3,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate mentions working with both Java/Spring Boot and .NET in multiple roles, demonstrating synergy between the two skills as per CV excerpt: 'Hands-on expertise with .NET (core/.NET), Java / Spring Boot, and JavaScript / Node.js'. Same project or role indicates confirmed collaboration.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    ".NET (core/.NET)|JavaScript / Node.js": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.3,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate mentions working with both JavaScript/Node.js and .NET in multiple roles, demonstrating synergy between the two skills as per CV excerpt: 'Hands-on expertise with .NET (core/.NET), Java / Spring Boot, and JavaScript / Node.js'. Same project or role indicates confirmed collaboration.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    ".NET (core/.NET)|SQL Server": {
+      "synergy_score": 0.65,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.3,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": ".NET and SQL Server are mentioned together in multiple roles, indicating the candidate has experience working with both technologies to deliver backend solutions and integrations.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.65
+    },
+    ".NET (core/.NET)|Microservices": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.5,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate has experience with both .NET and Microservices, indicating they can design and implement complex systems using multiple technologies, such as designing microservices, event-driven systems, serverless components, and cloud-native platforms.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "Generative AI|Prompt Engineering": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.5,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate mentions establishing prompt-engineering standards as part of their role in driving Generative AI adoption, indicating a strong synergy between the two technologies.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "Microservices|Dependency Injection": {
+      "synergy_score": 0.65,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.3,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate mentions using Dependency Injection as part of their work with Microservices in multiple roles, indicating a strong synergy between the two technologies.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.65
+    },
+    ".NET|C#": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.55,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate mentions working with both C# and .NET in multiple roles, demonstrating a strong synergy between the two skills. CV excerpt: 'Hands-on expertise with .NET (core/.NET), Java / Spring Boot, and JavaScript / Node.js'.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    ".NET Core|ASP.NET Core": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.55,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate mentions working with both ASP.NET Core and .NET Core in multiple roles, demonstrating a strong synergy between the two skills. CV excerpt: 'Stacks - C#, .NET Core 2.x/3.x, ASP.NET Core 2.x/3.x'.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    ".NET (core/.NET)|Dapper": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": -0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate mentions working with both Dapper and .NET in multiple roles, but the synergy is only weak as they are mentioned separately without any temporal overlap or same project/role evidence. CV excerpt: 'Stacks - C#, .NET Core 2.x/3.x, ASP.NET Core 2.x/3.x, Dapper'.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    ".NET (core/.NET)|AutoMapper": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": -0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate mentions working with both AutoMapper and .NET in multiple roles, but the synergy is only weak as they are mentioned separately without any temporal overlap or same project/role evidence. CV excerpt: 'Stacks - C#, .NET Core 2.x/3.x, ASP.NET Core 2.x/3.x, AutoMapper'.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    }
+  },
+  "metadata": {
+    "skills_scored": 10,
+    "mean_score": 0.55,
+    "edges_scored": 12,
+    "mean_synergy": 0.646,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.646,
+      "max": 0.8,
+      "min": 0.25
+    },
+    "batches_ok": 1,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.55,
+      "max": 1.0,
+      "min": 0.25,
+      "above_1": 3,
+      "below_05": 4
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 9,
+    "nodes_with_bias": 9,
+    "nodes_corrected": 9,
+    "edges_audited": 0
+  }
+}

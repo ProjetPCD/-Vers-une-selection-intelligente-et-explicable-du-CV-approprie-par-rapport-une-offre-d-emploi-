@@ -1,0 +1,360 @@
+{
+  "job_id": "job_99",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-02T18:19:17.279447",
+  "overall_assessment": {
+    "verdict": "Weak Match",
+    "match_pct": 51.48,
+    "confidence": {
+      "confidence_score": 0.73,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.333,
+        "coverage_rate": 0.8,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.699,
+    "edge_score": 0.0,
+    "combined": 0.4194
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.4215,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5492,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.4852,
+    "matched_nodes": "5/15",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.4046,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.443,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.3155,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.3077,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.1301,
+    "weighted_recall": 0.2865,
+    "weighted_f1": {
+      "value": 0.4571,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.7212,
+    "missing_critical_penalty": {
+      "value": 0.4,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.844,
+    "ndcg_10": 0.8902,
+    "map_score": 0.9008,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8101,
+    "top_skill_alignment": 0.6167,
+    "semantic_fit_score": 0.4683,
+    "experience_density": 0.2713
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 43.98,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 39.38,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 36.7,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 90.29,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 56.95,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 45.67,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 57.9,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 4,
+      "match_pct": 24.7,
+      "weight_sum": 3.296
+    },
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 38.1,
+      "weight_sum": 2.947
+    },
+    "Domain": {
+      "count": 4,
+      "match_pct": 43.2,
+      "weight_sum": 3.014
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 34.7,
+      "weight_sum": 2.388
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "total_edges": 9,
+    "top_synergies": [
+      {
+        "edge_key": "java|mongodb",
+        "source": "java",
+        "target": "mongodb",
+        "w_0": 0.9,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "node-js|mongodb",
+        "source": "node-js",
+        "target": "mongodb",
+        "w_0": 0.85,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "spring-boot|java",
+        "source": "spring-boot",
+        "target": "java",
+        "w_0": 0.9,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "node-js|github",
+        "source": "node-js",
+        "target": "github",
+        "w_0": 0.75,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "java|github",
+        "source": "java",
+        "target": "github",
+        "w_0": 0.7,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "MongoDB",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Node.js",
+      "type": "Hard Skill",
+      "gap": 0.993,
+      "severity": "critical",
+      "importance": 0.993
+    },
+    {
+      "skill": "Agile",
+      "type": "Hard Skill",
+      "gap": 0.72,
+      "severity": "critical",
+      "importance": 0.954
+    },
+    {
+      "skill": "Backend",
+      "type": "Domain",
+      "gap": 0.677,
+      "severity": "critical",
+      "importance": 0.677
+    },
+    {
+      "skill": "Backend Development",
+      "type": "Domain",
+      "gap": 0.656,
+      "severity": "critical",
+      "importance": 0.656
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "Java",
+        "type": "Hard Skill",
+        "w_cv": 1.8
+      },
+      {
+        "label": "Backend Developer",
+        "type": "Domain",
+        "w_cv": 1.55
+      },
+      {
+        "label": "RESTful APIs",
+        "type": "Domain",
+        "w_cv": 1.55
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "MongoDB",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Node.js",
+        "type": "Hard Skill",
+        "gap": 0.993
+      },
+      {
+        "label": "Agile",
+        "type": "Hard Skill",
+        "gap": 0.72
+      },
+      {
+        "label": "Backend",
+        "type": "Domain",
+        "gap": 0.677
+      },
+      {
+        "label": "Backend Development",
+        "type": "Domain",
+        "gap": 0.656
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 7,
+    "nodes_with_bias": 5,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 4,
+      "HALO": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "spring-boot",
+        "label": "Spring Boot",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.892,
+        "reason": "The weight change is biased due to prestige bias, as it favors candidates with certain university names (e.g., Ecole Nationale des Sciences Appliquées de Khouribga) and company names (e.g., Oracle). This can unfairly penalize candidates from other institutions or without the same level of industry experience. A fair alternative would be to use skills demonstrated in the resume and cover letter as the primary factor for weight change, rather than relying on prestige indicators."
+      },
+      {
+        "id": "agile",
+        "label": "Agile",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.468,
+        "reason": "The job description places an undue emphasis on specific technologies, creating an unfair penalty for candidates with broader skills."
+      },
+      {
+        "id": "github",
+        "label": "GitHub",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.9,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.72,
+        "reason": "The weight change gives an unfair advantage to candidates from a specific university/company, ENSA Khouribga, and may lead to a lack of diversity in the candidate pool."
+      },
+      {
+        "id": "qualifications",
+        "label": "Qualifications",
+        "bias_category": "HALO",
+        "severity": "LOW",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The system is overemphasizing the candidate's recent project anchor, which matches one aspect of the job description, without considering other relevant signals."
+      },
+      {
+        "id": "nosql",
+        "label": "NoSQL",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "The weight change is biased against candidates with experience in NoSQL databases, which is a relevant skill for this job."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.4215 (sous-qualifié), CTM=0.5492 (écart structurel élevé), match_pct=51.48% → Weak Match",
+    "v6_summary": "weighted_f1=0.4571, gap_score=0.3155, ndcg_5=0.844, missing_critical_penalty=0.4, combo_v6_final=43.98",
+    "key_strengths": "3 compétences clés validées",
+    "key_gaps": "5 gaps critiques identifiés",
+    "bias_note": "5 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.73)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

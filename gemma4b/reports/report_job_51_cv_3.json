@@ -1,0 +1,377 @@
+{
+  "job_id": "job_51",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-03T05:45:59.171905",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 26.68,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.75,
+        "coverage_rate": 0.167,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.8333
+  },
+  "final_scores": {
+    "node_score": 0.1395,
+    "edge_score": 0.1963,
+    "combined": 0.1622
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.0873,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7296,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7332,
+    "matched_nodes": "1/12",
+    "edge_match_pct": 9.81
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.0961,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.185,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.0632,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0833,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.8852,
+    "weighted_recall": 0.0631,
+    "weighted_f1": {
+      "value": 0.1179,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.575,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.7504,
+    "ndcg_10": 0.8672,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.2137,
+    "semantic_fit_score": 0.3274,
+    "experience_density": 0.053
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 15.75,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 12.4,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 16.07,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 90.02,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 32.08,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 21.9,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 28.99,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 9.4,
+      "weight_sum": 1.0
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 6.2,
+      "weight_sum": 2.727
+    },
+    "Tool": {
+      "count": 4,
+      "match_pct": 0.0,
+      "weight_sum": 3.436
+    },
+    "Domain": {
+      "count": 3,
+      "match_pct": 19.1,
+      "weight_sum": 1.944
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 9.81,
+    "total_edges": 7,
+    "top_synergies": [
+      {
+        "edge_key": "machine_learning_domain|ia_domain",
+        "source": "machine_learning_domain",
+        "target": "ia_domain",
+        "w_0": 0.845,
+        "w_cv": 0.669,
+        "w_cv_norm": 0.334,
+        "match_pct": 39.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_programming|machine_learning_domain",
+        "source": "python_programming",
+        "target": "machine_learning_domain",
+        "w_0": 0.95,
+        "w_cv": 0.188,
+        "w_cv_norm": 0.094,
+        "match_pct": 9.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "pytorch_framework|machine_learning_domain",
+        "source": "pytorch_framework",
+        "target": "machine_learning_domain",
+        "w_0": 0.85,
+        "w_cv": 0.094,
+        "w_cv_norm": 0.047,
+        "match_pct": 5.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "tensorflow_framework|machine_learning_domain",
+        "source": "tensorflow_framework",
+        "target": "machine_learning_domain",
+        "w_0": 0.844,
+        "w_cv": 0.094,
+        "w_cv_norm": 0.047,
+        "match_pct": 5.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "scikit_learn_library|machine_learning_domain",
+        "source": "scikit_learn_library",
+        "target": "machine_learning_domain",
+        "w_0": 0.91,
+        "w_cv": 0.094,
+        "w_cv_norm": 0.047,
+        "match_pct": 5.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Agile",
+      "type": "Soft Skill",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Scikit-learn",
+      "type": "Tool",
+      "gap": 0.91,
+      "severity": "critical",
+      "importance": 0.91
+    },
+    {
+      "skill": "Machine Learning",
+      "type": "Domain",
+      "gap": 0.751,
+      "severity": "critical",
+      "importance": 0.845
+    },
+    {
+      "skill": "PyTorch",
+      "type": "Tool",
+      "gap": 0.844,
+      "severity": "critical",
+      "importance": 0.844
+    },
+    {
+      "skill": "MATLAB",
+      "type": "Tool",
+      "gap": 0.843,
+      "severity": "critical",
+      "importance": 0.843
+    },
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.839,
+      "severity": "critical",
+      "importance": 0.839
+    },
+    {
+      "skill": "Travailler en équipe",
+      "type": "Soft Skill",
+      "gap": 0.619,
+      "severity": "critical",
+      "importance": 0.619
+    },
+    {
+      "skill": "Collaboration",
+      "type": "Soft Skill",
+      "gap": 0.606,
+      "severity": "critical",
+      "importance": 0.606
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.906
+      },
+      {
+        "label": "Agile",
+        "type": "Soft Skill",
+        "gap": 0.906
+      },
+      {
+        "label": "Scikit-learn",
+        "type": "Tool",
+        "gap": 0.91
+      },
+      {
+        "label": "Machine Learning",
+        "type": "Domain",
+        "gap": 0.751
+      },
+      {
+        "label": "PyTorch",
+        "type": "Tool",
+        "gap": 0.844
+      },
+      {
+        "label": "MATLAB",
+        "type": "Tool",
+        "gap": 0.843
+      },
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.839
+      },
+      {
+        "label": "Travailler en équipe",
+        "type": "Soft Skill",
+        "gap": 0.619
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 4,
+    "nodes_with_bias": 4,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 3,
+      "B": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python_programming",
+        "label": "Python",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV heavily emphasizes certifications and training related to AI and Cloud technologies (Oracle Cloud Infrastructure, BIFPC, etc.) and locations (Tunis, Tunisia) which signals socioeconomic background. While these are valuable skills, the substantial decrease in weight (-0.75) suggests a proxy bias – the algorithm is unfairly penalizing the candidate due to their geographic location and focus on specific, potentially costly, training programs. A fair alternative would be to assess the candidate solely on their Python programming skills, experience with relevant frameworks (PyTorch, TensorFlow, Scikit-learn), and project experience, disregarding the specific certifications and training associated with their location."
+      },
+      {
+        "id": "agile_methodologies",
+        "label": "Agile",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV heavily emphasizes certifications and titles related to Agile methodologies (Scrum Fundamentals, BIFPC™, Agile methodologies) alongside technical skills. This suggests the algorithm is prioritizing the presence of these Agile certifications over demonstrated experience or skills, a proxy for organizational culture fit and potentially a signal of a specific geographic location (Tunisia) where Agile is commonly used. A more merit-based approach would focus on specific Agile project outcomes or contributions, not just the presence of certifications, leading to a decrease in the weighting."
+      },
+      {
+        "id": "machine_learning_domain",
+        "label": "Machine Learning",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease in weight (Delta: -0.595) likely reflects the candidate's location – Tunis, Tunisia – which is a proxy for socioeconomic status. The JD emphasizes experience with global teams and technologies, while the candidate’s CV focuses on local experience with companies like Sotefi and Esprit School of Business. This suggests the algorithm may be penalizing the candidate for not originating from a location associated with a higher-income, technologically advanced environment, leading to an unfair disadvantage. A fair alternative would be to evaluate candidates solely based on skills, experience, and educational qualifications, irrespective of geographical origin."
+      },
+      {
+        "id": "soft_skills_requirement",
+        "label": "Soft Skills",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "This audit identifies Gender/Diversity bias. The CV heavily emphasizes Nour's 'Scrum Master' role and passion for AI/project management, aligning with the JD’s soft skills requirements, but the weight change (-0.102) suggests a penalization of these valuable skills.  The evidence anchor highlighting her Scrum Master experience is weak due to the lack of explicit project details, leading to an unwarranted reduction in her score. A fair alternative would be to adjust the weighting to reflect her demonstrated skills rather than relying on a weak anchor, thus a correction factor of 0.75 is applied."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.0873 (sous-qualifié), CTM=0.7296 (écart structurel élevé), match_pct=26.68% → Poor Match",
+    "v6_summary": "weighted_f1=0.1179, gap_score=0.0632, ndcg_5=0.7504, missing_critical_penalty=0.0, combo_v6_final=15.75",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "9 gaps critiques identifiés",
+    "bias_note": "4 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "⚠ 83.3% des scores via fallback mathématique (LLM instable)"
+  }
+}

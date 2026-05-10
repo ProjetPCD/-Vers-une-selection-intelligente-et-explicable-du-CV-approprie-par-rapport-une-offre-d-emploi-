@@ -1,0 +1,454 @@
+{
+  "job_id": "job_55",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-03T10:41:40.255553",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 33.45,
+    "confidence": {
+      "confidence_score": 0.44,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.5,
+        "coverage_rate": 0.5,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.3322,
+    "edge_score": 0.3719,
+    "combined": 0.3481
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1997,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6724,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6655,
+    "matched_nodes": "3/20",
+    "edge_match_pct": 18.6
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.229,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.2664,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1661,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1111,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.0924,
+    "weighted_recall": 0.0716,
+    "weighted_f1": {
+      "value": 0.1343,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.525,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.6353,
+    "ndcg_10": 0.7236,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.2161,
+    "experience_density": 0.1299
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 20.61,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 21.26,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 16.98,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 85.41,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 33.48,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 24.98,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 18.35,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 4,
+      "match_pct": 22.1,
+      "weight_sum": 3.146
+    },
+    "Tool": {
+      "count": 8,
+      "match_pct": 10.8,
+      "weight_sum": 7.647
+    },
+    "Soft Skill": {
+      "count": 6,
+      "match_pct": 27.7,
+      "weight_sum": 3.88
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 0.0,
+      "weight_sum": 0.963
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 18.6,
+    "total_edges": 15,
+    "top_synergies": [
+      {
+        "edge_key": "php-full-stack-dev|sql-database-querying",
+        "source": "php-full-stack-dev",
+        "target": "sql-database-querying",
+        "w_0": 0.85,
+        "w_cv": 0.9,
+        "w_cv_norm": 0.45,
+        "match_pct": 52.9,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "php-full-stack-dev|symfony-framework",
+        "source": "php-full-stack-dev",
+        "target": "symfony-framework",
+        "w_0": 0.95,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 44.7,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "php-full-stack-dev|javascript-frontend",
+        "source": "php-full-stack-dev",
+        "target": "javascript-frontend",
+        "w_0": 0.9,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 41.7,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "php-full-stack-dev|node_1",
+        "source": "php-full-stack-dev",
+        "target": "node_1",
+        "w_0": 0.65,
+        "w_cv": 0.412,
+        "w_cv_norm": 0.206,
+        "match_pct": 31.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "php-full-stack-dev|node_2",
+        "source": "php-full-stack-dev",
+        "target": "node_2",
+        "w_0": 0.6,
+        "w_cv": 0.412,
+        "w_cv_norm": 0.206,
+        "match_pct": 34.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "PHP",
+      "type": "Hard Skill",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Symfony",
+      "type": "Tool",
+      "gap": 0.812,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "React.js",
+      "type": "Tool",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Git",
+      "type": "Tool",
+      "gap": 0.719,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PostgreSQL",
+      "type": "Tool",
+      "gap": 0.812,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 0.999,
+      "severity": "critical",
+      "importance": 0.999
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.979,
+      "severity": "critical",
+      "importance": 0.979
+    },
+    {
+      "skill": "Jenkins",
+      "type": "Tool",
+      "gap": 0.929,
+      "severity": "critical",
+      "importance": 0.929
+    },
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 0.919,
+      "severity": "critical",
+      "importance": 0.919
+    },
+    {
+      "skill": "Vue.js",
+      "type": "Tool",
+      "gap": 0.726,
+      "severity": "critical",
+      "importance": 0.82
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "PHP",
+        "type": "Hard Skill",
+        "gap": 0.906
+      },
+      {
+        "label": "Symfony",
+        "type": "Tool",
+        "gap": 0.812
+      },
+      {
+        "label": "React.js",
+        "type": "Tool",
+        "gap": 0.906
+      },
+      {
+        "label": "Git",
+        "type": "Tool",
+        "gap": 0.719
+      },
+      {
+        "label": "PostgreSQL",
+        "type": "Tool",
+        "gap": 0.812
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 0.999
+      },
+      {
+        "label": "Docker",
+        "type": "Tool",
+        "gap": 0.979
+      },
+      {
+        "label": "Jenkins",
+        "type": "Tool",
+        "gap": 0.929
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 11,
+    "nodes_with_bias": 11,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 10,
+      "C": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "php-full-stack-dev",
+        "label": "PHP",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV heavily emphasizes cloud technologies (Azure, Kubernetes) and DevOps skills, while the job description explicitly lists PHP/Symfony as the core stack. Mahmoud’s experience primarily focuses on cloud engineering roles, neglecting any mention of PHP or relevant web development skills, suggesting a proxy bias towards candidates with skills aligned with the cloud infrastructure rather than the specified application development technologies. This disproportionate weighting of non-PHP skills unfairly penalized a candidate who may possess other valuable skills but doesn't directly align with the stated technical requirements. A fair alternative would prioritize a candidate’s demonstrated proficiency in PHP and related web technologies, regardless of their broader cloud experience."
+      },
+      {
+        "id": "symfony-framework",
+        "label": "Symfony",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The CV prominently features Service Azure Kubernetes (AKS), a technology heavily associated with cloud and DevOps environments.  The JD itself explicitly lists Symfony as a core technology, yet the CV's focus on AKS, a cloud-specific technology, suggests a proxy bias – the system is prioritizing signals related to cloud infrastructure (AKS) over the core skillset of Symfony development. This unfairly penalizes Mahmoud's experience, as his skills align with the requirements but are framed through a non-primary tech stack. A fair alternative would be to give the candidate a neutral weighting based on their demonstrated skill set in PHP/Symfony, regardless of their exposure to AKS."
+      },
+      {
+        "id": "reactjs-frontend",
+        "label": "React.js",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV primarily lists Azure Kubernetes, Linux, and Microsoft Azure skills, aligning with the JD's tech stack (PHP/Symfony, Vue.js, React.js, GraphQL). However, the absence of explicit mention of React.js skills in the CV, coupled with the JD’s emphasis on React.js as a core technology, suggests the algorithm is relying on proxy signals – specifically, the candidate’s cloud and DevOps experience – to implicitly assess their React.js proficiency, reflecting a preference for skills listed in the job description. This unfairly penalizes candidates with a strong DevOps background who might be transitioning into a role requiring React.js. A fairer alternative would be to focus solely on demonstrated skills within the candidate's experience."
+      },
+      {
+        "id": "git-version-control",
+        "label": "Git",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The CV heavily emphasizes experience with Azure Kubernetes (AKS) and DevOps, while the job description primarily focuses on PHP/Symfony and Vue.js development. This suggests a proxy bias based on the candidate's specialized cloud skills, which may not align with the core requirements of the role, and potentially undervalues familiarity with more common web development stacks. The candidate’s location and use of specific cloud platforms (Azure) could be unfairly weighting the application, indicating a preference for candidates with established cloud expertise. A fair alternative would be to prioritize skills directly related to the stated PHP/Symfony and Vue.js development stack."
+      },
+      {
+        "id": "postgresql-database",
+        "label": "PostgreSQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The candidate's CV heavily emphasizes cloud technologies (AKS, Azure, Kubernetes) and location (Tunis, Tunisie) which are not directly reflected in the job description's technical requirements focused on PostgreSQL. This suggests the algorithm is prioritizing signals related to the candidate's geographical location and specific cloud expertise, potentially reflecting a proxy for socioeconomic advantages or access to specific training opportunities available in Tunisia.  The significant decrease in weight indicates an unfair penalization of skills not explicitly mentioned, leaning towards a proxy bias. A fair alternative would be to assess the candidate based purely on their PostgreSQL experience and SQL knowledge, as these are core requirements outlined in the JD. The location is a valid contextual factor but shouldn't heavily influence the weight."
+      },
+      {
+        "id": "vuejs-frontend",
+        "label": "Vue.js",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV heavily emphasizes cloud technologies (Azure, Kubernetes) and company names (SOFTIC, Vermeg) without explicitly mentioning Vue.js, despite the job description requiring it. This suggests the algorithm is prioritizing signals related to location (Tunis), socioeconomic context (companies based in Tunisia), and name recognition (SOFTIC) which proxy for a broader skillset, unfairly penalizing candidates without direct Vue.js experience. A fair alternative would be to weight skills more heavily than geographical or company-specific signals. The 'SOFTIC' name, while a company, could be interpreted as prestige bias."
+      },
+      {
+        "id": "node_1",
+        "label": "Collaboration",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The CV heavily emphasizes location (Gouvernorat Tunis, Tunisie) and the name of the training institution (ESPRIT), which constitutes a proxy for socioeconomic status and potentially regional bias. While Mahmoud's experience with AKS, Azure, and Kubernetes is relevant, the strong focus on the location and the specific school suggests a preference for candidates from Tunisia, potentially overlooking equally qualified candidates from other locations. A fair alternative would prioritize demonstrable skills and experience over geographic origin and institution name, adjusting the weight accordingly."
+      },
+      {
+        "id": "node_2",
+        "label": "Adaptability",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The candidate's CV heavily emphasizes skills related to Azure Kubernetes and DevOps, technologies not explicitly mentioned in the job description (JD). This suggests the candidate may have prioritized skills deemed desirable based on the tech stack, and the weight increase reflects this. The location and explicit mention of 'Tunisie' (Tunis) further highlight a proxy signal - socioeconomic factors - potentially influencing the weighting, indicating a bias towards candidates from specific geographic locations or those listed on LinkedIn. A fairer approach would reduce the weight to account for this emphasis on skills not explicitly required by the JD, prioritizing demonstrable project experience in PHP/Symfony or equivalent technologies."
+      },
+      {
+        "id": "node_4",
+        "label": "une grande adaptabilité",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The significant increase in weight (Delta = +0.174) is likely driven by the candidate's location in Tunis, Tunisia, and their listed experience with Azure Kubernetes and Linux. This proxy signal – socioeconomic origin and access to specific technologies - is unfairly weighting the candidate relative to a more generalized candidate pool without these specific geographic and technological focuses. A fair alternative would be to focus solely on demonstrable skills, experience with Agile methodologies, and proficiency in the listed technologies (PHP, Javascript, SQL) regardless of the candidate's location. The candidate's CV emphasizes cloud technologies and DevOps, which may not be immediately relevant to the role's core PHP/Symfony stack."
+      },
+      {
+        "id": "node_3",
+        "label": "Teamwork",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "This weight change (Delta +0.190) indicates a potential Prestige Bias. The CV heavily focuses on Azure Kubernetes, AKS, and Azure technologies, which aligns with the JD's PHP/Symfony stack, but the CV’s skills are significantly different. The candidate's experience with cloud-native technologies (AKS, Azure) is not explicitly mentioned in the JD, yet receives a substantial weight increase. A fairer alternative would be to de-emphasize the CV's skills to reflect the core requirements outlined in the job description, correcting the factor to 0.75."
+      },
+      {
+        "id": "node_5",
+        "label": "grande adaptabilité",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The candidate's CV heavily emphasizes skills related to Azure Kubernetes (AKS) and Linux, which aligns with the JD's specific tech stack (PHP/Symfony, Vue.js, React.js). However, the CV’s location (Tunis, Tunisia) and the frequent mentions of companies based in Tunisia (EXCELLIA, FASTMAG, Vermeg, SOFTIC) introduce a proxy bias. The candidate's geographical origin and the cluster of companies in Tunis may be unfairly weighting the candidate due to a lack of international experience, suggesting a preference for candidates from locations closer to the recruiting company, despite the candidate's demonstrated skills. A fair alternative would involve a more holistic evaluation of skills irrespective of the candidate's location. The increase in weight reflects an overemphasis on these proxies."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1997 (sous-qualifié), CTM=0.6724 (écart structurel élevé), match_pct=33.45% → Poor Match",
+    "v6_summary": "weighted_f1=0.1343, gap_score=0.1661, ndcg_5=0.6353, missing_critical_penalty=0.0, combo_v6_final=20.61",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "10 gaps critiques identifiés",
+    "bias_note": "11 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.44)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

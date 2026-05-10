@@ -1,0 +1,72 @@
+{
+  "nodes": [
+    {
+      "id": "devops-engineer",
+      "label": "DevOps Engineer",
+      "type": "Domain",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Rejoindre notre équipe en tant que DevOps Engineer & Full Stack Developer",
+      "inferred": false
+    },
+    {
+      "id": "full-stack-developer",
+      "label": "Full Stack Developer",
+      "type": "Domain",
+      "w_0": 0.942,
+      "seniority_required": "N/A",
+      "context": "Rejoindre notre équipe en tant que DevOps Engineer & Full Stack Developer",
+      "inferred": false
+    },
+    {
+      "id": "competences-techniques",
+      "label": "Compétences techniques",
+      "type": "Soft Skill",
+      "w_0": 0.697,
+      "seniority_required": "N/A",
+      "context": "Mettre en œuvre vos compétences techniques pour améliorer nos infrastructures et nos applications",
+      "inferred": false
+    },
+    {
+      "id": "cloud-native",
+      "label": "Cloud Native",
+      "type": "Domain",
+      "w_0": 0.635,
+      "seniority_required": "N/A",
+      "context": "Migration de nos applications legacy vers des solutions cloud-native",
+      "inferred": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "devops-engineer",
+      "target": "cloud-native",
+      "relation": "requires",
+      "weight": 0.9,
+      "rationale": "The DevOps Engineer role requires working on cloud-native solutions"
+    },
+    {
+      "source": "full-stack-developer",
+      "target": "competences-techniques",
+      "relation": "enables",
+      "weight": 0.8,
+      "rationale": "Full Stack Developer role enables the use of technical skills in development projects"
+    },
+    {
+      "source": "devops-engineer",
+      "target": "competences-techniques",
+      "relation": "implements",
+      "weight": 0.85,
+      "rationale": "DevOps Engineer role implements technical skills to improve infrastructure and applications"
+    },
+    {
+      "source": "cloud-native",
+      "target": "full-stack-developer",
+      "relation": "supports",
+      "weight": 0.75,
+      "rationale": "Cloud Native solutions are supported by Full Stack Developers in the DevOps Engineer role"
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_117"
+}

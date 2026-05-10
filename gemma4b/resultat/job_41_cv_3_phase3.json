@@ -1,0 +1,250 @@
+{
+  "job_id": "job_41",
+  "cv_id": "cv_3",
+  "scored_nodes": {
+    "python_hard_skill": {
+      "w_cv": 1.15,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.3,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.15
+      },
+      "active_red_flags": [],
+      "rationale": "The CV explicitly states 'Python' as a top skill and details 7 years of combined experience.  The mention of engineered ML models to predict blood pressure from PPG signals, utilizing deep learning and regression techniques, directly relates to Python usage within a high-complexity project. The presence of 7 years of combined experience, and the described project context confirm a strong level of expertise. The experience_bonus reflects the detected experience and the outcome_bonus acknowledges the project's complexity. The intensity_bonus reflects the central role the skill plays in the described work.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "data_analyst_domain": {
+      "w_cv": 0.8,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.3,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.8
+      },
+      "active_red_flags": [],
+      "rationale": "The CV mentions the candidate's role as a 'Data Analyst' and highlights their contributions to developing end-to-end machine learning solutions. However, the level of detail and explicit description of the skill is limited,  only demonstrating a familiarity with the skill's usage within a larger project.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "postgresql_tool": {
+      "w_cv": 0.5,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "The CV mentions the use of PostgreSQL as part of the overall data pipeline for established data solutions. However, the level of detail and explicit description of the tool's role isn’t substantial enough to warrant a higher score.  The evidence only demonstrates a familiarity with the tool's usage within a larger project.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm"
+    },
+    "communication_soft_skill": {
+      "w_cv": 0.5,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "The CV mentions the candidate's ability to communicate complex technical information, but no specific examples or instances of this skill are provided. The CV indicates a general expectation rather than demonstrable experience.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    }
+  },
+  "scored_edges": {
+    "python_hard_skill|data_analyst_domain|llm_hard_skill|data_scientist_domain": {
+      "synergy_score": 0.85,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.85
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The CV explicitly details the use of Python alongside GPT-4 in a structured workflow for medical data extraction, directly demonstrating the combined use of both skills within a single project – the LLM workflow for medical data extraction. This aligns with strong synergy due to the same project/role and the output demonstrates synergy (built X using Python AND GPT-4).",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.85
+    },
+    "machine_learning_hard_skill|data_scientist_domain|computer_vision_hard_skill|data_scientist_domain": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.25,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate leverages machine learning (specifically ML models) in conjunction with computer vision techniques (PPG/rPPG signal analysis) to create a real-time health monitoring system. This shows the integrated use of these two core skills. Temporal overlap is confirmed. This is not a ghost synergy because the CV evidence directly supports this combined application.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "nlp_hard_skill|data_scientist_domain|computer_vision_hard_skill|data_scientist_domain": {
+      "synergy_score": 0.45,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": 0.0,
+        "final_score": 0.45
+      },
+      "is_ghost_synergy": false,
+      "rationale": "This demonstrates the pairing of NLP techniques (facial landmark detection) with computer vision for a specific application – eye movement tracking. The skills are related, but the CV excerpt details separate projects, not necessarily simultaneous use. Evidence quality is moderate due to lack of explicit integration.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "w_cv": 0.45
+    },
+    "prompt_engineering_hard_skill|data_scientist_domain|llm_hard_skill|data_scientist_domain": {
+      "synergy_score": 0.85,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.25,
+        "penalties": 0.0,
+        "final_score": 0.85
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate explicitly uses prompt engineering in the context of utilizing GPT-4, demonstrating a deliberate integration of the two skills within the same LLM-based workflow. The CV excerpt directly confirms this combined use. Same project/role and output demonstrates synergy.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.85
+    },
+    "Large Language Models (LLM)|Prompt Engineering|Medical Data Extraction": {
+      "synergy_score": 0.85,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.85
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The CV explicitly details a project where LLMs (GPT-4) were combined with prompt engineering techniques for automating the extraction of key information from medical documents. This directly supports the synergy between Large Language Models and Prompt Engineering. synergy_found = true, same_project_or_role = true, output/outcome demonstrates synergy. cv_excerpt: \"Developed and implemented an automated workflow utilizing Large Language Models, specifically GPT-4, combined with preprocessing steps and advanced prompt engineering, to directly extract structured key information from unstructured medical reports and clinical trial documents.\", ",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.85
+    },
+    "Machine Learning|Computer Vision|Real-time eye movement tracking system": {
+      "synergy_score": 0.4,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.4
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The CV describes a project involving computer vision techniques (facial landmark detection) alongside real-time data analysis to build a user interaction system, indicating a combination of these two skills. However, the description lacks explicit detail about the interaction. temporal_overlap = false, same_project_or_role = false. cv_excerpt: \"Separately, I developed a real-time eye movement tracking system using computer vision and facial landmark detection to enhance user interaction in accessibility and immersive tech.\", ",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "w_cv": 0.4
+    },
+    "Signal Processing|Machine Learning|Blood Pressure Prediction from PPG/rPPG": {
+      "synergy_score": 0.9,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.25,
+        "penalties": 0.0,
+        "final_score": 0.9
+      },
+      "is_ghost_synergy": false,
+      "rationale": "This section showcases the application of signal processing techniques (preprocessing, feature extraction) in conjunction with machine learning models for analyzing PPG signals to predict blood pressure – a clear demonstration of the synergy between these skills. The CV explicitly describes the techniques used to extract features. synergy_found = true, same_project_or_role = true, output/outcome demonstrates synergy. cv_excerpt: \"Engineered ML models to predict blood pressure non-invasively from Photoplethysmography (PPG) and remote PPG (rPPG) signals. Applied advanced signal preprocessing, feature extraction (time-domain, frequency-domain, wavelet), and regression techniques to enable real-time health monitoring insights for clients.\", ",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.9
+    },
+    "NLP|Product Matching|Product Catalog Matching": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.25,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The CV clearly outlines the integration of NLP techniques with visual similarity models for automating product catalog matching, demonstrating a combined application of both skills in a business context. synergy_found = true, same_project_or_role = true, output/outcome demonstrates synergy. cv_excerpt: \"Using a hybrid pipeline of NLP and visual similarity models, I automated catalog matching, increasing accuracy by over 30% and reducing manual effort for large-scale inventory systems.\", ",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    }
+  },
+  "metadata": {
+    "skills_scored": 4,
+    "mean_score": 0.588,
+    "edges_scored": 8,
+    "mean_synergy": 0.725,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.725,
+      "max": 0.9,
+      "min": 0.4
+    },
+    "batches_ok": 1,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.588,
+      "max": 0.85,
+      "min": 0.5,
+      "above_1": 0,
+      "below_05": 0
+    }
+  }
+}

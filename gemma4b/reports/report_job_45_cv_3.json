@@ -1,0 +1,463 @@
+{
+  "job_id": "job_45",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-03T02:08:02.754530",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 43.75,
+    "confidence": {
+      "confidence_score": 0.93,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.273,
+        "coverage_rate": 1.0,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.3797,
+    "edge_score": 0.3872,
+    "combined": 0.3827
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2525,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5699,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5625,
+    "matched_nodes": "4/22",
+    "edge_match_pct": 19.37
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2708,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.3783,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2215,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0476,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.3232,
+    "weighted_recall": 0.039,
+    "weighted_f1": {
+      "value": 0.0757,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.594,
+    "missing_critical_penalty": {
+      "value": 0.0833,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.6851,
+    "ndcg_10": 0.7877,
+    "map_score": 0.8957,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.3193,
+    "experience_density": 0.1353
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 23.65,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 25.26,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 21.23,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 83.75,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 34.86,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 30.81,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 20.53,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Education": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 6,
+      "match_pct": 14.7,
+      "weight_sum": 4.811
+    },
+    "Tool": {
+      "count": 5,
+      "match_pct": 19.6,
+      "weight_sum": 3.196
+    },
+    "Soft Skill": {
+      "count": 5,
+      "match_pct": 23.3,
+      "weight_sum": 3.299
+    },
+    "Domain": {
+      "count": 5,
+      "match_pct": 26.0,
+      "weight_sum": 3.372
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 19.37,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "machine_learning_domain|role",
+        "source": "machine_learning_domain",
+        "target": "role",
+        "w_0": 0.85,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 44.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_skill|ide",
+        "source": "python_skill",
+        "target": "ide",
+        "w_0": 0.65,
+        "w_cv": 0.543,
+        "w_cv_norm": 0.272,
+        "match_pct": 41.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_skill|role",
+        "source": "python_skill",
+        "target": "role",
+        "w_0": 0.95,
+        "w_cv": 0.512,
+        "w_cv_norm": 0.256,
+        "match_pct": 26.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_skill|libraries",
+        "source": "python_skill",
+        "target": "libraries",
+        "w_0": 0.75,
+        "w_cv": 0.498,
+        "w_cv_norm": 0.249,
+        "match_pct": 33.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_skill|frameworks",
+        "source": "python_skill",
+        "target": "frameworks",
+        "w_0": 0.7,
+        "w_cv": 0.45,
+        "w_cv_norm": 0.225,
+        "match_pct": 32.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Education",
+      "type": "Education",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.644,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Java",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "méthodologies de développement agiles",
+      "type": "Hard Skill",
+      "gap": 0.775,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "communication",
+      "type": "Soft Skill",
+      "gap": 0.679,
+      "severity": "critical",
+      "importance": 0.81
+    },
+    {
+      "skill": "bases de données",
+      "type": "Tool",
+      "gap": 0.605,
+      "severity": "critical",
+      "importance": 0.774
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Education",
+        "type": "Education",
+        "gap": 1.0
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.644
+      },
+      {
+        "label": "Java",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "méthodologies de développement agiles",
+        "type": "Hard Skill",
+        "gap": 0.775
+      },
+      {
+        "label": "communication",
+        "type": "Soft Skill",
+        "gap": 0.679
+      },
+      {
+        "label": "bases de données",
+        "type": "Tool",
+        "gap": 0.605
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 16,
+    "nodes_with_bias": 15,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 9,
+      "HALO": 3,
+      "B": 1,
+      "C. AGEISM": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python_skill",
+        "label": "Python",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.712,
+        "reason": "The weight decrease for Python skill is likely driven by the candidate's CV originating from Tunisia. The JD explicitly lists C/C++, Java, and Python, but the candidate's work experience is primarily in a non-English speaking environment (French, Arabic). This suggests a proxy bias, where the system is penalizing the candidate for using Python (a skill listed in the JD) due to the location of their experience, potentially reflecting a preference for candidates with experience in Western development ecosystems. A fair alternative would be to treat all candidates with equivalent demonstrable skills equally, regardless of their geographical background."
+      },
+      {
+        "id": "agile_methodologies",
+        "label": "méthodologies de développement agiles",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The decrease in weight for 'agile_methodologies' is likely a proxy bias stemming from the candidate's CV. While the JD explicitly mentions 'agile methodologies as an asset', the CV lacks specific project details demonstrating Agile usage. The candidate’s work at InstaDeep, a research-focused firm, isn't inherently indicative of Agile adoption unless explicitly stated.  This reliance on a contextual mention rather than demonstrable skill demonstrates a potential over-emphasis on the terminology itself, favoring candidates with a listing of Agile methodologies on their CV regardless of actual application. A fair alternative would be to adjust the weight based on a concrete project example or explicitly verified Agile experience."
+      },
+      {
+        "id": "database_tool",
+        "label": "bases de données",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.338,
+        "reason": "The candidate's CV primarily highlights skills in NLP and AI research, evidenced by their role at InstaDeep and academic projects involving question answering models with PDF input. However, the system dramatically reduced the weight given to the database tool skills mentioned in the job description. This suggests a proxy bias based on the candidate's educational background and specific project experience, where deep learning and NLP are highly valued, rather than a genuine assessment of proficiency in database tools which are explicitly mentioned as a requirement. The candidate's skills related to databases are presented solely through the projects listed, which may not be representative of a typical database engineer's skillset, leading to an unfairly low weighting."
+      },
+      {
+        "id": "communication_skill",
+        "label": "communication",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The candidate's CV heavily emphasizes technical skills (Machine Learning, NLP, programming languages) which aligns with the JD's requirements, particularly the focus on 'intelligence artificielle' and 'systèmes numériques'. However, the CV's language is primarily in French and Arabic, reflecting the candidate’s background in Tunisia.  This reliance on non-English communication suggests a proxy bias, where the system is prioritizing a candidate's linguistic proficiency (Arabic and French) over demonstrated communication skills as explicitly outlined in the JD, which seeks ‘excellentes compétences en communication.’ The decrease in weight (Delta: -0.460) indicates the system is unduly penalizing the candidate's use of their native languages, even if those languages are valuable in the global context of the role. A fair alternative would be to adjust the scoring to account for the candidate's multilingual abilities as an asset, recognizing the breadth of their knowledge and experience."
+      },
+      {
+        "id": "machine_learning_domain",
+        "label": "Machine Learning",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.188,
+        "reason": "The weight increase of +0.164 is primarily driven by the candidate’s specific experience in an AI Research Engineer role at InstaDeep, directly related to NLP model training with PDF input – a highly relevant skill for this JD. While the JD emphasizes a broad range of technical skills, the CV’s detailed description of the InstaDeep project and demonstrated experience aligns strongly with the role's requirements.  The candidate's experience with Deep Learning and NLP, coupled with the complex project, warrants a slight increase in weight to better reflect the quality of their expertise.  A correction factor of 1.25 reflects this strong alignment and the candidate's specialized skill set, acknowledging the positive influence of the InstaDeep project."
+      },
+      {
+        "id": "fast_learning_skill",
+        "label": "capacité d'apprendre rapidement de nouvelles technologies",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The significant decrease in weight for 'fast_learning_skill' (w_0 from 0.756 to 0.6) appears to be driven by the JD's emphasis on 'a good understanding of the principles of the Object-Oriented Programming and of Image Processing' and the requirement to 'learn quickly'. While the CV lists relevant skills like Machine Learning and NLP, it lacks concrete examples demonstrating this 'fast learning' ability. This suggests a halo effect - the recruiter is prioritizing a general capability (fast learning) linked to the desirable skills outlined in the job description, overshadowing the demonstrated skills within the candidate's experience."
+      },
+      {
+        "id": "oop_methodologies",
+        "label": "ologies de développement agiles",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The significant decrease in weight (w_cv from 0.724 to 0.35) is likely driven by the CV's emphasis on language skills (French, English, Arabic) and a Master's degree in Big Data & AI, which are proxies for socioeconomic background and educational opportunities, rather than direct evidence of OOP methodology expertise. The JD explicitly states a need for OOP knowledge, but the CV lacks specific examples of OOP application, leaning heavily on broader AI/ML skills.  This suggests the algorithm may be unfairly penalizing candidates from backgrounds with diverse linguistic proficiencies and access to advanced AI education, creating a proxy bias. A fair alternative would be to weight OOP knowledge directly, based on demonstrable skills and project experience."
+      },
+      {
+        "id": "object-oriented-programming",
+        "label": "Object-Oriented Programming",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The CV heavily emphasizes non-technical skills and language proficiency (Arabic, French, English), alongside a prestigious degree (Master's from Paris Dauphine). This suggests a proxy bias towards candidates with a specific linguistic and educational background, potentially overlooking candidates with strong OOP skills developed through practical experience and projects like the InstaDeep role, which is not sufficiently detailed in the CV. The weight reduction likely reflects the system's over-reliance on these secondary signals rather than a genuine assessment of OOP expertise."
+      },
+      {
+        "id": "teamwork",
+        "label": "Teamwork",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The weight change from 0.745 to 0.5 suggests a penalty for teamwork, despite the JD explicitly stating it as a key skill. The CV demonstrates involvement in AIESEC Lithuania, a significant teamwork-oriented organization, yet the algorithm significantly reduced the weight associated with this experience. This indicates a potential bias favoring candidates with solely technical skills, reflecting a halo bias where AIESEC experience, a positive signal for teamwork, is outweighed by other factors. A fairer alternative would be to maintain or even slightly increase the weight based on demonstrated collaborative experience."
+      },
+      {
+        "id": "role",
+        "label": "Role",
+        "bias_category": "C. AGEISM",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "The candidate's experience is heavily weighted towards a very specific, recent role at InstaDeep (2 years 11 months), which is an outlier in terms of typical career progression for a 'Machine Learning Engineer' role. The JD emphasizes broader experience with Agile methodologies and software engineering principles, yet the CV focuses almost exclusively on this single, short-term research role. This could indicate an attempt to prioritize a candidate with recent, cutting-edge experience over someone with more diverse, potentially valuable, albeit less 'shiny', experience, reflecting a bias towards novelty and potentially penalizing candidates further along their career path. A fairer alternative would be to assess the candidate's skills and experience across the breadth of the JD requirements, rather than overemphasizing the most recent and specialized role."
+      },
+      {
+        "id": "ide",
+        "label": "IDE (Environnements de Développement Intégrés)",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The weight decrease likely stems from the prominent mention of 'Creating and training Question answer (NLP) model that has PDF files as input' in the candidate's CV. This single achievement, while relevant to the job description's emphasis on NLP, represents a halo effect – overly emphasizing one specific skill (NLP with PDF processing) when the broader profile lacks depth in other key areas like C/C++ and Java as highlighted in the JD. A fairer assessment would consider the totality of skills demonstrated, not just this exceptional project detail, thus warranting a reduction in the initial weighting."
+      },
+      {
+        "id": "libraries",
+        "label": "Bibliothèques",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.285,
+        "reason": "The CV heavily emphasizes NLP and AI Research experience, particularly with PDF processing and question answering models – a proxy for understanding and working with textual data relevant to the JD’s emphasis on image processing and digital system design. While the skills align, the specific project detail (PDF files as input) might be overemphasized, potentially leading to an inflated score driven by familiarity with a specific NLP task rather than broader technical capabilities. A correction factor of 0.75 reflects this potential bias towards a narrow skill set within a larger field."
+      },
+      {
+        "id": "frameworks",
+        "label": "Frameworks",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease in weight (Delta = -0.357) for 'frameworks' is likely driven by a proxy bias related to the candidate's CV's emphasis on language skills (French, Arabic, English) and international experience (InstaDeep Ltd, Lithuania, Tunisia) rather than a deep understanding of specific frameworks. While familiarity with frameworks is valued, the CV's presentation heavily favors the candidate's linguistic abilities and geographical diversity, which are not directly related to the technical requirements outlined in the JD. A fairer assessment would prioritize demonstrable experience with relevant frameworks in the context of C/C++, Python, and Java."
+      },
+      {
+        "id": "problem_solving",
+        "label": "Résolution de Problèmes",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The significant increase in weight for 'problem-solving' (Delta = +0.199) is likely a halo effect stemming from the explicit mention and centrality of this skill within the job description. The CV highlights 'AI Research Engineer' and 'Machine Learning' prominently, potentially inflating the perceived importance of problem-solving skills, even though the CV provides numerous other relevant technical skills. A fair alternative would be to assess problem-solving based on concrete examples of projects and achievements, rather than relying on a skill listed prominently in the job description."
+      },
+      {
+        "id": "digital-systems-design",
+        "label": "Systèmes Numériques",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV indicates proficiency in NLP and Machine Learning, but the JD emphasizes system design experience with C/C++, Python, and Image Processing, and the CV lacks concrete examples of system design projects. The significant decrease in weight (Delta: -0.252) likely reflects a proxy bias stemming from the candidate's skillset, specifically their focus on AI research and NLP which doesn't directly address the required system design skills outlined in the job description.  The CV's heavy emphasis on NLP, and international educational background also suggests the system is prioritizing a specific technical profile rather than demonstrable system design ability. A fair alternative would be to assign a weight based on the demonstrated proficiency in relevant programming languages, not the advanced technical skills listed in the CV."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2525 (sous-qualifié), CTM=0.5699 (écart structurel élevé), match_pct=43.75% → Poor Match",
+    "v6_summary": "weighted_f1=0.0757, gap_score=0.2215, ndcg_5=0.6851, missing_critical_penalty=0.0833, combo_v6_final=23.65",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "6 gaps critiques identifiés",
+    "bias_note": "15 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.93)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

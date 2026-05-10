@@ -1,0 +1,347 @@
+{
+  "job_id": "job_83",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-02T14:51:33.559933",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 32.0,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.474,
+        "coverage_rate": 0.421,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.1626,
+    "edge_score": 0.0,
+    "combined": 0.0975
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1068,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6692,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.68,
+    "matched_nodes": "1/19",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.0884,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.0,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.073,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0769,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.3333,
+    "weighted_recall": 0.0714,
+    "weighted_f1": {
+      "value": 0.1356,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.75,
+    "missing_critical_penalty": {
+      "value": 0.1,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.9574,
+    "ndcg_10": 0.9846,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.5417,
+    "semantic_fit_score": 0.3099,
+    "experience_density": 0.0556
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 15.57,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 5.46,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 15.69,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 98.3,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 42.69,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 27.19,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 50.7,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 14,
+      "match_pct": 0.0,
+      "weight_sum": 9.171
+    },
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 39.0,
+      "weight_sum": 2.708
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 0.0,
+      "weight_sum": 1.127
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "total_edges": 4,
+    "top_synergies": [
+      {
+        "edge_key": "spécialiste|ec2",
+        "source": "spécialiste",
+        "target": "ec2",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "spécialiste|s3",
+        "source": "spécialiste",
+        "target": "s3",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "spécialiste|rds",
+        "source": "spécialiste",
+        "target": "rds",
+        "w_0": 0.7,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "spécialiste|cassandra",
+        "source": "spécialiste",
+        "target": "cassandra",
+        "w_0": 0.2,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Amazon Web Services",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Cassandra",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PostgreSQL",
+      "type": "Tool",
+      "gap": 0.947,
+      "severity": "critical",
+      "importance": 0.947
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.94,
+      "severity": "critical",
+      "importance": 0.94
+    },
+    {
+      "skill": "Terraform",
+      "type": "Tool",
+      "gap": 0.888,
+      "severity": "critical",
+      "importance": 0.888
+    },
+    {
+      "skill": "EC2",
+      "type": "Tool",
+      "gap": 0.856,
+      "severity": "critical",
+      "importance": 0.856
+    },
+    {
+      "skill": "RDS",
+      "type": "Tool",
+      "gap": 0.732,
+      "severity": "critical",
+      "importance": 0.732
+    },
+    {
+      "skill": "S3",
+      "type": "Tool",
+      "gap": 0.706,
+      "severity": "critical",
+      "importance": 0.706
+    },
+    {
+      "skill": "Systèmes distribués",
+      "type": "Domain",
+      "gap": 0.61,
+      "severity": "critical",
+      "importance": 0.61
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "Agile",
+        "type": "Hard Skill",
+        "w_cv": 1.5
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "Amazon Web Services",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Cassandra",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "PostgreSQL",
+        "type": "Tool",
+        "gap": 0.947
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.94
+      },
+      {
+        "label": "Terraform",
+        "type": "Tool",
+        "gap": 0.888
+      },
+      {
+        "label": "EC2",
+        "type": "Tool",
+        "gap": 0.856
+      },
+      {
+        "label": "RDS",
+        "type": "Tool",
+        "gap": 0.732
+      },
+      {
+        "label": "S3",
+        "type": "Tool",
+        "gap": 0.706
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 2,
+    "nodes_with_bias": 2,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "HALO BIAS": 1,
+      "PRESTIGE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "agile",
+        "label": "Agile",
+        "bias_category": "HALO BIAS",
+        "severity": "HIGH",
+        "correction_factor": 1.5,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.5,
+        "reason": "The weight change is biased because it relies heavily on a single strong signal (Agile methodology) to judge the entire profile, despite other relevant skills and experiences being mentioned in the CV. A fair alternative would be to consider multiple signals and weights to evaluate the candidate's qualifications more comprehensively."
+      },
+      {
+        "id": "go",
+        "label": "Go",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.8,
+        "reason": "The weight change is biased towards prestige bias because the mention of 'Go' in the CV is used as a strong signal to judge the candidate's proficiency, despite the job description emphasizing a broader range of skills and technologies. A fair alternative would be to consider multiple signals, such as relevant projects or coding exercises, rather than relying on specific language mentions."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1068 (sous-qualifié), CTM=0.6692 (écart structurel élevé), match_pct=32.0% → Poor Match",
+    "v6_summary": "weighted_f1=0.1356, gap_score=0.073, ndcg_5=0.9574, missing_critical_penalty=0.1, combo_v6_final=15.57",
+    "key_strengths": "1 compétences clés validées",
+    "key_gaps": "9 gaps critiques identifiés",
+    "bias_note": "2 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

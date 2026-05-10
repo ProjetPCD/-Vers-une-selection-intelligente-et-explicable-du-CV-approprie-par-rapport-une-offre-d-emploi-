@@ -1,0 +1,422 @@
+{
+  "job_id": "job_57",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-03T11:42:57.362288",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 33.62,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.615,
+        "coverage_rate": 0.385,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.3398,
+    "edge_score": 0.4626,
+    "combined": 0.3889
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2038,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.676,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6638,
+    "matched_nodes": "0/13",
+    "edge_match_pct": 23.12
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2127,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.4598,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.177,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0769,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.7765,
+    "weighted_recall": 0.0485,
+    "weighted_f1": {
+      "value": 0.0944,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.51,
+    "missing_critical_penalty": {
+      "value": 0.0909,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8795,
+    "ndcg_10": 0.9033,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.5508,
+    "semantic_fit_score": 0.3664,
+    "experience_density": 0.1375
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 24.87,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 26.52,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 21.83,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 95.18,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 37.81,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 29.85,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 45.59,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 7.1,
+      "weight_sum": 1.528
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 9.9,
+      "weight_sum": 3.501
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 39.9,
+      "weight_sum": 1.428
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 37.5,
+      "weight_sum": 0.859
+    },
+    "Tool": {
+      "count": 3,
+      "match_pct": 9.1,
+      "weight_sum": 2.502
+    },
+    "Responsibility": {
+      "count": 1,
+      "match_pct": 30.0,
+      "weight_sum": 0.703
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 23.12,
+    "total_edges": 7,
+    "top_synergies": [
+      {
+        "edge_key": "engineer_education|data_science_domain",
+        "source": "engineer_education",
+        "target": "data_science_domain",
+        "w_0": 0.75,
+        "w_cv": 0.885,
+        "w_cv_norm": 0.443,
+        "match_pct": 59.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data_science_domain|data_science_teaching_role",
+        "source": "data_science_domain",
+        "target": "data_science_teaching_role",
+        "w_0": 0.8,
+        "w_cv": 0.81,
+        "w_cv_norm": 0.405,
+        "match_pct": 50.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "communication_skills|data_science_teaching_role",
+        "source": "communication_skills",
+        "target": "data_science_teaching_role",
+        "w_0": 0.7,
+        "w_cv": 0.66,
+        "w_cv_norm": 0.33,
+        "match_pct": 47.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "machine_learning_techniques|classification_research",
+        "source": "machine_learning_techniques",
+        "target": "classification_research",
+        "w_0": 0.65,
+        "w_cv": 0.413,
+        "w_cv_norm": 0.206,
+        "match_pct": 31.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "tensorflow_tool|machine_learning_techniques",
+        "source": "tensorflow_tool",
+        "target": "machine_learning_techniques",
+        "w_0": 0.75,
+        "w_cv": 0.347,
+        "w_cv_norm": 0.173,
+        "match_pct": 23.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Communication",
+      "type": "Soft Skill",
+      "gap": 0.604,
+      "severity": "critical",
+      "importance": 0.964
+    },
+    {
+      "skill": "Ubuntu",
+      "type": "Tool",
+      "gap": 0.871,
+      "severity": "critical",
+      "importance": 0.871
+    },
+    {
+      "skill": "Créativité",
+      "type": "Soft Skill",
+      "gap": 0.865,
+      "severity": "critical",
+      "importance": 0.865
+    },
+    {
+      "skill": "Flexibilité",
+      "type": "Soft Skill",
+      "gap": 0.865,
+      "severity": "critical",
+      "importance": 0.865
+    },
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.695,
+      "severity": "critical",
+      "importance": 0.835
+    },
+    {
+      "skill": "Capacité de travailler en équipe",
+      "type": "Soft Skill",
+      "gap": 0.807,
+      "severity": "critical",
+      "importance": 0.807
+    },
+    {
+      "skill": "Matlab",
+      "type": "Tool",
+      "gap": 0.656,
+      "severity": "critical",
+      "importance": 0.796
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Communication",
+        "type": "Soft Skill",
+        "gap": 0.604
+      },
+      {
+        "label": "Ubuntu",
+        "type": "Tool",
+        "gap": 0.871
+      },
+      {
+        "label": "Créativité",
+        "type": "Soft Skill",
+        "gap": 0.865
+      },
+      {
+        "label": "Flexibilité",
+        "type": "Soft Skill",
+        "gap": 0.865
+      },
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.695
+      },
+      {
+        "label": "Capacité de travailler en équipe",
+        "type": "Soft Skill",
+        "gap": 0.807
+      },
+      {
+        "label": "Matlab",
+        "type": "Tool",
+        "gap": 0.656
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 8,
+    "nodes_with_bias": 8,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "C": 4,
+      "PRESTIGE": 2,
+      "HALO": 1,
+      "PRESTIGE|HALO": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "communication_skills",
+        "label": "Communication",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.72,
+        "reason": "The candidate's communication skills are being evaluated primarily due to the presence of the phrase ‘Documented and trained internal members from partner teams on various newly created tools’ – a direct excerpt from the CV. This represents a Halo bias, where a single, potentially indicative signal (training documentation) is disproportionately weighted, overshadowing potentially more robust evidence of communication skills from the JD, such as ‘bonnes compétences en communication et en pédagogie’ (good communication and pedagogical skills). A fair alternative would be to assess communication skills through other, more diverse, criteria within the evaluation process, reducing reliance on this single instance from the CV."
+      },
+      {
+        "id": "data_science_domain",
+        "label": "Data science",
+        "bias_category": "PRESTIGE|HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.02,
+        "reason": "This candidate’s profile heavily emphasizes prestige (Western Washington University) and exhibits a Halo Bias – the system is over-weighting the candidate's University degree and the \"architecting and deploying\" role at SPIE, treating it as a strong signal of data science expertise. While the candidate possesses relevant experience, the JD specifically seeks an ‘Ingénieur chercheuse en Informatique ‘Data science’ (research computer engineer) and emphasizes academic research and publication, indicating a deeper understanding of data science methodologies rather than solely software engineering. The CV highlights skills applicable to a broader role and the degree, which is unfairly influencing the weighting, creating a bias against candidates with more standard software engineering backgrounds. A more appropriate correction would reduce the weight to account for the prestige factor and recognize the candidate's broader skill set."
+      },
+      {
+        "id": "engineer_education",
+        "label": "Ingénieur",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.75,
+        "reason": "The candidate's education at Western Washington University (WWU) is heavily weighted despite the experience gained at SPIE, a well-regarded organization in optics and photonics. The job description explicitly states a ‘formation polyvalente’ (versatile training) is desired, and WWU’s Computer Science degree aligns with this. However, WWU is not a prestigious institution compared to the universities likely considered in the same role, suggesting a prestige bias is at play, giving undue weight to the degree itself rather than demonstrable skills and experience. A fairer alternative would be to de-emphasize the education and focus solely on the accomplishments at SPIE, where significant contributions were made, especially given the architectural role."
+      },
+      {
+        "id": "tensorflow_tool",
+        "label": "TensorFlow",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.28,
+        "reason": "The candidate's CV explicitly states a Bachelor of Computer Science from Western Washington University, aligning with the JD's requirement for a 'polyvalent' formation. However, the JD emphasizes the use of TensorFlow as a core skill, and the candidate has no listed experience with it. This represents a significant gap, leading to a decrease in the weight, suggesting the algorithm is overly prioritizing the named institution over demonstrable skills. A fairer alternative would be to consider the candidate's extensive experience in full-stack development and other relevant skills, acknowledging the lack of TensorFlow expertise without penalizing it significantly."
+      },
+      {
+        "id": "matlab_tool",
+        "label": "Matlab",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.28,
+        "reason": "The candidate possesses a Bachelor's degree from Western Washington University, which is mentioned in the CV, but the JD explicitly lists Matlab as a required tool for the role. The candidate's experience does not include Matlab, and the significant decrease in weight (Delta = -0.396) suggests a bias against candidates without this specific tool, even if it's not directly relevant to the core responsibilities. This represents Prestige Bias, penalizing the absence of a tool listed as desired, regardless of the candidate's demonstrated skills. A fair alternative would be to assess the candidate’s skills in similar tools or their potential to quickly learn Matlab."
+      },
+      {
+        "id": "data_science_teaching_role",
+        "label": "Enseignant vacataire",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "This audit identifies Prestige Bias. The candidate’s CV prominently features their Bachelor of Computer Science degree from Western Washington University, which isn’t directly related to the ‘data science teaching role’ specified in the job description. While the experience bonus acknowledges the teaching role, the dominant signal of a prestigious university is unfairly weighting the application. A fair alternative would be to primarily assess skills and experience specific to teaching data science, adjusting the weight to reflect the candidate's demonstrated abilities rather than the institution where they obtained their degree."
+      },
+      {
+        "id": "machine_learning_techniques",
+        "label": "Techniques d'apprentissage automatique",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.413,
+        "reason": "The JD explicitly prioritizes experience with 'techniques d'apprentissage automatique' (machine learning techniques) and utilizes terms like 'Data Science' and 'robust algorithms,' strongly suggesting a premium is placed on this skillset. The CV highlights Brendan Baalke's experience at Microsoft and SPIE, along with specific front-end development experience, but doesn't directly demonstrate or quantify his involvement with machine learning techniques. While he lists ‘Machine learning’ as a skill, the job description’s emphasis on the techniques themselves creates a bias towards candidates with direct experience in those techniques, particularly those from prestigious institutions or companies like Microsoft. A correction factor of 0.75 is applied to account for the JD’s overemphasis on a specific technical area not fully supported by the CV’s detail."
+      },
+      {
+        "id": "classification_research",
+        "label": "Classification",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.413,
+        "reason": "The weight increase (Delta: +0.028) is driven by the mention of 'classification' in the job description and the candidate's degree from Western Washington University, which is explicitly listed. This suggests a Prestige Bias – rewarding the candidate primarily due to the university they attended, rather than demonstrable skills in classification or machine learning. The candidate's experience is heavily focused on front-end development and system administration, with only limited relevant experience in data science projects, making the boost unwarranted. A fair alternative would be a lower weight adjustment or none at all."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2038 (sous-qualifié), CTM=0.676 (écart structurel élevé), match_pct=33.62% → Poor Match",
+    "v6_summary": "weighted_f1=0.0944, gap_score=0.177, ndcg_5=0.8795, missing_critical_penalty=0.0909, combo_v6_final=24.87",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "8 gaps critiques identifiés",
+    "bias_note": "8 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

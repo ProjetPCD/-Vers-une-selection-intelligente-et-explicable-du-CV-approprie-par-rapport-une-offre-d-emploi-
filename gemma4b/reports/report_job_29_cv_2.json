@@ -1,0 +1,583 @@
+{
+  "job_id": "job_29",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-06T23:30:36.029751",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 33.68,
+    "confidence": {
+      "confidence_score": 0.63,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.656,
+        "coverage_rate": 0.75,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.5157,
+    "edge_score": 0.616,
+    "combined": 0.5558
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.28,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6812,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6632,
+    "matched_nodes": "2/32",
+    "edge_match_pct": 30.8
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2832,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.4063,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2541,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1562,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.5374,
+    "weighted_recall": 0.0988,
+    "weighted_f1": {
+      "value": 0.1856,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5763,
+    "missing_critical_penalty": {
+      "value": 0.1562,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9098,
+    "ndcg_10": 0.9213,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9452,
+    "top_skill_alignment": 0.4667,
+    "semantic_fit_score": 0.3612,
+    "experience_density": 0.2335
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 30.08,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 29.45,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 26.71,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 96.39,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 42.06,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 34.34,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 45.29,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 10,
+      "match_pct": 34.0,
+      "weight_sum": 9.966
+    },
+    "Tool": {
+      "count": 17,
+      "match_pct": 19.1,
+      "weight_sum": 15.419
+    },
+    "Soft Skill": {
+      "count": 5,
+      "match_pct": 31.6,
+      "weight_sum": 3.59
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 30.8,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "symfony_backend_developer|jenkins_ci_cd",
+        "source": "symfony_backend_developer",
+        "target": "jenkins_ci_cd",
+        "w_0": 0.75,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 56.7,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "symfony_backend_developer|php_backend_dev",
+        "source": "symfony_backend_developer",
+        "target": "php_backend_dev",
+        "w_0": 1.0,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 42.5,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "symfony_backend_developer|devops_practices",
+        "source": "symfony_backend_developer",
+        "target": "devops_practices",
+        "w_0": 0.7,
+        "w_cv": 0.793,
+        "w_cv_norm": 0.397,
+        "match_pct": 56.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "symfony_backend_developer|linux_rhel_centos_debian_ubuntu_arch",
+        "source": "symfony_backend_developer",
+        "target": "linux_rhel_centos_debian_ubuntu_arch",
+        "w_0": 0.65,
+        "w_cv": 0.762,
+        "w_cv_norm": 0.381,
+        "match_pct": 58.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "symfony_backend_developer|new_relic_monitoring",
+        "source": "symfony_backend_developer",
+        "target": "new_relic_monitoring",
+        "w_0": 0.55,
+        "w_cv": 0.756,
+        "w_cv_norm": 0.378,
+        "match_pct": 68.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Kubernetes",
+      "type": "Tool",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "AWS",
+      "type": "Tool",
+      "gap": 0.695,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Linux (RHEL, CentOS, Debian, Ubuntu, Archlinux)",
+      "type": "Tool",
+      "gap": 0.844,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Elastic Cloud",
+      "type": "Tool",
+      "gap": 0.918,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "New Relic",
+      "type": "Tool",
+      "gap": 0.85,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Terraform",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Agile",
+      "type": "Hard Skill",
+      "gap": 0.6,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Scrum",
+      "type": "Hard Skill",
+      "gap": 0.625,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Continuous Integration",
+      "type": "Hard Skill",
+      "gap": 0.812,
+      "severity": "critical",
+      "importance": 1.0
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Docker",
+        "type": "Tool",
+        "gap": 0.906
+      },
+      {
+        "label": "Kubernetes",
+        "type": "Tool",
+        "gap": 0.906
+      },
+      {
+        "label": "AWS",
+        "type": "Tool",
+        "gap": 0.695
+      },
+      {
+        "label": "Linux (RHEL, CentOS, Debian, Ubuntu, Archlinux)",
+        "type": "Tool",
+        "gap": 0.844
+      },
+      {
+        "label": "Elastic Cloud",
+        "type": "Tool",
+        "gap": 0.918
+      },
+      {
+        "label": "New Relic",
+        "type": "Tool",
+        "gap": 0.85
+      },
+      {
+        "label": "Terraform",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Agile",
+        "type": "Hard Skill",
+        "gap": 0.6
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 29,
+    "nodes_with_bias": 22,
+    "edges_audited": 2,
+    "edges_with_bias": 2,
+    "bias_categories": {
+      "PROXY": 13,
+      "PRESTIGE": 3,
+      "D": 3,
+      "HALO": 2,
+      "PRESTIGE|HALO": 1,
+      "C": 1,
+      "B": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "symfony_backend_developer",
+        "label": "Symfony",
+        "bias_category": "PRESTIGE|HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.212,
+        "reason": "This weight change (+0.010) is likely driven by prestige bias due to the explicit mention of 'Java 17, Spring boot, Spring Sécurity, Spring Data, JPA/Hibernate' within the CV, aligning with the JD's core technical stack. The candidate's experience at Capgemini, utilizing these technologies, creates a ‘halo’ effect, elevating their perceived value beyond a simple skills match. While the candidate’s experience is valid, the emphasis on these specific technologies, coupled with the prominent role of Capgemini, suggests a prioritization of companies and technologies associated with a higher perceived status, unfairly weighting the CV above other equally qualified candidates who may have demonstrated these skills in different contexts. A fair alternative would be to focus solely on the candidate's project outcomes and skills demonstration, regardless of the employer’s prestige or the specific technologies used."
+      },
+      {
+        "id": "doctrine_orm_backend_developer",
+        "label": "Doctrine",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.3,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.988,
+        "reason": "The candidate’s CV prominently lists Java, Spring Boot, and related technologies, aligning with the job description's extensive tech stack. However, the CV lacks detail regarding specific accomplishments or contributions within those technologies, relying heavily on project names (CDZ, ShareMind) and broad role descriptions. The emphasis on Java and Spring Boot, common in enterprise environments, suggests a Prestige bias – favoring candidates with familiarity with these widely-recognized technologies, rather than evaluating demonstrable skills within the specified project context. A fairer assessment would prioritize concrete achievements and skills application within the Capgemini project."
+      },
+      {
+        "id": "docker_containerization",
+        "label": "Docker",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV lacks explicit mention of Docker, despite the JD requiring it. This reliance on implicit evidence (project applications) combined with limited experience details creates a proxy bias – the absence of Docker usage is being penalized due to socioeconomic factors (potentially related to the candidate’s background or preferred technologies) rather than actual skills demonstrated. A fairer alternative would prioritize the candidate’s listed skills and experience, irrespective of the specific containerization technology used, giving a correction factor of 0.75 to account for this misinterpretation of evidence."
+      },
+      {
+        "id": "kubernetes_orchestration",
+        "label": "Kubernetes",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV lacks explicit mention of Kubernetes experience, despite the JD listing it as a key requirement. The evidence anchor relies on the absence of demonstrable Kubernetes skills – Fakher’s CV emphasizes Java, Spring Boot, and other technologies commonly used *with* Kubernetes, but doesn't contain direct usage examples. This proxy bias reflects a reliance on a related technology (Docker, mentioned in the JD) rather than the desired skill (Kubernetes), leading to a reduced weight. A fair alternative would prioritize candidates demonstrating direct Kubernetes experience or a strong portfolio showcasing its application."
+      },
+      {
+        "id": "jenkins_ci_cd",
+        "label": "Jenkins",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.137,
+        "reason": "The applicant's CV prominently lists Java 17, Spring Boot, and related technologies used in the Capgemini role, aligning directly with the job description's requirements. This demonstrates relevant skills and experience, which is a strength. However, the weight change of -0.090 suggests a slight under-valuation. The emphasis on Capgemini experience and the CDZ application, alongside the use of specified technologies, strongly indicates a positive match. Given this clear alignment and the prominence of the key skills, a slight upward adjustment is warranted to compensate for the decreased weight."
+      },
+      {
+        "id": "puppet_automation",
+        "label": "Puppet",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.186,
+        "reason": "This CV demonstrates experience with Puppet, aligning with the job description's technology stack, but lacks detailed project descriptions outlining how Puppet was applied. The brief experience and lack of contextual information suggest reliance on the candidate's stated skills rather than demonstrated proficiency. This proxy bias reflects an over-reliance on the presence of Puppet within the candidate's skillset, without sufficient evidence of practical application or impact, which is aligned with the PROXY bias category.  A reasonable correction factor is applied to account for this uncertainty, favoring a more cautious assessment of the candidate’s skills rather than an overly optimistic weighting."
+      },
+      {
+        "id": "linux_rhel_centos_debian_ubuntu_arch",
+        "label": "Linux (RHEL, CentOS, Debian, Ubuntu, Archlinux)",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "The candidate’s skill set aligns with the job description’s requirements (PHP, Symfony, Docker, Kubernetes, Linux), but the CV lacks depth regarding hands-on administration and troubleshooting experience with the specific Linux distributions mentioned (RHEL, CentOS, Debian, Ubuntu, Arch). Listing 'tool' for Linux skills and focusing on specific implementations (Spring security, JWT) instead of operational skills suggests a proxy bias – prioritizing the technologies used over actual system administration proficiency, a critical skill for the role.  This demonstrates a preference for knowledge of specific frameworks within the technologies listed, rather than core Linux skills required for deployment and management. A higher weighting reflects the importance of hands-on Linux experience for this role."
+      },
+      {
+        "id": "elastic_cloud_monitoring",
+        "label": "Elastic Cloud",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.163,
+        "reason": "The skill 'Elastic Cloud Monitoring' is listed in the JD but the CV does not provide any experience with this tool. The significant decrease in weight (-0.75) indicates a bias towards candidates who demonstrate practical experience with this specific technology. This proxy bias is unfair as it penalizes the candidate for lacking a skill explicitly mentioned in the job description without sufficient context of relevant experience. A fair alternative would be to assess the candidate's skills in related monitoring tools or cloud technologies, rather than relying solely on the presence of Elastic Cloud Monitoring."
+      },
+      {
+        "id": "new_relic_monitoring",
+        "label": "New Relic",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The candidate's CV highlights experience with New Relic and DataDog primarily due to the explicit listing of these tools. The JD emphasizes New Relic as a core skill, yet the CV lacks evidence of actual usage or demonstrable expertise with New Relic, indicating a reliance on the presence of the tool in the candidate’s skillset rather than genuine proficiency. This proxy signal (mention of tools) unfairly penalizes the candidate, demonstrating a proxy bias favoring candidates who simply list desired skills, irrespective of actual application or demonstrated expertise. A fairer alternative would involve assessing the candidate's practical experience with application performance monitoring through demonstrated projects or certifications."
+      },
+      {
+        "id": "kustomize_yaml_management",
+        "label": "Kustomize",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.9,
+        "reason": "The candidate's experience with Spring Boot and Spring Security, specifically mentioned in relation to Kubernetes and Kustomize in the JD, aligns with the listed technical requirements. However, the CV explicitly lists 'Microsoft Office Management Service client' as a skill, a non-technical skill, which carries more weight than the skills demonstrably used in the Spring Boot/Spring Security context. This suggests the algorithm is prioritizing a prestigious university affiliation (implied by the Microsoft Office skill) over demonstrated skills related to the role’s core technologies, exhibiting prestige bias."
+      },
+      {
+        "id": "kanban_methodology",
+        "label": "Kanban",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.413,
+        "reason": "The significant decrease in weight (from 0.966 to 0.55) for ‘kanban_methodology’ is likely a proxy bias. The JD heavily emphasizes a wide array of technologies including kanban, docker, kubernetes, etc., while the CV predominantly highlights experience with Java, Spring Boot, and other modern full-stack development tools.  This disproportionate focus on Java and newer technologies, rather than a specific methodology like Kanban, unfairly penalizes the candidate for not explicitly listing ‘Kanban’ skills when the job description is broad and encompassing a range of development practices. A correction factor of 0.75 acknowledges this overemphasis and suggests the candidate’s experience is relevant but not a perfect match based on the JD’s weighted priorities."
+      },
+      {
+        "id": "continuous_integration_ci",
+        "label": "Continuous Integration",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The job description heavily emphasizes specific CI/CD tools (Travis CI, Circle CI, Jenkins, Kubernetes, Docker, etc.). The CV then highlights experience with these same tools, leading to an inflated score for those skills. This creates a halo effect, where the candidate is favorably judged based on a few strong signals (CI/CD tools) rather than a holistic assessment of their broader skills and experience. A lower weighting is warranted to account for this overemphasis on specific tools."
+      },
+      {
+        "id": "continuous_deployment_cd",
+        "label": "Continuous Deployment",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The significant emphasis on specific technologies (PHP, Symfony, Docker, Kubernetes, etc.) within the job description, coupled with Fakher’s CV highlighting these exact same technologies, suggests a proxy bias. The algorithm is likely weighting the CV heavily based on the presence of these specific skills, rather than a holistic assessment of his capabilities and experience demonstrated in the CV’s described tasks.  While these are valuable skills, their over-representation in the JD relative to the CV indicates an unfair prioritization. A fair alternative would be to assess his skills based on the projects described in the CV and the broader DevOps practices, rather than simply ticking off the technologies listed in the JD."
+      },
+      {
+        "id": "test_driven_development_tdd",
+        "label": "Test Driven Development",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The CV lists extensive technical skills (Java, Spring Boot, Junit5, etc.) aligning with the JD's tech stack. However, the weight decrease (-0.600) suggests a bias against the explicit mention of 'Junit.' While Junit *does* indicate test-driven development, the CV’s heavy emphasis on these technologies, combined with the relatively lower weight assigned, suggests a Prestige Bias where the breadth of technical skills is being undervalued. A fairer alternative would be to weight the CV higher given the demonstrated skillset, bringing the weight closer to the ideal 1.0."
+      },
+      {
+        "id": "devops_practices",
+        "label": "DevOps",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The significant decrease in weight for ‘DevOps Practices’ (w_0 from 1.0 to 0.5) is driven by a lack of specific detail regarding DevOps experience within the CV. The candidate lists a long list of technologies, but lacks concrete examples of how they were used, deployed, or managed - a key component of demonstrable DevOps skills.  This relies heavily on the candidate’s claim of experience, which isn't directly validated through documented achievements or specific outcomes. While the JD mentions DevOps practices, the CV doesn't provide the depth required to confidently assess those practices, leaning heavily on a proxy – the presence of mentioned technologies – to determine competency.  A fairer alternative would involve requiring specific demonstrations of DevOps skill, such as contributions to CI/CD pipelines or experience with infrastructure-as-code tools, to better assess the candidate's abilities. Correction factor is applied as the decreased weight implies a fundamental lack of concrete DevOps skill evidence."
+      },
+      {
+        "id": "php_backend_dev",
+        "label": "PHP",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.2,
+        "reason": "The candidate's CV prominently lists 'Full Stack Developer Java | Angular France' and describes their experience in France, specifically with Talan Tunisie and Capgemini. The JD heavily emphasizes technologies like PHP, Symfony, and other backend technologies, implying a need for a PHP/Symfony specialist. The presence of French skills and experience in France creates a proxy bias – suggesting a preference for candidates based on their location and familiarity with specific European tech environments, potentially overlooking equally qualified candidates from other backgrounds.  A correction factor of 1.2 is applied to account for this potential proxy bias, recognizing the weight given to geographic and linguistic context.  The skills listed on the CV, namely Spring Boot, Spring Security, and Angular, are all strong indicators of a modern, technologically advanced development profile."
+      },
+      {
+        "id": "opsgenie_monitoring",
+        "label": "OpsGenie",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.35,
+        "reason": "The CV lacks mention of OpsGenie, despite it being listed as a required technology in the job description. The algorithm's inference rule, 'inferred_standalone,' assigns a base score of 0.50 for lack of explicit mention, resulting in a significant score reduction. This suggests a proxy bias – the algorithm is unduly penalizing candidates for not explicitly stating experience with OpsGenie, a tool frequently used in the described tech stack, potentially reflecting a bias towards candidates who are more likely to have used it in their previous roles (e.g., those at larger, more mature organizations)."
+      },
+      {
+        "id": "travis_ci_ci",
+        "label": "Travis CI",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The significant decrease in weight for Travis CI (w_0 from 0.75 to 0.5) is likely proxy bias. The JD explicitly lists Travis CI as a required technology, yet the CV doesn't prominently feature it, focusing instead on Java and related technologies.  This suggests the algorithm is over-emphasizing the presence of specific tools (Travis CI) rather than assessing the candidate's actual skills and experience with backend development, potentially due to a preference for developers with specific toolchain experience.  A fair alternative would be to evaluate the candidate's proficiency in related technologies and the overall backend development skills as demonstrated by their experience with Spring Boot, Kafka, and DataDog, which are core to the JD's requirements. The reliance on tool presence rather than demonstrated skills constitutes proxy bias."
+      },
+      {
+        "id": "circle_ci_ci",
+        "label": "Circle CI",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The significant decrease in weight for CircleCI (w_0 from 0.75 to 0.25) is likely proxy bias due to the absence of CircleCI mention in the CV.  The JD heavily emphasizes CircleCI as a key tool, yet the candidate’s CV does not explicitly list experience with it. This suggests the algorithm is prioritizing a tool mentioned in the job description without sufficient evidence from the candidate's skills or experience. A correction factor of 1.2 is applied to account for the penalty of lacking this specific tool, recognizing that it's a contextually driven factor rather than reflecting the candidate's actual capabilities."
+      },
+      {
+        "id": "contentful_cms",
+        "label": "Contentful",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease in weight (Delta = -0.503) for Contentful is likely proxy bias due to the absence of explicit evidence of Contentful experience on the CV.  The job description heavily emphasizes Contentful as a core technology, yet the candidate’s CV doesn't highlight any project work or skills related to it, suggesting a reliance on external information (location, company) rather than demonstrated proficiency. A fair alternative would be to assess the candidate’s skillset based on other listed technologies like PHP, Symfony, and Docker, reflecting actual practical experience.  This reflects an unfair penalization based on the mere mention of Contentful in the job requirements."
+      },
+      {
+        "id": "teamwork_collaboration",
+        "label": "Teamwork",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The weight change from 0.745 to 0.5 reflects a significant decrease, primarily due to the explicit mention of ‘teamwork’ in the JD coupled with a lack of evidence of teamwork skills in the CV. The JD emphasizes collaboration, but the CV primarily details individual project contributions and technologies, offering no concrete evidence of collaborative efforts, leading to a penalty for the soft skill. This indicates a proxy bias towards candidates with a demonstrable history of individual contributions rather than a team-oriented approach, and a reliance on the JD’s explicit requirement."
+      },
+      {
+        "id": "communication_skills",
+        "label": "Communication",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.625,
+        "reason": "The weight change indicates a significant decrease (24.5%) in the ‘communication skills’ score, despite the JD explicitly stating that this skill is ‘required’. The CV lists several communication-related skills like ‘communication efficace,’ ‘résolution de problèmes,’ and ‘gestion du temps,’ suggesting the candidate possesses these attributes, yet the reduced weight implies a bias against soft skills in general, aligning with Gender/Diversity Bias (B) where a lack of explicit technical skills is penalized. The unfair decrease warrants a stronger positive adjustment to reflect the candidate’s actual capabilities.  A higher weighting would better reflect the skills listed in the JD."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "symfony_backend_developer|docker_containerization",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.338,
+        "reason": "The significant weighting (w_ideal = 0.85, w_cv = 0.45) given the mention of 'Docker' suggests a halo bias. The JD heavily lists a wide range of technologies, and the weighting seems to prioritize any candidate demonstrating familiarity with Docker, even if that familiarity isn't directly tied to the core skills described. A fairer approach would involve a more granular assessment of skills within the listed technologies, not simply rewarding the presence of 'Docker'."
+      },
+      {
+        "edge": "symfony_backend_developer|agile_scrum_methodology",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.175,
+        "reason": "The audit identifies a proxy bias due to the reliance on stated technologies and methodologies listed in the job description rather than demonstrable skills or experience. The candidate's CV mentioning 'Agile Scrum Methodology' is weighted low (0.25) despite the extensive list of technologies – including tools often associated with Agile – already present. This suggests the algorithm is prioritizing the *presence* of certain technologies over actual competency, unfairly penalizing candidates who might possess those skills implicitly. A fairer alternative would be to weight the synergy based on specific demonstrable Agile experience, such as sprint planning, daily stand-ups, or retrospective facilitation, rather than just listing associated tools."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.28 (sous-qualifié), CTM=0.6812 (écart structurel élevé), match_pct=33.68% → Poor Match",
+    "v6_summary": "weighted_f1=0.1856, gap_score=0.2541, ndcg_5=0.9098, missing_critical_penalty=0.1562, combo_v6_final=30.08",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "21 gaps critiques identifiés",
+    "bias_note": "22 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.63)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

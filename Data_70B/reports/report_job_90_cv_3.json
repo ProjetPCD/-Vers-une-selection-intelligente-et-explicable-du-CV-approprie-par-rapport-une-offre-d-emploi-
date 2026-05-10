@@ -1,0 +1,455 @@
+{
+  "job_id": "job_90",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-05T15:09:12.757826",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 20.06,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.846,
+        "coverage_rate": 0.231,
+        "nodes_audited": 6,
+        "nodes_biased": 6
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.0829,
+    "edge_score": 0.0711,
+    "combined": 0.0781
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.0939,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.8101,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7994,
+    "matched_nodes": "1/26",
+    "edge_match_pct": 7.11
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.0915,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.0927,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.0713,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0769,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.4713,
+    "weighted_recall": 0.0575,
+    "weighted_f1": {
+      "value": 0.1107,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6457,
+    "missing_critical_penalty": {
+      "value": 0.0909,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.8959,
+    "ndcg_10": 0.9132,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9773,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.1881,
+    "experience_density": 0.0715
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 15.42,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 8.83,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 11.36,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 95.84,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 39.66,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 26.23,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 20.8,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 6,
+      "match_pct": 11.4,
+      "weight_sum": 5.009
+    },
+    "Hard Skill": {
+      "count": 6,
+      "match_pct": 18.5,
+      "weight_sum": 5.077
+    },
+    "Tool": {
+      "count": 11,
+      "match_pct": 0.0,
+      "weight_sum": 10.076
+    },
+    "Soft Skill": {
+      "count": 3,
+      "match_pct": 15.4,
+      "weight_sum": 2.262
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 7.11,
+    "total_edges": 19,
+    "top_synergies": [
+      {
+        "edge_key": "junior_cybersecurity_engineer|web_development",
+        "source": "junior_cybersecurity_engineer",
+        "target": "web_development",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "junior_cybersecurity_engineer|php",
+        "source": "junior_cybersecurity_engineer",
+        "target": "php",
+        "w_0": 0.5,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.6,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "junior_cybersecurity_engineer|python",
+        "source": "junior_cybersecurity_engineer",
+        "target": "python",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "junior_cybersecurity_engineer|kubernetes",
+        "source": "junior_cybersecurity_engineer",
+        "target": "kubernetes",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "junior_cybersecurity_engineer|docker",
+        "source": "junior_cybersecurity_engineer",
+        "target": "docker",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Junior Cybersecurity Engineer",
+      "type": "Domain",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Wireshark",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "BurpSuite",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Metasploit",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Ffuf",
+      "type": "Tool",
+      "gap": 0.972,
+      "severity": "critical",
+      "importance": 0.972
+    },
+    {
+      "skill": "Nmap",
+      "type": "Tool",
+      "gap": 0.963,
+      "severity": "critical",
+      "importance": 0.963
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.954,
+      "severity": "critical",
+      "importance": 0.954
+    },
+    {
+      "skill": "Nessus",
+      "type": "Tool",
+      "gap": 0.95,
+      "severity": "critical",
+      "importance": 0.95
+    },
+    {
+      "skill": "PHP",
+      "type": "Hard Skill",
+      "gap": 0.648,
+      "severity": "critical",
+      "importance": 0.948
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Junior Cybersecurity Engineer",
+        "type": "Domain",
+        "gap": 1.0
+      },
+      {
+        "label": "Wireshark",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "BurpSuite",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Metasploit",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Ffuf",
+        "type": "Tool",
+        "gap": 0.972
+      },
+      {
+        "label": "Nmap",
+        "type": "Tool",
+        "gap": 0.963
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.954
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 6,
+    "edges_audited": 1,
+    "edges_with_bias": 1,
+    "bias_categories": {
+      "PRESTIGE": 4,
+      "GENDER_DIVERSITY": 3
+    },
+    "biased_nodes": [
+      {
+        "id": "java",
+        "label": "Java",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.32,
+        "w_cv_corrected": 1.32,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (ISSAT Sousse) and company names (Focus Corporation, Huawei Technologies) may not be as well-known as others. The correction factor is set to 1.20 to increase the weight, as the candidate's skills and experience in Java are relevant to the job description."
+      },
+      {
+        "id": "php",
+        "label": "PHP",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The candidate has a PHP certification, but no direct experience or project evidence in PHP. The weight change is likely due to prestige bias, where the algorithm is penalizing the candidate for not having experience in PHP, despite having a certification. A fairer approach would be to consider the certification as a positive signal, rather than a negative one. The correction factor is set to 1.20 to increase the weight of the PHP skill."
+      },
+      {
+        "id": "web_development",
+        "label": "Web Development",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 1.26,
+        "w_cv_corrected": 1.26,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (ISSAT Sousse) and company names (Focus Corporation, Huawei Technologies) may not be as well-known as others, leading to an unfair decrease in the weight. The correction factor is set to 1.20 to compensate for this bias."
+      },
+      {
+        "id": "communication",
+        "label": "Communication",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.3,
+        "w_cv_corrected": 0.3,
+        "reason": "The candidate's communication skill is penalized despite having a strong background in software engineering and telecommunications, with multiple internships and projects. The job description emphasizes the importance of soft skills like communication, collaboration, and problem-solving. The bias is likely due to the lack of concrete project evidence, which may unfairly disadvantage female candidates who may have taken career breaks or have caregiving responsibilities, leading to gaps in their work history."
+      },
+      {
+        "id": "collaboration",
+        "label": "Collaboration",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.312,
+        "w_cv_corrected": 0.312,
+        "reason": "The collaboration skill is unfairly penalized due to lack of concrete project evidence, which may be a result of gender/diversity bias. The candidate's CV showcases a strong background in software engineering and development, with multiple internships and projects, but the algorithm may be undervaluing these experiences. A correction factor of 1.25 is applied to increase the weight of collaboration to a more fair value."
+      },
+      {
+        "id": "problem_solving",
+        "label": "Problem Solving",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.312,
+        "w_cv_corrected": 0.312,
+        "reason": "The candidate's problem-solving skills are unfairly penalized due to the lack of concrete project evidence, despite having relevant experience in web development and security. This bias is categorized as gender/diversity bias, as soft skills like problem-solving are often undervalued in female candidates. A correction factor of 1.25 is applied to increase the weight of problem-solving skills, ensuring a fairer assessment."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "junior_cybersecurity_engineer|php",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change from 0.8 to 0.5 for PHP skill is likely due to prestige bias, as PHP is not a typically prestigious skill in the cybersecurity field. The job description emphasizes more prominent skills like Python, Kubernetes, and Docker. To correct for this bias, a correction factor of 1.20 is applied to increase the weight of PHP skill, ensuring a more merit-based evaluation."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.0939 (sous-qualifié), CTM=0.8101 (écart structurel élevé), match_pct=20.06% → Poor Match",
+    "v6_summary": "weighted_f1=0.1107, gap_score=0.0713, ndcg_5=0.8959, missing_critical_penalty=0.0909, combo_v6_final=15.42",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "22 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 16,
+    "pool_size": 50,
+    "percentile": 0.6939,
+    "composite_z_score": 0.171,
+    "tier": "Top 50%",
+    "z_scores": {
+      "combo_v6": 0.262,
+      "wf1": 0.387,
+      "gap_score": 0.051,
+      "ntcw": 0.079,
+      "match_pct": -0.169,
+      "ndcg_5": 0.062
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 12.852,
+        "std": 9.7967
+      },
+      "wf1": {
+        "mean": 0.0674,
+        "std": 0.1119
+      },
+      "gap_score": {
+        "mean": 0.0674,
+        "std": 0.0772
+      },
+      "ntcw": {
+        "mean": 0.0865,
+        "std": 0.0929
+      },
+      "match_pct": {
+        "mean": 21.8864,
+        "std": 10.7767
+      },
+      "ndcg_5": {
+        "mean": 0.8904,
+        "std": 0.0899
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

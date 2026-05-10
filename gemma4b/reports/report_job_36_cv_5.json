@@ -1,0 +1,426 @@
+{
+  "job_id": "job_36",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-02T19:51:29.036976",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 37.05,
+    "confidence": {
+      "confidence_score": 0.85,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.6,
+        "coverage_rate": 1.0,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.3052,
+    "edge_score": 0.2587,
+    "combined": 0.2866
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1951,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6368,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6295,
+    "matched_nodes": "1/15",
+    "edge_match_pct": 12.94
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2042,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.2561,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1728,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0714,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.061,
+    "weighted_recall": 0.0475,
+    "weighted_f1": {
+      "value": 0.0909,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5165,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8387,
+    "ndcg_10": 0.8642,
+    "map_score": 0.9787,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.4996,
+    "semantic_fit_score": 0.4383,
+    "experience_density": 0.1156
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 20.6,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 18.92,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 24.04,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 92.8,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 30.69,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 25.18,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 42.79,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 6,
+      "match_pct": 23.3,
+      "weight_sum": 4.793
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 29.2,
+      "weight_sum": 0.933
+    },
+    "Certification": {
+      "count": 4,
+      "match_pct": 0.0,
+      "weight_sum": 3.245
+    },
+    "Soft Skill": {
+      "count": 3,
+      "match_pct": 15.8,
+      "weight_sum": 1.905
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 9.2,
+      "weight_sum": 0.492
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 12.94,
+    "total_edges": 7,
+    "top_synergies": [
+      {
+        "edge_key": "security-tools|node_2",
+        "source": "security-tools",
+        "target": "node_2",
+        "w_0": 0.8,
+        "w_cv": 0.717,
+        "w_cv_norm": 0.358,
+        "match_pct": 44.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "communication-skill|node_1",
+        "source": "communication-skill",
+        "target": "node_1",
+        "w_0": 0.6,
+        "w_cv": 0.327,
+        "w_cv_norm": 0.163,
+        "match_pct": 27.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "firewall-security|security-tools",
+        "source": "firewall-security",
+        "target": "security-tools",
+        "w_0": 0.9,
+        "w_cv": 0.326,
+        "w_cv_norm": 0.163,
+        "match_pct": 18.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "iso-27001-certification|node_4",
+        "source": "iso-27001-certification",
+        "target": "node_4",
+        "w_0": 0.7,
+        "w_cv": 0.091,
+        "w_cv_norm": 0.046,
+        "match_pct": 6.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "pci-dss-certification|node_4",
+        "source": "pci-dss-certification",
+        "target": "node_4",
+        "w_0": 0.7,
+        "w_cv": 0.091,
+        "w_cv_norm": 0.046,
+        "match_pct": 6.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "approches agiles",
+      "type": "Hard Skill",
+      "gap": 0.641,
+      "severity": "critical",
+      "importance": 0.933
+    },
+    {
+      "skill": "Firewalls",
+      "type": "Tool",
+      "gap": 0.766,
+      "severity": "critical",
+      "importance": 0.891
+    },
+    {
+      "skill": "Security Tools",
+      "type": "Tool",
+      "gap": 0.674,
+      "severity": "critical",
+      "importance": 0.875
+    },
+    {
+      "skill": "ISO 27001",
+      "type": "Certification",
+      "gap": 0.836,
+      "severity": "critical",
+      "importance": 0.836
+    },
+    {
+      "skill": "PCI-DSS",
+      "type": "Certification",
+      "gap": 0.819,
+      "severity": "critical",
+      "importance": 0.819
+    },
+    {
+      "skill": "NIST",
+      "type": "Certification",
+      "gap": 0.809,
+      "severity": "critical",
+      "importance": 0.809
+    },
+    {
+      "skill": "GDPR",
+      "type": "Certification",
+      "gap": 0.781,
+      "severity": "critical",
+      "importance": 0.781
+    },
+    {
+      "skill": "Cloud Computing Technologies",
+      "type": "Tool",
+      "gap": 0.649,
+      "severity": "critical",
+      "importance": 0.775
+    },
+    {
+      "skill": "VPN",
+      "type": "Tool",
+      "gap": 0.629,
+      "severity": "critical",
+      "importance": 0.754
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "approches agiles",
+        "type": "Hard Skill",
+        "gap": 0.641
+      },
+      {
+        "label": "Firewalls",
+        "type": "Tool",
+        "gap": 0.766
+      },
+      {
+        "label": "Security Tools",
+        "type": "Tool",
+        "gap": 0.674
+      },
+      {
+        "label": "ISO 27001",
+        "type": "Certification",
+        "gap": 0.836
+      },
+      {
+        "label": "PCI-DSS",
+        "type": "Certification",
+        "gap": 0.819
+      },
+      {
+        "label": "NIST",
+        "type": "Certification",
+        "gap": 0.809
+      },
+      {
+        "label": "GDPR",
+        "type": "Certification",
+        "gap": 0.781
+      },
+      {
+        "label": "Cloud Computing Technologies",
+        "type": "Tool",
+        "gap": 0.649
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 9,
+    "nodes_with_bias": 8,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 3,
+      "HALO": 1,
+      "PRESTIGE BIAS": 1,
+      "PRESTIGE|PROXY": 1,
+      "C": 1,
+      "PRESTIGE|C. AGEISM": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "node_9",
+        "label": "AWS et Azure",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.746,
+        "reason": "The audit heavily emphasizes experience with 'AWS et Azure' due to the job description's requirements, leading to a halo effect where the candidate's deep learning project (utilizing AWS and Azure) dominates the score. While relevant, the core skill requirement for a Senior Cybersecurity Engineer is broader than just cloud technologies. The project description highlighting Hippocampus shape morphometrics, a highly specialized Deep Learning application, is given disproportionate weight, unfairly influencing the score compared to the candidate’s overall experience and skills. A fair alternative would involve assessing the candidate’s skills based on the job description's stated requirements (ISO 27001, Python, etc.) before considering the advanced AWS/Azure experience."
+      },
+      {
+        "id": "firewall-security",
+        "label": "Firewalls",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.251,
+        "reason": "The weight decrease is likely driven by a proxy bias related to the candidate's educational institution and project focus. While 'Deep Learning' and 'Geometric Deep Learning' are valuable skills, the specific project – 'Alzheimer’s Disease Classification Using Hippocampal Shape Morphometric Analysis' – is highly specialized and not broadly applicable to typical cybersecurity roles. The candidate’s education from INSAT in Tunisia, while potentially strong, is viewed as less prestigious than Western universities frequently favored in this sector, leading to a diminished weight. A fair alternative would prioritize skills like SIEM experience, network security expertise, and demonstrable experience with relevant frameworks, regardless of the candidate's academic background."
+      },
+      {
+        "id": "security-tools",
+        "label": "Security Tools",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.401,
+        "reason": "The candidate's project description, focused on a highly specialized Deep Learning internship at InstaDeep, is significantly different from the broader 'Security Tools' skill weight. The project emphasizes advanced research in geometric deep learning for medical image analysis, a niche area unlikely to be directly relevant to the core cybersecurity requirements outlined in the JD.  The weight decrease reflects the lack of a connection between the CV's technical depth and the advertised role's emphasis on broader security expertise.  A more appropriate weighting would prioritize skills directly aligned with the JD's focus on SIEM, threat analysis, and compliance frameworks, rather than a specialized research project."
+      },
+      {
+        "id": "cloud-computing-tools",
+        "label": "Cloud Computing Technologies",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.251,
+        "reason": "The significant decrease in weight (0.775 to 0.334) is likely driven by the proxy signal of location - Heni Loukil's experience at InstaDeep in Sfax, Tunisia. While her project work demonstrates deep learning skills, the location itself represents a socioeconomic signal that may not directly correlate with the required skills for a Senior Cybersecurity Engineer role in France. The CV highlights a project in a less established tech hub, potentially leading to an undervaluation of her skills relative to candidates from more prominent cybersecurity centers. A fair alternative would be to evaluate her skills based solely on her accomplishments and the technical depth of her projects."
+      },
+      {
+        "id": "vpn-security",
+        "label": "VPN",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.251,
+        "reason": "The significant decrease in weight (from 0.754 to 0.334) is likely driven by the CV’s mention of ‘InstaDeep Sfax’ and the specific internship project. This represents a proxy for socioeconomic status (location – Tunisia, a potentially lower-cost region) and a specific, possibly highly-ranked, academic institution, both of which are not directly related to the core skills required for a Senior Cybersecurity Engineer role. The project description, while showcasing deep learning expertise, is a highly specialized research project that doesn't translate directly to the breadth of experience or practical application expected in a typical cybersecurity role. A fair alternative would prioritize skills like threat analysis, SIEM management, and compliance frameworks, regardless of the specific institution or location of prior research."
+      },
+      {
+        "id": "communication-skill",
+        "label": "Communication Skills",
+        "bias_category": "PRESTIGE|PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.363,
+        "reason": "The CV highlights a research project ('Alzheimer's Disease Classification...') at a university (INSAT) and a subsequent internship at InstaDeep, suggesting a strong technical background in Machine Learning and Deep Learning. However, the weighting of ‘communication skill’ has decreased significantly, likely due to the descriptor ‘Deep Graph CNN for Non-rigid registration and matching’ being the primary focus of the project and a less emphasized communication component. This represents a proxy bias, where the prestige associated with a research-intensive project and a well-regarded company (InstaDeep) is over-emphasized at the expense of assessing broader communication abilities, even though the JD explicitly states communication skills are required. A fair alternative would be to equally weigh the project's technical achievements alongside a more direct evaluation of communication skills through behavioral interview questions or a communication-specific assessment."
+      },
+      {
+        "id": "time-management-skill",
+        "label": "Time Management",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.288,
+        "reason": "The weight change from 0.63 to 0.384 indicates a significant decrease in the perceived value of ‘time-management-skill’ based on the provided evidence. The context focuses heavily on the candidate's academic project – a deep learning internship – emphasizing research and technical expertise within a specific area (Alzheimer’s Disease classification). While relevant to a machine learning engineer role, the JD prioritizes broader cybersecurity skills and experience, and the CV’s detail on the academic project suggests a prioritization of technical depth over operational time management. Therefore, this represents a potential prestige bias, penalizing the candidate for focusing on research-oriented skills rather than the specific timeframe outlined in the job description."
+      },
+      {
+        "id": "node_1",
+        "label": "Soft Skill",
+        "bias_category": "PRESTIGE|C. AGEISM",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.291,
+        "reason": "The significant decrease in weight (Delta: -0.368) is likely driven by the prominence of the ‘Alzheimer’s Disease Classification’ project listed on the CV. This project, while demonstrating expertise in geometric deep learning and potentially relevant technical skills, is a research-focused internship and heavily relies on a specific, somewhat niche academic project. The JD emphasizes a senior cybersecurity engineer’s experience across a broader range of security domains, suggesting an ageist bias—prioritizing recent academic projects over experience in established security practices.  A correction factor of 1.25 is applied to account for the undue emphasis placed on this single, potentially less relevant project, penalizing the candidate unfairly. The candidate’s current role at InstaDeep is also relevant, but the CV's structure reinforces the bias."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1951 (sous-qualifié), CTM=0.6368 (écart structurel élevé), match_pct=37.05% → Poor Match",
+    "v6_summary": "weighted_f1=0.0909, gap_score=0.1728, ndcg_5=0.8387, missing_critical_penalty=0.0, combo_v6_final=20.6",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "9 gaps critiques identifiés",
+    "bias_note": "8 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.85)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

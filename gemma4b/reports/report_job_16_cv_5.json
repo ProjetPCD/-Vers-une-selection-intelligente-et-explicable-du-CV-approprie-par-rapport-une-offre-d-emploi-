@@ -1,0 +1,369 @@
+{
+  "job_id": "job_16",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-04T13:08:14.522971",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 26.2,
+    "confidence": {
+      "confidence_score": 0.49,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.7,
+        "coverage_rate": 0.6,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.3556,
+    "edge_score": 0.7334,
+    "combined": 0.5067
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1942,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7475,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.738,
+    "matched_nodes": "0/10",
+    "edge_match_pct": 36.68
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1894,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.6434,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.1696,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1111,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.6949,
+    "weighted_recall": 0.0704,
+    "weighted_f1": {
+      "value": 0.1352,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.59,
+    "missing_critical_penalty": {
+      "value": 0.125,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9608,
+    "ndcg_10": 0.9843,
+    "map_score": 0.9468,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.5636,
+    "semantic_fit_score": 0.5963,
+    "experience_density": 0.1574
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 29.78,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 32.87,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 30.43,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 96.57,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 41.47,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 31.34,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 49.03,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 1,
+      "match_pct": 59.0,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 33.1,
+      "weight_sum": 2.0
+    },
+    "Tool": {
+      "count": 5,
+      "match_pct": 3.5,
+      "weight_sum": 4.696
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 13.8,
+      "weight_sum": 1.154
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 36.68,
+    "total_edges": 8,
+    "top_synergies": [
+      {
+        "edge_key": "python-skill|data-analyst-role",
+        "source": "python-skill",
+        "target": "data-analyst-role",
+        "w_0": 0.95,
+        "w_cv": 0.921,
+        "w_cv_norm": 0.461,
+        "match_pct": 48.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "sql-skill|data-analyst-role",
+        "source": "sql-skill",
+        "target": "data-analyst-role",
+        "w_0": 0.92,
+        "w_cv": 0.921,
+        "w_cv_norm": 0.461,
+        "match_pct": 50.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "esprit-equipe|data-analyst-role",
+        "source": "esprit-equipe",
+        "target": "data-analyst-role",
+        "w_0": 0.55,
+        "w_cv": 0.76,
+        "w_cv_norm": 0.38,
+        "match_pct": 69.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "mysql-tool|data-analyst-role",
+        "source": "mysql-tool",
+        "target": "data-analyst-role",
+        "w_0": 0.88,
+        "w_cv": 0.752,
+        "w_cv_norm": 0.376,
+        "match_pct": 42.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "honnete-sans-faille|data-analyst-role",
+        "source": "honnete-sans-faille",
+        "target": "data-analyst-role",
+        "w_0": 0.49,
+        "w_cv": 0.681,
+        "w_cv_norm": 0.341,
+        "match_pct": 69.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.669,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "MySQL",
+      "type": "Tool",
+      "gap": 0.838,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "SQL",
+      "type": "Hard Skill",
+      "gap": 0.669,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "SSRS",
+      "type": "Tool",
+      "gap": 0.944,
+      "severity": "critical",
+      "importance": 0.944
+    },
+    {
+      "skill": "SSIS",
+      "type": "Tool",
+      "gap": 0.938,
+      "severity": "critical",
+      "importance": 0.938
+    },
+    {
+      "skill": "Power BI",
+      "type": "Tool",
+      "gap": 0.912,
+      "severity": "critical",
+      "importance": 0.912
+    },
+    {
+      "skill": "SSMS",
+      "type": "Tool",
+      "gap": 0.902,
+      "severity": "critical",
+      "importance": 0.902
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.669
+      },
+      {
+        "label": "MySQL",
+        "type": "Tool",
+        "gap": 0.838
+      },
+      {
+        "label": "SQL",
+        "type": "Hard Skill",
+        "gap": 0.669
+      },
+      {
+        "label": "SSRS",
+        "type": "Tool",
+        "gap": 0.944
+      },
+      {
+        "label": "SSIS",
+        "type": "Tool",
+        "gap": 0.938
+      },
+      {
+        "label": "Power BI",
+        "type": "Tool",
+        "gap": 0.912
+      },
+      {
+        "label": "SSMS",
+        "type": "Tool",
+        "gap": 0.902
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 5,
+    "nodes_with_bias": 5,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 2,
+      "PROXY": 2,
+      "C": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "data-analyst-role",
+        "label": "Data Analyst",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.18,
+        "reason": "The CV heavily emphasizes a highly specialized, research-oriented project using Deep Learning and Geometric Deep Learning, specifically mentioning ‘state of the art methods’ and a PhD-level research internship.  While the skills align with the job description, the prominence of this niche area – coupled with the location (InstaDeep Sfax, Tunisia) – creates a prestige bias, unfairly favoring a candidate with a very specific and advanced skillset compared to a broader pool of data analysts.  A correction factor of 1.20 is applied to reflect the overemphasis on this particular technical achievement, acknowledging the impressive work while mitigating the potential bias associated with it.  This suggests the system unduly rewards experience in a specific, cutting-edge research domain, potentially overlooking equally qualified candidates with more broadly applicable analytical skills."
+      },
+      {
+        "id": "python-skill",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.662,
+        "reason": "The applicant's project, focused on 'Hippocampal Shape Morphometric Analysis with Geometric Deep Learning,' directly aligns with the job description's emphasis on data analysis, trends, and impact. However, the project's highly specialized technical focus (Deep Graph CNN, geodesic paths, tangent vectors) is potentially favored over more broadly applicable Python skills, indicating a prestige bias towards research-oriented projects. The CV prominently highlights this specific project, increasing its weight, while a general Python skill might be deemed less important. A fair alternative would be to adjust the weight based on a more standardized evaluation of Python proficiency across various tasks."
+      },
+      {
+        "id": "mysql-tool",
+        "label": "MySQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.325,
+        "reason": "The CV explicitly lists MySQL as a skill, but the context indicates it was used for a specific, highly specialized project – analyzing Hippocampal shapes for Alzheimer's disease classification. The job description emphasizes a broad range of SQL skills (MySQL, SQL) as 'a useful asset', yet the CV’s project leverages MySQL in a domain-specific manner, suggesting that the automated weighting system is overly sensitive to the presence of a specific database tool, rather than evaluating the applicant’s actual skills related to dense vector feature extraction – a core requirement of the job; this is a proxy bias reflecting the importance placed on a particular database technology instead of demonstrated capabilities. A correction factor of 0.75 is applied to reduce the weight to account for this contextual nuance."
+      },
+      {
+        "id": "sql-skill",
+        "label": "SQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.662,
+        "reason": "The CV prominently features a role at InstaDeep, a well-known and highly-regarded deep learning company in Tunisia, which is a significant socioeconomic signal. While SQL skill is important, the strong emphasis on InstaDeep's location and the specific project details (geometric deep learning) suggest the algorithm is unfairly prioritizing candidates from this specific environment, effectively using location as a proxy for access to advanced training and expertise.  A fair alternative would be to weight SQL skills based purely on demonstrated proficiency and relevance to the job requirements, regardless of the candidate’s institutional affiliation."
+      },
+      {
+        "id": "esprit-equipe",
+        "label": "esprit d'équipe",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.34,
+        "reason": "The weight change (0.683 to 0.283) reflects a significant decrease in the value attributed to the 'esprit-equipe' skill, as indicated in the job description. This is likely due to the CV focusing heavily on technical skills (Deep Learning, Machine Learning, specific tools) and a research project, while the JD explicitly states 'esprit d’équipe' as a requirement and offers limited evidence of its application.  The CV's emphasis on technical achievements overshadows the soft skill requirement, demonstrating a halo bias – the strong signal of technical expertise is disproportionately influencing the score. A fair alternative would be to give a weighted increase to the 'esprit-equipe' skill if demonstrable through collaborative projects or team-oriented tasks, but none is present. The CV lacks any mention of teamwork, and this is penalized."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1942 (sous-qualifié), CTM=0.7475 (écart structurel élevé), match_pct=26.2% → Poor Match",
+    "v6_summary": "weighted_f1=0.1352, gap_score=0.1696, ndcg_5=0.9608, missing_critical_penalty=0.125, combo_v6_final=29.78",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "7 gaps critiques identifiés",
+    "bias_note": "5 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.49)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

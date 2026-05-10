@@ -1,0 +1,344 @@
+{
+  "job_id": "job_4",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-02T16:37:26.566056",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 34.57,
+    "confidence": {
+      "confidence_score": 0.57,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.556,
+        "coverage_rate": 0.667,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.2343,
+    "edge_score": 0.2201,
+    "combined": 0.2286
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1518,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6382,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6543,
+    "matched_nodes": "2/9",
+    "edge_match_pct": 11.01
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2007,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.2201,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.126,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.6421,
+    "ndcg_10": 0.8488,
+    "map_score": 0.4968,
+    "mrr_score": 0.5,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.3072,
+    "semantic_fit_score": 0.328,
+    "experience_density": 0.0809
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 13.03,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 15.73,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 16.52,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 55.57,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 3.78,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 16.98,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 5,
+      "match_pct": 18.4,
+      "weight_sum": 3.524
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 0.808
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 9.1,
+      "weight_sum": 0.888
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 11.01,
+    "total_edges": 6,
+    "top_synergies": [
+      {
+        "edge_key": "cloud_devops_role|ci_cd_pipeline",
+        "source": "cloud_devops_role",
+        "target": "ci_cd_pipeline",
+        "w_0": 0.7,
+        "w_cv": 0.43,
+        "w_cv_norm": 0.215,
+        "match_pct": 30.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cloud_devops_role|devsecops_implementation",
+        "source": "cloud_devops_role",
+        "target": "devsecops_implementation",
+        "w_0": 0.85,
+        "w_cv": 0.351,
+        "w_cv_norm": 0.176,
+        "match_pct": 20.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cloud_devops_role|application_architecture",
+        "source": "cloud_devops_role",
+        "target": "application_architecture",
+        "w_0": 0.55,
+        "w_cv": 0.22,
+        "w_cv_norm": 0.11,
+        "match_pct": 20.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cloud_devops_role|cloud_native_solutions",
+        "source": "cloud_devops_role",
+        "target": "cloud_native_solutions",
+        "w_0": 0.48,
+        "w_cv": 0.182,
+        "w_cv_norm": 0.091,
+        "match_pct": 19.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cloud_devops_role|azure_cloud_engineer",
+        "source": "cloud_devops_role",
+        "target": "azure_cloud_engineer",
+        "w_0": 0.95,
+        "w_cv": 0.07,
+        "w_cv_norm": 0.035,
+        "match_pct": 3.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Azure",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Ingénieur",
+      "type": "Education",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "DevSecOps",
+      "type": "Tool",
+      "gap": 0.608,
+      "severity": "critical",
+      "importance": 0.889
+    },
+    {
+      "skill": "DevOps",
+      "type": "Hard Skill",
+      "gap": 0.808,
+      "severity": "critical",
+      "importance": 0.808
+    },
+    {
+      "skill": "Architecture Applicative",
+      "type": "Tool",
+      "gap": 0.6,
+      "severity": "critical",
+      "importance": 0.75
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Azure",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Ingénieur",
+        "type": "Education",
+        "gap": 1.0
+      },
+      {
+        "label": "DevSecOps",
+        "type": "Tool",
+        "gap": 0.608
+      },
+      {
+        "label": "DevOps",
+        "type": "Hard Skill",
+        "gap": 0.808
+      },
+      {
+        "label": "Architecture Applicative",
+        "type": "Tool",
+        "gap": 0.6
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 5,
+    "nodes_with_bias": 5,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 4,
+      "PRESTIGE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "devsecops_implementation",
+        "label": "DevSecOps",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The CV heavily emphasizes statistical skills and data analysis tools (Python, SQL, Data Studio) alongside traditional DevOps roles, while the job description prioritizes 'DevSecOps practices' and Azure cloud migration. This suggests a preference for candidates with demonstrable data science experience (proxy for analytical capabilities) rather than a pure DevOps skillset, particularly given the context of carbon footprint analysis. The candidate's experience with complex statistical modeling and data visualization tools aligns with the analytical demands of the project, but the weight change indicates an overemphasis on these technical skills at the expense of broader DevOps experience, potentially favoring a proxy for analytical ability rather than core DevSecOps expertise. A more fair alternative would be to weight DevOps experience and Azure cloud migration skills equally, reflecting the JD's requirements."
+      },
+      {
+        "id": "application_architecture",
+        "label": "Architecture Applicative",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The decrease in weight (w_0 from 0.75 to 0.4) is likely due to the emphasis on ‘Architecture Applicative’ within the JD. Wael’s CV lacks specific demonstrable experience in this area beyond mentions of ‘.Net’ and some data analysis skills, suggesting a prestige bias favoring candidates with deeper expertise in this specific architectural design. While his analytical skills are valuable, the JD’s priority on advanced architectural knowledge is not reflected in the CV’s weighting, and the lack of context further supports this as a low-confidence signal. A fair alternative would be a higher weighting reflecting practical application of architectural principles."
+      },
+      {
+        "id": "ci_cd_pipeline",
+        "label": "CI/CD",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.72,
+        "reason": "The increased weight to the CI/CD pipeline (w_0 from 0.499 to 0.6) likely reflects an overemphasis on experience with specific technologies – Azure, DevOps, and Microsoft – present in the CV. This proxies for a candidate’s familiarity with the desired cloud environment, potentially overlooking equally valuable skills evidenced in the CV, such as data analysis expertise and business analytics experience gained at Linedata, Deloitte, and EY.  The context highlights a strong focus on cloud technologies, indicating a bias towards candidates proficient in those areas, even if other relevant skills are lacking.  A higher factor is applied to indicate a pronounced proxy bias linked to the JD’s technology requirements."
+      },
+      {
+        "id": "cloud_devops_role",
+        "label": "Ingénieur Cloud & DevOps",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.14,
+        "reason": "The candidate's CV heavily emphasizes academic and consulting experience, coupled with certifications in data science and analytics, rather than direct DevOps or cloud engineering skills. The JD focuses on specific cloud technologies (Azure, .Net) which are not represented in the CV. This suggests the algorithm is prioritizing proxies for technical skills (data science certifications, business analyst roles) over demonstrable DevOps experience, indicating a proxy bias based on the candidate’s background and the job’s requirement profile. A reduction in weight is warranted to reflect the mismatch between the job's technical demands and the candidate's skill set, favoring a more holistic evaluation."
+      },
+      {
+        "id": "cloud_native_solutions",
+        "label": "Développement de solution Cloud Native",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The CV heavily emphasizes academic and consulting experience within the MOA role at Linedata, utilizing SQL and Oracle, which aligns with the JD’s focus on Azure and DevOps. However, the CV’s skills (Statistiques, Conservation des données, etc.) are highly generic and don’t demonstrate proficiency in cloud-native technologies explicitly listed in the JD (Azure, DevSecOps). This suggests the weighting was influenced by the candidate's traditional IT skills rather than their suitability for the cloud-native role, exhibiting a proxy bias due to the candidate’s previous roles leveraging SQL databases, rather than cloud-native technologies. A lower weighting reflects this lack of direct relevance."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1518 (sous-qualifié), CTM=0.6382 (écart structurel élevé), match_pct=34.57% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.126, ndcg_5=0.6421, missing_critical_penalty=0.0, combo_v6_final=13.03",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "5 gaps critiques identifiés",
+    "bias_note": "5 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.57)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

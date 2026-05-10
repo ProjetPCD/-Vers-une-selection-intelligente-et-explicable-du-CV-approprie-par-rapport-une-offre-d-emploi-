@@ -1,0 +1,392 @@
+{
+  "job_id": "job_56",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-03T10:58:38.180639",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 19.88,
+    "confidence": {
+      "confidence_score": 0.51,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.818,
+        "coverage_rate": 0.636,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.2354,
+    "edge_score": 0.2659,
+    "combined": 0.2476
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1281,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.8098,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.8012,
+    "matched_nodes": "1/11",
+    "edge_match_pct": 13.32
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1429,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.2603,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1102,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0909,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.4945,
+    "weighted_recall": 0.0555,
+    "weighted_f1": {
+      "value": 0.107,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.55,
+    "missing_critical_penalty": {
+      "value": 0.1,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8473,
+    "ndcg_10": 0.9102,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.3284,
+    "experience_density": 0.1061
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 19.68,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 17.1,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 18.17,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 93.89,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 36.84,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 28.31,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 18.62,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 4,
+      "match_pct": 12.9,
+      "weight_sum": 3.684
+    },
+    "Tool": {
+      "count": 4,
+      "match_pct": 7.0,
+      "weight_sum": 3.408
+    },
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 16.0,
+      "weight_sum": 2.822
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 13.32,
+    "total_edges": 10,
+    "top_synergies": [
+      {
+        "edge_key": "sql-querying|data-engineer-domain",
+        "source": "sql-querying",
+        "target": "data-engineer-domain",
+        "w_0": 0.85,
+        "w_cv": 0.681,
+        "w_cv_norm": 0.341,
+        "match_pct": 40.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "databricks_data_engineer|data-engineer-domain",
+        "source": "databricks_data_engineer",
+        "target": "data-engineer-domain",
+        "w_0": 0.62,
+        "w_cv": 0.36,
+        "w_cv_norm": 0.18,
+        "match_pct": 29.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data-engineer-domain|etl-process",
+        "source": "data-engineer-domain",
+        "target": "etl-process",
+        "w_0": 0.85,
+        "w_cv": 0.262,
+        "w_cv_norm": 0.131,
+        "match_pct": 15.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data-engineer-domain|data-architectures",
+        "source": "data-engineer-domain",
+        "target": "data-architectures",
+        "w_0": 0.85,
+        "w_cv": 0.262,
+        "w_cv_norm": 0.131,
+        "match_pct": 15.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data-engineer-domain|data-lake-storage",
+        "source": "data-engineer-domain",
+        "target": "data-lake-storage",
+        "w_0": 0.85,
+        "w_cv": 0.254,
+        "w_cv_norm": 0.127,
+        "match_pct": 14.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Data Engineer",
+      "type": "Domain",
+      "gap": 0.869,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "ETL",
+      "type": "Domain",
+      "gap": 0.869,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "AWS",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Azure",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Architectures de données",
+      "type": "Domain",
+      "gap": 0.785,
+      "severity": "critical",
+      "importance": 0.916
+    },
+    {
+      "skill": "Spark",
+      "type": "Tool",
+      "gap": 0.665,
+      "severity": "critical",
+      "importance": 0.788
+    },
+    {
+      "skill": "Data Lake",
+      "type": "Domain",
+      "gap": 0.645,
+      "severity": "critical",
+      "importance": 0.768
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Data Engineer",
+        "type": "Domain",
+        "gap": 0.869
+      },
+      {
+        "label": "ETL",
+        "type": "Domain",
+        "gap": 0.869
+      },
+      {
+        "label": "AWS",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Azure",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Architectures de données",
+        "type": "Domain",
+        "gap": 0.785
+      },
+      {
+        "label": "Spark",
+        "type": "Tool",
+        "gap": 0.665
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 7,
+    "nodes_with_bias": 6,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 5,
+      "PRESTIGE BIAS": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "data-engineer-domain",
+        "label": "Data Engineer",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The significant weight decrease (Delta = -0.650) is likely driven by PROXY BIAS related to Emna Talbi’s employment history and location. While listed skills (Python, Hadoop, Spark) are relevant, her roles at Infor Ben Arous (Tunisia) and previous internships in Tunisia suggest a potential bias favoring candidates from Western/developed economies, particularly those with larger, established companies. A more merit-based system would prioritize demonstrable skills and project experience regardless of geographical location or employer size, focusing on the listed technical skills and the master's degree, not simply reflecting the prominence of her current employer.  Therefore, the CV's reliance on her Tunisian employment history is unfairly penalizing her, and a correction factor of 0.75 is applied to reduce the influence of this proxy signal."
+      },
+      {
+        "id": "etl-process",
+        "label": "ETL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The significant decrease in weight (w_cv from 1.0 to 0.35) for listing 'ETL' as a skill is likely driven by PROXY bias. The CV lacks any demonstrable project experience or context related to ETL, relying solely on the skill listing. The JD emphasizes experience, while Emna's CV details a range of junior roles and internships without specific ETL project outcomes. A fair alternative would be to assess the candidate’s performance based on actual ETL project delivery and technical skills, rather than simply listing the skill."
+      },
+      {
+        "id": "data-architectures",
+        "label": "Architectures de données",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The CV lists several high-profile technologies (Python, Hadoop, Spark, Apache) without demonstrating practical application through project experience. The JD emphasizes demonstrable skills and project evidence, while Emna's CV primarily focuses on listed skills and certifications. This suggests an overemphasis on the prestige of these technologies rather than their effective application, unfairly penalizing candidates who may lack extensive project experience with these tools. A fair alternative would prioritize evidence of skills used in relevant projects. The weight decrease reflects this reliance on listed skills without concrete proof."
+      },
+      {
+        "id": "data-lake-storage",
+        "label": "Data Lake",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.245,
+        "reason": "The significant weight decrease (0.768 to 0.35) is likely driven by the proxy bias of Emna Talbi's location and educational background. The CV heavily emphasizes her experience at Infor Ben Arous, Tunisia, a location that might be unfairly penalized due to regional disparities in perceived skills and experience, despite her stated skills. Furthermore, her Master's degree from a Tunisian university, while relevant, could be subject to scrutiny based on institutional prestige (though not explicitly stated as a negative factor), potentially skewing the algorithm's assessment. A fairer alternative would be to focus solely on her skills, project evidence, and demonstrated proficiency in the listed technologies, removing the influence of her geographic location and educational institution."
+      },
+      {
+        "id": "spark-processing",
+        "label": "Spark",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.245,
+        "reason": "The significant decrease in weight (w_cv from 0.788 to 0.35) is likely driven by the proxy bias stemming from Emna Talbi's employment history in Tunisia. The CV focuses heavily on her current role at Infor Ben Arous and past internships within Tunisia, potentially inflating her perceived experience and skill level based on location, rather than demonstrable skills within a global context. A fair alternative would be to assess her skills based on project details and quantifiable achievements, regardless of her geographical location. The lack of project evidence or contextual mentions regarding Spark makes it a weak indicator of true proficiency, reinforcing this proxy effect."
+      },
+      {
+        "id": "databricks_data_engineer",
+        "label": "Databricks",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.458,
+        "reason": "The candidate's CV highlights their location (Tunisia) and education (institutions in Tunisia) which constitutes a socioeconomic proxy. While experience is valued, the system is giving a slight negative weight due to this proxy signal. A fairer alternative would be to evaluate skills and experience regardless of location, focusing solely on demonstrated abilities and qualifications. The reduction in weight reflects the potential for geographic bias – favoring candidates from regions with traditionally higher levels of education and potentially different access to resources."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1281 (sous-qualifié), CTM=0.8098 (écart structurel élevé), match_pct=19.88% → Poor Match",
+    "v6_summary": "weighted_f1=0.107, gap_score=0.1102, ndcg_5=0.8473, missing_critical_penalty=0.1, combo_v6_final=19.68",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "9 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.51)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

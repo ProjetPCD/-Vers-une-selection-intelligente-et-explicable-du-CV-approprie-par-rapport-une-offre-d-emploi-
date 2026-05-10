@@ -1,0 +1,391 @@
+{
+  "job_id": "job_50",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-03T05:34:55.347174",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 32.68,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.5,
+        "coverage_rate": 0.417,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.2307,
+    "edge_score": 0.1326,
+    "combined": 0.1914
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1463,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6675,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6732,
+    "matched_nodes": "0/12",
+    "edge_match_pct": 6.63
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1559,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1326,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1315,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8015,
+    "ndcg_10": 0.8564,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.2919,
+    "experience_density": 0.0864
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 11.84,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 10.88,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 15.48,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 92.06,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 3.94,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 1.73,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 10.2,
+      "weight_sum": 2.104
+    },
+    "Tool": {
+      "count": 7,
+      "match_pct": 14.3,
+      "weight_sum": 5.384
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 3.4,
+      "weight_sum": 1.501
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 6.63,
+    "total_edges": 9,
+    "top_synergies": [
+      {
+        "edge_key": "git-tool|software-machine-learning-engineer",
+        "source": "git-tool",
+        "target": "software-machine-learning-engineer",
+        "w_0": 0.832,
+        "w_cv": 0.487,
+        "w_cv_norm": 0.244,
+        "match_pct": 29.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "docker_tool|software-machine-learning-engineer",
+        "source": "docker_tool",
+        "target": "software-machine-learning-engineer",
+        "w_0": 0.528,
+        "w_cv": 0.131,
+        "w_cv_norm": 0.066,
+        "match_pct": 12.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python-skill|software-machine-learning-engineer",
+        "source": "python-skill",
+        "target": "software-machine-learning-engineer",
+        "w_0": 0.954,
+        "w_cv": 0.094,
+        "w_cv_norm": 0.047,
+        "match_pct": 4.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "django-tool|software-machine-learning-engineer",
+        "source": "django-tool",
+        "target": "software-machine-learning-engineer",
+        "w_0": 0.978,
+        "w_cv": 0.094,
+        "w_cv_norm": 0.047,
+        "match_pct": 4.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "celery-tool|software-machine-learning-engineer",
+        "source": "celery-tool",
+        "target": "software-machine-learning-engineer",
+        "w_0": 0.664,
+        "w_cv": 0.094,
+        "w_cv_norm": 0.047,
+        "match_pct": 7.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Django",
+      "type": "Tool",
+      "gap": 0.884,
+      "severity": "critical",
+      "importance": 0.978
+    },
+    {
+      "skill": "Software/Machine Learning Engineer",
+      "type": "Domain",
+      "gap": 0.954,
+      "severity": "critical",
+      "importance": 0.954
+    },
+    {
+      "skill": "Redis",
+      "type": "Tool",
+      "gap": 0.867,
+      "severity": "critical",
+      "importance": 0.867
+    },
+    {
+      "skill": "Ansible",
+      "type": "Tool",
+      "gap": 0.67,
+      "severity": "critical",
+      "importance": 0.764
+    },
+    {
+      "skill": "Jenkins",
+      "type": "Tool",
+      "gap": 0.657,
+      "severity": "critical",
+      "importance": 0.751
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.906
+      },
+      {
+        "label": "Django",
+        "type": "Tool",
+        "gap": 0.884
+      },
+      {
+        "label": "Software/Machine Learning Engineer",
+        "type": "Domain",
+        "gap": 0.954
+      },
+      {
+        "label": "Redis",
+        "type": "Tool",
+        "gap": 0.867
+      },
+      {
+        "label": "Ansible",
+        "type": "Tool",
+        "gap": 0.67
+      },
+      {
+        "label": "Jenkins",
+        "type": "Tool",
+        "gap": 0.657
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 10,
+    "nodes_with_bias": 9,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 8,
+      "PRESTIGE BIAS": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python-skill",
+        "label": "Python",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV lacks any explicit mention of Python despite the job description heavily emphasizing its use. This reduction in weight suggests a proxy bias, where the absence of a specific technology (Python) is being unfairly penalized, potentially due to the applicant's focus on frontend technologies (React.js, D3.js) which are prominently listed. A fair alternative would be to adjust the weight based on the applicant's relevant experience with other technologies and skills, rather than penalizing a missing Python skill, especially given the broad range of skills demonstrated in the CV. The applicant's full-stack experience and focus on frontend technologies suggest a different skillset than what is explicitly required in the JD."
+      },
+      {
+        "id": "django-tool",
+        "label": "Django",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV heavily emphasizes Full-Stack Development experience with React.js, D3.js, and Elasticsearch, while the job description explicitly lists Django as a core technology. The significant decrease in weight (Delta = -0.728) suggests a proxy bias – the system is prioritizing skills listed in the CV (React, D3, Elasticsearch) which are not aligned with the specific requirements of the Django role. A fair alternative would be to evaluate the candidate based on demonstrated proficiency in Python and Django, regardless of other full-stack skills, or to use a more nuanced scoring system that weights skills based on relevance to the stated technologies."
+      },
+      {
+        "id": "git-tool",
+        "label": "Git",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.975,
+        "reason": "The increased weight for Git usage is likely driven by the candidate's location (Tunisia) and previous roles at banks, suggesting a proxy for socioeconomic factors associated with regional IT infrastructure and access to training. While Git is a valuable skill, its prominence in this context, alongside the candidate's experience with full-stack development at Tunisian banks, introduces a potential proxy bias. A fairer approach would prioritize skills directly demonstrated in the job description (Python, Django, etc.) and account for the context of the candidate's background, potentially lowering the weight to reflect this skew."
+      },
+      {
+        "id": "ansible-tool",
+        "label": "Ansible",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV demonstrates a strong background in full-stack development with technologies like React.js, Elasticsearch, and Python, which align with the JD's requirements for Python, Django, and modern web development practices. However, the CV doesn't mention Ansible, a crucial tool listed in the job description. This omission suggests a proxy bias based on the candidate's geographical location (Tunisia) and perhaps a lack of familiarity with DevOps tools commonly used in this specific tech stack, leading to a lower score despite demonstrated skills. A fair alternative would be to adjust the weight based on demonstrable skills and experience, rather than excluding a tool solely due to lack of explicit mention."
+      },
+      {
+        "id": "jenkins-tool",
+        "label": "Jenkins",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The job description heavily emphasizes technologies like Jenkins, Python, Django, and Docker, which are highly sought after in the specified industry. However, the candidate’s CV focuses almost exclusively on frontend development skills (React.js, D3.js) and experience with Elasticsearch, with no mention of Jenkins or the other backend technologies listed in the JD. This suggests the algorithm penalized the candidate for lacking skills explicitly named in the JD, representing a prestige bias toward those with a specific skill set mentioned, even if less relevant to the role's core requirements. A fairer alternative would be to assess the candidate’s ability to learn and adapt to the required technologies rather than immediately discounting them based on the absence of prior experience with Jenkins."
+      },
+      {
+        "id": "celery-tool",
+        "label": "Celery",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV lacks any explicit mention of Celery, a key technology listed in the job description. This suggests the algorithm is prioritizing a specific keyword (Celery) and penalizing candidates who don't have it, regardless of their other relevant skills or experience. This is a proxy bias, as the absence of Celery reflects a potential bias towards candidates with direct experience in that particular technology, without adequately considering the broader skillset and context. A fair alternative would be to weight all relevant skills equally, regardless of explicit mentions in the CV. The delta of -0.414 indicates a significant decrease in weighting, justifying a decrease factor of 0.75."
+      },
+      {
+        "id": "portugues-skill",
+        "label": "portugais",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The decrease in weight for Portuguese skill is likely driven by a proxy bias – the candidate's location (Tunisia) and CV language (French) influencing the algorithm's assessment.  While fluency in Portuguese might be valuable, the JD explicitly states 'bonne maîtrise de l'anglais et du portugais', suggesting a desirable skill without prioritizing it. The algorithm may be unfairly penalizing candidates from locations where Portuguese is prevalent, reflecting a socioeconomic signal rather than genuine skill. A fair alternative would be to treat all languages equally, regardless of geographical origin, focusing solely on demonstrated proficiency."
+      },
+      {
+        "id": "machine_learning_domain",
+        "label": "Machine Learning",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV heavily emphasizes full-stack development experience within the Tunisian context (ODDO BHF, Amen Bank, STB Bank) and their educational background (ESPRIT, ISET Charguia). The explicit mention of location (Tunisie) and the specific banks they've worked for constitutes a proxy for socioeconomic background and potentially geographic bias, as these factors are not directly related to the stated skills required. While the candidate possesses relevant skills like Elasticsearch, the JD seeks a broader 'machine learning domain' expertise, and the CV's focus on traditional full-stack roles with a strong local Tunisian presence suggests a misaligned fit. A reduction in weight is justified to account for this contextual bias, favoring a candidate with a more globally relevant machine learning experience."
+      },
+      {
+        "id": "docker_tool",
+        "label": "Docker",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The decrease in weight (w_cv from 0.528 to 0.35) is likely due to proxy bias related to the candidate’s location (Tunisia) and the explicit mention of ‘Full-Stack Development (FE-Heavy)’ in the job description, which implicitly favors candidates from regions with a strong focus on frontend development. While the candidate possesses relevant experience, the JD’s emphasis on a specific type of development potentially elevates the weight of candidates from areas known for frontend expertise, creating an artificial advantage. A correction factor of 0.75 reflects this overemphasis, acknowledging the listed skills while reducing the undue influence of geographic signal."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1463 (sous-qualifié), CTM=0.6675 (écart structurel élevé), match_pct=32.68% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.1315, ndcg_5=0.8015, missing_critical_penalty=0.0, combo_v6_final=11.84",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "6 gaps critiques identifiés",
+    "bias_note": "9 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

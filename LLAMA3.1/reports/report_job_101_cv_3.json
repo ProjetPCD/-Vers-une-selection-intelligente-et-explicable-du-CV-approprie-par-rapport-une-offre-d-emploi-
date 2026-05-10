@@ -1,0 +1,380 @@
+{
+  "job_id": "job_101",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-02T19:49:48.966004",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 33.0,
+    "confidence": {
+      "confidence_score": 0.88,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.5,
+        "coverage_rate": 1.0,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.5149,
+    "edge_score": 0.0,
+    "combined": 0.3089
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2776,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6874,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.67,
+    "matched_nodes": "0/10",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2769,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.303,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2502,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.3,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.9033,
+    "weighted_recall": 0.17,
+    "weighted_f1": {
+      "value": 0.3121,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5135,
+    "missing_critical_penalty": {
+      "value": 0.375,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.9322,
+    "ndcg_10": 0.9808,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9824,
+    "top_skill_alignment": 0.4267,
+    "semantic_fit_score": 0.5454,
+    "experience_density": 0.2333
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 35.08,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 29.18,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 36.6,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 97.29,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 50.32,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 45.9,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 41.41,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 3,
+      "match_pct": 16.6,
+      "weight_sum": 2.608
+    },
+    "Tool": {
+      "count": 6,
+      "match_pct": 25.3,
+      "weight_sum": 5.454
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 52.0,
+      "weight_sum": 1.0
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "total_edges": 8,
+    "top_synergies": [
+      {
+        "edge_key": "business-analyst|python",
+        "source": "business-analyst",
+        "target": "python",
+        "w_0": 0.9,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "business-analyst|qliksense",
+        "source": "business-analyst",
+        "target": "qliksense",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "business-analyst|salesforce",
+        "source": "business-analyst",
+        "target": "salesforce",
+        "w_0": 0.7,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "business-analyst|sap",
+        "source": "business-analyst",
+        "target": "sap",
+        "w_0": 0.6,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "business-analyst|power-bi",
+        "source": "business-analyst",
+        "target": "power-bi",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Business Analyst",
+      "type": "Domain",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Business Intelligence",
+      "type": "Domain",
+      "gap": 0.688,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "QlikSense",
+      "type": "Tool",
+      "gap": 0.829,
+      "severity": "critical",
+      "importance": 0.985
+    },
+    {
+      "skill": "Salesforce",
+      "type": "Tool",
+      "gap": 0.874,
+      "severity": "critical",
+      "importance": 0.949
+    },
+    {
+      "skill": "Power BI",
+      "type": "Tool",
+      "gap": 0.853,
+      "severity": "critical",
+      "importance": 0.928
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Business Analyst",
+        "type": "Domain",
+        "gap": 1.0
+      },
+      {
+        "label": "Business Intelligence",
+        "type": "Domain",
+        "gap": 0.688
+      },
+      {
+        "label": "QlikSense",
+        "type": "Tool",
+        "gap": 0.829
+      },
+      {
+        "label": "Salesforce",
+        "type": "Tool",
+        "gap": 0.874
+      },
+      {
+        "label": "Power BI",
+        "type": "Tool",
+        "gap": 0.853
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 9,
+    "nodes_with_bias": 9,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 6,
+      "HALO BIAS": 2,
+      "HALO_BIAS": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "sql",
+        "label": "SQL",
+        "bias_category": "HALO_BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.04,
+        "reason": "The weight change is biased due to Halo Bias, where one strong signal (the candidate's experience in Generative AI) is used to judge the entire profile. Although the candidate has extensive experience and skills in various areas, the weight placed on their work with GenAI adoption and governance seems disproportionate compared to other relevant factors. A fair alternative would be to consider a more balanced approach, where each skill set receives a reasonable weight based on its relevance and importance for the Business Analyst role."
+      },
+      {
+        "id": "python",
+        "label": "Python",
+        "bias_category": "HALO BIAS",
+        "severity": "HIGH",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.04,
+        "reason": "The weight change is biased towards a single strong signal (experience with Python) without considering other relevant skills or qualifications. The job description emphasizes the use of multiple tools, but the adapted weight gives excessive importance to the mention of 'backend solutions'. A fair alternative would be to distribute the weight among multiple relevant signals, such as programming languages, certifications, and work experience."
+      },
+      {
+        "id": "business_intelligence",
+        "label": "Business Intelligence",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.625,
+        "reason": "Weight change appears to be biased due to emphasis on business analyst role, not reflected in candidate's skills and experience."
+      },
+      {
+        "id": "qliksense",
+        "label": "QlikSense",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "The weight change unfairly penalizes QlikSense, which is not explicitly highlighted as a key strength in the CV. A fair assessment should consider the candidate's overall skill set and experience."
+      },
+      {
+        "id": "excel",
+        "label": "Excel",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.77,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.001,
+        "reason": "The weight change in favor of 'excel' (w_cv: 1.3) is biased due to prestige bias, as it weights a specific tool name ('excel') more than its ideal weight (w_0: 0.984), despite the candidate having experience with multiple tools and techniques mentioned in the CV. A fair alternative would be to assign equal or lower weight to 'excel' compared to other tools, considering the candidate's diverse skill set."
+      },
+      {
+        "id": "salesforce",
+        "label": "Salesforce",
+        "bias_category": "PRESTIGE",
+        "severity": "HIGH",
+        "correction_factor": 0.6,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.15,
+        "reason": "The algorithm has unfairly penalized the candidate by giving too much weightage to the company name 'Salesforce', rather than their actual skills."
+      },
+      {
+        "id": "power-bi",
+        "label": "Power BI",
+        "bias_category": "PRESTIGE",
+        "severity": "HIGH",
+        "correction_factor": 0.6,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.15,
+        "reason": "The model appears to be favoring Power BI despite having zero project anchor, which raises questions about the relevance of this attribute in the hiring process."
+      },
+      {
+        "id": "sap",
+        "label": "SAP",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "Weight change decreased due to prestige bias; fair alternative is to extract relevant skills and experiences from the CV without considering university/company name."
+      },
+      {
+        "id": "data_management",
+        "label": "Gestion de données",
+        "bias_category": "HALO BIAS",
+        "severity": "HIGH",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.4,
+        "reason": "The candidate has a strong profile with multiple relevant certifications and extensive experience in software engineering and architecture. However, the weight change is unfair as it decreases from 0.608 to 0.5, indicating that the algorithm is penalizing the candidate's profile due to one strong signal (certifications and experience) rather than evaluating their skills and qualifications holistically."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2776 (sous-qualifié), CTM=0.6874 (écart structurel élevé), match_pct=33.0% → Poor Match",
+    "v6_summary": "weighted_f1=0.3121, gap_score=0.2502, ndcg_5=0.9322, missing_critical_penalty=0.375, combo_v6_final=35.08",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "5 gaps critiques identifiés",
+    "bias_note": "9 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.88)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

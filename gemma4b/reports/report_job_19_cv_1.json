@@ -1,0 +1,409 @@
+{
+  "job_id": "job_19",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-04T14:33:13.148481",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 23.58,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.783,
+        "coverage_rate": 0.304,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.2727
+  },
+  "final_scores": {
+    "node_score": 0.2056,
+    "edge_score": 0.1789,
+    "combined": 0.1949
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1186,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7655,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7642,
+    "matched_nodes": "0/23",
+    "edge_match_pct": 8.94
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1059,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1757,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1022,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0455,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.8832,
+    "weighted_recall": 0.0282,
+    "weighted_f1": {
+      "value": 0.0555,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.531,
+    "missing_critical_penalty": {
+      "value": 0.05,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9831,
+    "ndcg_10": 0.9945,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.5563,
+    "semantic_fit_score": 0.5556,
+    "experience_density": 0.0862
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 17.02,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 11.52,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 24.67,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 99.32,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 37.55,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 25.57,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 45.47,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 14,
+      "match_pct": 8.8,
+      "weight_sum": 12.412
+    },
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 31.3,
+      "weight_sum": 2.851
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 0.0,
+      "weight_sum": 2.628
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 0.869
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 0.525
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 8.94,
+    "total_edges": 10,
+    "top_synergies": [
+      {
+        "edge_key": "java|communication_skill",
+        "source": "java",
+        "target": "communication_skill",
+        "w_0": 0.851,
+        "w_cv": 0.531,
+        "w_cv_norm": 0.266,
+        "match_pct": 31.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "nosql|azure",
+        "source": "nosql",
+        "target": "azure",
+        "w_0": 0.953,
+        "w_cv": 0.523,
+        "w_cv_norm": 0.262,
+        "match_pct": 27.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python|communication_skill",
+        "source": "python",
+        "target": "communication_skill",
+        "w_0": 0.851,
+        "w_cv": 0.361,
+        "w_cv_norm": 0.18,
+        "match_pct": 21.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ansible|devops_tool",
+        "source": "ansible",
+        "target": "devops_tool",
+        "w_0": 0.766,
+        "w_cv": 0.131,
+        "w_cv_norm": 0.066,
+        "match_pct": 8.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "jenkins|devops_tool",
+        "source": "jenkins",
+        "target": "devops_tool",
+        "w_0": 0.766,
+        "w_cv": 0.075,
+        "w_cv_norm": 0.037,
+        "match_pct": 4.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Azure Kubernetes Services",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Azure Container Instances",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.639,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "NoSQL",
+      "type": "Tool",
+      "gap": 0.804,
+      "severity": "critical",
+      "importance": 0.953
+    },
+    {
+      "skill": "Microsoft Azure",
+      "type": "Tool",
+      "gap": 0.606,
+      "severity": "critical",
+      "importance": 0.951
+    },
+    {
+      "skill": "Ansible",
+      "type": "Tool",
+      "gap": 0.815,
+      "severity": "critical",
+      "importance": 0.946
+    },
+    {
+      "skill": "Jenkins",
+      "type": "Tool",
+      "gap": 0.853,
+      "severity": "critical",
+      "importance": 0.928
+    },
+    {
+      "skill": "Excellente communication",
+      "type": "Soft Skill",
+      "gap": 0.907,
+      "severity": "critical",
+      "importance": 0.907
+    },
+    {
+      "skill": "BlackDuck",
+      "type": "Tool",
+      "gap": 0.83,
+      "severity": "critical",
+      "importance": 0.905
+    },
+    {
+      "skill": "Ingénieur",
+      "type": "Education",
+      "gap": 0.869,
+      "severity": "critical",
+      "importance": 0.869
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Azure Kubernetes Services",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Azure Container Instances",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.639
+      },
+      {
+        "label": "NoSQL",
+        "type": "Tool",
+        "gap": 0.804
+      },
+      {
+        "label": "Microsoft Azure",
+        "type": "Tool",
+        "gap": 0.606
+      },
+      {
+        "label": "Ansible",
+        "type": "Tool",
+        "gap": 0.815
+      },
+      {
+        "label": "Jenkins",
+        "type": "Tool",
+        "gap": 0.853
+      },
+      {
+        "label": "Excellente communication",
+        "type": "Soft Skill",
+        "gap": 0.907
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 6,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 2,
+      "A. PRESTIGE BIAS": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python",
+        "label": "Python",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.722,
+        "reason": "The audit reveals a decreased weight (Delta: -0.15) on 'python' despite strong evidence of its utilization in a key project (Spring Boot microservices with REST APIs). The CV explicitly details Hani Mediouni's involvement in developing the back-end with Spring Boot, showcasing a significant technical contribution.  This reduction suggests a potential bias favoring other listed languages (Java, Groovy) or perhaps a reliance on the general keywords within the JD rather than the demonstrable skills, representing a medium severity bias. A correction factor of 0.85 reflects that while skills are present, the weighting is unfairly reduced based on perceived popularity rather than actual demonstrable proficiency."
+      },
+      {
+        "id": "java",
+        "label": "Java",
+        "bias_category": "A. PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.062,
+        "reason": "The CV prominently features 'Development back-end avec Spring Boot : architecture microservices, API REST sécurisées, gestion des accès et autorisations' – directly aligning with the JD’s requirements. This strong emphasis on Spring Boot, a well-regarded technology, explains the increased weight assigned (w_0=0.85).  However, the JD’s request for ‘excellent mastery’ of Python, Groovy, and Kubernetes, while listed on the CV, isn't explicitly highlighted, resulting in a reduced weight. This suggests a Prestige bias: the system heavily favored skills directly mentioned in the job description, potentially overlooking valuable expertise in other areas."
+      },
+      {
+        "id": "microsoft_azure",
+        "label": "Microsoft Azure",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.69,
+        "reason": "The candidate's CV emphasizes skills like Java, React, and DevOps, aligning with the JD's technical requirements. However, the JD prioritizes 'Microsoft Azure' experience as a core requirement, while the CV’s mentions of Azure Kubernetes Services and Azure Container Instances are described as ‘hands-on tutorial’ and ‘getting started’ - indicating a lower level of practical experience than expected for a senior engineer. This suggests a prestige bias favoring candidates explicitly demonstrating deep Azure expertise, penalizing the candidate’s broader cloud skills for the specific Azure focus of the job description. The Delta of -0.351 indicates a significant reduction in weight, reinforcing this assessment."
+      },
+      {
+        "id": "azure",
+        "label": "Azure",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.75,
+        "reason": "The candidate explicitly states ‘Passionate about microservices architecture and cloud solutions, I have built several end-to-end projects’ aligning with the JD’s strong requirements for Azure and cloud expertise. However, the CV’s focus on general full-stack development and specific technologies (Java, React, Spring Boot) without quantifying Azure project specifics is leading to a significant weight reduction (-0.358). This suggests the algorithm is penalizing the candidate for not directly highlighting Azure skills, reflecting a prestige bias toward candidates who more prominently showcase experience with Microsoft technologies, even if the projects are general in nature. Increasing the weight would reflect the substance of the skills demonstrated, moving beyond just the stated passion."
+      },
+      {
+        "id": "nosql",
+        "label": "NoSQL",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.297,
+        "reason": "The significant weight decrease (-0.603) in the 'nosql' weight, coupled with the candidate's CV showcasing a specific project using Spring Boot with NoSQL databases, suggests a potential for proxy bias. The JD emphasizes NoSQL databases and experience with them as a desired skill.  The candidate's CV explicitly highlights experience with 'Développement back-end avec Spring Boot : architecture microservices, API REST sécurisées, gestion des accès et autorisations,' – directly aligning with the JD's requirements.  This indicates the algorithm might be unfairly penalizing the candidate for possessing a skill explicitly mentioned and valued by the employer (NoSQL databases), which is a proxy for a technically strong candidate.  A reasonable correction factor is applied to acknowledge the project's relevance to the job requirements.  Given the lack of other obvious biases and the clear connection between the candidate's experience and the JD, the change is likely due to a mis-weighting rather than a direct bias."
+      },
+      {
+        "id": "ansible",
+        "label": "Ansible",
+        "bias_category": "NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The candidate possesses significant experience with Ansible within a DevOps pipeline, directly addressing a key requirement of the JD. However, the weight change (-0.596) is substantial and doesn't align with the skills demonstrated in the CV. This suggests a potential bias—perhaps the system prioritized the mere mention of Ansible, without adequately assessing the depth of the candidate’s understanding or practical application of the tool, leading to an unwarranted reduction in weighting. A correction factor of 0.75 reflects this imbalance, acknowledging the valuable skill but reducing its impact to mitigate the overemphasis."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1186 (sous-qualifié), CTM=0.7655 (écart structurel élevé), match_pct=23.58% → Poor Match",
+    "v6_summary": "weighted_f1=0.0555, gap_score=0.1022, ndcg_5=0.9831, missing_critical_penalty=0.05, combo_v6_final=17.02",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "18 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 72.7% des scores via LLM (fiable)"
+  }
+}

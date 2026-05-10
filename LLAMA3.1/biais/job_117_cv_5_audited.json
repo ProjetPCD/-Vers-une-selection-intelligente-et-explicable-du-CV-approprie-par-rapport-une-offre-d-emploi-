@@ -1,0 +1,227 @@
+{
+  "job_id": "job_117",
+  "cv_id": "cv_5",
+  "scored_nodes": {
+    "devops-engineer": {
+      "w_cv": 0.15,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "No project anchor for DevOps practices, weak evidence verdict.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.15,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.6,
+      "p35_reason": "The weight change is biased because it relies heavily on a single strong signal (DevOps skill) without considering other relevant skills or experiences. The ideal weight (1.0) was reduced to 0.25, indicating that the adapted model favors candidates with DevOps experience over others. A fair alternative would be to use multiple signals and assign weights based on their relative importance, rather than relying on a single halo effect."
+    },
+    "full-stack-developer": {
+      "w_cv": 0.69,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Contextual mention of full-stack development, weak evidence verdict.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.69,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.38,
+      "p35_reason": "The weight change is biased towards prestige, as the job description heavily mentions 'full-stack development' and implies that this skillset is highly valued. However, upon reviewing the candidate's CV, it appears that they have a strong background in machine learning and deep learning, with relevant experience at InstaDeep. The emphasis on full-stack development in the JD may be unfairly penalizing candidates who do not have direct experience in this area, but possess other valuable skills. A fair alternative would be to weight experience and skills demonstrated in the CV more heavily."
+    },
+    "competences-techniques": {
+      "w_cv": 0.85,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "Used in project with basic outcome mentioned, weak evidence verdict.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.85,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.85,
+      "p35_reason": "The weight change is biased due to prestige bias, as the candidate's experience and skills are not being considered equally in relation to their academic background. The JD emphasizes the importance of 'putting into practice technical skills', which may favor candidates with prestigious educational institutions or companies, rather than those with relevant practical experience."
+    },
+    "cloud-native": {
+      "w_cv": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "No project anchor for cloud-native principles, weak evidence verdict.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    }
+  },
+  "scored_edges": {
+    "devops-engineer|cloud-native": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": -0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Temporal overlap between DevOps Engineer and Cloud Native roles, but no explicit mention of both skills together in the same role or project.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "full-stack-developer|competences-techniques": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.55,
+        "penalties": -0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "In the experience section, the candidate is mentioned as a Machine Learning Engineer at InstaDeep, which requires both Full Stack Developer and Compétences techniques skills.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "devops-engineer|competences-techniques": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.55,
+        "penalties": -0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "In the experience section, the candidate is mentioned as a Machine Learning Engineer at InstaDeep, which requires both DevOps Engineer and Compétences techniques skills.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "cloud-native|full-stack-developer": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": -0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No explicit mention of both skills together in the same role or project, but temporal overlap.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    }
+  },
+  "metadata": {
+    "skills_scored": 4,
+    "mean_score": 0.5,
+    "edges_scored": 4,
+    "mean_synergy": 0.5,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.5,
+      "max": 0.75,
+      "min": 0.25
+    },
+    "batches_ok": 1,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.5,
+      "max": 1.0,
+      "min": 0.25,
+      "above_1": 1,
+      "below_05": 2
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 4,
+    "nodes_with_bias": 3,
+    "nodes_corrected": 3,
+    "edges_audited": 0
+  }
+}

@@ -1,0 +1,375 @@
+{
+  "job_id": "job_81",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-05T15:09:11.943946",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 24.64,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.556,
+        "coverage_rate": 0.444,
+        "nodes_audited": 3,
+        "nodes_biased": 3
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.1002,
+    "edge_score": 0.1837,
+    "combined": 0.1336
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1174,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7511,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7536,
+    "matched_nodes": "1/9",
+    "edge_match_pct": 18.38
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1583,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1438,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.0951,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.7164,
+    "ndcg_10": 0.8925,
+    "map_score": 0.9068,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.2357,
+    "experience_density": 0.0809
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 10.72,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 11.37,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 12.05,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 85.39,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 2.85,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 1.62,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 1.0
+    },
+    "Tool": {
+      "count": 3,
+      "match_pct": 0.0,
+      "weight_sum": 2.771
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 1.0
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 29.2,
+      "weight_sum": 2.492
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 18.38,
+    "total_edges": 8,
+    "top_synergies": [
+      {
+        "edge_key": "data_analyst|python",
+        "source": "data_analyst",
+        "target": "python",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data_analyst|teamwork",
+        "source": "data_analyst",
+        "target": "teamwork",
+        "w_0": 0.5,
+        "w_cv": 0.72,
+        "w_cv_norm": 0.72,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "data_analyst|sql",
+        "source": "data_analyst",
+        "target": "sql",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data_analyst|power_bi",
+        "source": "data_analyst",
+        "target": "power_bi",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data_analyst|excel",
+        "source": "data_analyst",
+        "target": "excel",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Data Analyst",
+      "type": "Domain",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Power BI",
+      "type": "Tool",
+      "gap": 0.954,
+      "severity": "critical",
+      "importance": 0.954
+    },
+    {
+      "skill": "Excel",
+      "type": "Tool",
+      "gap": 0.817,
+      "severity": "critical",
+      "importance": 0.817
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Data Analyst",
+        "type": "Domain",
+        "gap": 1.0
+      },
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Power BI",
+        "type": "Tool",
+        "gap": 0.954
+      },
+      {
+        "label": "Excel",
+        "type": "Tool",
+        "gap": 0.817
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 3,
+    "nodes_with_bias": 3,
+    "edges_audited": 1,
+    "edges_with_bias": 1,
+    "bias_categories": {
+      "PRESTIGE": 2,
+      "GENDER_DIVERSITY": 2
+    },
+    "biased_nodes": [
+      {
+        "id": "problem_solving",
+        "label": "Problem Solving",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (Ecole Nationale d'Ingénieurs de Carthage ENICarthage) is not a top-tier institution, leading to an unfair decrease in the weight of problem-solving skills. A fairer assessment would consider the candidate's demonstrated skills and experience in problem-solving, rather than their university affiliation."
+      },
+      {
+        "id": "autonomy",
+        "label": "Autonomy",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (Ecole Nationale d'Ingénieurs de Carthage ENICarthage) is not as prestigious as expected. The mention of autonomy in the CV is not given sufficient weight, despite it being a key requirement in the job description. A fairer assessment would increase the weight to reflect the candidate's demonstrated ability to work autonomously."
+      },
+      {
+        "id": "teamwork",
+        "label": "Teamwork",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change for 'teamwork' skill is biased as it unfairly penalizes the candidate for mentioning teamwork skills in their CV, which is a valuable soft skill. This bias falls under gender/diversity bias category as it may disproportionately affect candidates from underrepresented groups who may have had to develop stronger teamwork skills to succeed in their careers. A correction factor of 1.20 is applied to increase the weight of this skill to its ideal value."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "data_analyst|teamwork",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_corrected": 0.72,
+        "reason": "The edge weight change from 0.8 to 0.6 unfairly penalizes the candidate for lacking explicit teamwork experience, despite mentioning being a great team worker in their resume summary. This is a classic example of gender/diversity bias, where soft skills like collaboration are undervalued. A fairer approach would be to consider the candidate's self-described teamwork skills and adjust the weight accordingly."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1174 (sous-qualifié), CTM=0.7511 (écart structurel élevé), match_pct=24.64% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.0951, ndcg_5=0.7164, missing_critical_penalty=0.0, combo_v6_final=10.72",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "5 gaps critiques identifiés",
+    "bias_note": "3 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 22,
+    "pool_size": 50,
+    "percentile": 0.5714,
+    "composite_z_score": -0.1747,
+    "tier": "Top 50%",
+    "z_scores": {
+      "combo_v6": -0.218,
+      "wf1": -0.602,
+      "gap_score": 0.359,
+      "ntcw": 0.332,
+      "match_pct": 0.256,
+      "ndcg_5": -1.934
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 12.852,
+        "std": 9.7967
+      },
+      "wf1": {
+        "mean": 0.0674,
+        "std": 0.1119
+      },
+      "gap_score": {
+        "mean": 0.0674,
+        "std": 0.0772
+      },
+      "ntcw": {
+        "mean": 0.0865,
+        "std": 0.0929
+      },
+      "match_pct": {
+        "mean": 21.8864,
+        "std": 10.7767
+      },
+      "ndcg_5": {
+        "mean": 0.8904,
+        "std": 0.0899
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

@@ -1,0 +1,242 @@
+{
+  "job_id": "job_125",
+  "cv_id": "cv_3",
+  "scored_nodes": {
+    "php-expert": {
+      "w_cv": 1.062,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.85
+      },
+      "active_red_flags": [
+        "ghost_skill"
+      ],
+      "rationale": "Based on the CV, there is no mention of PHP expertise, so the base score remains at 0.25. No bonuses or penalties apply.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO BIAS",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 1.062,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change is biased due to Halo Bias, where a single strong signal (lack of PHP expertise) is used to judge the entire profile. A more merit-based approach would consider multiple factors such as skills listed in the CV and experience relevant to the job description."
+    },
+    "full-stack-php-js-expert": {
+      "w_cv": 0.68,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.85
+      },
+      "active_red_flags": [
+        "ghost_skill"
+      ],
+      "rationale": "Based on the CV, there is no mention of expertise in PHP and JS full stack development, so the base score remains at 0.25. No bonuses or penalties apply.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.68,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "Mention of location may provide an unintended signal about socio-economic status or educational background, potentially influencing weight change."
+    },
+    "devops-developer": {
+      "w_cv": 0.85,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.85
+      },
+      "active_red_flags": [
+        "ghost_skill"
+      ],
+      "rationale": "Based on the CV, there is no mention of DevOps development skills, so the base score remains at 0.25. No bonuses or penalties apply.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "js-expertise": {
+      "w_cv": 0.85,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.85
+      },
+      "active_red_flags": [
+        "ghost_skill"
+      ],
+      "rationale": "Based on the CV, there is no mention of JS expertise, so the base score remains at 0.25. No bonuses or penalties apply.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "complex-projects-domain": {
+      "w_cv": 0.85,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.85
+      },
+      "active_red_flags": [],
+      "rationale": "Based on the CV, there is a mention of working on complex projects in the experience section, so the base score increases to 0.50.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    }
+  },
+  "scored_edges": {
+    "full-stack-php-js-expert|js-expertise": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.05,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "There is no direct evidence of both full-stack PHP/JS development and JS expertise being used together in the same project or role, but there is a temporal overlap with the candidate's experience as Game Developer & XR Designer. However, this synergy is not explicitly mentioned as being used together.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "full-stack-php-js-expert|php-expert": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.05,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "There is no direct evidence of both full-stack PHP/JS development and PHP expertise being used together in the same project or role, but there is a temporal overlap with the candidate's experience as Game Developer & XR Designer. However, this synergy is not explicitly mentioned as being used together.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "full-stack-php-js-expert|complex-projects-domain": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.25,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate has experience with complex projects in multiple domains (XR, AI, and web), which falls under the 'Expérience sur des Projets Complexes' category. The synergy is evident from their role as Game Developer & XR Designer.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "devops-developer|complex-projects-domain": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.25,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate has experience as a DevOps developer working on complex projects in multiple domains (XR, AI, and web), which falls under the 'Expérience sur des Projets Complexes' category. The synergy is evident from their role as Applications Programmer in Games & XR.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "devops-developer|full-stack-php-js-expert": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": -0.2,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence of both skills used together in the same role or project. The candidate has experience as a DevOps developer, but PHP/JS full stack development is not explicitly mentioned as being used together (cv_excerpt: none).",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "full-stack-php-js-expert|devops-developer": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": -0.2,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No direct evidence of both skills being used together in the same role or project (cv_excerpt: none).",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    }
+  },
+  "metadata": {
+    "skills_scored": 5,
+    "mean_score": 0.85,
+    "edges_scored": 6,
+    "mean_synergy": 0.333,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.333,
+      "max": 0.75,
+      "min": 0.0
+    },
+    "batches_ok": 1,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.85,
+      "max": 0.85,
+      "min": 0.85,
+      "above_1": 0,
+      "below_05": 0
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 3,
+    "nodes_with_bias": 2,
+    "nodes_corrected": 2,
+    "edges_audited": 0
+  }
+}

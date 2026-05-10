@@ -1,0 +1,306 @@
+{
+  "job_id": "job_22",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-05T09:00:17.653879",
+  "overall_assessment": {
+    "verdict": "Weak Match",
+    "match_pct": 54.02,
+    "confidence": {
+      "confidence_score": 0.96,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.143,
+        "coverage_rate": 1.0,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.6045,
+    "edge_score": 0.7108,
+    "combined": 0.647
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3966,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.4555,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Écart modéré"
+    },
+    "weighted_gap": 0.4598,
+    "matched_nodes": "3/7",
+    "edge_match_pct": 35.54
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.4251,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.562,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.3682,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9005,
+    "ndcg_10": 0.9486,
+    "map_score": 0.8767,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.3987,
+    "semantic_fit_score": 0.6627,
+    "experience_density": 0.2062
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 28.66,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 36.67,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 37.92,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 91.7,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 11.05,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 24.06,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 4,
+      "match_pct": 34.3,
+      "weight_sum": 3.125
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 13.1,
+      "weight_sum": 0.682
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 41.9,
+      "weight_sum": 0.562
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 11.3,
+      "weight_sum": 0.406
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 35.54,
+    "total_edges": 7,
+    "top_synergies": [
+      {
+        "edge_key": "net-cloud-development|azure-cloud-architect",
+        "source": "net-cloud-development",
+        "target": "azure-cloud-architect",
+        "w_0": 0.6,
+        "w_cv": 0.883,
+        "w_cv_norm": 0.442,
+        "match_pct": 73.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "azure-cloud-architect|net-cloud-development",
+        "source": "azure-cloud-architect",
+        "target": "net-cloud-development",
+        "w_0": 0.65,
+        "w_cv": 0.8,
+        "w_cv_norm": 0.4,
+        "match_pct": 61.5,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "azure-cloud-architect|devsecops-pipeline",
+        "source": "azure-cloud-architect",
+        "target": "devsecops-pipeline",
+        "w_0": 0.85,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 44.1,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devsecops-pipeline|azure-cloud-architect",
+        "source": "devsecops-pipeline",
+        "target": "azure-cloud-architect",
+        "w_0": 0.8,
+        "w_cv": 0.741,
+        "w_cv_norm": 0.37,
+        "match_pct": 46.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "azure-cloud-architect|terraform-infrastructure",
+        "source": "azure-cloud-architect",
+        "target": "terraform-infrastructure",
+        "w_0": 0.75,
+        "w_cv": 0.722,
+        "w_cv_norm": 0.361,
+        "match_pct": 48.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "DevSecOps",
+      "type": "Tool",
+      "gap": 0.71,
+      "severity": "critical",
+      "importance": 0.987
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "DevSecOps",
+        "type": "Tool",
+        "gap": 0.71
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 5,
+    "nodes_with_bias": 5,
+    "edges_audited": 1,
+    "edges_with_bias": 1,
+    "bias_categories": {
+      "PROXY": 5,
+      "HALO": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "azure-cloud-architect",
+        "label": "Azure",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.928,
+        "reason": "The CV's explicit mention of '4x Azure' strongly influenced the weighting increase, suggesting a proxy bias towards candidates with demonstrable Azure expertise, even if it wasn't the primary focus of the role. While Arslaan's skills in GCP and AWS are relevant, the prioritization of Azure is an undue weight given the JD's emphasis on broader cloud architecture principles and experience. A fair alternative would involve a more holistic assessment of skills and experience, not disproportionately rewarding specific platforms."
+      },
+      {
+        "id": "devsecops-pipeline",
+        "label": "DevSecOps",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.553,
+        "reason": "The CV's emphasis on location (Pune, Maharashtra, India) and language skills (English, Hindi) alongside technical skills contributes to a PROXY BIAS. The JD implicitly favors candidates from well-established tech hubs, potentially overlooking talented individuals in regions like India. While Arslaan’s skills are relevant, the JD’s focus on ‘entreprise leader dans le domaine de la technologie’ could weight location heavily, unfairly penalizing candidates from areas outside of these established centers. A fair alternative would be to assess skills and experience regardless of geographical origin, focusing solely on demonstrated competencies and certifications."
+      },
+      {
+        "id": "terraform-infrastructure",
+        "label": "Terraform",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.516,
+        "reason": "The CV explicitly lists experience with Terraform as part of a suite of DevOps tools, alongside Azure, AWS, and GCP, suggesting practical application. However, the weight reduction (-0.07) likely reflects a proxy bias – specifically, the candidate's location in Pune, Maharashtra, India, and their multilingual background (English & Hindi), which might be perceived as less aligned with the primary target market and technical focus (Microsoft Azure) detailed in the job description. The JD emphasizes a strong Azure skillset, potentially leading to a preference for candidates based in regions with higher Azure adoption. The CV demonstrates relevant skills, but the contextual weight decrease signals an unfair disadvantage due to geographic and linguistic factors, impacting the overall score."
+      },
+      {
+        "id": "architecture-applicative",
+        "label": "Architecture Applicative",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The substantial decrease in weight (w_0 from 0.682 to 0.35) is likely due to a halo effect. Arslaan’s summary heavily emphasizes a ‘strong interest’ about software architecture – a general, non-technical aspiration – while highlighting numerous concrete DevOps skills like GCP, Azure, and Kubernetes, which are clearly more relevant to the job description. The JD specifically calls for ‘Architecture Applicative’ expertise, and this interest statement doesn’t demonstrate that expertise, merely a desire to learn it. This inflated interest, coupled with the numerous DevOps skills, incorrectly elevated the candidate’s profile beyond a baseline expectation for the role, thus penalizing a fair assessment based purely on the defined technical requirements."
+      },
+      {
+        "id": "cloud-architect-role",
+        "label": "architecte cloud expérimenté",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The CV heavily emphasizes skills and certifications within Google Cloud Platform (GCP) and Microsoft Azure, while the job description specifically requests experience with Azure. This proxy bias reflects a preference for candidates with demonstrable expertise in GCP, potentially overlooking strong candidates proficient in Azure – a significant technical requirement. The decrease in weight (-0.106) suggests a disproportionate weighting of GCP skills compared to the overall requirements, indicating an unfair disadvantage for Azure-focused individuals. A fair alternative would be to equally assess skills across all listed technologies within the JD."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "azure-cloud-architect|microsoft-ecosystem",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The candidate's CV prominently lists Google Cloud Platform skills, while the job description explicitly prioritizes the Microsoft ecosystem. The reduced weight (0.6) suggests a proxy bias favoring candidates with experience in GCP due to the absence of direct Azure experience, despite the JD's strong emphasis on the Microsoft ecosystem. A fairer alternative would have been a weighting that reflects a broader range of cloud skills or a more nuanced assessment of the candidate's adaptability."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3966 (sous-qualifié), CTM=0.4555 (écart structurel modéré), match_pct=54.02% → Weak Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.3682, ndcg_5=0.9005, missing_critical_penalty=0.0, combo_v6_final=28.66",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "1 gaps critiques identifiés",
+    "bias_note": "5 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.96)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

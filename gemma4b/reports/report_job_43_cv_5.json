@@ -1,0 +1,354 @@
+{
+  "job_id": "job_43",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-03T00:50:56.155685",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 34.46,
+    "confidence": {
+      "confidence_score": 0.61,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.571,
+        "coverage_rate": 0.714,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.4653,
+    "edge_score": 0.7117,
+    "combined": 0.5638
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.262,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6589,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6554,
+    "matched_nodes": "0/7",
+    "edge_match_pct": 35.59
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2671,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.6912,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.2407,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1429,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.8309,
+    "weighted_recall": 0.0877,
+    "weighted_f1": {
+      "value": 0.1674,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5205,
+    "missing_critical_penalty": {
+      "value": 0.2,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8569,
+    "ndcg_10": 0.962,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.3532,
+    "semantic_fit_score": 0.5361,
+    "experience_density": 0.1973
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 34.1,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 38.45,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 31.96,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 94.28,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 42.37,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 37.22,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 37.22,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 2,
+      "match_pct": 9.1,
+      "weight_sum": 1.969
+    },
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 33.5,
+      "weight_sum": 1.626
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 38.3,
+      "weight_sum": 1.461
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 11.2,
+      "weight_sum": 0.88
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 35.59,
+    "total_edges": 5,
+    "top_synergies": [
+      {
+        "edge_key": "python_skill|data_analyst_domain",
+        "source": "python_skill",
+        "target": "data_analyst_domain",
+        "w_0": 0.85,
+        "w_cv": 0.893,
+        "w_cv_norm": 0.447,
+        "match_pct": 52.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "statistical_analysis_hardskill|data_analyst_domain",
+        "source": "statistical_analysis_hardskill",
+        "target": "data_analyst_domain",
+        "w_0": 0.65,
+        "w_cv": 0.793,
+        "w_cv_norm": 0.397,
+        "match_pct": 61.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data_extraction_domain|data_analyst_domain",
+        "source": "data_extraction_domain",
+        "target": "data_analyst_domain",
+        "w_0": 0.55,
+        "w_cv": 0.645,
+        "w_cv_norm": 0.323,
+        "match_pct": 58.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "excel_tool|data_analyst_domain",
+        "source": "excel_tool",
+        "target": "data_analyst_domain",
+        "w_0": 0.75,
+        "w_cv": 0.614,
+        "w_cv_norm": 0.307,
+        "match_pct": 41.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "sql_skill|data_analyst_domain",
+        "source": "sql_skill",
+        "target": "data_analyst_domain",
+        "w_0": 0.95,
+        "w_cv": 0.608,
+        "w_cv_norm": 0.304,
+        "match_pct": 32.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 0.912,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.627,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Microsoft Excel",
+      "type": "Tool",
+      "gap": 0.875,
+      "severity": "critical",
+      "importance": 0.969
+    },
+    {
+      "skill": "compétences avancées",
+      "type": "Soft Skill",
+      "gap": 0.767,
+      "severity": "critical",
+      "importance": 0.88
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "gap": 0.912
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.627
+      },
+      {
+        "label": "Microsoft Excel",
+        "type": "Tool",
+        "gap": 0.875
+      },
+      {
+        "label": "compétences avancées",
+        "type": "Soft Skill",
+        "gap": 0.767
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 7,
+    "nodes_with_bias": 7,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "C": 3,
+      "PRESTIGE BIAS": 2,
+      "HALO BIAS": 1,
+      "PRESTIGE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "sql_skill",
+        "label": "SQL",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.175,
+        "reason": "The weight change from 1.0 to 0.25 for 'sql_skill' is likely biased due to AGEISM. The CV describes a complex research project involving geometric deep learning and shape morphometrics, primarily focused on a specific application of Deep Graph CNNs rather than demonstrating general SQL proficiency. The JD explicitly lists SQL as a required skill, yet the CV’s research output doesn't demonstrate practical SQL usage. A fair alternative would be to assess SQL skills through a coding exercise or by requiring the candidate to demonstrate SQL experience relevant to data analysis, adjusting the weight accordingly to reflect the emphasis of the role.  The absence of SQL in the context of a data analyst role, particularly one focused on advanced deep learning, suggests an over-reliance on university prestige (institution/project name) as a proxy for relevant skills."
+      },
+      {
+        "id": "python_skill",
+        "label": "Python",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.746,
+        "reason": "The CV highlights a prestigious internship at InstaDeep, a highly regarded organization in the Machine Learning space, particularly for Deep Learning applications. While Python skills are present, the CV's emphasis on the InstaDeep project and a Deep Learning internship at ICube, alongside a highly specialized academic project focusing on Geometric Deep Learning, likely inflated the perceived value of Python skills compared to a more generic 'Data Analyst' role described in the JD. This creates a prestige bias where the applicant's association with a top-tier institution and project is unduly weighting Python skills above demonstrated proficiency as a data analyst. A fair alternative would be to reduce the weight based on the specific context of the role and the demonstrated analytical skills."
+      },
+      {
+        "id": "excel_tool",
+        "label": "Microsoft Excel",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV highlights a highly specialized research project focusing on Deep Learning and geometric deep learning within a prestigious academic institution (INSAT). The JD explicitly lists Microsoft Excel as a required skill, but the CV does not mention any Excel usage. This suggests the algorithm is unfairly penalizing candidates without direct experience in Excel, prioritizing the prestige of the university and the advanced, specialized research area over the basic tool proficiency outlined in the job description. A fair alternative would be to assess Excel skills independently, focusing on demonstrable skills rather than institutional affiliation or highly specialized research areas."
+      },
+      {
+        "id": "data_analyst_domain",
+        "label": "Data Analyst",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.041,
+        "reason": "The weight change (0.953 to 0.833) indicates a decrease, and the rationale highlights a strong emphasis on the candidate's background as a Machine Learning Engineer at InstaDeep, which leverages deep learning and geometric deep learning techniques. While relevant for the role, the CV’s focus on a highly specialized, research-oriented internship (‘Alzheimer’s Disease Classification’) introduces a prestige bias – prioritizing a specific advanced deep learning project over broader data analysis skills implicitly suggested by the JD. The candidate's project, while impressive, might not represent the core daily tasks or expected skills as outlined in the job description, thus unfairly penalizing a well-qualified candidate. A fairer alternative would be to give more weight to overall experience in data analysis and the demonstrated proficiency with SQL, Python, and Excel, which align more closely with the JD's requirements."
+      },
+      {
+        "id": "advanced_skills_softskill",
+        "label": "compétences avancées",
+        "bias_category": "HALO BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The CV heavily emphasizes Heni Loukil's role at InstaDeep and their internship at ICube, highlighting impressive deep learning projects. This creates a 'halo' effect, unfairly weighting the score due to the prestige and advanced nature of these projects, overshadowing potentially less demonstrable skills or the lack of concrete examples in the provided data. The JD mentions desirable skills like SQL and Python, but the CV’s focus on cutting-edge deep learning disproportionately impacts the score, leading to a bias against candidates with broader, perhaps less flashy, skillsets. A fairer alternative would be to weight the core analytical skills mentioned in the JD equally, while still acknowledging the advanced projects but not allowing them to dominate the overall score."
+      },
+      {
+        "id": "statistical_analysis_hardskill",
+        "label": "analyse statistique",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.546,
+        "reason": "The weight increase is likely driven by the prestige associated with InstaDeep and the specific academic project – 'Alzheimer's Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning.' The project's complex, advanced statistical methods (Kendall’s definition, Dense vector fields, geodesic distances) are highly specialized and may be overvalued compared to more broadly applicable statistical skills. A fair alternative would be to weight skill demonstrated through the project's impact— exceeding state of the art methods—rather than the name of the institution or the specific methodology employed, which suggests a prestige bias. While the technical achievement is valuable, emphasizing the institution adds an unnecessary layer of bias, potentially overshadowing comparable candidates from less well-known, but equally skilled, backgrounds."
+      },
+      {
+        "id": "data_extraction_domain",
+        "label": "extraction de données",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.25,
+        "reason": "This weight change indicates a potential ageism bias (C) due to the emphasis on the graduation year (2020-2024) and the specific project description - 'Alzheimer's Disease Classification Using Geometric Deep Learning'. While the candidate demonstrates advanced skills in deep learning, the project description, combined with the relatively recent graduation date, may be unfairly penalizing the candidate for lacking 'current' experience relative to what the system deems ideal for this role. A fair alternative would be to weight experience and skills equally, regardless of graduation year. The Delta of -0.175 reflects this disproportionate impact."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.262 (sous-qualifié), CTM=0.6589 (écart structurel élevé), match_pct=34.46% → Poor Match",
+    "v6_summary": "weighted_f1=0.1674, gap_score=0.2407, ndcg_5=0.8569, missing_critical_penalty=0.2, combo_v6_final=34.1",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "4 gaps critiques identifiés",
+    "bias_note": "7 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.61)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

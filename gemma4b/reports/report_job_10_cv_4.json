@@ -1,0 +1,452 @@
+{
+  "job_id": "job_10",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-03T13:43:40.094537",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 29.38,
+    "confidence": {
+      "confidence_score": 0.76,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.692,
+        "coverage_rate": 0.923,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.428,
+    "edge_score": 0.4324,
+    "combined": 0.4298
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2326,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7076,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7062,
+    "matched_nodes": "0/13",
+    "edge_match_pct": 21.61
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2377,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.4324,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2252,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8671,
+    "ndcg_10": 0.9298,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.3072,
+    "semantic_fit_score": 0.3698,
+    "experience_density": 0.194
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 20.0,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 24.64,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 21.95,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 94.68,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 6.76,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 19.24,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 9.0,
+      "weight_sum": 1.797
+    },
+    "Tool": {
+      "count": 6,
+      "match_pct": 24.7,
+      "weight_sum": 5.942
+    },
+    "Responsibility": {
+      "count": 1,
+      "match_pct": 22.5,
+      "weight_sum": 1.0
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 16.3,
+      "weight_sum": 1.567
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 28.0,
+      "weight_sum": 1.479
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 21.61,
+    "total_edges": 9,
+    "top_synergies": [
+      {
+        "edge_key": "teamwork|data_scientist_econometrics_stat",
+        "source": "teamwork",
+        "target": "data_scientist_econometrics_stat",
+        "w_0": 0.7,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.3,
+        "match_pct": 42.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "sas_data_scientist|data_scientist_econometrics_stat",
+        "source": "sas_data_scientist",
+        "target": "data_scientist_econometrics_stat",
+        "w_0": 0.9,
+        "w_cv": 0.542,
+        "w_cv_norm": 0.271,
+        "match_pct": 30.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "numpy_data_scientist|data_scientist_econometrics_stat",
+        "source": "numpy_data_scientist",
+        "target": "data_scientist_econometrics_stat",
+        "w_0": 0.85,
+        "w_cv": 0.506,
+        "w_cv_norm": 0.253,
+        "match_pct": 29.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "pandas_data_scientist|data_scientist_econometrics_stat",
+        "source": "pandas_data_scientist",
+        "target": "data_scientist_econometrics_stat",
+        "w_0": 0.9,
+        "w_cv": 0.469,
+        "w_cv_norm": 0.234,
+        "match_pct": 26.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "matplotlib_data_scientist|data_scientist_econometrics_stat",
+        "source": "matplotlib_data_scientist",
+        "target": "data_scientist_econometrics_stat",
+        "w_0": 0.65,
+        "w_cv": 0.435,
+        "w_cv_norm": 0.217,
+        "match_pct": 33.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "NumPy",
+      "type": "Tool",
+      "gap": 0.719,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Pandas",
+      "type": "Tool",
+      "gap": 0.756,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Matplotlib",
+      "type": "Tool",
+      "gap": 0.79,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Scikit-learn",
+      "type": "Tool",
+      "gap": 0.775,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Seaborn",
+      "type": "Tool",
+      "gap": 0.793,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Data Scientist",
+      "type": "Responsibility",
+      "gap": 0.775,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "SAS",
+      "type": "Tool",
+      "gap": 0.624,
+      "severity": "critical",
+      "importance": 0.942
+    },
+    {
+      "skill": "Machine Learning",
+      "type": "Domain",
+      "gap": 0.698,
+      "severity": "critical",
+      "importance": 0.785
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "NumPy",
+        "type": "Tool",
+        "gap": 0.719
+      },
+      {
+        "label": "Pandas",
+        "type": "Tool",
+        "gap": 0.756
+      },
+      {
+        "label": "Matplotlib",
+        "type": "Tool",
+        "gap": 0.79
+      },
+      {
+        "label": "Scikit-learn",
+        "type": "Tool",
+        "gap": 0.775
+      },
+      {
+        "label": "Seaborn",
+        "type": "Tool",
+        "gap": 0.793
+      },
+      {
+        "label": "Data Scientist",
+        "type": "Responsibility",
+        "gap": 0.775
+      },
+      {
+        "label": "SAS",
+        "type": "Tool",
+        "gap": 0.624
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 12,
+    "nodes_with_bias": 11,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 10,
+      "B": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "numpy_data_scientist",
+        "label": "NumPy",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The CV's emphasis on design, robotics, and hardware development, coupled with the applicant’s background in industrial product design, suggests a skillset that is not directly aligned with the stated requirements of a data scientist specializing in econometrics and statistics. The experience bonus is likely reflecting an attempt to justify a lower weighting due to the candidate's non-traditional background. While numerical computation skills are implied through the mention of NumPy, the primary focus of the CV – hardware design and robotics – is a proxy for a broader skillset that is less relevant to the advertised role, resulting in a decreased weighting."
+      },
+      {
+        "id": "pandas_data_scientist",
+        "label": "Pandas",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.488,
+        "reason": "The candidate's CV highlights a diverse range of skills and experiences – robotics, product development, and design – which, while impressive, are not directly aligned with the specific requirements of a ‘Pandas Data Scientist’ role focused on econometrics and statistical modeling, as outlined in the job description. The mention of multiple languages (English, German, Tamil) and location in Bengaluru, India, introduces a proxy bias, reflecting socioeconomic factors that might unfairly penalize the candidate. While relevant technical skills are listed, the broader skillset presented is not a primary focus for this specific role, hence a moderate reduction in weight is warranted."
+      },
+      {
+        "id": "matplotlib_data_scientist",
+        "label": "Matplotlib",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.42,
+        "reason": "This weight change (Delta: -0.400) suggests a penalty primarily due to the candidate’s CV indicating proficiency in Tamil and German, alongside location (Bengaluru, India) and prior experience in Robotics and Product Design roles at companies based in India.  This proxy bias reflects a potential preference for candidates with a Western-centric technical background, favoring skills and locations more aligned with the JD’s emphasis on econometrics and statistical analysis, which are traditionally concentrated in European and North American markets.  The candidate’s strong engineering background and robotics experience, while valuable, were not directly relevant to the core data science requirements, triggering a bias in the algorithm. A fair alternative would be to weight the candidate's skills and experience based solely on their demonstrated expertise in Python, R, SAS, and machine learning, disregarding geographical location or language skills."
+      },
+      {
+        "id": "scikit_learn_data_scientist",
+        "label": "Scikit-learn",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The candidate's experience heavily emphasizes robotics and hardware development, particularly in the context of Dognosis, which utilizes olfactory technology and sensor development. While relevant to data science, the JD focuses on econometrics and broad statistical skills, and the candidate's background is predominantly in engineering, specifically hardware and robot design. This creates a disconnect – the candidate’s skills are heavily weighted due to the focus on automation and a tech-heavy role, indicating a proxy bias related to location (India) and socioeconomic signals (robotics industry experience) that isn’t directly related to the core statistical and machine learning skills outlined in the job description.  A correction factor of 0.75 reflects this mismatch, recognizing the applicant’s skills aren’t a perfect fit for the stated requirements.  The substantial decrease in weight reflects the need to recalibrate against a more directly relevant skillset."
+      },
+      {
+        "id": "seaborn_data_scientist",
+        "label": "Seaborn",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.413,
+        "reason": "The candidate's CV prominently features skills and experience outside of data science (Robotics, Product Design, 3D Printing) alongside their Mechanical Engineering background. The primary language of the CV is English, while the JD focuses on a French-speaking context. This suggests a proxy bias based on location and communication skills, unfairly penalizing the candidate for their broader technical background and potentially their non-native English proficiency. A fair alternative would be to assess the candidate's core data science skills and experience without weighting the diverse, yet tangential, aspects of their profile."
+      },
+      {
+        "id": "data_scientist_econometrics_stat",
+        "label": "Data Scientist",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The candidate's CV prominently highlights languages (English, German, Tamil) and location (Bengaluru, India) in addition to their technical skills. This suggests a proxy bias based on socioeconomic signals and potentially geographic origin, as the JD focuses on specific technical skills and experience rather than language proficiency or location-based factors. The candidate's background in robotics and design, while potentially relevant, is significantly outweighed by the inclusion of language skills and location information, penalizing them for factors outside their core competencies.  A fair alternative would prioritize the candidate's engineering and design experience related to robotic systems and automation, discounting the non-essential language details."
+      },
+      {
+        "id": "sas_data_scientist",
+        "label": "SAS",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.635,
+        "reason": "This weight change (decrease) is likely driven by the inclusion of a SAS certification on the CV, which is not directly relevant to the job description’s stated requirements for econometrics and applied statistics. The candidate's background is primarily in robotics engineering and hardware development, indicating a focus on physical products and automation rather than data analysis. The candidate’s CV highlights skills in languages other than English (Tamil, German) and geographical location (India) which are proxy signals of socioeconomic status and potentially, origin, rather than directly related to the stated data science role.  Therefore, the weight reduction reflects a bias towards a specific certification outside the core skillset, indicating a preference for candidates with a different technical background."
+      },
+      {
+        "id": "data_science_methodology",
+        "label": "méthodologie",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.405,
+        "reason": "The significant decrease in weighting (w_cv from 0.797 to 0.54) is likely driven by the candidate's background in robotics engineering and design, which doesn't directly align with the stated requirements of ‘économétrie et statistique appliquée’ (econometrics and applied statistics) and the specific tools listed in the JD (Python, R, SAS). The CV's emphasis on manufacturing, 3D printing, and hardware development, coupled with the candidate's location in Bengaluru, India, introduces a proxy bias – valuing a skillset relevant to a different industry and geographic location. While adaptable skills are valuable, the system is unduly penalizing the candidate for not possessing the exact technical skills required for the specific data science role as defined in the job description."
+      },
+      {
+        "id": "data_science_domain",
+        "label": "data science",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.479,
+        "reason": "The candidate’s CV prominently features skills outside of data science (product design, robotics engineering, 3D modeling) and language abilities (Tamil, German). While these skills could be valuable in a data science role, the emphasis on these areas, particularly the location and language skills, likely reflects socioeconomic proxies—specifically, originating from Bengaluru, India—which might unintentionally penalize the candidate.  The substantial weighting reduction suggests an unfair negative impact due to signals outside of demonstrated data science expertise. A fairer alternative would be to focus solely on the candidate’s technical skills and experience relevant to data science."
+      },
+      {
+        "id": "communication_effective",
+        "label": "Communication Efficace",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "This evaluation indicates a bias towards gender/diversity due to the penalized communication weight. The CV explicitly states 'Bringing ideas into reality' and ‘areas of interests lie within Engineering, Design, Product Development and Industrial Product design,’ suggesting a role requiring strong communication skills, yet the application lacks concrete examples of communication skills. The profile focuses heavily on technical and design skills, with languages listed as skills, potentially highlighting a diverse background rather than an emphasis on communication abilities. A correction factor of 0.75 is appropriate given the moderate confidence in the contextual mention and the intensity bonus applied for the central role described, indicating a reasonable decrease due to the lack of demonstrated communication skills rather than a systemic bias."
+      },
+      {
+        "id": "machine_learning",
+        "label": "Machine Learning",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.175,
+        "reason": "The machine learning skill is listed as a top skill despite a lack of supporting evidence within the CV. This suggests a proxy bias, where the presence of ‘machine learning’ triggered a reduction in score due to the CV’s focus on robotics, hardware design, and engineering roles – areas that are less directly aligned with the JD’s emphasis on econometrics and statistical analysis. The applicant's experience is primarily in robotics and hardware development, not directly leveraging machine learning techniques in a way that demonstrates proficiency. Therefore, the skill is unfairly penalized, indicating a proxy bias driven by the CV’s content."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2326 (sous-qualifié), CTM=0.7076 (écart structurel élevé), match_pct=29.38% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.2252, ndcg_5=0.8671, missing_critical_penalty=0.0, combo_v6_final=20.0",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "9 gaps critiques identifiés",
+    "bias_note": "11 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.76)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

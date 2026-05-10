@@ -1,0 +1,556 @@
+{
+  "job_id": "job_23",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-05T10:13:13.747557",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 30.29,
+    "confidence": {
+      "confidence_score": 0.48,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.609,
+        "coverage_rate": 0.565,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.3415,
+    "edge_score": 0.2467,
+    "combined": 0.3036
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1984,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6793,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6971,
+    "matched_nodes": "2/23",
+    "edge_match_pct": 12.36
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1928,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.2467,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1774,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.5382,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.719,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.6631,
+    "ndcg_10": 0.7743,
+    "map_score": 0.7506,
+    "mrr_score": 0.3333,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.3773,
+    "experience_density": 0.1353
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 16.59,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 16.35,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 20.3,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 61.13,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 26.95,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 25.32,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 24.28,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Responsibility": {
+      "count": 1,
+      "match_pct": 8.2,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 9,
+      "match_pct": 17.9,
+      "weight_sum": 7.275
+    },
+    "Tool": {
+      "count": 11,
+      "match_pct": 14.5,
+      "weight_sum": 9.161
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 50.7,
+      "weight_sum": 0.784
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 12.36,
+    "total_edges": 16,
+    "top_synergies": [
+      {
+        "edge_key": "full-stack-development-experience|javascript-development",
+        "source": "full-stack-development-experience",
+        "target": "javascript-development",
+        "w_0": 0.95,
+        "w_cv": 0.363,
+        "w_cv_norm": 0.181,
+        "match_pct": 19.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "full-stack-development-experience|typescript-development",
+        "source": "full-stack-development-experience",
+        "target": "typescript-development",
+        "w_0": 0.9,
+        "w_cv": 0.306,
+        "w_cv_norm": 0.153,
+        "match_pct": 17.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "full-stack-development-experience|python-development",
+        "source": "full-stack-development-experience",
+        "target": "python-development",
+        "w_0": 0.8,
+        "w_cv": 0.288,
+        "w_cv_norm": 0.144,
+        "match_pct": 18.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "full-stack-development-experience|java-development",
+        "source": "full-stack-development-experience",
+        "target": "java-development",
+        "w_0": 0.75,
+        "w_cv": 0.269,
+        "w_cv_norm": 0.135,
+        "match_pct": 17.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "full-stack-development-experience|symfony-framework",
+        "source": "full-stack-development-experience",
+        "target": "symfony-framework",
+        "w_0": 0.65,
+        "w_cv": 0.269,
+        "w_cv_norm": 0.135,
+        "match_pct": 20.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Full-Stack Development",
+      "type": "Responsibility",
+      "gap": 0.918,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 0.719,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "TypeScript",
+      "type": "Hard Skill",
+      "gap": 0.775,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.793,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Java/JAVA EE",
+      "type": "Hard Skill",
+      "gap": 0.812,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Laravel",
+      "type": "Tool",
+      "gap": 0.831,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Symfony",
+      "type": "Tool",
+      "gap": 0.812,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "WordPress",
+      "type": "Tool",
+      "gap": 0.812,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Magento 2",
+      "type": "Tool",
+      "gap": 0.799,
+      "severity": "critical",
+      "importance": 0.987
+    },
+    {
+      "skill": "Kubernetes",
+      "type": "Tool",
+      "gap": 0.904,
+      "severity": "critical",
+      "importance": 0.986
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Full-Stack Development",
+        "type": "Responsibility",
+        "gap": 0.918
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 0.719
+      },
+      {
+        "label": "TypeScript",
+        "type": "Hard Skill",
+        "gap": 0.775
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.793
+      },
+      {
+        "label": "Java/JAVA EE",
+        "type": "Hard Skill",
+        "gap": 0.812
+      },
+      {
+        "label": "Laravel",
+        "type": "Tool",
+        "gap": 0.831
+      },
+      {
+        "label": "Symfony",
+        "type": "Tool",
+        "gap": 0.812
+      },
+      {
+        "label": "WordPress",
+        "type": "Tool",
+        "gap": 0.812
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 21,
+    "nodes_with_bias": 21,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "C": 10,
+      "PROXY": 9,
+      "D": 1,
+      "PRESTIGE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "full-stack-development-experience",
+        "label": "Full-Stack Development",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.163,
+        "reason": "The significant decrease in weight (from 1.0 to 0.25) for 'full-stack-development-experience' is likely due to a bias against skills not explicitly mentioned in the CV. While the JD strongly emphasizes full-stack expertise, the CV primarily details experience in telecommunications engineering (Nokia BTS, Huawei equipment), focusing on networking and technical support rather than web development. This proxies a lack of relevant experience, unfairly penalizing the candidate for not highlighting those skills and emphasizing a different technical background. A fair alternative would be to acknowledge the transferable skills and consider the candidate’s potential to learn, rather than dismissing the core skill entirely."
+      },
+      {
+        "id": "javascript-development",
+        "label": "JavaScript",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "This evaluation reveals a Proxy Bias due to the prominence of the candidate's location (Tamil Nadu, India) and the specific companies they've worked with (Nokia, Huawei, Inteltec). While experience with these technologies is relevant, the CV heavily emphasizes this geographic and company-specific background, potentially overshadowing the candidate's JavaScript development skills, which are explicitly listed in the job description. The candidate’s profile focuses on telecom engineering and support, which doesn't fully align with the full-stack developer requirements, leading to an unfairly reduced weighting. A fairer alternative would prioritize skills and experience directly related to the specified technologies (NextJs, Strapi, PHP, etc.) while acknowledging the broader experience."
+      },
+      {
+        "id": "typescript-development",
+        "label": "TypeScript",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The candidate's experience is heavily skewed by the location (Tamil Nadu, India) and employer (Movate Network Integration Engineer). While relevant experience, the JD specifically lists NextJs and Strapi CMS as desired skills, and this candidate's CV primarily details work with Nokia BTS integration – a technology area significantly different. This suggests a proxy bias based on location and employer, inadvertently penalizing the candidate for not having experience with the technologies explicitly named in the JD, and favouring the location which is not a merit based consideration."
+      },
+      {
+        "id": "python-development",
+        "label": "Python",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.413,
+        "reason": "The CV's emphasis on location (Tamil Nadu, India) and employer (Nokia/T-Mobile US) introduces a proxy bias. While experience with Nokia and T-Mobile is valuable, the location strongly correlates with socioeconomic status and potentially geographic talent pools. This could unfairly penalize candidates from regions outside the targeted area, even if they possess the requisite skills. Furthermore, the limited context provided by the 1-year 'Experience Movate Network Integration Engineer' role makes it difficult to assess the Python proficiency fully. A fair alternative would be to weight skills and project experience more heavily than location-based signals."
+      },
+      {
+        "id": "java-development",
+        "label": "Java/JAVA EE",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The candidate's CV heavily emphasizes location (Tamil Nadu, India) and prior employment with Nokia (T-Mobile US client) – both strong signals of relevant experience. While the role itself requires Java development skills, the JD's emphasis on skills alongside these signals, coupled with the limited experience, suggests a proxy bias favoring candidates from locations and companies already associated with the required technologies. A correction factor of 0.75 aims to mitigate this by reducing the penalty due to location, acknowledging the demonstrable technical skills gained within a relevant project."
+      },
+      {
+        "id": "laravel-framework",
+        "label": "Laravel",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.338,
+        "reason": "The candidate's experience is heavily weighted towards locations (Tamil Nadu, India) and companies (Nokia, Movate) which are indicative of socioeconomic status and potentially correlated with access to certain types of technology roles. While the candidate possesses relevant technical skills, the prominence of these proxy signals suggests a bias favoring candidates from specific geographical regions and companies, unfairly discounting candidates with comparable skills but different backgrounds. A reduced weight reflects this proxy bias."
+      },
+      {
+        "id": "symfony-framework",
+        "label": "Symfony",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The candidate's experience heavily relies on location (Tamil Nadu, India) and specific vendor relationships (Nokia, Huawei) indicated within the CV, suggesting a proxy bias driven by geographic proximity or client-specific expertise. The job description focuses on broad full-stack skills and technologies, while the candidate’s CV prioritizes these location-dependent details. A lower weight is warranted to reduce the influence of these signals, emphasizing demonstrable technical skills and project outcomes instead. This represents an unfair advantage based on where the candidate is located."
+      },
+      {
+        "id": "wordpress-cms",
+        "label": "WordPress",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The candidate's CV heavily emphasizes location (Tamil Nadu, India) and their work with Nokia (T-Mobile US client), which are socioeconomic signals rather than direct skill evidence. This proxy bias reflects an overemphasis on geographic origin and a specific client association, potentially disadvantaging candidates from other locations or without similar client experience. While experience with Nokia is relevant, the prominence of location introduces an unfair weighting influenced by external factors, not technical capabilities. A fair alternative would prioritize demonstrable skills and project outcomes, reducing the influence of geographic location."
+      },
+      {
+        "id": "magento-2-cms",
+        "label": "Magento 2",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The significant weight decrease (Delta = -0.487) is likely driven by the candidate's location (Tamil Nadu, India) and brief mention of 'Working w...Movate Network Integration Engineer'. This proxy signal – socioeconomic status based on location – unfairly penalizes the candidate, suggesting a bias towards candidates located in higher-income regions (like the T-Mobile US client context). A fair alternative would consider skills and experience regardless of geographical origin, focusing solely on the technical skills and experience listed in the CV."
+      },
+      {
+        "id": "kubernetes-containerization",
+        "label": "Kubernetes",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.163,
+        "reason": "This is a MEDIUM severity bias due to AGEISM. The CV primarily focuses on skills and experience related to telecommunications engineering and network troubleshooting, neglecting the explicit mention of Docker and Kubernetes, which are critical technologies listed in the JD for a full-stack development role. The candidate's background heavily emphasizes electrical engineering and telecom, suggesting a mismatch in skillset despite possessing some foundational technical experience. A fair alternative would be to adjust the weight downward to reflect the lack of relevant containerization skills, but not to eliminate it entirely, acknowledging the candidate's broader technical background."
+      },
+      {
+        "id": "docker_tool",
+        "label": "Docker",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant weight decrease (-0.731) for 'docker_tool' is likely due to a lack of explicit mention within the CV. The job description heavily emphasizes modern full-stack technologies like NextJS and Strapi CMS, implying a focus on contemporary development practices where Docker is frequently used for containerization and CI/CD. The CV primarily highlights legacy telecommunications experience (Nokia BTS, Huawei) and broad electrical engineering skills, presenting a mismatch with the JD’s required technologies. A fair alternative would be to adjust the weight based on demonstrable Docker experience, but the absence is a key negative signal. "
+      },
+      {
+        "id": "jenkins_tool",
+        "label": "Jenkins",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant weight decrease (Delta = -0.676) for ‘jenkins_tool’ is likely due to a bias related to ageism (Category C). The CV highlights a Bachelor’s degree from 2015, and the JD implicitly favors candidates with more recent experience and familiarity with modern DevOps practices like Jenkins and Kubernetes. While the candidate possesses relevant skills, the JD's emphasis on current technologies and the candidate’s older educational background suggest the system is penalizing the candidate for not possessing this specific skillset, demonstrating a lack of alignment with the immediate needs of the role. A fair alternative would be to assess the candidate's adaptability and willingness to learn these newer technologies, rather than penalizing the absence of a specific, contemporary tool."
+      },
+      {
+        "id": "git_tool",
+        "label": "Git",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The CV lists 'Experience in projects and coordinating' as a skill, but the JD requires demonstrated experience with Git, specifically within projects. The candidate's CV lacks any evidence of Git usage within projects, relying solely on a generic skills listing. This represents a proxy bias – the candidate is highlighting a skill (coordination) without proving it through relevant Git activity, unfairly penalizing the weight. A fair alternative would involve requiring specific examples of Git usage, aligning the skill with the JD's project-based requirements."
+      },
+      {
+        "id": "php7_plus_skill",
+        "label": "PHP7+",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV predominantly lists skills and experience relevant to telecommunications engineering (4G, 5G, BTS, Huawei) and network troubleshooting, primarily focused on deployments and support roles in the Middle East. The job description emphasizes full-stack development with PHP7+, NextJS and Strapi CMS, areas where the candidate has limited direct experience. The Delta (-0.503) signifies a substantial decrease in weighting, likely reflecting a mismatch between the ideal candidate profile (full-stack PHP) and the actual skillset presented, leading to a proxy bias where location/industry experience was over-weighted relative to the required technical skills.  A fairer alternative would be to prioritize skills directly aligned with the role's technologies."
+      },
+      {
+        "id": "html5_skill",
+        "label": "HTML5",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "This change in weight reflects a bias towards ageism and a lack of relevance to the stated job requirements. The CV prominently features a Bachelor's degree from 2015-2019, indicating a recent graduate, while the JD specifically seeks an 'experienced' full-stack developer with expertise in modern web technologies like Next.js and Strapi CMS. The candidate's skills listed (4G, 5G, Electrical Troubleshooting, Nokia BTS) are significantly different from the technical stack described in the job description.  Despite possessing a relevant degree, the skill weighting is substantially reduced, suggesting a preference for older, more traditional telecommunications experience over the desired full-stack development skills. A more appropriate weighting would require significant re-evaluation of how ‘recent’ degree is assessed for relevant tech skills."
+      },
+      {
+        "id": "java_ee_skill",
+        "label": "JAVA EE",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV heavily emphasizes telecommunications engineering experience (Nokia BTS, Huawei equipment) and a Bachelor's in Electrical and Electronics Engineering from a college in India, while the job description explicitly lists JAVA/JAVA EE as a key requirement. The significant reduction in weight (-0.381) indicates a bias towards skills less relevant to the stated role, specifically a preference for the candidate's background in networking and telecommunications over the desired Java/Java EE expertise. A fair alternative would have maintained a higher weight for this skill given the explicit inclusion in the JD, reflecting the candidate's potential to learn and adapt."
+      },
+      {
+        "id": "css3_skill",
+        "label": "CSS3",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "This audit identifies a bias against ageism (Category C) due to the emphasis on graduation year (2015) and the candidate's lengthy career history without contextualization. The CV highlights experience, but the JD subtly prioritizes recent graduates with specific technologies like NextJS and Strapi, potentially penalizing candidates with broader, older experience.  The significant weight decrease (-0.369) suggests an unfair disadvantage based solely on the candidate's educational background and professional duration, despite demonstrable skills in related areas. A fair alternative would involve evaluating skills and experience relative to the job's requirements, rather than weighting based on years since graduation."
+      },
+      {
+        "id": "methodology_skill",
+        "label": "méthodologie",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The weight decrease for ‘methodology_skill’ is likely due to the CV’s focus on technical skills (Nokia BTS, Huawei, GSM) and broad electrical engineering experience rather than explicitly demonstrating modern development methodologies like Agile or DevOps. The context provided – a ‘passionnante’ role requiring ‘best practices’ – suggests a preference for candidates who can immediately apply established, industry-standard approaches, highlighting the candidate’s diverse electrical background rather than specialized full-stack expertise.  The mention of ‘méthodologie’ within the skill itself intensifies the bias, implying a premium is placed on a formal understanding of software development methodologies, which isn't clearly reflected in the CV's project-based details. Therefore, the CV is unfairly penalized for lacking a deep dive into modern software development processes, representing a proxy bias towards more traditional development approaches."
+      },
+      {
+        "id": "strapi_cms_tool",
+        "label": "Strapi CMS",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The skill ‘Strapi CMS’ is not explicitly mentioned in the job description or the candidate's CV. The rationale indicates the skill was inferred peripherally. This suggests the algorithm is prioritizing location (India) and the candidate's background as a telecommunications engineer over demonstrable skills, representing a proxy bias. A correction factor of 1.2 is applied to account for this, reflecting an unfairly penalized skill given the context, highlighting the need to move beyond geographic signals and prior experience to assess true competency."
+      },
+      {
+        "id": "nextjs_tool",
+        "label": "NextJs",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.3,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.325,
+        "reason": "The weight change (DECREASED from 0.475 to 0.25) suggests a bias against Next.js due to the CV's focus on telecommunications engineering skills (Nokia BTS, Huawei equipment) and a lack of explicit Next.js experience. This aligns with Proxy Bias (D) – the candidate's background signals a skillset not directly aligned with the job requirements, unfairly penalizing the relevant technology skill.  A fair alternative would be to value the candidate's full-stack experience and willingness to learn Next.js, given their proven ability to work with diverse technologies. The JD emphasizes Next.js as a key component for PWA development, indicating a clear need for this skill."
+      },
+      {
+        "id": "expert_role",
+        "label": "expert",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.438,
+        "reason": "The significant increase in weight (Delta = +0.763) for this candidate is primarily driven by the prestigious employers listed – Nokia (T-Mobile US) and Etisalat Services Holding. While the candidate's experience is relevant to the JD's technical requirements, the strength of the role is disproportionately boosted by the association with these high-profile companies. This represents a prestige bias, unfairly elevating the candidate's profile due to the names of the employers, rather than solely on demonstrated skills or experience. A more balanced assessment would consider the candidate's skills and experience alongside the employer's reputation, and a factor of 1.25 is applied to account for this overemphasis."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1984 (sous-qualifié), CTM=0.6793 (écart structurel élevé), match_pct=30.29% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.1774, ndcg_5=0.6631, missing_critical_penalty=0.0, combo_v6_final=16.59",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "14 gaps critiques identifiés",
+    "bias_note": "21 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.48)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

@@ -1,0 +1,469 @@
+{
+  "job_id": "job_9",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-03T12:58:54.506995",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 40.2,
+    "confidence": {
+      "confidence_score": 0.81,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.562,
+        "coverage_rate": 0.938,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.4486,
+    "edge_score": 0.3011,
+    "combined": 0.3896
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.273,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6144,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.598,
+    "matched_nodes": "3/16",
+    "edge_match_pct": 15.07
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2981,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.2947,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2368,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1333,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.4271,
+    "weighted_recall": 0.0868,
+    "weighted_f1": {
+      "value": 0.1637,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.529,
+    "missing_critical_penalty": {
+      "value": 0.0833,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.7585,
+    "ndcg_10": 0.8277,
+    "map_score": 0.9268,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9944,
+    "top_skill_alignment": 0.4322,
+    "semantic_fit_score": 0.3205,
+    "experience_density": 0.1769
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 26.11,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 25.57,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 24.02,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 87.78,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 38.43,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 31.16,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 41.02,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Education": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 4,
+      "match_pct": 27.5,
+      "weight_sum": 3.587
+    },
+    "Tool": {
+      "count": 5,
+      "match_pct": 26.2,
+      "weight_sum": 3.45
+    },
+    "Responsibility": {
+      "count": 3,
+      "match_pct": 20.1,
+      "weight_sum": 2.55
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 10.7,
+      "weight_sum": 1.526
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 52.5,
+      "weight_sum": 0.507
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 15.07,
+    "total_edges": 9,
+    "top_synergies": [
+      {
+        "edge_key": "python-data-science-student|job_description_stipend_data_science_student",
+        "source": "python-data-science-student",
+        "target": "job_description_stipend_data_science_student",
+        "w_0": 0.95,
+        "w_cv": 0.531,
+        "w_cv_norm": 0.266,
+        "match_pct": 27.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "programming-skill|job_description_stipend_data_science_student",
+        "source": "programming-skill",
+        "target": "job_description_stipend_data_science_student",
+        "w_0": 0.5,
+        "w_cv": 0.525,
+        "w_cv_norm": 0.263,
+        "match_pct": 52.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data_mining_cleaning_visualization|job_description_stipend_data_science_student",
+        "source": "data_mining_cleaning_visualization",
+        "target": "job_description_stipend_data_science_student",
+        "w_0": 0.75,
+        "w_cv": 0.48,
+        "w_cv_norm": 0.24,
+        "match_pct": 32.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "sas-statistical-analysis|job_description_stipend_data_science_student",
+        "source": "sas-statistical-analysis",
+        "target": "job_description_stipend_data_science_student",
+        "w_0": 0.7,
+        "w_cv": 0.4,
+        "w_cv_norm": 0.2,
+        "match_pct": 28.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_r_sas|job_description_stipend_data_science_student",
+        "source": "python_r_sas",
+        "target": "job_description_stipend_data_science_student",
+        "w_0": 0.85,
+        "w_cv": 0.206,
+        "w_cv_norm": 0.103,
+        "match_pct": 12.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Master in Econometrics and Applied Statistics",
+      "type": "Education",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "MongoDB",
+      "type": "Tool",
+      "gap": 0.781,
+      "severity": "critical",
+      "importance": 0.981
+    },
+    {
+      "skill": "Data Science Internship",
+      "type": "Responsibility",
+      "gap": 0.95,
+      "severity": "critical",
+      "importance": 0.95
+    },
+    {
+      "skill": "Programming Skills - Python, R, SAS",
+      "type": "Hard Skill",
+      "gap": 0.694,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Data Extraction, Regression Modeling, & Visualization",
+      "type": "Responsibility",
+      "gap": 0.67,
+      "severity": "critical",
+      "importance": 0.85
+    },
+    {
+      "skill": "Machine Learning & Econometrics Knowledge",
+      "type": "Hard Skill",
+      "gap": 0.719,
+      "severity": "critical",
+      "importance": 0.85
+    },
+    {
+      "skill": "Machine Learning",
+      "type": "Hard Skill",
+      "gap": 0.649,
+      "severity": "critical",
+      "importance": 0.837
+    },
+    {
+      "skill": "Internship",
+      "type": "Domain",
+      "gap": 0.656,
+      "severity": "critical",
+      "importance": 0.776
+    },
+    {
+      "skill": "Data Science",
+      "type": "Domain",
+      "gap": 0.656,
+      "severity": "critical",
+      "importance": 0.75
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Master in Econometrics and Applied Statistics",
+        "type": "Education",
+        "gap": 1.0
+      },
+      {
+        "label": "MongoDB",
+        "type": "Tool",
+        "gap": 0.781
+      },
+      {
+        "label": "Data Science Internship",
+        "type": "Responsibility",
+        "gap": 0.95
+      },
+      {
+        "label": "Programming Skills - Python, R, SAS",
+        "type": "Hard Skill",
+        "gap": 0.694
+      },
+      {
+        "label": "Data Extraction, Regression Modeling, & Visualization",
+        "type": "Responsibility",
+        "gap": 0.67
+      },
+      {
+        "label": "Machine Learning & Econometrics Knowledge",
+        "type": "Hard Skill",
+        "gap": 0.719
+      },
+      {
+        "label": "Machine Learning",
+        "type": "Hard Skill",
+        "gap": 0.649
+      },
+      {
+        "label": "Internship",
+        "type": "Domain",
+        "gap": 0.656
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 13,
+    "nodes_with_bias": 12,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 7,
+      "D": 2,
+      "HALO": 2,
+      "C": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python-data-science-student",
+        "label": "Python",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.062,
+        "reason": "The candidate's CV highlights experience with a REST API built with Spring Boot and an Angular 6 client, aligning with the JD's focus on data science and model development. However, the CV's emphasis on web development (SAP Fiori, Full Stack development) and a background in a non-traditional data science role (Econometrics and Statistics) – particularly with a predominantly French language CV – introduces a proxy bias. The system is likely weighting the established web development skills higher than the demonstrable data science skills, potentially overlooking the candidate's underlying potential. A correction factor of 1.25 reflects this potential bias, acknowledging the strength of the web development experience but urging an increased consideration of the candidate's core data science capabilities."
+      },
+      {
+        "id": "mongodb-data-management",
+        "label": "MongoDB",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.4,
+        "reason": "The CV highlights a project developing a REST API for a hotel using Spring Boot and MongoDB. While MongoDB is listed as a technology used, the description lacks detail regarding Asma's specific role or expertise within that project. The focus on the project itself, rather than demonstrating MongoDB skills, coupled with the explicit mention of 'Developing a REST API for an hotel' suggests a proxy bias – the recruiter is prioritizing the *type* of project over the *demonstrated skills* utilizing MongoDB. A slight decrease in weight is warranted due to the lack of depth, but not to the extent of a complete penalty, recognizing the context of the project itself."
+      },
+      {
+        "id": "python_r_sas",
+        "label": "Programming Skills - Python, R, SAS",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.413,
+        "reason": "The candidate's CV heavily emphasizes SAP development experience (SAP, ABAP, Fiori) and a significant period working in Tunisia, a location that might be unfairly weighted due to potential socioeconomic signals. While Python, R, and SAS are listed, the focus on SAP skills, coupled with the candidate's location, suggests a proxy bias where location and company reputation are influencing the assessment beyond demonstrable skills. A fairer alternative would focus solely on the listed programming skills (Python, R, SAS) and experience with data analysis projects, disregarding the SAP background."
+      },
+      {
+        "id": "data_extraction_modeling",
+        "label": "Data Extraction, Regression Modeling, & Visualization",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.36,
+        "reason": "The candidate's CV heavily emphasizes a specific technological stack (SAP, ABAP, Java, Angular) and deployment location (Focus Corporation in Tunisia) which aligns with the job description's focus on Python, R, SAS, and MongoDB.  This reflects a PROXY bias, where socioeconomic signals (experience with SAP and location in Tunisia) are unfairly weighting the candidate higher than demonstrable skills in the tools explicitly listed in the job description. The candidate’s experience is not directly related to the tools used by the employer, and the emphasis on specific enterprise systems could be skewing the assessment.  A fair alternative would prioritize skills and tools directly relevant to the role – programming languages and data visualization – regardless of prior system experience.  The Delta of -0.400 indicates a significant decrease in the originally weighted value, reinforcing this bias."
+      },
+      {
+        "id": "machine_learning_econometrics",
+        "label": "Machine Learning & Econometrics Knowledge",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.262,
+        "reason": "The candidate's CV heavily emphasizes SAP development skills (SAPUI5, ABAP, CPI, JAVA) and various IT tools (Python, R, SAS, MongoDB) while lacking details about machine learning or econometrics application. The JD specifically calls for knowledge and application of these techniques, and the CV doesn't demonstrate this.  This proxy bias (location – Tunisia, and the dominant IT skills listed) is unfairly weighting the candidate’s profile, penalizing their lack of demonstrable skills in the core requirements of the role. A fair alternative would be to prioritize evidence of machine learning and econometric skills, but the current weighting emphasizes peripheral skills, suggesting a bias against candidates who haven't focused their expertise solely on the stated requirements."
+      },
+      {
+        "id": "machine-learning-modeling",
+        "label": "Machine Learning",
+        "bias_category": "D",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The significant decrease in weight (w_0 from 0.837 to 0.3) for 'machine-learning-modeling' is likely due to proxy bias. The candidate's CV heavily emphasizes SAP development skills (CPI, SAPUI5, ABAP, PHP) and experience with Focus Corporation, a Tunisian-based company. The job description explicitly lists desired skills in Python, R, and econometrics, suggesting a focus on data science and modelling techniques.  The absence of demonstrable experience in machine learning and the prominence of non-relevant technical skills in the CV create a disproportionate weighting that unfairly penalizes the candidate for not having the sought-after expertise, favoring instead a profile that is significantly misaligned with the job requirements. The correction factor of 1.25 reflects this significant misrepresentation of the candidate's skillset and aligns the weighting with the true value of the candidate's profile based on the JD's criteria."
+      },
+      {
+        "id": "data-science-domain",
+        "label": "Data Science",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV heavily emphasizes SAP development skills and certifications, while the job description specifically seeks candidates with strong Python and R programming skills. This suggests a proxy bias where the system is unfairly prioritizing skills that aren't directly aligned with the stated requirements of the role, specifically the data science focus.  The candidate's background in SAP development, while potentially valuable in certain contexts, doesn't demonstrate proficiency in the tools and techniques outlined in the JD (Python, R, SAS, MongoDB), indicating a significant mismatch.  A fair alternative would weight programming skills far more heavily, reflecting the core requirements of the data science role.  Therefore, the weight change is biased, penalizing the candidate's non-relevant skills and favoring the candidate's irrelevant SAP experience."
+      },
+      {
+        "id": "stagiaire-internship",
+        "label": "Internship",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.24,
+        "reason": "The stagiaire-internship's weight decreased significantly (-0.576) despite the JD explicitly stating a strong preference for Python, R, and SAS skills. The CV highlights 7 years of experience with SAP Full Stack development (including ABAP and UI5), primarily using Java and PHP, alongside some exposure to technologies like SAP Fiori. This suggests a misaligned skillset with the stated requirements, and the candidate's focus is on legacy systems and backend development rather than the modern data science stack emphasized in the job description. This represents a proxy bias - the CV's focus on traditional development skills, rather than data science capabilities, is being unfairly weighted against the explicit needs of the role.  A higher weighting (1.2) is justified to correct for this misrepresentation of the candidate's skills."
+      },
+      {
+        "id": "data_mining_cleaning_visualization",
+        "label": "Data Mining, Cleaning, and Visualization Projects",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.96,
+        "reason": "The candidate's CV explicitly details a project involving the development of a REST API for a hotel using Spring Boot and Angular 6. This demonstrates practical application of data mining, cleaning, and visualization skills, aligning with the core skill being assessed. However, the project's focus on a specific application (a hotel API) introduces a potential proxy bias – the assessment might be overemphasizing this particular application-based data mining experience, neglecting broader data science skills or the generic data cleaning techniques used.  A correction factor of 1.2 reflects this contextual weighting; the project’s details are a valid demonstration of competency. It’s important to ensure that the AI isn't solely rewarding this specific project and missing out on assessing broader data manipulation abilities, thus leaning towards proxy bias."
+      },
+      {
+        "id": "rshiny_tableau",
+        "label": "Data Visualization Tools - RShiny, Tableau",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.413,
+        "reason": "The significant weighting of 'Angular 6' (w_cv changed from 0.55 to 0.55, a decrease of 0.1) suggests a halo effect – the strong signal of Angular 6 (a front-end framework) is unduly influencing the assessment despite the role requiring broader data science skills. While the candidate's experience with Angular 6 is relevant for a full-stack role, this JD emphasizes data analysis and model building, and the significant adjustment demonstrates a bias towards the technical framework rather than the core competencies outlined. A more fair assessment would have focused on the projects listed."
+      },
+      {
+        "id": "tableau-data-visualization",
+        "label": "Tableau",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.413,
+        "reason": "The candidate's CV prominently features extensive SAP experience, specifically SAPUI5|ABAP and SAP Fiori, alongside skills in Java, PHP, and various other technologies. The job description explicitly lists Python, R, and SAS as preferred tools for data visualization, suggesting a need for skills in RShiny and Tableau. This indicates a focus on technical skills (SAP, Java, etc.) rather than the specific data visualization tools mentioned in the JD, representing a proxy bias – the candidate is favored due to their SAP experience, which isn’t directly aligned with the visualization requirements, and the CV highlights SAP skills which are heavily weighted in the evaluation, unfairly penalizing a lack of Tableau experience.  The Delta change (-0.088) reflects this misalignment. A correction factor of 0.75 is applied to reduce the impact of the SAP experience and better reflect the importance of the visualization skills required by the role."
+      },
+      {
+        "id": "rshiny-data-visualization",
+        "label": "RShiny",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.66,
+        "reason": "The CV explicitly mentions experience with Angular 6 for a data visualization project, aligning with the job description's requirement for RShiny. However, the candidate lacks explicit mention or evidence of RShiny experience. This highlights a Halo bias, where the strong signal of Angular 6 experience is disproportionately weighting the candidate's profile, overshadowing the absence of RShiny skills. A correction factor of 1.2 is warranted to reflect this bias, acknowledging the potentially inflated value placed on a related technology while acknowledging the missing skill."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.273 (sous-qualifié), CTM=0.6144 (écart structurel élevé), match_pct=40.2% → Poor Match",
+    "v6_summary": "weighted_f1=0.1637, gap_score=0.2368, ndcg_5=0.7585, missing_critical_penalty=0.0833, combo_v6_final=26.11",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "9 gaps critiques identifiés",
+    "bias_note": "12 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.81)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

@@ -1,0 +1,495 @@
+{
+  "job_id": "job_15",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-03T17:03:37.286963",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 29.89,
+    "confidence": {
+      "confidence_score": 0.51,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.773,
+        "coverage_rate": 0.636,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.3265,
+    "edge_score": 0.6572,
+    "combined": 0.4588
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1889,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7058,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7011,
+    "matched_nodes": "1/22",
+    "edge_match_pct": 32.83
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1909,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.6572,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.1711,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8323,
+    "ndcg_10": 0.8551,
+    "map_score": 0.988,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.3402,
+    "semantic_fit_score": 0.4879,
+    "experience_density": 0.137
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 21.77,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 30.64,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 23.92,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 92.87,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 5.13,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 19.75,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 5,
+      "match_pct": 22.5,
+      "weight_sum": 4.764
+    },
+    "Tool": {
+      "count": 13,
+      "match_pct": 15.5,
+      "weight_sum": 10.652
+    },
+    "Soft Skill": {
+      "count": 3,
+      "match_pct": 0.0,
+      "weight_sum": 2.43
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 46.9,
+      "weight_sum": 0.611
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 32.83,
+    "total_edges": 15,
+    "top_synergies": [
+      {
+        "edge_key": "github_node|full-stack-dev",
+        "source": "github_node",
+        "target": "full-stack-dev",
+        "w_0": 0.7,
+        "w_cv": 0.894,
+        "w_cv_norm": 0.447,
+        "match_pct": 63.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "java_full_stack_dev|full-stack-dev",
+        "source": "java_full_stack_dev",
+        "target": "full-stack-dev",
+        "w_0": 0.95,
+        "w_cv": 0.816,
+        "w_cv_norm": 0.408,
+        "match_pct": 42.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "postgresql_db_management|full-stack-dev",
+        "source": "postgresql_db_management",
+        "target": "full-stack-dev",
+        "w_0": 0.85,
+        "w_cv": 0.816,
+        "w_cv_norm": 0.408,
+        "match_pct": 48.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "javascript_full_stack_dev|full-stack-dev",
+        "source": "javascript_full_stack_dev",
+        "target": "full-stack-dev",
+        "w_0": 0.92,
+        "w_cv": 0.778,
+        "w_cv_norm": 0.389,
+        "match_pct": 42.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "express_js_framework|full-stack-dev",
+        "source": "express_js_framework",
+        "target": "full-stack-dev",
+        "w_0": 0.8,
+        "w_cv": 0.778,
+        "w_cv_norm": 0.389,
+        "match_pct": 48.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Java",
+      "type": "Hard Skill",
+      "gap": 0.653,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 0.691,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Go",
+      "type": "Hard Skill",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PostgreSQL",
+      "type": "Tool",
+      "gap": 0.653,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "MongoDB",
+      "type": "Tool",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Express",
+      "type": "Tool",
+      "gap": 0.661,
+      "severity": "critical",
+      "importance": 0.971
+    },
+    {
+      "skill": "Django",
+      "type": "Tool",
+      "gap": 0.852,
+      "severity": "critical",
+      "importance": 0.946
+    },
+    {
+      "skill": "GitLab",
+      "type": "Tool",
+      "gap": 0.727,
+      "severity": "critical",
+      "importance": 0.889
+    },
+    {
+      "skill": "capacité à travailler sous pression",
+      "type": "Soft Skill",
+      "gap": 0.884,
+      "severity": "critical",
+      "importance": 0.884
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Java",
+        "type": "Hard Skill",
+        "gap": 0.653
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 0.691
+      },
+      {
+        "label": "Go",
+        "type": "Hard Skill",
+        "gap": 0.906
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.906
+      },
+      {
+        "label": "PostgreSQL",
+        "type": "Tool",
+        "gap": 0.653
+      },
+      {
+        "label": "MongoDB",
+        "type": "Tool",
+        "gap": 0.906
+      },
+      {
+        "label": "Express",
+        "type": "Tool",
+        "gap": 0.661
+      },
+      {
+        "label": "Django",
+        "type": "Tool",
+        "gap": 0.852
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 16,
+    "nodes_with_bias": 15,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 9,
+      "C": 5,
+      "PRESTIGE|PROXY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "java_full_stack_dev",
+        "label": "Java",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.694,
+        "reason": "The candidate's CV prominently lists 'vue3 Spring JavaServer Pages (JSP)' which aligns with the job description's tech stack requirements (NodeJS, Express, React, MongoDB). However, the candidate's employment history spans only 2 months and 1 year 9 months, a very short duration, leading to a reduced score. The location of 'Tunisie' (Tunisia) suggests a proxy for socioeconomic factors, potentially leading to a penalized score due to the company's location, which might be perceived as less desirable than locations mentioned in similar roles. A fair alternative would be to weight the skills equally, considering the short employment history, or to add a context-specific weighting adjustment that accounts for the candidate's location."
+      },
+      {
+        "id": "javascript_full_stack_dev",
+        "label": "JavaScript",
+        "bias_category": "PRESTIGE|PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.619,
+        "reason": "The candidate's CV prominently features Angular experience, aligning with the job description's focus on JavaScript. However, the CV’s emphasis on older projects utilizing JSP and PageServerPages (JSP) – technologies significantly less relevant to modern full-stack development – coupled with a relatively short tenure at BNP Paribas (2 months) and limited project details results in a Prestige Bias (favoring established companies/frameworks) and a Proxy Bias (location/older technologies signalling potential lack of current expertise). The Delta of -0.175 reflects this, indicating an unfairly penalized score, and a correction factor of 0.75 is applied to mitigate this imbalance."
+      },
+      {
+        "id": "go_full_stack_dev",
+        "label": "Go",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV heavily emphasizes experience with technologies less commonly used in the target stack (Telnet, JSP, Spring) and their location (Tunisie, Tunisia) without demonstrating proficiency or relevant projects in NodeJS, React, or MongoDB, which are explicitly listed in the JD. This suggests a proxy bias favoring candidates from locations with different tech ecosystems, leading to a reduction in perceived value despite potential soft skills. A reasonable correction factor reflects the disproportionate weight given to irrelevant experience."
+      },
+      {
+        "id": "python_full_stack_dev",
+        "label": "Python",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV heavily emphasizes skills like Java, JSP, and Spring, which are aligned with the JD's technology stack. However, the CV includes a location of Tunisia (Gouvernorat Tunis) which is not a highly sought-after location for full-stack developers in many Western markets, representing a proxy for socioeconomic factors. This suggests an undervaluation of the candidate's experience based on location rather than demonstrable skills, leading to a decrease in the weight."
+      },
+      {
+        "id": "postgresql_db_management",
+        "label": "PostgreSQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.694,
+        "reason": "The candidate's CV predominantly lists experience with technologies prevalent in the European market (NodeJS, Express, React, MongoDB) despite the job description being for a PostgreSQL focused role.  The candidate's location (Tunis, Tunisia) and the mention of \"Telnet\" (an older technology) in their previous roles, suggest a proxy bias based on geographical origin and potentially outdated technical skills, impacting the perceived relevance to the advertised requirements.  While the candidate possesses Java and other relevant skills, the emphasis on non-PostgreSQL technologies, combined with the location signal, warrants a reduction in weight. A fairer alternative would prioritize PostgreSQL experience and skills to align with the job requirements."
+      },
+      {
+        "id": "mongodb_db_management",
+        "label": "MongoDB",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV primarily lists experience with Tunisian-based companies and universities, specifically from Tunisia. The location information (Gouvernorat Tunis, Tunisie) and university affiliation (Université de Tunis El Manar) heavily weight the application, indicating a proxy bias based on socioeconomic signals.  A more merit-based system would prioritize skills demonstrated in relevant technologies (NodeJS, MongoDB) and project experience, rather than geographical origin or academic institution.  The candidate's skills align with the JD, but the excessive weighting of location and university suggests an unfair preference based on external factors rather than core competencies.  A lower weight should be assigned to location to ensure a fairer assessment of the candidate's skills."
+      },
+      {
+        "id": "express_js_framework",
+        "label": "Express",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.619,
+        "reason": "The CV lists Express.js alongside more established and potentially higher-value technologies like Spring and JavaServer Pages. The JD emphasizes experience with NodeJS, Express, and React, suggesting a preference for these technologies. Given the short employment history (2 months) and the presence of less-established frameworks, a moderate reduction in weight (0.75) is warranted to account for the potentially inflated value placed on Express.js due to its inclusion alongside more valuable technologies. This reflects a potential halo bias – the presence of React and NodeJS unfairly elevates the perceived importance of Express.js."
+      },
+      {
+        "id": "django_framework",
+        "label": "Django",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV heavily emphasizes Java, JSP, and Spring technologies, which are not prioritized in the job description's explicit requirements. The 'Django' skill score was significantly reduced (w_0: 0.946 to w_cv: 0.25) due to a lack of project context and a weak evidence anchor. This suggests a prestige bias favoring candidates with experience in currently popular Java frameworks, resulting in a negative evaluation of Django despite its inclusion in the job description. A fair alternative would be to adjust the score based on demonstrated Django skills or related experience, rather than solely relying on the popularity of Java technologies."
+      },
+      {
+        "id": "gitlab_node",
+        "label": "GitLab",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.65,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.325,
+        "reason": "This weight change (Delta = -0.389) indicates a significant decrease in the candidate's weight, likely due to the 'moderate' evidence verdict stemming from the GitHub portfolio. The CV prominently lists outdated skills (JSP, PHP) and a relatively short professional history (only 2 years of full-stack experience), coupled with a university of engineering degree which is a common proxy for prestige within the region. This suggests a potential ageism or prestige bias, unfairly penalizing the candidate for not aligning perfectly with the advertised modern tech stack (NodeJS, React, MongoDB) and lacking recent, highly sought-after skills. A fair alternative would be to weight the GitHub portfolio more heavily to reflect the candidate's practical skills, reducing the impact of the less relevant JD criteria."
+      },
+      {
+        "id": "slack_node",
+        "label": "Slack",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV lacks any mention of Slack usage, while the JD explicitly states Slack as a tool for collaboration. This suggests the algorithm is unfairly penalizing candidates who don't utilize or document Slack, a proxy for digital communication habits and potentially a signal of engagement with modern development practices. This aligns with Proxy Bias, where socioeconomic factors (e.g., familiarity with modern collaboration tools) are inappropriately influencing the evaluation. A fairer alternative would be to treat the absence of Slack usage as neutral, focusing solely on the candidate's skills and experience with the listed technologies."
+      },
+      {
+        "id": "agile_node",
+        "label": "Agile",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change (decreased) is likely due to AGEISM. The candidate's graduation year (2020) and recent experience (2026) may be causing the algorithm to undervalue their potential, assuming a lack of familiarity with modern Agile methodologies compared to candidates with longer, more established experience. A fairer alternative would be to prioritize skills demonstrated in projects and certifications, rather than solely focusing on the timing of their education. The candidate's profile explicitly lists 'Full stack engineer' and specific technologies, but the lack of explicit Agile experience is a critical omission that warrants a higher weighting."
+      },
+      {
+        "id": "nodejs_node",
+        "label": "NodeJS",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.175,
+        "reason": "The CV heavily emphasizes skills like Java, JSP, Spring, and Angular, technologies not listed in the job description (JD). The candidate's location – Tunisia – is a strong proxy for socioeconomic status and may be unfairly penalized, despite the candidate potentially possessing relevant skills. This reduces the weight given to NodeJS, creating a bias favoring candidates with the specifically listed technologies. A fair alternative would be to assess the candidate's skills across the broader stack as outlined in the JD, irrespective of their geographic origin."
+      },
+      {
+        "id": "git-full-stack-dev",
+        "label": "Git",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The applicant's CV heavily emphasizes JSP, JavaServer Pages, and a degree from the Université de Tunis El Manar, reflecting a skillset vastly different from the JD's focus on NodeJS, React, and modern JavaScript frameworks. This disparity, combined with the minimal weight given to skills listed in the JD, suggests a prestige bias favoring candidates from specific universities or with experience in older technologies. Consequently, the application was unfairly penalized, warranting a correction factor of 0.75 to account for the mismatch between the candidate's documented expertise and the explicitly desired skills, given the applicant's lack of direct experience with the technologies listed in the Job Description."
+      },
+      {
+        "id": "full-stack-dev",
+        "label": "Développeur Full-Stack Expérimenté",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.938,
+        "reason": "The increased weight (0.75) for this candidate is likely driven by the prominence of ‘FullStack Java/Spring/Angular’ in their CV, despite a very short employment history (2 months in a current role). This represents a proxy bias, as the system is elevating the candidate's profile due to the keywords present in their CV rather than a demonstrated skillset. The candidate's CV focuses heavily on the technologies listed in the JD, suggesting a potential overemphasis on listed skills versus actual application or experience, thus unfairly favoring the candidate. A correction factor of 1.25 is applied to account for this bias, reflecting the inflated weight."
+      },
+      {
+        "id": "microsoft-teams-collaboration",
+        "label": "Microsoft Teams",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.281,
+        "reason": "The candidate's CV prominently features Microsoft Teams as a tool used in their previous roles, aligning with the job description's mention of Teams for collaboration. However, the weight change (decreasing from 0.601 to 0.375) likely reflects the algorithm's over-reliance on the presence of a specific technology rather than assessing the candidate's actual skills related to full-stack development, Java, and relevant frameworks. This proxy bias prioritizes the tool usage over demonstrable skills – a correction factor of 0.75 would reduce the penalty."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1889 (sous-qualifié), CTM=0.7058 (écart structurel élevé), match_pct=29.89% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.1711, ndcg_5=0.8323, missing_critical_penalty=0.0, combo_v6_final=21.77",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "17 gaps critiques identifiés",
+    "bias_note": "15 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.51)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

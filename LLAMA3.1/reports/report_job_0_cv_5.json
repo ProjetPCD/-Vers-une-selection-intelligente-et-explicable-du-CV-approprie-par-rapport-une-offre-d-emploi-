@@ -1,0 +1,528 @@
+{
+  "job_id": "job_0",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-03T21:33:27.732182",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 39.05,
+    "confidence": {
+      "confidence_score": 0.58,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.483,
+        "coverage_rate": 0.655,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.3973,
+    "edge_score": 0.0,
+    "combined": 0.2384
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2458,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6114,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6095,
+    "matched_nodes": "6/29",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2457,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.5182,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.2231,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0385,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.9608,
+    "weighted_recall": 0.0244,
+    "weighted_f1": {
+      "value": 0.0481,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.51,
+    "missing_critical_penalty": {
+      "value": 0.0588,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.8807,
+    "ndcg_10": 0.8671,
+    "map_score": 0.9621,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.4217,
+    "semantic_fit_score": 0.4284,
+    "experience_density": 0.1522
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 25.64,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 28.93,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 24.88,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 93.9,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 37.32,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 29.63,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 39.43,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 5,
+      "match_pct": 19.3,
+      "weight_sum": 4.144
+    },
+    "Tool": {
+      "count": 12,
+      "match_pct": 21.0,
+      "weight_sum": 10.259
+    },
+    "Domain": {
+      "count": 4,
+      "match_pct": 27.8,
+      "weight_sum": 2.81
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 25.0,
+      "weight_sum": 0.984
+    },
+    "Soft Skill": {
+      "count": 6,
+      "match_pct": 9.8,
+      "weight_sum": 3.574
+    },
+    "Certification": {
+      "count": 1,
+      "match_pct": 18.8,
+      "weight_sum": 0.456
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "total_edges": 10,
+    "top_synergies": [
+      {
+        "edge_key": "python|pandas",
+        "source": "python",
+        "target": "pandas",
+        "w_0": 0.9,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python|numpy",
+        "source": "python",
+        "target": "numpy",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python|pytorch",
+        "source": "python",
+        "target": "pytorch",
+        "w_0": 0.7,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "sql|postgresql",
+        "source": "sql",
+        "target": "postgresql",
+        "w_0": 0.6,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "sql|oracle",
+        "source": "sql",
+        "target": "oracle",
+        "w_0": 0.6,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.844,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PostgreSQL",
+      "type": "Tool",
+      "gap": 0.85,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Oracle",
+      "type": "Tool",
+      "gap": 0.812,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Diplôme",
+      "type": "Education",
+      "gap": 0.734,
+      "severity": "critical",
+      "importance": 0.984
+    },
+    {
+      "skill": "Jira",
+      "type": "Tool",
+      "gap": 0.773,
+      "severity": "critical",
+      "importance": 0.893
+    },
+    {
+      "skill": "Kafka",
+      "type": "Tool",
+      "gap": 0.689,
+      "severity": "critical",
+      "importance": 0.891
+    },
+    {
+      "skill": "Git",
+      "type": "Tool",
+      "gap": 0.858,
+      "severity": "critical",
+      "importance": 0.858
+    },
+    {
+      "skill": "Agile",
+      "type": "Hard Skill",
+      "gap": 0.841,
+      "severity": "critical",
+      "importance": 0.841
+    },
+    {
+      "skill": "Communication",
+      "type": "Soft Skill",
+      "gap": 0.747,
+      "severity": "critical",
+      "importance": 0.747
+    },
+    {
+      "skill": "Data Science",
+      "type": "Domain",
+      "gap": 0.721,
+      "severity": "critical",
+      "importance": 0.721
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.844
+      },
+      {
+        "label": "PostgreSQL",
+        "type": "Tool",
+        "gap": 0.85
+      },
+      {
+        "label": "Oracle",
+        "type": "Tool",
+        "gap": 0.812
+      },
+      {
+        "label": "Diplôme",
+        "type": "Education",
+        "gap": 0.734
+      },
+      {
+        "label": "Jira",
+        "type": "Tool",
+        "gap": 0.773
+      },
+      {
+        "label": "Kafka",
+        "type": "Tool",
+        "gap": 0.689
+      },
+      {
+        "label": "Git",
+        "type": "Tool",
+        "gap": 0.858
+      },
+      {
+        "label": "Agile",
+        "type": "Hard Skill",
+        "gap": 0.841
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 20,
+    "nodes_with_bias": 17,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 11,
+      "HALO": 2,
+      "GENDER_DIVERSITY": 1,
+      "AGEISM": 1,
+      "PRESTIGE|GENDER_DIVERSITY|AGEISM|PROXY|HALO|NONE": 1,
+      "HALO BIAS": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "The weight change is biased towards prestige bias, as the candidate's university name (INSAT) and degree type (Engineer's degree) are considered in the evaluation, despite the lack of concrete project evidence or quantified outcomes. A fair alternative would be to evaluate the candidate based on their skills demonstrated and experience."
+      },
+      {
+        "id": "postgresql",
+        "label": "PostgreSQL",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "Lack of concrete project evidence or quantified outcome for PostgreSQL skill; candidate's experience section does not demonstrate actual work with the technology."
+      },
+      {
+        "id": "oracle",
+        "label": "Oracle",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.5,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The weight change appears to be biased towards candidates with prestigious company names in their top skills and experience section."
+      },
+      {
+        "id": "data_scientist",
+        "label": "Data Scientist",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.02,
+        "reason": "The weight change is biased towards prestige as it favors candidates from top universities (INSAT) and companies (InstaDeep), which may not be directly relevant to the job requirements. A fair alternative would be to evaluate candidates based on their skills and experience demonstrated in the CV, rather than their educational background or company name."
+      },
+      {
+        "id": "pandas",
+        "label": "Pandas",
+        "bias_category": "AGEISM",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.688,
+        "reason": "The algorithm penalizes candidates with less experience, which is not necessarily a merit-based factor. A fair alternative would be to use a more nuanced evaluation of experience."
+      },
+      {
+        "id": "numpy",
+        "label": "NumPy",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.3,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.715,
+        "reason": "The weight change was unfairly influenced by the candidate's university name and degree type, rather than their demonstrated skills."
+      },
+      {
+        "id": "jira",
+        "label": "Jira",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.24,
+        "reason": "The weight change favors candidates from a specific university/company (INSAT), which is not based on any evidence of skills being demonstrated in the CV."
+      },
+      {
+        "id": "kafka",
+        "label": "Kafka",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.35,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.405,
+        "reason": "The weight change is biased towards prestige bias, as the decrease in weight (Δ=-0.591) is significant despite the candidate's strong technical skills and experience in Machine Learning Engineering. The job description emphasizes a wide range of technical skills, but the weight change suggests that these skills are not being considered equally. This indicates that the hiring process may be giving undue importance to prestige factors such as university name (INSAT - Institut National des Sciences Appliquées et de Technologie) or company name (InstaDeep). A fair alternative would be to re-evaluate the weight assigned to technical skills and experience, and ensure that these are given equal consideration in the hiring process."
+      },
+      {
+        "id": "scikit-learn",
+        "label": "Scikit-learn",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "Prestige bias due to lack of concrete project evidence or certification. Fair alternative would be to use more robust methods of evaluating candidates' skills."
+      },
+      {
+        "id": "pytorch",
+        "label": "PyTorch",
+        "bias_category": "PRESTIGE|GENDER_DIVERSITY|AGEISM|PROXY|HALO|NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.83,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.622,
+        "reason": "The weight change for 'pytorch' is biased due to the context provided. The candidate's experience in a project using PyTorch is mentioned, but it lacks quantified outcome. Additionally, the job description requires expertise in various tools and technologies, including PyTorch. This creates an unfair advantage for candidates who have worked on projects involving PyTorch. A fair alternative would be to consider the candidate's skills and experience more holistically, rather than relying solely on their experience with specific tools."
+      },
+      {
+        "id": "excel",
+        "label": "Excel",
+        "bias_category": "PRESTIGE",
+        "severity": "HIGH",
+        "correction_factor": 1.45,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.362,
+        "reason": "The weight change of the 'excel' skill is unfair because it relies on prestige bias, where the name 'Excel' itself has a significant impact on the score, rather than the actual skills demonstrated by the candidate. A fair alternative would be to consider the candidate's concrete project evidence and relevant technical skills mentioned in the CV."
+      },
+      {
+        "id": "docker",
+        "label": "Docker",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.35,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.675,
+        "reason": "Unfairly penalized due to reliance on self-reported skills without concrete project evidence. A fair alternative would be to assign a higher weight to candidates who demonstrate project experience."
+      },
+      {
+        "id": "ia",
+        "label": "IA",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.8,
+        "reason": "Relying too heavily on a single exceptional achievement overlooks other important qualifications and skills demonstrated by the candidate."
+      },
+      {
+        "id": "methodologie_agile",
+        "label": "méthodologie agile",
+        "bias_category": "HALO",
+        "severity": "HIGH",
+        "correction_factor": 0.78,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.78,
+        "reason": "Weight increase based on a single achievement may be overly biased towards candidates with similar results, and does not reflect the candidate's overall skills or experience."
+      },
+      {
+        "id": "autonome",
+        "label": "autonome",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.1,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.55,
+        "reason": "The weight change is biased towards prestige, as the weight for ideal score (w_0) was decreased by 0.049, which suggests that the algorithm is penalizing candidates from universities with high social status (e.g., INSAT), even if they do not demonstrate relevant skills. A fair alternative would be to use a more nuanced approach, such as considering the specific skills and experience mentioned in the CV, rather than relying on the university name."
+      },
+      {
+        "id": "certification",
+        "label": "certification",
+        "bias_category": "PRESTIGE",
+        "severity": "HIGH",
+        "correction_factor": 1.5,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The weight change is biased towards prestige, as the job description heavily emphasizes 'certification' and does not provide clear information on how this certification will be used or evaluated. The candidate's profile does not mention any relevant certifications, and the emphasis on having a certification in Data Science or a related field may unfairly penalize candidates who do not have one. A fair alternative would be to evaluate skills demonstrated in the CV and cover letter, rather than relying on prestige-based credentials."
+      },
+      {
+        "id": "forte_capacite_apprentissage",
+        "label": "forte capacité d'apprentissage",
+        "bias_category": "HALO BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.22,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.305,
+        "reason": "The weight change is biased towards candidates with experience in specific areas like Deep Learning, which may not be equally relevant to the job requirements. The ideal weight of 0.417 suggests that this factor should have a significant impact on the evaluation, but the adapted weight of 0.25 and the decrease by -0.167 indicates an unfair penalization of candidates without direct experience in these areas. A fair alternative would be to use a more nuanced approach, considering other relevant skills like DevOps or Machine Learning Engineer experience."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2458 (sous-qualifié), CTM=0.6114 (écart structurel élevé), match_pct=39.05% → Poor Match",
+    "v6_summary": "weighted_f1=0.0481, gap_score=0.2231, ndcg_5=0.8807, missing_critical_penalty=0.0588, combo_v6_final=25.64",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "14 gaps critiques identifiés",
+    "bias_note": "17 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.58)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

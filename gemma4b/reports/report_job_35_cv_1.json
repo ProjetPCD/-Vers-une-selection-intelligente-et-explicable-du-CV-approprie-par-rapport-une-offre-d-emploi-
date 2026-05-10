@@ -1,0 +1,435 @@
+{
+  "job_id": "job_35",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-02T18:54:17.914946",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 42.05,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.556,
+        "coverage_rate": 0.444,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.5556
+  },
+  "final_scores": {
+    "node_score": 0.5254,
+    "edge_score": 0.7544,
+    "combined": 0.617
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3148,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6298,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5795,
+    "matched_nodes": "8/18",
+    "edge_match_pct": 37.72
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3645,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.6258,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.2229,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.3889,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.0396,
+    "weighted_recall": 0.2957,
+    "weighted_f1": {
+      "value": 0.4605,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5777,
+    "missing_critical_penalty": {
+      "value": 0.1667,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.6749,
+    "ndcg_10": 0.6958,
+    "map_score": 0.9543,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9043,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.2172,
+    "experience_density": 0.2068
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 40.63,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 46.21,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 26.24,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 85.4,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 52.06,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 33.11,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 21.47,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 6,
+      "match_pct": 23.2,
+      "weight_sum": 4.969
+    },
+    "Hard Skill": {
+      "count": 4,
+      "match_pct": 8.9,
+      "weight_sum": 3.805
+    },
+    "Soft Skill": {
+      "count": 6,
+      "match_pct": 36.8,
+      "weight_sum": 4.251
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 58.3,
+      "weight_sum": 1.145
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 37.72,
+    "total_edges": 8,
+    "top_synergies": [
+      {
+        "edge_key": "sql-database-knowledge|data-analysis-skills",
+        "source": "sql-database-knowledge",
+        "target": "data-analysis-skills",
+        "w_0": 0.85,
+        "w_cv": 1.3,
+        "w_cv_norm": 0.65,
+        "match_pct": 76.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "communication-skills|data-analysis-skills",
+        "source": "communication-skills",
+        "target": "data-analysis-skills",
+        "w_0": 0.68,
+        "w_cv": 1.175,
+        "w_cv_norm": 0.588,
+        "match_pct": 86.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_coding|data-analysis-skills",
+        "source": "python_coding",
+        "target": "data-analysis-skills",
+        "w_0": 0.95,
+        "w_cv": 0.763,
+        "w_cv_norm": 0.381,
+        "match_pct": 40.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "excel_spreadsheet|data-analysis-skills",
+        "source": "excel_spreadsheet",
+        "target": "data-analysis-skills",
+        "w_0": 0.75,
+        "w_cv": 0.763,
+        "w_cv_norm": 0.381,
+        "match_pct": 50.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "mysql_db|sql-database-knowledge",
+        "source": "mysql_db",
+        "target": "sql-database-knowledge",
+        "w_0": 0.8,
+        "w_cv": 0.763,
+        "w_cv_norm": 0.381,
+        "match_pct": 47.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 0.887,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "MySQL",
+      "type": "Tool",
+      "gap": 0.887,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.887,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Agile",
+      "type": "Hard Skill",
+      "gap": 0.887,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Scrum",
+      "type": "Hard Skill",
+      "gap": 0.887,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Capacité à travailler en équipe",
+      "type": "Soft Skill",
+      "gap": 0.882,
+      "severity": "critical",
+      "importance": 0.995
+    },
+    {
+      "skill": "Excel",
+      "type": "Tool",
+      "gap": 0.767,
+      "severity": "critical",
+      "importance": 0.88
+    },
+    {
+      "skill": "Power BI",
+      "type": "Tool",
+      "gap": 0.757,
+      "severity": "critical",
+      "importance": 0.87
+    },
+    {
+      "skill": "Bonne communication",
+      "type": "Soft Skill",
+      "gap": 0.744,
+      "severity": "critical",
+      "importance": 0.864
+    },
+    {
+      "skill": "Méthodes de gestion de projet",
+      "type": "Hard Skill",
+      "gap": 0.805,
+      "severity": "critical",
+      "importance": 0.805
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "gap": 0.887
+      },
+      {
+        "label": "MySQL",
+        "type": "Tool",
+        "gap": 0.887
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.887
+      },
+      {
+        "label": "Agile",
+        "type": "Hard Skill",
+        "gap": 0.887
+      },
+      {
+        "label": "Scrum",
+        "type": "Hard Skill",
+        "gap": 0.887
+      },
+      {
+        "label": "Capacité à travailler en équipe",
+        "type": "Soft Skill",
+        "gap": 0.882
+      },
+      {
+        "label": "Excel",
+        "type": "Tool",
+        "gap": 0.767
+      },
+      {
+        "label": "Power BI",
+        "type": "Tool",
+        "gap": 0.757
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 9,
+    "nodes_with_bias": 9,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "HALO": 6,
+      "PROXY": 2,
+      "B": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "sql_analysis",
+        "label": "SQL",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The significant decrease (-0.700) in the weight of the CV suggests a strong reliance on the job description (w_cv = 0.3) which is a hallmark of halo bias. The JD heavily emphasizes specific tools (Power BI, SQL, Python) and desired skills (communication, teamwork) while the CV showcases experience aligning with these, potentially overshadowing more nuanced or valuable skills not explicitly mentioned in the JD. A fairer alternative would prioritize skills demonstrated in the CV alongside other relevant factors, rather than over-emphasizing the terms used in the job description."
+      },
+      {
+        "id": "mysql_db",
+        "label": "MySQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The significant decrease in weight (w_cv from 1.0 to 0.3) is likely driven by the candidate's CV explicitly stating experience with EY Tunisia and Timsoft Group, which, depending on the company’s reputation and perceived prestige within the target industry, could be interpreted as a proxy for socioeconomic status or geographic location. While experience is valuable, prioritizing a company’s name over demonstrated skills like Power BI, SQL, and Python demonstrates proxy bias. A fair alternative would be to assess the candidate's skills and experience based on the job description's requirements, regardless of the organization they worked for."
+      },
+      {
+        "id": "python_coding",
+        "label": "Python",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The candidate's CV prominently features Python (Pandas), aligning with the JD’s mention of Python as a ‘plus’. However, the significant weight decrease (-0.700) suggests a proxy bias is at play – the system is overly prioritizing the explicit mention of Python in the CV, rather than assessing the candidate's actual Python coding skills and experience demonstrated. A more fair alternative would be to assess the candidate's project experience with Python, including tangible results and complexities, before assigning such a drastic weight reduction. This indicates the system is treating a listed skill as more valuable than demonstrated ability."
+      },
+      {
+        "id": "agile_methodology",
+        "label": "Agile",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The CV heavily emphasizes experience at EY and Timsoft Group, which are presented as key strengths. While experience at these firms is valuable, the system is giving undue weight to the *type* of organization (large consulting firm and technology firm) rather than the specific skills and achievements demonstrated within those roles (Power BI dashboards, data pipeline automation). This represents a halo effect – the prestige of the companies is being disproportionately weighted, overshadowing the candidate’s demonstrated abilities. A fair alternative would prioritize the specific technical skills (Power BI, Python, SQL, Azure Data Factory) and project outcomes (dashboard creation, pipeline automation) irrespective of the employer."
+      },
+      {
+        "id": "scrum_project",
+        "label": "Scrum",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The significant decrease in weight (from 1.0 to 0.3) for the candidate's CV, coupled with the job description emphasizing 'Power BI, Excel, SQL, MySQL,' suggests a halo bias. The CV prominently features these tools, and the algorithm heavily weighted the CV due to these skills, overshadowing potentially valuable experience in other relevant areas like data modeling or strategic analysis, as evidenced by the candidate’s descriptions of “modélisation, l’automatisation des flux et la création de dashboards interactifs.” A fairer approach would prioritize skills demonstrated and the candidate's experience with the wider data ecosystem, rather than relying solely on a few key tools listed in the job description."
+      },
+      {
+        "id": "teamwork_collaboration",
+        "label": "Capacité à travailler en équipe",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The candidate's CV highlights 5+ years of experience with Power BI, Python, SQL, and Azure Data Factory – technologies heavily emphasized in the job description. The significant decrease in weight (Delta: -0.695) suggests a bias against candidates who possess these highly relevant skills, falling under the category of PRESTIGE BIAS.  The JD heavily emphasizes these tools, and the CV demonstrates strong proficiency.  A correction factor of 0.75 is warranted to reduce the unfair penalization of the candidate’s skillset, favoring a more balanced assessment based on demonstrated capabilities.  The system is prioritizing prestige over practical experience."
+      },
+      {
+        "id": "communication_skills",
+        "label": "Bonne communication",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.24,
+        "reason": "The significant decrease in weight for 'communication skills' (w_cv from 0.864 to 0.3) likely stems from a Halo Bias. The job description heavily emphasizes communication skills, yet the CV only briefly mentions 'communication' alongside other technical skills. The system prioritized the listed technical skills (Power BI, Python, SQL) far more heavily, indicating a reliance on a single strong signal (technical skills) to evaluate the entire profile, rather than a holistic assessment considering the communicated requirements. A fair alternative would involve weighting all skills proportionally to the JD's emphasis, rather than heavily penalizing the candidate for not explicitly detailing communication experience in a way the algorithm valued."
+      },
+      {
+        "id": "excel_spreadsheet",
+        "label": "Excel",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The significant decrease in weight (w_cv from 0.88 to 0.3) suggests a halo effect based on the prominence of Power BI and experience at EY. While Power BI and EY experience are valuable, the system is overly weighting these signals and ignoring other potentially relevant skills and experience presented in the CV such as SQL, Python, Azure Data Factory, and the breadth of experience across reporting, analysis, and data pipeline development. A fair alternative would be to evaluate the candidate based on a holistic assessment of their skills and experience, not solely on the tools they've used previously."
+      },
+      {
+        "id": "power_bi_visualization",
+        "label": "Power BI",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The significant decrease in weight (w_cv from 0.87 to 0.3) suggests a halo effect – the candidate is being judged primarily on their experience with Power BI, a single strong signal, rather than a holistic assessment of their skills and experience. The CV heavily emphasizes Power BI and related tools, while the JD mentions other valuable skills like SQL, Python, and communication, which are not proportionally represented in the adapted score. A fairer alternative would prioritize a broader range of skills and experience demonstrated in the CV, reducing the undue influence of Power BI."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3148 (sous-qualifié), CTM=0.6298 (écart structurel élevé), match_pct=42.05% → Poor Match",
+    "v6_summary": "weighted_f1=0.4605, gap_score=0.2229, ndcg_5=0.6749, missing_critical_penalty=0.1667, combo_v6_final=40.63",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "10 gaps critiques identifiés",
+    "bias_note": "9 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "⚠ 55.6% des scores via fallback mathématique (LLM instable)"
+  }
+}

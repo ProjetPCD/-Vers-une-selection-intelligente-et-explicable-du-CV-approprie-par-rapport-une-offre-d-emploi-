@@ -1,0 +1,336 @@
+{
+  "job_id": "job_41",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-02T23:50:56.304327",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 15.61,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.75,
+        "coverage_rate": 0.375,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.2291,
+    "edge_score": 0.42,
+    "combined": 0.3055
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1195,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.8483,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.8439,
+    "matched_nodes": "0/8",
+    "edge_match_pct": 21.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1243,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.3396,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.0988,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8948,
+    "ndcg_10": 0.9685,
+    "map_score": 0.8736,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.4142,
+    "semantic_fit_score": 0.3761,
+    "experience_density": 0.1059
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 14.54,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 16.86,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 17.12,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 91.37,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 2.96,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 22.83,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 5,
+      "match_pct": 0.0,
+      "weight_sum": 5.0
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 49.5,
+      "weight_sum": 1.0
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 33.0,
+      "weight_sum": 0.937
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 9.4,
+      "weight_sum": 0.459
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 21.0,
+    "total_edges": 6,
+    "top_synergies": [
+      {
+        "edge_key": "python_hard_skill|data_analyst_domain",
+        "source": "python_hard_skill",
+        "target": "data_analyst_domain",
+        "w_0": 0.9,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 41.7,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "excel_tool|data_analyst_domain",
+        "source": "excel_tool",
+        "target": "data_analyst_domain",
+        "w_0": 0.65,
+        "w_cv": 0.33,
+        "w_cv_norm": 0.165,
+        "match_pct": 25.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "tableau_tool|data_analyst_domain",
+        "source": "tableau_tool",
+        "target": "data_analyst_domain",
+        "w_0": 0.65,
+        "w_cv": 0.33,
+        "w_cv_norm": 0.165,
+        "match_pct": 25.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "looker_tool|data_analyst_domain",
+        "source": "looker_tool",
+        "target": "data_analyst_domain",
+        "w_0": 0.65,
+        "w_cv": 0.33,
+        "w_cv_norm": 0.165,
+        "match_pct": 25.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "pivot_tool|data_analyst_domain",
+        "source": "pivot_tool",
+        "target": "data_analyst_domain",
+        "w_0": 0.65,
+        "w_cv": 0.33,
+        "w_cv_norm": 0.165,
+        "match_pct": 25.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Excel",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PostgreSQL",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Pivot",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Tableau",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Looker",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Data Analyst",
+      "type": "Domain",
+      "gap": 0.607,
+      "severity": "critical",
+      "importance": 0.937
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Excel",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "PostgreSQL",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Pivot",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Tableau",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Looker",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Data Analyst",
+        "type": "Domain",
+        "gap": 0.607
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 3,
+    "nodes_with_bias": 3,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE BIAS": 2,
+      "HALO BIAS": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python_hard_skill",
+        "label": "Python",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.1,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.99,
+        "reason": "The audit highlights that the ‘python_hard_skill’ was used in a high-impact project – ‘Alzheimer’s Disease Classification’ – achieving state-of-the-art results. However, the CV emphasizes Loukil's role at InstaDeep and ICube, indicating a strong preference for organizations perceived as prestigious in Deep Learning. The reduction in weight (Delta -0.10) suggests a penalization for using a skill primarily demonstrated within a research setting, despite the excellent outcome. A fairer alternative would be to treat the project outcome and InstaDeep affiliation as reinforcing factors, not as penalizing elements, thus a slight increase in the weight is warranted."
+      },
+      {
+        "id": "data_analyst_domain",
+        "label": "Data Analyst",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.66,
+        "reason": "The audit highlights an overemphasis on the candidate's role at InstaDeep, a prominent research organization, leading to an inflated weight. This prestige bias unfairly prioritizes the candidate's association with a well-known company over demonstrated skills and outcomes. The project description, centered around Deep Learning and a specific academic publication, significantly contributes to this bias. A fairer alternative would focus on quantifiable achievements, specific tools utilized, and concrete results of data analysis, regardless of the employer's reputation."
+      },
+      {
+        "id": "communication_soft_skill",
+        "label": "capacité de communiquer efficacement les résultats",
+        "bias_category": "HALO BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The audit identifies a halo bias due to the emphasis on the candidate's internship at InstaDeep and their academic project on Deep Learning, particularly within the context of a ‘Machine Learning Engineer’ role. While the project itself demonstrates advanced technical skills, the JD’s explicit requirement for 'communication effectively' is disproportionately weighted, likely influenced by the candidate's impressive academic and professional background. This suggests an over-reliance on the ‘Deep Learning’ signal, unfairly boosting the communication component when it's not directly evidenced in the CV. A fairer alternative would prioritize skills and experiences outlined in the JD, rather than relying on a high-profile, potentially biasing, project detail."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1195 (sous-qualifié), CTM=0.8483 (écart structurel élevé), match_pct=15.61% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.0988, ndcg_5=0.8948, missing_critical_penalty=0.0, combo_v6_final=14.54",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "6 gaps critiques identifiés",
+    "bias_note": "3 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

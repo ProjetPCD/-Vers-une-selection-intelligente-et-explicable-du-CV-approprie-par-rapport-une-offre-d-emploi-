@@ -1,0 +1,125 @@
+{
+  "nodes": [
+    {
+      "id": "senior-software-engineer",
+      "label": "Senior Software Engineer",
+      "type": "Domain",
+      "w_0": 1.0,
+      "context": "Senior Software Engineer dans notre équipe R&D Engineering",
+      "inferred": false,
+      "inferred_from": null
+    },
+    {
+      "id": "angular",
+      "label": "Angular",
+      "type": "Tool",
+      "w_0": 1.0,
+      "context": "concevoir et de développer des applications web innovantes en utilisant les dernières technologies telles que Angular",
+      "inferred": false,
+      "inferred_from": null
+    },
+    {
+      "id": "react",
+      "label": "React",
+      "type": "Tool",
+      "w_0": 1.0,
+      "context": "concevoir et de développer des applications web innovantes en utilisant les dernières technologies telles que React, ou Vue.js",
+      "inferred": false,
+      "inferred_from": null
+    },
+    {
+      "id": "vue-js",
+      "label": "Vue.js",
+      "type": "Tool",
+      "w_0": 0.801,
+      "context": "concevoir et de développer des applications web innovantes en utilisant les dernières technologies telles que Angular, React, ou Vue.js",
+      "inferred": false,
+      "inferred_from": null
+    },
+    {
+      "id": "rd-engineering",
+      "label": "R&D Engineering",
+      "type": "Domain",
+      "w_0": 0.522,
+      "context": "Senior Software Engineer dans notre équipe R&D Engineering",
+      "inferred": false,
+      "inferred_from": null
+    },
+    {
+      "id": "full-stack",
+      "label": "Full Stack",
+      "type": "Domain",
+      "w_0": 0.491,
+      "context": "Opportunité pour un expert en développement Full Stack !",
+      "inferred": false,
+      "inferred_from": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "senior-software-engineer",
+      "target": "full-stack",
+      "relation": "part_of",
+      "weight": 0.9,
+      "rationale": "The job posting mentions a position for a Full Stack expert."
+    },
+    {
+      "source": "senior-software-engineer",
+      "target": "rd-engineering",
+      "relation": "part_of",
+      "weight": 0.8,
+      "rationale": "The team is called R&D Engineering, which the Senior Software Engineer will be part of."
+    },
+    {
+      "source": "angular",
+      "target": "senior-software-engineer",
+      "relation": "requires | implements",
+      "weight": 0.85,
+      "rationale": "The job posting mentions using Angular for web application development, which is a key responsibility of the Senior Software Engineer."
+    },
+    {
+      "source": "react",
+      "target": "senior-software-engineer",
+      "relation": "requires | implements",
+      "weight": 0.8,
+      "rationale": "Similarly, React is also mentioned as one of the technologies used for web application development."
+    },
+    {
+      "source": "vue-js",
+      "target": "senior-software-engineer",
+      "relation": "requires | implements",
+      "weight": 0.7,
+      "rationale": "Vue.js is another technology mentioned, and while less prominent than Angular and React, it's still part of the job requirements."
+    },
+    {
+      "source": "senior-software-engineer",
+      "target": "angular",
+      "relation": "supports | complements",
+      "weight": 0.6,
+      "rationale": "While not explicitly stated, the Senior Software Engineer will likely need to support and maintain existing applications built with Angular."
+    },
+    {
+      "source": "senior-software-engineer",
+      "target": "react",
+      "relation": "supports | complements",
+      "weight": 0.6,
+      "rationale": "Similarly, the Senior Software Engineer will need to support and maintain existing applications built with React."
+    },
+    {
+      "source": "senior-software-engineer",
+      "target": "vue-js",
+      "relation": "supports | complements",
+      "weight": 0.5,
+      "rationale": "While less prominent, the Senior Software Engineer may still need to support and maintain existing applications built with Vue.js."
+    },
+    {
+      "source": "angular",
+      "target": "vue-js",
+      "relation": "complements",
+      "weight": 0.4,
+      "rationale": "Angular and Vue.js are both JavaScript frameworks for building web applications, making them complementary technologies."
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_120"
+}

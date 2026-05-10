@@ -1,0 +1,113 @@
+{
+  "nodes": [
+    {
+      "id": "azure",
+      "label": "Azure",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "Solide expérience dans la conception et le déploiement d'infrastructures cloud sécurisées, ainsi que dans la mise en œuvre de la transformation numérique vers le cloud Microsoft.",
+      "inferred": false
+    },
+    {
+      "id": "devsecops",
+      "label": "DevSecOps",
+      "type": "Tool",
+      "w_0": 0.985,
+      "seniority_required": "Senior",
+      "context": "Les compétences techniques requises incluent Azure, DevSecOps...",
+      "inferred": false
+    },
+    {
+      "id": "terraform",
+      "label": "Terraform",
+      "type": "Tool",
+      "w_0": 0.715,
+      "seniority_required": "Senior",
+      "context": "la mise en place et la mise à jour de l'infrastructure as code avec Terraform",
+      "inferred": false
+    },
+    {
+      "id": "architecture_applicative",
+      "label": "Architecture Applicative",
+      "type": "Soft Skill",
+      "w_0": 0.711,
+      "seniority_required": "Senior",
+      "context": "Les compétences techniques requises incluent Azure, DevSecOps, Architecture Applicative...",
+      "inferred": false
+    },
+    {
+      "id": "candidat_idéal",
+      "label": "Candidat idéal",
+      "type": "Domain",
+      "w_0": 0.543,
+      "seniority_required": "N/A",
+      "context": "Le candidat idéal aura une solide expérience dans la conception et le déploiement d'infrastructures cloud sécurisées...",
+      "inferred": false
+    },
+    {
+      "id": "architecte_cloud_expérimenté",
+      "label": "Architecte cloud expérimenté",
+      "type": "Domain",
+      "w_0": 0.406,
+      "seniority_required": "N/A",
+      "context": "Mission passionnante pour un architecte cloud expérimenté chez une entreprise leader dans le domaine de la technologie.",
+      "inferred": false
+    },
+    {
+      "id": "écosystème_microsoft",
+      "label": "Écosystème Microsoft",
+      "type": "Tool",
+      "w_0": 0.4,
+      "seniority_required": "Senior",
+      "context": "Les compétences techniques requises incluent Azure, DevSecOps, Architecture Applicative, Développement de solutions Cloud Native, écosystème Microsoft...",
+      "inferred": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "architecte_cloud_expérimenté",
+      "target": "azure",
+      "relation": "requires",
+      "weight": 0.9,
+      "rationale": "Le candidat idéal aura une solide expérience dans la conception et le déploiement d'infrastructures cloud sécurisées avec Azure."
+    },
+    {
+      "source": "architecte_cloud_expérimenté",
+      "target": "devsecops",
+      "relation": "requires",
+      "weight": 0.9,
+      "rationale": "Le candidat idéal aura une solide expérience dans la conception et le déploiement d'infrastructures cloud sécurisées avec DevSecOps."
+    },
+    {
+      "source": "architecte_cloud_expérimenté",
+      "target": "terraform",
+      "relation": "implements",
+      "weight": 0.8,
+      "rationale": "Le candidat idéal devra mettre en place et mettre à jour l'infrastructure as code avec Terraform."
+    },
+    {
+      "source": "architecture_applicative",
+      "target": "azure",
+      "relation": "supports",
+      "weight": 0.7,
+      "rationale": "Les compétences techniques requises incluent Azure, qui est facilité par les compétences en Architecture Applicative."
+    },
+    {
+      "source": "candidat_idéal",
+      "target": "écosystème_microsoft",
+      "relation": "part_of",
+      "weight": 0.6,
+      "rationale": "Le candidat idéal est un professionnel expérimenté dans l'écosystème Microsoft."
+    },
+    {
+      "source": "architecture_applicative",
+      "target": "candidat_idéal",
+      "relation": "complements",
+      "weight": 0.6,
+      "rationale": "L'Architecture Applicative est une compétence qui s'ajoute à celles requises pour un candidat idéal."
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_22"
+}

@@ -1,0 +1,416 @@
+{
+  "job_id": "job_30",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-04T02:28:45.095999",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 39.53,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.286,
+        "coverage_rate": 0.5,
+        "nodes_audited": 6,
+        "nodes_biased": 6
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.2311,
+    "edge_score": 0.2437,
+    "combined": 0.2361
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2765,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6262,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6047,
+    "matched_nodes": "4/14",
+    "edge_match_pct": 24.37
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2927,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.6659,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.2212,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.9085,
+    "ndcg_10": 0.9402,
+    "map_score": 0.9536,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.4012,
+    "semantic_fit_score": 0.388,
+    "experience_density": 0.1787
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 24.51,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 35.01,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 22.43,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 94.72,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 6.64,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 23.63,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 5,
+      "match_pct": 17.1,
+      "weight_sum": 4.561
+    },
+    "Hard Skill": {
+      "count": 4,
+      "match_pct": 32.0,
+      "weight_sum": 3.416
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 28.8,
+      "weight_sum": 1.141
+    },
+    "Soft Skill": {
+      "count": 3,
+      "match_pct": 17.6,
+      "weight_sum": 1.712
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 24.37,
+    "total_edges": 10,
+    "top_synergies": [
+      {
+        "edge_key": "python|machine_learning",
+        "source": "python",
+        "target": "machine_learning",
+        "w_0": 0.5,
+        "w_cv": 0.637,
+        "w_cv_norm": 0.637,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "data_science|machine_learning",
+        "source": "data_science",
+        "target": "machine_learning",
+        "w_0": 0.5,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.6,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "data_science|python",
+        "source": "data_science",
+        "target": "python",
+        "w_0": 0.5,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.6,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "docker|linux",
+        "source": "docker",
+        "target": "linux",
+        "w_0": 0.5,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.6,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "docker|kubernetes",
+        "source": "docker",
+        "target": "kubernetes",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "AWS",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Jenkins",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Go",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Kubernetes",
+      "type": "Tool",
+      "gap": 0.902,
+      "severity": "critical",
+      "importance": 0.902
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "AWS",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Jenkins",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Go",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "Kubernetes",
+        "type": "Tool",
+        "gap": 0.902
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 6,
+    "edges_audited": 4,
+    "edges_with_bias": 4,
+    "bias_categories": {
+      "PRESTIGE": 10
+    },
+    "biased_nodes": [
+      {
+        "id": "java",
+        "label": "Java",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.938,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (ENSA Khouribga) and company names (Oracle, COLAS DIGITAL SOLUTIONS, Onedustry Technologies) may not be as well-known as those of other candidates, leading to an unfair decrease in the weight. A fairer assessment would consider the candidate's skills and experience, such as Java, Spring Boot, and DevOps, which are relevant to the job description."
+      },
+      {
+        "id": "python",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.938,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (ENSA Khouribga) and company names (Oracle, COLAS DIGITAL SOLUTIONS, Onedustry Technologies) may not be as well-known as those of other candidates. The correction factor is set to 1.25 to increase the weight of the 'python' skill, as it is a relevant skill for the job description."
+      },
+      {
+        "id": "docker",
+        "label": "Docker",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.938,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change is likely due to prestige bias, as the candidate's university (ENSA Khouribga) and company names (Oracle, COLAS DIGITAL SOLUTIONS, Onedustry Technologies) may be perceived as less prestigious compared to the ideal candidate. The correction factor is set to 1.25 to account for this unfair penalty."
+      },
+      {
+        "id": "linux",
+        "label": "Linux",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.938,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (ENSA Khouribga) and company names (Oracle, COLAS DIGITAL SOLUTIONS, Onedustry Technologies) may not be as well-known as those typically associated with top-tier institutions. The correction factor is set to 1.25 to account for the unfair penalty."
+      },
+      {
+        "id": "data_science",
+        "label": "Data Science",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.938,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (ENSA Khouribga) and company names (Oracle, COLAS DIGITAL SOLUTIONS, Onedustry Technologies) may not be as well-known as those of other candidates, leading to an unfair decrease in the weight. A fairer assessment would consider the candidate's skills and experience, such as their proficiency in Java, Spring Boot, and DevOps, which are relevant to the job description."
+      },
+      {
+        "id": "communication",
+        "label": "Communication",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.9,
+        "w_cv_corrected": 0.9,
+        "reason": "The weight change for the 'communication' skill is biased due to prestige bias, as the candidate's university (ENSA Khouribga) and company names (Oracle, COLAS DIGITAL SOLUTIONS, Onedustry Technologies) may not be as well-known as those of other candidates. The correction factor is set to 1.20 to increase the weight of this skill, as the candidate's skills and experience in DevOps and MLOps are relevant to the job description."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "python|machine_learning",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_corrected": 0.637,
+        "reason": "The edge weight change is biased due to prestige bias, as the ideal weight is higher than the CV weight, potentially favoring candidates from top-tier universities or companies that have a strong reputation in machine learning and Python. A fairer approach would be to evaluate the candidate's skills and experience in Python and machine learning, rather than relying on the prestige of their certification."
+      },
+      {
+        "edge": "data_science|machine_learning",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.6,
+        "reason": "The edge weight change is biased towards prestige bias, as the ideal weight is higher than the CV weight, indicating a preference for candidates with certifications from prestigious institutions. This may unfairly penalize candidates with similar skills and experience from less prestigious institutions. A fairer approach would be to focus on the skills and experience mentioned in the job description, rather than the certification."
+      },
+      {
+        "edge": "data_science|python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased towards candidates with a prestigious certification, emphasizing the synergy between Data Science and Python. This may unfairly penalize candidates with equivalent skills but without the specific certification. A fairer approach would be to assess the candidate's actual skills and experience in data science and Python, rather than relying on a certification."
+      },
+      {
+        "edge": "docker|linux",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased towards prestige, as the ideal weight is higher than the CV weight, indicating a preference for candidates with experience in prestigious technologies like Docker and Linux. The correction factor is set to 0.80 to reduce the unfair advantage given to candidates with experience in these specific technologies."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2765 (sous-qualifié), CTM=0.6262 (écart structurel élevé), match_pct=39.53% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.2212, ndcg_5=0.9085, missing_critical_penalty=0.0, combo_v6_final=24.51",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "4 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 18,
+    "pool_size": 45,
+    "percentile": 0.6136,
+    "composite_z_score": 0.0598,
+    "tier": "Top 50%",
+    "z_scores": {
+      "combo_v6": 0.134,
+      "wf1": -0.868,
+      "gap_score": 0.701,
+      "ntcw": 0.723,
+      "match_pct": 0.579,
+      "ndcg_5": -0.022
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 22.4153,
+        "std": 15.5835
+      },
+      "wf1": {
+        "mean": 0.1472,
+        "std": 0.1697
+      },
+      "gap_score": {
+        "mean": 0.1336,
+        "std": 0.125
+      },
+      "ntcw": {
+        "mean": 0.1689,
+        "std": 0.1488
+      },
+      "match_pct": {
+        "mean": 31.3518,
+        "std": 14.1146
+      },
+      "ndcg_5": {
+        "mean": 0.91,
+        "std": 0.0674
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

@@ -1,0 +1,414 @@
+{
+  "job_id": "job_9",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-05T19:12:15.526132",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 23.94,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.733,
+        "coverage_rate": 0.133,
+        "nodes_audited": 1,
+        "nodes_biased": 1
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.0581,
+    "edge_score": 0.1269,
+    "combined": 0.0857
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.071,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7603,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7606,
+    "matched_nodes": "1/15",
+    "edge_match_pct": 12.69
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.0759,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.177,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.0516,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.9067,
+    "ndcg_10": 0.9407,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.4012,
+    "semantic_fit_score": 0.1828,
+    "experience_density": 0.0456
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 9.91,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 9.23,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 8.46,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 96.27,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 1.55,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 20.97,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Education": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 25.5,
+      "weight_sum": 1.837
+    },
+    "Tool": {
+      "count": 4,
+      "match_pct": 0.0,
+      "weight_sum": 2.691
+    },
+    "Responsibility": {
+      "count": 5,
+      "match_pct": 0.0,
+      "weight_sum": 4.148
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 0.0,
+      "weight_sum": 1.59
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 42.5,
+      "weight_sum": 0.507
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 12.69,
+    "total_edges": 13,
+    "top_synergies": [
+      {
+        "edge_key": "python|data_analysis",
+        "source": "python",
+        "target": "data_analysis",
+        "w_0": 0.5,
+        "w_cv": 0.9,
+        "w_cv_norm": 0.9,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "programming|python",
+        "source": "programming",
+        "target": "python",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "master_degree|data_science",
+        "source": "master_degree",
+        "target": "data_science",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python|predictive_modeling",
+        "source": "python",
+        "target": "predictive_modeling",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python|machine_learning",
+        "source": "python",
+        "target": "machine_learning",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Master Degree",
+      "type": "Education",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "MongoDB",
+      "type": "Tool",
+      "gap": 0.978,
+      "severity": "critical",
+      "importance": 0.978
+    },
+    {
+      "skill": "Data Analysis",
+      "type": "Responsibility",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Predictive Modeling",
+      "type": "Responsibility",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Machine Learning",
+      "type": "Hard Skill",
+      "gap": 0.837,
+      "severity": "critical",
+      "importance": 0.837
+    },
+    {
+      "skill": "Data Science",
+      "type": "Domain",
+      "gap": 0.814,
+      "severity": "critical",
+      "importance": 0.814
+    },
+    {
+      "skill": "Data Mining",
+      "type": "Responsibility",
+      "gap": 0.8,
+      "severity": "critical",
+      "importance": 0.8
+    },
+    {
+      "skill": "Data Cleaning",
+      "type": "Responsibility",
+      "gap": 0.8,
+      "severity": "critical",
+      "importance": 0.8
+    },
+    {
+      "skill": "Internship",
+      "type": "Domain",
+      "gap": 0.776,
+      "severity": "critical",
+      "importance": 0.776
+    },
+    {
+      "skill": "Data Visualization",
+      "type": "Responsibility",
+      "gap": 0.748,
+      "severity": "critical",
+      "importance": 0.748
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Master Degree",
+        "type": "Education",
+        "gap": 1.0
+      },
+      {
+        "label": "MongoDB",
+        "type": "Tool",
+        "gap": 0.978
+      },
+      {
+        "label": "Data Analysis",
+        "type": "Responsibility",
+        "gap": 0.9
+      },
+      {
+        "label": "Predictive Modeling",
+        "type": "Responsibility",
+        "gap": 0.9
+      },
+      {
+        "label": "Machine Learning",
+        "type": "Hard Skill",
+        "gap": 0.837
+      },
+      {
+        "label": "Data Science",
+        "type": "Domain",
+        "gap": 0.814
+      },
+      {
+        "label": "Data Mining",
+        "type": "Responsibility",
+        "gap": 0.8
+      },
+      {
+        "label": "Data Cleaning",
+        "type": "Responsibility",
+        "gap": 0.8
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 1,
+    "nodes_with_bias": 1,
+    "edges_audited": 1,
+    "edges_with_bias": 1,
+    "bias_categories": {
+      "PRESTIGE": 2
+    },
+    "biased_nodes": [
+      {
+        "id": "python",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.938,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience with Python is only mentioned in the context of automation tools, but not as a primary skill. The job description emphasizes Python as a required skill, but the candidate's experience is downplayed. A fair assessment would give more weight to the candidate's Python experience, increasing the correction factor to 1.25."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "python|data_analysis",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_corrected": 0.9,
+        "reason": "The edge weight change is biased due to prestige bias, as the ideal weight is 0.9 but the CV weight is only 0.75, likely because the candidate's CV does not mention Python or data analysis explicitly, despite having relevant skills and experience. A fair alternative would be to consider the candidate's overall programming skills and experience in data-related tools, rather than relying solely on the presence of specific keywords."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.071 (sous-qualifié), CTM=0.7603 (écart structurel élevé), match_pct=23.94% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.0516, ndcg_5=0.9067, missing_critical_penalty=0.0, combo_v6_final=9.91",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "11 gaps critiques identifiés",
+    "bias_note": "1 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 15,
+    "pool_size": 20,
+    "percentile": 0.2632,
+    "composite_z_score": -0.6974,
+    "tier": "Bottom 50%",
+    "z_scores": {
+      "combo_v6": -0.907,
+      "wf1": -1.058,
+      "gap_score": -0.787,
+      "ntcw": -0.75,
+      "match_pct": -0.173,
+      "ndcg_5": 0.048
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 18.462,
+        "std": 9.4291
+      },
+      "wf1": {
+        "mean": 0.1249,
+        "std": 0.1181
+      },
+      "gap_score": {
+        "mean": 0.0901,
+        "std": 0.0489
+      },
+      "ntcw": {
+        "mean": 0.1194,
+        "std": 0.0645
+      },
+      "match_pct": {
+        "mean": 25.2055,
+        "std": 7.3309
+      },
+      "ndcg_5": {
+        "mean": 0.9043,
+        "std": 0.0506
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

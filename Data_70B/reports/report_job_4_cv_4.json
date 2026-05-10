@@ -1,0 +1,390 @@
+{
+  "job_id": "job_4",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-03T19:42:21.621776",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 27.66,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.583,
+        "coverage_rate": 0.167,
+        "nodes_audited": 2,
+        "nodes_biased": 2
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.0737,
+    "edge_score": 0.0833,
+    "combined": 0.0776
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.0925,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7204,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7234,
+    "matched_nodes": "2/12",
+    "edge_match_pct": 8.33
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1053,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1042,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.0635,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.8629,
+    "ndcg_10": 0.9331,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.1238,
+    "experience_density": 0.0547
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 9.1,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 7.86,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 6.87,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 94.52,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 1.91,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 1.09,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 5,
+      "match_pct": 0.0,
+      "weight_sum": 3.505
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 1.0
+    },
+    "Responsibility": {
+      "count": 2,
+      "match_pct": 0.0,
+      "weight_sum": 1.8
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 0.774
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 46.9,
+      "weight_sum": 1.4
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 0.43
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 8.33,
+    "total_edges": 9,
+    "top_synergies": [
+      {
+        "edge_key": "collaboration|knowledge_sharing",
+        "source": "collaboration",
+        "target": "knowledge_sharing",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "azure|cloud_migration",
+        "source": "azure",
+        "target": "cloud_migration",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devsecops|security_implementation",
+        "source": "devsecops",
+        "target": "security_implementation",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devops|ci_cd",
+        "source": "devops",
+        "target": "ci_cd",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "architecture_applicative|cloud_native_development",
+        "source": "architecture_applicative",
+        "target": "cloud_native_development",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Azure",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Ingénieur Degree",
+      "type": "Education",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Cloud Migration",
+      "type": "Responsibility",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Security Implementation",
+      "type": "Responsibility",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "DevSecOps",
+      "type": "Tool",
+      "gap": 0.87,
+      "severity": "critical",
+      "importance": 0.87
+    },
+    {
+      "skill": "DevOps",
+      "type": "Hard Skill",
+      "gap": 0.774,
+      "severity": "critical",
+      "importance": 0.774
+    },
+    {
+      "skill": "Architecture Applicative",
+      "type": "Tool",
+      "gap": 0.75,
+      "severity": "critical",
+      "importance": 0.75
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Azure",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Ingénieur Degree",
+        "type": "Education",
+        "gap": 1.0
+      },
+      {
+        "label": "Cloud Migration",
+        "type": "Responsibility",
+        "gap": 0.9
+      },
+      {
+        "label": "Security Implementation",
+        "type": "Responsibility",
+        "gap": 0.9
+      },
+      {
+        "label": "DevSecOps",
+        "type": "Tool",
+        "gap": 0.87
+      },
+      {
+        "label": "DevOps",
+        "type": "Hard Skill",
+        "gap": 0.774
+      },
+      {
+        "label": "Architecture Applicative",
+        "type": "Tool",
+        "gap": 0.75
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 2,
+    "nodes_with_bias": 2,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "GENDER_DIVERSITY": 1,
+      "PRESTIGE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "collaboration",
+        "label": "Collaboration",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.938,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change for collaboration is biased as it unfairly penalizes the candidate for showcasing soft skills, such as collaboration and mentoring, which are essential for the role. The candidate's CV provides concrete evidence of working with cross-functional teams and leading technical workshops, which aligns with the job description's emphasis on collaboration. The bias is categorized as GENDER_DIVERSITY, as it disproportionately affects candidates from underrepresented groups who may have had to work harder to develop these skills. A correction factor of 1.25 is applied to increase the weight of collaboration to its ideal value."
+      },
+      {
+        "id": "knowledge_sharing",
+        "label": "Knowledge Sharing",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.938,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change for 'knowledge_sharing' is biased due to prestige bias, as the candidate's experience in directing technical training sessions is undervalued. The correction factor is set to 1.25 to account for the unfair penalty. The candidate's CV showcases strong evidence of knowledge sharing through leading technical workshops and mentoring junior developers, which aligns with the job description's requirement for sharing knowledge and forming teams on best practices."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.0925 (sous-qualifié), CTM=0.7204 (écart structurel élevé), match_pct=27.66% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.0635, ndcg_5=0.8629, missing_critical_penalty=0.0, combo_v6_final=9.1",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "7 gaps critiques identifiés",
+    "bias_note": "2 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 4,
+    "pool_size": 5,
+    "percentile": 0.25,
+    "composite_z_score": -0.522,
+    "tier": "Bottom 50%",
+    "z_scores": {
+      "combo_v6": -0.659,
+      "wf1": -0.709,
+      "gap_score": -0.526,
+      "ntcw": -0.462,
+      "match_pct": -0.462,
+      "ndcg_5": -0.638
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 16.994,
+        "std": 11.9813
+      },
+      "wf1": {
+        "mean": 0.1085,
+        "std": 0.1531
+      },
+      "gap_score": {
+        "mean": 0.1074,
+        "std": 0.0833
+      },
+      "ntcw": {
+        "mean": 0.1392,
+        "std": 0.1012
+      },
+      "match_pct": {
+        "mean": 31.384,
+        "std": 8.0637
+      },
+      "ndcg_5": {
+        "mean": 0.8919,
+        "std": 0.0455
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

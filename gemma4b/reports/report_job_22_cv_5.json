@@ -1,0 +1,288 @@
+{
+  "job_id": "job_22",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-05T09:19:26.715704",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 40.16,
+    "confidence": {
+      "confidence_score": 0.66,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.286,
+        "coverage_rate": 0.714,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.3273,
+    "edge_score": 0.2786,
+    "combined": 0.3078
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2147,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5968,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5984,
+    "matched_nodes": "2/7",
+    "edge_match_pct": 13.96
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2605,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.2726,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1722,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.2,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.0705,
+    "weighted_recall": 0.1316,
+    "weighted_f1": {
+      "value": 0.2344,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.525,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.7504,
+    "ndcg_10": 0.8538,
+    "map_score": 0.81,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.2604,
+    "semantic_fit_score": 0.478,
+    "experience_density": 0.1116
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 25.66,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 24.96,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 28.62,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 83.37,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 38.46,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 25.17,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 31.0,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 4,
+      "match_pct": 13.5,
+      "weight_sum": 3.125
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 9.4,
+      "weight_sum": 0.682
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 52.5,
+      "weight_sum": 0.562
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 0.406
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 13.96,
+    "total_edges": 7,
+    "top_synergies": [
+      {
+        "edge_key": "azure-cloud-architect|net-cloud-development",
+        "source": "azure-cloud-architect",
+        "target": "net-cloud-development",
+        "w_0": 0.65,
+        "w_cv": 0.525,
+        "w_cv_norm": 0.263,
+        "match_pct": 40.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "net-cloud-development|azure-cloud-architect",
+        "source": "net-cloud-development",
+        "target": "azure-cloud-architect",
+        "w_0": 0.6,
+        "w_cv": 0.525,
+        "w_cv_norm": 0.263,
+        "match_pct": 43.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "azure-cloud-architect|microsoft-ecosystem",
+        "source": "azure-cloud-architect",
+        "target": "microsoft-ecosystem",
+        "w_0": 0.9,
+        "w_cv": 0.25,
+        "w_cv_norm": 0.125,
+        "match_pct": 13.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "azure-cloud-architect|devsecops-pipeline",
+        "source": "azure-cloud-architect",
+        "target": "devsecops-pipeline",
+        "w_0": 0.85,
+        "w_cv": 0.188,
+        "w_cv_norm": 0.094,
+        "match_pct": 11.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "azure-cloud-architect|terraform-infrastructure",
+        "source": "azure-cloud-architect",
+        "target": "terraform-infrastructure",
+        "w_0": 0.75,
+        "w_cv": 0.188,
+        "w_cv_norm": 0.094,
+        "match_pct": 12.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Azure",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "DevSecOps",
+      "type": "Tool",
+      "gap": 0.799,
+      "severity": "critical",
+      "importance": 0.987
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Azure",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "DevSecOps",
+        "type": "Tool",
+        "gap": 0.799
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 3,
+    "nodes_with_bias": 3,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 2,
+      "C": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "devsecops-pipeline",
+        "label": "DevSecOps",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The significant decrease in the weight (w_cv) is likely driven by the CV's focus on academic research, specifically a deep learning project related to Alzheimer's disease classification. While relevant skills exist, the project's highly specialized nature – a research internship – doesn't directly align with the typical DevSecOps pipeline experience expected in the job description, creating a proxy bias against candidates with strong research backgrounds. A fairer alternative would prioritize skills demonstrated in secure cloud infrastructure management and pipeline automation, which are not the core focus of the CV's listed projects. The mention of InstaDeep and its location (Tunisia) further signals a research-oriented profile, adding to the skewed weighting."
+      },
+      {
+        "id": "terraform-infrastructure",
+        "label": "Terraform",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The candidate's CV heavily emphasizes deep learning and geometric deep learning projects, particularly within the InstaDeep context, which is based in Tunisia. While valuable skills, the JD specifically calls for 'excellent knowledge of infrastructure' and 'implementation of best practices in security pipelines', and Terraform expertise. The CV's focus on advanced, research-oriented projects in a geographically distant location (Tunisia) suggests a potential proxy bias - favoring candidates with experience in cutting-edge, potentially more theoretical, areas at the expense of candidates with demonstrable experience in infrastructure as code and security implementations relevant to the stated job requirements.  The location itself acts as a proxy for experience level in the specified field. Therefore, a decrease in weighting is justified."
+      },
+      {
+        "id": "architecture-applicative",
+        "label": "Architecture Applicative",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The weight change from 0.682 to 0.25 indicates a significant decrease, primarily driven by the emphasis on a specific academic project – ‘Alzheimer's Disease Classification Using Geometric Deep Learning.’ While demonstrating deep learning expertise is valuable, the project description leans heavily into a niche academic area, potentially penalizing candidates who lack direct experience in that area. This aligns with Ageism as the project details a graduation internship, and the strength of that specific skill is being overweighted relative to broader experience, and the role's broader requirements. A fairer alternative would be to give a reduced weight to this project, focusing more on her overall Machine Learning Engineer experience at InstaDeep, and recognized skills like DevOps and NestJS."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2147 (sous-qualifié), CTM=0.5968 (écart structurel élevé), match_pct=40.16% → Poor Match",
+    "v6_summary": "weighted_f1=0.2344, gap_score=0.1722, ndcg_5=0.7504, missing_critical_penalty=0.0, combo_v6_final=25.66",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "2 gaps critiques identifiés",
+    "bias_note": "3 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.66)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

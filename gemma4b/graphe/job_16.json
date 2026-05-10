@@ -1,0 +1,164 @@
+{
+  "nodes": [
+    {
+      "id": "data-analyst-role",
+      "label": "Data Analyst",
+      "type": "Domain",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "Overall job domain and title",
+      "inferred": true,
+      "inferred_from": "Mission passionnante pour un Data Analyst chez notre entreprise de technologie."
+    },
+    {
+      "id": "python-skill",
+      "label": "Python",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "Explicitly mentioned as an asset",
+      "inferred": true,
+      "inferred_from": "une expérience dans l'utilisation d'outils tels que Python"
+    },
+    {
+      "id": "mysql-tool",
+      "label": "MySQL",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "Explicitly mentioned as an asset",
+      "inferred": true,
+      "inferred_from": "une expérience dans l'utilisation d'outils tels que Python, R, MySQL et SQL"
+    },
+    {
+      "id": "sql-skill",
+      "label": "SQL",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "Explicitly mentioned as an asset",
+      "inferred": true,
+      "inferred_from": "une expérience dans l'utilisation d'outils tels que Python, R, MySQL et SQL"
+    },
+    {
+      "id": "ssis-tool",
+      "label": "SSIS",
+      "type": "Tool",
+      "w_0": 0.938,
+      "seniority_required": "Senior",
+      "context": "Explicitly mentioned as an asset",
+      "inferred": true,
+      "inferred_from": "Vous travaillerez avec des outils tels que Power BI, SSMS, SSRS et SSIS"
+    },
+    {
+      "id": "ssrs-tool",
+      "label": "SSRS",
+      "type": "Tool",
+      "w_0": 0.944,
+      "seniority_required": "Senior",
+      "context": "Explicitly mentioned as an asset",
+      "inferred": true,
+      "inferred_from": "Vous travaillerez avec des outils tels que Power BI, SSMS, SSIS et SSRS"
+    },
+    {
+      "id": "ssms-tool",
+      "label": "SSMS",
+      "type": "Tool",
+      "w_0": 0.902,
+      "seniority_required": "Senior",
+      "context": "Explicitly mentioned as an asset",
+      "inferred": true,
+      "inferred_from": "Vous travaillerez avec des outils tels que Power BI, SSMS, SSIS et SSRS"
+    },
+    {
+      "id": "power-bi-tool",
+      "label": "Power BI",
+      "type": "Tool",
+      "w_0": 0.912,
+      "seniority_required": "Senior",
+      "context": "Explicitly mentioned as an asset",
+      "inferred": true,
+      "inferred_from": "Vous travaillerez avec des outils tels que Power BI, SSMS, SSIS et SSRS"
+    },
+    {
+      "id": "esprit-equipe",
+      "label": "esprit d'équipe",
+      "type": "Soft Skill",
+      "w_0": 0.683,
+      "seniority_required": "Senior",
+      "context": "Strongly implied - 'esprit d'équipe et une honnêteté sans faille'",
+      "inferred": true,
+      "inferred_from": "Vous devrez également avoir de solides compétences analytiques et créatives, ainsi qu'un esprit d'équipe"
+    },
+    {
+      "id": "honnete-sans-faille",
+      "label": "honnêteté",
+      "type": "Soft Skill",
+      "w_0": 0.471,
+      "seniority_required": "Senior",
+      "context": "Strongly implied - 'esprit d'équipe et une honnêteté sans faille'",
+      "inferred": true,
+      "inferred_from": "Vous devrez également avoir de solides compétences analytiques et créatives, ainsi qu'un esprit d'équipe"
+    }
+  ],
+  "edges": [
+    {
+      "source": "python-skill",
+      "target": "data-analyst-role",
+      "relation": "requires",
+      "weight": 0.95,
+      "rationale": "The JD explicitly states \"vous devrez également identifier et surveiller constamment les KPI pour assurer la performance de l'entreprise. Une expérience dans l'utilisation d'outils tels que Python, R, MySQL et SQL serait un atout considérable\" indicating Python is necessary for this role."
+    },
+    {
+      "source": "sql-skill",
+      "target": "data-analyst-role",
+      "relation": "requires",
+      "weight": 0.92,
+      "rationale": "The JD specifies 'Vous devrez également identifier et surveiller constamment les KPI pour assurer la performance de l'entreprise. Une expérience dans l'utilisation d'outils tels que Python, R, MySQL et SQL serait un atout considérable,' highlighting the need for SQL skills."
+    },
+    {
+      "source": "mysql-tool",
+      "target": "data-analyst-role",
+      "relation": "supports",
+      "weight": 0.88,
+      "rationale": "The JD mentions working with 'outils tels que Power BI, SSRS, SSMS et SSIS', suggesting MySQL is a tool used in this role to manage and analyze data."
+    },
+    {
+      "source": "ssms-tool",
+      "target": "data-analyst-role",
+      "relation": "supports",
+      "weight": 0.85,
+      "rationale": "The JD mentions working with 'outils tels que Power BI, SSRS, SSMS et SSIS', indicating SSMS is a tool utilized by the Data Analyst."
+    },
+    {
+      "source": "ssis-tool",
+      "target": "data-analyst-role",
+      "relation": "supports",
+      "weight": 0.83,
+      "rationale": "The JD mentions working with 'outils tels que Power BI, SSRS, SSMS et SSIS', indicating SSIS is a tool utilized by the Data Analyst."
+    },
+    {
+      "source": "power-bi-tool",
+      "target": "data-analyst-role",
+      "relation": "supports",
+      "weight": 0.81,
+      "rationale": "The JD explicitly lists 'Power BI' as a tool used by the Data Analyst."
+    },
+    {
+      "source": "esprit-equipe",
+      "target": "data-analyst-role",
+      "relation": "complements",
+      "weight": 0.55,
+      "rationale": "The JD highlights the importance of 'esprit d'équipe' and 'une honnêteté sans faille', indicating this skill complements the analytical role."
+    },
+    {
+      "source": "honnete-sans-faille",
+      "target": "data-analyst-role",
+      "relation": "complements",
+      "weight": 0.49,
+      "rationale": "The JD emphasizes 'honnêteté' as a required characteristic, indicating this skill complements the analytical role."
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_16"
+}

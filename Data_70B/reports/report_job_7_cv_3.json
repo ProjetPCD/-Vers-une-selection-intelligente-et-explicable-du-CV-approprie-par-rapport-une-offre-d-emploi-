@@ -1,0 +1,481 @@
+{
+  "job_id": "job_7",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-05T19:12:15.345466",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 26.12,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.667,
+        "coverage_rate": 0.292,
+        "nodes_audited": 7,
+        "nodes_biased": 7
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.125,
+    "edge_score": 0.178,
+    "combined": 0.1462
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1447,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7584,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7388,
+    "matched_nodes": "0/24",
+    "edge_match_pct": 17.8
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1454,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.5219,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Partiel"
+    },
+    "gap_score": {
+      "value": 0.1135,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0833,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.7513,
+    "weighted_recall": 0.0538,
+    "weighted_f1": {
+      "value": 0.1043,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5461,
+    "missing_critical_penalty": {
+      "value": 0.0952,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.9189,
+    "ndcg_10": 0.9341,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.972,
+    "top_skill_alignment": 0.4322,
+    "semantic_fit_score": 0.264,
+    "experience_density": 0.1059
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 23.69,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 26.16,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 15.86,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 96.76,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 39.14,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 27.61,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 40.11,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 3,
+      "match_pct": 38.1,
+      "weight_sum": 2.482
+    },
+    "Tool": {
+      "count": 12,
+      "match_pct": 0.0,
+      "weight_sum": 10.709
+    },
+    "Hard Skill": {
+      "count": 5,
+      "match_pct": 20.3,
+      "weight_sum": 4.317
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 25.5,
+      "weight_sum": 2.826
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 17.8,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "data_scientist|excellent_communication",
+        "source": "data_scientist",
+        "target": "excellent_communication",
+        "w_0": 0.5,
+        "w_cv": 0.862,
+        "w_cv_norm": 0.862,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "data_scientist|machine_learning",
+        "source": "data_scientist",
+        "target": "machine_learning",
+        "w_0": 0.5,
+        "w_cv": 0.637,
+        "w_cv_norm": 0.637,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "data_scientist|python",
+        "source": "data_scientist",
+        "target": "python",
+        "w_0": 0.5,
+        "w_cv": 0.637,
+        "w_cv_norm": 0.637,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "python|pandas",
+        "source": "python",
+        "target": "pandas",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python|numpy",
+        "source": "python",
+        "target": "numpy",
+        "w_0": 0.5,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "NumPy",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "SciPy",
+      "type": "Tool",
+      "gap": 0.989,
+      "severity": "critical",
+      "importance": 0.989
+    },
+    {
+      "skill": "Pandas",
+      "type": "Tool",
+      "gap": 0.969,
+      "severity": "critical",
+      "importance": 0.969
+    },
+    {
+      "skill": "Scikit-learn",
+      "type": "Tool",
+      "gap": 0.931,
+      "severity": "critical",
+      "importance": 0.931
+    },
+    {
+      "skill": "Bayesian Modelling",
+      "type": "Hard Skill",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "R",
+      "type": "Hard Skill",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "LaTeX",
+      "type": "Tool",
+      "gap": 0.885,
+      "severity": "critical",
+      "importance": 0.885
+    },
+    {
+      "skill": "Stan",
+      "type": "Tool",
+      "gap": 0.883,
+      "severity": "critical",
+      "importance": 0.883
+    },
+    {
+      "skill": "ArviZ",
+      "type": "Tool",
+      "gap": 0.869,
+      "severity": "critical",
+      "importance": 0.869
+    },
+    {
+      "skill": "DeepLabCut",
+      "type": "Tool",
+      "gap": 0.863,
+      "severity": "critical",
+      "importance": 0.863
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "NumPy",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "SciPy",
+        "type": "Tool",
+        "gap": 0.989
+      },
+      {
+        "label": "Pandas",
+        "type": "Tool",
+        "gap": 0.969
+      },
+      {
+        "label": "Scikit-learn",
+        "type": "Tool",
+        "gap": 0.931
+      },
+      {
+        "label": "Bayesian Modelling",
+        "type": "Hard Skill",
+        "gap": 0.9
+      },
+      {
+        "label": "R",
+        "type": "Hard Skill",
+        "gap": 0.9
+      },
+      {
+        "label": "LaTeX",
+        "type": "Tool",
+        "gap": 0.885
+      },
+      {
+        "label": "Stan",
+        "type": "Tool",
+        "gap": 0.883
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 7,
+    "nodes_with_bias": 7,
+    "edges_audited": 3,
+    "edges_with_bias": 3,
+    "bias_categories": {
+      "PRESTIGE": 8,
+      "GENDER_DIVERSITY": 2
+    },
+    "biased_nodes": [
+      {
+        "id": "data_scientist",
+        "label": "Data Scientist",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 1.062,
+        "w_cv_corrected": 1.062,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (Esprit School of Business) and certifications (Scrum Fundamentals Certified, BIFPC) may have unfairly influenced the adapted weight. The job description emphasizes technical skills and experience in machine learning and Agile methodologies, which the candidate demonstrates. A fairer assessment would increase the weight to reflect the candidate's relevant skills and experience."
+      },
+      {
+        "id": "python",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 1.125,
+        "w_cv_corrected": 1.125,
+        "reason": "The weight change is biased due to prestige bias, as the certification in Python for Data Science from a non-top-tier institution (Esprit School of Business) is undervalued. The correction factor is set to 1.25 to account for the unfair penalty. A fairer approach would be to evaluate the candidate's skills and experience in Python, rather than relying on the prestige of their institution."
+      },
+      {
+        "id": "machine_learning",
+        "label": "Machine Learning",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.938,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university (Esprit School of Business) and company names (Oracle Cloud Infrastructure, Linedata Hedge Funds) are not directly relevant to the machine learning skills required for the job. The correction factor is 1.25 to increase the weight and counteract the unfair penalty."
+      },
+      {
+        "id": "excellent_communication",
+        "label": "Excellent Communication",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.3,
+        "w_cv_before": 0.65,
+        "w_cv_corrected": 0.65,
+        "reason": "The weight change from 0.9 to 0.25 for 'excellent_communication' is biased due to prestige bias, as the candidate's passion for AI and project management is mentioned in the CV, but the intensity is central, adding a bonus of 0.10. This indicates that the adapted weight is unfairly decreased due to the candidate's university or company name not being prestigious enough. A correction factor of 1.30 is applied to increase the weight to its ideal value."
+      },
+      {
+        "id": "teamwork",
+        "label": "Teamwork",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change for 'teamwork' is biased as it penalizes the candidate for lacking concrete project evidence, despite mentioning contextual support for teams. This is a soft skill that is often undervalued in female candidates. The correction factor is set to 1.20 to account for this unfair penalty."
+      },
+      {
+        "id": "methodology",
+        "label": "Methodology",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.938,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's certification in 'Méthodes agiles' and central intensity are overemphasized, leading to an unfair decrease in the weight. A fairer assessment would consider the candidate's skills and experience in machine learning and data science, rather than the prestige associated with the certification."
+      },
+      {
+        "id": "communication",
+        "label": "Communication",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's mention of 'Passionate about AI and project management' without concrete project evidence led to a decreased weight. This is unfair, as the candidate's skills and experience in AI and project management should be valued. A correction factor of 1.20 is applied to increase the weight, as the candidate's relevant skills and experience should be given more importance."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "data_scientist|machine_learning",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_corrected": 0.637,
+        "reason": "The candidate's mention of overseeing data science and machine learning together is given more weight due to the prestige associated with managing multiple areas, rather than the actual skills demonstrated. This is an example of prestige bias, where the candidate's title or perceived status is given more importance than their actual abilities. A fairer assessment would focus on the candidate's technical skills and experience in machine learning and Bayesian modeling, rather than their management experience."
+      },
+      {
+        "edge": "data_scientist|python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_corrected": 0.637,
+        "reason": "The certification 'Python for Data Science' is given more weight due to its prestige, rather than the actual skills demonstrated. The ideal weight of 0.9 is reduced to 0.75, indicating a bias towards candidates with this specific certification. A fairer approach would be to evaluate the candidate's skills in Python and data science, rather than relying on the certification name."
+      },
+      {
+        "edge": "data_scientist|excellent_communication",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_corrected": 0.862,
+        "reason": "The weight change from 0.9 to 0.75 for 'excellent_communication' may be due to gender diversity bias, as soft skills like communication are often penalized in male-dominated fields like data science. To correct for this bias, a correction factor of 1.15 is applied to increase the weight of excellent communication."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1447 (sous-qualifié), CTM=0.7584 (écart structurel élevé), match_pct=26.12% → Poor Match",
+    "v6_summary": "weighted_f1=0.1043, gap_score=0.1135, ndcg_5=0.9189, missing_critical_penalty=0.0952, combo_v6_final=23.69",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "16 gaps critiques identifiés",
+    "bias_note": "7 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 5,
+    "pool_size": 20,
+    "percentile": 0.7895,
+    "composite_z_score": 0.26,
+    "tier": "Top 25%",
+    "z_scores": {
+      "combo_v6": 0.554,
+      "wf1": -0.174,
+      "gap_score": 0.478,
+      "ntcw": 0.392,
+      "match_pct": 0.125,
+      "ndcg_5": 0.289
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 18.462,
+        "std": 9.4291
+      },
+      "wf1": {
+        "mean": 0.1249,
+        "std": 0.1181
+      },
+      "gap_score": {
+        "mean": 0.0901,
+        "std": 0.0489
+      },
+      "ntcw": {
+        "mean": 0.1194,
+        "std": 0.0645
+      },
+      "match_pct": {
+        "mean": 25.2055,
+        "std": 7.3309
+      },
+      "ndcg_5": {
+        "mean": 0.9043,
+        "std": 0.0506
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

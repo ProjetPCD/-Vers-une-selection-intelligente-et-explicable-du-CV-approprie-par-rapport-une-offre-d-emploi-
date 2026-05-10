@@ -1,0 +1,225 @@
+{
+  "nodes": [
+    {
+      "id": "aws",
+      "label": "AWS",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "Utilisation d'AWS pour la gestion d'infrastructures cloud",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "python",
+      "label": "Python",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "Une connaissance des langages de programmation tels que Python",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "bash",
+      "label": "Bash",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "Une connaissance des langages de programmation tels que Bash",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "docker",
+      "label": "Docker",
+      "type": "Tool",
+      "w_0": 0.991,
+      "seniority_required": "Senior",
+      "context": "Utilisation de Docker pour la gestion de conteneurs",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "terraform",
+      "label": "Terraform",
+      "type": "Tool",
+      "w_0": 0.959,
+      "seniority_required": "Senior",
+      "context": "Utilisation de Terraform pour la gestion d'infrastructures",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "golang",
+      "label": "Golang",
+      "type": "Hard Skill",
+      "w_0": 0.944,
+      "seniority_required": "Senior",
+      "context": "Une connaissance des langages de programmation tels que Golang",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "ansible",
+      "label": "Ansible",
+      "type": "Tool",
+      "w_0": 0.936,
+      "seniority_required": "Senior",
+      "context": "Utilisation d'Ansible pour la gestion de configurations",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "kubernetes",
+      "label": "Kubernetes",
+      "type": "Tool",
+      "w_0": 0.866,
+      "seniority_required": "Senior",
+      "context": "Utilisation de Kubernetes pour la gestion de clusters",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "elasticsearch",
+      "label": "Elasticsearch",
+      "type": "Tool",
+      "w_0": 0.838,
+      "seniority_required": "Senior",
+      "context": "Utilisation de Elasticsearch pour la gestion de logs",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "prometheus",
+      "label": "Prometheus",
+      "type": "Tool",
+      "w_0": 0.826,
+      "seniority_required": "Senior",
+      "context": "Utilisation de Prometheus pour la supervision de la sécurité et de la scalabilité",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "devops",
+      "label": "Devops",
+      "type": "Domain",
+      "w_0": 0.779,
+      "seniority_required": "Senior",
+      "context": "Mission passionnante pour un Senior Devops expérimenté",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "helm",
+      "label": "Helm",
+      "type": "Tool",
+      "w_0": 0.749,
+      "seniority_required": "Senior",
+      "context": "Utilisation de Helm pour la gestion de packages",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "communication",
+      "label": "Communication",
+      "type": "Soft Skill",
+      "w_0": 0.731,
+      "seniority_required": "Senior",
+      "context": "Une excellente connaissance des softskills tels que la communication",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "collaboration",
+      "label": "Collaboration",
+      "type": "Soft Skill",
+      "w_0": 0.72,
+      "seniority_required": "Senior",
+      "context": "Une excellente connaissance des softskills tels que la collaboration",
+      "inferred": false,
+      "inferred_from": ", "
+    }
+  ],
+  "edges": [
+    {
+      "source": "aws",
+      "target": "kubernetes",
+      "relation": "requires",
+      "weight": 0.9,
+      "rationale": "AWS infrastructure with a focus on Kubernetes"
+    },
+    {
+      "source": "kubernetes",
+      "target": "docker",
+      "relation": "requires",
+      "weight": 0.9,
+      "rationale": "Kubernetes uses Docker containers"
+    },
+    {
+      "source": "aws",
+      "target": "terraform",
+      "relation": "supports",
+      "weight": 0.8,
+      "rationale": "Terraform is used for infrastructure as code on AWS"
+    },
+    {
+      "source": "terraform",
+      "target": "ansible",
+      "relation": "complements",
+      "weight": 0.7,
+      "rationale": "Terraform and Ansible are both used for infrastructure automation"
+    },
+    {
+      "source": "python",
+      "target": "ansible",
+      "relation": "requires",
+      "weight": 0.9,
+      "rationale": "Ansible is written in Python"
+    },
+    {
+      "source": "python",
+      "target": "terraform",
+      "relation": "supports",
+      "weight": 0.8,
+      "rationale": "Terraform has Python SDK"
+    },
+    {
+      "source": "golang",
+      "target": "kubernetes",
+      "relation": "supports",
+      "weight": 0.8,
+      "rationale": "Kubernetes is written in Go"
+    },
+    {
+      "source": "bash",
+      "target": "ansible",
+      "relation": "supports",
+      "weight": 0.7,
+      "rationale": "Ansible uses Bash scripts"
+    },
+    {
+      "source": "prometheus",
+      "target": "kubernetes",
+      "relation": "feeds",
+      "weight": 0.8,
+      "rationale": "Prometheus monitors Kubernetes clusters"
+    },
+    {
+      "source": "devops",
+      "target": "kubernetes",
+      "relation": "part_of",
+      "weight": 0.9,
+      "rationale": "Kubernetes is a key technology in Devops"
+    },
+    {
+      "source": "communication",
+      "target": "collaboration",
+      "relation": "complements",
+      "weight": 0.8,
+      "rationale": "Effective communication is essential for collaboration"
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_86"
+}

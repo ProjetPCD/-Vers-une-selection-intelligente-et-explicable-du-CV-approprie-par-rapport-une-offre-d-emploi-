@@ -1,0 +1,404 @@
+{
+  "job_id": "job_12",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-03T14:49:19.050725",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 30.29,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.7,
+        "coverage_rate": 0.3,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.5625
+  },
+  "final_scores": {
+    "node_score": 0.2276,
+    "edge_score": 0.1665,
+    "combined": 0.2032
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1403,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6846,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6971,
+    "matched_nodes": "0/20",
+    "edge_match_pct": 8.33
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1204,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.0958,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1251,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9729,
+    "ndcg_10": 0.9943,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.5115,
+    "semantic_fit_score": 0.6157,
+    "experience_density": 0.0859
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 12.46,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 8.17,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 26.55,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 98.92,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 3.75,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 27.29,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 5,
+      "match_pct": 14.2,
+      "weight_sum": 4.023
+    },
+    "Tool": {
+      "count": 10,
+      "match_pct": 11.4,
+      "weight_sum": 7.849
+    },
+    "Domain": {
+      "count": 3,
+      "match_pct": 13.8,
+      "weight_sum": 1.809
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 0.0,
+      "weight_sum": 1.419
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 8.33,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "edge-ai-expert-python|candidate_profile",
+        "source": "edge-ai-expert-python",
+        "target": "candidate_profile",
+        "w_0": 0.95,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 39.5,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "edge-ai-expert-pytorch|candidate_profile",
+        "source": "edge-ai-expert-pytorch",
+        "target": "candidate_profile",
+        "w_0": 0.88,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 42.6,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "github|candidate_profile",
+        "source": "github",
+        "target": "candidate_profile",
+        "w_0": 0.81,
+        "w_cv": 0.3,
+        "w_cv_norm": 0.15,
+        "match_pct": 18.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "edge-ai-expert-rust|candidate_profile",
+        "source": "edge-ai-expert-rust",
+        "target": "candidate_profile",
+        "w_0": 0.92,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "edge-ai-expert-tensorflow|candidate_profile",
+        "source": "edge-ai-expert-tensorflow",
+        "target": "candidate_profile",
+        "w_0": 0.87,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.625,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Azure DevOps",
+      "type": "Tool",
+      "gap": 0.662,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Rust",
+      "type": "Hard Skill",
+      "gap": 0.988,
+      "severity": "critical",
+      "importance": 0.988
+    },
+    {
+      "skill": "PyTorch",
+      "type": "Tool",
+      "gap": 0.658,
+      "severity": "critical",
+      "importance": 0.977
+    },
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.977,
+      "severity": "critical",
+      "importance": 0.977
+    },
+    {
+      "skill": "Edge AI et systèmes embarqués",
+      "type": "Domain",
+      "gap": 0.688,
+      "severity": "critical",
+      "importance": 0.95
+    },
+    {
+      "skill": "Git",
+      "type": "Tool",
+      "gap": 0.929,
+      "severity": "critical",
+      "importance": 0.929
+    },
+    {
+      "skill": "C++",
+      "type": "Hard Skill",
+      "gap": 0.647,
+      "severity": "critical",
+      "importance": 0.872
+    },
+    {
+      "skill": "LLVM",
+      "type": "Tool",
+      "gap": 0.76,
+      "severity": "critical",
+      "importance": 0.76
+    },
+    {
+      "skill": "Communication",
+      "type": "Soft Skill",
+      "gap": 0.748,
+      "severity": "critical",
+      "importance": 0.748
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.625
+      },
+      {
+        "label": "Azure DevOps",
+        "type": "Tool",
+        "gap": 0.662
+      },
+      {
+        "label": "Rust",
+        "type": "Hard Skill",
+        "gap": 0.988
+      },
+      {
+        "label": "PyTorch",
+        "type": "Tool",
+        "gap": 0.658
+      },
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.977
+      },
+      {
+        "label": "Edge AI et systèmes embarqués",
+        "type": "Domain",
+        "gap": 0.688
+      },
+      {
+        "label": "Git",
+        "type": "Tool",
+        "gap": 0.929
+      },
+      {
+        "label": "C++",
+        "type": "Hard Skill",
+        "gap": 0.647
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 6,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 5,
+      "HALO": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "edge-ai-expert-python",
+        "label": "Python",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.75,
+        "reason": "The CV heavily emphasizes Samuel Turner’s involvement in events production, creative design roles (Spatial Design, AR/XR), and UI/UX design projects utilizing tools like Figma and Unity. While these skills have some relevance to Edge AI and systems embedded development, the JD primarily focuses on compiler expertise, hardware design, and low-level programming (C, C++, Rust). The CV’s strong emphasis on creative and event-related experience likely resulted in the algorithm prioritizing these signals (location - London, language of CV - English) over the technical skills directly aligned with the job description, reflecting a proxy bias based on perceived creative or design expertise rather than core AI/systems engineering capabilities. A correction factor of 0.75 reflects this unfairly favored signal."
+      },
+      {
+        "id": "edge-ai-expert-azure-devops",
+        "label": "Azure DevOps",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.675,
+        "reason": "The candidate's CV heavily emphasizes soft skills and experience in creative tech and event production (Spatial Design, Events Production Management) alongside technical skills. The JD focuses on Edge AI expertise, compiling, and systems engineering, and the significant weight decrease (-0.100) indicates a potential bias against candidates with a diverse skillset outside the specifically requested areas, reflecting a proxy bias based on the candidate’s background and experiences which don't neatly align with the job's technical requirements.  A fair alternative would reduce the weight applied to the CV’s non-core skills."
+      },
+      {
+        "id": "edge-ai-expert-pytorch",
+        "label": "PyTorch",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The candidate's CV contains a significant number of non-technical skills listed (Spatial Design, Events Production, Management, Languages) alongside their technical experience. The JD emphasizes 'Edge AI and systems embedded' requiring expertise in compilers, system design, and low-level programming in C, C++, Python, and Rust. The weighted score decrease (0.127) suggests that the system penalized the candidate for including these broader skill sets, which are not directly aligned with the core requirements of the job. This exemplifies a proxy bias – the system is weighting signals (non-technical skills) which are not directly related to the job’s requirements, which isn't fair given the candidate’s background which appears relevant to aspects of spatial design or immersive experiences. A fair alternative would be to weigh these skills neutrally or deprioritize them entirely when assessing the technical competency. "
+      },
+      {
+        "id": "edge-ai-systems-embedded",
+        "label": "Edge AI et systèmes embarqués",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.525,
+        "reason": "The CV heavily emphasizes 'Spatial Design', 'Events Production', and 'Management' skills, coupled with a 'Head Boy' and 'Duke of Edinburgh' award. These signify a strong academic background and leadership experience, but the JD focuses on highly technical skills like compiler design, RTOS, and low-level programming. The weight reduction likely reflects a preference for candidates with a more traditional, leadership-oriented profile, overlooking the technical depth required for Edge AI systems embedded, and prioritizing signals associated with prestige (academic achievement) over demonstrable technical skills. A fairer approach would involve evaluating candidates solely on their technical competencies – coding languages, AI frameworks, and system-level design experience – rather than using academic titles as proxies for engineering capabilities."
+      },
+      {
+        "id": "c-plus-plus",
+        "label": "C++",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The candidate's CV heavily emphasizes non-technical skills like ‘Events Production Management’, ‘Spatial Design’, and ‘Creative Technologist’ roles, and focuses on high-level design and concept work rather than the deep technical details (C++, embedded systems, RTOS) outlined in the job description. This suggests the algorithm is overly weighting qualitative experience and project titles (like ‘Immersive Designer’) which are proxies for technical skill, rather than demonstrable expertise in C++ or system-level design. The candidate's background, while creatively relevant, doesn’t directly align with the core requirements of the Edge AI and embedded systems role, and the significant shift in emphasis reflects a proxy bias. A lower weight is warranted to reflect this misaligned focus."
+      },
+      {
+        "id": "github",
+        "label": "GitHub",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The algorithm penalized the candidate's CV, despite a strong academic background (Head Boy, Duke of Edinburgh Award). The JD emphasizes skills in compilers, RTOS, and various languages, yet the CV focuses heavily on immersive design, AR/XR experience, and UI/UX design roles – a halo bias where the ‘immersive designer’ title is overly weighted, overshadowing core technical skills explicitly listed in the job description. The decrease in weight suggests that the algorithm is prioritizing the applicant’s experience in AR/XR over the explicitly stated technical requirements, leaning towards a preference for creative design roles rather than the target Edge AI and embedded systems focus. A lower correction factor is applied as this is a specific project's focus area and not a broad skillset issue."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1403 (sous-qualifié), CTM=0.6846 (écart structurel élevé), match_pct=30.29% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.1251, ndcg_5=0.9729, missing_critical_penalty=0.0, combo_v6_final=12.46",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "14 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "⚠ 56.2% des scores via fallback mathématique (LLM instable)"
+  }
+}

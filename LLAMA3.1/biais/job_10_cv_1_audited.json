@@ -1,0 +1,791 @@
+{
+  "job_id": "job_10",
+  "cv_id": "cv_1",
+  "scored_nodes": {
+    "python": {
+      "w_cv": 1.562,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.25,
+          "outcome_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 1.25
+      },
+      "active_red_flags": [],
+      "rationale": "Base score from: project anchor (built automated data pipelines), evidence anchor (Python) and experience years detected (5). Certification bonus applied due to certification existence.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 1.562,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight increase is due to prestige bias, where the candidate's experience years and certification existence are given more weight than their actual skills demonstrated in the CV. A fair alternative would be to re-weight these signals based on their relevance to the job requirements and the candidate's skills."
+    },
+    "numpy": {
+      "w_cv": 0.312,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": -0.25
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Base score from: weak evidence anchor (, ) and experience years detected (0). Recency gap penalty applied due to lack of recent use.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.312,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change is biased due to proxy bias, penalizing the candidate for not having recent experience in data science. A fair alternative would be to consider the candidate's overall skills and experience rather than penalizing them for not having recent experience."
+    },
+    "pandas": {
+      "w_cv": 1.125,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.25
+        },
+        "penalties": {},
+        "final_score": 1.5
+      },
+      "active_red_flags": [],
+      "rationale": "Base score from: project anchor (built automated data pipelines) and evidence anchor (Python). Experience years detected (5) and certification bonus applied due to certification existence.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 1.125,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The weight change is biased towards prestige as the candidate's experience and skills are not considered fairly. The use of certification bonus (Azure Data Factory) might be relevant but it's not clear if it's a strong indicator of data science skills. Moreover, the fact that Python (Pandas) is mentioned multiple times in the CV and JD suggests that it's a critical skill for this position. However, the weight increase is too high considering the candidate's experience and skills."
+    },
+    "matplotlib": {
+      "w_cv": 0.312,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": -0.25
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Base score from: weak evidence anchor (, ) and experience years detected (0). Recency gap penalty applied due to lack of recent use.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE|GENDER_DIVERSITY|AGEISM|PROXY|HALO|NONE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.312,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change is biased due to prestige bias. The candidate's experience at EY and Timsoft Group, as well as their use of specific tools such as Power BI and Azure Data Factory, suggests that the weight change is influenced by the candidate's elite educational or professional background rather than their skills demonstrated in the CV. A fair alternative would be to focus on the candidate's skills and experience related to data analysis, machine learning, and statistics."
+    },
+    "scikit-learn": {
+      "w_cv": 0.2,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": -0.25
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Base score from: weak evidence anchor (, ) and experience years detected (0). Recency gap penalty applied due to lack of recent use.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.2,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change is biased because it unfairly penalizes candidates with limited or outdated experience, leading to ageism and excluding candidates who are new to the field or have taken time off from their career."
+    },
+    "seaborn": {
+      "w_cv": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": -0.25
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Base score from: weak evidence anchor (, ) and experience years detected (0). Recency gap penalty applied due to lack of recent use.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "sas": {
+      "w_cv": 0.22,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": -0.25
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Base score from: weak evidence anchor (, ) and experience years detected (0). Recency gap penalty applied due to lack of recent use.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO BIAS",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.22,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.88,
+      "p35_reason": "The weight change is biased due to the strong reliance on a single signal (Python) to judge the entire profile, despite the candidate's diverse experience and skills in other areas such as Power BI, SQL, Azure Data Factory, and more. This approach unfairly favors candidates with expertise in Python over others, leading to an unfair penalization of 25% for this candidate."
+    },
+    "data-scientist": {
+      "w_cv": 1.6,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.5,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.25
+        },
+        "penalties": {},
+        "final_score": 2.0
+      },
+      "active_red_flags": [],
+      "rationale": "Base score from: strong evidence anchor (, ) and experience years detected (5). Lead to Domain bonus applied due to domain expertise.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 1.6,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The model is relying too heavily on a single signal (experience years) without considering other relevant factors, leading to unfair favoring of candidates with more experience."
+    },
+    "methodologie": {
+      "w_cv": 0.3,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": -0.25
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Base score from: weak evidence anchor (, ) and experience years detected (0). Recency gap penalty applied due to lack of recent use.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "AGEISM",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.3,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The current model unfairly penalizes candidates with older experience, potentially leading to age-related bias in recruitment decisions. A fairer approach would prioritize relevant skills and experience demonstrated in the candidate's CV, regardless of their age."
+    },
+    "data-science": {
+      "w_cv": 1.5,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.25
+        },
+        "penalties": {},
+        "final_score": 1.5
+      },
+      "active_red_flags": [],
+      "rationale": "Base score from: strong evidence anchor (, ) and experience years detected (5). Lead to Domain bonus applied due to domain expertise.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "communication-efficace": {
+      "w_cv": 1.25,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.25,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": -0.25,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.25
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Skill type is Soft Skill, evidence verdict is moderate, intensity is central, and seniority signal is mid.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm"
+    },
+    "machine-learning": {
+      "w_cv": 0.4,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.25,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.2
+        },
+        "penalties": {
+          "recency_gap": -0.25,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Skill type is Domain, evidence verdict is weak, and project complexity is critical.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY|HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.4,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change is biased due to the consideration of 'Principales compétences' section on Anas Attia's CV, which includes skills like Power BI, DAX, Python (Pandas), SQL, Azure Data Factory, MySQL, and Dynamics 365 Project Operations. This creates a halo effect as these specific technical skills are overly emphasized. Additionally, the emphasis on 'Avec plus de 5 ans d'expérience en reporting financier, analyse des ventes et pilotage du cycle complet de la donnée' suggests that the candidate's experience is being weighted heavily due to proxy bias from socioeconomic signals (location, language of CV)."
+    },
+    "intelligence-artificielle": {
+      "w_cv": 0.6,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.25,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.2
+        },
+        "penalties": {
+          "recency_gap": -0.25,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Skill type is Domain, evidence verdict is weak, and project complexity is critical.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.6,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The weight change is likely due to proxy bias, as Anas Attia's degree or university name is not mentioned in his profile. His technical skills and experience are sufficient to meet the job requirements."
+    },
+    "resolution-de-problemes": {
+      "w_cv": 1.25,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.25,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": -0.25,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.25
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Skill type is Soft Skill, evidence verdict is moderate, intensity is central, and seniority signal is mid.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm"
+    },
+    "outils": {
+      "w_cv": 1.125,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.25,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.15
+        },
+        "penalties": {
+          "recency_gap": -0.25,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.5
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Skill type is Tool, evidence verdict is strong, and project complexity is high.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 1.125,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The weight change is biased towards prestige bias, as the ideal weight (w_0) is 0.482 and the adapted weight (w_cv) is 1.5, indicating a significant increase due to the candidate's university/company name ('outils') and not their skills demonstrated in the CV. The high severity of this bias is justified by the strong evidence of prestige bias, as shown in the job description and the candidate's profile."
+    },
+    "soft-skills": {
+      "w_cv": 1.0,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.25,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": -0.25,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.25
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Skill type is Soft Skill, evidence verdict is moderate, intensity is central, and seniority signal is mid.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 1.0,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change is biased because it's based on a single strong signal (soft skills) that is used to judge the entire profile."
+    },
+    "solide-formation": {
+      "w_cv": 0.2,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.2
+        },
+        "penalties": {
+          "recency_gap": -0.25,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Skill type is Education, evidence verdict is weak, and project complexity is low.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.2,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "Prestige bias, medium severity. Correction factor applied to account for biased weight change towards candidates from more prestigious backgrounds."
+    },
+    "candidat": {
+      "w_cv": 0.275,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.25,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.2
+        },
+        "penalties": {
+          "recency_gap": -0.25,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "Skill type is Domain, evidence verdict is weak, and project complexity is low.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.275,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.1,
+      "p35_reason": "Proxy bias against candidates without explicit mention of specific programming languages on their CV, leading to an unfair decrease in score (-0.143). A fairer approach would be to evaluate the candidate's overall relevance and experience in data analysis."
+    }
+  },
+  "scored_edges": {
+    "python|pandas": {
+      "synergy_score": 0.95,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.25,
+        "penalties": 0.0,
+        "final_score": 0.95
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Anas Attia used both Python and Pandas together in the role of Data Analyst at Timsoft Group, where they built automated data pipelines. The synergy score is high due to strong evidence from cv_excerpt: 'Built automated data pipelines using Azure Data Factory, SQL Server, and Python (Pandas) to ensure high-quality and reliable data flows.' The same project or role weight is applied because both skills are used in the same context.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.95
+    },
+    "python|azure_data_factory": {
+      "synergy_score": 0.95,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.25,
+        "penalties": 0.0,
+        "final_score": 0.95
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Anas Attia used both Python and Azure Data Factory together in the role of Data Analyst at Timsoft Group, where they built automated data pipelines. The synergy score is high due to strong evidence from cv_excerpt: 'Built automated data pipelines using Azure Data Factory, SQL Server, and Python (Pandas) to ensure high-quality and reliable data flows.' The same project or role weight is applied because both skills are used in the same context.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.95
+    },
+    "python|numpy": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No synergy found between Python and NumPy as no evidence exists in the cv_excerpt.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "python|matplotlib": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No synergy found between Python and Matplotlib as no evidence exists in the cv_excerpt.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "python|seaborn": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.8,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence of Python and Seaborn being used together in any CV section.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "python|scikit-learn": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.8,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence of Python and Scikit-learn being used together in any CV section.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "pandas|sas": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": 0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Temporal overlap exists between Pandas and SAS, but no evidence of both skills being used together in the same role or project.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "machine-learning|data-science": {
+      "synergy_score": 0.9,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.7,
+        "penalties": 0.0,
+        "final_score": 0.9
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Both skills were used together in the same role at Axe Finance, where the candidate applied Natural Language Processing (NLP) techniques for data science.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.9
+    },
+    "intelligence-artificielle|data-science": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": -0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Temporal overlap exists, but no synergy found. Anas Attia's experience as a Data Analyst at Timsoft Group (cv_excerpt) and his parent node scores do not demonstrate the interaction of both skills in the same role or project.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "data-science|methodologie": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": -0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Temporal overlap exists, but no synergy found. Anas Attia's experience as a Data Analyst at Timsoft Group (cv_excerpt) and his parent node scores do not demonstrate the interaction of both skills in the same role or project.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "communication-efficace|data-science": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": -0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Temporal overlap exists, but no synergy found. Anas Attia's experience as a Data Analyst at Timsoft Group (cv_excerpt) and his parent node scores do not demonstrate the interaction of both skills in the same role or project.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "capacite-de-travailler-en-equipe|data-science": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.55,
+        "penalties": -0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Anas Attia collaborated with cross-functional teams while working as a Data Analyst at Timsoft Group (cv_excerpt), demonstrating his ability to work in a team and apply data science skills.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "resolution-de-problemes|data-science": {
+      "synergy_score": 0.85,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "same_project_or_role": 0.15,
+        "temporal_overlap": false,
+        "output/outcome demonstrates synergy": 0.5
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Anas Attia used problem-solving skills to develop an automated media monitoring system while working as a Data Analyst at Axe Finance, applying data science concepts (cv_excerpt: 'Developed an automated media monitoring system by collecting unstructured data from various online sources.'). This demonstrates strong synergy between problem-solving and data science skills.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.85
+    },
+    "candidat|data-science": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "same_project_or_role": false,
+        "temporal_overlap": true,
+        "output/outcome demonstrates synergy": false
+      },
+      "is_ghost_synergy": false,
+      "rationale": "There is no evidence of Anas Attia using candidate skills together with data science skills in the same role or project (cv_excerpt: null).",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "solide-formation|data-science": {
+      "synergy_score": 0.85,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "same_project_or_role": 0.15,
+        "temporal_overlap": false,
+        "output/outcome demonstrates synergy": 0.5
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Anas Attia developed a solid foundation in data science concepts through his experience as a Data Analyst at EY, which enabled him to apply data science skills effectively (cv_excerpt: 'Avec plus de 5 ans d'expérience en reporting financier, analyse des ventes et pilotage du cycle complet de la donnée ...'). This demonstrates strong synergy between solid foundation and data science skills.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.85
+    }
+  },
+  "metadata": {
+    "skills_scored": 18,
+    "mean_score": 0.417,
+    "edges_scored": 15,
+    "mean_synergy": 0.417,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.417,
+      "max": 0.95,
+      "min": 0.0
+    },
+    "batches_ok": 2,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.417,
+      "max": 1.5,
+      "min": 0.0,
+      "above_1": 4,
+      "below_05": 10
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 15,
+    "nodes_with_bias": 14,
+    "nodes_corrected": 14,
+    "edges_audited": 0
+  }
+}

@@ -1,0 +1,457 @@
+{
+  "job_id": "job_8",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-03T12:19:28.022584",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 35.02,
+    "confidence": {
+      "confidence_score": 0.72,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.579,
+        "coverage_rate": 0.842,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.6283,
+    "edge_score": 1.2626,
+    "combined": 0.882
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3259,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6909,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6498,
+    "matched_nodes": "2/19",
+    "edge_match_pct": 63.13
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3183,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.8172,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Excellent"
+    },
+    "gap_score": {
+      "value": 0.2779,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.2105,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.4332,
+    "weighted_recall": 0.1546,
+    "weighted_f1": {
+      "value": 0.2791,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6977,
+    "missing_critical_penalty": {
+      "value": 0.2222,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9971,
+    "ndcg_10": 0.998,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8148,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.5196,
+    "experience_density": 0.2984
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 41.36,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 46.6,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 34.56,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 99.88,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 49.52,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 35.74,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 26.9,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 7,
+      "match_pct": 35.3,
+      "weight_sum": 6.771
+    },
+    "Tool": {
+      "count": 12,
+      "match_pct": 29.1,
+      "weight_sum": 11.278
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 63.13,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "data_scientist_role|python_skill",
+        "source": "data_scientist_role",
+        "target": "python_skill",
+        "w_0": 0.998,
+        "w_cv": 1.691,
+        "w_cv_norm": 0.846,
+        "match_pct": 84.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data_scientist_role|sql_skill",
+        "source": "data_scientist_role",
+        "target": "sql_skill",
+        "w_0": 0.998,
+        "w_cv": 1.51,
+        "w_cv_norm": 0.755,
+        "match_pct": 75.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data_scientist_role|pandas",
+        "source": "data_scientist_role",
+        "target": "pandas",
+        "w_0": 0.978,
+        "w_cv": 1.41,
+        "w_cv_norm": 0.705,
+        "match_pct": 72.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data_scientist_role|machine_learning_skill",
+        "source": "data_scientist_role",
+        "target": "machine_learning_skill",
+        "w_0": 0.978,
+        "w_cv": 1.385,
+        "w_cv_norm": 0.693,
+        "match_pct": 70.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data_scientist_role|scikit_learn_tool",
+        "source": "data_scientist_role",
+        "target": "scikit_learn_tool",
+        "w_0": 0.998,
+        "w_cv": 1.335,
+        "w_cv_norm": 0.667,
+        "match_pct": 66.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "TensorFlow",
+      "type": "Tool",
+      "gap": 0.738,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PyTorch",
+      "type": "Tool",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "AWS",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Seaborn",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "NumPy",
+      "type": "Tool",
+      "gap": 0.681,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Ingénieur en Analytics",
+      "type": "Domain",
+      "gap": 0.85,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "science des données",
+      "type": "Domain",
+      "gap": 0.925,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "intelligence artificielle",
+      "type": "Domain",
+      "gap": 0.756,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "GCP",
+      "type": "Tool",
+      "gap": 0.954,
+      "severity": "critical",
+      "importance": 0.954
+    },
+    {
+      "skill": "Gestion de Données",
+      "type": "Domain",
+      "gap": 0.618,
+      "severity": "critical",
+      "importance": 0.793
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "Data Scientist",
+        "type": "Domain",
+        "w_cv": 1.82
+      },
+      {
+        "label": "Python",
+        "type": "Tool",
+        "w_cv": 1.562
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "TensorFlow",
+        "type": "Tool",
+        "gap": 0.738
+      },
+      {
+        "label": "PyTorch",
+        "type": "Tool",
+        "gap": 0.7
+      },
+      {
+        "label": "AWS",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Seaborn",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "NumPy",
+        "type": "Tool",
+        "gap": 0.681
+      },
+      {
+        "label": "Ingénieur en Analytics",
+        "type": "Domain",
+        "gap": 0.85
+      },
+      {
+        "label": "science des données",
+        "type": "Domain",
+        "gap": 0.925
+      },
+      {
+        "label": "intelligence artificielle",
+        "type": "Domain",
+        "gap": 0.756
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 15,
+    "nodes_with_bias": 11,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "HALO": 6,
+      "PROXY": 3,
+      "A. PRESTIGE BIAS": 1,
+      "PRESTIGE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "data_scientist_role",
+        "label": "Data Scientist",
+        "bias_category": "A. PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.3,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.82,
+        "reason": "The significant increase in weight (from 1.0 to 1.4) is primarily driven by the candidate’s detailed experience in Generative AI (GenAI) Adoption & Governance, specifically highlighted in the CV. While the JD emphasizes data science skills broadly, the candidate's CV explicitly showcases a focus on GenAI implementation, which is a relatively new and high-value skill currently favored by many companies.  The candidate’s descriptions – leading PoCs, building demo pipelines, establishing governance – suggest a strong preference for candidates with experience in this area, a 'prestige' skill that wasn't explicitly defined in the core requirements of the JD. The CV's detailed description of GenAI initiatives outweighs the more general requirements outlined in the job description."
+      },
+      {
+        "id": "deep_learning_skill",
+        "label": "Deep Learning",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.812,
+        "reason": "The candidate's CV focuses heavily on GenAI Adoption & Governance, which, while valuable, doesn't directly demonstrate the deep learning skills explicitly required by the JD. The rationale suggests a penalization for lacking detailed experience in algorithms, training data, and results—a prestige bias where a specific, cutting-edge area (GenAI) is valued over foundational deep learning expertise, even with relevant application experience.  A higher correction factor is warranted to account for this prioritization, acknowledging the candidate's practical application of GenAI principles."
+      },
+      {
+        "id": "python_skill",
+        "label": "Python",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.562,
+        "reason": "The candidate's CV heavily emphasizes ‘agentic workflows using Python’ alongside specific tools like GitHub Copilot and MCP, highlighting their experience with GenAI. This strong focus on AI-related skills (GenAI adoption, agentic workflows) is likely driving the increased weight assigned to Python proficiency, representing a halo effect where the candidate is being judged based on their AI-related activities rather than the core skills explicitly listed in the job description (machine learning, data management tools). A fairer alternative would be to evaluate the candidate's Python skills in the context of broader data science capabilities, including their experience with other relevant technologies."
+      },
+      {
+        "id": "tensorflow_tool",
+        "label": "TensorFlow",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.525,
+        "reason": "The significant decrease in weight (w_cv from 1.0 to 0.7) is likely driven by the candidate’s explicit mention of Azure Cloud services and serverless architectures. While these technologies are relevant to the JD’s requirements, the heavy emphasis on Azure suggests a bias towards candidates familiar with that specific platform, rather than a broader understanding of cloud solutions, which is a proxy for experience and skillset. This penalizes candidates who may have strong machine learning skills but haven't specifically highlighted Azure, unfairly favoring those with Azure expertise. A fairer alternative would be to weight all cloud experience equally."
+      },
+      {
+        "id": "scikit_learn_tool",
+        "label": "scikit-learn",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.85,
+        "reason": "The significant increase in weight (w_0 from 0.998 to 1.0) for ‘scikit-learn’ despite lacking specific implementation details suggests a halo effect. The candidate’s experience and listed skills—including Scikit-learn—are being overly weighted simply due to the mention of the tool in the JD, creating a bias beyond the demonstrable skill. While familiarity with Scikit-learn is valuable, the increased weight indicates a preference for simply having it listed rather than a practical application.  A fairer alternative would be to prioritize experience with the application of machine learning models and project outcomes, rather than solely listing tool knowledge."
+      },
+      {
+        "id": "numpy",
+        "label": "NumPy",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The weight decrease for this candidate is primarily driven by the explicit mention of ‘NumPy’ within the evidence anchor – the candidate's projects utilizing Dapper, .NET 6 and C# are associated with NumPy for data analysis and numerical computation. While a strong technological skill set is valued, the evidence anchor heavily focuses on technologies frequently utilized with NumPy, suggesting a proxy bias favoring candidates familiar with this specific toolset rather than a general aptitude for data science.  The JD emphasizes Python, R, and scikit-learn, which are more widely used within the broader data science landscape. Correction factor: 0.85 - slightly reducing the negative impact due to the substantial project experience and the candidate's overall skills."
+      },
+      {
+        "id": "ingenieur_analytics",
+        "label": "Ingénieur en Analytics",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.3,
+        "reason": "The candidate’s CV heavily emphasizes ‘Generative AI’ and ‘AI Agents’ – a skill specifically highlighted in the job description. This suggests the algorithm is prioritizing this relatively new and potentially less-established area of expertise, giving undue weight to the candidate's experience in this domain, likely because it was a strong signal.  A halo effect is present where the candidate's focus on Generative AI is dominating the evaluation, overshadowing other potentially valuable skills like his 10+ years of experience in broader software engineering.  A fair alternative would be to de-emphasize Generative AI’s impact on the overall score, leveling it with the broader ‘AI’ category, and better reflect the balance of skills required in the role.  The intensity bonus represents a correction for this overemphasis."
+      },
+      {
+        "id": "science_des_donnees",
+        "label": "science des données",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.15,
+        "reason": "The weight change from 1.0 to 0.2 for 'science_des_donnees' indicates a significant devaluation despite the job description explicitly requiring expertise in this area (machine learning, deep learning, data management). The CV demonstrates experience with GenAI, a rapidly growing area within data science, but lacks concrete projects or publications directly related to the core skills listed in the JD. This suggests the algorithm is placing undue emphasis on the 'AI Agents' and 'GenAI' skills (listed on the CV) as a single halo effect, overshadowing the fundamental requirements of the role, which is a primary factor in science of data.  A fair alternative would be to weight the core skills based on demonstrated expertise and the job requirements, and not rely on a peripheral technology mentioned on the CV. The application should be weighted based on practical experience, not a secondary skill."
+      },
+      {
+        "id": "intelligence_artificielle",
+        "label": "intelligence artificielle",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.488,
+        "reason": "The candidate's CV heavily emphasizes 'Top Skills AI Agents' and 'Cross-functional Coordination,' mirroring the job description's focus on AI and team building. This suggests the algorithm is unduly rewarding the specific skills listed in the initial skill set, rather than evaluating Mustafa's demonstrated experience and expertise.  While the candidate possesses relevant skills, the intense weighting of this specific skill grouping introduces a halo effect, potentially overshadowing other potentially valuable skills and experiences highlighted in the CV. A reduction in weight is warranted to avoid favoring this specific phraseology over demonstrated abilities, aligning the system with evaluating skills based on substance rather than keywords."
+      },
+      {
+        "id": "mlops",
+        "label": "MLOps",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.245,
+        "reason": "The significant decrease in the weight of 'mlops' (from 0.779 to 0.35) strongly suggests halo bias. The candidate's CV explicitly highlights GenAI adoption and governance, demonstrating practical experience with tools and methodologies (GitHub Copilot, MCP). The JD emphasizes 'mlops' as a required skill, but the candidate’s detailed experience with GenAI and workflow design overshadows the generic mention of MLOps.  A fair alternative would be to weight the candidate’s demonstrable GenAI experience more heavily, but given the strong evidence of a different skillset, no correction is needed. A more fair assessment would have placed more focus on the AI agentic workflow and GenAI governance aspects described, highlighting the practical application of knowledge rather than a purely theoretical understanding of MLOps."
+      },
+      {
+        "id": "data-management-domain",
+        "label": "Gestion de Données",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.35,
+        "reason": "The significant decrease in weight (w_cv) for 'data-management-domain' is driven by the candidate's CV listing multiple languages (Turkish, English, Dutch) and certifications related to AI tools and platforms (AWS, Kubernetes). This proxy signal – language proficiency and certification status – is unfairly influencing the evaluation, indicating a proxy bias where socioeconomic signals are inadvertently weighting the candidate's profile. A fairer alternative would focus solely on skills directly relevant to the JD, such as experience with Python, SQL, and data modeling techniques, removing the influence of language and certification."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3259 (sous-qualifié), CTM=0.6909 (écart structurel élevé), match_pct=35.02% → Poor Match",
+    "v6_summary": "weighted_f1=0.2791, gap_score=0.2779, ndcg_5=0.9971, missing_critical_penalty=0.2222, combo_v6_final=41.36",
+    "key_strengths": "2 compétences clés validées",
+    "key_gaps": "11 gaps critiques identifiés",
+    "bias_note": "11 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.72)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

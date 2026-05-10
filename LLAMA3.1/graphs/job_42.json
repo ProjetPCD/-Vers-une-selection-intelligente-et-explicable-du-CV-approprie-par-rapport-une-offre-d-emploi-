@@ -1,0 +1,186 @@
+{
+  "nodes": [
+    {
+      "id": "azure-machine-learning",
+      "label": "Azure Machine Learning",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Our stack technologique comprend Python, PyTorch, Azure Machine Learning...",
+      "inferred": false
+    },
+    {
+      "id": "phd",
+      "label": "PhD en science des données ou un domaine connexe",
+      "type": "Education",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Nous recherchons un candidat avec un PhD en science des données ou un domaine connexe...",
+      "inferred": false
+    },
+    {
+      "id": "python",
+      "label": "Python",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Vous devrez avoir une excellente compréhension des algorithmes d'apprentissage automatique, des réseaux de neurones, et des bases de données.",
+      "inferred": false
+    },
+    {
+      "id": "mysql",
+      "label": "MySQL",
+      "type": "Tool",
+      "w_0": 0.954,
+      "seniority_required": "N/A",
+      "context": "Notre stack technologique comprend Python, PyTorch, Azure Machine Learning, Docker, et MySQL.",
+      "inferred": false
+    },
+    {
+      "id": "communication",
+      "label": "Communication",
+      "type": "Soft Skill",
+      "w_0": 0.915,
+      "seniority_required": "N/A",
+      "context": "Vous devrez également avoir de solides compétences en analyse de données, en résolution de problèmes, et en communication.",
+      "inferred": false
+    },
+    {
+      "id": "docker",
+      "label": "Docker",
+      "type": "Tool",
+      "w_0": 0.879,
+      "seniority_required": "N/A",
+      "context": "Notre stack technologique comprend Python, PyTorch, Azure Machine Learning, Docker, et MySQL.",
+      "inferred": false
+    },
+    {
+      "id": "pytorch",
+      "label": "PyTorch",
+      "type": "Tool",
+      "w_0": 0.819,
+      "seniority_required": "N/A",
+      "context": "Notre stack technologique comprend Python, PyTorch, Azure Machine Learning, Docker, et MySQL.",
+      "inferred": false
+    },
+    {
+      "id": "data-scientist",
+      "label": "Data Scientist",
+      "type": "Domain",
+      "w_0": 0.664,
+      "seniority_required": "N/A",
+      "context": "Mission passionnante pour un Data Scientist expérimenté dans le domaine de l'apprentissage automatique et des réseaux de neurones.",
+      "inferred": false
+    },
+    {
+      "id": "expert",
+      "label": "expert",
+      "type": "Domain",
+      "w_0": 0.64,
+      "seniority_required": "N/A",
+      "context": "Mission passionnante pour un Data Scientist expérimenté dans le domaine de l'apprentissage automatique et des réseaux de neurones.",
+      "inferred": false
+    },
+    {
+      "id": "reseau-de-neurones",
+      "label": "réseaux de neurones",
+      "type": "Domain",
+      "w_0": 0.583,
+      "seniority_required": "N/A",
+      "context": "Mission passionnante pour un Data Scientist expérimenté dans le domaine de l'apprentissage automatique et des réseaux de neurones.",
+      "inferred": false
+    },
+    {
+      "id": "résolution-de-problèmes",
+      "label": "Résolution de problèmes",
+      "type": "Soft Skill",
+      "w_0": 0.625,
+      "inferred": true,
+      "context": "Required for the role of Data Scientist",
+      "inferred_from": "Vous devrez également avoir de solides compétences en analyse de données, en résolution de problèmes, et en communication."
+    },
+    {
+      "id": "data-scientist-expérimenté",
+      "label": "Data Scientist expérimenté",
+      "type": "Domain",
+      "w_0": 0.55,
+      "inferred": true,
+      "context": "The job is specifically for a Data Scientist with experience in the field",
+      "inferred_from": "Mission passionnante pour un Data Scientist expérimenté dans le domaine de l'apprentissage automatique et des réseaux de neurones."
+    }
+  ],
+  "edges": [
+    {
+      "source": "azure-machine-learning",
+      "target": "python",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "The job description mentions that the stack technological includes Python"
+    },
+    {
+      "source": "pytorch",
+      "target": "python",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "PyTorch is a deep learning framework that requires Python"
+    },
+    {
+      "source": "docker",
+      "target": "python",
+      "relation": "supports",
+      "weight": 0.65,
+      "rationale": "The job description mentions that the stack technological includes Docker, which supports Python-based applications"
+    },
+    {
+      "source": "mysql",
+      "target": "python",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "MySQL is a database management system that requires Python for interaction"
+    },
+    {
+      "source": "data-scientist-expérimenté",
+      "target": "azure-machine-learning",
+      "relation": "implements",
+      "weight": 0.65,
+      "rationale": "The job description mentions that the ideal candidate has experience in developing AI solutions using Azure Machine Learning"
+    },
+    {
+      "source": "expert",
+      "target": "reseau-de-neurones",
+      "relation": "part_of",
+      "weight": 0.4,
+      "rationale": "The job description mentions that the ideal candidate is an expert in neural networks, which is a domain within AI"
+    },
+    {
+      "source": "phd",
+      "target": "data-scientist-expérimenté",
+      "relation": "enables",
+      "weight": 0.65,
+      "rationale": "The job description requires a PhD in data science or a related field, implying that it enables the candidate to develop expertise as a senior data scientist"
+    },
+    {
+      "source": "communication",
+      "target": "data-scientist-expérimenté",
+      "relation": "complements",
+      "weight": 0.4,
+      "rationale": "The job description mentions that good communication skills are necessary for the role, implying that they complement the technical expertise of a senior data scientist"
+    },
+    {
+      "source": "résolution-de-problèmes",
+      "target": "data-scientist-expérimenté",
+      "relation": "complements",
+      "weight": 0.4,
+      "rationale": "The job description mentions that good problem-solving skills are necessary for the role, implying that they complement the technical expertise of a senior data scientist"
+    },
+    {
+      "source": "résolution-de-problèmes",
+      "target": "communication",
+      "relation": "complements",
+      "weight": 0.4,
+      "rationale": "The job description mentions that good problem-solving skills are necessary for the role, implying that they complement communication skills"
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_42"
+}

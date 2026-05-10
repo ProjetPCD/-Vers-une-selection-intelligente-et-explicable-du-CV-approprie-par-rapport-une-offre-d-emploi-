@@ -1,0 +1,379 @@
+{
+  "job_id": "job_16",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-04T12:59:40.246446",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 23.49,
+    "confidence": {
+      "confidence_score": 0.49,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.7,
+        "coverage_rate": 0.6,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.3014,
+    "edge_score": 0.1495,
+    "combined": 0.2407
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1646,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7622,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7651,
+    "matched_nodes": "0/10",
+    "edge_match_pct": 7.49
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1645,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1495,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1534,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9523,
+    "ndcg_10": 0.9777,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.5284,
+    "experience_density": 0.1334
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 14.12,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 11.81,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 24.63,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 98.09,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 4.6,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 2.67,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 14.1,
+      "weight_sum": 2.0
+    },
+    "Tool": {
+      "count": 5,
+      "match_pct": 19.7,
+      "weight_sum": 4.696
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 11.1,
+      "weight_sum": 1.154
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 7.49,
+    "total_edges": 8,
+    "top_synergies": [
+      {
+        "edge_key": "power-bi-tool|data-analyst-role",
+        "source": "power-bi-tool",
+        "target": "data-analyst-role",
+        "w_0": 0.81,
+        "w_cv": 0.312,
+        "w_cv_norm": 0.156,
+        "match_pct": 19.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "sql-skill|data-analyst-role",
+        "source": "sql-skill",
+        "target": "data-analyst-role",
+        "w_0": 0.92,
+        "w_cv": 0.281,
+        "w_cv_norm": 0.141,
+        "match_pct": 15.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "mysql-tool|data-analyst-role",
+        "source": "mysql-tool",
+        "target": "data-analyst-role",
+        "w_0": 0.88,
+        "w_cv": 0.188,
+        "w_cv_norm": 0.094,
+        "match_pct": 10.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ssms-tool|data-analyst-role",
+        "source": "ssms-tool",
+        "target": "data-analyst-role",
+        "w_0": 0.85,
+        "w_cv": 0.188,
+        "w_cv_norm": 0.094,
+        "match_pct": 11.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "esprit-equipe|data-analyst-role",
+        "source": "esprit-equipe",
+        "target": "data-analyst-role",
+        "w_0": 0.55,
+        "w_cv": 0.188,
+        "w_cv_norm": 0.094,
+        "match_pct": 17.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Data Analyst",
+      "type": "Domain",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "MySQL",
+      "type": "Tool",
+      "gap": 0.812,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "SQL",
+      "type": "Hard Skill",
+      "gap": 0.719,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "SSRS",
+      "type": "Tool",
+      "gap": 0.644,
+      "severity": "critical",
+      "importance": 0.944
+    },
+    {
+      "skill": "SSIS",
+      "type": "Tool",
+      "gap": 0.938,
+      "severity": "critical",
+      "importance": 0.938
+    },
+    {
+      "skill": "SSMS",
+      "type": "Tool",
+      "gap": 0.715,
+      "severity": "critical",
+      "importance": 0.902
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Data Analyst",
+        "type": "Domain",
+        "gap": 1.0
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "MySQL",
+        "type": "Tool",
+        "gap": 0.812
+      },
+      {
+        "label": "SQL",
+        "type": "Hard Skill",
+        "gap": 0.719
+      },
+      {
+        "label": "SSRS",
+        "type": "Tool",
+        "gap": 0.644
+      },
+      {
+        "label": "SSIS",
+        "type": "Tool",
+        "gap": 0.938
+      },
+      {
+        "label": "SSMS",
+        "type": "Tool",
+        "gap": 0.715
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 6,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 4,
+      "C": 1,
+      "GENDER_DIVERSITY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "mysql-tool",
+        "label": "MySQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The candidate's experience heavily emphasizes Huawei BTS equipment and troubleshooting, particularly detailed in the 'Projects and coordinating' section, alongside skills like remote user support and Nokia integration – signaling a potential focus on telecommunications rather than data analysis, as highlighted in the JD. The CV’s strong emphasis on technical skills and networking, coupled with the specific Huawei experience, suggests a proxy bias driven by the role's focus on telecommunications infrastructure, penalizing candidates without similar specialized experience. A fair alternative would be to prioritize the candidate's analytical skills documented in the CV (teamwork, communication) and assess their data skills through a separate evaluation criterion."
+      },
+      {
+        "id": "sql-skill",
+        "label": "SQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The CV heavily emphasizes experience with Huawei equipment and GSM alarm monitoring, aligning with the JD's requirements for SQL skills. However, the CV’s location (India, Tamil Nadu) and the specific mention of ‘Experience in Huawei BTS 3900 & 5900 and Huawei equipment’s…’ suggests a proxy bias – the system is prioritizing geographical proximity and company name (Huawei) over demonstrable SQL proficiency, which is a core skill listed in the job description. The Delta of -0.25 reflects a significant decrease in weight, indicating an unfair favoring of these contextual signals over the crucial technical skill."
+      },
+      {
+        "id": "ssrs-tool",
+        "label": "SSRS",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The CV heavily emphasizes experience with Huawei BTS equipment and coordinating projects, aligning with the JD’s requirements for a Data Analyst. However, the location of ‘Sirkazhi, Tamil Nadu, India’ is a strong proxy signal for socioeconomic status and potentially a less desirable location for a role within a global technology company. This disproportionate weighting of geographical location suggests a PROXY bias, unfairly penalizing the candidate despite relevant skills, and leading to a reduced weight. A fairer alternative would be to focus solely on the candidate's technical skills and experience within the specified tools and technologies."
+      },
+      {
+        "id": "ssms-tool",
+        "label": "SSMS",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The significant weight decrease (w_cv from 0.902 to 0.5) associated with the SSMS tool highlights a potential proxy bias. The candidate's CV emphasizes experience coordinating projects, including 'Experience in Huawei BTS 3900 & 5900 and Huawei equipment's', likely indicating a geographical location bias - specifically, the candidate's background in India (Sirkazhi, Tamil Nadu) and UAE potentially impacts the perceived value of skills demonstrated in a Western-centric recruitment process. While the candidate possesses relevant technical skills, the JD emphasizes global experience and skills aligned with modern technology, potentially downplaying the relevance of the specific BTS equipment knowledge, therefore unfairly penalizing the candidate due to their location."
+      },
+      {
+        "id": "power-bi-tool",
+        "label": "Power BI",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.625,
+        "reason": "This reduction in weight (Delta = -0.412) is likely due to AGEISM. The candidate's resume emphasizes extensive experience with Huawei BTS equipment and troubleshooting, which aligns strongly with the JD's request for experience in a specific area of telecommunications. The candidate’s older graduation year (2019) and longer career length are being unfairly penalized, as the job description prioritizes practical skills and experience within 4G/5G implementation and equipment support— a technical domain requiring established expertise. A fairer alternative would be to assess the candidate's more recent skills and ability to adapt, assigning a higher weight to the Movate Network Integration Engineer role and acknowledging their experience with current technology rather than solely focusing on their early years of education."
+      },
+      {
+        "id": "esprit-equipe",
+        "label": "esprit d'équipe",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The candidate's CV explicitly highlights 'Good communication and interpersonal skills, with ability to develop cohesion in group through team work and resourceful ideas,' aligning with the job description's emphasis on 'esprit d'équipe' and 'analytical and creative skills'. However, the weight change (0.683 to 0.5) suggests a penalty for prioritizing these soft skills, indicating a potential Gender/Diversity bias where communication and collaboration skills are undervalued compared to technical skills (e.g., troubleshooting, networking). A correction factor of 0.75 reflects this undervaluation, acknowledging the value of the described skills but reducing their influence, as the candidate's overall profile highlights this positive attribute."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1646 (sous-qualifié), CTM=0.7622 (écart structurel élevé), match_pct=23.49% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.1534, ndcg_5=0.9523, missing_critical_penalty=0.0, combo_v6_final=14.12",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "7 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.49)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

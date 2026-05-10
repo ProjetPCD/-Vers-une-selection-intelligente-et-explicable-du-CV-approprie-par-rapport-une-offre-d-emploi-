@@ -1,0 +1,395 @@
+{
+  "job_id": "job_13",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-03T15:16:43.492126",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 18.13,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.688,
+        "coverage_rate": 0.312,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.1465,
+    "edge_score": 0.5746,
+    "combined": 0.3178
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.0823,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.8174,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.8187,
+    "matched_nodes": "2/16",
+    "edge_match_pct": 28.73
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1118,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.5118,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.0597,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.886,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.6367,
+    "ndcg_10": 0.7467,
+    "map_score": 0.7432,
+    "mrr_score": 0.5,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.1242,
+    "experience_density": 0.0622
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 16.1,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 22.39,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 6.74,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 63.98,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 23.86,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 21.79,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 16.24,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 5,
+      "match_pct": 4.8,
+      "weight_sum": 4.637
+    },
+    "Tool": {
+      "count": 6,
+      "match_pct": 0.0,
+      "weight_sum": 5.758
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 20.0,
+      "weight_sum": 2.746
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 50.0,
+      "weight_sum": 0.443
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 28.73,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "teamwork_skill|web_developer_domain",
+        "source": "teamwork_skill",
+        "target": "web_developer_domain",
+        "w_0": 0.8,
+        "w_cv": 0.883,
+        "w_cv_norm": 0.441,
+        "match_pct": 55.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "javascript-development|web_developer_domain",
+        "source": "javascript-development",
+        "target": "web_developer_domain",
+        "w_0": 0.9,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 41.7,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "html5_skill|web_developer_domain",
+        "source": "html5_skill",
+        "target": "web_developer_domain",
+        "w_0": 0.8,
+        "w_cv": 0.6,
+        "w_cv_norm": 0.3,
+        "match_pct": 37.5,
+        "p3_confidence": "MEDIUM",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "css3_skill|web_developer_domain",
+        "source": "css3_skill",
+        "target": "web_developer_domain",
+        "w_0": 0.8,
+        "w_cv": 0.594,
+        "w_cv_norm": 0.297,
+        "match_pct": 37.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "php-development|web_developer_domain",
+        "source": "php-development",
+        "target": "web_developer_domain",
+        "w_0": 0.95,
+        "w_cv": 0.5,
+        "w_cv_norm": 0.25,
+        "match_pct": 26.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "PHP",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "JavaScript",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "WordPress",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Agile",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 0.984,
+      "severity": "critical",
+      "importance": 0.984
+    },
+    {
+      "skill": "Drupal",
+      "type": "Tool",
+      "gap": 0.979,
+      "severity": "critical",
+      "importance": 0.979
+    },
+    {
+      "skill": "GitHub",
+      "type": "Tool",
+      "gap": 0.958,
+      "severity": "critical",
+      "importance": 0.958
+    },
+    {
+      "skill": "Git",
+      "type": "Tool",
+      "gap": 0.922,
+      "severity": "critical",
+      "importance": 0.922
+    },
+    {
+      "skill": "Jira",
+      "type": "Tool",
+      "gap": 0.915,
+      "severity": "critical",
+      "importance": 0.915
+    },
+    {
+      "skill": "CSS3",
+      "type": "Hard Skill",
+      "gap": 0.79,
+      "severity": "critical",
+      "importance": 0.884
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "PHP",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "JavaScript",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "WordPress",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Agile",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "gap": 0.984
+      },
+      {
+        "label": "Drupal",
+        "type": "Tool",
+        "gap": 0.979
+      },
+      {
+        "label": "GitHub",
+        "type": "Tool",
+        "gap": 0.958
+      },
+      {
+        "label": "Git",
+        "type": "Tool",
+        "gap": 0.922
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 5,
+    "nodes_with_bias": 5,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 2,
+      "HALO": 2,
+      "B": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "css3_skill",
+        "label": "CSS3",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV lists 'Japonais (Elementary)' as a skill, accompanied by a foreign email address (shripad.agashe.business@gma il.com) and a non-English website (shripadagashe.com). This suggests a proxy bias based on socioeconomic signals – specifically, the candidate's location and the language of their CV, potentially leading to a lower evaluation due to a perceived lack of proficiency in the primary language of the job description (French/English). While the candidate possesses relevant skills, the emphasis on a foreign language and email address introduces an extraneous factor that unfairly penalizes their application."
+      },
+      {
+        "id": "teamwork_skill",
+        "label": "capacity to work in a team",
+        "bias_category": "B",
+        "severity": "LOW",
+        "correction_factor": 0.9,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.765,
+        "reason": "The decrease in the 'teamwork_skill' weight is likely biased due to the CV's emphasis on highly specialized skills (Mixed Reality Development, AI Integration, XR) and a location (Boston) which, while reputable, might not perfectly align with the *specific* collaborative demands of this web development role. While the CV highlights collaboration in several projects, the JD's focus on 'cross-disciplinary' and 'collaboration with the design team' suggests a need for more general team skills, and the CV's highly technical focus may have reduced the algorithm’s weighting of those general team attributes, resulting in a slight, but potentially unfair, reduction in the teamwork score. A correction factor of 0.90 acknowledges the evidence of teamwork but acknowledges a possible bias based on overly specific skill sets."
+      },
+      {
+        "id": "html5_skill",
+        "label": "HTML5",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The CV lists ‘HTML5’ as an ‘elementary’ skill alongside other technical skills, but the JD explicitly states ‘HTML5’ is a core technology within the stack.  The CV’s inclusion of ‘HTML5’ might be driven by a desire to appear relevant to the job description, reflecting a broader familiarity with web technologies rather than demonstrable expertise. The CV’s location (gma il.com) is a proxy for socioeconomic status and potentially geographic location, which could unfairly influence the weighting if the role prioritizes skills from a specific region."
+      },
+      {
+        "id": "motivation_skill",
+        "label": "strong motivation to learn and innovate",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The reduction in weight for 'motivation_skill' (w_0 from 0.571 to 0.25) is likely driven by the subjective and unsubstantiated nature of the statement \"strong motivation to learn and innovate.\" The CV heavily emphasizes a wide range of technical skills (Mixed Reality, AI, XR, Unity, Unreal Engine) and project experience, creating a 'halo' effect where the single, vague motivation statement receives disproportionate weight despite lacking concrete backing.  A fair alternative would be to weight motivation based on demonstrated initiative, specific learning goals, or contributions to innovation within project outcomes, rather than relying solely on a general statement."
+      },
+      {
+        "id": "soft_skills_skill",
+        "label": "soft skills",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.75,
+        "reason": "The increased weight assigned to ‘soft_skills_skill’ (0.6 vs 0.452) appears to be driven by the CV's explicit highlighting of collaborative work with designers and engineers.  This is a halo effect, as the CV is focusing on a single, impressive accomplishment (the cross-functional project) and using that to elevate the overall profile.  While collaboration is a desirable skill, the amount of weight applied seems disproportionate to the evidence provided – a single bullet point describing a project – suggesting an overemphasis on this one positive aspect, potentially overshadowing other relevant technical skills."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.0823 (sous-qualifié), CTM=0.8174 (écart structurel élevé), match_pct=18.13% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.0597, ndcg_5=0.6367, missing_critical_penalty=0.0, combo_v6_final=16.1",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "11 gaps critiques identifiés",
+    "bias_note": "5 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

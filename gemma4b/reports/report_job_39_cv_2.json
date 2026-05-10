@@ -1,0 +1,547 @@
+{
+  "job_id": "job_39",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-02T21:37:41.959208",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 30.82,
+    "confidence": {
+      "confidence_score": 0.58,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.655,
+        "coverage_rate": 0.69,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.4388,
+    "edge_score": 1.1671,
+    "combined": 0.7302
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2411,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7184,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6918,
+    "matched_nodes": "1/29",
+    "edge_match_pct": 58.37
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2383,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.7286,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.2059,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1379,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.5199,
+    "weighted_recall": 0.0938,
+    "weighted_f1": {
+      "value": 0.1767,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6083,
+    "missing_critical_penalty": {
+      "value": 0.1429,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9333,
+    "ndcg_10": 0.9118,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.7649,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.2752,
+    "experience_density": 0.1974
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 32.37,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 38.48,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 21.32,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 97.33,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 42.39,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 28.62,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 22.2,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 21,
+      "match_pct": 15.8,
+      "weight_sum": 18.578
+    },
+    "Hard Skill": {
+      "count": 7,
+      "match_pct": 29.3,
+      "weight_sum": 6.607
+    },
+    "Role": {
+      "count": 1,
+      "match_pct": 93.8,
+      "weight_sum": 0.9
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 58.37,
+    "total_edges": 8,
+    "top_synergies": [
+      {
+        "edge_key": "opencv_tool|engineer_role",
+        "source": "opencv_tool",
+        "target": "engineer_role",
+        "w_0": 0.6,
+        "w_cv": 1.448,
+        "w_cv_norm": 0.724,
+        "match_pct": 100.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "javascript_programming_language|engineer_role",
+        "source": "javascript_programming_language",
+        "target": "engineer_role",
+        "w_0": 0.65,
+        "w_cv": 1.438,
+        "w_cv_norm": 0.719,
+        "match_pct": 100.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "csharp_programming|engineer_role",
+        "source": "csharp_programming",
+        "target": "engineer_role",
+        "w_0": 0.9,
+        "w_cv": 1.312,
+        "w_cv_norm": 0.656,
+        "match_pct": 72.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_programming|engineer_role",
+        "source": "python_programming",
+        "target": "engineer_role",
+        "w_0": 0.85,
+        "w_cv": 1.312,
+        "w_cv_norm": 0.656,
+        "match_pct": 77.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "webxr_tool|engineer_role",
+        "source": "webxr_tool",
+        "target": "engineer_role",
+        "w_0": 0.75,
+        "w_cv": 1.032,
+        "w_cv_norm": 0.516,
+        "match_pct": 68.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Unity3D",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "C#",
+      "type": "Hard Skill",
+      "gap": 0.625,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Java",
+      "type": "Hard Skill",
+      "gap": 0.756,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.625,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "MySQL",
+      "type": "Tool",
+      "gap": 0.756,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PostgreSQL",
+      "type": "Tool",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "IndexedDB",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Zend Framework",
+      "type": "Tool",
+      "gap": 0.999,
+      "severity": "critical",
+      "importance": 0.999
+    },
+    {
+      "skill": "Lua",
+      "type": "Hard Skill",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.994
+    },
+    {
+      "skill": "jQuery",
+      "type": "Tool",
+      "gap": 0.77,
+      "severity": "critical",
+      "importance": 0.958
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "Engineer",
+        "type": "Role",
+        "w_cv": 1.875
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "Unity3D",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "C#",
+        "type": "Hard Skill",
+        "gap": 0.625
+      },
+      {
+        "label": "Java",
+        "type": "Hard Skill",
+        "gap": 0.756
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.625
+      },
+      {
+        "label": "MySQL",
+        "type": "Tool",
+        "gap": 0.756
+      },
+      {
+        "label": "PostgreSQL",
+        "type": "Tool",
+        "gap": 0.906
+      },
+      {
+        "label": "IndexedDB",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Zend Framework",
+        "type": "Tool",
+        "gap": 0.999
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 22,
+    "nodes_with_bias": 20,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 10,
+      "HALO": 4,
+      "PRESTIGE": 4,
+      "PRESTIGE|PROXY": 2
+    },
+    "biased_nodes": [
+      {
+        "id": "csharp_programming",
+        "label": "C#",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.75,
+        "reason": "The candidate’s CV highlights experience creating and training an NLP model using PDF files as input, directly relevant to the JD’s requirements for an NLP project with PDF data. However, the system’s weighting decreased despite this relevant experience. This suggests a proxy bias – the system is over-emphasizing the candidate's academic background (Master's in Big Data and AI) and current role at InstaDeep, potentially at the expense of concrete skills demonstrated in the NLP project. A fairer alternative would be to weight this experience more heavily, recognizing its direct application to the job's technical demands."
+      },
+      {
+        "id": "java_programming",
+        "label": "Java",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.488,
+        "reason": "The CV highlights experience with ‘Website Development using Angular and Spring Boot,’ aligning with the JD’s extensive technical stack. However, the JD predominantly focuses on VR/AR technologies, and the CV’s detail about this specific web development experience – including the technologies used - appears to have unduly lowered the weight. This suggests a proxy bias based on the candidate’s demonstrated skills not directly aligned with the core requirements of the role, reinforcing a preference for applicants with VR/AR specific expertise. A fair alternative would be to give equal weight to relevant web development experience regardless of the project’s specific technologies."
+      },
+      {
+        "id": "python_programming",
+        "label": "Python",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.75,
+        "reason": "The applicant’s CV prominently highlights their experience creating and training an NLP model using PDF files as input, aligning with the JD’s requirement for Python programming within a project involving NLP and PDF processing. However, the Delta is negative, suggesting a reduced weight. This indicates a Halo bias where the significant NLP project is unduly influencing the weighting, overshadowing other potentially relevant skills or experience, and prioritizing this specific task over broader Python proficiency. A fairer alternative would be to weight the experience based on the depth of Python skills applied and the complexity of the project, not just its subject matter."
+      },
+      {
+        "id": "mysql_database",
+        "label": "MySQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.488,
+        "reason": "The decrease in weight (Delta: -0.35) is likely driven by the applicant's listing of 'MySQL' as a skill within the tech stack, which is a relatively standard database knowledge expected in many software engineering roles. While relevant, the JD emphasizes a highly specialized focus on VR/AR technologies and a specific skillset (Unity, C#, etc.) suggesting a proxy for broader technical expertise is being overweighted. A fair alternative would be to focus solely on skills directly related to the VR/AR project’s technical stack, mitigating this proxy bias."
+      },
+      {
+        "id": "postgresql_database",
+        "label": "PostgreSQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The JD explicitly lists PostgreSQL as a key technology required for the role, yet the CV focuses entirely on machine learning, NLP, and other AI-related skills, demonstrating a lack of relevant experience for the specified requirements. This suggests a proxy bias – the algorithm is prioritizing skills listed in the job description (PostgreSQL) over actual experience, potentially overlooking qualified candidates with different skillsets. A fair alternative would be to assess the candidate’s proficiency in database technologies or their willingness to learn them, rather than penalizing a lack of stated PostgreSQL experience. The Delta of -0.75 reflects a significant downward shift in weighting due to this mismatch."
+      },
+      {
+        "id": "angular_javascript_framework",
+        "label": "Angular",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.8,
+        "reason": "The increase in weight (Delta: +0.001) is driven by the presence of 'Angular' and 'Spring Boot' listed in the CV's project experience, which aligns with the JD's extensive technology stack. However, this is a halo effect – the candidate is being favorably assessed primarily due to the mention of a relevant technology (Angular) rather than demonstrated skills or experience related to VR/AR which are highly prioritized in the job description.  A more appropriate weight would reflect the candidate's actual capabilities in these technologies, not just their presence in a project listed on a CV. This represents unfairly penalizing the candidate for possessing skills desired in the JD but not central to the core project."
+      },
+      {
+        "id": "lua_scripting_language",
+        "label": "Lua",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The weight change (0.25 vs. 0.994) for 'Lua scripting language' is likely driven by a proxy bias - the CV prominently lists strong AI and Machine Learning skills (ML, DL, NLP) which are favored in the JD, while Lua is a supporting skill.  The lack of project evidence directly related to Lua within the CV, combined with the focus on high-level AI skills, suggests a system prioritizing skills directly matching the cutting-edge technologies mentioned in the job description. This unfairly penalizes a valuable skill based on its broader relevance rather than demonstrable practical application within this specific project's scope. A fairer alternative would be to assess Lua proficiency based on demonstrable project experience, not simply its presence alongside other desired skills."
+      },
+      {
+        "id": "jquery_tool",
+        "label": "jQuery",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The candidate's CV lists 'Website Development using Angular and Spring Boot' as experience, which aligns with the job description's listed tech stack. However, the JD emphasizes skills directly related to VR/AR (Unity3D, C#, etc.) and the candidate's CV focuses heavily on Machine Learning and NLP – a proxy for modern AI skills. This suggests a bias towards candidates with a broader, more contemporary skill set that isn’t directly relevant to the immediate research project, penalizing the candidate for a relevant, but less targeted, skillset. Correction factor is lowered to 0.75 to reflect this proxy bias."
+      },
+      {
+        "id": "opencv_tool",
+        "label": "OpenCV",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.02,
+        "reason": "The candidate’s CV heavily emphasizes a role at InstaDeep Ltd, a leading AI research company, which aligns with the JD's research focus. However, the weight change (-0.058) suggests that the system is disproportionately rewarding the prestige of this particular company and the specific research area (computer vision with OpenCV) over the candidate's broader technical skills listed (Machine Learning, Deep Learning, NLP).  A fair alternative would be to give more weight to the demonstrable skills related to the technologies listed in the job description, regardless of the employer. This is a classic prestige bias where a well-known employer overshadows other relevant factors."
+      },
+      {
+        "id": "aframe_tool",
+        "label": "Aframe",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The system heavily weights the presence of 'WebXR' listed on the CV due to the job description’s focus on a WebXR project. This constitutes a halo bias, where a single positive signal (WebXR) unduly influences the score, overshadowing the candidate's broader AI/ML skillset. A fairer alternative would be to assess the candidate's proficiency in relevant technologies like Unity3D, C#, and NLP, which are highlighted in the JD and core to the role, rather than relying solely on a single tool mention. Delta of -0.655 indicates a strong decrease in score due to this over-emphasis."
+      },
+      {
+        "id": "nodejs_tool",
+        "label": "Node.js",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The significant decrease in weight (-0.398) for 'Node.js' is likely driven by proxy bias. The job description heavily lists a wide range of technologies, including Node.js, while the CV showcases experience with modern AI/ML technologies like Python, TensorFlow, and deep learning models.  The system may be unfairly penalizing the candidate for not having experience with technologies prevalent in the current AI landscape, favoring those listed most prominently in the job description. A fair alternative would be to assess Node.js experience based on the specific needs of the project, not as a default requirement for an AI Research Engineer role."
+      },
+      {
+        "id": "engineer_role",
+        "label": "Engineer",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.875,
+        "reason": "The increased weight (Delta: +0.600) is likely driven by the applicant's role at InstaDeep Ltd., a recognized AI research company, and the high-profile nature of the FED CESAAR-AVC project. This represents a prestige bias, as the applicant’s affiliation with InstaDeep elevates the perceived value of their experience disproportionately compared to the documented skills and project involvement. A fairer approach would reduce the weight to account for the influence of the company's reputation and project context."
+      },
+      {
+        "id": "react_tool",
+        "label": "React",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The decrease in weight for React Tool is likely driven by PROXY BIAS, specifically due to the listed technology (Angular and Spring Boot) being present in the CV's past role at Azur Systemes. While relevant, the JD’s extensive list of technologies, including some highly specialized tools for VR/AR development, suggests a broader skill set is desired. The CV’s listing of Angular and Spring Boot provides a weak signal compared to the explicit requirements outlined in the job description, implying the algorithm prioritized the presence of this particular technology over demonstrable skills in the VR/AR domain. A fair alternative would be to weight the candidate's VR/AR experience and skills more heavily, based on the JD’s emphasis."
+      },
+      {
+        "id": "webxr_tool",
+        "label": "WebXR",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease in weight (w_cv from 0.85 to 0.25) is likely driven by the presence of 'WebXR' in the skills section of the CV, coupled with the JD’s explicit mention of WebXR as a stack technology. This represents a halo effect where a single positive signal (WebXR) is disproportionately weighted, overshadowing the candidate’s broader skillset of Machine Learning, Deep Learning, and NLP. A fairer assessment would consider the relative importance of each skill within the specific context of the role, acknowledging the breadth of Jabri's expertise rather than focusing solely on this single technology mention. A correction factor of 0.75 reflects this imbalance."
+      },
+      {
+        "id": "c_hard_skill",
+        "label": "C",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.637,
+        "reason": "The CV prominently features experience at InstaDeep Ltd, a research-focused company, and details a specific NLP project (training a question-answering model with PDF input).  This project aligns with the JD's focus on cutting-edge technologies like NLP, aligning with the desired skills and experience. However, the JD heavily emphasizes a broad range of technologies including legacy systems, suggesting a preference for candidates with expertise in the listed technologies regardless of demonstrable skills within the specific project described. Therefore, the increase in weight is likely prestige-based, reflecting a bias towards candidates affiliated with recognized research labs rather than solely assessing the applicant's practical NLP skills."
+      },
+      {
+        "id": "php5_hard_skill",
+        "label": "PHP5",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The significant decrease in weight (w_cv from 0.3 to 0.79) for 'php5_hard_skill' is likely driven by proxy bias. The JD heavily emphasizes a specific technology stack (including PHP5) in a research project focused on VR/AR. The CV primarily highlights skills in Machine Learning, NLP, and DevOps, indicating a different technical domain. This mismatch between the ideal skill set (PHP5) and the candidate’s demonstrated expertise (modern AI/ML) suggests the algorithm is penalizing the candidate for lacking a skill prominently listed in the JD rather than assessing the relevance of their skills within the context of the role’s actual requirements. A fair alternative would be to evaluate the candidate's aptitude for applying general programming skills to the project’s needs, rather than simply looking for a specific language."
+      },
+      {
+        "id": "javaee_tool",
+        "label": "JavaEE",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.712,
+        "reason": "The significant weight increase (Delta = +0.198) is driven by a single past experience - working as a Website Developer at Azur Systemes. This role utilized JavaEE, which is listed in the job description, but the core skills highlighted in the CV – Machine Learning, Deep Learning, NLP – are not relevant to the advertised position focusing on VR/AR development. This represents prestige bias, elevating the value of a single, technically distant role over the candidate’s current demonstrated skillset, particularly when the candidate is applying for a role with a drastically different skillset."
+      },
+      {
+        "id": "html5_tool",
+        "label": "HTML5",
+        "bias_category": "PRESTIGE|PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The weight decrease for the HTML5 experience is likely driven by proxy bias, specifically socioeconomic factors. The candidate's CV highlights extensive experience in Machine Learning, Deep Learning, and NLP roles at InstaDeep Ltd, signaling a high-demand, high-salary field. The listed role at Azur Systemes, a website development position using HTML5, is comparatively lower in prestige within the overall skill set assessed by the system, particularly considering the applicant's stronger focus on advanced AI technologies. A fairer alternative would be to de-emphasize the HTML5 experience relative to the candidate's core expertise, reducing the weighting to reflect the narrower scope of the role and the disparity in skill levels."
+      },
+      {
+        "id": "css3_tool",
+        "label": "CSS3",
+        "bias_category": "PRESTIGE|PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.51,
+        "reason": "The candidate’s CV heavily emphasizes Machine Learning, Deep Learning, and NLP skills – areas vastly different from the role’s requirements (Reality VR development, HTML5, CSS3). The JD explicitly lists CSS3 as a required technology, yet the CV’s primary focus is on advanced AI, resulting in an underweight score likely due to prestige bias.  A fair alternative would involve prioritizing skills directly relevant to the VR development role, such as Unity3D, Javascript, or Three.js, while acknowledging the candidate's broader AI knowledge.  The weight change reflects a prioritization of non-relevant skills over stated job requirements, indicating a potential Prestige Bias."
+      },
+      {
+        "id": "xml-vr-engineer",
+        "label": "XML",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV heavily emphasizes skills in Machine Learning, Deep Learning, and NLP, technologies largely irrelevant to the stated requirements of the VR Engineer role. This suggests the algorithm is prioritizing a different skillset (AI research) based on the applicant's self-described expertise and previous projects, creating a proxy bias. While relevant, the core focus of the JD is on VR development technologies, and the candidate’s unusual skillset is weighting them unfairly. A fair alternative would have given more weight to the listed VR development technologies and the experience in Unity/C#, regardless of the candidate’s broader AI expertise."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2411 (sous-qualifié), CTM=0.7184 (écart structurel élevé), match_pct=30.82% → Poor Match",
+    "v6_summary": "weighted_f1=0.1767, gap_score=0.2059, ndcg_5=0.9333, missing_critical_penalty=0.1429, combo_v6_final=32.37",
+    "key_strengths": "1 compétences clés validées",
+    "key_gaps": "19 gaps critiques identifiés",
+    "bias_note": "20 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.58)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

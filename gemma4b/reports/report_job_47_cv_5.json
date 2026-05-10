@@ -1,0 +1,288 @@
+{
+  "job_id": "job_47",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-03T04:05:35.474302",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 49.37,
+    "confidence": {
+      "confidence_score": 0.83,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.143,
+        "coverage_rate": 0.857,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.6301,
+    "edge_score": 0.7733,
+    "combined": 0.6874
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.3835,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5054,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5063,
+    "matched_nodes": "0/7",
+    "edge_match_pct": 38.65
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.3432,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.755,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Excellent"
+    },
+    "gap_score": {
+      "value": 0.3612,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.3333,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.838,
+    "weighted_recall": 0.2194,
+    "weighted_f1": {
+      "value": 0.392,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5346,
+    "missing_critical_penalty": {
+      "value": 0.5,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9982,
+    "ndcg_10": 0.9984,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9468,
+    "top_skill_alignment": 0.7394,
+    "semantic_fit_score": 0.8868,
+    "experience_density": 0.2401
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 50.0,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 48.49,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 53.82,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 99.93,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 54.49,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 54.77,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 57.81,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 56.4,
+      "weight_sum": 1.0
+    },
+    "Tool": {
+      "count": 3,
+      "match_pct": 23.5,
+      "weight_sum": 2.214
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 50.4,
+      "weight_sum": 0.963
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 9.5,
+      "weight_sum": 1.157
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 38.65,
+    "total_edges": 6,
+    "top_synergies": [
+      {
+        "edge_key": "python_data_analyst_alternance|data_analyst_domain",
+        "source": "python_data_analyst_alternance",
+        "target": "data_analyst_domain",
+        "w_0": 0.95,
+        "w_cv": 1.068,
+        "w_cv_norm": 0.534,
+        "match_pct": 56.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "sql_data_analyst_alternance|data_analyst_domain",
+        "source": "sql_data_analyst_alternance",
+        "target": "data_analyst_domain",
+        "w_0": 0.9,
+        "w_cv": 0.873,
+        "w_cv_norm": 0.436,
+        "match_pct": 48.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "power_bi_tool|data_analyst_domain",
+        "source": "power_bi_tool",
+        "target": "data_analyst_domain",
+        "w_0": 0.8,
+        "w_cv": 0.708,
+        "w_cv_norm": 0.354,
+        "match_pct": 44.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "esprit_equipe_soft_skill|data_analyst_domain",
+        "source": "esprit_equipe_soft_skill",
+        "target": "data_analyst_domain",
+        "w_0": 0.65,
+        "w_cv": 0.599,
+        "w_cv_norm": 0.299,
+        "match_pct": 46.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "capacite_adaptation_soft_skill|data_analyst_domain",
+        "source": "capacite_adaptation_soft_skill",
+        "target": "data_analyst_domain",
+        "w_0": 0.55,
+        "w_cv": 0.599,
+        "w_cv_norm": 0.299,
+        "match_pct": 54.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 0.631,
+      "severity": "critical",
+      "importance": 1.0
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "gap": 0.631
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 4,
+    "nodes_with_bias": 4,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE BIAS": 1,
+      "HALO": 1,
+      "PRESTIGE": 1,
+      "C": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python_data_analyst_alternance",
+        "label": "Python",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.128,
+        "reason": "The candidate's CV heavily emphasizes their work on the ‘Hippocampus shape’ project within InstaDeep, which is a well-known and highly-regarded organization within the Deep Learning space.  The focus on this project, including specific technical details like ‘Dense vector fields’ and ‘Kendall’s definition,’ suggests the algorithm is prioritizing experience with this particular research group and methodology, which isn't necessarily a reflection of broader skills. The weight reduction likely reflects an over-reliance on this single signal. A fairer alternative would be to weigh all technical skills and experience equally, regardless of the employer or project name, to ensure a more robust assessment of the candidate's capabilities. This is amplified by the use of highly specialized terminology."
+      },
+      {
+        "id": "sql_data_analyst_alternance",
+        "label": "SQL",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.737,
+        "reason": "The candidate's CV heavily emphasizes their research project using 'Dense vector fields' and achieving state-of-the-art results in Alzheimer's disease classification. This constitutes a strong halo effect, potentially over-weighting the project's significance relative to the candidate's broader skills and experience. The JD emphasizes skills like SQL, Python, and data visualization, but the CV's focus on this specific, advanced project has disproportionately influenced the initial weight adjustment. A fairer assessment would de-emphasize this single project and consider the candidate’s overall background, including their academic degree and previous internships, more holistically."
+      },
+      {
+        "id": "data_analyst_domain",
+        "label": "Data Analyst",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.008,
+        "reason": "The CV heavily emphasizes a highly specialized project – ‘Alzheimer’s Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning’ – within a research environment (ICube Strasbourg) and at a specific university (INSAT). While the skills demonstrated are relevant to the data analyst role, the project’s prestige and the use of advanced techniques like ‘Geometric Deep Learning’ disproportionately weight the candidate's profile compared to a broader range of data analysis skills. This creates a prestige bias, elevating the candidate due to the specific and advanced nature of their experience, which may not be universally valued in all data analyst roles. A fairer alternative would focus on the quantifiable achievements ('exceeded all state of the art methods') and the tools used (Python, SQL) without highlighting the specific, prestigious project as the primary driver of assessment."
+      },
+      {
+        "id": "power_bi_tool",
+        "label": "Power BI",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.408,
+        "reason": "This weight change (Delta: -0.408) indicates a significant decrease in the importance of the candidate’s profile, primarily driven by the mention of Power BI. The job description emphasizes broader data analysis skills (Python, SQL) and impactful project experience (Deep Learning, Alzheimer’s research), while the candidate’s CV heavily focuses on a specific, advanced project utilizing Power BI as a supporting tool. This disproportionate emphasis on a peripheral tool suggests a prestige bias – the system is unfairly prioritizing universities and research experience (INSAT) over demonstrable proficiency in core data analysis technologies, which is a proxy for the skills demanded. A fairer alternative would prioritize the candidate's Deep Learning and Alzheimer's research experience, acknowledging Power BI as a supplementary tool rather than a central defining factor."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.3835 (sous-qualifié), CTM=0.5054 (écart structurel élevé), match_pct=49.37% → Poor Match",
+    "v6_summary": "weighted_f1=0.392, gap_score=0.3612, ndcg_5=0.9982, missing_critical_penalty=0.5, combo_v6_final=50.0",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "1 gaps critiques identifiés",
+    "bias_note": "4 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.83)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

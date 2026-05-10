@@ -1,0 +1,334 @@
+{
+  "job_id": "job_36",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-02T19:27:39.265153",
+  "overall_assessment": {
+    "verdict": "Weak Match",
+    "match_pct": 62.74,
+    "confidence": {
+      "confidence_score": 0.95,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.2,
+        "coverage_rate": 1.0,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.8287,
+    "edge_score": 0.8081,
+    "combined": 0.8205
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.5298,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.4136,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Écart modéré"
+    },
+    "weighted_gap": 0.3726,
+    "matched_nodes": "6/15",
+    "edge_match_pct": 40.42
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.5329,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.7449,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.4628,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.3571,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.1458,
+    "weighted_recall": 0.2919,
+    "weighted_f1": {
+      "value": 0.4653,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6447,
+    "missing_critical_penalty": {
+      "value": 0.2,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.8357,
+    "ndcg_10": 0.8791,
+    "map_score": 0.9571,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8942,
+    "top_skill_alignment": 0.5167,
+    "semantic_fit_score": 0.4326,
+    "experience_density": 0.314
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 51.65,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 56.32,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 42.58,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 91.93,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 55.25,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 41.77,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 51.46,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 6,
+      "match_pct": 36.5,
+      "weight_sum": 4.793
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 30.0,
+      "weight_sum": 0.933
+    },
+    "Certification": {
+      "count": 4,
+      "match_pct": 49.3,
+      "weight_sum": 3.245
+    },
+    "Soft Skill": {
+      "count": 3,
+      "match_pct": 46.4,
+      "weight_sum": 1.905
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 40.0,
+      "weight_sum": 0.492
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 40.42,
+    "total_edges": 7,
+    "top_synergies": [
+      {
+        "edge_key": "iso-27001-certification|node_4",
+        "source": "iso-27001-certification",
+        "target": "node_4",
+        "w_0": 0.7,
+        "w_cv": 1.125,
+        "w_cv_norm": 0.562,
+        "match_pct": 80.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "security-tools|node_2",
+        "source": "security-tools",
+        "target": "node_2",
+        "w_0": 0.8,
+        "w_cv": 0.875,
+        "w_cv_norm": 0.438,
+        "match_pct": 54.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "pci-dss-certification|node_4",
+        "source": "pci-dss-certification",
+        "target": "node_4",
+        "w_0": 0.7,
+        "w_cv": 0.875,
+        "w_cv_norm": 0.438,
+        "match_pct": 62.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "nist-certification|node_4",
+        "source": "nist-certification",
+        "target": "node_4",
+        "w_0": 0.7,
+        "w_cv": 0.875,
+        "w_cv_norm": 0.438,
+        "match_pct": 62.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "communication-skill|node_1",
+        "source": "communication-skill",
+        "target": "node_1",
+        "w_0": 0.6,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 70.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "approches agiles",
+      "type": "Hard Skill",
+      "gap": 0.633,
+      "severity": "critical",
+      "importance": 0.933
+    },
+    {
+      "skill": "Firewalls",
+      "type": "Tool",
+      "gap": 0.647,
+      "severity": "critical",
+      "importance": 0.891
+    },
+    {
+      "skill": "Security Tools",
+      "type": "Tool",
+      "gap": 0.65,
+      "severity": "critical",
+      "importance": 0.875
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "approches agiles",
+        "type": "Hard Skill",
+        "gap": 0.633
+      },
+      {
+        "label": "Firewalls",
+        "type": "Tool",
+        "gap": 0.647
+      },
+      {
+        "label": "Security Tools",
+        "type": "Tool",
+        "gap": 0.65
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 10,
+    "nodes_with_bias": 6,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 6
+    },
+    "biased_nodes": [
+      {
+        "id": "node_10",
+        "label": "approches agiles",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight decrease is likely driven by the candidate's location (Tunisia) and the lack of demonstrable project experience aligning with the 'approaches agiles' mentioned in the job description.  While relevant skills (NIST, SCADA) exist, the CV focuses heavily on past roles and titles without concrete evidence of utilizing agile methodologies or modern security practices.  The JD emphasizes a need for someone experienced with cutting-edge technologies like SIEM and modern cloud platforms, while Majdi’s experience is primarily within OT & IT infrastructure security, reflecting a potential mismatch and an over-reliance on location-based signals. A fair alternative would be to evaluate the candidate based on their demonstrable skills and experience using relevant frameworks, ignoring the geographical origin."
+      },
+      {
+        "id": "firewall-security",
+        "label": "Firewalls",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.488,
+        "reason": "The CV highlights Majdi Smaoui's experience in OT&IT, specifically SCADA systems and cybersecurity within the energy sector, which aligns well with the JD's requirements. However, the JD emphasizes 'advanced threat detection mechanisms' and 'risk analysis,' areas where the CV lacks explicit project detail demonstrating these skills. The location (Tunisia) and the long-held roles in smaller, regional organizations are proxies for socioeconomic factors potentially impacting perceived experience, leading to a moderate reduction in the initial weight."
+      },
+      {
+        "id": "security-tools",
+        "label": "Security Tools",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The CV demonstrates significant experience in OT&IT security, particularly with SCADA systems and industrial control environments, aligning with the JD’s focus on ‘protection of digital assets’. However, the CV’s emphasis on regional experience (Tunisia) and specific roles within the energy sector, coupled with a lack of quantifiable project details around security tools, introduces a proxy bias. The weighting reduction reflects the reliance on location and domain-specific experience rather than demonstrable skills within the stated security tool stack, indicating a potential undervaluation of relevant expertise due to geographical or sector-specific knowledge. A fairer alternative would prioritize demonstrated skills and certifications within the security tool landscape."
+      },
+      {
+        "id": "gdpr-certification",
+        "label": "GDPR",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The CV’s mention of 'GDPR' certification is a proxy for data privacy awareness, but the CV lacks specific project experience or demonstrable skills related to GDPR implementation. This weak evidence, combined with the JD’s focus on extensive experience with GDPR as a core requirement, suggests the weight reduction is influenced by the lack of concrete evidence, rather than a truly merit-based assessment. A fairer alternative would be to adjust the weight based on specific GDPR-related skills and experience, not just the presence of a certification. This is a proxy bias where a signal (GDPR certification) is overly weighted despite lacking substantive connection to the role."
+      },
+      {
+        "id": "cloud-computing-tools",
+        "label": "Cloud Computing Technologies",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.45,
+        "reason": "The CV lists ‘Cloud Computing Technologies’ as a skill, but the context remains vague and the candidate’s experience is heavily focused on OT/IT security, SCADA systems, and industrial environments within Tunisia.  The JD emphasizes a broad cybersecurity skillset including modern cloud tools like SIEM, AWS, and Azure, while the CV’s skills are predominantly focused on legacy industrial control systems and a specific geographic location, suggesting a proxy bias related to location and industry experience.  A correction factor of 0.75 reflects this misalignment; the skill is present, but the context doesn’t fully support its inclusion relative to the broader requirements of a Senior Cybersecurity Engineer. This shift in weighting penalizes the candidate for lacking explicitly listed cloud experience when their expertise lies elsewhere."
+      },
+      {
+        "id": "vpn-security",
+        "label": "VPN",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The CV demonstrates relevant experience in OT&IT security, particularly with SCADA systems, aligning with the JD’s focus on cybersecurity and risk management. However, the skill listing ‘VPN’ is presented as a contextual mention without any project context, and the CV’s location (Tunisia) suggests a potential proxy bias, as geographic location may correlate with socioeconomic factors that recruiters unfairly penalize. A correction factor of 0.75 reflects this contextual mismatch, acknowledging the listed skillset while mitigating the influence of the location signal, prioritizing demonstrated expertise over a simple keyword mention."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.5298 (sous-qualifié), CTM=0.4136 (écart structurel modéré), match_pct=62.74% → Weak Match",
+    "v6_summary": "weighted_f1=0.4653, gap_score=0.4628, ndcg_5=0.8357, missing_critical_penalty=0.2, combo_v6_final=51.65",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "3 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.95)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "nodes": [
+    {
+      "id": "azure-cloud-architect",
+      "label": "Azure",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "Explicitly listed as a required skill within the JD.",
+      "inferred": true,
+      "inferred_from": "Azure"
+    },
+    {
+      "id": "devsecops-pipeline",
+      "label": "DevSecOps",
+      "type": "Tool",
+      "w_0": 0.987,
+      "seniority_required": "Senior",
+      "context": "Strongly implied through the context of secure cloud infrastructure and transformation.",
+      "inferred": true,
+      "inferred_from": "Le candidat idéal aura une solide expérience dans la conception et le déploiement d'infrastructures cloud sécurisées, ainsi que dans la mise en œuvre de la transformation numérique vers le cloud Microsoft."
+    },
+    {
+      "id": "terraform-infrastructure",
+      "label": "Terraform",
+      "type": "Tool",
+      "w_0": 0.758,
+      "seniority_required": "Senior",
+      "context": "Explicitly listed as a required skill for infrastructure as code.",
+      "inferred": true,
+      "inferred_from": "Le candidat devra également avoir une excellente connaissance de l'infrastructure et être capable de mettre en œuvre les bonnes pratiques de sécurité dans les pipelines et les conteneurs."
+    },
+    {
+      "id": "architecture-applicative",
+      "label": "Architecture Applicative",
+      "type": "Soft Skill",
+      "w_0": 0.682,
+      "seniority_required": "Senior",
+      "context": "Explicitly listed as a required skill.",
+      "inferred": true,
+      "inferred_from": "Architecture Applicative"
+    },
+    {
+      "id": "net-cloud-development",
+      "label": ".Net",
+      "type": "Hard Skill",
+      "w_0": 0.562,
+      "seniority_required": "Senior",
+      "context": "Explicitly listed as a required skill.",
+      "inferred": true,
+      "inferred_from": ".Net"
+    },
+    {
+      "id": "cloud-architect-role",
+      "label": "architecte cloud expérimenté",
+      "type": "Domain",
+      "w_0": 0.406,
+      "seniority_required": "Senior",
+      "context": "Explicitly defined as the 'ideal candidate'.",
+      "inferred": true,
+      "inferred_from": "Le candidat idéal sera un architecte cloud expérimenté"
+    },
+    {
+      "id": "microsoft-ecosystem",
+      "label": "écosystème Microsoft",
+      "type": "Tool",
+      "w_0": 0.38,
+      "seniority_required": "Senior",
+      "context": "Explicitly listed as a required skill.",
+      "inferred": true,
+      "inferred_from": "Le candidat devra également avoir une solide connaissance de l'infrastructure et être capable de mettre en œuvre les bonnes pratiques de sécurité dans les pipelines et les conteneurs."
+    }
+  ],
+  "edges": [
+    {
+      "source": "azure-cloud-architect",
+      "target": "devsecops-pipeline",
+      "relation": "supports",
+      "weight": 0.85,
+      "rationale": "DevSecOps pipelines are commonly implemented using Azure services, making DevSecOps a natural support for Azure cloud architecture."
+    },
+    {
+      "source": "azure-cloud-architect",
+      "target": "terraform-infrastructure",
+      "relation": "implements",
+      "weight": 0.75,
+      "rationale": "Terraform is frequently used for infrastructure as code within Azure cloud deployments."
+    },
+    {
+      "source": "azure-cloud-architect",
+      "target": "net-cloud-development",
+      "relation": "requires",
+      "weight": 0.65,
+      "rationale": "The JD explicitly states .Net skills are required, and Azure supports .Net applications."
+    },
+    {
+      "source": "azure-cloud-architect",
+      "target": "microsoft-ecosystem",
+      "relation": "part_of",
+      "weight": 0.9,
+      "rationale": "The role is deeply embedded within the Microsoft ecosystem, representing a key component of the cloud architect's responsibilities."
+    },
+    {
+      "source": "devsecops-pipeline",
+      "target": "azure-cloud-architect",
+      "relation": "supports",
+      "weight": 0.8,
+      "rationale": "DevSecOps pipelines are used to support and secure Azure cloud deployments."
+    },
+    {
+      "source": "terraform-infrastructure",
+      "target": "azure-cloud-architect",
+      "relation": "supports",
+      "weight": 0.7,
+      "rationale": "Terraform is used to manage and deploy infrastructure within Azure cloud environments, thereby supporting the architect's role."
+    },
+    {
+      "source": "net-cloud-development",
+      "target": "azure-cloud-architect",
+      "relation": "requires",
+      "weight": 0.6,
+      "rationale": "The role explicitly requires .Net skills, and Azure is a platform for .Net application development."
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_22"
+}

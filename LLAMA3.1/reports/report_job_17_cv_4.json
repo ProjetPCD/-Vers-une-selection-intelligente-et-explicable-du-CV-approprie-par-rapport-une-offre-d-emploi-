@@ -1,0 +1,379 @@
+{
+  "job_id": "job_17",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-04T11:50:24.530830",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 26.44,
+    "confidence": {
+      "confidence_score": 0.54,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.647,
+        "coverage_rate": 0.647,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.2173,
+    "edge_score": 0.0,
+    "combined": 0.1304
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.129,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7552,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7356,
+    "matched_nodes": "4/17",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1632,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.3427,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.0819,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.125,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.022,
+    "weighted_recall": 0.0928,
+    "weighted_f1": {
+      "value": 0.1702,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.614,
+    "missing_critical_penalty": {
+      "value": 0.0769,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 0.6459,
+    "ndcg_10": 0.8064,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.98,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.1353,
+    "experience_density": 0.0873
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 20.7,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 21.65,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 11.14,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 85.84,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 37.3,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 25.9,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 20.17,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 9,
+      "match_pct": 0.0,
+      "weight_sum": 8.221
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 3,
+      "match_pct": 23.0,
+      "weight_sum": 2.114
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 37.9,
+      "weight_sum": 1.155
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 48.2,
+      "weight_sum": 1.165
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "total_edges": 9,
+    "top_synergies": [
+      {
+        "edge_key": "ingénieur|devops",
+        "source": "ingénieur",
+        "target": "devops",
+        "w_0": 0.9,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "kubernetes|terraform",
+        "source": "kubernetes",
+        "target": "terraform",
+        "w_0": 0.85,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "kubernetes|docker",
+        "source": "kubernetes",
+        "target": "docker",
+        "w_0": 0.8,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "prometheus|grafana",
+        "source": "prometheus",
+        "target": "grafana",
+        "w_0": 0.7,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "devops|agile",
+        "source": "devops",
+        "target": "agile",
+        "w_0": 0.65,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "AWS",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Terraform",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Ingénieur",
+      "type": "Education",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Kubernetes",
+      "type": "Tool",
+      "gap": 0.988,
+      "severity": "critical",
+      "importance": 0.988
+    },
+    {
+      "skill": "Prometheus",
+      "type": "Tool",
+      "gap": 0.941,
+      "severity": "critical",
+      "importance": 0.941
+    },
+    {
+      "skill": "Grafana",
+      "type": "Tool",
+      "gap": 0.913,
+      "severity": "critical",
+      "importance": 0.913
+    },
+    {
+      "skill": "Git",
+      "type": "Tool",
+      "gap": 0.854,
+      "severity": "critical",
+      "importance": 0.854
+    },
+    {
+      "skill": "méthodologies",
+      "type": "Hard Skill",
+      "gap": 0.814,
+      "severity": "critical",
+      "importance": 0.814
+    },
+    {
+      "skill": "Slack",
+      "type": "Tool",
+      "gap": 0.81,
+      "severity": "critical",
+      "importance": 0.81
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "AWS",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Terraform",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Docker",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Ingénieur",
+        "type": "Education",
+        "gap": 1.0
+      },
+      {
+        "label": "Kubernetes",
+        "type": "Tool",
+        "gap": 0.988
+      },
+      {
+        "label": "Prometheus",
+        "type": "Tool",
+        "gap": 0.941
+      },
+      {
+        "label": "Grafana",
+        "type": "Tool",
+        "gap": 0.913
+      },
+      {
+        "label": "Git",
+        "type": "Tool",
+        "gap": 0.854
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 4,
+    "nodes_with_bias": 3,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PRESTIGE": 2,
+      "HALO": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "compétences",
+        "label": "Compétences",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.5,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.75,
+        "reason": "The system appears to be penalizing or downweighting certain skills mentioned by the candidate in their LinkedIn profile, indicating a bias towards prestige or reputation-based skills."
+      },
+      {
+        "id": "méthodologies_developpement_agile",
+        "label": "Méthodologies de développement Agile",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change appears to be due to prestige bias, where the company is giving undue weight to experiences with Agile methodologies."
+      },
+      {
+        "id": "soft_skills",
+        "label": "Soft Skills",
+        "bias_category": "HALO",
+        "severity": "HIGH",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.2,
+        "reason": "The weight change unfairly favors candidates with strong Machine Learning Engineer experience, neglecting other essential skills and qualifications."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.129 (sous-qualifié), CTM=0.7552 (écart structurel élevé), match_pct=26.44% → Poor Match",
+    "v6_summary": "weighted_f1=0.1702, gap_score=0.0819, ndcg_5=0.6459, missing_critical_penalty=0.0769, combo_v6_final=20.7",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "11 gaps critiques identifiés",
+    "bias_note": "3 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.54)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

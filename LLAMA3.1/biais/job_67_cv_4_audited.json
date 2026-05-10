@@ -1,0 +1,753 @@
+{
+  "job_id": "job_67",
+  "cv_id": "cv_4",
+  "scored_nodes": {
+    "javascript": {
+      "w_cv": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "CV mentions 'C#', but no evidence of JavaScript project or usage.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "typescript": {
+      "w_cv": 0.3,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "CV mentions 'C#', but no evidence of TypeScript project or usage.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.3,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The weight change was biased due to PROXY BIAS, specifically the mention of 'C#' on the CV but no evidence of TypeScript project or usage. This suggests that the weight calculation is influenced by socio-economic signals rather than merit-based factors."
+    },
+    "react": {
+      "w_cv": 0.8,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "outcome_bonus": 0.25,
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "CV mentions 'Angular', but also mentions 'React' in 'Full Stack .NET 8 • Angular • React'.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.8,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The model's heavy reliance on one strong signal (React) to judge the entire profile is an example of Halo Bias, leading to unfair advantages for candidates with experience in that specific technology."
+    },
+    "bootstrap": {
+      "w_cv": 0.188,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "CV mentions 'C#', but no evidence of Bootstrap project or usage.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.188,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The weight change is biased towards candidates with experience in Bootstrap, which is not demonstrated by the candidate's skills or qualifications."
+    },
+    "bases-de-donnees": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "CV does not mention Bases de données at all.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "agile": {
+      "w_cv": 1.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 1.75
+      },
+      "active_red_flags": [],
+      "rationale": "CV mentions 'Collaborative Agile/Scrum environment' and lists it as a key part of their experience.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "html": {
+      "w_cv": 0.188,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "HTML is mentioned in the skills section (\"Principales compétences\nC# .NET Core Camunda BPM...\") but no project anchor is provided.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.188,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The weight change for 'HTML' skill is biased towards candidates from prestigious universities (ESPRIT) and companies (ODDO BHF). This is unfair because it prioritizes candidates based on their background rather than their skills. A fair alternative would be to rely more on the candidate's demonstrated skills in HTML, which is not evident in this profile."
+    },
+    "jira": {
+      "w_cv": 0.2,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Jira is mentioned in the skills section (\"Principales compétences\nC# .NET Core Camunda BPM...\") but no project anchor is provided.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.2,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change unfairly favors candidates from prestigious institutions (ESPRIT, ODDO BHF), without considering specific skills or qualifications."
+    },
+    "git": {
+      "w_cv": 0.188,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Git is mentioned in the skills section (\"Principales compétences\nC# .NET Core Camunda BPM...\") but no project anchor is provided.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.188,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The weight change appears to be biased towards candidates from prestigious universities or companies, rather than evaluating the candidate's skills and experience."
+    },
+    "bibliotheques": {
+      "w_cv": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "Bibliothèques is mentioned in the skills section (\"Principales compétences\nC# .NET Core Camunda BPM...\") but no project anchor is provided.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "figma": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "Figma is not mentioned in the CV at all.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "developpeur-front-end": {
+      "w_cv": 0.425,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Front-end developer is mentioned in the skills section (\"Principales compétences\nC# .NET Core Camunda BPM...\") but no project anchor is provided.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.425,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.85,
+      "p35_reason": "The weight decrease is likely due to the fact that the candidate's education background does not explicitly match the required skills or experience mentioned in the job description. A fair alternative would be to consider relevant work experience, skills, and projects presented by the candidate."
+    },
+    "communication": {
+      "w_cv": 0.5,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence anchor is \", \" which corresponds to a weak evidence verdict, resulting in a base score of 0.50.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "developpeur": {
+      "w_cv": 1.0,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.25
+        },
+        "penalties": {},
+        "final_score": 1.25
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence anchor is \"part_2\" which corresponds to a moderate evidence verdict, resulting in a base score of 1.00.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 1.0,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change is biased towards prestige, giving an unfair advantage to candidates from a specific university (ESPRIT) without considering their actual skills or qualifications."
+    },
+    "competences": {
+      "w_cv": 0.4,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence anchor is \", \" which corresponds to a weak evidence verdict, resulting in a base score of 0.50.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.4,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change for 'Camunda BPM' is biased, as it heavily relies on a single strong signal from the candidate's experience. A more merit-based approach would consider multiple relevant skills and qualifications."
+    },
+    "candidat-ideal": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence anchor is \", \" which corresponds to an absent evidence verdict, resulting in a base score of 0.00.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "nextjs": {
+      "w_cv": 1.05,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.05
+        },
+        "penalties": {},
+        "final_score": 1.05
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence anchor is \", \" which corresponds to a moderate evidence verdict, resulting in a base score of 1.00.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "css": {
+      "w_cv": 0.8,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.25
+        },
+        "penalties": {},
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "Evidence anchor is \", \" which corresponds to a moderate evidence verdict, resulting in a base score of 0.75.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.8,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change is biased towards prestige as the candidate's university and company names (ESPRIT, ODDO BHF) are given prominent display in their profile, whereas the JD emphasizes skills demonstrated over name recognition. A fair alternative would be to prioritize the candidate's relevant skills and experience in .NET 8, Microservices, and Angular."
+    },
+    "github": {
+      "w_cv": 0.945,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.05,
+          "external_proof": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.9
+      },
+      "active_red_flags": [],
+      "rationale": "moderate evidence of GitHub use in project anchor (part_2), experience_years_detected = 1",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "LOW",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.945,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.05,
+      "p35_reason": "The weight change was unfairly biased towards candidates with direct GitHub experience, which is not a direct measure of skills. The candidate has moderate evidence of GitHub use in project anchor (part_2), but still deserves consideration based on their other qualifications and experiences. To rectify this bias, we will increase the weight to compensate for the penalty, ensuring that all candidates are evaluated fairly."
+    },
+    "tailwindcss": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "no mention of TailwindCSS in CV",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "front-end-developer": {
+      "w_cv": 1.0,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.25,
+          "external_proof": 0.15,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.25
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.25
+      },
+      "active_red_flags": [],
+      "rationale": "strong evidence of front-end development skills in project anchor (part_2), experience_years_detected = 5, external_proof = true",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 1.0,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change is biased due to HALO BIAS, where one strong signal (front-end development experience) is used to judge the entire profile. The severity is MEDIUM due to a significant weight change. A correction factor of 0.80 is applied to decrease the weight by 20% and reflect a more balanced evaluation of the candidate's qualifications."
+    },
+    "vercel": {
+      "w_cv": 0.4,
+      "evidence_quality": "inferred_standalone",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "inferred standalone tool with no project anchor evidence",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "GENDER_DIVERSITY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.4,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change is biased towards candidates who have been socialized to prioritize technical skills over soft skills. A fair alternative would be to focus on concrete technical skills and experience, such as proficiency in JavaScript, TypeScript, HTML, CSS, React, NextJS, TailwindCSS, and Bootstrap."
+    },
+    "slack": {
+      "w_cv": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "weak evidence of Slack use in CV (part_1), no project anchor evidence",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    }
+  },
+  "scored_edges": {
+    "javascript|react": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 0.8,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Although JavaScript and React are often used together, no concrete evidence can be found to support their synergy in the provided CV excerpts.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "typescript|react": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.55,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "TypeScript is mentioned as part of the skills used at ODDO BHF, alongside React is not explicitly listed but it can be inferred that they were used together in a Fintech context, supporting strong synergy.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "html|css": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 1.0,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence of HTML and CSS used together in the same role or project, supporting no synergy.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "react|nextjs": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": 1.0,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence of React and NextJS used together in the same role or project, supporting no synergy.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "tailwindcss|nextjs": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": -0.2,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No evidence of TailwindCSS and NextJS used together in the same role or project.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "bootstrap|tailwindcss": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": 0.0,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Although temporal overlap exists, no mention of both Bootstrap and TailwindCSS in the same project or role.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    },
+    "git|github": {
+      "synergy_score": 0.4,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.4
+      },
+      "is_ghost_synergy": false,
+      "rationale": "In the ODDO BHF experience, both Git and GitHub are mentioned in the context of managing the full lifecycle via Azure DevOps.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.4
+    },
+    "vercel|nextjs": {
+      "synergy_score": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.0,
+        "penalties": -0.2,
+        "final_score": 0.0
+      },
+      "is_ghost_synergy": false,
+      "rationale": "No mention of both Vercel and NextJS in the same project or role.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.0
+    },
+    "developpeur-front-end|javascript": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.1,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "In the INFO'LIB experience, both Développeur Front-End and JavaScript are mentioned in the context of being a Full Stack Developer.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "developpeur-front-end|react": {
+      "synergy_score": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": 0.2,
+        "final_score": 0.25
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Although temporal overlap is present, there is no evidence of collaboration between Développeur Front-End and React in the same project or role.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.25
+    }
+  },
+  "metadata": {
+    "skills_scored": 23,
+    "mean_score": 0.493,
+    "edges_scored": 10,
+    "mean_synergy": 0.24,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.24,
+      "max": 0.75,
+      "min": 0.0
+    },
+    "batches_ok": 4,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.493,
+      "max": 1.75,
+      "min": 0.0,
+      "above_1": 5,
+      "below_05": 12
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 18,
+    "nodes_with_bias": 13,
+    "nodes_corrected": 13,
+    "edges_audited": 0
+  }
+}

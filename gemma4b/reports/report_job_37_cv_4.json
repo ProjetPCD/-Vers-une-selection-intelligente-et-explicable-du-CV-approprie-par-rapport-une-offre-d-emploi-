@@ -1,0 +1,271 @@
+{
+  "job_id": "job_37",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-02T20:06:40.402430",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 49.48,
+    "confidence": {
+      "confidence_score": 0.96,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.167,
+        "coverage_rate": 1.0,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.8333,
+    "edge_score": 0.9129,
+    "combined": 0.8651
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.452,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.5103,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.5052,
+    "matched_nodes": "0/6",
+    "edge_match_pct": 45.63
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.4514,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.8822,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Excellent"
+    },
+    "gap_score": {
+      "value": 0.4434,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.3333,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.9029,
+    "weighted_recall": 0.1921,
+    "weighted_f1": {
+      "value": 0.349,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.5255,
+    "missing_critical_penalty": {
+      "value": 0.3333,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9872,
+    "ndcg_10": 0.9924,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.5961,
+    "semantic_fit_score": 0.7524,
+    "experience_density": 0.3798
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 51.87,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 57.27,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 52.4,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 99.49,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 52.6,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 49.97,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 53.17,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 1,
+      "match_pct": 52.5,
+      "weight_sum": 1.0
+    },
+    "Tool": {
+      "count": 4,
+      "match_pct": 38.0,
+      "weight_sum": 3.708
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 45.1,
+      "weight_sum": 0.762
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 45.63,
+    "total_edges": 5,
+    "top_synergies": [
+      {
+        "edge_key": "data_analyst|sql_database",
+        "source": "data_analyst",
+        "target": "sql_database",
+        "w_0": 0.85,
+        "w_cv": 1.051,
+        "w_cv_norm": 0.525,
+        "match_pct": 61.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data_analyst|communication_skills",
+        "source": "data_analyst",
+        "target": "communication_skills",
+        "w_0": 0.76,
+        "w_cv": 0.976,
+        "w_cv_norm": 0.488,
+        "match_pct": 64.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data_analyst|power_query",
+        "source": "data_analyst",
+        "target": "power_query",
+        "w_0": 0.85,
+        "w_cv": 0.929,
+        "w_cv_norm": 0.465,
+        "match_pct": 54.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data_analyst|power_bi",
+        "source": "data_analyst",
+        "target": "power_bi",
+        "w_0": 0.85,
+        "w_cv": 0.826,
+        "w_cv_norm": 0.413,
+        "match_pct": 48.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "data_analyst|dax_formula",
+        "source": "data_analyst",
+        "target": "dax_formula",
+        "w_0": 0.85,
+        "w_cv": 0.788,
+        "w_cv_norm": 0.394,
+        "match_pct": 46.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Power BI",
+      "type": "Tool",
+      "gap": 0.635,
+      "severity": "critical",
+      "importance": 0.935
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Power BI",
+        "type": "Tool",
+        "gap": 0.635
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 3,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "HALO": 2,
+      "PRESTIGE BIAS": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "power_query",
+        "label": "Power Query",
+        "bias_category": "PRESTIGE BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.85,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.808,
+        "reason": "The candidate's CV heavily emphasizes skills trending within the Generative AI and LLM space (FastAPI, LLM, TensorFlow), while the job description specifically lists Power Query as a core requirement. The mention of the ‘InstaDeep’ role, a well-known AI research company, suggests a prestige bias – the algorithm may be over-weighting experience at a prominent AI lab over demonstrable proficiency in the listed tools, particularly Power Query, which is foundational to the role’s stated responsibilities. Outcome_bonus and intensity are applied to show a lower weight for this skill. A fair alternative would be to reduce the weight of this candidate's profile based on the mismatch between their listed skills and the core requirements of the job description."
+      },
+      {
+        "id": "power_bi",
+        "label": "Power BI",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.601,
+        "reason": "The weight change (0.935 to 0.801) is likely driven by a halo effect – prioritizing the candidate's experience at InstaDeep and their LLM/AI skills due to the intensity bonus and the job description's emphasis on data and prediction. While AI skills are relevant, the CV heavily focuses on advanced AI technologies (FastAPI, Generative AI, LLMs) that aren’t explicitly required for the stated role of a Power BI analyst. The JD mentions Power BI and SQL, and the CV’s skills list includes these, but the candidate’s expertise is presented in a way that overemphasizes the cutting-edge AI aspects, overshadowing the core Power BI skills needed for dashboard creation and reporting. A fair alternative would involve a more balanced assessment of the candidate's Power BI experience and the relevance of their broader AI skillset to the specific requirements of the job."
+      },
+      {
+        "id": "dax_formula",
+        "label": "DAX",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.526,
+        "reason": "The model exhibits halo bias by overemphasizing the DAX certification, a relatively narrow skill, while neglecting other relevant skills and experience demonstrated in the CV (e.g., AI research, ML algorithm development, data modeling). The JD emphasizes a broad range of data analysis skills, but the algorithm disproportionately weights the presence of the certification, failing to assess the candidate's overall fit and capabilities. A fairer alternative would involve a holistic evaluation considering the candidate’s diverse experience and skills alongside the DAX certification."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.452 (sous-qualifié), CTM=0.5103 (écart structurel élevé), match_pct=49.48% → Poor Match",
+    "v6_summary": "weighted_f1=0.349, gap_score=0.4434, ndcg_5=0.9872, missing_critical_penalty=0.3333, combo_v6_final=51.87",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "1 gaps critiques identifiés",
+    "bias_note": "3 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.96)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

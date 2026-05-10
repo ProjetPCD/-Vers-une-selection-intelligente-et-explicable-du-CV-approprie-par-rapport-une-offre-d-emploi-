@@ -1,0 +1,374 @@
+{
+  "job_id": "job_56",
+  "cv_id": "cv_2",
+  "scored_nodes": {
+    "aws": {
+      "w_cv": 0.2,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "cert_without_application": -0.1
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [
+        "cert_without_application"
+      ],
+      "rationale": "No mention of AWS in the CV, certification found but not verifiable",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "HIGH",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.2,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change is biased towards candidates from Western countries or with a specific language proficiency in their CV, which may not be relevant to the position."
+    },
+    "azure": {
+      "w_cv": 0.312,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "cert_without_application": -0.1
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [
+        "cert_without_application"
+      ],
+      "rationale": "No mention of Azure in the CV, certification found but not verifiable",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.312,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The model's reliance on university/company name suggests a bias towards prestige over merit, unfairly penalizing candidates without explicit connections to these institutions."
+    },
+    "data-engineer": {
+      "w_cv": 0.96,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.2
+        },
+        "penalties": {},
+        "final_score": 1.2
+      },
+      "active_red_flags": [],
+      "rationale": "4 years of experience in data engineering, with a strong evidence anchor",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.96,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "Prestige Bias detected, as weight change is due to education and certifications from prestigious institutions. A fair alternative would be to focus on relevant experience, technical skills, and achievements."
+    },
+    "etl": {
+      "w_cv": 0.875,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.2
+        },
+        "penalties": {},
+        "final_score": 0.7
+      },
+      "active_red_flags": [],
+      "rationale": "4 years of experience in ETL, but weak evidence anchor",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.875,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change was unfair because it penalized the candidate based on their university name and job titles, rather than their actual skills and experience in ETL."
+    },
+    "python": {
+      "w_cv": 1.16,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.2
+        },
+        "penalties": {},
+        "final_score": 1.45
+      },
+      "active_red_flags": [],
+      "rationale": "4 years of experience in Python, with a strong evidence anchor and quantified outcome",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 1.16,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change is influenced by the prestige associated with Python, rather than the candidate's skills demonstrated. A fair alternative would be to assess candidates based on their demonstrated skills and expertise."
+    },
+    "javascript": {
+      "w_cv": 1.087,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.2
+        },
+        "penalties": {},
+        "final_score": 1.45
+      },
+      "active_red_flags": [],
+      "rationale": "4 years of experience in JavaScript, with a strong evidence anchor and quantified outcome",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 1.087,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "Prestige bias detected, potentially unfair weight increase due to university and company names. Fair alternative: remove these signals or use a more robust evaluation method."
+    },
+    "data_lake_skills": {
+      "w_cv": 0.875,
+      "evidence_quality": "inferred_standalone",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.2
+        },
+        "penalties": {},
+        "final_score": 0.7
+      },
+      "active_red_flags": [],
+      "rationale": "Inferred standalone skill, with no concrete project evidence",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "GENDER_DIVERSITY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.875,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change appears to be biased against soft skills and collaboration, which are important for a data engineering role."
+    },
+    "data_architecture_skills": {
+      "w_cv": 0.84,
+      "evidence_quality": "inferred_standalone",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.2
+        },
+        "penalties": {},
+        "final_score": 0.7
+      },
+      "active_red_flags": [],
+      "rationale": "Inferred standalone skill, with no concrete project evidence",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.84,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The weight change is biased towards Prestige Bias as it's related to the name of the university/company rather than skills demonstrated. To correct this, we will increase the correction factor by 20% (from 1.0 to 1.20) to give more credit to skills demonstrated in the CV rather than inferred education."
+    },
+    "sql_skills": {
+      "w_cv": 0.7,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.2
+        },
+        "penalties": {},
+        "final_score": 0.7
+      },
+      "active_red_flags": [],
+      "rationale": "4 years of experience in SQL, but weak evidence anchor",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "autonomie_skills": {
+      "w_cv": 0.25,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "No concrete project evidence for autonomy skills",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "N/A",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "teamwork_skills": {
+      "w_cv": 0.4,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "CV summary mentions 'collaborate effectively in remote, agile environments', but no concrete project evidence",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "GENDER_DIVERSITY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.4,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The model is unfairly penalizing candidates who demonstrate soft skills, such as teamwork and collaboration. This could be a bias against women, who are more likely to highlight their soft skills in their resumes."
+    },
+    "communication_skills": {
+      "w_cv": 0.625,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "CV summary mentions 'deliver high-quality code', but no concrete project evidence",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.625,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The candidate's communication skills score was unfairly penalized due to a lack of concrete project evidence. However, their CV summary highlights relevant experience and expertise in software development."
+    },
+    "spark": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of Spark in CV sections",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "databricks": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of Databricks in CV sections",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    }
+  },
+  "scored_edges": {},
+  "metadata": {
+    "skills_scored": 14,
+    "mean_score": 0.518,
+    "edges_scored": 0,
+    "mean_synergy": 0,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0,
+      "max": 0,
+      "min": 0
+    },
+    "batches_ok": 2,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.518,
+      "max": 1.25,
+      "min": 0.0,
+      "above_1": 3,
+      "below_05": 5
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 12,
+    "nodes_with_bias": 10,
+    "nodes_corrected": 10,
+    "edges_audited": 0
+  }
+}

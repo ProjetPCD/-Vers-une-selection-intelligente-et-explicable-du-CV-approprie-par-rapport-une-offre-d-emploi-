@@ -1,0 +1,200 @@
+{
+  "nodes": [
+    {
+      "id": "python",
+      "label": "Python",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "Utilisation de Python pour la programmation",
+      "inferred": false
+    },
+    {
+      "id": "bash",
+      "label": "Bash",
+      "type": "Hard Skill",
+      "w_0": 1.0,
+      "seniority_required": "Senior",
+      "context": "Utilisation de Bash pour la programmation",
+      "inferred": false
+    },
+    {
+      "id": "golang",
+      "label": "Golang",
+      "type": "Hard Skill",
+      "w_0": 0.944,
+      "seniority_required": "Senior",
+      "context": "Utilisation de Golang pour la programmation",
+      "inferred": false
+    },
+    {
+      "id": "elasticsearch",
+      "label": "Elasticsearch",
+      "type": "Tool",
+      "w_0": 0.838,
+      "seniority_required": "Senior",
+      "context": "Utilisation d'Elasticsearch pour la gestion de logs",
+      "inferred": false
+    },
+    {
+      "id": "senior_devops_expert",
+      "label": "Senior DevOps Expert",
+      "type": "Domain",
+      "w_0": 0.548,
+      "seniority_required": "Senior",
+      "context": "Experienced Senior DevOps expert required.",
+      "inferred": true,
+      "inferred_from": "Mission passionnante pour un Senior Devops expérimenté !"
+    },
+    {
+      "id": "github",
+      "label": "Github",
+      "type": "Tool",
+      "w_0": 0.49,
+      "seniority_required": "N/A",
+      "context": "Experienced with Github.",
+      "inferred": true,
+      "inferred_from": "[Tool] Github (conf=0.476)"
+    },
+    {
+      "id": "aws",
+      "label": "AWS (Amazon Web Services)",
+      "type": "Tool",
+      "w_0": 0.441,
+      "seniority_required": "N/A",
+      "context": "Experienced with AWS for cloud infrastructure management.",
+      "inferred": true,
+      "inferred_from": "Utilisation d'AWS pour la gestion d'infrastructures cloud"
+    },
+    {
+      "id": "docker",
+      "label": "Docker",
+      "type": "Tool",
+      "w_0": 0.525,
+      "seniority_required": "N/A",
+      "context": "Experienced with Docker for container management.",
+      "inferred": true,
+      "inferred_from": "Utilisation de Docker pour la gestion de conteneurs"
+    },
+    {
+      "id": "terraform",
+      "label": "Terraform",
+      "type": "Tool",
+      "w_0": 0.441,
+      "seniority_required": "N/A",
+      "context": "Experienced with Terraform for infrastructure management.",
+      "inferred": true,
+      "inferred_from": "Utilisation de Terraform pour la gestion d'infrastructures"
+    },
+    {
+      "id": "kubernetes",
+      "label": "Kubernetes",
+      "type": "Tool",
+      "w_0": 0.464,
+      "seniority_required": "N/A",
+      "context": "Experienced with Kubernetes for cluster management.",
+      "inferred": true,
+      "inferred_from": "Utilisation de Kubernetes pour la gestion de clusters"
+    },
+    {
+      "id": "ansible",
+      "label": "Ansible",
+      "type": "Tool",
+      "w_0": 0.479,
+      "seniority_required": "N/A",
+      "context": "Experienced with Ansible for configuration management.",
+      "inferred": true,
+      "inferred_from": "Utilisation d'Ansible pour la gestion de configurations"
+    },
+    {
+      "id": "prometheus",
+      "label": "Prometheus",
+      "type": "Tool",
+      "w_0": 0.441,
+      "seniority_required": "N/A",
+      "context": "Experienced with Prometheus for security and scalability monitoring.",
+      "inferred": true,
+      "inferred_from": "Utilisation de Prometheus pour la supervision de la sécurité et de la scalabilité"
+    },
+    {
+      "id": "softskills",
+      "label": "Soft Skills",
+      "type": "Soft Skill",
+      "w_0": 0.455,
+      "seniority_required": "N/A",
+      "context": "Experienced in soft skills such as communication, collaboration and problem-solving.",
+      "inferred": true,
+      "inferred_from": "[Soft Skill] softskills (conf=0.436)"
+    },
+    {
+      "id": "github_actions",
+      "label": "Github Actions",
+      "type": "Tool",
+      "w_0": 0.431,
+      "seniority_required": "N/A",
+      "context": "Experienced with Github Actions for CI/CD.",
+      "inferred": true,
+      "inferred_from": "Utilisation de Github Actions pour la mise en œuvre de solutions de CI/CD"
+    }
+  ],
+  "edges": [
+    {
+      "source": "kubernetes",
+      "target": "python",
+      "relation": "requires",
+      "weight": 0.85,
+      "rationale": "Job requires expertise in Kubernetes and Python programming"
+    },
+    {
+      "source": "docker",
+      "target": "python",
+      "relation": "supports",
+      "weight": 0.65,
+      "rationale": "Python is supported by Docker, as mentioned in the job requirements"
+    },
+    {
+      "source": "github_actions",
+      "target": "python",
+      "relation": "feeds",
+      "weight": 0.5,
+      "rationale": "Job requires expertise in CI/CD tools like Github Actions, which feeds into Python development"
+    },
+    {
+      "source": "terraform",
+      "target": "aws",
+      "relation": "implements",
+      "weight": 0.85,
+      "rationale": "Terraform is used to implement AWS infrastructure management tasks"
+    },
+    {
+      "source": "ansible",
+      "target": "kubernetes",
+      "relation": "supports",
+      "weight": 0.65,
+      "rationale": "Ansible supports Kubernetes cluster management, as mentioned in the job requirements"
+    },
+    {
+      "source": "prometheus",
+      "target": "docker",
+      "relation": "complements",
+      "weight": 0.5,
+      "rationale": "Prometheus and Docker are complementary tools for monitoring and containerization"
+    },
+    {
+      "source": "senior_devops_expert",
+      "target": "kubernetes",
+      "relation": "part_of",
+      "weight": 0.85,
+      "rationale": "Senior DevOps Expert role is part of the Kubernetes domain expertise required in the job"
+    },
+    {
+      "source": "github",
+      "target": "terraform",
+      "relation": "implements",
+      "weight": 0.65,
+      "rationale": "Github Actions can implement Terraform infrastructure management tasks"
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_86"
+}

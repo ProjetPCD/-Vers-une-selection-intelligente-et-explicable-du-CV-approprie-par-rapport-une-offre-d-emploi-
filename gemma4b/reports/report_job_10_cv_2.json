@@ -1,0 +1,462 @@
+{
+  "job_id": "job_10",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-03T13:26:38.392776",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 29.1,
+    "confidence": {
+      "confidence_score": 0.75,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.769,
+        "coverage_rate": 0.923,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.4224,
+    "edge_score": 0.449,
+    "combined": 0.433
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2295,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7134,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.709,
+    "matched_nodes": "0/13",
+    "edge_match_pct": 22.45
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2309,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.3486,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.2189,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9271,
+    "ndcg_10": 0.9453,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.3172,
+    "semantic_fit_score": 0.4673,
+    "experience_density": 0.1915
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 19.11,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 21.44,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 25.11,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 97.08,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 6.57,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 19.69,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 24.8,
+      "weight_sum": 1.797
+    },
+    "Tool": {
+      "count": 6,
+      "match_pct": 20.1,
+      "weight_sum": 5.942
+    },
+    "Responsibility": {
+      "count": 1,
+      "match_pct": 15.1,
+      "weight_sum": 1.0
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 27.4,
+      "weight_sum": 1.567
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 18.0,
+      "weight_sum": 1.479
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 22.45,
+    "total_edges": 9,
+    "top_synergies": [
+      {
+        "edge_key": "scikit_learn_data_scientist|machine_learning",
+        "source": "scikit_learn_data_scientist",
+        "target": "machine_learning",
+        "w_0": 0.85,
+        "w_cv": 0.85,
+        "w_cv_norm": 0.425,
+        "match_pct": 50.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_data_scientist|data_scientist_econometrics_stat",
+        "source": "python_data_scientist",
+        "target": "data_scientist_econometrics_stat",
+        "w_0": 0.95,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 39.5,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "numpy_data_scientist|data_scientist_econometrics_stat",
+        "source": "numpy_data_scientist",
+        "target": "data_scientist_econometrics_stat",
+        "w_0": 0.85,
+        "w_cv": 0.414,
+        "w_cv_norm": 0.207,
+        "match_pct": 24.4,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "pandas_data_scientist|data_scientist_econometrics_stat",
+        "source": "pandas_data_scientist",
+        "target": "data_scientist_econometrics_stat",
+        "w_0": 0.9,
+        "w_cv": 0.396,
+        "w_cv_norm": 0.198,
+        "match_pct": 22.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "communication_effective|data_scientist_econometrics_stat",
+        "source": "communication_effective",
+        "target": "data_scientist_econometrics_stat",
+        "w_0": 0.7,
+        "w_cv": 0.378,
+        "w_cv_norm": 0.189,
+        "match_pct": 27.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.624,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "NumPy",
+      "type": "Tool",
+      "gap": 0.737,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Pandas",
+      "type": "Tool",
+      "gap": 0.754,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Matplotlib",
+      "type": "Tool",
+      "gap": 0.831,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Scikit-learn",
+      "type": "Tool",
+      "gap": 0.699,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Seaborn",
+      "type": "Tool",
+      "gap": 0.85,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Data Scientist",
+      "type": "Responsibility",
+      "gap": 0.849,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "SAS",
+      "type": "Tool",
+      "gap": 0.871,
+      "severity": "critical",
+      "importance": 0.942
+    },
+    {
+      "skill": "méthodologie",
+      "type": "Hard Skill",
+      "gap": 0.709,
+      "severity": "critical",
+      "importance": 0.797
+    },
+    {
+      "skill": "data science",
+      "type": "Domain",
+      "gap": 0.712,
+      "severity": "critical",
+      "importance": 0.782
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.624
+      },
+      {
+        "label": "NumPy",
+        "type": "Tool",
+        "gap": 0.737
+      },
+      {
+        "label": "Pandas",
+        "type": "Tool",
+        "gap": 0.754
+      },
+      {
+        "label": "Matplotlib",
+        "type": "Tool",
+        "gap": 0.831
+      },
+      {
+        "label": "Scikit-learn",
+        "type": "Tool",
+        "gap": 0.699
+      },
+      {
+        "label": "Seaborn",
+        "type": "Tool",
+        "gap": 0.85
+      },
+      {
+        "label": "Data Scientist",
+        "type": "Responsibility",
+        "gap": 0.849
+      },
+      {
+        "label": "SAS",
+        "type": "Tool",
+        "gap": 0.871
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 13,
+    "nodes_with_bias": 11,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "C": 7,
+      "PRESTIGE": 1,
+      "C|D": 1,
+      "PROXY": 1,
+      "B": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "python_data_scientist",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.752,
+        "reason": "The increased weight for this candidate (w_cv increased by 0.002) is primarily driven by the listing of 'Python' as a top skill on their LinkedIn profile, supported by experience and a relevant internship. While legitimate, the JD emphasizes a strong foundation in econometrics, statistics, and computer science, and places a premium on demonstrated skills within those areas. Focusing solely on 'Python' as a top skill, particularly alongside a relatively early-stage career (3rd year student), introduces a prestige bias, favoring candidates from top-tier universities or institutions without considering the broader skill set required for a data scientist role. A more appropriate factor would reflect the practical application of Python within the specified domain."
+      },
+      {
+        "id": "numpy_data_scientist",
+        "label": "NumPy",
+        "bias_category": "C|D",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.526,
+        "reason": "The data scientist's CV highlights a strong academic background (Higher Institute of Computer Science - Tunisia) and relevant internship experience at Instadeep AI Research. However, the description lacks specific project details demonstrating expertise in NumPy and Python, despite being listed as key skills. This suggests a reliance on university prestige (Prestige Bias) and a potential proxy bias due to the candidate's location and university, rather than a purely skills-based assessment. A correction factor of 0.7 reflects the need to de-emphasize the university's name while still acknowledging the contextual experience, as the candidate's skills are not strongly substantiated. The moderate severity reflects the lack of concrete evidence to support the weight change."
+      },
+      {
+        "id": "pandas_data_scientist",
+        "label": "Pandas",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.491,
+        "reason": "The weight change (0.702 to 0.404) represents a significant decrease for ‘pandas_data_scientist’ despite the explicit mention in the JD. This suggests a proxy bias - the candidate's academic institution (Higher Institute of Computer Science, Ariana) and focus on computer vision/AI research at InstaDeep are being overly weighted, overshadowing the core requirement of pandas experience, which is fundamental to the role's data science focus. A fair alternative would prioritize skills directly related to the JD, such as Python programming or experience with data manipulation libraries, regardless of the candidate's specific research area."
+      },
+      {
+        "id": "matplotlib_data_scientist",
+        "label": "Matplotlib",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.339,
+        "reason": "The data scientist's CV demonstrates junior seniority (3rd year student) and a focus on emerging technologies like Generative Adversarial Networks and Computer Vision, rather than the core requirements of the JD, which emphasizes econometrics, statistical modelling and traditional data science tools. While the candidate possesses relevant skills (Python), the peripheral specialization and academic level are not appropriately weighted, leading to a reduced score. This suggests a prestige bias favoring candidates with established experience and known expertise in high-demand areas, unfairly penalizing those in a nascent field of study."
+      },
+      {
+        "id": "scikit_learn_data_scientist",
+        "label": "Scikit-learn",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.602,
+        "reason": "The weight change from 1.0 to 0.802 for 'Scikit-learn' is unfairly penalized (DECREASED). The candidate is a 3rd-year student with an internship at InstaDeep, demonstrating practical application of Scikit-learn. While the JD emphasizes experience, the candidate's current studies and internship provide a relevant skillset, and a reduction in weight reflects the limited professional experience, aligning with a bias against newer graduates. A fair alternative would be to maintain the full weight of 1.0, acknowledging the candidate's active learning and demonstrable skills."
+      },
+      {
+        "id": "seaborn_data_scientist",
+        "label": "Seaborn",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.301,
+        "reason": "The weight change (0.402 to 0.402, a decrease of 0.598) is likely driven by a proxy bias stemming from Louay's educational background. The CV lists a university in Tunisia (Higher Institute of Computer Science - Tunisia), which, without context, could be perceived as a disadvantage compared to candidates from more prestigious Western institutions. While the JD explicitly states a 'solide formation en économétrie, statistique et informatique,' the origin of the candidate’s education introduces a socioeconomic signal that is unfairly penalized, representing a proxy for potential access to resources and network opportunities. A correction factor of 0.75 reflects this unfair weighting based on location and institution."
+      },
+      {
+        "id": "sas_data_scientist",
+        "label": "SAS",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.141,
+        "reason": "The data scientist's profile exhibits a significant recency gap with limited experience demonstrated. The CV indicates a student currently in their final year of a computer science degree, with only 2 years of internship experience at Instadeep and a 2-month internship at InTech TN. While the JD prioritizes SAS skills, the candidate’s experience primarily focuses on Python, GANs, and computer vision, suggesting a bias towards applicants with more recent, and potentially more directly relevant, experience in econometrics and statistical analysis, aligning with the job’s core requirements. Consequently, the weight decrease of 0.74 reflects an unfair penalty due to the candidate’s limited experience and lack of direct application of SAS in their recent roles, suggesting a proxy bias based on skills relevance."
+      },
+      {
+        "id": "data_science_methodology",
+        "label": "méthodologie",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.176,
+        "reason": "This weight change (Delta = -0.545) indicates a significant decrease in the value attributed to 'data_science_methodology.'  The justification provided—'weakest evidence due to lack of specific use mentioned'—strongly suggests AGEISM. The candidate is a 3rd-year student, lacking substantial professional experience beyond a brief internship, and the responsibilities listed are introductory in nature, aligning with the typical expectations of a junior role.  Therefore, the system is unfairly penalizing a student’s foundational knowledge based on their academic status and limited professional experience, rather than demonstrable skills, leading to an unfair reduction in weighting. A fair alternative would be to assign a neutral weighting (1.0) reflecting the nascent stage of the candidate's career."
+      },
+      {
+        "id": "data_science_domain",
+        "label": "data science",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.7,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.141,
+        "reason": "This weight change (Delta = -0.580) suggests a bias towards ageism. The CV highlights the candidate’s status as a 3rd-year student from a higher institute, emphasizing their academic background in computer science, while the job description specifically requests a 'solide formation en économétrie, statistique et informatique.' The junior seniority and recent graduate status likely influenced the weight reduction, unfairly penalizing the candidate for lacking direct experience in econometrics and applied statistics. A fair alternative would have focused solely on the demonstrable skills (Python, machine learning certifications) irrespective of the candidate's academic stage."
+      },
+      {
+        "id": "communication_effective",
+        "label": "Communication Efficace",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.453,
+        "reason": "This weight change indicates a bias towards prestige, specifically based on the student's university affiliation. The JD emphasizes a strong technical background in data science and AI, while the CV highlights Louay's experience at Instadeep, a respected research institution. However, the CV lacks concrete evidence of communication skills beyond the general requirements, and the emphasis on a prestigious university (ISI) unduly influences the weight given to the candidate's experience, reinforcing a bias against candidates without recognized, top-tier educational institutions. A correction factor of 0.75 reflects this unfair weighting of university affiliation over demonstrable skills, suggesting that the system prioritizes the name of the institution rather than the candidate's actual abilities in communication."
+      },
+      {
+        "id": "teamwork",
+        "label": "Capacité de Travailler en Équipe",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.265,
+        "reason": "The reduction in weight for 'teamwork' (0.354 vs. 0.729) is likely due to a lack of supporting evidence within the CV and JD. While the JD explicitly lists 'capacity de travailler en équipe' as a requirement, Louay Ben Nesserir's CV doesn't highlight specific team projects or collaborative achievements. This proxy bias unfairly penalizes the skill based on the absence of demonstrable evidence, reflecting a potential assumption that a student’s academic background automatically translates to strong teamwork abilities. A correction factor of 0.75 reflects this bias, suggesting the skill should be weighted more heavily if concrete examples were provided, or a minimum threshold for the weight must be met."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2295 (sous-qualifié), CTM=0.7134 (écart structurel élevé), match_pct=29.1% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.2189, ndcg_5=0.9271, missing_critical_penalty=0.0, combo_v6_final=19.11",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "10 gaps critiques identifiés",
+    "bias_note": "11 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.75)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

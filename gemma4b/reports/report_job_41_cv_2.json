@@ -1,0 +1,367 @@
+{
+  "job_id": "job_41",
+  "cv_id": "cv_2",
+  "generated_at": "2026-05-02T23:39:12.566170",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 19.8,
+    "confidence": {
+      "confidence_score": 0.61,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.75,
+        "coverage_rate": 0.75,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.3129,
+    "edge_score": 0.5653,
+    "combined": 0.4138
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1632,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.8053,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.802,
+    "matched_nodes": "0/8",
+    "edge_match_pct": 28.27
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1675,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.5028,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.1445,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9786,
+    "ndcg_10": 0.983,
+    "map_score": 0.9617,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.4506,
+    "semantic_fit_score": 0.3754,
+    "experience_density": 0.1446
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 18.96,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 24.3,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 18.92,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 97.8,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 4.33,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 25.42,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 5,
+      "match_pct": 5.6,
+      "weight_sum": 5.0
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 37.5,
+      "weight_sum": 1.0
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 48.8,
+      "weight_sum": 0.937
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 9.4,
+      "weight_sum": 0.459
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 28.27,
+    "total_edges": 6,
+    "top_synergies": [
+      {
+        "edge_key": "python_hard_skill|data_analyst_domain",
+        "source": "python_hard_skill",
+        "target": "data_analyst_domain",
+        "w_0": 0.9,
+        "w_cv": 0.863,
+        "w_cv_norm": 0.431,
+        "match_pct": 47.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "postgresql_tool|data_analyst_domain",
+        "source": "postgresql_tool",
+        "target": "data_analyst_domain",
+        "w_0": 0.7,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.375,
+        "match_pct": 53.6,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "excel_tool|data_analyst_domain",
+        "source": "excel_tool",
+        "target": "data_analyst_domain",
+        "w_0": 0.65,
+        "w_cv": 0.582,
+        "w_cv_norm": 0.291,
+        "match_pct": 44.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "tableau_tool|data_analyst_domain",
+        "source": "tableau_tool",
+        "target": "data_analyst_domain",
+        "w_0": 0.65,
+        "w_cv": 0.582,
+        "w_cv_norm": 0.291,
+        "match_pct": 44.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "looker_tool|data_analyst_domain",
+        "source": "looker_tool",
+        "target": "data_analyst_domain",
+        "w_0": 0.65,
+        "w_cv": 0.487,
+        "w_cv_norm": 0.244,
+        "match_pct": 37.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Excel",
+      "type": "Tool",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PostgreSQL",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.625,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Pivot",
+      "type": "Tool",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Tableau",
+      "type": "Tool",
+      "gap": 0.906,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Looker",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Excel",
+        "type": "Tool",
+        "gap": 0.906
+      },
+      {
+        "label": "PostgreSQL",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.625
+      },
+      {
+        "label": "Pivot",
+        "type": "Tool",
+        "gap": 0.906
+      },
+      {
+        "label": "Tableau",
+        "type": "Tool",
+        "gap": 0.906
+      },
+      {
+        "label": "Looker",
+        "type": "Tool",
+        "gap": 1.0
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 6,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 2,
+      "C": 2,
+      "HALO": 2
+    },
+    "biased_nodes": [
+      {
+        "id": "excel_tool",
+        "label": "Excel",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The weight change (0.25 vs. 1.0) for 'Office365' suggests a proxy bias due to the CV's listing of the skill within the broader 'Office365' competency without demonstrating practical application. The JD focuses on specific tools like Excel within the context of data analysis, whereas the CV primarily highlights the candidate's experience as a Site Reliability Engineer (SRE) with IBM, implying a focus on system administration rather than direct Excel usage for data analysis.  This signals a preference for a role description of a SysOps rather than a Data Analyst, unfairly penalizing the candidate's listed skill in this context.  A fair alternative would be to evaluate the candidate's Excel skills through a practical assessment or scenario-based question related to data analysis tasks."
+      },
+      {
+        "id": "python_hard_skill",
+        "label": "Python",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.75,
+        "reason": "The weight change to '+0.000' (decreased) for Python is likely biased due to PROXY BIAS. The CV prominently highlights a certification in 'Continuous Integration/Continuous Delivery Pipelines' which is directly linked to the job description's requirements and the candidate's prior role as a Site Reliability Engineer. The bonus applied for 5 years of experience and ‘Central intensity’ skill is inflating the score beyond what is truly demonstrated by the skills listed, giving undue weight to the certification and the role's overlap rather than the raw skill level. A fairer alternative would be to reduce the weight adjustment to 0.75, reflecting the contextual relevance but diminishing the unwarranted boost."
+      },
+      {
+        "id": "pivot_tool",
+        "label": "Pivot",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The significant decrease in weight (w_cv from 1.0 to 0.25) for 'Pivot' is likely a halo bias stemming from the prominence of 'Office365' listed as a core competency. The CV highlights extensive experience with IBM and SRE roles, creating a perception of a highly skilled candidate, while the Pivot skill is simply listed without any evidence of practical application. A fair alternative would be to evaluate 'Pivot' based on demonstrated proficiency and impact, not simply its presence alongside other commonly listed skills, thus a correction factor of 0.75 reflects this over-reliance on a single, minimally substantiated signal."
+      },
+      {
+        "id": "tableau_tool",
+        "label": "Tableau",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV heavily emphasizes Mohssine's experience as a Site Reliability Engineer (SRE) and system administrator roles, highlighting skills in networking, monitoring, and cloud computing – areas not explicitly required in the JD. The focus on these technical skills, particularly the extensive SRE experience, is likely a proxy for perceived prestige and a potentially inflated assessment due to the candidate's background rather than demonstrating direct Tableau proficiency. The JD calls for Tableau usage, but the CV offers no evidence of practical Tableau skills beyond the listed competency, resulting in a decreased weight. A fair alternative would be to prioritize evidence of Tableau experience (projects, certifications, etc.) alongside the listed competency."
+      },
+      {
+        "id": "data_analyst_domain",
+        "label": "Data Analyst",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.975,
+        "reason": "The weight change (+0.363) is primarily driven by the candidate's 7 years of experience, which is positively rewarded (+0.20). However, the CV heavily emphasizes experience as a Site Reliability Engineer (SRE) and SysOps roles, demonstrating skills related to system administration, monitoring, and DevOps – aspects beyond a core Data Analyst role. This suggests a Halo bias, where the candidate’s broader operational experience is unduly amplified, unfairly boosting the 'Data Analyst' skill weighting relative to skills that might be more directly related to pure data analysis (e.g., statistical modeling, SQL optimization). A fairer alternative would be to weight the skill based purely on explicit data analysis experience within the CV, reducing the bonus to reflect the overlap with system administration duties."
+      },
+      {
+        "id": "communication_soft_skill",
+        "label": "capacité de communiquer efficacement les résultats",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The weight reduction for 'communication_soft_skill' is likely driven by the prominence of 'Office365' as a listed competency, coupled with the lack of demonstrated communication skills in the provided CV. The CV focuses heavily on technical SRE experience (Docker, IBM certifications, network administration), creating a halo effect where the presence of technical skills overshadows the need for explicitly stated communication abilities. A fair alternative would be to evaluate communication skills through behavioral questions or examples of data communication during the interview process, rather than relying solely on a generic office suite proficiency. The Delta of -0.209 reflects an unfair penalization given the context."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1632 (sous-qualifié), CTM=0.8053 (écart structurel élevé), match_pct=19.8% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.1445, ndcg_5=0.9786, missing_critical_penalty=0.0, combo_v6_final=18.96",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "6 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.61)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

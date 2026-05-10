@@ -1,0 +1,224 @@
+{
+  "job_id": "job_62",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-02T14:24:26.405805",
+  "overall_assessment": {
+    "verdict": "Weak Match",
+    "match_pct": 51.73,
+    "confidence": {
+      "confidence_score": 0.61,
+      "confidence_label": "Medium",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.75,
+        "coverage_rate": 0.75,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.9255,
+    "edge_score": 0.0,
+    "combined": 0.5553
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.4895,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.578,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.4827,
+    "matched_nodes": "1/4",
+    "edge_match_pct": 0.0
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.4627,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.25,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.3833,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.25,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.0,
+    "weighted_recall": 0.269,
+    "weighted_f1": {
+      "value": 0.424,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 1.0,
+    "missing_critical_penalty": {
+      "value": 0.25,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 1.0,
+    "ndcg_10": 1.0,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.7867,
+    "semantic_fit_score": 0.8344,
+    "experience_density": 0.43
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 43.08,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 33.51,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 50.79,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 100.0,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 62.34,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 44.0,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 77.93,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 1,
+      "match_pct": 32.0,
+      "weight_sum": 1.0
+    },
+    "Tool": {
+      "count": 2,
+      "match_pct": 58.2,
+      "weight_sum": 1.717
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 40.0,
+      "weight_sum": 1.0
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 0.0,
+    "top_synergies": [],
+    "total_edges": 0
+  },
+  "critical_gaps": [
+    {
+      "skill": "Frontend Developer",
+      "type": "Domain",
+      "gap": 0.68,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Agile",
+      "type": "Hard Skill",
+      "gap": 0.6,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "GitHub Actions",
+      "type": "Tool",
+      "gap": 0.717,
+      "severity": "critical",
+      "importance": 0.717
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "Azure DevOps",
+        "type": "Tool",
+        "w_cv": 2.0
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "Frontend Developer",
+        "type": "Domain",
+        "gap": 0.68
+      },
+      {
+        "label": "Agile",
+        "type": "Hard Skill",
+        "gap": 0.6
+      },
+      {
+        "label": "GitHub Actions",
+        "type": "Tool",
+        "gap": 0.717
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 2,
+    "nodes_with_bias": 1,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "HALO": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "frontend_developer",
+        "label": "Frontend Developer",
+        "bias_category": "HALO",
+        "severity": "HIGH",
+        "correction_factor": 0.8,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.64,
+        "reason": "The weight change is based on a single strong signal ('Software Engineering & Architecture (10+ years)') in the Summary section, which indirectly indicates frontend development skills. However, this signal may not accurately reflect the candidate's actual experience or abilities in frontend development. A fair alternative would be to consider multiple relevant sections of the CV and assess the candidate's skills and experience more comprehensively."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.4895 (sous-qualifié), CTM=0.578 (écart structurel élevé), match_pct=51.73% → Weak Match",
+    "v6_summary": "weighted_f1=0.424, gap_score=0.3833, ndcg_5=1.0, missing_critical_penalty=0.25, combo_v6_final=43.08",
+    "key_strengths": "1 compétences clés validées",
+    "key_gaps": "3 gaps critiques identifiés",
+    "bias_note": "1 scores corrigés pour biais",
+    "confidence_note": "Confiance : Medium (0.61)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

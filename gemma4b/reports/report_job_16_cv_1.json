@@ -1,0 +1,332 @@
+{
+  "job_id": "job_16",
+  "cv_id": "cv_1",
+  "generated_at": "2026-05-04T12:42:12.460068",
+  "overall_assessment": {
+    "verdict": "Weak Match",
+    "match_pct": 57.75,
+    "confidence": {
+      "confidence_score": 0.95,
+      "confidence_label": "High",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.2,
+        "coverage_rate": 1.0,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.9865,
+    "edge_score": 1.2722,
+    "combined": 1.1008
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.5386,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.459,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Écart modéré"
+    },
+    "weighted_gap": 0.4225,
+    "matched_nodes": "3/10",
+    "edge_match_pct": 63.6
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.5198,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.8721,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Excellent"
+    },
+    "gap_score": {
+      "value": 0.4902,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.5556,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.4342,
+    "weighted_recall": 0.4088,
+    "weighted_f1": {
+      "value": 0.6362,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Bon"
+    },
+    "skill_depth_score": 0.6856,
+    "missing_critical_penalty": {
+      "value": 0.625,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9924,
+    "ndcg_10": 0.9972,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.8593,
+    "top_skill_alignment": 0.5729,
+    "semantic_fit_score": 0.8153,
+    "experience_density": 0.4365
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 65.15,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 65.21,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 62.03,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 99.7,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 68.53,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 63.14,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 57.94,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Domain": {
+      "count": 1,
+      "match_pct": 81.2,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 71.9,
+      "weight_sum": 2.0
+    },
+    "Tool": {
+      "count": 5,
+      "match_pct": 41.5,
+      "weight_sum": 4.696
+    },
+    "Soft Skill": {
+      "count": 2,
+      "match_pct": 14.3,
+      "weight_sum": 1.154
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 63.6,
+    "total_edges": 8,
+    "top_synergies": [
+      {
+        "edge_key": "sql-skill|data-analyst-role",
+        "source": "sql-skill",
+        "target": "data-analyst-role",
+        "w_0": 0.92,
+        "w_cv": 1.625,
+        "w_cv_norm": 0.812,
+        "match_pct": 88.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "power-bi-tool|data-analyst-role",
+        "source": "power-bi-tool",
+        "target": "data-analyst-role",
+        "w_0": 0.81,
+        "w_cv": 1.462,
+        "w_cv_norm": 0.731,
+        "match_pct": 90.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python-skill|data-analyst-role",
+        "source": "python-skill",
+        "target": "data-analyst-role",
+        "w_0": 0.95,
+        "w_cv": 1.438,
+        "w_cv_norm": 0.719,
+        "match_pct": 75.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "mysql-tool|data-analyst-role",
+        "source": "mysql-tool",
+        "target": "data-analyst-role",
+        "w_0": 0.88,
+        "w_cv": 1.337,
+        "w_cv_norm": 0.669,
+        "match_pct": 76.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "ssms-tool|data-analyst-role",
+        "source": "ssms-tool",
+        "target": "data-analyst-role",
+        "w_0": 0.85,
+        "w_cv": 1.056,
+        "w_cv_norm": 0.528,
+        "match_pct": 62.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "SSIS",
+      "type": "Tool",
+      "gap": 0.694,
+      "severity": "critical",
+      "importance": 0.938
+    },
+    {
+      "skill": "SSMS",
+      "type": "Tool",
+      "gap": 0.658,
+      "severity": "critical",
+      "importance": 0.902
+    }
+  ],
+  "profile_summary": {
+    "strengths": [
+      {
+        "label": "Data Analyst",
+        "type": "Domain",
+        "w_cv": 1.625
+      },
+      {
+        "label": "SQL",
+        "type": "Hard Skill",
+        "w_cv": 1.625
+      }
+    ],
+    "critical_weaknesses": [
+      {
+        "label": "SSIS",
+        "type": "Tool",
+        "gap": 0.694
+      },
+      {
+        "label": "SSMS",
+        "type": "Tool",
+        "gap": 0.658
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 10,
+    "nodes_with_bias": 6,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "HALO": 2,
+      "PRESTIGE|NONE": 1,
+      "PRESTIGE": 1,
+      "HALO BIAS": 1,
+      "PRESTIGE|HALO": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "data-analyst-role",
+        "label": "Data Analyst",
+        "bias_category": "PRESTIGE|NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.625,
+        "reason": "The weight increase of +0.300 (30%) is likely due to prestige bias stemming from Anas’s CV explicitly stating ‘Data Analyst passionné par la valorisation de la donnée…’ and emphasizing projects with companies like EY Tunisia, Timsoft Group, and HLi Consulting. While his skills and experience align well with the JD's requirements, the emphasis on established firms may have inflated his perceived value compared to candidates with similar qualifications but from less well-known organizations. This suggests an over-prioritization of company name, thus a slight prestige bias which merits increased weighting to reflect the increased evidence of skills and experience. The robust project details and skills showcased further bolster this interpretation."
+      },
+      {
+        "id": "sql-skill",
+        "label": "SQL",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.625,
+        "reason": "The rationale highlights Anas’s experience with Timsoft Group and Axe Finance, suggesting these companies hold prestige within the organization's evaluation criteria. The JD emphasizes experience with similar complex projects and tools, reinforcing the weighting increase. While the experience itself is valuable, the weighting is amplified due to the organizations involved, creating a prestige bias favoring candidates with demonstrable experience in these highly-regarded groups. A fair alternative would have considered the skill's application and impact independently of the company affiliations."
+      },
+      {
+        "id": "ssis-tool",
+        "label": "SSIS",
+        "bias_category": "HALO BIAS",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.488,
+        "reason": "The significant weight decrease (0.288) for SSIS is likely a halo bias. The CV highlights extensive experience with Power BI, Azure Data Factory, and Python, which are considered more ‘desirable’ skills based on the JD's focus on automation and data integration.  The brief mention of SSIS is peripheral, used solely to contextualize work at Timsoft Group, lacking specific details of its utilization. This overemphasis on the context of that project, rather than demonstrable SSIS skills, creates a halo effect, unfairly penalizing the candidate’s broader skillset while elevating the less-quantifiable experience with other tools."
+      },
+      {
+        "id": "ssrs-tool",
+        "label": "SSRS",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.812,
+        "reason": "The weight change (0.944 to 0.65) is likely driven by the strong emphasis on Power BI and Azure Data Factory within the Job Description, despite the CV demonstrating experience with multiple relevant tools including SQL, Python, and Dynamics 365 Project Operations. This suggests a halo effect – the candidate is heavily weighted for skills mentioned in the JD, overshadowing other valuable skills demonstrated in their experience. A more fair assessment would recognize the breadth of their data analysis skills, and reduce the penalty proportionally."
+      },
+      {
+        "id": "ssms-tool",
+        "label": "SSMS",
+        "bias_category": "PRESTIGE|HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.488,
+        "reason": "The significant decrease in weight (w_cv from 0.902 to 0.65) is likely due to the peripheral mention of SSMS. While listed within the JD requirements, the CV details only a brief use of SSMS during time at Timsoft Group, lacking specific details about its utilization or impact. This reliance on a peripheral skill, combined with the context of a broad ‘Data Analyst’ role, suggests a halo bias - the candidate is being favorably assessed based on the mere presence of SSMS instead of demonstrable analytical skills or achievements. A fair alternative would be to weigh the candidate based on the significant contributions detailed in the CV, specifically regarding Power BI, Azure Data Factory, and Python."
+      },
+      {
+        "id": "esprit-equipe",
+        "label": "esprit d'équipe",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.312,
+        "reason": "The CV prominently mentions experience with Timsoft Group, leading to a disproportionate weighting of this experience (w_cv = 0.25). This demonstrates a halo effect, where the successful engagement with one specific company – Timsoft Group – is unduly inflating the perceived value of the candidate’s skills, despite lacking detailed specifics on the projects' impact. A fair alternative would prioritize skills demonstrated through quantifiable results and broader experience, rather than solely relying on association with a particular company."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.5386 (sous-qualifié), CTM=0.459 (écart structurel modéré), match_pct=57.75% → Weak Match",
+    "v6_summary": "weighted_f1=0.6362, gap_score=0.4902, ndcg_5=0.9924, missing_critical_penalty=0.625, combo_v6_final=65.15",
+    "key_strengths": "2 compétences clés validées",
+    "key_gaps": "2 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : High (0.95)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

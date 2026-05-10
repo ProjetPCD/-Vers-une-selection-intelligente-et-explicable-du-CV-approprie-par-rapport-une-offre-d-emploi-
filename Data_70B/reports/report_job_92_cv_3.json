@@ -1,0 +1,509 @@
+{
+  "job_id": "job_92",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-05T17:26:04.231800",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 41.7,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 1.0,
+        "critical_rate": 0.476,
+        "coverage_rate": 0.429,
+        "nodes_audited": 9,
+        "nodes_biased": 9
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.2179,
+    "edge_score": 0.4044,
+    "combined": 0.2925
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.2721,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6113,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.583,
+    "matched_nodes": "0/21",
+    "edge_match_pct": 40.44
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.2481,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.613,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Bon"
+    },
+    "gap_score": {
+      "value": 0.224,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.25,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.7326,
+    "weighted_recall": 0.1679,
+    "weighted_f1": {
+      "value": 0.3062,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.531,
+    "missing_critical_penalty": {
+      "value": 0.3125,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement — ne pénalise pas le candidat"
+    },
+    "ndcg_5": 1.0,
+    "ndcg_10": 0.9678,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.4322,
+    "semantic_fit_score": 0.6383,
+    "experience_density": 0.1689
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 38.62,
+      "description": "Score synthèse V6 (toutes familles représentées)"
+    },
+    "combo_matching": {
+      "value": 37.63,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 37.55,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 100.0,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 48.86,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 42.34,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 40.92,
+      "description": "Top alignement + profondeur (profil spécialisé)"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 10,
+      "match_pct": 32.1,
+      "weight_sum": 8.912
+    },
+    "Soft Skill": {
+      "count": 5,
+      "match_pct": 13.2,
+      "weight_sum": 3.575
+    },
+    "Tool": {
+      "count": 4,
+      "match_pct": 0.0,
+      "weight_sum": 2.624
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 18.1,
+      "weight_sum": 1.161
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 40.44,
+    "total_edges": 14,
+    "top_synergies": [
+      {
+        "edge_key": "react|fullstack_development",
+        "source": "react",
+        "target": "fullstack_development",
+        "w_0": 0.5,
+        "w_cv": 0.788,
+        "w_cv_norm": 0.788,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": true
+      },
+      {
+        "edge_key": "docker|fullstack_development",
+        "source": "docker",
+        "target": "fullstack_development",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "git|fullstack_development",
+        "source": "git",
+        "target": "fullstack_development",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "agile|fullstack_development",
+        "source": "agile",
+        "target": "fullstack_development",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "communication|teamwork",
+        "source": "communication",
+        "target": "teamwork",
+        "w_0": 0.5,
+        "w_cv": 0.75,
+        "w_cv_norm": 0.75,
+        "match_pct": 100.0,
+        "p3_confidence": "HIGH",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "AdonisJS",
+      "type": "Hard Skill",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "NestJS",
+      "type": "Hard Skill",
+      "gap": 0.9,
+      "severity": "critical",
+      "importance": 0.9
+    },
+    {
+      "skill": "Communication",
+      "type": "Soft Skill",
+      "gap": 0.775,
+      "severity": "critical",
+      "importance": 0.775
+    },
+    {
+      "skill": "Intelligence Artificial",
+      "type": "Hard Skill",
+      "gap": 0.712,
+      "severity": "critical",
+      "importance": 0.712
+    },
+    {
+      "skill": "Docker",
+      "type": "Tool",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 0.7
+    },
+    {
+      "skill": "Figma",
+      "type": "Tool",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 0.7
+    },
+    {
+      "skill": "Git",
+      "type": "Tool",
+      "gap": 0.7,
+      "severity": "critical",
+      "importance": 0.7
+    },
+    {
+      "skill": "Grande Flexibilité",
+      "type": "Soft Skill",
+      "gap": 0.636,
+      "severity": "critical",
+      "importance": 0.636
+    },
+    {
+      "skill": "Forte Capacité d'Apprentissage",
+      "type": "Soft Skill",
+      "gap": 0.629,
+      "severity": "critical",
+      "importance": 0.629
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 0.9
+      },
+      {
+        "label": "AdonisJS",
+        "type": "Hard Skill",
+        "gap": 0.9
+      },
+      {
+        "label": "NestJS",
+        "type": "Hard Skill",
+        "gap": 0.9
+      },
+      {
+        "label": "Communication",
+        "type": "Soft Skill",
+        "gap": 0.775
+      },
+      {
+        "label": "Intelligence Artificial",
+        "type": "Hard Skill",
+        "gap": 0.712
+      },
+      {
+        "label": "Docker",
+        "type": "Tool",
+        "gap": 0.7
+      },
+      {
+        "label": "Figma",
+        "type": "Tool",
+        "gap": 0.7
+      },
+      {
+        "label": "Git",
+        "type": "Tool",
+        "gap": 0.7
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 9,
+    "nodes_with_bias": 9,
+    "edges_audited": 4,
+    "edges_with_bias": 4,
+    "bias_categories": {
+      "PRESTIGE": 12,
+      "GENDER_DIVERSITY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "agile",
+        "label": "Agile",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 1.062,
+        "w_cv_corrected": 1.062,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience with AWS and Agile methodologies is downplayed, likely due to the absence of a prestigious university or company name in their CV. The correction factor is set to 1.25 to increase the weight, as the candidate's skills and experience align well with the job requirements."
+      },
+      {
+        "id": "typescript",
+        "label": "TypeScript",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 1.062,
+        "w_cv_corrected": 1.062,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university/company name is not mentioned in the CV, but the job description emphasizes experience with specific technologies like TypeScript, React, and Next.js. The candidate's skills in these areas are demonstrated through their experience and certifications, but the weight change suggests that the algorithm is unfairly penalizing them due to the lack of a prestigious university or company name."
+      },
+      {
+        "id": "angular",
+        "label": "Angular",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.938,
+        "w_cv_corrected": 0.938,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's skills and experience in Angular are downplayed, likely because they didn't attend a top-tier university or work for a prestigious company. The correction factor is 1.25 to increase the weight, as the candidate's skills in Angular are relevant to the job description."
+      },
+      {
+        "id": "nextjs",
+        "label": "NextJS",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 1.062,
+        "w_cv_corrected": 1.062,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience with NextJS is downplayed despite having relevant skills and quantified outcomes (20% faster load time). The correction factor is set to 1.25 to increase the weight, as the candidate's skills are unfairly penalized due to the lack of prestige associated with their university or company name."
+      },
+      {
+        "id": "react",
+        "label": "React",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 1.062,
+        "w_cv_corrected": 1.062,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's experience and skills in React are downplayed despite meeting the job requirements. The correction factor is set to 1.25 to increase the weight, as the candidate's quantified outcome of 25% reduced page load times demonstrates their proficiency in React."
+      },
+      {
+        "id": "fullstack_development",
+        "label": "Fullstack Development",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 1.062,
+        "w_cv_corrected": 1.062,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's university/company name is not mentioned in the CV, but the job description emphasizes the importance of experience and skills. The correction factor is set to 1.25 to compensate for the unfair penalty."
+      },
+      {
+        "id": "teamwork",
+        "label": "Teamwork",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 1.25,
+        "w_cv_before": 0.625,
+        "w_cv_corrected": 0.625,
+        "reason": "The weight change for 'teamwork' is biased as it unfairly penalizes the candidate for not having quantified outcomes or central intensity in their experience section, despite having mentioned collaboration and teamwork skills. This is a classic case of gender/diversity bias, where soft skills like teamwork are undervalued. A fairer assessment would recognize the candidate's experience in working with teams and collaborating on projects, and not penalize them for lack of quantifiable outcomes."
+      },
+      {
+        "id": "cybersecurity",
+        "label": "Cybersecurity",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased due to prestige bias, as the candidate's education section mentions cybersecurity, but the algorithm penalizes the candidate for lack of project experience. This is unfair, as the job description also mentions cybersecurity as a desirable skill. A fairer assessment would consider the candidate's overall skills and experience, rather than relying on a single aspect of their profile."
+      },
+      {
+        "id": "agile_methodologies",
+        "label": "Agile Methodologies",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.2,
+        "w_cv_before": 0.6,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased as the candidate's experience in agile methodologies is penalized due to lack of concrete project evidence, despite having mentioned it in their experience section. This is an example of prestige bias, where the algorithm favors candidates with specific project examples over those with relevant experience. A correction factor of 1.20 is applied to increase the weight, as the candidate's experience in agile methodologies is still relevant to the job requirements."
+      }
+    ],
+    "biased_edges": [
+      {
+        "edge": "typescript|fullstack_development",
+        "bias_category": "PRESTIGE",
+        "severity": "LOW",
+        "correction_factor": 0.85,
+        "w_cv_corrected": 0.637,
+        "reason": "The weight change is biased towards prestige, as the candidate's experience with TypeScript is overvalued due to its association with popular frameworks like React and Next.js. The correction factor is set to 0.85 to adjust for this bias, ensuring a more merit-based evaluation."
+      },
+      {
+        "edge": "react|fullstack_development",
+        "bias_category": "PRESTIGE",
+        "severity": "LOW",
+        "correction_factor": 1.05,
+        "w_cv_corrected": 0.788,
+        "reason": "The weight change is biased towards prestige, as the candidate's experience with React is given more importance due to the mention of popular frameworks like Next.js, Redux, and Angular, rather than solely evaluating their skills in full stack development. A fairer evaluation would focus on the candidate's demonstrated skills and experience in full stack development, rather than the specific frameworks used."
+      },
+      {
+        "edge": "nextjs|fullstack_development",
+        "bias_category": "PRESTIGE",
+        "severity": "LOW",
+        "correction_factor": 0.85,
+        "w_cv_corrected": 0.637,
+        "reason": "The weight change is biased towards prestige, as the candidate's experience with Next.js is given more importance due to its association with full stack development, rather than solely based on the skills demonstrated. The correction factor is set to 0.85 to adjust for this bias."
+      },
+      {
+        "edge": "angular|fullstack_development",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.8,
+        "w_cv_corrected": 0.6,
+        "reason": "The weight change is biased towards prestige, as the rationale mentions the company name 'Capgemini' without providing evidence of skills demonstrated. This may unfairly favor candidates with experience at well-known companies, rather than those with equivalent skills from other backgrounds."
+      }
+    ]
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.2721 (sous-qualifié), CTM=0.6113 (écart structurel élevé), match_pct=41.7% → Poor Match",
+    "v6_summary": "weighted_f1=0.3062, gap_score=0.224, ndcg_5=1.0, missing_critical_penalty=0.3125, combo_v6_final=38.62",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "10 gaps critiques identifiés",
+    "bias_note": "9 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  },
+  "pool_ranking": {
+    "rank": 4,
+    "pool_size": 20,
+    "percentile": 0.8421,
+    "composite_z_score": 0.9231,
+    "tier": "Top 25%",
+    "z_scores": {
+      "combo_v6": 1.166,
+      "wf1": 0.968,
+      "gap_score": 1.118,
+      "ntcw": 1.152,
+      "match_pct": 1.174,
+      "ndcg_5": 0.77
+    },
+    "pool_stats": {
+      "combo_v6": {
+        "mean": 18.525,
+        "std": 17.2363
+      },
+      "wf1": {
+        "mean": 0.1236,
+        "std": 0.1886
+      },
+      "gap_score": {
+        "mean": 0.0978,
+        "std": 0.113
+      },
+      "ntcw": {
+        "mean": 0.122,
+        "std": 0.1303
+      },
+      "match_pct": {
+        "mean": 27.81,
+        "std": 11.8284
+      },
+      "ndcg_5": {
+        "mean": 0.9186,
+        "std": 0.1058
+      }
+    },
+    "ranking_reliability": "✅ Score fiable"
+  }
+}

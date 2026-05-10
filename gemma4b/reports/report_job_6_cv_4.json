@@ -1,0 +1,400 @@
+{
+  "job_id": "job_6",
+  "cv_id": "cv_4",
+  "generated_at": "2026-05-02T17:51:06.402928",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 19.04,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.833,
+        "coverage_rate": 0.5,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.4706
+  },
+  "final_scores": {
+    "node_score": 0.0765,
+    "edge_score": 0.0358,
+    "combined": 0.0602
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.0451,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7955,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.8096,
+    "matched_nodes": "0/18",
+    "edge_match_pct": 1.79
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.0488,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.0358,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.0413,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.7938,
+    "ndcg_10": 0.8906,
+    "map_score": 0.9022,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.0,
+    "semantic_fit_score": 0.1557,
+    "experience_density": 0.0311
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 6.53,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 3.21,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 7.1,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 88.33,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 1.24,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 0.62,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 0.0,
+      "weight_sum": 1.91
+    },
+    "Tool": {
+      "count": 5,
+      "match_pct": 0.0,
+      "weight_sum": 4.473
+    },
+    "Soft Skill": {
+      "count": 4,
+      "match_pct": 4.5,
+      "weight_sum": 2.988
+    },
+    "Domain": {
+      "count": 6,
+      "match_pct": 5.6,
+      "weight_sum": 4.365
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 20.6,
+      "weight_sum": 0.881
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 1.79,
+    "total_edges": 8,
+    "top_synergies": [
+      {
+        "edge_key": "scikit_learn_tool|machine-learning-domain",
+        "source": "scikit_learn_tool",
+        "target": "machine-learning-domain",
+        "w_0": 0.803,
+        "w_cv": 0.206,
+        "w_cv_norm": 0.103,
+        "match_pct": 12.9,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "clear_presentation_skill|data_scientist_domain",
+        "source": "clear_presentation_skill",
+        "target": "data_scientist_domain",
+        "w_0": 0.883,
+        "w_cv": 0.094,
+        "w_cv_norm": 0.047,
+        "match_pct": 5.3,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "python_data_scientist_skill|data_scientist_domain",
+        "source": "python_data_scientist_skill",
+        "target": "data_scientist_domain",
+        "w_0": 0.942,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "sql_data_scientist_tool|data_scientist_domain",
+        "source": "sql_data_scientist_tool",
+        "target": "data_scientist_domain",
+        "w_0": 0.926,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "github_data_scientist_tool|data_scientist_domain",
+        "source": "github_data_scientist_tool",
+        "target": "data_scientist_domain",
+        "w_0": 0.924,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Python",
+      "type": "Hard Skill",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "GitHub",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "capacité de travailler en équipe",
+      "type": "Soft Skill",
+      "gap": 0.969,
+      "severity": "critical",
+      "importance": 0.969
+    },
+    {
+      "skill": "Data Scientist",
+      "type": "Domain",
+      "gap": 0.942,
+      "severity": "critical",
+      "importance": 0.942
+    },
+    {
+      "skill": "Pandas",
+      "type": "Tool",
+      "gap": 0.926,
+      "severity": "critical",
+      "importance": 0.926
+    },
+    {
+      "skill": "Scikit-learn",
+      "type": "Tool",
+      "gap": 0.924,
+      "severity": "critical",
+      "importance": 0.924
+    },
+    {
+      "skill": "Data Manipulation",
+      "type": "Hard Skill",
+      "gap": 0.91,
+      "severity": "critical",
+      "importance": 0.91
+    },
+    {
+      "skill": "capacité de présenter des résultats de manière claire",
+      "type": "Soft Skill",
+      "gap": 0.789,
+      "severity": "critical",
+      "importance": 0.883
+    },
+    {
+      "skill": "formation",
+      "type": "Education",
+      "gap": 0.674,
+      "severity": "critical",
+      "importance": 0.881
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Python",
+        "type": "Hard Skill",
+        "gap": 1.0
+      },
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "GitHub",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "capacité de travailler en équipe",
+        "type": "Soft Skill",
+        "gap": 0.969
+      },
+      {
+        "label": "Data Scientist",
+        "type": "Domain",
+        "gap": 0.942
+      },
+      {
+        "label": "Pandas",
+        "type": "Tool",
+        "gap": 0.926
+      },
+      {
+        "label": "Scikit-learn",
+        "type": "Tool",
+        "gap": 0.924
+      },
+      {
+        "label": "Data Manipulation",
+        "type": "Hard Skill",
+        "gap": 0.91
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 5,
+    "nodes_with_bias": 5,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 3,
+      "HALO": 1,
+      "GENDER_DIVERSITY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "clear_presentation_skill",
+        "label": "capacité de présenter des résultats de manière claire",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV overwhelmingly emphasizes Kubernetes certifications (CKA, CKAD, CKS) and DevOps skills, significantly weighting these despite the job description's emphasis on 'clear presentation skills' as a required soft skill. This suggests a halo effect, where a strong signal (Kubernetes expertise) unduly influences the overall assessment, overshadowing the value of the listed presentation skill. The reduced weight change (0.633) indicates that while there's a clear bias, it's not overwhelmingly pronounced, but the candidate's qualifications are driving the prioritization."
+      },
+      {
+        "id": "data_science_education",
+        "label": "formation",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.413,
+        "reason": "The CV heavily emphasizes Kubernetes, Rancher, and DevOps certifications (CKA, CKAD, CKS) rather than traditional data science skills like machine learning experience or specific data visualization expertise. This proxy bias reflects an over-weighting of cloud infrastructure skills, potentially favoring candidates with a strong background in DevOps, even if their core data science competencies are less aligned with the job description’s emphasis on data modeling and strategic decision-making. The JD focuses on analytical skills, while the candidate's qualifications prioritize cloud infrastructure, indicating a potential shift in fair weighting."
+      },
+      {
+        "id": "data-science-domain",
+        "label": "Data Science",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV heavily emphasizes Kubernetes certifications and cloud infrastructure skills (Terraform, AWS, Azure) despite the job description focusing on Data Science, Machine Learning, and data analysis. This proxy bias reflects a preference for cloud engineering expertise over core data science skills, unfairly penalizing the candidate's qualifications and prioritizing a skillset not directly aligned with the role’s requirements. A fair alternative would be to prioritize the candidate’s listed data science related skills and experiences, weighting them more heavily, despite the presence of the Kubernetes certifications."
+      },
+      {
+        "id": "machine-learning-domain",
+        "label": "Machine Learning",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.413,
+        "reason": "The candidate's CV heavily emphasizes Kubernetes certifications and infrastructure as code skills (IaC), alongside DevOps and MLOps experience. This focus on specific technical skills and certifications, particularly those related to cloud infrastructure (Kubernetes, AWS, Azure) and vendor-specific certifications, suggests a proxy bias based on the candidate's skillset aligning with a particular technical stack favored by the employer, rather than a demonstrated ability in the core data science areas outlined in the job description. The weighting shift likely reflects the algorithm's prioritization of the candidate's cloud expertise over data science fundamentals, unfairly penalizing candidates without similar specialized credentials."
+      },
+      {
+        "id": "soft-skills",
+        "label": "Soft Skills",
+        "bias_category": "GENDER_DIVERSITY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.225,
+        "reason": "The CV strongly emphasizes technical skills (Kubernetes, IaC, AWS, Terraform) and certifications (CKA, CKAD, CKS) while significantly downplaying the explicitly stated 'soft skills' requirement mentioned in the JD ( 'capacity of present results of manner clear and concise' ). This disproportionate weighting of technical credentials over communication abilities, particularly within a role requiring data analysis and presentation, suggests a gender bias where technical expertise is overvalued, potentially leading to a disadvantage for candidates who may excel in communication but lack extensive, highly technical certifications.  A fairer alternative would be to adjust the weight of 'soft skills' towards its ideal value, recognizing the importance of those skills in this data science context."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.0451 (sous-qualifié), CTM=0.7955 (écart structurel élevé), match_pct=19.04% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.0413, ndcg_5=0.7938, missing_critical_penalty=0.0, combo_v6_final=6.53",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "15 gaps critiques identifiés",
+    "bias_note": "5 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "⚠ 47.1% des scores via fallback mathématique (LLM instable)"
+  }
+}

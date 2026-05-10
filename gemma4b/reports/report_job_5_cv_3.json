@@ -1,0 +1,406 @@
+{
+  "job_id": "job_5",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-02T17:13:40.554728",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 27.31,
+    "confidence": {
+      "confidence_score": 0.4,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.722,
+        "coverage_rate": 0.278,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.6154
+  },
+  "final_scores": {
+    "node_score": 0.303,
+    "edge_score": 0.2015,
+    "combined": 0.2624
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1725,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.7388,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.7269,
+    "matched_nodes": "0/18",
+    "edge_match_pct": 10.08
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.159,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.1833,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1436,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1176,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.638,
+    "weighted_recall": 0.0826,
+    "weighted_f1": {
+      "value": 0.1573,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.6105,
+    "missing_critical_penalty": {
+      "value": 0.1429,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9881,
+    "ndcg_10": 0.9197,
+    "map_score": 1.0,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.9132,
+    "top_skill_alignment": 0.586,
+    "semantic_fit_score": 0.5506,
+    "experience_density": 0.1283
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 22.57,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 15.72,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 27.95,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 99.52,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 42.64,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 29.72,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 50.18,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Education": {
+      "count": 2,
+      "match_pct": 27.6,
+      "weight_sum": 2.0
+    },
+    "Tool": {
+      "count": 8,
+      "match_pct": 10.0,
+      "weight_sum": 7.246
+    },
+    "Hard Skill": {
+      "count": 2,
+      "match_pct": 40.5,
+      "weight_sum": 1.8
+    },
+    "Soft Skill": {
+      "count": 3,
+      "match_pct": 13.2,
+      "weight_sum": 2.306
+    },
+    "Responsibility": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 0.762
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 0.0,
+      "weight_sum": 1.135
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 10.08,
+    "total_edges": 12,
+    "top_synergies": [
+      {
+        "edge_key": "python_1|data_analysis_experience",
+        "source": "python_1",
+        "target": "data_analysis_experience",
+        "w_0": 0.95,
+        "w_cv": 0.743,
+        "w_cv_norm": 0.372,
+        "match_pct": 39.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "sql_1|data_analysis_experience",
+        "source": "sql_1",
+        "target": "data_analysis_experience",
+        "w_0": 0.85,
+        "w_cv": 0.417,
+        "w_cv_norm": 0.209,
+        "match_pct": 24.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "microsoft_365_1|confluence",
+        "source": "microsoft_365_1",
+        "target": "confluence",
+        "w_0": 0.6,
+        "w_cv": 0.356,
+        "w_cv_norm": 0.178,
+        "match_pct": 29.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "communication_1|communication_skills",
+        "source": "communication_1",
+        "target": "communication_skills",
+        "w_0": 0.8,
+        "w_cv": 0.356,
+        "w_cv_norm": 0.178,
+        "match_pct": 22.2,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "confluence|communication_skills",
+        "source": "confluence",
+        "target": "communication_skills",
+        "w_0": 0.55,
+        "w_cv": 0.15,
+        "w_cv_norm": 0.075,
+        "match_pct": 13.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Master en Scientific Computing",
+      "type": "Education",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Power BI",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "SQL",
+      "type": "Tool",
+      "gap": 0.658,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Microsoft 365",
+      "type": "Tool",
+      "gap": 0.719,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Looker",
+      "type": "Tool",
+      "gap": 0.972,
+      "severity": "critical",
+      "importance": 0.972
+    },
+    {
+      "skill": "Qlik Sense",
+      "type": "Tool",
+      "gap": 0.968,
+      "severity": "critical",
+      "importance": 0.968
+    },
+    {
+      "skill": "Power BI, Qlik Sense, Looker",
+      "type": "Tool",
+      "gap": 0.95,
+      "severity": "critical",
+      "importance": 0.95
+    },
+    {
+      "skill": "Excellentes compétences de communication et de présentation",
+      "type": "Soft Skill",
+      "gap": 0.628,
+      "severity": "critical",
+      "importance": 0.909
+    },
+    {
+      "skill": "Experience in data analysis and visualization",
+      "type": "Hard Skill",
+      "gap": 0.725,
+      "severity": "critical",
+      "importance": 0.8
+    },
+    {
+      "skill": "Responsable des processus décisionnels",
+      "type": "Responsibility",
+      "gap": 0.762,
+      "severity": "critical",
+      "importance": 0.762
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Master en Scientific Computing",
+        "type": "Education",
+        "gap": 1.0
+      },
+      {
+        "label": "Power BI",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "SQL",
+        "type": "Tool",
+        "gap": 0.658
+      },
+      {
+        "label": "Microsoft 365",
+        "type": "Tool",
+        "gap": 0.719
+      },
+      {
+        "label": "Looker",
+        "type": "Tool",
+        "gap": 0.972
+      },
+      {
+        "label": "Qlik Sense",
+        "type": "Tool",
+        "gap": 0.968
+      },
+      {
+        "label": "Power BI, Qlik Sense, Looker",
+        "type": "Tool",
+        "gap": 0.95
+      },
+      {
+        "label": "Excellentes compétences de communication et de présentation",
+        "type": "Soft Skill",
+        "gap": 0.628
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 5,
+    "nodes_with_bias": 5,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "HALO": 2,
+      "PRESTIGE": 1,
+      "PROXY": 1,
+      "B": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "engineer_degree_1",
+        "label": "Double Diplôme Ingénieur en Big Data et Calculs Hautes Performances",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.95,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.105,
+        "reason": "The significant weight increase (Delta = +0.163) is primarily driven by the explicit mention of a ‘Double Diplôme Ingénieur en Big Data et Calculs Hautes Performances’ on the CV, aligning with the ‘engineer_degree_1’ requirement. This creates a halo effect, overweighting a specific academic qualification despite the candidate's broader experience and skillset. While the academic degree is relevant, the JD emphasizes broader analytical and technical skills (Python, SQL, Power BI) which are not directly reflected in the weighting change, suggesting a bias towards the initial qualification."
+      },
+      {
+        "id": "python_1",
+        "label": "Python",
+        "bias_category": "PRESTIGE",
+        "severity": "MEDIUM",
+        "correction_factor": 1.15,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 1.337,
+        "reason": "The CV highlights significant accomplishments, including leading a migration project that boosted team capacity by 12% using Python and Talend, demonstrating practical application of the skill within an enterprise setting. While the JD emphasizes a ‘polyvalent’ profile and a specific academic background (Double Degree in Big Data & HPC), the CV’s focus on quantifiable outcomes related to Python usage outweighs this prestige bias. The applicant's experience directly addresses the requirements and showcases Python's impact in a real-world scenario, justifying the increased weight."
+      },
+      {
+        "id": "sql_1",
+        "label": "SQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.684,
+        "reason": "The CV utilizes ‘Transact-SQL (T-SQL)’ which is a Microsoft SQL Server dialect, while the job description explicitly lists ‘SQL’ as a key skill and emphasizes experience with data pipelines. This suggests a proxy bias—the candidate’s use of T-SQL, a more specific SQL variant, is being prioritized over broader SQL skills, potentially due to a preference for Microsoft technologies or a lack of understanding of SQL variations.  A correction factor of 0.75 reflects this unfair weighting of a specific SQL dialect, reducing the candidate’s score to account for the discrepancy between the listed requirements and the evidence presented on the CV. The JD explicitly calls for a broader SQL proficiency."
+      },
+      {
+        "id": "microsoft_365_1",
+        "label": "Microsoft 365",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The CV heavily emphasizes 'Microsoft 365' as a listed skill, despite its peripheral nature in the job description which focuses on data analysis and visualization tools. This suggests the algorithm is giving undue weight to a skill that is merely a requirement, creating a halo effect where the presence of Microsoft 365 is boosting the candidate’s score unfairly.  A fair alternative would be to evaluate the candidate solely on their demonstrable skills in Python, SQL, Power BI, and their experience in data analysis and programming, reflecting the core requirements of the role."
+      },
+      {
+        "id": "communication_1",
+        "label": "Excellentes compétences de communication et de présentation",
+        "bias_category": "B",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The CV explicitly lists 'Excellentes compétences de communication et de présentation' as a skill, mirroring the JD's requirement for ‘excellentes compétences de communication et de présentation.’ However, the CV's emphasis on SMTP, Angular Material, and T-SQL, alongside a focus on backend development with Java and Spring, suggests a misaligned assessment, possibly due to a tendency to over-weight certain technical skills (Angular, T-SQL) over the explicitly stated soft skill requirement for this role. This suggests a potential for gender/diversity bias – unfairly penalizing a candidate for lacking skills deemed 'more technical' while the JD requires a strong communication skill. A correction factor of 0.75 acknowledges the presence of the desired skill but reduces the impact of the weight change, reflecting an imbalance."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1725 (sous-qualifié), CTM=0.7388 (écart structurel élevé), match_pct=27.31% → Poor Match",
+    "v6_summary": "weighted_f1=0.1573, gap_score=0.1436, ndcg_5=0.9881, missing_critical_penalty=0.1429, combo_v6_final=22.57",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "13 gaps critiques identifiés",
+    "bias_note": "5 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.4)",
+    "scoring_reliability": "⚠ 61.5% des scores via fallback mathématique (LLM instable)"
+  }
+}

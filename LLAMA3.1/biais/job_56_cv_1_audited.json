@@ -1,0 +1,344 @@
+{
+  "job_id": "job_56",
+  "cv_id": "cv_1",
+  "scored_nodes": {
+    "aws": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": -0.25
+        },
+        "final_score": 0.0
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "No mention of AWS in the CV, no active evidence anchors.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "azure": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": -0.25
+        },
+        "final_score": 0.0
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "No mention of Azure in the CV, no active evidence anchors.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "data-engineer": {
+      "w_cv": 1.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 1.75
+      },
+      "active_red_flags": [],
+      "rationale": "CV summary mentions 'data extraction, analysis and visualization for large-scale projects', which is consistent with data engineer role.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "etl": {
+      "w_cv": 0.625,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "CV summary mentions 'data extraction, analysis and visualization for large-scale projects', which is related to ETL processes.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY|HALO",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.625,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change on 'CV' signal is biased towards HALO effect, as the candidate's entire profile is being judged based on a single strong skill (Python). Additionally, the mention of ETL process in CV summary and lack of specific job requirements related to ETL processes suggest that the weight change is also driven by PROXY bias (socioeconomic signals). To correct this, we need to increase the weight of 'CV' signal."
+    },
+    "python": {
+      "w_cv": 1.0,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.05
+        },
+        "penalties": {},
+        "final_score": 1.25
+      },
+      "active_red_flags": [],
+      "rationale": "Top Skills mentions 'Python' as a skill, with external proof provided.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "HALO|PRESTIGE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 1.0,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.8,
+      "p35_reason": "The weight change is biased because it gives excessive importance to the 'Top Skills' section, which may not accurately reflect the candidate's skills and experience. A fair alternative would be to use a more nuanced approach, such as using multiple signals or taking into account the context of the job description and requirements."
+    },
+    "javascript": {
+      "w_cv": 0.625,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "Top Skills mentions 'JavaScript' as a skill, but no active evidence anchors.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.625,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.25,
+      "p35_reason": "The weight change in the 'javascript' node is biased due to socio-economic signals. The candidate's LinkedIn profile and location (Tunisia) are proxies that may influence the hiring decision, even though they do not directly relate to the required skills or experience. A fair alternative would be to use a more direct evaluation method, such as reviewing the candidate's actual work samples or project portfolio."
+    },
+    "data_lake_skills": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": -0.25
+        },
+        "final_score": 0.0
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "No mention of data lake skills in the CV, no active evidence anchors.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "data_architecture_skills": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": -0.25
+        },
+        "final_score": 0.0
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "No mention of data architecture skills in the CV, no active evidence anchors.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "sql_skills": {
+      "w_cv": 1.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 1.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 1.75
+      },
+      "active_red_flags": [],
+      "rationale": "Top Skills mentions 'SQL' as a skill, which is consistent with CV summary.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "data_engineering_experience": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": -0.25
+        },
+        "final_score": 0.0
+      },
+      "active_red_flags": [
+        "recency_gap"
+      ],
+      "rationale": "CV summary mentions 'experience in data extraction, analysis and visualization for large-scale projects', but no active evidence anchors.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    },
+    "autonomie_skills": {
+      "w_cv": 0.0,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "The candidate's autonomy skills are inferred based on the presence of a verification question in the skill definition, but no concrete evidence is provided in the CV to support this inference.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "teamwork_skills": {
+      "w_cv": 0.0,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "The candidate's teamwork skills are inferred based on the presence of a verification question in the skill definition, but no concrete evidence is provided in the CV to support this inference.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "communication_skills": {
+      "w_cv": 0.0,
+      "evidence_quality": "inferred",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "The candidate's communication skills are inferred based on the presence of a verification question in the skill definition, but no concrete evidence is provided in the CV to support this inference.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm"
+    },
+    "spark": {
+      "w_cv": 0.6,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "The candidate's proficiency in Spark is inferred standalone, but no concrete project evidence is provided to support this claim.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "LOW",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.6,
+      "p35_is_biased": true,
+      "p35_correction_factor": 1.2,
+      "p35_reason": "The weight change in Spark proficiency is based on a standalone inference without concrete project evidence, which may be influenced by the candidate's university name or educational background rather than their actual skills. A fair alternative would be to require concrete project evidence or provide more context about how the candidate's skills are being assessed."
+    },
+    "databricks": {
+      "w_cv": 0.0,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0
+        },
+        "penalties": {},
+        "final_score": 0.0
+      },
+      "active_red_flags": [],
+      "rationale": "No mention of Databricks is found in the CV, indicating an absent evidence quality.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm"
+    }
+  },
+  "scored_edges": {},
+  "metadata": {
+    "skills_scored": 15,
+    "mean_score": 0.417,
+    "edges_scored": 0,
+    "mean_synergy": 0,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0,
+      "max": 0,
+      "min": 0
+    },
+    "batches_ok": 2,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.417,
+      "max": 1.75,
+      "min": 0.0,
+      "above_1": 3,
+      "below_05": 9
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 4,
+    "nodes_with_bias": 4,
+    "nodes_corrected": 4,
+    "edges_audited": 0
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "job_id": "job_28",
+  "cv_id": "cv_2",
+  "scored_nodes": {
+    "cpp_hard_skill": {
+      "w_cv": 1.0,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.15,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.1
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.0
+      },
+      "active_red_flags": [
+        "ghost_skill"
+      ],
+      "rationale": "Ahmed explicitly lists C++ and provides context around the development of SpoutBreeze using BigBlueButton, which leverages microservices and likely requires performance optimizations. The evidence anchor refers to leading development of systems from scratch, indicating a senior level of architectural influence. The quantification of a ‘reducing API latency by over 40%’ also justifies a high score. High project complexity and central intensity.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "LOW",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "sql_tool": {
+      "w_cv": 1.1,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 0.9,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.2,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.1
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.1
+      },
+      "active_red_flags": [],
+      "rationale": "The CV explicitly states the use of SQL for designing a microservices architecture with 99.9% uptime and zero-downtime deployments. The ‘reducing issue detection time by 60%’ is a clear, quantifiable outcome. The architectural responsibility, coupled with the high project complexity, results in a strong score.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm"
+    },
+    "soft_skills": {
+      "w_cv": 0.85,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.65,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.2,
+          "external_proof_bonus": 0.1,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.85
+      },
+      "active_red_flags": [],
+      "rationale": "The evidence anchor highlights Ahmed's role in leading the development of SpoutBreeze, suggesting strong communication and collaborative skills. The description of 'thriving in fast-paced, startup-like environments' reinforces this. However, the lack of specific examples of communication effectiveness limits the score to moderate.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "full_stack_experience": {
+      "w_cv": 1.0,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.7,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.3,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.0
+      },
+      "active_red_flags": [],
+      "rationale": "The evidence anchor - leading the development of SpoutBreeze - indicates a significant architectural role, suggesting full-stack experience.  However, the description lacks specific details about the technologies used in this project, hence the moderate score.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm"
+    }
+  },
+  "scored_edges": {
+    "golang_full_stack_dev|gin_framework|fastapi|postgresql_db": {
+      "synergy_score": 0.85,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "Ahmed utilizes Golang (Gin framework) and Docker containerization to build a scalable, modular, and observable backend service. The description explicitly details using these skills within a microservices architecture that requires database interaction, confirming their combined use within the same project (RIADVICE). The integration with PostgreSQL is strongly evidenced by the documented microservices architecture and its features such as modularity and scalability. The 99.9% uptime and zero-downtime deployments are further supporting evidence.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.85
+    },
+    "php_full_stack_dev|laravel_framework|postgresql_db|php_full_stack_dev": {
+      "synergy_score": 0.45,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": 0.0,
+        "final_score": 0.55
+      },
+      "is_ghost_synergy": true,
+      "rationale": "While the candidate primarily utilizes Go for backend development, the integration with FFmpeg and Docker within the RIADVICE project suggests an understanding of integrating PHP applications with databases and containerization technologies. This is a weak synergy because it is a ghost synergy – the project context and specific technologies (FFmpeg, Docker) don't directly demonstrate PHP's use in this combination. The reliance on PostgreSQL for data storage and processing is inferred, not explicitly stated with PHP.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.45
+    },
+    "javascript_full_stack_dev|react_javascript_framework|node_js_full_stack|docker_containerization": {
+      "synergy_score": 0.35,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.15,
+        "evidence_bonus": 0.05,
+        "penalties": 0.0,
+        "final_score": 0.55
+      },
+      "is_ghost_synergy": true,
+      "rationale": "The candidate’s experience with Flutter for mobile app development (organized through the Google Developers Group) alongside backend services built using Node.js and Docker containerization, demonstrates a temporal overlap in the context of application development. This is a weak synergy due to different project contexts, primarily focused on mobile development (Flutter) rather than backend systems. The containerization aspect is the only tangible shared technology.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.35
+    },
+    "flutter_mobile_dev|dart_language|postgresql_db": {
+      "synergy_score": 0.15,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_synergy": 0.0,
+        "evidence_bonus": 0.0,
+        "penalties": 0.0,
+        "final_score": 0.15
+      },
+      "is_ghost_synergy": false,
+      "rationale": "There is no explicit mention of integrating Flutter with a PostgreSQL database within the provided text. This represents a ghost synergy – the candidate’s role in the Google Developers Group solely focuses on Flutter mobile app development with Dart, lacking any connection or integration to a database like PostgreSQL. This results in no synergy.",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "w_cv": 0.15
+    },
+    "kubernetes_sre|docker_containerization|postgresql_db": {
+      "synergy_score": 0.45,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_synergy": 0.15,
+        "evidence_bonus": 0.05,
+        "penalties": 0.0,
+        "final_score": 0.45
+      },
+      "is_ghost_synergy": false,
+      "rationale": "While Ahmed utilizes Docker and Kubernetes for deploying applications, the excerpt focuses on achieving high availability and zero-downtime, which is a common deployment practice rather than direct database interaction. The technologies are often used together, but the connection to the PostgreSQL database is missing, making the synergy weak. The mention of 'Provisioned and managed a Kubernetes cluster' suggests deployment, not database management. The evidence is present, but not strong enough to trigger significant synergy. The score acknowledges the supporting role of containerization to the deployment of a database-driven application.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "w_cv": 0.45
+    }
+  },
+  "metadata": {
+    "skills_scored": 4,
+    "mean_score": 0.775,
+    "edges_scored": 5,
+    "mean_synergy": 0.45,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.45,
+      "max": 0.85,
+      "min": 0.15
+    },
+    "batches_ok": 1,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.775,
+      "max": 0.9,
+      "min": 0.65,
+      "above_1": 0,
+      "below_05": 0
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 2,
+    "nodes_with_bias": 0,
+    "nodes_corrected": 0,
+    "edges_audited": 0
+  }
+}

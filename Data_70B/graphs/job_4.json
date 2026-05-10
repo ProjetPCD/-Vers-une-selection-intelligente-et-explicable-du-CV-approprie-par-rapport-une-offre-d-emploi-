@@ -1,0 +1,191 @@
+{
+  "nodes": [
+    {
+      "id": "azure",
+      "label": "Azure",
+      "type": "Tool",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "travailler sur des projets de migration vers le cloud Azure",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "ingenieur_degree",
+      "label": "Ingénieur Degree",
+      "type": "Education",
+      "w_0": 1.0,
+      "seniority_required": "N/A",
+      "context": "Ingénieur Cloud & DevOps",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "cloud_migration",
+      "label": "Cloud Migration",
+      "type": "Responsibility",
+      "w_0": 0.9,
+      "seniority_required": "N/A",
+      "context": "travailler sur des projets de migration vers le cloud Azure",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "security_implementation",
+      "label": "Security Implementation",
+      "type": "Responsibility",
+      "w_0": 0.9,
+      "seniority_required": "N/A",
+      "context": "mise en œuvre de solutions de sécurité",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "devsecops",
+      "label": "DevSecOps",
+      "type": "Tool",
+      "w_0": 0.87,
+      "seniority_required": "N/A",
+      "context": "utiliserez des technologies telles que DevSecOps",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "devops",
+      "label": "DevOps",
+      "type": "Hard Skill",
+      "w_0": 0.774,
+      "seniority_required": "N/A",
+      "context": "mise en œuvre de solutions de DevOps",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "architecture_applicative",
+      "label": "Architecture Applicative",
+      "type": "Tool",
+      "w_0": 0.75,
+      "seniority_required": "N/A",
+      "context": "utiliserez des technologies telles que Architecture Applicative",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "collaboration",
+      "label": "Collaboration",
+      "type": "Soft Skill",
+      "w_0": 0.7,
+      "seniority_required": "N/A",
+      "context": "travaillerez en étroite collaboration avec les équipes de développement",
+      "inferred": true,
+      "inferred_from": "travaillerez en étroite collaboration avec les équipes de développement"
+    },
+    {
+      "id": "knowledge_sharing",
+      "label": "Knowledge Sharing",
+      "type": "Soft Skill",
+      "w_0": 0.7,
+      "seniority_required": "N/A",
+      "context": "partager vos connaissances et de former les équipes de développement",
+      "inferred": true,
+      "inferred_from": "partager vos connaissances et de former les équipes de développement"
+    },
+    {
+      "id": "ci_cd",
+      "label": "CI/CD",
+      "type": "Tool",
+      "w_0": 0.499,
+      "seniority_required": "N/A",
+      "context": "concevoir et mettre en œuvre des solutions de CI/CD",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "cloud_native_development",
+      "label": "Cloud Native Development",
+      "type": "Domain",
+      "w_0": 0.43,
+      "seniority_required": "N/A",
+      "context": "Développement de solution Cloud Native",
+      "inferred": false,
+      "inferred_from": ", "
+    },
+    {
+      "id": "microsoft_ecosystem",
+      "label": "Microsoft Ecosystem",
+      "type": "Tool",
+      "w_0": 0.386,
+      "seniority_required": "N/A",
+      "context": "utiliserez des technologies telles que écosystème Microsoft",
+      "inferred": false,
+      "inferred_from": ", "
+    }
+  ],
+  "edges": [
+    {
+      "source": "azure",
+      "target": "cloud_migration",
+      "relation": "part_of",
+      "weight": 0.9,
+      "rationale": "Azure is used for cloud migration"
+    },
+    {
+      "source": "devsecops",
+      "target": "security_implementation",
+      "relation": "implements",
+      "weight": 0.9,
+      "rationale": "DevSecOps is used for security implementation"
+    },
+    {
+      "source": "devops",
+      "target": "ci_cd",
+      "relation": "part_of",
+      "weight": 0.85,
+      "rationale": "DevOps involves CI/CD"
+    },
+    {
+      "source": "architecture_applicative",
+      "target": "cloud_native_development",
+      "relation": "part_of",
+      "weight": 0.8,
+      "rationale": "Architecture Applicative is used for cloud native development"
+    },
+    {
+      "source": "microsoft_ecosystem",
+      "target": "azure",
+      "relation": "part_of",
+      "weight": 0.8,
+      "rationale": "Azure is part of the Microsoft ecosystem"
+    },
+    {
+      "source": "cloud_migration",
+      "target": "security_implementation",
+      "relation": "feeds",
+      "weight": 0.75,
+      "rationale": "Cloud migration output is used for security implementation"
+    },
+    {
+      "source": "ci_cd",
+      "target": "cloud_migration",
+      "relation": "supports",
+      "weight": 0.7,
+      "rationale": "CI/CD supports cloud migration"
+    },
+    {
+      "source": "collaboration",
+      "target": "knowledge_sharing",
+      "relation": "complements",
+      "weight": 0.7,
+      "rationale": "Collaboration and knowledge sharing are peer skills"
+    },
+    {
+      "source": "ingenieur_degree",
+      "target": "cloud_migration",
+      "relation": "enables",
+      "weight": 0.65,
+      "rationale": "Ingénieur degree enables cloud migration responsibility"
+    }
+  ],
+  "lang": "fr",
+  "job_id": "job_4"
+}

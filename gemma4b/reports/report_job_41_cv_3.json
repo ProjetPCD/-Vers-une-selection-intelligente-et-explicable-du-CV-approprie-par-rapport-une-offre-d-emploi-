@@ -1,0 +1,336 @@
+{
+  "job_id": "job_41",
+  "cv_id": "cv_3",
+  "generated_at": "2026-05-02T23:39:23.559459",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 19.43,
+    "confidence": {
+      "confidence_score": 0.41,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.75,
+        "coverage_rate": 0.5,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.3055,
+    "edge_score": 0.4545,
+    "combined": 0.3651
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1594,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.8155,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.8057,
+    "matched_nodes": "1/8",
+    "edge_match_pct": 22.74
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.169,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.4384,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1337,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.1429,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 1.7391,
+    "weighted_recall": 0.0829,
+    "weighted_f1": {
+      "value": 0.1582,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.575,
+    "missing_critical_penalty": {
+      "value": 0.1429,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.9075,
+    "ndcg_10": 0.9784,
+    "map_score": 0.9094,
+    "mrr_score": 1.0,
+    "skill_balance_score": 1.0,
+    "top_skill_alignment": 0.4542,
+    "semantic_fit_score": 0.4019,
+    "experience_density": 0.1412
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 25.7,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 25.68,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 22.99,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 93.13,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 42.63,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 31.16,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 42.78,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 5,
+      "match_pct": 3.8,
+      "weight_sum": 5.0
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 57.5,
+      "weight_sum": 1.0
+    },
+    "Domain": {
+      "count": 1,
+      "match_pct": 30.0,
+      "weight_sum": 0.937
+    },
+    "Soft Skill": {
+      "count": 1,
+      "match_pct": 18.8,
+      "weight_sum": 0.459
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 22.74,
+    "total_edges": 6,
+    "top_synergies": [
+      {
+        "edge_key": "python_hard_skill|data_analyst_domain",
+        "source": "python_hard_skill",
+        "target": "data_analyst_domain",
+        "w_0": 0.9,
+        "w_cv": 0.875,
+        "w_cv_norm": 0.438,
+        "match_pct": 48.6,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "postgresql_tool|data_analyst_domain",
+        "source": "postgresql_tool",
+        "target": "data_analyst_domain",
+        "w_0": 0.7,
+        "w_cv": 0.487,
+        "w_cv_norm": 0.244,
+        "match_pct": 34.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "excel_tool|data_analyst_domain",
+        "source": "excel_tool",
+        "target": "data_analyst_domain",
+        "w_0": 0.65,
+        "w_cv": 0.3,
+        "w_cv_norm": 0.15,
+        "match_pct": 23.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "tableau_tool|data_analyst_domain",
+        "source": "tableau_tool",
+        "target": "data_analyst_domain",
+        "w_0": 0.65,
+        "w_cv": 0.3,
+        "w_cv_norm": 0.15,
+        "match_pct": 23.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "looker_tool|data_analyst_domain",
+        "source": "looker_tool",
+        "target": "data_analyst_domain",
+        "w_0": 0.65,
+        "w_cv": 0.3,
+        "w_cv_norm": 0.15,
+        "match_pct": 23.1,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Excel",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "PostgreSQL",
+      "type": "Tool",
+      "gap": 0.812,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Pivot",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Tableau",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Looker",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Data Analyst",
+      "type": "Domain",
+      "gap": 0.637,
+      "severity": "critical",
+      "importance": 0.937
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Excel",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "PostgreSQL",
+        "type": "Tool",
+        "gap": 0.812
+      },
+      {
+        "label": "Pivot",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Tableau",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Looker",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Data Analyst",
+        "type": "Domain",
+        "gap": 0.637
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 4,
+    "nodes_with_bias": 3,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "HALO": 2,
+      "PROXY": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "postgresql_tool",
+        "label": "PostgreSQL",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The reduction in weight reflects a proxy bias related to geographic location and language proficiency. The CV’s emphasis on experience in Gothenburg, Sweden, combined with proficiency in English, French, and Arabic, while not inherently negative, subtly favors candidates from Western European contexts, potentially overlooking equally qualified candidates from other regions. The JD’s request for candidates ‘in Sweden’ might have inadvertently weighted CVs based on the candidate’s location, unfairly penalizing applicants who lack fluency in English or don’t reside in the same geographic area. A fair alternative would prioritize skills and experience over location-based signals, focusing solely on the candidate’s abilities with PostgreSQL and the described projects."
+      },
+      {
+        "id": "data_analyst_domain",
+        "label": "Data Analyst",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.6,
+        "reason": "The system is likely exhibiting halo bias due to the candidate's PhD and Senior Machine Learning Engineer role. The JD emphasizes experience in analysis, visualization, and specific tools, while the CV heavily focuses on advanced Machine Learning techniques (LLMs, Prompt Engineering) and results achieved, effectively overshadowing the basic data analysis skills listed in the job description. This over-emphasis on advanced skills creates a 'halo' effect, unfairly weighting the candidate higher than a purely skills-based assessment would warrant, leading to a decreased weighting. A fair alternative would be to de-emphasize the advanced technologies and focus on a more holistic evaluation of data analysis competencies, including experience with traditional data analysis tools mentioned in the job description."
+      },
+      {
+        "id": "communication_soft_skill",
+        "label": "capacité de communiquer efficacement les résultats",
+        "bias_category": "HALO",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "The CV heavily emphasizes the candidate's advanced technical skills (LLMs, GPT-4, Biomedical Signal Analysis) and impactful projects, potentially creating a 'halo' effect where the algorithm overvalues these signals to the detriment of demonstrating communication skills. While the candidate's experience is relevant, the JD explicitly calls for 'excellent communication' through data visualizations, and the CV lacks concrete examples of this skill being utilized. A lower weight factor (0.75) reflects this overemphasis on technical prowess and the absence of demonstrable communication skills, suggesting a biased weighting toward the candidate's impressive technical skillset rather than a core requirement of effective communication."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1594 (sous-qualifié), CTM=0.8155 (écart structurel élevé), match_pct=19.43% → Poor Match",
+    "v6_summary": "weighted_f1=0.1582, gap_score=0.1337, ndcg_5=0.9075, missing_critical_penalty=0.1429, combo_v6_final=25.7",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "6 gaps critiques identifiés",
+    "bias_note": "3 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.41)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

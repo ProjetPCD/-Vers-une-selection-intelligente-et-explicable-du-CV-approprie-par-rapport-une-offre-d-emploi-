@@ -1,0 +1,355 @@
+{
+  "job_id": "job_4",
+  "cv_id": "cv_5",
+  "generated_at": "2026-05-02T16:45:53.599426",
+  "overall_assessment": {
+    "verdict": "Poor Match",
+    "match_pct": 32.43,
+    "confidence": {
+      "confidence_score": 0.57,
+      "confidence_label": "Low",
+      "factors": {
+        "bias_rate": 0.0,
+        "critical_rate": 0.556,
+        "coverage_rate": 0.667,
+        "nodes_audited": 0,
+        "nodes_biased": 0
+      }
+    },
+    "fallback_ratio": 0.0
+  },
+  "final_scores": {
+    "node_score": 0.1915,
+    "edge_score": 0.096,
+    "combined": 0.1533
+  },
+  "advanced_metrics": {
+    "NTCW": {
+      "value": 0.1241,
+      "description": "Normalized Total Contextual Weight — alignement global",
+      "interpretation": "Sous-qualifié"
+    },
+    "CTM": {
+      "value": 0.6461,
+      "description": "Contextual Transformation Magnitude — distance structurelle",
+      "interpretation": "Profil très différent"
+    },
+    "weighted_gap": 0.6757,
+    "matched_nodes": "1/9",
+    "edge_match_pct": 4.81
+  },
+  "advanced_metrics_v6": {
+    "node_matching_cosine": {
+      "value": 0.1358,
+      "description": "Matching nœuds pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "edge_matching_score": {
+      "value": 0.096,
+      "description": "Matching des relations/synergies JD→CV",
+      "interpretation": "Faible"
+    },
+    "gap_score": {
+      "value": 0.1151,
+      "description": "1 - distance L2 normalisée vs profil idéal (1=parfait)",
+      "interpretation": "Éloigné"
+    },
+    "jaccard_nodes": {
+      "value": 0.0,
+      "description": "Jaccard(skills couverts CV, skills requis JD)"
+    },
+    "weighted_precision": 0.0,
+    "weighted_recall": 0.0,
+    "weighted_f1": {
+      "value": 0.0,
+      "description": "F1 harmonique pondéré par importance JD",
+      "interpretation": "Faible"
+    },
+    "skill_depth_score": 0.0,
+    "missing_critical_penalty": {
+      "value": 0.0,
+      "description": "Proportion de skills critiques (w_0≥0.7) couverts",
+      "interpretation": "Skills critiques manquants — risque élevé"
+    },
+    "redundancy_penalty": {
+      "value": 1.0,
+      "description": "Pénalité surqualification inutile (1=aucune redondance)"
+    },
+    "redundancy_info": {
+      "value": 0.0,
+      "label": "Profil bien calibré",
+      "note": "Informatif uniquement"
+    },
+    "ndcg_5": 0.7942,
+    "ndcg_10": 0.9343,
+    "map_score": 0.8393,
+    "mrr_score": 1.0,
+    "skill_balance_score": 0.0,
+    "top_skill_alignment": 0.3072,
+    "semantic_fit_score": 0.3887,
+    "experience_density": 0.0662
+  },
+  "combo_scores_v6": {
+    "combo_v6_final": {
+      "value": 10.92,
+      "description": "Score synthèse V6"
+    },
+    "combo_matching": {
+      "value": 8.79,
+      "description": "Matching pur (node + edge + jaccard)"
+    },
+    "combo_fit": {
+      "value": 18.21,
+      "description": "Qualité de fit (gap + semantic + jaccard)"
+    },
+    "combo_ranking": {
+      "value": 86.14,
+      "description": "Ranking-aware (ndcg + map + mrr)"
+    },
+    "combo_prf1": {
+      "value": 0.0,
+      "description": "F1 pondéré + profondeur"
+    },
+    "combo_safe": {
+      "value": 3.45,
+      "description": "Candidat sans risque (pénalités + gap)"
+    },
+    "combo_specialist": {
+      "value": 16.68,
+      "description": "Top alignement + profondeur"
+    }
+  },
+  "cluster_analysis": {
+    "Tool": {
+      "count": 5,
+      "match_pct": 11.5,
+      "weight_sum": 3.524
+    },
+    "Education": {
+      "count": 1,
+      "match_pct": 0.0,
+      "weight_sum": 1.0
+    },
+    "Hard Skill": {
+      "count": 1,
+      "match_pct": 18.8,
+      "weight_sum": 0.808
+    },
+    "Domain": {
+      "count": 2,
+      "match_pct": 4.6,
+      "weight_sum": 0.888
+    }
+  },
+  "edge_analysis": {
+    "avg_edge_match_pct": 4.81,
+    "total_edges": 6,
+    "top_synergies": [
+      {
+        "edge_key": "cloud_devops_role|devsecops_implementation",
+        "source": "cloud_devops_role",
+        "target": "devsecops_implementation",
+        "w_0": 0.85,
+        "w_cv": 0.281,
+        "w_cv_norm": 0.141,
+        "match_pct": 16.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cloud_devops_role|ci_cd_pipeline",
+        "source": "cloud_devops_role",
+        "target": "ci_cd_pipeline",
+        "w_0": 0.7,
+        "w_cv": 0.094,
+        "w_cv_norm": 0.047,
+        "match_pct": 6.7,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cloud_devops_role|application_architecture",
+        "source": "cloud_devops_role",
+        "target": "application_architecture",
+        "w_0": 0.55,
+        "w_cv": 0.094,
+        "w_cv_norm": 0.047,
+        "match_pct": 8.5,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cloud_devops_role|cloud_native_solutions",
+        "source": "cloud_devops_role",
+        "target": "cloud_native_solutions",
+        "w_0": 0.48,
+        "w_cv": 0.094,
+        "w_cv_norm": 0.047,
+        "match_pct": 9.8,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      },
+      {
+        "edge_key": "cloud_devops_role|azure_cloud_engineer",
+        "source": "cloud_devops_role",
+        "target": "azure_cloud_engineer",
+        "w_0": 0.95,
+        "w_cv": 0.0,
+        "w_cv_norm": 0.0,
+        "match_pct": 0.0,
+        "p3_confidence": "NONE",
+        "p35_is_biased": false
+      }
+    ]
+  },
+  "critical_gaps": [
+    {
+      "skill": "Azure",
+      "type": "Tool",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "Ingénieur",
+      "type": "Education",
+      "gap": 1.0,
+      "severity": "critical",
+      "importance": 1.0
+    },
+    {
+      "skill": "DevSecOps",
+      "type": "Tool",
+      "gap": 0.608,
+      "severity": "critical",
+      "importance": 0.889
+    },
+    {
+      "skill": "DevOps",
+      "type": "Hard Skill",
+      "gap": 0.621,
+      "severity": "critical",
+      "importance": 0.808
+    },
+    {
+      "skill": "Architecture Applicative",
+      "type": "Tool",
+      "gap": 0.656,
+      "severity": "critical",
+      "importance": 0.75
+    }
+  ],
+  "profile_summary": {
+    "strengths": [],
+    "critical_weaknesses": [
+      {
+        "label": "Azure",
+        "type": "Tool",
+        "gap": 1.0
+      },
+      {
+        "label": "Ingénieur",
+        "type": "Education",
+        "gap": 1.0
+      },
+      {
+        "label": "DevSecOps",
+        "type": "Tool",
+        "gap": 0.608
+      },
+      {
+        "label": "DevOps",
+        "type": "Hard Skill",
+        "gap": 0.621
+      },
+      {
+        "label": "Architecture Applicative",
+        "type": "Tool",
+        "gap": 0.656
+      }
+    ]
+  },
+  "bias_audit": {
+    "nodes_audited": 6,
+    "nodes_with_bias": 6,
+    "edges_audited": 0,
+    "edges_with_bias": 0,
+    "bias_categories": {
+      "PROXY": 3,
+      "C": 2,
+      "PRESTIGE|AGEISM|NONE": 1
+    },
+    "biased_nodes": [
+      {
+        "id": "devsecops_implementation",
+        "label": "DevSecOps",
+        "bias_category": "PRESTIGE|AGEISM|NONE",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.562,
+        "reason": "The candidate’s CV heavily emphasizes a research project focused on ‘Alzheimer’s Disease Classification Using Hippocampal Shape Morphometric Analysis with Geometric Deep Learning’, indicating a strong academic background in a specialized area of deep learning and geometric analysis. This preference for a niche skill set related to academic research constitutes a prestige bias, potentially penalizing candidates with broader DevOps experience. While the project demonstrates technical competence, the weighting is reduced due to the focus on a less commonly desired skill set within a cloud-focused DevOps role. A fair alternative would prioritize a candidate with demonstrated experience in broader DevOps practices."
+      },
+      {
+        "id": "devops_practices",
+        "label": "DevOps",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.375,
+        "reason": "This weight change (decreased) appears to be driven by a proxy bias (D) – specifically, the emphasis on the project description’s focus on ‘geodesic paths’ and ‘shape invariance’. While the candidate’s technical skills (Deep Learning, Machine Learning, Graph CNNs) are relevant to DevOps, the project description heavily leans into a niche area of geometric deep learning, a subfield that may not be directly transferable or valued within a broad DevOps context.  The JD focuses on general DevOps skills like CI/CD and security, while the CV’s project description is highly specialized, creating a disconnect.  A fair alternative would prioritize the candidate's experience with automated deployment pipelines and infrastructure management, aligning more closely with typical DevOps responsibilities. This favors the specific project details over broader application of DevOps principles."
+      },
+      {
+        "id": "application_architecture",
+        "label": "Architecture Applicative",
+        "bias_category": "C",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The application architecture weight decreased significantly (-0.50) due to the candidate's project focused on 'Hippocampus shape' and geometric deep learning, a highly specialized area not directly relevant to cloud and DevOps skills as outlined in the job description. This represents a proxy bias, unfairly emphasizing a specific academic project and neglecting broader architectural knowledge and experience. A fair alternative would prioritize the candidate’s demonstrated skills in Deep Learning, Machine Learning, and the Microsoft ecosystem, aligning with the JD's requirements, resulting in a correction factor of 0.75, reflecting the disproportionate influence of the project focus."
+      },
+      {
+        "id": "ci_cd_pipeline",
+        "label": "CI/CD",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV highlights a research internship focused on Deep Learning and Geometric Deep Learning, specifically within a prestigious research environment (ICube Strasbourg). However, the lack of explicit DevOps or CI/CD experience and the detailed focus on a highly specialized research project creates a proxy bias. The candidate's background strongly suggests a research-oriented skillset, which may not perfectly align with the requirements outlined in the JD, leading to a disproportionate weight reduction. A fairer alternative would be to assess skills relevant to the CI/CD pipeline role, perhaps adjusting the factor based on demonstrable transferable skills related to automation and cloud technologies, rather than prioritizing the research domain."
+      },
+      {
+        "id": "cloud_native_solutions",
+        "label": "Développement de solution Cloud Native",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The candidate's CV heavily emphasizes research focused on Deep Learning and geometric deep learning, specifically within the context of biomedical applications (Alzheimer's Disease). While cloud native skills are present, the core expertise lies in a specialized area not directly related to the advertised DevOps role's technical requirements. The candidate's location (InstaDeep Sfax, Tunisia) and the specific research focus (a highly specialized PhD project) introduce a proxy bias, potentially signaling a lack of familiarity with the typical Microsoft ecosystem and DevOps practices, leading to an unwarranted reduction in weight."
+      },
+      {
+        "id": "microsoft_ecosystem",
+        "label": "écosystème Microsoft",
+        "bias_category": "PROXY",
+        "severity": "MEDIUM",
+        "correction_factor": 0.75,
+        "w_cv_before": 0.0,
+        "w_cv_corrected": 0.188,
+        "reason": "The CV heavily emphasizes experience with the 'écosystème Microsoft' and specifically InstaDeep, a company utilizing machine learning, which aligns with the JD's requirements. However, the mention of InstaDeep and the project's focus on geometric deep learning, while relevant to cloud and AI, introduces a proxy bias. The applicant's location (Tunisia) and previous internship at a specialized research institution (InstaDeep) could be unfairly weighted compared to candidates with direct experience in Microsoft technologies within a Western European context, especially given the JD's focus. A fair alternative would be to assess skills explicitly related to Azure and DevOps, rather than relying on geographic or institutional affiliation."
+      }
+    ],
+    "biased_edges": []
+  },
+  "decision_rationale": {
+    "why_this_verdict": "NTCW=0.1241 (sous-qualifié), CTM=0.6461 (écart structurel élevé), match_pct=32.43% → Poor Match",
+    "v6_summary": "weighted_f1=0.0, gap_score=0.1151, ndcg_5=0.7942, missing_critical_penalty=0.0, combo_v6_final=10.92",
+    "key_strengths": "0 compétences clés validées",
+    "key_gaps": "5 gaps critiques identifiés",
+    "bias_note": "6 scores corrigés pour biais",
+    "confidence_note": "Confiance : Low (0.57)",
+    "scoring_reliability": "✅ 100.0% des scores via LLM (fiable)"
+  }
+}

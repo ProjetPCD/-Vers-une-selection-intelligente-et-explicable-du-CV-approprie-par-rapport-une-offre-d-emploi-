@@ -1,0 +1,531 @@
+{
+  "job_id": "job_28",
+  "cv_id": "cv_4",
+  "scored_nodes": {
+    "laravel_framework": {
+      "w_cv": 0.75,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.75,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.75
+      },
+      "active_red_flags": [],
+      "rationale": "The CV explicitly mentions 'FastAPI, Flask, and Streamlit,' indicating usage of Javascript for full-stack development, which aligns with Laravel.  The project descriptions involving AI tool development suggests a need for a framework like Laravel to build and deploy these applications.  The moderate evidence quality is due to the absence of explicit project details related to Laravel usage.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "LOW",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "postgresql_db": {
+      "w_cv": 0.45,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.6,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.6
+      },
+      "active_red_flags": [],
+      "rationale": "The candidate’s work building ETL pipelines using Airflow, PySpark, and BigQuery suggests the use of PostgreSQL for data warehousing and processing. This inference is based on the common practice of utilizing PostgreSQL with these tools. Moderate confidence due to no explicit project detail.”",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.45,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The rationale suggests the candidate's use of PostgreSQL was inferred based on common practices within the tools listed (Airflow, PySpark, BigQuery). This represents a proxy bias – the system is assuming a connection between these tools and the use of PostgreSQL rather than evaluating the candidate's specific SQL skills or experience with PostgreSQL. While the candidate explicitly states ETL pipeline development, the system is extrapolating a connection that isn’t directly demonstrated. A more merit-based approach would focus on the demonstrated skills within the provided context – the candidate’s experience with Airflow, PySpark, BigQuery, and AI tool development strongly suggests capabilities applicable to PostgreSQL data warehousing, justifying the reduced weight. Correction factor of 0.75 to acknowledge the inferred connection while still reflecting the candidate's demonstrable skills."
+    },
+    "java_full_stack_dev": {
+      "w_cv": 0.413,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.55,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.55
+      },
+      "active_red_flags": [],
+      "rationale": "The candidate indicates building AI tools with FastAPI, Flask, and Streamlit, suggesting the use of Java as a full-stack development language to build and deploy these applications.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.413,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The candidate's experience heavily features AI tool development using FastAPI, Flask, and Streamlit – technologies strongly favored in the job description's listed preferred technologies (React, Node.js, PHP, and Java).  The decrease in weight (w_0) suggests the algorithm is disproportionately penalizing the candidate's demonstrated skills in modern AI/ML development, leaning on the candidate's use of Python and related technologies which are not explicitly listed as preferred in the JD. This constitutes a proxy bias based on the specific technologies listed, rather than evaluating core full-stack development competency, ultimately reducing the candidate's score unfairly."
+    },
+    "docker_containerization": {
+      "w_cv": 0.375,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "The candidate’s work building AI tools with FastAPI, Flask, and Streamlit implies the usage of Docker for containerization and deployment of these applications.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.375,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The candidate’s CV explicitly states experience with Docker, FastAPI, Flask, and Streamlit, technologies directly relevant to the JD's requirements for web application development.  The reduced weight (w_cv) reflects an overemphasis on the candidate's AI/ML skills and potentially undervalues the foundational full-stack capabilities, indicating a proxy bias based on the candidate's specialization (AI/ML) influencing the scoring.  A fair alternative would be to weigh the candidate's broader development experience including the technologies mentioned in the JD, reducing the weight decrease to 25%."
+    },
+    "git_version_control": {
+      "w_cv": 0.338,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 0.45,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.45
+      },
+      "active_red_flags": [],
+      "rationale": "The candidate explicitly mentions 'Certificate of completion - Git and GitHub,' indicating a strong understanding and utilization of Git for version control.  The strong evidence quality stems from the direct evidence provided in the CV.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "NONE",
+      "w_cv_corrected": 0.338,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The candidate explicitly demonstrates proficiency in Git through a 'Certificate of completion - Git and GitHub' mentioned directly in their CV.  The weight change from 1.0 to 0.45 reflects a decrease in importance attributed to this skill, likely due to the JD’s broader requirements encompassing full-stack development with multiple technologies.  While the lack of explicit mention of Git within the responsibilities section of the JD may be a factor, the candidate’s CV proactively highlights this crucial skill, justifying a slight reduction in the weighting.  A correction factor of 0.75 acknowledges the evidence but recognizes the broader skill set demanded by the role."
+    },
+    "node_js_full_stack": {
+      "w_cv": 0.425,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "The candidate’s building AI tools with FastAPI, Flask, and Streamlit implies the use of Node.js as a full-stack development language.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.425,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.85,
+      "p35_reason": "The candidate’s experience explicitly includes building AI tools with FastAPI, Flask, and Streamlit, aligning with the job description’s requirement for Node.js full-stack development. However, the CV’s focus on advanced AI/ML skills (LLMs, RAG Optimization, NLP) and deployment tools (Airflow, BigQuery) elevates the candidate’s skillset beyond what is primarily assessed by the job description's listed technologies. This signals a proxy for expertise in higher-level AI development, potentially leading to an unfairly inflated assessment based on perceived potential rather than demonstrated proficiency in the specifically listed technologies (Node.js, React, Laravel, Postgres).  Correction factor is increased to 0.85 to account for this potential over-emphasis on advanced AI skills."
+    },
+    "react_javascript_framework": {
+      "w_cv": 0.375,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.5,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.5
+      },
+      "active_red_flags": [],
+      "rationale": "The candidate’s building AI tools with FastAPI, Flask, and Streamlit implies the use of React Javascript Framework for UI development",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "INCREASE",
+      "w_cv_corrected": 0.375,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The candidate’s experience with FastAPI, Flask, and Streamlit (explicitly listed as tools used for AI tool development) strongly aligns with the requirements of the JD, which specifically mentions React, Node.js, PHP and Laravel. However, the weight change (-0.441) suggests the algorithm penalized this skill due to its association with a relatively newer and potentially ‘trendy’ skillset (AI tool development) compared to the more established technologies listed in the JD (Node.js, PHP). This indicates a Proxy Bias – the system is prioritizing technologies mentioned in the JD, regardless of the candidate’s demonstrable ability, creating a disadvantage for those utilizing newer AI-related frameworks.  A fair alternative would be to assign a weight reflecting the candidate's versatility and modern AI development experience."
+    },
+    "asana_project_management": {
+      "w_cv": 0.28,
+      "evidence_quality": "weak",
+      "score_breakdown": {
+        "base_score": 0.4,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.4
+      },
+      "active_red_flags": [],
+      "rationale": "The candidate’s work building ETL pipelines using Airflow, PySpark, and BigQuery suggests the use of Asana as a project management tool for collaborative workflow.",
+      "p3_confidence": "LOW",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PRESTIGE|PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.28,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.7,
+      "p35_reason": "The candidate's experience with ETL pipelines (Airflow, PySpark, BigQuery) and AI tools (FastAPI, Flask, Streamlit) demonstrates a strong technical skillset directly relevant to the JD’s requirements for a full-stack developer. However, the CV highlights the use of Asana – a project management tool – in conjunction with these technical skills, suggesting a focus on collaboration and workflow management, rather than the specialized technical skills emphasized in the job description. This leans toward a PRESTIGE bias, prioritizing the candidate's ability to utilize Asana, and potentially penalizing candidates who don't show familiarity with this specific tool, even if they possess stronger technical abilities. The delta of -0.490 indicates a significant decrease in the weighted score, suggesting unfairness."
+    },
+    "cpp_hard_skill": {
+      "w_cv": 0.188,
+      "evidence_quality": "absent",
+      "score_breakdown": {
+        "base_score": 0.25,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.25
+      },
+      "active_red_flags": [],
+      "rationale": "No explicit mention of C++ skills or tools within the provided CV sections. Evidence_anchor: ‘No explicit mention of C++ skills or tools within the provided CV sections.’",
+      "p3_confidence": "NONE",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "PROXY",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "DECREASE",
+      "w_cv_corrected": 0.188,
+      "p35_is_biased": true,
+      "p35_correction_factor": 0.75,
+      "p35_reason": "The significant decrease in weight for 'cpp_hard_skill' (from 0.778 to 0.25) is likely driven by the absence of explicit mention of C++ within the provided CV. While the JD lists C++ as a desired skill, the CV lacks detailed examples of its use, suggesting the automated system is placing undue emphasis on a skill not demonstrated. This proxies for a focus on skills explicitly listed in the CV without validating actual competency, aligning with a Proxy Bias."
+    },
+    "sql_tool": {
+      "w_cv": 0.875,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_score": 0.85,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.025,
+          "external_proof_bonus": 0.0,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.875
+      },
+      "active_red_flags": [],
+      "rationale": "Mention of ‘BigQuery’ along with ETL pipelines, heavily reliant on SQL for data transformation and querying. Evidence_anchor: ‘Mention of ‘BigQuery’ along with ETL pipelines, heavily reliant on SQL for data transformation and querying.’ Bonus applied for experience_years_detected and quantified_outcome.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "MEDIUM",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "soft_skills": {
+      "w_cv": 0.65,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 0.65,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.0,
+          "external_proof_bonus": 0.05,
+          "outcome_bonus": 0.0,
+          "intensity_bonus": 0.1,
+          "complexity_bonus": 0.0
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 0.65
+      },
+      "active_red_flags": [],
+      "rationale": "Skills mentioned (Analytical Skills, Financial Analysis) and ‘Top Rated Freelancer’ status suggests strong communication and client relationship skills. Evidence_anchor: ‘Skills mentioned (Analytical Skills, Financial Analysis) and ‘Top Rated Freelancer’ status suggests strong communication and client relationship skills.’ Bonus applied for intensity.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "p35_audited": true,
+      "p35_bias_category": "NONE",
+      "p35_severity": "LOW",
+      "p35_correction_direction": "NONE",
+      "p35_is_biased": false,
+      "p35_correction_factor": 1.0
+    },
+    "full_stack_experience": {
+      "w_cv": 1.087,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_score": 1.0,
+        "bonuses": {
+          "cert_bonus": 0.0,
+          "experience_bonus": 0.088,
+          "external_proof_bonus": 0.1,
+          "outcome_bonus": 0.1,
+          "intensity_bonus": 0.0,
+          "complexity_bonus": 0.1
+        },
+        "penalties": {
+          "recency_gap": 0.0,
+          "ghost_skill": 0.0,
+          "cert_without_application": 0.0
+        },
+        "final_score": 1.087
+      },
+      "active_red_flags": [],
+      "rationale": "Experience as a ‘FastAPI, Flask, and Streamlit’ developer, combined with chatbot development and time-series forecasting suggests full-stack capabilities. Evidence_anchor: ‘Experience as a ‘FastAPI, Flask, and Streamlit’ developer, combined with chatbot development and time-series forecasting suggests full-stack capabilities.’ Bonus applied for experience_years_detected, quantified_outcome and project_complexity.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm"
+    }
+  },
+  "scored_edges": {
+    "python_web_scraping|excel_pivot_tables": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.1,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate explicitly states using Excel Pivot Tables for data analysis while simultaneously utilizing Python for web scraping. This reflects a common workflow of extracting data with Python and then transforming/analyzing it using Excel tools, directly contributing to a data-driven outcome. (cv_excerpt: \"My work includes chatbot development, time-series forecasting, and image classification. I’m also skilled in data visualization using Tableau, Power BI, and Excel.\")",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "airflow|pyspark|bigquery|etl_pipeline_development": {
+      "synergy_score": 0.85,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.35,
+        "penalties": 0.0,
+        "final_score": 0.85
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate's construction of ETL pipelines using Airflow, PySpark, and BigQuery clearly demonstrates a combined skill application. These tools are inherently intertwined in the data engineering process—PySpark for data transformation, Airflow for orchestration, and BigQuery for storage and querying. This creates a seamless data flow, showcasing significant synergy. (cv_excerpt: \"I’ve built ETL pipelines using Airflow, PySpark, and BigQuery, and developed AI tools with FastAPI, Flask, and Streamlit.\")",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.85
+    },
+    "fastapi|flask|streamlit|ai_tool_development": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.35,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate's employment of FastAPI, Flask, and Streamlit in the development of AI tools like chatbots, time-series forecasting, and image classification underscores a synergistic skill set. These frameworks are frequently used together for building and deploying AI applications, demonstrating a cohesive approach to problem-solving and development. (cv_excerpt: \"My work includes chatbot development, time-series forecasting, and image classification. I’m also skilled in data visualization using Tableau, Power BI, and Excel.\")",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "tableau|power_bi|excel|data_visualization": {
+      "synergy_score": 0.85,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.45,
+        "penalties": 0.0,
+        "final_score": 0.85
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate's proficiency in Tableau, Power BI, and Excel for data visualization is a strong indicator of synergy. These tools are often used in conjunction to create comprehensive dashboards and KPI visualizations—highlighting the ability to extract insights and present data effectively. (cv_excerpt: \"My work includes chatbot development, time-series forecasting, and image classification. I’m also skilled in data visualization using Tableau, Power BI, and Excel.\")",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.85
+    },
+    "sql_tool|postgresql_db": {
+      "synergy_score": 0.85,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.85
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate explicitly states building ETL pipelines using Airflow, PySpark, and BigQuery, which heavily relies on PostgreSQL databases for data warehousing and processing. This aligns directly with the skillset of the target - sql_tool and its integration with postgresql_db. The evidence comes directly from the 'part_2' CV section, detailing the creation and utilization of these tools.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.85
+    },
+    "machine_learning|deep_learning|nlp|lstm|cnn|regression|ai_model_development": {
+      "synergy_score": 0.65,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.1,
+        "penalties": 0.0,
+        "final_score": 0.65
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate explicitly describes building computer vision systems using LSTM, CNN, and regression methods – core components of deep learning applications for AI model development. The cv_excerpt 'Building computer vision systems (object detection, tracking, and pose estimation) • Developing predictive models using LSTM, CNN, and regression methods' demonstrates a clear synergy between machine learning, deep learning, and AI model development. This is a confirmed technical task.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.65
+    },
+    "RAG Optimization|LLM Specialist": {
+      "synergy_score": 0.75,
+      "evidence_quality": "strong",
+      "score_breakdown": {
+        "base_synergy": 0.25,
+        "evidence_bonus": 0.15,
+        "penalties": 0.0,
+        "final_score": 0.75
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The candidate's self-description clearly states their expertise in RAG Optimization alongside LLM Specialist skills. This represents a direct synergy within their overall AI engineering role, aligning their specialized knowledge with the capabilities of large language models. The 'cv_excerpt' directly supports this relationship.",
+      "p3_confidence": "HIGH",
+      "p3_source": "llm",
+      "w_cv": 0.75
+    },
+    "python_full_stack_dev|fastapi": {
+      "synergy_score": 0.55,
+      "evidence_quality": "moderate",
+      "score_breakdown": {
+        "base_synergy": 0.2,
+        "evidence_bonus": 0.05,
+        "penalties": 0.0,
+        "final_score": 0.55
+      },
+      "is_ghost_synergy": false,
+      "rationale": "The CV states developing AI tools with FastAPI, indicating a direct integration of Python (as a full-stack developer) with the FastAPI framework – a common practice in modern AI application development. The mentioned development includes areas like chatbot development and time-series forecasting, aligning well with the FastAPI's capabilities. Temporal overlap is suggested, but not definitively proven within the provided context.",
+      "p3_confidence": "MEDIUM",
+      "p3_source": "llm",
+      "w_cv": 0.55
+    }
+  },
+  "metadata": {
+    "skills_scored": 12,
+    "mean_score": 0.583,
+    "edges_scored": 8,
+    "mean_synergy": 0.75,
+    "fallback_ratio": 0.0,
+    "n_fallback_nodes": 0,
+    "synergy_distribution": {
+      "mean": 0.75,
+      "max": 0.85,
+      "min": 0.55
+    },
+    "batches_ok": 2,
+    "batches_fail": 0,
+    "score_distribution": {
+      "mean": 0.583,
+      "max": 1.0,
+      "min": 0.25,
+      "above_1": 1,
+      "below_05": 3
+    }
+  },
+  "edge_bias_audits": {},
+  "bias_summary": {
+    "nodes_audited": 11,
+    "nodes_with_bias": 8,
+    "nodes_corrected": 8,
+    "edges_audited": 0
+  }
+}
