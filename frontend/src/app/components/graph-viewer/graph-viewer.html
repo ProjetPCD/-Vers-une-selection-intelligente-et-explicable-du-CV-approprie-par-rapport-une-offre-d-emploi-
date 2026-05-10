@@ -1,0 +1,32 @@
+<div class="graph-viewer-container" *ngIf="graphData">
+  <div class="graph-header">
+    <h3 class="graph-title">{{ title }}</h3>
+    <div class="graph-meta">
+      <span class="meta-pill"><span class="pill-icon">◉</span> {{ totalNodes }} nœuds</span>
+      <span class="meta-pill"><span class="pill-icon">⟶</span> {{ totalEdges }} arêtes</span>
+    </div>
+  </div>
+
+  <div class="graph-legend">
+    <div class="legend-item" *ngFor="let type of nodeTypes">
+      <span class="legend-dot" [style.background]="typeColor(type)"></span>
+      <span class="legend-label">{{ type }}</span>
+      <span class="legend-count">({{ countByType(type) }})</span>
+    </div>
+    <div class="legend-item">
+      <span class="legend-dot" style="background: #A9A9A9"></span>
+      <span class="legend-label">Autre</span>
+    </div>
+  </div>
+
+  <div class="svg-wrapper" #svgContainer></div>
+
+  <div class="graph-controls">
+    <span class="control-hint">🖱️ Scroll = zoom · Glisser le fond = déplacer · Glisser un nœud = repositionner</span>
+  </div>
+</div>
+
+<div class="graph-empty" *ngIf="!graphData">
+  <div class="empty-icon">🕸️</div>
+  <p>En attente du graphe de compétences…</p>
+</div>

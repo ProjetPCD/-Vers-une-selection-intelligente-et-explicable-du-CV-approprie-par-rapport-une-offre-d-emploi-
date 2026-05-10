@@ -1,0 +1,35 @@
+<div class="table-wrap">
+  <table>
+    <thead>
+      <tr>
+        <th>Rang</th>
+        <th>CV</th>
+        <th>Tier</th>
+        <th>Verdict</th>
+        <th>Match %</th>
+        <th>Combo V6</th>
+        <th>Confiance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let r of rankings" class="result-row">
+        <td class="rank">#{{ r.rank ?? '—' }}</td>
+        <td>CV {{ r.cv_index + 1 }}</td>
+        <td>
+          <span class="tier-badge" [style.color]="tierColor(r.tier)">
+            {{ r.tier ?? '—' }}
+          </span>
+        </td>
+        <td>{{ verdictIcon(r.verdict) }} {{ r.verdict ?? '—' }}</td>
+        <td>
+          <div class="bar-wrap">
+            <div class="bar" [style.width.px]="barWidth(r.match_pct) * 1.2"></div>
+            <span>{{ pct(r.match_pct) }}</span>
+          </div>
+        </td>
+        <td class="score-val">{{ score(r.combo_v6) }}</td>
+        <td>{{ r.confidence ?? '—' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

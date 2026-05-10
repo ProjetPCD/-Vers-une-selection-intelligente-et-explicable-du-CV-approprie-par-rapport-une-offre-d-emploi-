@@ -1,0 +1,155 @@
+:host {
+  display: block;
+}
+
+.graph-viewer-container {
+  background: #12141f;
+  border-radius: 12px;
+  border: 1px solid #2a2a3a;
+  overflow: hidden;
+}
+
+.graph-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #1e2035;
+}
+
+.graph-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #a78bfa;
+  margin: 0;
+}
+
+.graph-meta {
+  display: flex;
+  gap: 8px;
+}
+
+.meta-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  background: #1e2035;
+  border: 1px solid #2a2a3a;
+  color: #8b89a8;
+
+  .pill-icon {
+    font-size: 10px;
+    opacity: 0.7;
+  }
+}
+
+.graph-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 12px 20px;
+  border-bottom: 1px solid #1e2035;
+  background: #16182a;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.legend-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.15);
+}
+
+.legend-label {
+  color: #e8e6f0;
+  font-weight: 500;
+}
+
+.legend-count {
+  color: #555;
+  font-size: 11px;
+}
+
+.svg-wrapper {
+  width: 100%;
+  height: 520px;
+  position: relative;
+  background: radial-gradient(ellipse at center, #181a2e 0%, #0f1117 70%);
+  overflow: hidden;
+}
+
+.graph-controls {
+  padding: 8px 20px;
+  border-top: 1px solid #1e2035;
+  text-align: center;
+  background: #12141f;
+}
+
+.control-hint {
+  font-size: 11px;
+  color: #555;
+}
+
+.graph-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: #12141f;
+  border-radius: 12px;
+  border: 1px solid #2a2a3a;
+
+  .empty-icon {
+    font-size: 48px;
+    margin-bottom: 12px;
+    opacity: 0.4;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  p {
+    color: #555;
+    font-size: 14px;
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
+/* D3 tooltip injected dynamically */
+:host ::ng-deep .graph-tooltip {
+  position: absolute;
+  background: rgba(15, 15, 25, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #fff;
+  pointer-events: none;
+  max-width: 220px;
+  z-index: 100;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
